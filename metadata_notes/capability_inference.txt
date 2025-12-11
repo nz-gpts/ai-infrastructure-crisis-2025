@@ -1,0 +1,6 @@
+=== Capability Inference Skeleton ===
+1. Transformers -> What capabilities expand?
+2. Llama -> What capabilities stabilize?
+3. nanoGPT -> What essentials remain invariant?
+4. MuJoCo -> What physics constraints remain unchallenged?
+

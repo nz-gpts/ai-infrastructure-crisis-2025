@@ -1,0 +1,537 @@
+=== Cross-Repo Anomaly Clusters ===
+Cluster | Trigger | Evidence Files | Hypothesis
+--- Timeline Cluster Candidates ---
+43badf217d | 2018-10-29 | Thomas Wolf | Initial commit3adf61e | 2025-11-12 | Andrej | Update README to mention nanochat and deprecation
+fe80428 | 2022-12-28 | Andrej Karpathy | first very bad commitcaec236b | 2025-12-11 | Haroon Qureshi | Make mj_loadModelBuffer a public API.
+1076b9c | 2023-02-24 | Timothee Lacroix | Initial commita8f32a0e9c | 2025-12-11 | Lysandre | Revert "🚨🚨🚨🚨🚨🚨🚨🚨🚨 default to `"auto"` dtype (#34919)"
+8ce2c920 | 2024-01-02 | Baruch Tabanpour | Add refsite transmission.
+aa4a0f8ef3 | 2024-01-02 | Daniel Bustamante Ospina | Remove fast tokenization warning in Data Collators (#28213)
+cad9f5c6cc | 2024-01-02 | Dean Wyatte | Update docs around mixing hf scheduler with deepspeed optimizer (#28223)
+87ae2a4632 | 2024-01-02 | frankenliu | fix bug:divide by zero in _maybe_log_save_evaluate() (#28251)
+502a10a6f8 | 2024-01-02 | hoshi-hiyouga | Fix trainer saving safetensors: metadata is None (#28219)
+1c7809e5 | 2024-01-02 | Kevin Zakka | Free `MjrContext` in Renderer destructor. Fixes #1186.
+5be46dfc09 | 2024-01-02 | Marco Carosi | [Whisper] Fix errors with MPS backend introduced by new code on word-level timestamps computation (#28288)
+e07ea625 | 2024-01-02 | Yuval Tassa | Add keyframes to humanoid model.
+6b8ec2588e | 2024-01-03 | Aaron Jimenez | [docs] Sort es/toctree.yml | Translate performance.md (#28262)
+63ec34f9 | 2024-01-03 | Alessio Quaglino | Add plugins to flex parent body if there are pinned vertices.
+45b1dfa342 | 2024-01-03 | Apsod | Remove token_type_ids from model_input_names (like #24788) (#28325)
+d83ff5eeff | 2024-01-03 | Connor Henderson | Add FastSpeech2Conformer (#23439)
+c2d283a64a | 2024-01-03 | dependabot[bot] | Bump tj-actions/changed-files from 22.2 to 41 in /.github/workflows (#28311)
+cd972bbe | 2024-01-03 | Kevin Zakka | Document humanoid model changes in changelog section of its README + minor cosmetic improvements.
+8d1b05bb | 2024-01-03 | Kevin Zakka | Fix markdown hyperlink.
+2940b934 | 2024-01-03 | Kevin Zakka | Fix typo in sdf plugin readme.
+6eba901d88 | 2024-01-03 | lain | fix documentation for zero_shot_object_detection (#28267)
+6860e953 | 2024-01-03 | Yuval Tassa | Improve docstring of `mju_eig3`.
+721e2d55 | 2024-01-04 | Baruch Tabanpour | Update tutorial notebook.
+5d36025ca1 | 2024-01-04 | Kevin Herro | README: install transformers from conda-forge channel (#28313)
+3ea8833676 | 2024-01-04 | Mayfsz | Translate contributing.md into Chinese (#28243)
+4a66c0d952 | 2024-01-04 | Sangbum Daniel Choi | enable training mask2former and maskformer for transformers trainer (#28277)
+35e9d2b223 | 2024-01-04 | Yoach Lacombe | Fix error in M4T feature extractor (#28340)
+7ce05f49 | 2024-01-04 | Yuval Tassa | Improve documentation of solver parameters.
+7226f3d2b0 | 2024-01-05 | Ella Charlaix | Update VITS modeling to enable ONNX export (#28141)
+feb92bf5 | 2024-01-05 | Erik Frey | MJX ray for planes, spheres, capsules, and boxes.
+57e9c83213 | 2024-01-05 | Fernando Rodriguez Sanchez | Fix pos_mask application and update tests accordingly (#27892)
+4ab5fb8941 | 2024-01-05 | hugo-syn | chore: Fix typo s/exclusivelly/exclusively/ (#28361)
+ca023a6f | 2024-01-05 | Nimrod Gileadi | Update EGL init code for Python 3.12.
+c59a33dd | 2024-01-05 | Nimrod Gileadi | Use std::string_view instead of absl::string_view in fixture.cc.
+899d8351f9 | 2024-01-05 | Sangbum Daniel Choi | [DETA] Improvement and Sync from DETA especially for training (#27990)
+cadf93a6fc | 2024-01-05 | Susnato Dhar |  fix FA2 when using quantization for remaining models (#28341)
+03b980990a | 2024-01-05 | yuanwu2017 | Don't check the device when device_map=auto (#28351)
+c79e1e5d | 2024-01-06 | Yuval Tassa | Add documentation image variants compatible with dark mode. Fixes #587
+3eddda1111 | 2024-01-07 | Susnato Dhar | [Phi2] Add support for phi2 models (#28211)
+5308b485 | 2024-01-07 | Yuval Tassa | Improve dark mode behavior of arrowhead matrix image.
+2272ab57a9 | 2024-01-08 | Avimanyu Bandyopadhyay | Remove shell=True from subprocess.Popen to Mitigate Security Risk (#28299)
+53cffeb33c | 2024-01-08 | Chi | Enhancing Code Readability and Maintainability with Simplified Activation Function Selection. (#28349)
+7d9d5cea55 | 2024-01-08 | Hz, Ji | remove two deprecated function (#28220)
+0c2121f99b | 2024-01-08 | Mohamed Abu El-Nasr | Fix building alibi tensor when num_heads is not a power of 2 (#28380)
+3b742ea84c | 2024-01-08 | NielsRogge | Add SigLIP (#26522)
+98dba52ccd | 2024-01-08 | Ondrej Major | Bugfix / ffmpeg input device (mic) not working on Windows (#27051)
+73c88012b7 | 2024-01-08 | Rosie Wood | Add segmentation map processing to SAM Image Processor (#27463)
+87a6cf41d0 | 2024-01-08 | zspo | [AttentionMaskConverter] fix sdpa unmask unattended (#28369)
+baaaa106 | 2024-01-09 | Alessio Quaglino | Fix typo in plugin docs.
+8604dd308d | 2024-01-09 | Patrick von Platen | [SDPA] Make sure attn mask creation is always done on CPU (#28400)
+357971ec36 | 2024-01-09 | Sangbum Daniel Choi | fix auxiliary loss training in DetrSegmentation (#28354)
+976189a6df | 2024-01-09 | Xuehai Pan | Fix initialization for missing parameters in `from_pretrained` under ZeRO-3 (#28245)
+5c7e11e010 | 2024-01-09 | Yih-Dar | update warning for image processor loading (#28209)
+b643c08c | 2024-01-09 | Yuval Tassa | Recommend CoACD for convex mesh decomposition in the docs.
+8247ddea | 2024-01-09 | Yuval Tassa | Recommend fTetWild for tetrahedral meshing in the docs.
+889353df | 2024-01-10 | Alessio Quaglino | Replace `meshid` and `hfieldid` with `mjCMesh` and `mjCHField` pointers in `mjCGeom`.
+8a9b0413 | 2024-01-10 | Alessio Quaglino | Replace `objid` with `obj` pointers.
+d4e8070a | 2024-01-10 | Baruch Tabanpour | Update doc about MJX meshes, fixes #1325.
+932ad8af7a | 2024-01-10 | dependabot[bot] | Bump fonttools from 4.31.1 to 4.43.0 in /examples/research_projects/decision_transformer (#28417)
+85ab6183 | 2024-01-10 | Erik Frey | Add ray filtering based on geom transparency and filter params.
+3724156b4d | 2024-01-10 | Francisco Kurucz | Fix load correct tokenizer in Mixtral model documentation (#28437)
+4df1d69634 | 2024-01-10 | HanHui | [BUG] BarkEosPrioritizerLogitsProcessor eos_token_id use list, tensor size mismatch (#28201)
+ee2482b6f8 | 2024-01-10 | Joao Gante | CI: limit natten version (#28432)
+371da98d | 2024-01-10 | Nimrod Gileadi | Avoid dynamically generated strings from being used as format strings in mjCError and mjXError.
+cbbe30749b | 2024-01-10 | Patrick von Platen | [Whisper] Fix slow test (#28407)
+ffd3710391 | 2024-01-10 | prasatee | Fix number of models in README.md (#28430)
+6c78bbcb83 | 2024-01-10 | Sparty | [docstring] Fix docstring for ErnieConfig, ErnieMConfig (#27029)
+fff8ca8e59 | 2024-01-10 | Susnato Dhar | update docs to add the `phi-2` example (#28392)
+cef2e40e0f | 2024-01-10 | Timothy Blattner | Fix for checkpoint rename race condition (#28364)
+0f2f0c634f | 2024-01-10 | Victor SANH | Fix `_merge_input_ids_with_image_features` for llava model (#28333)
+701298d2d3 | 2024-01-10 | Weiming Zhao | Use mmap option to load_state_dict (#28331)
+42515033 | 2024-01-10 | Yuval Tassa | Fix linter issues in user_objects_test.
+a777f52599 | 2024-01-10 | Zach Mueller | Skip now failing test in the Trainer tests (#28421)
+6015d0ad6c | 2024-01-10 | Zach Mueller | Support `DeepSpeed` when using auto find batch size (#28088)
+95091e1582 | 2024-01-11 | Alex Hedges | Set `cache_dir` for `evaluate.load()` in example scripts (#28422)
+66964c00f6 | 2024-01-11 | amyeroberts | Enable multi-label image classification in pipeline (#28433)
+56b30d9d | 2024-01-11 | Bálint Hodossy | Check the autolimits attribute before assigning default values for joint limitedness
+66a0cd3b | 2024-01-11 | Bálint Hodossy | Perform autolimit check on actuators
+3a00450d | 2024-01-11 | Bálint Hodossy | Rephrase condition for default limited definition so it's more intuitive
+5509058561 | 2024-01-11 | Gustavo de Rosa | [Phi] Extend implementation to use GQA/MQA. (#28163)
+d560637885 | 2024-01-11 | Harisankar Babu | Optionally preprocess segmentation maps for MobileViT (#28420)
+2a85345a23 | 2024-01-11 | ikkvix | Optimize the speed of the truncate_sequences function. (#28263)
+8205b2647c | 2024-01-11 | jiqing-feng | Assitant model may on a different device (#27995)
+e768616afa | 2024-01-11 | liangxuZhang | Fix load balancing loss func for mixtral (#28256)
+5d4d62d0a2 | 2024-01-11 | Matt | Correctly resolve trust_remote_code=None for AutoTokenizer (#28419)
+143451355c | 2024-01-11 | Matt | Fix docstring checker issues with PIL enums (#28450)
+59cd9de39d | 2024-01-11 | Yih-Dar | Byebye torch 1.10 (#28207)
+5fd5ef7624 | 2024-01-11 | Yih-Dar | Fix docker file (#28452)
+d019acb858 | 2024-01-11 | Yih-Dar | Use python 3.10 for docbuild (#28399)
+60cd7248 | 2024-01-11 | Yuval Tassa | Add zero vector shortcut to `mju_rotVecQuat`.
+79bcfecb | 2024-01-11 | Yuval Tassa | Tidy up `mj_kinematics` implementation.
+5d46c395 | 2024-01-12 | Alessio Quaglino | Increased SdfLib bounding box by 10% to prevent querying outside it during collision detection.
+4e36a6cd00 | 2024-01-12 | amyeroberts | Mark two logger tests as flaky (#28458)
+666a6f078c | 2024-01-12 | amyeroberts | Update metadata loading for oneformer (#28398)
+c45ef1c0d1 | 2024-01-12 | dependabot[bot] | Bump jinja2 from 2.11.3 to 3.1.3 in /examples/research_projects/decision_transformer (#28457)
+995a7ce9a8 | 2024-01-12 | Hankyeol Kyung | Fix broken link on page (#28451)
+19e83d174c | 2024-01-12 | jiqing-feng | Doc (#28431)
+dc01cf9c5e | 2024-01-12 | Joao Gante | Docs: add model paths (#28475)
+d026498830 | 2024-01-12 | Joao Gante | Generate: deprecate old public functions (#28478)
+afc45b13ca | 2024-01-12 | Joao Gante | Generate: refuse to save bad generation config files (#28477)
+4fb3d3a0f6 | 2024-01-12 | Joao Gante | TF: purge `TFTrainer` (#28483)
+2382706a1c | 2024-01-12 | Matt | Fix docstrings and update docstring checker error message (#28460)
+29a2b14206 | 2024-01-12 | Siddartha Naidu | Change progress logging to once across all nodes (#28373)
+edb314ae2b | 2024-01-12 | sungho-ham | Fix torch.ones usage in xlnet (#28471)
+dccf362 | 2024-01-12 | vinjn | Move enc to gloabal namespace
+07bdbebb48 | 2024-01-12 | Younes Belkada | [`Awq`] Add llava fused modules support (#28239)
+266c67b06a | 2024-01-12 | Younes Belkada | [`Mixtral` / `Awq`] Add mixtral fused modules for Awq  (#28240)
+e304f9769c | 2024-01-13 | Apoorv Saxena | Adding Prompt lookup decoding (#27775)
+bc72b4e2cd | 2024-01-13 | Joao Gante | Generate: fix candidate device placement (#28493)
+8f247d5e | 2024-01-15 | Abhishek Joshi | Merge branch 'google-deepmind:main' into usd-integration
+cab1c6bb | 2024-01-15 | Alessio Quaglino | Preallocate mjCBoundingVolumeHierarchy and avoid copies during MakeBVH.
+1e2e0b30 | 2024-01-15 | Alessio Quaglino | Remove all visual-only assets if `discardvisual` is selected, not only the geoms.
+acf698e2 | 2024-01-15 | Alessio Quaglino | Store pointer to index in mjCBoundingVolume if possible.
+edb170238f | 2024-01-15 | amyeroberts | SiLU activation wrapper for safe importing (#28509)
+735968b61c | 2024-01-15 | Boris Dayma | fix: sampling in flax keeps EOS (#28378)
+3b440921 | 2024-01-15 | Copybara-Service | Merge pull request #1268 from Balint-H:feature/unity-hmap-dyn
+c77f984d | 2024-01-15 | Copybara-Service | Merge pull request #1330 from Balint-H:fix/unity-joint-limits
+121641cab1 | 2024-01-15 | Francisco Kurucz | Fix paths to AI Sweden Models reference and model loading (#28423)
+7e0ddf89f4 | 2024-01-15 | Joao Gante | Generate: consolidate output classes (#28494)
+7c8dd88d13 | 2024-01-15 | Marc Sun | [GPTQ] Fix test (#28018)
+72db39c065 | 2024-01-15 | Matt | Add a use_safetensors arg to TFPreTrainedModel.from_pretrained() (#28511)
+78d767e3c8 | 2024-01-15 | Rishit Ratna | Fixed minor typos (#28489)
+366c03271e | 2024-01-15 | thedamnedrhino | Tokenizer kwargs in textgeneration pipe (#28362)
+ff86bc364d | 2024-01-15 | Timothy Cronin | improve dev setup comments and hints (#28495)
+881e966ace | 2024-01-15 | Tom Aarsen | [`chore`] Update warning text, a word was missing (#28017)
+2388b651 | 2024-01-15 | Tom Erez | Unity plug-in: Fix for when xml file has no <compiler> section.
+64bdbd888c | 2024-01-15 | Yih-Dar | Don't set `finetuned_from` if it is a local path  (#28482)
+1b9a2e4c80 | 2024-01-15 | Younes Belkada | [`core`/ FEAT] Add the possibility to push custom tags using `PreTrainedModel` itself (#28405)
+a573ac74fd | 2024-01-15 | yuanwu2017 | Add the XPU device check for pipeline mode (#28326)
+80674149 | 2024-01-16 | Alessio Quaglino | Allow pinning flexes to non-simple bodies. Fixes #1270.
+fe23256b73 | 2024-01-16 | Arthur | [`SpeechT5Tokenization`]  Add copied from and fix the `convert_tokens_to_string` to match the fast decoding scheme (#28522)
+96d0883103 | 2024-01-16 | Arthur | [`TokenizationRoformerFast`]  Fix the save and loading (#28527)
+716df5fb7e | 2024-01-16 | Arthur | [ `TokenizationUtils`] Fix `add_special_tokens` when the token is already there (#28520)
+a02fc405 | 2024-01-16 | Baruch Tabanpour | Add naive ray mesh implementation.
+ee922be3 | 2024-01-16 | Erik Frey | Benchmark improvements.
+02f8738ef8 | 2024-01-16 | fxmarty | Clearer error for SDPA when explicitely requested (#28006)
+66db33ddc8 | 2024-01-16 | fxmarty | Fix mismatching loading in from_pretrained with/without accelerate (#28414)
+002566f398 | 2024-01-16 | Hamza FILALI | Improving Training Performance and Scalability Documentation (#28497)
+f4f57f9dfa | 2024-01-16 | Joao Gante | Config: warning when saving generation kwargs in the model config (#28514)
+07ae53e6e7 | 2024-01-16 | Nima Yaqmuri | Fix/speecht5 bug (#28481)
+0cdcd7a2b3 | 2024-01-16 | regisss | Remove `task` arg in `load_dataset` in image-classification example (#28408)
+3c1907e6 | 2024-01-16 | Yuval Tassa | Fix rendering of links in documentation.
+45208a5f | 2024-01-16 | Yuval Tassa | Update Sphinx from 4.5.0 to 5.3.0 fixing broken docs build.
+98dda8ed03 | 2024-01-17 | Ahmed Elnaggar | Fix Switch Transformers When sparse_step = 1 (#28564)
+edc254b2 | 2024-01-17 | Baruch Tabanpour | Update MJX doc for #1344.
+2c1eebc121 | 2024-01-17 | fxmarty | Fix SDPA tests (#28552)
+a6adc05e6b | 2024-01-17 | fxmarty | symbolic_trace: add past_key_values, llama, sdpa support (#28447)
+d93ef7d751 | 2024-01-17 | Gustavo de Rosa | Fixes default value of `softmax_scale` in `PhiFlashAttention2`. (#28537)
+7142bdfa90 | 2024-01-17 | inisis | Add is_model_supported for fx (#28521)
+d6ffe74dfa | 2024-01-17 | Junyang Lin | Add qwen2 (#28436)
+71b05617 | 2024-01-17 | Kyle Bayes | Clean up formatting issues in user_objects.h
+09eb11a1bd | 2024-01-17 | Patrick von Platen | [Makefile] Exclude research projects from format (#28551)
+a14a584f | 2024-01-17 | Yuval Tassa | Fix bug in muscle length-gain curve. Fixes #1342
+2feefbc5 | 2024-01-17 | Yuval Tassa | Remove fine-grained timing from narrow-phase collision functions, delete `mjTIMER_COL_MID`.
+67a00a3a | 2024-01-17 | Yuval Tassa | Rename `mjMAXTHREADS` -> `mjMAXTHREAD` (consistency).
+8189977885 | 2024-01-18 | Arthur | [`Core Tokenization`] Support a fix for spm fast models (#26678)
+5d8eb93eee | 2024-01-18 | hugo-syn | chore: Fix multiple typos (#28574)
+c662c78c71 | 2024-01-18 | Jeremy Fowers | Fix the documentation checkpoint for xlm-roberta-xl (#28567)
+fa6d12f74f | 2024-01-18 | Lucas Thompson | Allow to train dinov2 with different dtypes like bf16 (#28504)
+0eaa5ea38e | 2024-01-18 | Sanchit Gandhi | [ASR Pipe] Update init to set model type and subsequently call parent init method (#28486)
+186aa6befe | 2024-01-18 | Sanchit Gandhi | [Whisper] Fix audio classification with weighted layer sum (#28563)
+619ecfe26f | 2024-01-18 | Sanchit Gandhi | [Whisper Tok] Move token ids to CPU when computing offsets (#28485)
+3005f96552 | 2024-01-18 | Yih-Dar | Save `Processor` (#27761)
+0754217c82 | 2024-01-18 | Yih-Dar | Use `LoggingLevel` context manager in 3 tests (#28575)
+a1668cc72e | 2024-01-18 | Yih-Dar | Use `weights_only` only if torch >= 1.13 (#28506)
+d2cdefb9ec | 2024-01-18 | Yoach Lacombe | Add new meta w2v2-conformer BERT-like model (#28165)
+772307be76 | 2024-01-18 | Yoach Lacombe | Making CTC training example more general (#28582)
+b2748a6efd | 2024-01-19 | Amy Roberts | v4.38.dev.0
+5cbaa233 | 2024-01-19 | Erik Frey | Remove TEST_FILES from MJX test_util.py.
+8db64367b2 | 2024-01-19 | Fanli Lin | Fix wrong xpu device in DistributedType.MULTI_XPU mode (#28386)
+5b7f4bc6c1 | 2024-01-19 | isaac-vidas | [`Llava`] Fix convert_llava_weights_to_hf.py script (#28570)
+948ffff407 | 2024-01-19 | Joao Gante | RWKV: raise informative exception when attempting to manipulate `past_key_values` (#28600)
+a1ddbdf7 | 2024-01-19 | Kyle Bayes | Add an implementation of a cache for assets for compilation speedups.
+d15781597a | 2024-01-19 | Matt | Allow add_tokens for ESM (#28535)
+faf03541e2 | 2024-01-19 | NielsRogge | [SigLIP] Don't pad by default (#28578)
+9efec11400 | 2024-01-19 | Ofir Zafrir | Fix `_speculative_sampling` implementation (#28508)
+690fe73f20 | 2024-01-19 | Patrick von Platen | [Whisper] Finalize batched SOTA long-form generation (#27658)
+d4fc1eb498 | 2024-01-19 | Saibo-creator | feat: Sequential beam search (#26304)
+3f69f415ad | 2024-01-19 | Sangbum Daniel Choi | Fix auxiliary loss related code in transformers (#28406)
+db9a7e9d3d | 2024-01-19 | Yih-Dar | Don't save `processor_config.json` if a processor has no extra attribute  (#28584)
+268fc1fdfa | 2024-01-19 | Yoach Lacombe | Add w2v2bert to pipeline (#28585)
+fea7c10b | 2024-01-19 | Yuval Tassa | Add `bvhactive` flag to `visual/global`. Fixes #1279.
+a23a3687 | 2024-01-19 | Yuval Tassa | clean up rollout.cc
+e0864ab7 | 2024-01-19 | Yuval Tassa | Fix formatting bugs in changelog.
+042e3c9c | 2024-01-20 | Bálint Hodossy | Reuse indices in mesh parsing, remove trailing nulls in mesh writing
+83f9196cc4 | 2024-01-21 | Arthur | [`GPTNeoX`] Fix BC issue with 4.36 (#28602)
+e547458c43 | 2024-01-22 | amyeroberts | Fix phi model doc checkpoint (#28581)
+590be773e6 | 2024-01-22 | amyeroberts | [`SigLIP`] Only import tokenizer if sentencepiece available (#28636)
+deb2b59073 | 2024-01-22 | bofeng huang | Fix lr_scheduler in no_trainer training scripts (#27872)
+dafd59512c | 2024-01-22 | isaac-vidas | [`Llava`] Update convert_llava_weights_to_hf.py script (#28617)
+f0acf7b6d8 | 2024-01-22 | jheitmann | Fix id2label assignment in run_classification.py (#28590)
+692c3c6b73 | 2024-01-22 | Matt | Add config tip to custom model docs (#28601)
+bf674153d3 | 2024-01-22 | Matt | Add missing key to TFLayoutLM signature (#28640)
+a35ea570a8 | 2024-01-22 | Sounak Dey | Update image_processing_deformable_detr.py (#28561)
+d336c56d94 | 2024-01-22 | Yih-Dar | Avoid root logger's level being changed (#28638)
+e201864bcb | 2024-01-22 | Younes Belkada | [`GPTNeoX`] Fix GPTNeoX + Flash Attention 2 issue (#28645)
+aceb52bd | 2024-01-22 | Yuval Tassa | Improvements to `mujoco.rollout`:
+27c79a0fb4 | 2024-01-23 | amyeroberts | Enable instantiating model with pretrained backbone weights (#28214)
+9a4521dd9b | 2024-01-23 | cmathw | Support single token decode for `CodeGenTokenizer` (#28628)
+039866094c | 2024-01-23 | Dave Berenbaum | integrations: fix DVCLiveCallback model logging (#28653)
+0a7be173 | 2024-01-23 | Erik Frey | Adds support for explicit dense/sparse mass matrices to MJX.
+
+logs/llama_stat.txt:    Update and add comments about the shape of the key and value
+logs/llama_stat.txt:    Add FAQs
+logs/llama_stat.txt:    Merge pull request #860 from facebookresearch/add-issue-template
+logs/llama_stat.txt:    made some small fixes and added some context.
+logs/llama_stat.txt:    Add "--continue" flag to wget for model binary in order to resume dl
+logs/llama_stat.txt:    Add "--continue" flag to wget for model binary in order to resume downloads.
+logs/llama_stat.txt:    Added a link to the FAQ from the readme.
+logs/llama_stat.txt:    Added a QnA on using Llama 2 with languages other than english.
+logs/llama_stat.txt:    Merge pull request #779 from javier-m/add-seed
+logs/llama_stat.txt:    add seed
+logs/llama_stat.txt:    add seed
+logs/llama_stat.txt:    Adding quick start steps
+logs/llama_stat.txt:commit 77062717054710e352a99add63d160274ce670c6
+logs/llama_stat.txt:    Remove linkshim workaround from README
+logs/llama_stat.txt:    Merge pull request #390 from tomorrmato/add_example_type_hint
+logs/llama_stat.txt:    added type hint in example code
+logs/llama_stat.txt:    Remove unused Any import
+logs/llama_stat.txt:    added remanjg docs
+logs/llama_stat.txt:    add docstrings
+logs/llama_stat.txt:    Updating to add the date of the updates..
+logs/llama_stat.txt:    add PR number
+logs/llama_stat.txt:    Remove linkshim workaround from README
+logs/llama_stat.txt:    remove double-spacing
+logs/llama_stat.txt:    added type hint in example code
+logs/llama_stat.txt:    Add help on how to re-download model.
+logs/llama_stat.txt:    Remove unused Any import
+logs/llama_stat.txt:    Added colon in README.md
+logs/llama_stat.txt:    Added collon
+logs/llama_stat.txt:    The models support a 2048 context window. This is not well advertised and people are getting confused. No sense having a smaller size here, as it just adds to the confusion.
+logs/llama_stat.txt:    added reference
+logs/llama_stat.txt:    Add FAQ.md // add command line options
+logs/mujoco_stat.txt:    Add `mj_rayHfieldNormal` (not exposed in public header)
+logs/mujoco_stat.txt:    Change-Id: I27d6c46024d55addbc22eed276331e2ef5acfa7d
+logs/mujoco_stat.txt:    Add `mj_raySdfNormal` (not exposed in public header)
+logs/mujoco_stat.txt:    Add checks for nullness when iterating over the lights.
+logs/mujoco_stat.txt:    Removed unused font uploading functionality.
+logs/mujoco_stat.txt:    Add `mj_fwdKinematics` and a table improving documentation of the MuJoCo computation pipeline structure.
+logs/mujoco_stat.txt:    Add type hints to tuple constants in codegen/generators/constants.py.
+logs/mujoco_stat.txt:    Make table shadows visible in dark theme, add a table type with smaller text.
+logs/mujoco_stat.txt:    Add a light box-shadow to docutils tables (excluding mjcf-attributes) when in dark mode or auto mode with dark preference, so that the table boundaries are visible against the dark background.
+logs/mujoco_stat.txt:    Add OSX and WIN32 support for getting the native window pointer.
+logs/mujoco_stat.txt:    Add `mj_rayMeshNormal` (not exposed in public header)
+logs/mujoco_stat.txt:    Add names to some sensors in sleep test XML.
+logs/mujoco_stat.txt:    Refactor MuJoCo WASM struct codegen.
+logs/mujoco_stat.txt:    Remove TODO (charts have been implemented).
+logs/mujoco_stat.txt:commit 9274a0014ae381f9add4eb5104059a114aeaca9b
+logs/mujoco_stat.txt:    Refactor hfield-convex collision code. This should be a no-op.
+logs/mujoco_stat.txt:    Remove extraneous colons in XMLreference
+logs/mujoco_stat.txt:    Refactor epaWitness.
+logs/mujoco_stat.txt:    Update CMakeLists.txt to add/remove files.
+logs/mujoco_stat.txt:    Add `mj_copyState`
+logs/mujoco_stat.txt:    Refactor simulation state history tracking into a SimHistory class.
+logs/mujoco_stat.txt:    Add Frequently Asked Questions: Learning frameworks to MuJoCo Warp documentation.
+logs/mujoco_stat.txt:    Remove MPR from comment.
+logs/mujoco_stat.txt:    Add test explaining body_rootid and body_weldid semantics
+logs/mujoco_stat.txt:    - Add Toolbar and StatusBar.
+logs/mujoco_stat.txt:    - Rename "Free" camera to "Tumble"; add WASD-based free camera.
+logs/mujoco_stat.txt:    - Remove "non-classic" UX mode.
+logs/mujoco_stat.txt:    Add ray normal computation for primitives (currently private)
+logs/mujoco_stat.txt:    MuJoCo Warp documentation: Add note about `nconmax` and `njmax` not being parsed from XML.
+logs/mujoco_stat.txt:    For each contact point, we used to first compute the vertex weights on a triangle and then add a contact point per vertex using the flex interpolation (trilinear or quadratic), obtaining the total weight by multiplying the vertex weight and the basis function value at that vertex. After this change, each contact point is added directly by evaluating the basis function directly a the point.
+logs/mujoco_stat.txt:    Remove unused argument from mj_vertBodyWeight.
+logs/mujoco_stat.txt:    Add support for OpenSans and font-awesome fonts.
+logs/mujoco_stat.txt:    Add a README with instructions for how to build and run MuJoCo Studio externally
+logs/mujoco_stat.txt:    Add steps to build MuJoCo Studio to Github actions
+logs/mujoco_stat.txt:    Refactor MuJoCo WASM bindings functions code generation and auto-generate functions requiring argument boundchecks.
+logs/mujoco_stat.txt:    * Removed the caution callout since some internal CI has been implemented.
+logs/mujoco_stat.txt:    * Added to clarify the state of bindings build process on Windows.
+logs/mujoco_stat.txt:    Refactor Github actions so that all build steps are implemented as functions in a separate build_steps.sh file.
+logs/mujoco_stat.txt:    Refactor hill climbing support function.
+logs/mujoco_stat.txt:    Add a github actions job which quickly determines if the WASM build is broken by only testing on one platform
+logs/mujoco_stat.txt:    Remove support for custom fonts for OSS project for now.
+logs/mujoco_stat.txt:    Change-Id: I1a72ca02f5a50194bb7770d5765c6140adde1852
+logs/mujoco_stat.txt:    Remove destructors from `Mjs` wrapper structs.
+logs/mujoco_stat.txt:    Remove unused manually added structs from WASM bindings.
+logs/mujoco_stat.txt:    Remove redundant call to GenerateMipMaps.
+logs/mujoco_stat.txt:    Remove implot from toolbox/window.cc
+logs/mujoco_stat.txt:    Refactor WASM binding directory structure
+logs/mujoco_stat.txt:    Refactor WASM bindings in preparation for codegen directory structure update
+logs/mujoco_stat.txt:    Add `SLEEP` to `EnableBit` enum.
+logs/mujoco_stat.txt:commit 6fb43947019712eeb41f40dc5e496ab4846dadd6
+logs/mujoco_stat.txt:    Refactor array initialization for `mjData` and `mjvScene` in MuJoCo WASM bindings.
+logs/mujoco_stat.txt:    Add sleeping documentation
+logs/mujoco_stat.txt:    Add sleep related data structures
+logs/mujoco_stat.txt:    Refactor: Generate all struct bindings within the codegen.
+logs/mujoco_stat.txt:    Remove `MjVFS` from generated Emscripten bindings.
+logs/mujoco_stat.txt:    Refactor Emscripten bindings generation for MuJoCo structs.
+logs/mujoco_stat.txt:    Remove debug printing functionality from WASM codegen.
+logs/mujoco_stat.txt:    Remove Sync and Scene functions from Renderer.
+logs/mujoco_stat.txt:    Remove dependencies on mjvScene for interactions.
+logs/mujoco_stat.txt:    Added `sphinx.ext.extlinks` to the Sphinx configuration and defined `extlinks` for `:issue:` and `:pr:` roles, pointing to the MuJoCo GitHub repository. Updated `changelog.rst` to use these new roles, replacing `:github:issue:` and `:github:pull:` which are currently failing.
+logs/mujoco_stat.txt:    Refactor: Group autogenerated structs source in bindings.cc
+logs/mujoco_stat.txt:    Refactor struct dependency sorting to use wrapped field data.
+logs/mujoco_stat.txt:    Add convenience methods to CodeBuilder and cleanup some WASM bindings code generation
+logs/mujoco_stat.txt:    Change-Id: I97ab732eb11c63a6aaf7fa95add0b51bc0a56525
+logs/mujoco_stat.txt:    * Add newline function to code_builder
+logs/mujoco_stat.txt:    * Remove type aliases which made jump to definition less ergonomic
+logs/mujoco_stat.txt:    * Add types to constants
+logs/mujoco_stat.txt:    Add quadratic stiffness to flex.
+logs/mujoco_stat.txt:    Add JavaScript bindings and WASM support
+logs/mujoco_stat.txt:    Add JavaScript bindings and WASM support
+logs/mujoco_stat.txt:    Add JavaScript bindings and WASM support
+logs/mujoco_stat.txt:    Remove obsolete docs references to convexhull.
+logs/mujoco_stat.txt:    Add `__setattr__` to `_MjBindModel` and `_MjBindData`.
+logs/mujoco_stat.txt:    Remove dependency on Window, Physics, and Renderer classes.
+logs/mujoco_stat.txt:    Add naconmax, deprecation warning for nconmax.
+logs/mujoco_stat.txt:    Do not add bodies at mesh points for quadratic flex interpolation.
+logs/mujoco_stat.txt:    This removes a dependency on mjvScene from the App class.
+logs/mujoco_stat.txt:    Add early exit in `mj_xfrcAccumulate` using `mju_isZeroByte`
+logs/mujoco_stat.txt:    Add CMakeLists.txt files for new (experimental) code.
+logs/mujoco_stat.txt:    Adds a MUJOCO_BUILD_STUDIO option to enable building of the `studio` app (disabled by default).
+logs/mujoco_stat.txt:    Adds a MUJOCO_USE_FILAMENT to allow the studio app to use the filament rendering backend. A separate MUJOCO_USE_FILAMENT_VULKAN flag can be used to enable vulkan rendering.
+logs/mujoco_stat.txt:    Add Batched Model Fields section to MuJoCo Warp documentation.
+logs/mujoco_stat.txt:    MuJoCo Warp documentation: Add `nworld`, `nconmax`, and `njmax` section and update introduction.
+logs/mujoco_stat.txt:    Add CMake configurations for new third_party dependencies.
+logs/mujoco_stat.txt:    Adds targets for dear_imgui, implot, filament, sdl2, and webp. These
+logs/mujoco_stat.txt:    If building simulate with USD support remove the no-deprecated warning due to deprecated header usage in USD.
+logs/mujoco_stat.txt:    Add tendon.cpp to mjcPhysics CMake
+logs/mujoco_stat.txt:    Add section in mjcPhysics documentation for MjcTendon.
+logs/mujoco_stat.txt:    Change-Id: I70476f57b8d3371cefd02e840add279423913f3f
+--- Dissonance Signals ---
+=== Dissonance Index ===
+diffs/nanogpt_train.py:from contextlib import nullcontext
+diffs/nanogpt_train.py:ctx = nullcontext() if device_type == 'cpu' else torch.amp.autocast(device_type=device_type, dtype=ptdtype)
+diffs/nanogpt_train.py:            # the official way to do this is with model.no_sync() context manager, but
+diffs/nanogpt_train.py:            # looking at the source of that context manager, it just toggles this variable
+diffs/llama_vs_nano_training.diff:+from contextlib import nullcontext
+diffs/nanogpt_model.py:            # if the sequence context is growing too long we must crop it at block_size
+diffs/nanogpt_example_config.py:block_size = 256 # context of up to 256 previous characters
+diffs/transformers_tokenization_utils_base.py:        self._in_target_context_manager = False
+diffs/transformers_tokenization_utils_base.py:            # The context manager will send the inputs as normal texts and not text_target, but we shouldn't change the
+diffs/transformers_tokenization_utils_base.py:            if not self._in_target_context_manager and hasattr(self, "_switch_to_input_mode"):
+diffs/mujoco_include/mujoco/mjrender.h:typedef enum mjtFontScale_ {      // font scale, used at context creation
+diffs/mujoco_include/mujoco/mjrender.h://---------------------------------- mjrContext ----------------------------------------------------
+diffs/mujoco_include/mujoco/mjrender.h:struct mjrContext_ {                // custom OpenGL context
+diffs/mujoco_include/mujoco/mjrender.h:typedef struct mjrContext_ mjrContext;
+diffs/mujoco_include/mujoco/mujoco.h:// Set default mjrContext.
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_defaultContext(mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:// Allocate resources in custom OpenGL context; fontscale is mjtFontScale.
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_makeContext(const mjModel* m, mjrContext* con, int fontscale);
+diffs/mujoco_include/mujoco/mujoco.h:// Change font of existing context.
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_changeFont(int fontscale, mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:// Add Aux buffer with given index to context; free previous Aux buffer.
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_addAux(int index, int width, int height, int samples, mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:// Free resources in custom OpenGL context, set to default.
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_freeContext(mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_resizeOffscreen(int width, int height, mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_uploadTexture(const mjModel* m, const mjrContext* con, int texid);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_uploadMesh(const mjModel* m, const mjrContext* con, int meshid);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_uploadHField(const mjModel* m, const mjrContext* con, int hfieldid);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_restoreBuffer(const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_setBuffer(int framebuffer, mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:                          mjrRect viewport, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:                          mjrRect viewport, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:                          int flg_color, int flg_depth, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_setAux(int index, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_blitAux(int index, mjrRect src, int left, int bottom, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_text(int font, const char* txt, const mjrContext* con,
+diffs/mujoco_include/mujoco/mujoco.h:                       const char* overlay, const char* overlay2, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI mjrRect mjr_maxViewport(const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:                     const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_figure(mjrRect viewport, mjvFigure* fig, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_render(mjrRect viewport, mjvScene* scn, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjui_resize(mjUI* ui, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:                       const mjuiState* state, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI mjuiItem* mjui_event(mjUI* ui, mjuiState* state, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjui_render(mjUI* ui, const mjuiState* state, const mjrContext* con);
+diffs/mujoco_src/render/render_context.h:#ifndef MUJOCO_SRC_RENDER_RENDER_CONTEXT_H_
+diffs/mujoco_src/render/render_context.h:#define MUJOCO_SRC_RENDER_RENDER_CONTEXT_H_
+diffs/mujoco_src/render/render_context.h:// set default mjrContext
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_defaultContext(mjrContext* con);
+diffs/mujoco_src/render/render_context.h:// allocate resources in custom OpenGL context; fontscale is mjtFontScale
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_makeContext(const mjModel* m, mjrContext* con, int fontscale);
+diffs/mujoco_src/render/render_context.h:// Change font of existing context.
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_changeFont(int fontscale, mjrContext* con);
+diffs/mujoco_src/render/render_context.h:// Add Aux buffer with given index to context; free previous Aux buffer.
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_addAux(int index, int width, int height, int samples, mjrContext* con);
+diffs/mujoco_src/render/render_context.h:// free resources in custom OpenGL context, set to default
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_freeContext(mjrContext* con);
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_resizeOffscreen(int offwidth, int offheight, mjrContext* con);
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_uploadTexture(const mjModel* m, const mjrContext* con, int texid);
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_uploadMesh(const mjModel* m, const mjrContext* con, int meshid);
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_uploadHField(const mjModel* m, const mjrContext* con, int hfieldid);
+diffs/mujoco_src/render/render_context.h:#endif  // MUJOCO_SRC_RENDER_RENDER_CONTEXT_H_
+diffs/mujoco_src/render/render_gl2.h:MJAPI void mjr_restoreBuffer(const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:void mjr_textActual(int font, const char* txt, const mjrContext* con,
+diffs/mujoco_src/render/render_gl2.h:MJAPI void mjr_setBuffer(int framebuffer, mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:                          mjrRect viewport, const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:                          mjrRect viewport, const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:                          int flg_color, int flg_depth, const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:MJAPI void mjr_setAux(int index, const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:                       const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:MJAPI void mjr_text(int font, const char* txt, const mjrContext* con,
+diffs/mujoco_src/render/render_gl2.h:                       const char* overlay, const char* overlay2, const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:MJAPI mjrRect mjr_maxViewport(const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:                     const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:MJAPI void mjr_figure(mjrRect viewport, mjvFigure* fig, const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.c:void mjr_setBuffer(int framebuffer, mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:void mjr_restoreBuffer(const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:static inline void flipDepthIfRequired(float* depth, mjrRect viewport, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:                    mjrRect viewport, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:                    mjrRect viewport, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:                    int flg_color, int flg_depth, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:void mjr_setAux(int index, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:void mjr_blitAux(int index, mjrRect src, int left, int bottom, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:void mjr_textActual(int font, const char* txt, const mjrContext* con,
+diffs/mujoco_src/render/render_gl2.c:void mjr_text(int font, const char* txt, const mjrContext* con,
+diffs/mujoco_src/render/render_gl2.c:                        const char* overlay, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:                 const char* overlay, const char* overlay2, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:mjrRect mjr_maxViewport(const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:               const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:static int textwidth(const mjrContext* con, const char* text) {
+diffs/mujoco_src/render/render_gl2.c:void mjr_figure(mjrRect viewport, mjvFigure* fig, const mjrContext* con) {
+diffs/mujoco_src/render/CMakeLists.txt:    render_context.c
+diffs/mujoco_src/render/CMakeLists.txt:    render_context.h
+diffs/mujoco_src/render/glad/glad.h:struct _cl_context;
+diffs/mujoco_src/render/glad/glad.h:#define GL_CONTEXT_FLAG_DEBUG_BIT 0x00000002
+diffs/mujoco_src/render/glad/glad.h:#define GL_CONTEXT_FLAG_DEBUG_BIT_KHR 0x00000002
+diffs/mujoco_src/render/glad/glad.c:  // library. Since mjr_makeContext cannot succeed without a valid OpenGL having already been
+diffs/mujoco_src/render/glad/glad.c:              "this most likely means that a valid OpenGL context has not been created before "
+diffs/mujoco_src/render/glad/glad.c:              "mjr_makeContext was called");
+diffs/mujoco_src/render/glad/glad.c:   * https://github.com/glfw/glfw/blob/master/src/context.c#L36
+diffs/mujoco_src/render/render_gl3.h:MJAPI void mjr_render(mjrRect viewport, mjvScene* scn, const mjrContext* con);
+diffs/mujoco_src/render/render_context.c:#include "render/render_context.h"
+diffs/mujoco_src/render/render_context.c://----------------------------- custom OpenGL context ----------------------------------------------
+diffs/mujoco_src/render/render_context.c:// set default mjrContext
+diffs/mujoco_src/render/render_context.c:void mjr_defaultContext(mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:  memset(con, 0, sizeof(mjrContext));
+diffs/mujoco_src/render/render_context.c:static void makePlane(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:static void makeMesh(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:void mjr_uploadMesh(const mjModel* m, const mjrContext* con, int meshid) {
+diffs/mujoco_src/render/render_context.c:static void makeHField(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:void mjr_uploadHField(const mjModel* m, const mjrContext* con, int hfieldid) {
+diffs/mujoco_src/render/render_context.c:static void makeBuiltin(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:static void makeShadow(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:static void makeOff(mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:static void makeFont(mjrContext* con, int fontscale) {
+diffs/mujoco_src/render/render_context.c:static void makeMaterial(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:static void makeTexture(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:void mjr_uploadTexture(const mjModel* m, const mjrContext* con, int texid) {
+diffs/mujoco_src/render/render_context.c:static void makeSkin(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:  // save number of skins (so we can delete context without model)
+diffs/mujoco_src/render/render_context.c:void mjr_makeContext_offSize(const mjModel* m, mjrContext* con, int fontscale,
+diffs/mujoco_src/render/render_context.c:  mjr_freeContext(con);
+diffs/mujoco_src/render/render_context.c:    mju_warning("OpenGL error 0x%x in or before mjr_makeContext", err);
+diffs/mujoco_src/render/render_context.c:// allocate resources in custom OpenGL context
+diffs/mujoco_src/render/render_context.c:void mjr_makeContext(const mjModel* m, mjrContext* con, int fontscale) {
+diffs/mujoco_src/render/render_context.c:  mjr_makeContext_offSize(m, con, fontscale, 800, 600);
+diffs/mujoco_src/render/render_context.c:// Change font of existing context.
+diffs/mujoco_src/render/render_context.c:void mjr_changeFont(int fontscale, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:// Add Aux buffer to context; free previous Aux buffer.
+diffs/mujoco_src/render/render_context.c:void mjr_addAux(int index, int width, int height, int samples, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:// free resources in custom OpenGL context
+diffs/mujoco_src/render/render_context.c:void mjr_freeContext(mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:  mjr_defaultContext(con);
+diffs/mujoco_src/render/render_context.c:void mjr_resizeOffscreen(int width, int height, mjrContext* con) {
+diffs/mujoco_src/render/render_gl3.c:#include "render/render_context.h"
+diffs/mujoco_src/render/render_gl3.c:static void settexture(int type, int state, const mjrContext* con, const mjvGeom* geom) {
+diffs/mujoco_src/render/render_gl3.c:                       const mjvScene* scn, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl3.c:                          mjvScene* scn, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl3.c:static void initGL3(const mjvScene* scn, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl3.c:static void setView(int view, mjrRect viewport, const mjvScene* scn, const mjrContext* con,
+diffs/mujoco_src/render/render_gl3.c:static inline int geomcmp(int* i, int* j, void* context) {
+diffs/mujoco_src/render/render_gl3.c:  mjvGeom* geom = (mjvGeom*) context;
+diffs/mujoco_src/render/render_gl3.c:void mjr_render(mjrRect viewport, mjvScene* scn, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static int SCL(int sz, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static void initOpenGL(const mjrRect* r, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static int textwidth(const char* text, const mjrContext* con, int limit) {
+diffs/mujoco_src/ui/ui_main.c:                     const float* rgb, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                         const float* rgb, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                          const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                        const mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                     const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                       const mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                            const mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                     const mjuiState* ins, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static void makeradioline(const mjuiItem* it, const mjrContext* con, int* sep) {
+diffs/mujoco_src/ui/ui_main.c:                         const mjuiState* ins, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                      const mjuiState* ins, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:void scrollrect(mjrRect rect, const mjUI* ui, const mjrContext* con,
+diffs/mujoco_src/ui/ui_main.c:static void findmouse(const mjUI* ui, const mjuiState* ins, const mjrContext* con,
+diffs/mujoco_src/ui/ui_main.c:                      const mjuiState* ins, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static void revealcursor(mjrRect r, mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static void setcursor(mjrRect r, mjUI* ui, const mjuiState* ins, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static void tryresize(mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:void mjui_resize(mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                         const mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                 const mjuiState* state, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:mjuiItem* mjui_event(mjUI* ui, mjuiState* state, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:void mjui_render(mjUI* ui, const mjuiState* state, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.h:MJAPI void mjui_resize(mjUI* ui, const mjrContext* con);
+diffs/mujoco_src/ui/ui_main.h:                       const mjuiState* state, const mjrContext* con);
+diffs/mujoco_src/ui/ui_main.h:MJAPI mjuiItem* mjui_event(mjUI* ui, mjuiState* state, const mjrContext* con);
+diffs/mujoco_src/ui/ui_main.h:MJAPI void mjui_render(mjUI* ui, const mjuiState* state, const mjrContext* con);
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:#include <pxr/base/tf/callContext.h>
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:using pxr::TfCallContext;
+diffs/mujoco_src/experimental/platform/window.cc:  ImGui::CreateContext();
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_ES);
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GLContext gl_context = SDL_GL_CreateContext(sdl_window_);
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GL_MakeCurrent(sdl_window_, gl_context);
+diffs/mujoco_src/experimental/platform/renderer.cc:Renderer::Renderer(MakeContextFn make_context_fn)
+diffs/mujoco_src/experimental/platform/renderer.cc:    : make_context_fn_(make_context_fn) {
+diffs/mujoco_src/experimental/platform/renderer.cc:    mjr_defaultContext(&render_context_);
+diffs/mujoco_src/experimental/platform/renderer.cc:    make_context_fn_(model, &render_context_);
+diffs/mujoco_src/experimental/platform/renderer.cc:    mjr_freeContext(&render_context_);
+diffs/mujoco_src/experimental/platform/renderer.cc:  mjr_render(main_viewport, data ? &scene_ : nullptr, &render_context_);
+diffs/mujoco_src/experimental/platform/renderer.cc:  SaveScreenshotToWebp(width, height, &render_context_, filename);
+diffs/mujoco_src/experimental/platform/helpers.cc:void SaveScreenshotToWebp(int width, int height, mjrContext* con,
+diffs/mujoco_src/experimental/platform/renderer.h:  // Function that creates a mjrContext for the given model. We use a function
+diffs/mujoco_src/experimental/platform/renderer.h:  // to allow different mjrContext implementations to be created without
+diffs/mujoco_src/experimental/platform/renderer.h:  using MakeContextFn = std::function<void(const mjModel* m, mjrContext* con)>;
+diffs/mujoco_src/experimental/platform/renderer.h:  explicit Renderer(MakeContextFn make_context_fn);
+diffs/mujoco_src/experimental/platform/renderer.h:  // Returns the render context.
+diffs/mujoco_src/experimental/platform/renderer.h:  mjrContext& GetContext() { return render_context_; }
+diffs/mujoco_src/experimental/platform/renderer.h:  const mjrContext& GetContext() const { return render_context_; }
+diffs/mujoco_src/experimental/platform/renderer.h:  MakeContextFn make_context_fn_;
+diffs/mujoco_src/experimental/platform/renderer.h:  mjrContext render_context_;
+
+--- Assumption Surfaces ---
+Note high-level modeling assumptions per project here
+=== Fri 12 Dec 2025 00:07:14 NZDT ===
+Notes from grep passes (context, temperature, gravity, friction, etc.)
+
+=== Fri 12 Dec 2025 00:08:49 NZDT === Assumption Surfaces ===
+- Transformers has X config knobs, nanoGPT has Y → signal: complexity compression.
+- Llama generation temperature defaults vs Transformer CLI defaults.
+- MuJoCo hard-coded gravity/friction vs attention models assuming symbolic causality.
+
+

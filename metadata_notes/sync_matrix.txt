@@ -1,0 +1,116 @@
+=== Synchronization Matrix ===
+Date | Repo | Change Type | Description
+<<< CLUSTER START: YYYY-MM-DD → YYYY-MM-DD >>>
+LLAMA:      <summary>
+TRANSFORMERS: <summary>
+nanoGPT:    <summary>
+MuJoCo:     <summary>
+<<< CLUSTER END >>>
+<<< CLUSTER 2025-12-01 >>>
+cac0a28c83 | 2025-11-29 | Raghav Ravishankar | Add afmoe model (#42168)
+01823d7e46 | 2025-12-01 | Anton Vlasjuk | [`CI`] Fix copies (#42487)
+0fa49db120 | 2025-12-01 | Anton Vlasjuk | Fix ernie moe (#42535)
+83fe012d58 | 2025-12-01 | Arthur | small fix tokenizer regex patch (#42528)
+f78723fa1c | 2025-12-01 | Arthur | Small migration guide update (#42510)
+2375ddb426 | 2025-12-01 | Biao Zhang | T5gemma2 (#41834)
+641c99512a | 2025-12-01 | Cyril Vallez | Fix silent loading error (#42525)
+1b6b6cd0ca | 2025-12-01 | Cyril Vallez | Fix tied_weights for vlms (#42523)
+9f587100bc | 2025-12-01 | Cyril Vallez | [loading] `tie_weights` is finally symmetric (#42507)
+6e3f2f8f52 | 2025-12-01 | Cyril Vallez | [TP plans] Fix some incorrects TP plans (#42448)
+a3881a8d2f | 2025-12-01 | Dhruv Deshmukh | perf: Remove implicit CPU-GPU syncs due to implicit .item() call (#42433)
+26dbe643d1 | 2025-12-01 | Eric Bezzam | Convenient default behavior for pipeline TTS usage. (#42473)
+6316a9e176 | 2025-12-01 | Ferdinand Mom | Fix MoE for V5 (#42456)
+297f5ae8ab | 2025-12-01 | Francisco Kurucz | Fix broken link to dataset food101 (#42495)
+b663b760 | 2025-12-01 | Gabe Oppenheimer | Final preparations for the v3.4.0 release
+4c40d593 | 2025-12-01 | Google DeepMind | Add type hints to tuple constants in codegen/generators/constants.py.
+9b7134b1 | 2025-12-01 | Haroon Qureshi | Add OSX and WIN32 support for getting the native window pointer.
+94fb10bf | 2025-12-01 | Haroon Qureshi | Internal changes
+fe74ea2e | 2025-12-01 | Haroon Qureshi | Match definition with declaration.
+139a5b64 | 2025-12-01 | Haroon Qureshi | Rename `toolbox` to `platform`.
+448fc0e4 | 2025-12-01 | Haroon Qureshi | Report the actual GPU framerate rather than the main thread submit rate when using the filament renderer.
+a7e62a67 | 2025-12-01 | Haroon Qureshi | Set visual studio working directory to the `bin` directory.
+c6b587b5 | 2025-12-01 | Haroon Qureshi | Use cmake FILE(COPY) for deploying custom CMakeLists.txt.
+ea78d833 | 2025-12-01 | Haroon Qureshi | Use working directory if no HOME path specified.
+2dba972530 | 2025-12-01 | Harry Mellor | Handle decorator with optional arguments better (#42512)
+aaa7325472 | 2025-12-01 | Julien Denize | Patch Mistral Common Tokenizer 2 (#41962)
+7f5c20945a | 2025-12-01 | Khushali Desai | logic to select tf32 API as per Pytorch version (#42428)
+eb399a95f0 | 2025-12-01 | Luc Georges | feat(cb): use context manager in `generate_batch` (#42190)
+58f092ece3 | 2025-12-01 | Lysandre Debut | CLI Migration guide (#42526)
+fa3cf83912 | 2025-12-01 | Lysandre Debut | Migration guide: tokenization (#42477)
+063b431dfc | 2025-12-01 | Lysandre Debut | Migration guide typo (#42532)
+13f8ec708f | 2025-12-01 | Lysandre Debut | RC0 Disclaimer (#42530)
+3ea7ecd5ba | 2025-12-01 | Lysandre Debut | TP + EP + MoE disclaimer (#42519)
+e51e75e18a | 2025-12-01 | Marc Sun | remove tokenizer warning (#42483)
+305f82a176 | 2025-12-01 | Matt | Delete irrelevant test that sometimes fails (#42515)
+dac2ad76bc | 2025-12-01 | Matt | Fix Qwen3OmniMoE weight init (#42531)
+afd039d1ca | 2025-12-01 | Mohamed Mekkouri | [quantization] Dequant fp8 when cuda or xpu not available (#42511)
+e2f08ea579 | 2025-12-01 | Pablo Montalvo | Attempt to fix VLM gradient enabling (#41993)
+bf3f0ae70d | 2025-12-01 | Patrick von Platen | [Ministral 3] Add ministral 3 (#42498)
+cfb43aecb5 | 2025-12-01 | Raghav Ravishankar | Add afmoe to models __init__.py (#42501)
+a0216a8021 | 2025-12-01 | Rémi Ouazan | Fix a bug where compile_config gets deleted (#42474)
+11e0fc12cd | 2025-12-01 | Yih-Dar | another way of fix for #42400 (#42509)
+70baf07712 | 2025-12-01 | Yih-Dar | avoid `afmoe` job crashing (#42524)
+0c05c3bd6c | 2025-12-01 | Yih-Dar | Fix `pr_build_doc_with_comment.yml` not reporting correctly (#42505)
+ffc485f548 | 2025-12-01 | Yih-Dar | skip `MLukeTokenizerTest` temporarily (#42520)
+19e2d0ae | 2025-12-01 | Yuval Tassa | Add `mj_fwdKinematics` and a table improving documentation of the MuJoCo computation pipeline structure.
+ad24889b | 2025-12-01 | Yuval Tassa | Add `mj_rayMeshNormal` (not exposed in public header)
+e095bb6d | 2025-12-01 | Yuval Tassa | Improve rendering of dynamics pipeline schematic
+d3c858ed | 2025-12-01 | Yuval Tassa | Make table shadows visible in dark theme, add a table type with smaller text.
+4896e698 | 2025-12-01 | Yuval Tassa | Update "mjModel changes" section in `simulation.rst`
+3f17410925 | 2025-12-02 | Aarav Maheshwari | Kernel mapping error resolve (#42466)
+a5c061d24e | 2025-12-02 | Anton Vlasjuk | [`CI`] Fix copies (#42571)
+29e8522b85 | 2025-12-02 | Fabian Joswig | [Fix] dots1 expert bias routing (#41663)
+951257ad | 2025-12-02 | Gabe Oppenheimer | Fix: Update changelog formatting
+0ba8f001fe | 2025-12-02 | Harry Mellor | Add backward compatibility for methods which have been moved to `RotaryEmbeddingConfigMixin` (#42517)
+a649767573 | 2025-12-02 | Kamila Luczaj (Woo-chai) | Add FastVLM (#41112)
+52b988d83d | 2025-12-02 | Lysandre Debut | Transformers serve fix (#42570)
+5efd0d4aa5 | 2025-12-02 | Marc Sun | Fix eetq quanto quant methods (#42557)
+bc7a268fed | 2025-12-02 | Marc Sun | Fix fp8 + some enhancement (#42455)
+53d2bf6dab | 2025-12-02 | Marc Sun | fix regression (#42569)
+5690f24e66 | 2025-12-02 | Matt | Fix `parse_response` after tokenizer refactor (#42300)
+bb09a30f5a | 2025-12-02 | Mohamed Mekkouri | [Quantization] fix dequant when block size is none & static quantization (#42545)
+51c5a7a658 | 2025-12-02 | Mohamed Mekkouri | [Quantization] per tensor quantization kernel (#42560)
+64d8cf4fd9 | 2025-12-02 | Patrick von Platen | [Ministral 3] Small fix config (#42537)
+57eeb9caa2 | 2025-12-02 | Raushan Turganbay | Fix Qwen-VL family with prompt tuning (#42508)
+ac0769cd8c | 2025-12-02 | Sai-Suraj-27 | Fix failing test in Glm4vMoeIntegrationTest (#42488)
+377a8ee73f | 2025-12-02 | Wing Lian | make sure the FSDP plugin args are appropriately cast to bools (#42566)
+4ec83fe9f6 | 2025-12-02 | Yih-Dar | [test] delete `SeamlessM4TProcessorTest::test_save_load_pretrained_addition` (#42562)
+675e8763ca | 2025-12-02 | Yoni Gozlan | Allow fallback to loading from Auto"SubProcessor".from_pretrained when model_type can't be inferred from config (#42402)
+80b408d15f | 2025-12-02 | Yoni Gozlan | [SAM3] Compute masks once instead of per-layer, fix fa2 crash (#42543)
+55664b63 | 2025-12-02 | Yuval Tassa | Fix broken cross-references in mjwarp/index.rst
+8ba286ba4e | 2025-12-03 | Adele | fix: correct typos in code comments (#42577)
+a48d68c6b0 | 2025-12-03 | Albert Villanova del Moral | Fix some models cache initialization (#42586)
+9e82c7791e | 2025-12-03 | Anton Vlasjuk | Fix Ernie Moe Test (#42595)
+17c7c49600 | 2025-12-03 | Chenguang | Fix mixed torch.Tensor and DTensor in generate when use FSDP2 + LoRA (#42436)
+81aabe72d3 | 2025-12-03 | Cyril Vallez | Align tie weights in Idefics (#42551)
+dd6cfdd345 | 2025-12-03 | Furkan-rgb | Add SDPA support for PatchTST model (#42465)
+e4095388 | 2025-12-03 | Haroon Qureshi | Ensure window scale is initialized on creation.
+14513a04 | 2025-12-03 | Haroon Qureshi | Wait until previous render is finished before submitting another request.
+b8d5018e3f | 2025-12-03 | Harry Mellor | Allow `validation_fn` to be `None` in `validate_rope` (#42601)
+232ecf2cd8 | 2025-12-03 | Harry Mellor | Use `getattr` in `standardize_rope_params` because `rope_parameters` not always present (#42593)
+130dc4710f | 2025-12-03 | Marco Naguib | fix : cast into floats AFTER all assignments (#42587)
+15b79ea808 | 2025-12-03 | Mohamed Mekkouri | [Quantization] fix fbgemm (#42561)
+7266f50bc8 | 2025-12-03 | Mohamed Mekkouri | [Quantization] Remove dequant fp8 config (#42596)
+629c0da46d | 2025-12-03 | ngazagna-qc | Fix loaded data order bug when resuming from epoch >= 1 (#40691)
+ef780bf131 | 2025-12-03 | Rémi Ouazan | Add torch compile to CB (#42516)
+8507b625 | 2025-12-03 | Sam Haves | Cache the rendering mode used to allow headless segmentation rendering.
+a942fd48 | 2025-12-03 | Sam Haves | Make filament segmentation shader distinct colors optional.
+4a6b9456 | 2025-12-03 | Tom Power | Set default headlight intensity to zero if there are no physical lights in the scene.
+cba7ae865b | 2025-12-03 | Wing Lian | fix the FSDP1 default for reshard_after_forward (#42578)
+c0328af6d5 | 2025-12-03 | YangKai0616 | Fix the FA2 logic in the longcat_flash model (#42549)
+75c135d76f | 2025-12-03 | YangKai0616 | [XPU] Fix fp8 UT patch func (#42584)
+2e93004ae0 | 2025-12-03 | Yao Matrix | extend FA2 and other cases to XPU,  (#42536)
+d5d87934c2 | 2025-12-03 | Yih-Dar | repo. consistency bot (#42575)
+
+=== INTERPRETATION: CLUSTER 2025-12-01 ===
+Transformers: heavy migration, MoE fixes, tokenization stabilization, dtype + TP-plan adjustments, new models added.
+"MuJoCo: physics pipeline docs, kinematics rendering updates, GPU/renderer adjustments landing same day."
+"Signal: Cross-ecosystem stabilization + release alignment. Likely coordinated release milestone."
+"Hypothesis: shared dependency or internal development cadence triggered synchronous update spikes."
+
+=== INTERPRETATION: CLUSTER 2024-10-09 ===
+Doc-unification wave: massive i18n push indicates API stabilization freeze.
+Transformers: normalization of model APIs, removal of legacy pathways, many correctness fixes.
+MuJoCo: plugin semantics tightened, tendon & friction fixes, XML writer corrections.
+Signal: Cross-repo semantic stabilization cycle (preparation for LTS / architectural consolidation).
+

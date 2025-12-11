@@ -1,0 +1,1434 @@
+commit 689c7f261b9c5514636ecc3c5fefefcbb3e6eed7
+Author: amitsangani <amit.sangani@gmail.com>
+Date:   Sun Jan 26 13:42:26 2025 -0800
+
+    Update README.md
+    
+    Modified from Llama Recipes to Llama Cookbook.
+
+ README.md | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit 8fac8befd776bc03242fe7bc2236cdb41b6c609c
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Tue Jul 23 07:50:27 2024 -0700
+
+    Update README.md
+
+ README.md | 16 +++++++++++++++-
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+
+commit 227d378a775c1e05d1434e41a1baca1c11d08d2a
+Merge: 66bc730 c0098be
+Author: Samuel Selvan <prabhu.samuel@gmail.com>
+Date:   Mon Jul 22 20:59:46 2024 -0700
+
+    Merge pull request #1125 from hyungupark/patch-1
+    
+    Update download.sh
+
+commit 66bc7307da52efc6327307407386e26b17afa09c
+Author: Samuel Selvan <prabhu.samuel@gmail.com>
+Date:   Mon Jul 22 18:20:54 2024 -0700
+
+    Update download.sh
+
+ download.sh | 159 +++++++++++++++++-------------------------------------------
+ 1 file changed, 45 insertions(+), 114 deletions(-)
+
+commit 12b676b909368581d39cebafae57226688d5676a
+Author: Samuel Selvan <prabhu.samuel@gmail.com>
+Date:   Mon Jul 22 18:15:37 2024 -0700
+
+    Update download.sh
+
+ download.sh | 161 +++++++++++++++++++++++++++++++++++++++++++-----------------
+ 1 file changed, 115 insertions(+), 46 deletions(-)
+
+commit c0098be87adea7fedeb1b149b4c272a8384395b1
+Author: hyungupark <165874125+hyungupark@users.noreply.github.com>
+Date:   Wed May 15 12:49:24 2024 +0900
+
+    Update download.sh
+    
+    modify for CPU_ARCH not found
+
+ download.sh | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit be327c427cc5e89cc1d3ab3d3fec4484df771245
+Merge: b8348da 893ff97
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Tue May 14 15:31:19 2024 -0700
+
+    Merge pull request #1124 from dandv/patch-1
+    
+    README: LLama 2 is no longer the latest version
+
+commit 893ff972e1355f43d4a22c6aeeaaa015b73f25d3
+Author: Dan Dascalescu <ddascalescu+github@gmail.com>
+Date:   Wed May 15 00:53:25 2024 +0300
+
+    README: LLama 2 is no longer the latest version
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b8348da38fde8644ef00a56596efb376f86838d1
+Merge: 04b200c 1f9a8d7
+Author: Samuel Selvan <prabhu.samuel@gmail.com>
+Date:   Tue Apr 9 09:17:49 2024 -0700
+
+    Merge pull request #1079 from MattGurney/fix-model-card
+    
+    Update MODEL_CARD.md
+
+commit 04b200c5dce04184a56892b1c71ea8ffad7b47c6
+Merge: 54c22c0 fd73089
+Author: Samuel Selvan <prabhu.samuel@gmail.com>
+Date:   Tue Apr 9 09:16:48 2024 -0700
+
+    Merge pull request #1091 from osanseviero/patch-1
+    
+    Update Hugging Face Hub instructions
+
+commit fd7308965bf7e92c7a860584198705112cd87b9f
+Author: Omar Sanseviero <osanseviero@gmail.com>
+Date:   Mon Apr 8 16:12:21 2024 +0200
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1f9a8d774a10fbe41321e530428e91f7eb7eb822
+Author: MattGurney <mattgurney@gmail.com>
+Date:   Sat Mar 23 19:03:21 2024 +1100
+
+    Update MODEL_CARD.md
+    
+    Move word "Uses" into markdown header.
+
+ MODEL_CARD.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 54c22c0d63a3f3c9e77f43a6a3041c00018f4964
+Merge: 52afd48 1e83758
+Author: Suraj Subramanian <5676233+subramen@users.noreply.github.com>
+Date:   Thu Mar 21 11:50:25 2024 -0400
+
+    Merge pull request #1077 from mst272/main
+    
+    update the code to use the module's __call__ (Issue #1055)
+
+commit 1e8375848d3a3ebaccab83fd670b880864cf9409
+Author: wangzhihong <wangzhihong@cmss.chinamobile.com>
+Date:   Thu Mar 21 10:09:34 2024 +0800
+
+    update the code to use the module's __call__
+
+ llama/model.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 52afd48b0683ba219a9cc283317b80a7837eff46
+Merge: 2f58b8d 826ad11
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Mar 20 10:55:51 2024 -0700
+
+    Merge pull request #1076 from meta-llama/jspisak-patch-7
+    
+    Update README.md
+
+commit 826ad1198c02f93fe14fef5dbf4a499fcb02e3b1
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Mar 20 10:50:59 2024 -0700
+
+    Update README.md
+
+ README.md | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit 2f58b8d7b6ac64810b3b832a8da65671d0361ba7
+Merge: 9a001c7 0b46616
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Mar 13 10:23:21 2024 -0700
+
+    Merge pull request #1063 from jeffxtang/LLaMA_lowercase
+    
+    change LLaMA to Llama in README
+
+commit 0b466166eee0b57ec876f83ded533c78ff9ff7d2
+Author: Jeff Tang <jeff.x.tang@gmail.com>
+Date:   Wed Mar 13 10:18:18 2024 -0700
+
+    change LLaMA to Llama in README
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9a001c7a0987afd7b8de94e538916eff8950a73a
+Merge: a0a4da8 11ebe80
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Tue Mar 5 19:28:07 2024 -0800
+
+    Merge pull request #1058 from shorthills-ai/main
+    
+    Update README.md ( Undo Install command changes)
+
+commit 11ebe80305e3bcc8a8a8d75ec0e4b39955b916eb
+Author: Shorthills AI <141953346+ShorthillsAI@users.noreply.github.com>
+Date:   Wed Mar 6 08:06:47 2024 +0530
+
+    Update README.md
+    
+    Undo the pip install e. changes
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a0a4da8b497c566403941ceec47c2512ecf9dd20
+Merge: 6796a91 acdb925
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Fri Mar 1 06:22:31 2024 -0800
+
+    Merge pull request #1053 from shorthills-ai/main
+    
+    Update README.md - Fixed some minor grammatical issues.
+
+commit acdb925413d5f1d53b8fdeb697fe676eca757ff4
+Author: Shorthills AI <141953346+ShorthillsAI@users.noreply.github.com>
+Date:   Fri Mar 1 12:53:48 2024 +0530
+
+    Update README.md
+
+ README.md | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+commit 6796a91789335a31c8309003339fe44e2fd345c2
+Merge: 3f61918 c28bdb5
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Feb 28 11:05:52 2024 -0800
+
+    Merge pull request #1046 from facebookresearch/update-contributing_guide
+    
+    Updating contributor guide
+
+commit c28bdb58c48060f20f05d923b22c35bbd754863b
+Author: Navyata Bawa <bnavyata@fb.com>
+Date:   Wed Feb 28 10:55:21 2024 -0800
+
+    Updating contributor guide
+
+ CONTRIBUTING.md | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+commit 3f6191812365da2036aceab98ddf6154501523cc
+Merge: ef351e9 53b227b
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Thu Feb 22 20:17:53 2024 -0800
+
+    Merge pull request #1033 from ryanhankins/patch-1
+    
+    Update README.md
+
+commit 53b227b5322164942f46bbd22d76c2008ae349d0
+Author: ryanhankins <ryanhankins@users.noreply.github.com>
+Date:   Wed Feb 21 16:39:41 2024 -0600
+
+    Update README.md
+    
+    Repair URL to link to Llama examples safety checker.  The existing URL was out of date.
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit ef351e9cd9496c579bf9f2bb036ef11bdc5ca3d2
+Merge: 4835a30 cd0719d
+Author: ruanslv <ruanslv@gmail.com>
+Date:   Mon Nov 13 21:22:55 2023 -0500
+
+    Merge pull request #900 from flu0r1ne/main
+    
+    Fix key-value caching for seqlen != 1 (Issue #899)
+
+commit cd0719ddb42541fa4433e12d9922528832dd6eeb
+Author: flu0r1ne <flu0r1ne@flu0r1ne.net>
+Date:   Mon Nov 13 14:05:24 2023 -0600
+
+    Correct KV comment seqlen -> seqlen + cache_len
+    
+    Update and add comments about the shape of the key and value
+    matrices in the attention component. E.g., the second dimension is
+    of length seqlen + cache_len not seqlen as previously stated.
+
+ llama/model.py | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit 6b3154bfbbb56c4665ca083be1d46c1e4f1bcc33
+Author: Alex <76689481+flu0r1ne@users.noreply.github.com>
+Date:   Mon Nov 13 13:41:06 2023 -0600
+
+    Update transformer mask comment
+    
+    Update names for consistency with code
+    
+    Co-authored-by: ruanslv <ruanslv@gmail.com>
+
+ llama/model.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 4835a30a1cc98bc6894c17938178c8fc2f694a5d
+Merge: dccf644 94b055f
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Fri Nov 10 07:39:29 2023 -0800
+
+    Merge pull request #916 from facebookresearch/jspisak-patch-6
+    
+    Update README.md
+
+commit 94b055f4aed453f06103bc9b0b679a3df7f2fd44
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Fri Nov 10 07:38:39 2023 -0800
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit dccf644213a2771a81fc4a754eed9623ea7f8444
+Author: Suraj Subramanian <5676233+subramen@users.noreply.github.com>
+Date:   Wed Nov 8 08:47:11 2023 -0500
+
+    fix faq link
+
+ .github/ISSUE_TEMPLATE/bug_report.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9cd8d505cabad0d8eee19fc68b5eddbaf9796327
+Author: Suraj Subramanian <5676233+subramen@users.noreply.github.com>
+Date:   Wed Nov 8 08:13:08 2023 -0500
+
+    Update issue templates
+
+ .github/ISSUE_TEMPLATE/bug_report.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit e9077bd24177a74aa79f406bef7d4b57fe393157
+Author: flu0r1ne <flu0r1ne@flu0r1ne.net>
+Date:   Thu Nov 2 19:33:26 2023 -0500
+
+    Fix key-value caching for seqlen != 1
+    
+    This commit fixes a bug in the key-value caching. Currently,
+    a square attention mask is misapplied to the scores matrix
+    despite not matching the shape of the scores matrix. This
+    results in a runtime error. In a correct implementation, the
+    decoder mask needs to describe how the new seq_len tokens
+    interact with all the cached tokens. That is, the attention
+    mask needs to be of shape (seq_len, total_len), indicating how
+    the token at row i (representing token i + cached_len in the
+    transformer model) attends to token j. Accordingly, the matrix
+    needs to mask entries where j > cached_len + i. This patch
+    horizontally appends (seq_len, cached_len) zeros to an
+    upper-triangular mask of size (seq_len, seq_len) to form the
+    (seq_len, total_len) mask.
+
+ llama/model.py | 14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+
+commit 54d44631054deae836aec8ceff92dcf8f20ca9e7
+Merge: b5cd38a 7909dee
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Thu Nov 2 10:53:24 2023 -0700
+
+    Merge pull request #897 from JacobHelwig/main
+    
+    Correct "bug," typo to "bug", in README.md
+
+commit 7909dee4a8922f756132911a2879f7b0019f013b
+Author: JacobHelwig <60412857+JacobHelwig@users.noreply.github.com>
+Date:   Thu Nov 2 12:47:01 2023 -0500
+
+    Correct "bug," typo to "bug", in README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b5cd38ad2d8ad1efae48ba09ecc7e60f18b7d3ec
+Merge: 3f750f4 664ddc8
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Nov 1 20:48:24 2023 -0700
+
+    Merge pull request #891 from facebookresearch/jspisak-patch-5
+    
+    Delete FAQ.md
+
+commit 664ddc8c8f2ab4254115b3919741032245d65312
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Nov 1 20:47:17 2023 -0700
+
+    Delete FAQ.md
+
+ FAQ.md | 102 -----------------------------------------------------------------
+ 1 file changed, 102 deletions(-)
+
+commit 3f750f4c4d1d5b1e0f145b27c6677cbf389d379d
+Merge: 06faf3a 786af96
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Nov 1 20:45:20 2023 -0700
+
+    Merge pull request #890 from facebookresearch/jspisak-patch-4
+    
+    Update README.md
+
+commit 786af967858822723cb3b55e412d93db0897fd10
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Nov 1 20:44:47 2023 -0700
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 06faf3aab2971e7931e3d5b41e53c4a614d5bad7
+Author: Suraj Subramanian <5676233+subramen@users.noreply.github.com>
+Date:   Wed Oct 18 13:38:04 2023 -0400
+
+    Add FAQs
+
+ .github/ISSUE_TEMPLATE/bug_report.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1c95a19e8c7b0363c7808ff4f6f1aec3545e4ec6
+Merge: 6b8cff0 0cc2987
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Mon Oct 16 11:54:53 2023 -0700
+
+    Merge pull request #860 from facebookresearch/add-issue-template
+    
+    Update issue templates
+
+commit 0cc2987b616051c9fe4445295de68a2236bb15d9
+Author: Suraj Subramanian <5676233+subramen@users.noreply.github.com>
+Date:   Mon Oct 16 14:51:11 2023 -0400
+
+    Update issue templates
+
+ .github/ISSUE_TEMPLATE/bug_report.md | 38 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 38 insertions(+)
+
+commit 6b8cff0e0c5a379c3828e89691f4a5c352202643
+Merge: 556949f f9ddb1d
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Sat Oct 14 20:03:02 2023 -0700
+
+    Merge pull request #859 from yonashub/patch-1
+    
+    [closes #858] change "Content Length" to "Context Length  MODEL_CARD.md
+
+commit f9ddb1d0f3460a4c031caaa825b99a987a58a0d7
+Author: yonashub <yonas.kassa@imdea.org>
+Date:   Sat Oct 14 21:30:47 2023 -0500
+
+    change "Content Length" to "Context Length  MODEL_CARD.md
+
+ MODEL_CARD.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 556949fdfb72da27c2f4a40b7f0e4cf0b8153a28
+Merge: 7e1b864 0da077c
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Oct 11 12:18:13 2023 -0700
+
+    Merge pull request #851 from sekyondaMeta/FAQ-updates
+    
+    Faq updates
+
+commit 0da077cff670eb3012eb49925f7ee748d603b4a4
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Oct 11 12:17:35 2023 -0700
+
+    Update FAQ.md
+    
+    made some small fixes and added some context.
+
+ FAQ.md | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit 5d9bb58a65c8f90615696497015a41ac4ffbdd54
+Author: sekyondaMeta <127536312+sekyondaMeta@users.noreply.github.com>
+Date:   Wed Oct 11 15:08:34 2023 -0400
+
+    Update FAQ.md
+
+ FAQ.md | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+
+commit 98851c30094074d13b592a3db5d8897a870ff608
+Author: sekyondaMeta <127536312+sekyondaMeta@users.noreply.github.com>
+Date:   Wed Oct 11 15:05:15 2023 -0400
+
+    Update FAQ.md
+
+ FAQ.md | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+
+commit 7e1b864d574fe6f5ff75fa1d028feb269f7152d2
+Merge: 5e13e29 4660bd3
+Author: samuelselvan <prabhu.samuel@gmail.com>
+Date:   Fri Sep 29 09:32:40 2023 -0700
+
+    Merge pull request #822 from kierenAW/main
+    
+    Add "--continue" flag to wget for model binary in order to resume dl
+
+commit 5e13e29f8c53d921679998ebdcf842d5dc6b2d86
+Merge: b00a461 f29c9a8
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Tue Sep 26 15:37:43 2023 -0700
+
+    Merge pull request #829 from facebookresearch/jspisak-patch-3
+    
+    Update README.md
+
+commit f29c9a8adff8cd4de641a637a471c3bcf9461a73
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Tue Sep 26 15:18:10 2023 -0700
+
+    Update README.md
+    
+    Updated the Meta AI mention to just Meta.
+
+ README.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 4660bd3b288d1beabe68bb724dfe18d2d55e768b
+Author: Kieren <k@if0.me>
+Date:   Sat Sep 23 11:24:39 2023 +1000
+
+    Add "--continue" flag to wget for model binary in order to resume downloads.
+
+ download.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b00a461a6582196d8f488c73465f6c87f384a052
+Merge: 843e41f a5e37ce
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Sep 20 17:47:42 2023 -0700
+
+    Merge pull request #813 from facebookresearch/jspisak-patch-1
+    
+    Update MODEL_CARD.md
+
+commit 843e41f0b12e2c22f8c214b482773ad806e61773
+Merge: 9f0e393 5c10818
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Sep 20 17:47:22 2023 -0700
+
+    Merge pull request #814 from facebookresearch/jspisak-patch-2
+    
+    Update FAQ.md
+
+commit 5c1081855805b4a0927178d4019bd5aa9c0a4107
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Sep 20 15:24:01 2023 -0700
+
+    Update FAQ.md
+    
+    Updating the answer for whether developers can fine tune on non-english languages.
+
+ FAQ.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a5e37ce21c2b677f15feeabae2b989bfb79c045a
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Sep 20 15:18:30 2023 -0700
+
+    Update MODEL_CARD.md
+    
+    Updated intended use cases to clarify that developers can fine tune for non-english languages.
+
+ MODEL_CARD.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 9f0e393991b45d320f5b4a287eaaeb8a7d2e6f8e
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Sun Sep 17 07:30:24 2023 -0700
+
+    Update README.md
+    
+    Added a link to the FAQ from the readme.
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit d58f9ae95c299fe6388ee2da2c87fd90cd360d41
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Sat Sep 16 08:04:21 2023 -0700
+
+    Update FAQ.md
+
+ FAQ.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 4869110d27ee6389449fc2fba1739d1581f04811
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Sat Sep 16 08:04:03 2023 -0700
+
+    Update FAQ.md
+    
+    Added a QnA on using Llama 2 with languages other than english.
+
+ FAQ.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 7173899c699e50b7174bcc3df8410efdb8dfa9b0
+Merge: d7e2e37 c9c493f
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Fri Sep 15 16:18:27 2023 -0700
+
+    Merge pull request #779 from javier-m/add-seed
+    
+    add seed
+
+commit d7e2e37e163981fd674ea2a633fac2014550898d
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Thu Sep 14 13:36:34 2023 -0700
+
+    Update FAQ.md
+
+ FAQ.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 46646b8e2d6f04027de7bf80411f97fd6adb9c9e
+Merge: 1bc5221 ac19393
+Author: sekyondaMeta <127536312+sekyondaMeta@users.noreply.github.com>
+Date:   Mon Sep 11 11:15:23 2023 -0400
+
+    Merge pull request #775 from sekyondaMeta/readmeUpdate
+    
+    Readme update
+
+commit c9c493f20f6bf791081ccf8ca0e7dfd7468d604b
+Author: xavierm <xavierm@meta.com>
+Date:   Mon Sep 11 14:49:18 2023 +0000
+
+    add seed
+
+ llama/generation.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 1bc5221c2a543ba8b45d7c10086891ac510dcdbc
+Merge: 2db73a5 eb07062
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Sun Sep 10 16:49:24 2023 -0700
+
+    Merge pull request #755 from jheidbrink/main
+    
+    More portable shebang for download.sh
+
+commit ac19393aeb30c5cf54e53b688d10f8d603f053be
+Author: sekyondaMeta <127536312+sekyondaMeta@users.noreply.github.com>
+Date:   Sat Sep 9 18:15:32 2023 -0400
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f2e6eac348a718dc3f70b2b34e27ee6a9b9efd4f
+Author: sekyondaMeta <127536312+sekyondaMeta@users.noreply.github.com>
+Date:   Sat Sep 9 18:13:03 2023 -0400
+
+    Update README.md
+
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 001b67243c6dee52650b713f3dfacda2790048e7
+Author: sekyondaMeta <127536312+sekyondaMeta@users.noreply.github.com>
+Date:   Sat Sep 9 18:11:32 2023 -0400
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d06e1e1c078eb4f1a9e5681e4d9ad0b6561437ab
+Author: sekyondaMeta <127536312+sekyondaMeta@users.noreply.github.com>
+Date:   Sat Sep 9 18:10:20 2023 -0400
+
+    Update README.md
+
+ README.md | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit 6c2f236ea45eacdc3739be29645b825118b45b84
+Author: sekyondaMeta <127536312+sekyondaMeta@users.noreply.github.com>
+Date:   Sat Sep 9 18:08:26 2023 -0400
+
+    Update README.md
+    
+    Adding quick start steps
+
+ README.md | 28 ++++++++++++++++++++++++++--
+ 1 file changed, 26 insertions(+), 2 deletions(-)
+
+commit 2db73a5ba22ac538a2ba21aaec30e77d031ea6a4
+Merge: c769dfd 7350119
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Sat Sep 9 07:39:13 2023 -0700
+
+    Merge pull request #769 from sekyondaMeta/FAQ-updates
+    
+    FAQ updates
+
+commit 735011928cf8e7c7d366d2f90c03e63d6ed79808
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Sat Sep 9 07:38:43 2023 -0700
+
+    Update FAQ.md
+
+ FAQ.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit bb2f6931f6b0cb60cfafb099c8089c03aa04ce2d
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Fri Sep 8 14:32:35 2023 -0700
+
+    Update FAQ.md
+    
+    Updated the ecosystem QnA..
+
+ FAQ.md | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+commit fb624f44b2a13d2145eaacd16c604eb6492f2c69
+Author: sekyondaMeta <127536312+sekyondaMeta@users.noreply.github.com>
+Date:   Fri Sep 8 14:20:50 2023 -0400
+
+    Update FAQ.md
+
+ FAQ.md | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+
+commit 797f929b02564a56cde1b02343a1d0d006dd660b
+Author: sekyondaMeta <127536312+sekyondaMeta@users.noreply.github.com>
+Date:   Fri Sep 8 14:20:04 2023 -0400
+
+    Update FAQ.md
+
+ FAQ.md | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+commit 646e6d6d88426df211cc3ed6bd2edbd7c928979a
+Author: sekyondaMeta <127536312+sekyondaMeta@users.noreply.github.com>
+Date:   Fri Sep 8 14:09:36 2023 -0400
+
+    Update FAQ.md
+
+ FAQ.md | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+
+commit bfbbf1d9c9d04648aaa28b20b0685ce1fe766e20
+Author: sekyondaMeta <127536312+sekyondaMeta@users.noreply.github.com>
+Date:   Fri Sep 8 14:06:54 2023 -0400
+
+    Update FAQ.md
+
+ FAQ.md | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+commit c769dfd53ddd509159216a5423204653850f79f4
+Merge: 5827703 14441f1
+Author: Nikolay Bashlykov <bashnick@gmail.com>
+Date:   Thu Sep 7 18:57:56 2023 +0100
+
+    Merge pull request #647 from huy-ha/main
+    
+    Return completion log probabilities
+
+commit 5827703b33e88045f5da6aac9c99aff16f3fec8d
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Sep 6 20:13:37 2023 -0700
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit dd6dbbf2ba6c308aed62e89dd1429be11fc2ac1e
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Wed Sep 6 20:10:24 2023 -0700
+
+    Create FAQ.md
+
+ FAQ.md | 49 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 49 insertions(+)
+
+commit 77062717054710e352a99add63d160274ce670c6
+Merge: 4e24858 3805003
+Author: Lorenzo Marcon <lorenzo.marcon@gmail.com>
+Date:   Tue Sep 5 10:21:32 2023 +0100
+
+    Merge pull request #451 from vinnymeller/download-sh-more-flexible
+    
+    Update download.sh to not use hardcoded bash path for improved portability
+
+commit 4e2485887fbc344cc1aba0d52b3ac2e825fe80ec
+Merge: 7565eb6 8580eb9
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Sun Sep 3 11:11:38 2023 -0700
+
+    Merge pull request #754 from JaredLevi18/fix
+    
+    making a small change to avoid a confusion.
+
+commit 8580eb9a896bdb82d376b7040d18a2e7b402b10f
+Author: Jared Levi De La Fuente Rodriguez <jk20042019@gmail.com>
+Date:   Sun Sep 3 10:17:32 2023 -0600
+
+    Update model.py
+
+ llama/model.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 8432e482de537889291e4d5af286580680ceb519
+Author: Jared Levi De La Fuente Rodriguez <jk20042019@gmail.com>
+Date:   Sun Sep 3 10:14:42 2023 -0600
+
+    Update model.py
+
+ llama/model.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit eb070624d7947f00b2d4391c5f90971dc0524e47
+Author: Jan Heidbrink <jan.heidbrink@posteo.de>
+Date:   Sun Sep 3 11:43:30 2023 +0200
+
+    Fix download.sh shebang for NixOS
+
+ download.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 346627f6e804bf95322248327e2da2150603cc05
+Merge: 1446089 7565eb6
+Author: Jared Levi De La Fuente Rodriguez <jk20042019@gmail.com>
+Date:   Sat Sep 2 21:04:00 2023 -0600
+
+    Merge branch 'facebookresearch:main' into fix
+
+commit 144608996a3cc5b971834a77e28d9145df1a4480
+Author: Jared <djaredlevi@gmail.com>
+Date:   Sat Sep 2 16:23:17 2023 -0600
+
+    making a small change to avoid a confusion
+
+ llama/model.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 7565eb6fee2175b2d4fe2cfb45067a61b35d7f5e
+Author: Daniel Engbert <end1@umbc.edu>
+Date:   Fri Sep 1 12:41:43 2023 -0400
+
+    make download.sh executable (#695)
+    
+    * make download.sh executable
+    
+    * download.sh: stop on first error
+
+ download.sh | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit a255a05f177a7f2dea9fe48fdef7526216678950
+Merge: 6aba873 4649acd
+Author: Gozali Kumara <ghk@gozalikumara.com>
+Date:   Fri Sep 1 16:22:35 2023 +0800
+
+    Merge pull request #727 from godpeny/feat/dl_script
+    
+    use 'md5' instead of 'md5sum' if Applie Silicon
+
+commit 6aba873062fad01826b34a60cbd52ed1661c79d1
+Merge: 8992dea 3cd7ef6
+Author: leonwan23 <30717310+leonwan23@users.noreply.github.com>
+Date:   Fri Sep 1 11:38:08 2023 +0800
+
+    Merge pull request #490 from Daniel15/patch-1
+    
+    Remove linkshim workaround from README
+
+commit 4649acd77948182bf39d056ec2f543aeecdc3ca4
+Author: godpeny <slsnsepdpd@gmail.com>
+Date:   Mon Aug 28 14:21:21 2023 +0900
+
+    use 'md5' instead of 'md5sum' if Applie Silicon
+
+ download.sh | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+
+commit 8992dea3b2c98e82e335efef004534413f4f2d2e
+Merge: 4c370db 89092cd
+Author: Akshay Patel <paksha@fb.com>
+Date:   Thu Aug 31 16:34:11 2023 -0400
+
+    Merge pull request #390 from tomorrmato/add_example_type_hint
+    
+    added type hint in example code
+
+commit 4c370db6b5d4ac329c99f6132609afc51916f381
+Merge: ec6a3fd 99e19d4
+Author: Akshay Patel <paksha@fb.com>
+Date:   Thu Aug 31 15:37:44 2023 -0400
+
+    Merge pull request #492 from eltociear/patch-1
+    
+    Update README.md
+
+commit ec6a3fd2cff06a4b1c052111dba0fec5eba8bc85
+Merge: 0137f15 9eb31e5
+Author: Akshay Patel <paksha@fb.com>
+Date:   Thu Aug 31 15:34:22 2023 -0400
+
+    Merge pull request #650 from MarcoSteinke/main
+    
+    fix line separators in download.sh for wsl2
+
+commit 0137f157e110887d9df6395b4ac44c1511f1830f
+Merge: b5ecd3a 8cd608c
+Author: Akshay Patel <paksha@fb.com>
+Date:   Thu Aug 31 15:29:12 2023 -0400
+
+    Merge pull request #729 from rajveer43/rajveer-patch-1
+    
+    Enhance Codebase with function explanation
+
+commit b5ecd3a5f83f5e784e970b4ba6d7a8ad381e1c1b
+Merge: 1df1f88 c7c0a30
+Author: Vu Bui <1538687+vubui@users.noreply.github.com>
+Date:   Thu Aug 31 15:27:54 2023 -0400
+
+    Merge pull request #358 from kit1980/patch-1
+    
+    Remove unused Any import
+
+commit 1df1f88a9a2944e1b51814b47584ecea4b7af332
+Merge: 49f0749 a102a59
+Author: Vu Bui <1538687+vubui@users.noreply.github.com>
+Date:   Thu Aug 31 14:38:19 2023 -0400
+
+    Merge pull request #738 from facebookresearch/download-sh-continue
+    
+    Update download.sh to resume download of partially downloaded files
+
+commit 49f0749815883502cc780e8e08bdc1ab9663f62c
+Merge: 6a9bec0 f5af1e5
+Author: luccabb <32229669+luccabb@users.noreply.github.com>
+Date:   Thu Aug 31 11:14:35 2023 -0700
+
+    Merge pull request #510 from SulimanSagindykov/patch-3
+    
+    Update README.md
+
+commit 6a9bec008648b4ddaeb43e04df126d6b5005674b
+Merge: 1a24068 ce27a98
+Author: Vu Bui <1538687+vubui@users.noreply.github.com>
+Date:   Thu Aug 31 12:50:58 2023 -0400
+
+    Merge pull request #742 from NinoRisteski/patch-1
+    
+    Update README.md
+
+commit ce27a9860d89d5d9d4aa37e5342d50c87895b5ef
+Author: Nino Risteski <95188570+NinoRisteski@users.noreply.github.com>
+Date:   Thu Aug 31 13:26:10 2023 +0200
+
+    Update README.md
+    
+    Fixed a few typos
+
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit a102a597d1eb5d437f98dc0b55668ff61bc493b8
+Author: samuelselvan <prabhu.samuel@gmail.com>
+Date:   Tue Aug 29 09:42:05 2023 -0700
+
+    Update download.sh to resume download of partially downloaded files
+    
+    Allowing download.sh to pick up files where they left off from the previous download tries if any.
+
+ download.sh | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+commit 8cd608cc019b306ab6d8b7abd61014b436968086
+Author: rajveer43 <rajveer.rathod1301@gmail.com>
+Date:   Mon Aug 28 12:18:39 2023 +0530
+
+    added remanjg docs
+
+ example_chat_completion.py | 15 +++++++++++++++
+ example_text_completion.py | 14 ++++++++++++++
+ llama/tokenizer.py         | 27 +++++++++++++++++++++++++++
+ 3 files changed, 56 insertions(+)
+
+commit 7bcee80f48395553e8fec7ea107c302d13a15041
+Author: rajveer43 <rajveer.rathod1301@gmail.com>
+Date:   Mon Aug 28 11:32:51 2023 +0530
+
+    update comments in model.py
+
+ llama/model.py | 195 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 195 insertions(+)
+
+commit cb8f04217969173c2d2fcde7a9425f96ae43aac9
+Author: rajveer43 <rajveer.rathod1301@gmail.com>
+Date:   Mon Aug 28 11:12:10 2023 +0530
+
+    add docstrings
+
+ llama/generation.py | 101 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 101 insertions(+)
+
+commit 1a240688810f8036049e8da36b073f63d2ac552c
+Merge: e36eaa3 d3b26d0
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Fri Aug 25 19:17:53 2023 -0700
+
+    Merge pull request #511 from SulimanSagindykov/patch-2
+    
+    Update MODEL_CARD.md
+
+commit e36eaa34b06059f501b7b11fa38fee219852458d
+Merge: a668741 7c0a08e
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Fri Aug 25 19:14:54 2023 -0700
+
+    Merge pull request #512 from SulimanSagindykov/patch-1
+    
+    Update LICENSE
+
+commit a668741109236ea2d0e8591d3061408874d8bda9
+Merge: ea9f33d c25b02d
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Fri Aug 25 18:59:21 2023 -0700
+
+    Merge pull request #703 from yanxiyue/main
+    
+    fix max_batch_size for chat example
+
+commit c25b02d2a42cfa64028a1705a907e62ab2b1a732
+Author: yanxiyue <alex.yueye@gmail.com>
+Date:   Tue Aug 22 20:51:42 2023 +0800
+
+    fix max_batch_size for chat example
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit ea9f33d6d3ea8ed7d560d270986407fd6c2e52b7
+Merge: 82ce861 008385a
+Author: ruanslv <ruanslv@gmail.com>
+Date:   Fri Aug 11 10:38:06 2023 -0400
+
+    Merge pull request #664 from jspisak/main-2
+    
+    Update UPDATES.md
+
+commit 008385a65aecfe5c14b5abc9e47c558c0fbe18ec
+Author: Joseph Spisak <spisakjo@gmail.com>
+Date:   Fri Aug 11 06:21:32 2023 -0700
+
+    Update UPDATES.md
+    
+    Updating to add the date of the updates..
+
+ UPDATES.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 14441f19b8c403af2048ad105c4e6635a35fcab2
+Author: huy-ha <hqh2101@columbia.edu>
+Date:   Wed Aug 9 14:38:58 2023 +0000
+
+    still return log probs when no completion required
+
+ llama/generation.py | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit 9eb31e5ee83d4dcc169309729e89817df590fa39
+Author: MarcoSteinke <marco.steinke@innoq.com>
+Date:   Wed Aug 9 11:57:41 2023 +0200
+
+    fix line separators in download.sh for wsl2
+
+ download.sh | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit 14dcd8ea24298395510fea200301b57d55ee29d3
+Author: huy-ha <hqh2101@columbia.edu>
+Date:   Tue Aug 8 23:18:05 2023 -0400
+
+    compute token logprobs after completed token is sampled
+
+ llama/generation.py | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+commit 82ce861078ce1d2a1ac17db15bda3604c684ccbe
+Author: Ubuntu <ruanslv@gmail.com>
+Date:   Mon Aug 7 21:43:22 2023 +0000
+
+    updates
+
+ README.md                  | 10 ++--------
+ UPDATES.md                 | 19 +++++++++++++++++++
+ example_chat_completion.py |  6 ++++++
+ llama/generation.py        | 24 ++++++++++++++++++++----
+ 4 files changed, 47 insertions(+), 12 deletions(-)
+
+commit a511b0dc433e3e1fc52e68e27e29c3ccdbe6473f
+Merge: 6c7fe27 d09f581
+Author: ruanslv <ruanslv@gmail.com>
+Date:   Fri Aug 4 17:39:38 2023 -0400
+
+    Merge pull request #626 from facebookresearch/system
+    
+    System prompt update
+
+commit d09f581a06d8f2dffb330ffc7a917d9c4e14f8f0
+Author: Ubuntu <ruanslv@gmail.com>
+Date:   Fri Aug 4 21:39:13 2023 +0000
+
+    add PR number
+
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit a971c41bde81d74f98bc2c2c451da235f1f1d37c
+Author: Ubuntu <ruanslv@gmail.com>
+Date:   Fri Aug 4 21:35:47 2023 +0000
+
+    system prompt update
+
+ README.md                  |  8 ++++++++
+ example_chat_completion.py | 12 +++++++++++-
+ llama/generation.py        | 24 +++++++-----------------
+ 3 files changed, 26 insertions(+), 18 deletions(-)
+
+commit 99e19d4f83b7fe77e8b3b692e01019640d7b457a
+Author: Ikko Eltociear Ashimine <eltociear@gmail.com>
+Date:   Sat Jul 22 14:47:52 2023 +0900
+
+    Update README.md
+    
+    HuggingFace -> Hugging Face
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 3cd7ef631369a87279a7cd8cbd190359e2b9360a
+Author: Daniel Lo Nigro <danlo@meta.com>
+Date:   Fri Jul 21 14:05:46 2023 -0700
+
+    Remove linkshim workaround from README
+
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit f5af1e599317db91499488bf040b34d12f790bb2
+Author: Suliman Sagindykov <115887342+SulimanSagindykov@users.noreply.github.com>
+Date:   Fri Jul 21 16:57:24 2023 +0500
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d3b26d05386d9d2d7626afa72fae0472a9d91d2d
+Author: Suliman Sagindykov <115887342+SulimanSagindykov@users.noreply.github.com>
+Date:   Fri Jul 21 16:53:32 2023 +0500
+
+    Update MODEL_CARD.md
+
+ MODEL_CARD.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 7c0a08ec24ce91880184ba9002227624262904a2
+Author: Suliman Sagindykov <115887342+SulimanSagindykov@users.noreply.github.com>
+Date:   Fri Jul 21 16:51:55 2023 +0500
+
+    Update LICENSE
+
+ LICENSE | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 3805003a3e40e3f7a0c42a37ad572bc84b4248a2
+Author: Vinny Meller <vinnymeller@gmail.com>
+Date:   Thu Jul 20 05:04:31 2023 -0500
+
+    Update download.sh to not use hardcoded bash path
+
+ download.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 6c7fe276574e78057f917549435a2554000a876d
+Author: Ubuntu <ruanslv@gmail.com>
+Date:   Wed Jul 19 13:11:07 2023 +0000
+
+    remove double-spacing
+
+ llama/generation.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 03a0287d03ad83d461d1393b0c2f776815ac20a4
+Merge: cc8a000 d2bc5e1
+Author: ruanslv <ruanslv@gmail.com>
+Date:   Wed Jul 19 08:22:30 2023 -0400
+
+    Merge pull request #377 from chrismarra/patch-1
+    
+    Update README.md
+
+commit cc8a000815561f0dd5e0cef8156b1e918ca90871
+Merge: 4d92db8 37362e0
+Author: ruanslv <ruanslv@gmail.com>
+Date:   Wed Jul 19 08:04:13 2023 -0400
+
+    Merge pull request #403 from tianweidut/bug/fix-probs-reference
+    
+    bug: fix local variable 'probs' referenced before assignment typo
+
+commit 37362e04a187cfc1c5f87d19e74fa4ca128210c9
+Author: tianwei <liutianweidlut@gmail.com>
+Date:   Wed Jul 19 18:12:02 2023 +0800
+
+    fix local variable 'probs' referenced before assignment issue
+
+ llama/generation.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 89092cdec82c3c1dbdb81cca97773b3829f59af8
+Author: tomorrmato <2ndorderode@gmail.com>
+Date:   Tue Jul 18 23:14:58 2023 -0700
+
+    added type hint in example code
+
+ example_chat_completion.py | 6 +++---
+ example_text_completion.py | 4 ++--
+ llama/__init__.py          | 2 +-
+ 3 files changed, 6 insertions(+), 6 deletions(-)
+
+commit d2bc5e1bb299a3058f092347f2b26626f62712ff
+Author: Chris Marra <chris.marra@gmail.com>
+Date:   Tue Jul 18 18:54:19 2023 -0400
+
+    Update README.md
+    
+    Add help on how to re-download model.
+
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 4d92db8a1db6c7f663252bf3477d2c4b8bad2385
+Merge: f2f7cec bf99afb
+Author: ruanslv <ruanslv@gmail.com>
+Date:   Tue Jul 18 16:48:21 2023 -0400
+
+    Merge pull request #365 from Daryl149/clarify-llama2-download-instructions
+    
+    Update README.md
+
+commit f2f7cec336d09a468ff0e07f7484dab8dea71107
+Merge: cfc3fc8 1a2ce45
+Author: ruanslv <ruanslv@gmail.com>
+Date:   Tue Jul 18 16:48:12 2023 -0400
+
+    Merge pull request #367 from janvdp/main
+    
+    Force /bin/bash in download.sh
+
+commit 1a2ce45b60989e7253c681bdfb8a84bafece9df6
+Author: Jan Van de Poel <jan@seeme.ai>
+Date:   Tue Jul 18 22:23:06 2023 +0200
+
+    Force bash on download.sh
+    
+    The script fails otherwise fails in zsh
+
+ download.sh | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit bf99afb866f161b4b7a29c3c9c7a0d59c5088af3
+Author: Daryl <daryl149@gmail.com>
+Date:   Tue Jul 18 22:06:10 2023 +0200
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit c7c0a30d686b0743352692e0f7736ea1701591f4
+Author: Sergii Dymchenko <sdym@meta.com>
+Date:   Tue Jul 18 11:54:55 2023 -0700
+
+    Remove unused Any import
+
+ llama/model.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit cfc3fc8c1968d390eb830e65c63865e980873a06
+Author: Ubuntu <ruanslv@gmail.com>
+Date:   Tue Jul 18 16:13:17 2023 +0000
+
+    fix generation URL
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a3afc5b241844f359aaece5706e5cef3c2be34b8
+Author: Ubuntu <ruanslv@gmail.com>
+Date:   Tue Jul 18 16:00:55 2023 +0000
+
+    llama_v1 move
+
+ FAQ.md     |  51 --------------------------
+ example.py | 119 -------------------------------------------------------------
+ 2 files changed, 170 deletions(-)
+
+commit 6d4c0c290aeec1fa4399694fefb864be5a153bb6
+Author: Ubuntu <ruanslv@gmail.com>
+Date:   Tue Jul 18 15:57:25 2023 +0000
+
+    llama 2
+
+ CONTRIBUTING.md            |   4 +-
+ LICENSE                    | 796 +++++++--------------------------------------
+ MODEL_CARD.md              | 256 ++++++---------
+ README.md                  | 106 ++++--
+ Responsible-Use-Guide.pdf  | Bin 0 -> 1253223 bytes
+ USE_POLICY.md              |  50 +++
+ download.sh                |  63 ++--
+ example_chat_completion.py |  73 +++++
+ example_text_completion.py |  55 ++++
+ llama/__init__.py          |   4 +-
+ llama/generation.py        | 288 ++++++++++++++--
+ llama/model.py             | 114 +++++--
+ llama/tokenizer.py         |   7 +-
+ requirements.txt           |   2 +-
+ setup.py                   |  16 +-
+ 15 files changed, 876 insertions(+), 958 deletions(-)
+
+commit 57b0eb62de0636e75af471e49e2f1862d908d9d8
+Merge: e22bdb2 bc981d5
+Author: Guillaume Lample <guismay@fb.com>
+Date:   Tue Mar 7 10:35:56 2023 +0100
+
+    Merge pull request #142 from Loryhoof/patch-1
+    
+    Added colon in README.md
+
+commit bc981d5953935524ccb23ea8d172f44a2301ad13
+Author: Loryhoof <klattkev@gmail.com>
+Date:   Tue Mar 7 04:23:54 2023 +0800
+
+    Added collon
+
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit e22bdb2e54d32712a6d21bb7ca9449076a5af78c
+Merge: 2845af9 a81fb4e
+Author: timlacroix <tlacroix@fb.com>
+Date:   Sun Mar 5 20:32:20 2023 +0100
+
+    Merge pull request #127 from MarkSchmidty/patch-1
+    
+    changed max_seq_len 1024 to 2048
+
+commit a81fb4e211d6656854a5dd24cf8631dc319234d1
+Author: Mark Schmidt <MarkSchmidty@users.noreply.github.com>
+Date:   Sun Mar 5 11:28:50 2023 -0500
+
+    changed max_seq_len 1024 to 2048
+    
+    The models support a 2048 context window. This is not well advertised and people are getting confused. No sense having a smaller size here, as it just adds to the confusion.
+
+ llama/model.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2845af9b7f09effe27081a0c42d59f1e66cd5c20
+Author: Guillaume Lample <guismay@fb.com>
+Date:   Sat Mar 4 17:15:03 2023 +0100
+
+    added reference
+
+ README.md | 29 +++++++++++++++++++++++------
+ 1 file changed, 23 insertions(+), 6 deletions(-)
+
+commit e6145a03b4578cea93e3727a47f3856d0318a797
+Author: Timothee Lacroix <timothee.lax@gmail.com>
+Date:   Fri Mar 3 02:36:22 2023 -0800
+
+    Add FAQ.md // add command line options
+
+ FAQ.md     | 51 +++++++++++++++++++++++++++++++++++++++++++++++
+ README.md  |  5 +++++
+ example.py | 67 ++++++++++++++++++++++++++++++++++++++++++++++++++++----------
+ 3 files changed, 113 insertions(+), 10 deletions(-)
+
+commit 76066b1b5cf467ce750f51af15cd34de442185e7
+Author: Guillaume Lample <guismay@fb.com>
+Date:   Thu Mar 2 10:52:40 2023 +0100
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f4cd18f5282380986d25a3ad5321cc33c7944a8b
+Merge: 1a9025e 53011c3
+Author: timlacroix <tlacroix@fb.com>
+Date:   Thu Mar 2 09:33:32 2023 +0100
+
+    Merge pull request #46 from guangyusong/main
+    
+    Fix typos in MODEL_CARD.md
+
+commit 1a9025e3488f0c1e5d7ad045cd825dc2aeaead6d
+Author: timlacroix <tlacroix@fb.com>
+Date:   Thu Mar 2 09:33:11 2023 +0100
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 53011c3d7946dadb8274a4c5c7586ab54edf792d
+Author: guangyusong <15316444+guangyusong@users.noreply.github.com>
+Date:   Thu Mar 2 01:04:58 2023 -0500
+
+    Fix typos in MODEL_CARD.md
+
+ MODEL_CARD.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 1076b9c51c77ad06e9d7ba8a4c6df775741732bd
+Author: Timothee Lacroix <timothee.lax@gmail.com>
+Date:   Fri Feb 24 05:20:46 2023 -0800
+
+    Initial commit
+
+ .gitignore          | 160 +++++++++++++
+ CODE_OF_CONDUCT.md  |  80 +++++++
+ CONTRIBUTING.md     |  31 +++
+ LICENSE             | 674 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ MODEL_CARD.md       | 158 ++++++++++++
+ README.md           |  40 ++++
+ download.sh         |  33 +++
+ example.py          |  72 ++++++
+ llama/__init__.py   |   6 +
+ llama/generation.py |  77 ++++++
+ llama/model.py      | 238 +++++++++++++++++++
+ llama/tokenizer.py  |  40 ++++
+ requirements.txt    |   4 +
+ setup.py            |   6 +
+ 14 files changed, 1619 insertions(+)

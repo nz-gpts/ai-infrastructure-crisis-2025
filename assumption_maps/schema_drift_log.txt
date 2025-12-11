@@ -1,0 +1,17 @@
+=== CONFIG SCHEMA DRIFT — transformers/configuration_utils.py ===
+Snapshot A: 163601c6 (early, pre-cleanup)
+Snapshot B: b1bdf9cb (2025-11-18 — "Delete generation params")
+
+Observations:
+- `generation_*` params removed from main config block.
+- Likely moved into GenerationConfig or GenerationMixin.
+- Surface becomes leaner: fewer user-exposed knobs.
+
+Inference:
+- Indicates shift toward modular, specialized config wrappers.
+- Removes generality from base model config — possibly to enable backend-specific inference stacks (gguf, ONNX, AWQ).
+
+Hypothesis:
+- This cleanup is *not just hygiene*. It's gating for constrained generation surfaces — e.g., hosted inference, quantized runtimes.
+
+===

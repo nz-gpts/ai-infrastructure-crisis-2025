@@ -1,0 +1,120 @@
+--- llama/llama/generation.py	2025-12-12 00:01:30.527655328 +1300
++++ diffs/nanogpt_train.py	2025-12-12 00:05:20.319815709 +1300
+@@ -1,421 +1,336 @@
+-# Copyright (c) Meta Platforms, Inc. and affiliates.
+-# This software may be used and distributed according to the terms of the Llama 2 Community License Agreement.
++"""
++This training script can be run both on a single gpu in debug mode,
++and also in a larger training run with distributed data parallel (ddp).
++
++To run on a single GPU, example:
++$ python train.py --batch_size=32 --compile=False
++
++To run with DDP on 4 gpus on 1 node, example:
++$ torchrun --standalone --nproc_per_node=4 train.py
++
++To run with DDP on 4 gpus across 2 nodes, example:
++- Run on the first (master) node with example IP 123.456.123.456:
++$ torchrun --nproc_per_node=8 --nnodes=2 --node_rank=0 --master_addr=123.456.123.456 --master_port=1234 train.py
++- Run on the worker node:
++$ torchrun --nproc_per_node=8 --nnodes=2 --node_rank=1 --master_addr=123.456.123.456 --master_port=1234 train.py
++(If your cluster does not have Infiniband interconnect prepend NCCL_IB_DISABLE=1)
++"""
+ 
+-import json
+ import os
+-import sys
+ import time
+-from pathlib import Path
+-from typing import List, Literal, Optional, Tuple, TypedDict
++import math
++import pickle
++from contextlib import nullcontext
+ 
++import numpy as np
+ import torch
+-import torch.nn.functional as F
+-from fairscale.nn.model_parallel.initialize import (
+-    get_model_parallel_rank,
+-    initialize_model_parallel,
+-    model_parallel_is_initialized,
+-)
+-
+-from llama.model import ModelArgs, Transformer
+-from llama.tokenizer import Tokenizer
+-
+-Role = Literal["system", "user", "assistant"]
+-
+-
+-class Message(TypedDict):
+-    role: Role
+-    content: str
+-
+-
+-class CompletionPrediction(TypedDict, total=False):
+-    generation: str
+-    tokens: List[str]  # not required
+-    logprobs: List[float]  # not required
+-
+-
+-class ChatPrediction(TypedDict, total=False):
+-    generation: Message
+-    tokens: List[str]  # not required
+-    logprobs: List[float]  # not required
+-
+-
+-Dialog = List[Message]
+-
+-B_INST, E_INST = "[INST]", "[/INST]"
+-B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
+-
+-SPECIAL_TAGS = [B_INST, E_INST, "<<SYS>>", "<</SYS>>"]
+-UNSAFE_ERROR = "Error: special tags are not allowed as part of the prompt."
+-
+-
+-class Llama:
+-    @staticmethod
+-    def build(
+-        ckpt_dir: str,
+-        tokenizer_path: str,
+-        max_seq_len: int,
+-        max_batch_size: int,
+-        model_parallel_size: Optional[int] = None,
+-        seed: int = 1,
+-    ) -> "Llama":
+-        """
+-        Build a Llama instance by initializing and loading a pre-trained model.
+-
+-        Args:
+-            ckpt_dir (str): Path to the directory containing checkpoint files.
+-            tokenizer_path (str): Path to the tokenizer file.
+-            max_seq_len (int): Maximum sequence length for input text.
+-            max_batch_size (int): Maximum batch size for inference.
+-            model_parallel_size (Optional[int], optional): Number of model parallel processes.
+-                If not provided, it's determined from the environment. Defaults to None.
+-
+-        Returns:
+-            Llama: An instance of the Llama class with the loaded model and tokenizer.
+-
+-        Raises:
+-            AssertionError: If there are no checkpoint files in the specified directory,
+-                or if the model parallel size does not match the number of checkpoint files.
+-
+-        Note:
+-            This method initializes the distributed process group, sets the device to CUDA,
+-            and loads the pre-trained model and tokenizer.
+-
+-        """
+-        if not torch.distributed.is_initialized():
+-            torch.distributed.init_process_group("nccl")
+-        if not model_parallel_is_initialized():
+-            if model_parallel_size is None:
+-                model_parallel_size = int(os.environ.get("WORLD_SIZE", 1))
+-            initialize_model_parallel(model_parallel_size)
+-
+-        local_rank = int(os.environ.get("LOCAL_RANK", 0))
+-        torch.cuda.set_device(local_rank)
+-
+-        # seed must be the same in all processes
+-        torch.manual_seed(seed)
+-

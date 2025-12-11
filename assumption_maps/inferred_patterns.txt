@@ -1,0 +1,13 @@
+=== Hypothesis: December 2025 Convergence ===
+Observation:
+- Transformers, LLAMA, and MuJoCo all updated core inference logic within 48h.
+- LLAMA deprecates quant; Transformers removes auto-dtype; MuJoCo exposes APIs.
+
+Question:
+- Are these changes a response to shared upstream failure modes?
+- Is there a coordinated pivot away from low-bit inference?
+
+Stress Test:
+- Compare October and December commits to locate catalyst (e.g., bug report, paper drop, regulatory push).
+
+===

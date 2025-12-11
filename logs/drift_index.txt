@@ -1,0 +1,624 @@
+logs/llama_stat.txt:    Update and add comments about the shape of the key and value
+logs/llama_stat.txt:    Add FAQs
+logs/llama_stat.txt:    Merge pull request #860 from facebookresearch/add-issue-template
+logs/llama_stat.txt:    made some small fixes and added some context.
+logs/llama_stat.txt:    Add "--continue" flag to wget for model binary in order to resume dl
+logs/llama_stat.txt:    Add "--continue" flag to wget for model binary in order to resume downloads.
+logs/llama_stat.txt:    Added a link to the FAQ from the readme.
+logs/llama_stat.txt:    Added a QnA on using Llama 2 with languages other than english.
+logs/llama_stat.txt:    Merge pull request #779 from javier-m/add-seed
+logs/llama_stat.txt:    add seed
+logs/llama_stat.txt:    add seed
+logs/llama_stat.txt:    Adding quick start steps
+logs/llama_stat.txt:commit 77062717054710e352a99add63d160274ce670c6
+logs/llama_stat.txt:    Remove linkshim workaround from README
+logs/llama_stat.txt:    Merge pull request #390 from tomorrmato/add_example_type_hint
+logs/llama_stat.txt:    added type hint in example code
+logs/llama_stat.txt:    Remove unused Any import
+logs/llama_stat.txt:    added remanjg docs
+logs/llama_stat.txt:    add docstrings
+logs/llama_stat.txt:    Updating to add the date of the updates..
+logs/llama_stat.txt:    add PR number
+logs/llama_stat.txt:    Remove linkshim workaround from README
+logs/llama_stat.txt:    remove double-spacing
+logs/llama_stat.txt:    added type hint in example code
+logs/llama_stat.txt:    Add help on how to re-download model.
+logs/llama_stat.txt:    Remove unused Any import
+logs/llama_stat.txt:    Added colon in README.md
+logs/llama_stat.txt:    Added collon
+logs/llama_stat.txt:    The models support a 2048 context window. This is not well advertised and people are getting confused. No sense having a smaller size here, as it just adds to the confusion.
+logs/llama_stat.txt:    added reference
+logs/llama_stat.txt:    Add FAQ.md // add command line options
+logs/mujoco_stat.txt:    Add `mj_rayHfieldNormal` (not exposed in public header)
+logs/mujoco_stat.txt:    Change-Id: I27d6c46024d55addbc22eed276331e2ef5acfa7d
+logs/mujoco_stat.txt:    Add `mj_raySdfNormal` (not exposed in public header)
+logs/mujoco_stat.txt:    Add checks for nullness when iterating over the lights.
+logs/mujoco_stat.txt:    Removed unused font uploading functionality.
+logs/mujoco_stat.txt:    Add `mj_fwdKinematics` and a table improving documentation of the MuJoCo computation pipeline structure.
+logs/mujoco_stat.txt:    Add type hints to tuple constants in codegen/generators/constants.py.
+logs/mujoco_stat.txt:    Make table shadows visible in dark theme, add a table type with smaller text.
+logs/mujoco_stat.txt:    Add a light box-shadow to docutils tables (excluding mjcf-attributes) when in dark mode or auto mode with dark preference, so that the table boundaries are visible against the dark background.
+logs/mujoco_stat.txt:    Add OSX and WIN32 support for getting the native window pointer.
+logs/mujoco_stat.txt:    Add `mj_rayMeshNormal` (not exposed in public header)
+logs/mujoco_stat.txt:    Add names to some sensors in sleep test XML.
+logs/mujoco_stat.txt:    Refactor MuJoCo WASM struct codegen.
+logs/mujoco_stat.txt:    Remove TODO (charts have been implemented).
+logs/mujoco_stat.txt:commit 9274a0014ae381f9add4eb5104059a114aeaca9b
+logs/mujoco_stat.txt:    Refactor hfield-convex collision code. This should be a no-op.
+logs/mujoco_stat.txt:    Remove extraneous colons in XMLreference
+logs/mujoco_stat.txt:    Refactor epaWitness.
+logs/mujoco_stat.txt:    Update CMakeLists.txt to add/remove files.
+logs/mujoco_stat.txt:    Add `mj_copyState`
+logs/mujoco_stat.txt:    Refactor simulation state history tracking into a SimHistory class.
+logs/mujoco_stat.txt:    Add Frequently Asked Questions: Learning frameworks to MuJoCo Warp documentation.
+logs/mujoco_stat.txt:    Remove MPR from comment.
+logs/mujoco_stat.txt:    Add test explaining body_rootid and body_weldid semantics
+logs/mujoco_stat.txt:    - Add Toolbar and StatusBar.
+logs/mujoco_stat.txt:    - Rename "Free" camera to "Tumble"; add WASD-based free camera.
+logs/mujoco_stat.txt:    - Remove "non-classic" UX mode.
+logs/mujoco_stat.txt:    Add ray normal computation for primitives (currently private)
+logs/mujoco_stat.txt:    MuJoCo Warp documentation: Add note about `nconmax` and `njmax` not being parsed from XML.
+logs/mujoco_stat.txt:    For each contact point, we used to first compute the vertex weights on a triangle and then add a contact point per vertex using the flex interpolation (trilinear or quadratic), obtaining the total weight by multiplying the vertex weight and the basis function value at that vertex. After this change, each contact point is added directly by evaluating the basis function directly a the point.
+logs/mujoco_stat.txt:    Remove unused argument from mj_vertBodyWeight.
+logs/mujoco_stat.txt:    Add support for OpenSans and font-awesome fonts.
+logs/mujoco_stat.txt:    Add a README with instructions for how to build and run MuJoCo Studio externally
+logs/mujoco_stat.txt:    Add steps to build MuJoCo Studio to Github actions
+logs/mujoco_stat.txt:    Refactor MuJoCo WASM bindings functions code generation and auto-generate functions requiring argument boundchecks.
+logs/mujoco_stat.txt:    * Removed the caution callout since some internal CI has been implemented.
+logs/mujoco_stat.txt:    * Added to clarify the state of bindings build process on Windows.
+logs/mujoco_stat.txt:    Refactor Github actions so that all build steps are implemented as functions in a separate build_steps.sh file.
+logs/mujoco_stat.txt:    Refactor hill climbing support function.
+logs/mujoco_stat.txt:    Add a github actions job which quickly determines if the WASM build is broken by only testing on one platform
+logs/mujoco_stat.txt:    Remove support for custom fonts for OSS project for now.
+logs/mujoco_stat.txt:    Change-Id: I1a72ca02f5a50194bb7770d5765c6140adde1852
+logs/mujoco_stat.txt:    Remove destructors from `Mjs` wrapper structs.
+logs/mujoco_stat.txt:    Remove unused manually added structs from WASM bindings.
+logs/mujoco_stat.txt:    Remove redundant call to GenerateMipMaps.
+logs/mujoco_stat.txt:    Remove implot from toolbox/window.cc
+logs/mujoco_stat.txt:    Refactor WASM binding directory structure
+logs/mujoco_stat.txt:    Refactor WASM bindings in preparation for codegen directory structure update
+logs/mujoco_stat.txt:    Add `SLEEP` to `EnableBit` enum.
+logs/mujoco_stat.txt:commit 6fb43947019712eeb41f40dc5e496ab4846dadd6
+logs/mujoco_stat.txt:    Refactor array initialization for `mjData` and `mjvScene` in MuJoCo WASM bindings.
+logs/mujoco_stat.txt:    Add sleeping documentation
+logs/mujoco_stat.txt:    Add sleep related data structures
+logs/mujoco_stat.txt:    Refactor: Generate all struct bindings within the codegen.
+logs/mujoco_stat.txt:    Remove `MjVFS` from generated Emscripten bindings.
+logs/mujoco_stat.txt:    Refactor Emscripten bindings generation for MuJoCo structs.
+logs/mujoco_stat.txt:    Remove debug printing functionality from WASM codegen.
+logs/mujoco_stat.txt:    Remove Sync and Scene functions from Renderer.
+logs/mujoco_stat.txt:    Remove dependencies on mjvScene for interactions.
+logs/mujoco_stat.txt:    Added `sphinx.ext.extlinks` to the Sphinx configuration and defined `extlinks` for `:issue:` and `:pr:` roles, pointing to the MuJoCo GitHub repository. Updated `changelog.rst` to use these new roles, replacing `:github:issue:` and `:github:pull:` which are currently failing.
+logs/mujoco_stat.txt:    Refactor: Group autogenerated structs source in bindings.cc
+logs/mujoco_stat.txt:    Refactor struct dependency sorting to use wrapped field data.
+logs/mujoco_stat.txt:    Add convenience methods to CodeBuilder and cleanup some WASM bindings code generation
+logs/mujoco_stat.txt:    Change-Id: I97ab732eb11c63a6aaf7fa95add0b51bc0a56525
+logs/mujoco_stat.txt:    * Add newline function to code_builder
+logs/mujoco_stat.txt:    * Remove type aliases which made jump to definition less ergonomic
+logs/mujoco_stat.txt:    * Add types to constants
+logs/mujoco_stat.txt:    Add quadratic stiffness to flex.
+logs/mujoco_stat.txt:    Add JavaScript bindings and WASM support
+logs/mujoco_stat.txt:    Add JavaScript bindings and WASM support
+logs/mujoco_stat.txt:    Add JavaScript bindings and WASM support
+logs/mujoco_stat.txt:    Remove obsolete docs references to convexhull.
+logs/mujoco_stat.txt:    Add `__setattr__` to `_MjBindModel` and `_MjBindData`.
+logs/mujoco_stat.txt:    Remove dependency on Window, Physics, and Renderer classes.
+logs/mujoco_stat.txt:    Add naconmax, deprecation warning for nconmax.
+logs/mujoco_stat.txt:    Do not add bodies at mesh points for quadratic flex interpolation.
+logs/mujoco_stat.txt:    This removes a dependency on mjvScene from the App class.
+logs/mujoco_stat.txt:    Add early exit in `mj_xfrcAccumulate` using `mju_isZeroByte`
+logs/mujoco_stat.txt:    Add CMakeLists.txt files for new (experimental) code.
+logs/mujoco_stat.txt:    Adds a MUJOCO_BUILD_STUDIO option to enable building of the `studio` app (disabled by default).
+logs/mujoco_stat.txt:    Adds a MUJOCO_USE_FILAMENT to allow the studio app to use the filament rendering backend. A separate MUJOCO_USE_FILAMENT_VULKAN flag can be used to enable vulkan rendering.
+logs/mujoco_stat.txt:    Add Batched Model Fields section to MuJoCo Warp documentation.
+logs/mujoco_stat.txt:    MuJoCo Warp documentation: Add `nworld`, `nconmax`, and `njmax` section and update introduction.
+logs/mujoco_stat.txt:    Add CMake configurations for new third_party dependencies.
+logs/mujoco_stat.txt:    Adds targets for dear_imgui, implot, filament, sdl2, and webp. These
+logs/mujoco_stat.txt:    If building simulate with USD support remove the no-deprecated warning due to deprecated header usage in USD.
+logs/mujoco_stat.txt:    Add tendon.cpp to mjcPhysics CMake
+logs/mujoco_stat.txt:    Add section in mjcPhysics documentation for MjcTendon.
+logs/mujoco_stat.txt:    Change-Id: I70476f57b8d3371cefd02e840add279423913f3f
+logs/mujoco_stat.txt:    Add support for tendons to mjcPhysics.
+logs/mujoco_stat.txt:    Add support for querying of MjsTendon path from Python.
+logs/mujoco_stat.txt:    Add `mj_extractState` as a public API function.
+logs/mujoco_stat.txt:commit 64add36adb696fec14cd6182c0d8f2cea5cdf737
+logs/mujoco_stat.txt:    Add quadratic interpolation to flex.
+logs/mujoco_stat.txt:    Add UI to visualize the State
+logs/mujoco_stat.txt:    Add quadratic interpolation to mju_interpolate3D.
+logs/mujoco_stat.txt:    Add mju_interpolate3D.
+logs/nanogpt_stat.txt:    Added a note about the deprecation of nanoGPT and the introduction of nanochat.
+logs/nanogpt_stat.txt:    fix: prepare.py - added input file opening in UTF-8 encoding
+logs/nanogpt_stat.txt:    feature: .gitignore - added venv folders
+logs/nanogpt_stat.txt:commit 542ac51d1f98557f3c19bbea7047ed4add9c09d9
+logs/nanogpt_stat.txt:    module in python is unable to find entry point, thus, adding
+logs/nanogpt_stat.txt:    Remove pos unsqueeze(0)
+logs/nanogpt_stat.txt:    Add more files to .gitignore
+logs/nanogpt_stat.txt:    Adds a `pip install ...` command that will install all necessary dependencies, while retaining original dependency notes. Added quick description of `tqdm` as well.
+logs/nanogpt_stat.txt:    Add more files to .gitignore
+logs/nanogpt_stat.txt:    Remove pos unsqueeze(0)
+logs/nanogpt_stat.txt:    add macbook specific instructions to generate samples
+logs/nanogpt_stat.txt:    Add .gitignore
+logs/nanogpt_stat.txt:    Add .gitignore
+logs/nanogpt_stat.txt:    small tweaks, make default WD be 0.1 as is often cited, and remove spurious init of LayerNorm, which is already initialized at 1,0
+logs/nanogpt_stat.txt:    also add a sampling/inference section
+logs/nanogpt_stat.txt:    add the estimation of model flops utilization (MFU), a very commonly looked at metric that estimates the token throughput in units of A100 bfloat16 peak flops (312 TFLOPS). this gives us a sense of the hardware utilization we're achieving
+logs/nanogpt_stat.txt:commit 3341b4cecc9d3a315330ad372c5473cf8de5addd
+logs/nanogpt_stat.txt:    add reference for 6ND to notebook too
+logs/nanogpt_stat.txt:commit eae986c2d2addd4ada8e8d03ed8a315ca6ea1997
+logs/nanogpt_stat.txt:    mildly dramatic refactor for handing all these usage cases across all possible supported and unsupported devices for all the possible switches and flags
+logs/nanogpt_stat.txt:    very slight refactor, bit cleaner
+logs/nanogpt_stat.txt:    Merge pull request #120 from nynyg/remove_cpu_pin_mem
+logs/nanogpt_stat.txt:    padding 50257 -> 50304 vocab_size, the nerest multiple of 64. the biggest deal smallest optimization i've made in recent past, about 25% faster. this is because the last layer is a major latency bottleneck consuming about 40% of latency due to the very high channel count.
+logs/nanogpt_stat.txt:    add template .gitattributes that fixes language stats
+logs/nanogpt_stat.txt:    add gpt2 training config
+logs/nanogpt_stat.txt:    add template .gitattributes that fixes language stats
+logs/nanogpt_stat.txt:    add flash attention support, resolving last few issues but for now seems to work ok
+logs/nanogpt_stat.txt:    add the bias option to config, default it to True for now
+logs/nanogpt_stat.txt:    rewrite model class so layernorm has an optional bias= parameter
+logs/nanogpt_stat.txt:    grad clipping seems to slightly speed up training in the beginning but i can't see a big difference later in the training. it costs non-negligeable compute to clip. adding it for now because it is standard, and i think more necessary as the model becomes larger. practitioners may consider turning it off for minor efficiency gains
+logs/nanogpt_stat.txt:    add relative import in shakespeare
+logs/nanogpt_stat.txt:    add relative import in shakespeare_char
+logs/nanogpt_stat.txt:    add docs on multinode training to main README too
+logs/nanogpt_stat.txt:    add gradient accumulation support to simulate larger batch sizes. ty @VHellendoorn for original PR
+logs/nanogpt_stat.txt:    add note of caution for the produced warning, investigate later
+logs/nanogpt_stat.txt:    more scaling laws, clarification, and add simple interpolation of Approach 2
+logs/nanogpt_stat.txt:    add note about windows and pytorch 2.0 and torch compile in general
+logs/nanogpt_stat.txt:    oh no nanoGPT is trending quickly explain the character-level functionality I added late last night
+logs/nanogpt_stat.txt:    add support for character-level language models, a new character-level shakespeare dataset, a new config file that shows how to train a character-level baby GPT on it, and adjust the sample function to figure out if it should decode with characters or GPT2 bpe tokens. The current implementation is a bit hacky and basically assumes just these two possibilities. In the future we may want to support more general encoders or decoders.
+logs/nanogpt_stat.txt:    add device and dtype support to train.py args
+logs/nanogpt_stat.txt:    shuttling the poor mans configurator aside into its own file and adding it to all of train,sample,bench. because i am leaving args in globals() so i can avoid having to prepend every single variable with an args., i have to exec the configurator and the optional configs. so we're left with something very gross by standard convention but also quite simple and functional. *ducks*
+logs/nanogpt_stat.txt:commit 26aa5f3eadd5df5a9e0b0fdb4736e7b565e9f9f1
+logs/nanogpt_stat.txt:    add a notebook trying to reproduce chinchilla scaling laws. I can't get the numbers to be exactly right, have to look at more
+logs/nanogpt_stat.txt:    adding few more dependencies
+logs/nanogpt_stat.txt:    add a patch to fix mysterious unwanted prefix in state dict? maybe remove later
+logs/nanogpt_stat.txt:    add torch.compile by default, shows almost 1.8X improvement in throughput nice
+logs/nanogpt_stat.txt:    add link to mingpt
+logs/nanogpt_stat.txt:    enhance readme, add some todos
+logs/nanogpt_stat.txt:    Add MIT LICENSE file
+logs/nanogpt_stat.txt:    add support for DDP training. the scaling timings right now do not look good by default, have to dig more into
+logs/nanogpt_stat.txt:    add pytorch profiler support. not sure how to support both profiler and simple benchmarking, a bit gnarly atm hmm
+logs/nanogpt_stat.txt:    add data loading into benchmarking as well, just for completeness
+logs/nanogpt_stat.txt:    add benchmarking script v0
+logs/nanogpt_stat.txt:    adding a lightweight configurator that may be a terrible mistake lol. also adding configs to evaluate the baseline GPT2 versions released by OpenAI on OWT. we have some ways to go to match those numbers atm
+logs/transformers_stat.txt:    [`Padding-Free Attention`] Fix packed FA attention with pos ids only  (#42801)
+logs/transformers_stat.txt:    feat(granitemoe*): Remove logits upcast when computing loss (#42753)
+logs/transformers_stat.txt:    * feat: Remove logits upcast when computing loss
+logs/transformers_stat.txt:    * add tests
+logs/transformers_stat.txt:    Fully deprecate AutoGPTQ and AutoAWQ for GPT-QModel (#41567)
+logs/transformers_stat.txt:    * fully deprecate autogptq
+logs/transformers_stat.txt:    * remove use_cuda and use_exllama toggles are fully deprecated in gptqmodel
+logs/transformers_stat.txt:    * add `act_group_aware` property
+logs/transformers_stat.txt:    * remove autoawq fuse support
+logs/transformers_stat.txt:    * remove remove autoawq.config fuse
+logs/transformers_stat.txt:    * remove awq fuse test
+logs/transformers_stat.txt:    * remove get_modules_to_fuse
+logs/transformers_stat.txt:    * remove self.exllama_config = exllama_config
+logs/transformers_stat.txt:    * remove fused
+logs/transformers_stat.txt:    * Remove the "version" field from AwqConfig
+logs/transformers_stat.txt:    * Add torch_fused inferencefix test_gptq test
+logs/transformers_stat.txt:    * remove auto_awq
+logs/transformers_stat.txt:    * test_awq.py added EXPECTED_OUTPUT
+logs/transformers_stat.txt:    * remove ExllamaV1 Test
+logs/transformers_stat.txt:    * added EXPECTED_OUTPUT
+logs/transformers_stat.txt:    * remove ExllamaV1 Test
+logs/transformers_stat.txt:    * add AwqBackend.AUTO_TRAINABLE
+logs/transformers_stat.txt:    library.  To integrate GGUF-based models without additional configuration,
+logs/transformers_stat.txt:    This commit provides additional mapping to provide GGUF-specific default
+logs/transformers_stat.txt:    - Add tensor to list conversion in DataCollatorWithFlattening
+logs/transformers_stat.txt:    - Add tests for both tensor and list labels
+logs/transformers_stat.txt:    * Add test case and update image processing
+logs/transformers_stat.txt:    * Add warning
+logs/transformers_stat.txt:    Add an alternative scenario to EoMT `post_process_semantic_segmentation` in case `path_offsets` is None (#42716)
+logs/transformers_stat.txt:    * Add an alternative scenario in case patch_offsets is None
+logs/transformers_stat.txt:    🚨🚨 [saving] Default to 50GB shards, and remove non-safe serialization (#42734)
+logs/transformers_stat.txt:    * remove now useless save_function
+logs/transformers_stat.txt:    Refactor-tokenization-more (#42563)
+logs/transformers_stat.txt:    * add convert from spm per model!
+logs/transformers_stat.txt:    * remove small errors
+logs/transformers_stat.txt:    * remove something
+logs/transformers_stat.txt:    * add a custom model path to make sure custom stuff is registe
+logs/transformers_stat.txt:    * Remove breakpoint.
+logs/transformers_stat.txt:    * address review
+logs/transformers_stat.txt:    * refactor, improve readability, add to fix-copies
+logs/transformers_stat.txt: utils/add_dates.py                     | 166 ++++++++++++++++++++++++---------
+logs/transformers_stat.txt:    * Removed unused variable.
+logs/transformers_stat.txt:    Remove duplicated imports (#42689)
+logs/transformers_stat.txt:    into a transformers model. A test for this has been added.
+logs/transformers_stat.txt:    Additionally, also testing if a non-LoRA adapter can be added to a
+logs/transformers_stat.txt:    * Reviewer feedback: Remove check completely
+logs/transformers_stat.txt:    Remove Neptune integration references and deprecate `NeptuneCallback` (#42666)
+logs/transformers_stat.txt:    Remove Neptune integration references and deprecate NeptuneCallback
+logs/transformers_stat.txt:    * Add docstring
+logs/transformers_stat.txt:    * add docstring
+logs/transformers_stat.txt:    update and add Expectations for mistral3/internvl tests (#42616)
+logs/transformers_stat.txt: utils/models_to_deprecate.py                       |   1 +
+logs/transformers_stat.txt:    * add doc
+logs/transformers_stat.txt:    Offloading need to add the prefix into the offload_index (#42624)
+logs/transformers_stat.txt:    * add prefix
+logs/transformers_stat.txt:    * add better logging
+logs/transformers_stat.txt:    * add better logging + training loop
+logs/transformers_stat.txt:    * add -s for pytest CI
+logs/transformers_stat.txt:    * add generate assert as well
+logs/transformers_stat.txt:    * refactor
+logs/transformers_stat.txt:    * add license
+logs/transformers_stat.txt:    * remove regex
+logs/transformers_stat.txt:    Remove dataclasses.
+logs/transformers_stat.txt:    * Remove Note about max_new_tokens and max_length
+logs/transformers_stat.txt:    * Remove Note about max_new_tokens and max_length
+logs/transformers_stat.txt:    Remove splitted_tests.txt file (#42625)
+logs/transformers_stat.txt:    Remove file
+logs/transformers_stat.txt:    * add env var
+logs/transformers_stat.txt:    * add test
+logs/transformers_stat.txt:    * Update JIT checkpoint code to remove CUDA streams and async checkpointing. Introduce sentinal file to identify incomplete checkpoints. Update trainer arg doc and tests.
+logs/transformers_stat.txt:    * Refactor JIT checkpoint logic: rename methods and variables for clarity, improve SIGTERM handling, and update related tests.
+logs/transformers_stat.txt:    * Remove support for environment variable overrides in `TrainingArguments` and update related documentation.
+logs/transformers_stat.txt:    * remove duplicate code
+logs/transformers_stat.txt:    * Remove test_tokenization_for_chat tests, which no longer do anything useful
+logs/transformers_stat.txt:    * Remove test_tokenization_for_chat tests, which no longer do anything useful
+logs/transformers_stat.txt:    * Remove test_tokenization_for_chat
+logs/transformers_stat.txt:    * Add a little test to make sure that doesn't happen again
+logs/transformers_stat.txt:    Added custom introduction to auto_docstring for Sam3TrackerPreTrainedModel. to match typo fix in modeling_sam3_tracker.py
+logs/transformers_stat.txt:    * add convert
+logs/transformers_stat.txt:    * Add **kwargs into every Model.forward()
+logs/transformers_stat.txt:    * Add the test back in
+logs/transformers_stat.txt:    * remove references
+logs/transformers_stat.txt:    Add SDPA support for PatchTST model (#42465)
+logs/transformers_stat.txt:    * Add SDPA and Flash Attention support for PatchTST model
+logs/transformers_stat.txt:    - Add _supports_sdpa = True and _supports_flash_attn = True to PatchTSTPreTrainedModel
+logs/transformers_stat.txt:    Add torch compile to CB (#42516)
+logs/transformers_stat.txt:    * Add sumarrized by default
+logs/transformers_stat.txt:    [Quantization] Remove dequant fp8 config (#42596)
+logs/transformers_stat.txt:    * add test checking order of sampled data points
+logs/transformers_stat.txt:    * add require_torch_non_multi_accelerator decorator to test method
+logs/transformers_stat.txt:    * add back feature extractor saving logic
+logs/transformers_stat.txt:    * added test in test_kernels
+logs/transformers_stat.txt:    * added test with proper format
+logs/transformers_stat.txt:    * added test with proper format once again
+logs/transformers_stat.txt:    * Removed mapping_test.py file
+logs/transformers_stat.txt:    * removed the test
+logs/transformers_stat.txt:    Fix `parse_response` after tokenizer refactor (#42300)
+logs/transformers_stat.txt:    * Remove references to parse_response in the docs
+logs/transformers_stat.txt:    * Re-add parse_response (with appropriate warnings)
+logs/transformers_stat.txt:    Add backward compatibility for methods which have been moved to `RotaryEmbeddingConfigMixin` (#42517)
+logs/transformers_stat.txt:    * Add backward compatibility for methods which have been moved to `RotaryEmbeddingConfigMixin`
+logs/transformers_stat.txt:    * eetq dep removed
+logs/transformers_stat.txt:    [test] delete `SeamlessM4TProcessorTest::test_save_load_pretrained_addition` (#42562)
+logs/transformers_stat.txt:    * Add coauthor
+logs/transformers_stat.txt:    * Removed extra condition.
+logs/transformers_stat.txt:    Add FastVLM (#41112)
+logs/transformers_stat.txt:    * Added an initial conversion script
+logs/transformers_stat.txt:    * Added a modular where FastVLM is different from LlaVA
+logs/transformers_stat.txt:    * Removed redundant labels from FastViT & improved the template
+logs/transformers_stat.txt:    * Added docs and changed default config
+logs/transformers_stat.txt:    * added initial tests - some still failing
+logs/transformers_stat.txt:    [Ministral 3] Add ministral 3 (#42498)
+logs/transformers_stat.txt:    * add todo
+logs/transformers_stat.txt:    * remove zero_like + scatter
+logs/transformers_stat.txt:    * refactor
+logs/transformers_stat.txt:    * added renaming
+logs/transformers_stat.txt:    * add _model
+logs/transformers_stat.txt:    * refactor sentencepiecebackend and additional_special_tokens
+logs/transformers_stat.txt:    * remove problemattic fic copies
+logs/transformers_stat.txt:    * add the local test as well
+logs/transformers_stat.txt:    * add logs to debug gemma on ci
+logs/transformers_stat.txt:    * add migration guide
+logs/transformers_stat.txt:    * remove fix_state_dict methods
+logs/transformers_stat.txt:    * oupsi readded it
+logs/transformers_stat.txt:    * add no_grad decorator
+logs/transformers_stat.txt:    * add test
+logs/transformers_stat.txt:    * remove redundant check
+logs/transformers_stat.txt:    * add some fixes to gpt-oss (but still not good)
+logs/transformers_stat.txt:    * refactor(cb): group `with` stmts
+logs/transformers_stat.txt:    * refactor(cb): move log line before `stop` call
+logs/transformers_stat.txt:    Add afmoe to models __init__.py (#42501)
+logs/transformers_stat.txt:    * Add t5gemma2 model & configurations.
+logs/transformers_stat.txt:    * Add auto support
+logs/transformers_stat.txt:    * Add test case.
+logs/transformers_stat.txt:    * Add doctree.
+logs/transformers_stat.txt:    * Style fix & add use of final_logit_softcapping for attributes check.
+logs/transformers_stat.txt:    * Add t5gemma2 to image-text-to-text category.
+logs/transformers_stat.txt:    * Add T5Gemma2 doc.
+logs/transformers_stat.txt:    * remove unused imports.
+logs/transformers_stat.txt:    * Add T5Gemma2VisionConfig.
+logs/transformers_stat.txt:    * remove several unnecessary codes and fix small bugs.
+logs/transformers_stat.txt:    * add tests
+logs/transformers_stat.txt:    * remove bart ones i added the other day
+logs/transformers_stat.txt:    * remove open ai skip i added the other day
+logs/transformers_stat.txt:    * add flag
+logs/transformers_stat.txt:    * add tests
+logs/transformers_stat.txt:    perf: Remove implicit CPU-GPU syncs due to implicit .item() call (#42433)
+logs/transformers_stat.txt:    * perf: Remove implicit CPU-GPU syncs due to implicit .item() call
+logs/transformers_stat.txt:    * fix: update the newly added nanochat model files
+logs/transformers_stat.txt:    * Patch Mistral Common Tokenizer 2: fix add_special_tokens
+logs/transformers_stat.txt:    * Add int support to decode
+logs/transformers_stat.txt:    * Add edge test cases
+logs/transformers_stat.txt:    * Refactor to private logic of batch_decode
+logs/transformers_stat.txt:    * Add special properties
+logs/transformers_stat.txt:    * new method added into __all__
+logs/transformers_stat.txt:    * added global setting for tf32
+logs/transformers_stat.txt:    * added support for MUSA as well
+logs/transformers_stat.txt:    remove tokenizer warning (#42483)
+logs/transformers_stat.txt:    * remove
+logs/transformers_stat.txt:    Add afmoe model (#42168)
+logs/transformers_stat.txt:    * Add AFMoE model support
+logs/transformers_stat.txt:    * Address review feedback for AFMoE implementation
+logs/transformers_stat.txt:    * Add flex attention support to AFMoE model
+logs/transformers_stat.txt:    * Remove test-results directory
+logs/transformers_stat.txt:    * Address PR review feedback for AFMoE model
+logs/transformers_stat.txt:    Remove shared expert if else as defaults to 2
+logs/transformers_stat.txt:    Remove `route_norm` as it default to `True`.
+logs/transformers_stat.txt:    add rotary kernel support to Qwen3 model (#41147)
+logs/transformers_stat.txt:    * add rotary kernel support to Qwen3 model
+logs/transformers_stat.txt:    * add more check
+logs/transformers_stat.txt:    * add compatibility for old version `kernels`
+logs/transformers_stat.txt:    * add rotary fn kernel to all models
+logs/transformers_stat.txt:    * remove reverse for now as not needed
+logs/transformers_stat.txt:    Fix gpt2 tokenizer `add_prefix_space` default value  (#42481)
+logs/transformers_stat.txt:    add require_deterministic_for_xpu to make the case pass in xpu (#42439)
+logs/transformers_stat.txt:    * removed unused shift_labels reference in loss computation
+logs/transformers_stat.txt:    * Remove unused model unwrapping
+logs/transformers_stat.txt:    remove reference to TF models from docs (#42443)
+logs/transformers_stat.txt:    * remove redundant check
+logs/transformers_stat.txt:    * remove fix_state_dict methods
+logs/transformers_stat.txt:    * oupsi readded it
+logs/transformers_stat.txt:    * add no_grad decorator
+logs/transformers_stat.txt:    * add test
+logs/transformers_stat.txt:    * refactor
+logs/transformers_stat.txt:    * added renaming
+logs/transformers_stat.txt:    * add _model
+logs/transformers_stat.txt:    * refactor sentencepiecebackend and additional_special_tokens
+logs/transformers_stat.txt:    * remove problemattic fic copies
+logs/transformers_stat.txt:    * add the local test as well
+logs/transformers_stat.txt:    * add logs to debug gemma on ci
+logs/transformers_stat.txt:    * add migration guide
+logs/transformers_stat.txt: src/transformers/cli/add_new_model_like.py         |    2 +-
+logs/transformers_stat.txt: .../pipelines/deprecated/text2text_generation.py   |    2 +-
+logs/transformers_stat.txt:    * Refactor test_offline method with context patches
+logs/transformers_stat.txt:    Refactor test_offline to use patch for offline mode.
+logs/transformers_stat.txt:    [`CI`] Add to run slow (#42459)
+logs/transformers_stat.txt:    add
+logs/transformers_stat.txt:    Besides renaming keys, this PR does not address possible conversions
+logs/transformers_stat.txt:    * remove deprecated cache dir env variables
+logs/transformers_stat.txt: docs/source/it/add_new_model.md                    |   6 +-
+logs/transformers_stat.txt:    * Address test
+logs/transformers_stat.txt:    - PR #37283 removed explicit .keys() calls, breaking TensorDict compatibility
+logs/transformers_stat.txt:    - Affected DataCollatorWithPadding, DataCollatorForLanguageModeling, and other collators
+logs/transformers_stat.txt:    - Added len() check to handle empty batch edge case
+logs/transformers_stat.txt:    - Added comprehensive test suite: tests/trainer/test_tensordict_compatibility.py
+logs/transformers_stat.txt:    - 7 test cases covering basic padding, variable lengths, mixed inputs, additional fields
+logs/transformers_stat.txt:    - Added @require_tensordict decorator and is_tensordict_available() in testing_utils.py
+logs/transformers_stat.txt:    - All existing tests pass (54/54 data collator tests, 2/2 padding tests)
+logs/transformers_stat.txt:    * refactor: Address reviewer feedback on TensorDict fix
+logs/transformers_stat.txt:    Addresses feedback from @ligz08 in PR review
+logs/transformers_stat.txt:    Addresses maintainer feedback.
+logs/transformers_stat.txt:    * Remove TensorDict tests and utilities as requested
+logs/transformers_stat.txt:    - Removed TensorDictCompatibilityTest class from test_data_collator.py
+logs/transformers_stat.txt:    - Removed is_tensordict_available() and require_tensordict() from testing_utils.py
+logs/transformers_stat.txt:    * remove that too
+logs/transformers_stat.txt:    * refactor CB loading logic as well
+logs/transformers_stat.txt:    * add comment
+logs/transformers_stat.txt:    [cleanup] Remove deprecated load config from file (#42383)
+logs/transformers_stat.txt:    * Remove deprecated load config from file
+logs/transformers_stat.txt:    * Added the timestamps to request
+logs/transformers_stat.txt:    * Remove the first timestamp for generate timing
+logs/transformers_stat.txt:    Remove run
+logs/transformers_stat.txt: src/transformers/cli/add_new_model_like.py | 15 ++++---
+logs/transformers_stat.txt:    * add modelling to auto
+logs/transformers_stat.txt:    * add to init
+logs/transformers_stat.txt:    * [WIP] add scripts for conversion
+logs/transformers_stat.txt:    * add return as tensors
+logs/transformers_stat.txt:    * add repo revision to vocab pull
+logs/transformers_stat.txt:    * move attention into func and add kward to all signatures (for vllm)
+logs/transformers_stat.txt:    * remove custom tokenizer
+logs/transformers_stat.txt:    * removed unused variables
+logs/transformers_stat.txt:    * remove custom tokenizer from autos
+logs/transformers_stat.txt:    * add documentation for nanochat
+logs/transformers_stat.txt:    * remove excess configuration
+logs/transformers_stat.txt:    * add causal flag
+logs/transformers_stat.txt:    * remove excess  and just set params in model config
+logs/transformers_stat.txt:    * remove excess changes in auto
+logs/transformers_stat.txt:    * add a basic tp/pp plan
+logs/transformers_stat.txt:    * add docstring to nanochat config
+logs/transformers_stat.txt:    * remove forward snippet
+logs/transformers_stat.txt:    Fix processor usage + add chat_template support to TTS pipeline, and shift common chat template logic to base class. (#42326)
+logs/transformers_stat.txt:    * Fix processor usage and add chat_template support to TTS pipeline.
+logs/transformers_stat.txt:    * Remove tied weights.
+logs/transformers_stat.txt:    * Properly handle DIa and add test.
+logs/transformers_stat.txt:    * Remove chat from image text to text.
+logs/transformers_stat.txt:    * Add checks for bark/musicgen to ensure output is audio.
+logs/transformers_stat.txt:    * add qwen2 audio
+logs/transformers_stat.txt:    * add qwen3-omni
+logs/transformers_stat.txt:    * add repr
+logs/transformers_stat.txt:    * fox copies, new models were added
+logs/transformers_stat.txt:    * remove attributes and add all missing sub processors to their auto classes
+logs/transformers_stat.txt:    * remove all mentions of .attributes
+logs/transformers_stat.txt:    * remove last attributes
+logs/transformers_stat.txt:    * add init to markup_lm
+logs/transformers_stat.txt:    * remove print
+logs/transformers_stat.txt:    * refactor processor tests first part
+logs/transformers_stat.txt:    * refactor part 2
+logs/transformers_stat.txt:    * refactor all processor with mixin
+logs/transformers_stat.txt:    * add support for loading and saving multiple tokenizer natively
+logs/transformers_stat.txt:    * remove exclude_attributes from save_pretrained
+logs/transformers_stat.txt:    * add test_processor_from_pretrained_vs_from_components, fix failing tests
+logs/transformers_stat.txt:    * add config for layoutxlm
+logs/transformers_stat.txt:    🚨 Remove generic output_attentions warning (#42334)
+logs/transformers_stat.txt:    * Remove generic output_attentions warning
+logs/transformers_stat.txt:    Removed broad warning for output_attentions in generic.py. Specific backend warnings remain in their respective modules.
+logs/transformers_stat.txt:    * removed comments
+logs/transformers_stat.txt:    * Remove unnecessary blank line in generic.py
+logs/transformers_stat.txt:    added more breaking changes
+logs/transformers_stat.txt:    * add ops
+logs/transformers_stat.txt:    * remove hub usage on local
+logs/transformers_stat.txt:    * add a tes
+logs/transformers_stat.txt:    📚 docs(granite-speech): add comprehensive usage examples (#42125)
+logs/transformers_stat.txt:    * 📚 docs(granite-speech): add comprehensive usage examples
+logs/transformers_stat.txt:    Resolves the TODO (@alex-jw-brooks) by adding complete usage documentation
+logs/transformers_stat.txt:    Added examples for:
+logs/transformers_stat.txt:    - Speech-to-text with additional context
+logs/transformers_stat.txt:    * Address review feedback: add chat template usage and move model-specific tips
+logs/transformers_stat.txt:    - Added proper chat template formatting in the second example (per @zucchini-nlp feedback)
+logs/transformers_stat.txt:    - Removed generic LLM tips (temperature, batch size, memory)
+logs/transformers_stat.txt:    Address review feedback by replacing placeholder audio paths with real
+logs/transformers_stat.txt:    - Add datasets import to all three examples
+logs/transformers_stat.txt:    [`Attn Masks`] Add skip option for non-packed sequences (#42367)
+logs/transformers_stat.txt:    * remove unsafe loading path
+logs/transformers_stat.txt:    * add quantizaton_operation
+logs/transformers_stat.txt:    * add license
+logs/transformers_stat.txt:    * add guard
+logs/transformers_stat.txt:    * add second guard
+logs/transformers_stat.txt:    Remove test inheritance for EfficientLoftr, rename KeypointMatchingOutput to model specific name (#42365)
+logs/transformers_stat.txt:    * Rename KeypointMatchingOutput to make it model specific, remove test inheritance, remove irrelevant test
+logs/transformers_stat.txt:    * remove EfficientLoFTRKeypointMatchingOutput from public init
+logs/transformers_stat.txt:    Add image processor fast vitpose (#42021)
+logs/transformers_stat.txt:    * Add pix2struct fast image processor
+logs/transformers_stat.txt:    * Add vit image processor fast
+logs/transformers_stat.txt:    Make benchmarking lighter: clean-up result files and remove non-needed arguments (#42357)
+logs/transformers_stat.txt:    * Remodel and remove backend
+logs/transformers_stat.txt:    * Remove extra generation config
+logs/transformers_stat.txt:    * add a test
+logs/transformers_stat.txt:    * Remove dtypes redundant declaration
+logs/transformers_stat.txt: src/transformers/cli/add_new_model_like.py         |  12 +-
+logs/transformers_stat.txt:    [loading] Re-add and improve disk offloading support (#42242)
+logs/transformers_stat.txt:    * remove hard-coded value
+logs/transformers_stat.txt:    * remove additional tiying after rebase
+logs/transformers_stat.txt:    * remove skip
+logs/transformers_stat.txt:       is automatically added by init_continuous_batching() in continuous_api.py,
+logs/transformers_stat.txt:    * remove restriction
+logs/transformers_stat.txt:    * add test and refactor tests
+logs/transformers_stat.txt:    * add docstring
+logs/transformers_stat.txt:    [XPU] Add flash_attn2 support for XPU (#41956)
+logs/transformers_stat.txt:    * Add flash_attention_2 and kernels-community/flash-attn support for XPU
+logs/transformers_stat.txt:    * Add flash-attn-2 support for XPU
+logs/transformers_stat.txt:    * add dynamic
+logs/transformers_stat.txt:    * add link to UlyssesSPDataLoaderAdapter
+logs/transformers_stat.txt:    * address comments
+logs/transformers_stat.txt:    * address comments
+logs/transformers_stat.txt:    * address comments
+logs/transformers_stat.txt:    * address comments
+logs/transformers_stat.txt:    Add Pix2Struct fast image processor (#42020)
+logs/transformers_stat.txt:    Add pix2struct fast image processor
+logs/transformers_stat.txt: src/transformers/cli/add_fast_image_processor.py   |   2 -
+logs/transformers_stat.txt:    [SAM3 Video] Add support for multi prompts  (#42293)
+logs/transformers_stat.txt:    * add support for multi prompts + fix checkpoints in tests
+logs/transformers_stat.txt:    * remove one unused function
+logs/transformers_stat.txt:    * Update trainer.py: add multiprocessing_context for mps devices
+logs/transformers_stat.txt:    Remove outdated methods in modeling_utils.py (#42302)
+logs/transformers_stat.txt:    Remove error string test that was failing (#42301)
+logs/transformers_stat.txt:    Fix Break change of AWQ FusedModules due to Attention Refactor (#41909)
+logs/transformers_stat.txt:    * fix awq bc due to attention refactor
+logs/transformers_stat.txt:    * feat: add test for llama3
+logs/transformers_stat.txt:    ENH: Add support for LoRA hotswapping (#41297)
+logs/transformers_stat.txt:    * refactor(MinPLogitsWarper): optimizing min_tokens_to_keep
+logs/transformers_stat.txt:    Add SAM3 to 🤗 Transformers (#42285)
+logs/transformers_stat.txt:    * add native image only sam3
+logs/transformers_stat.txt:    * remove sam3 source code from transformers
+logs/transformers_stat.txt:    * init sam3 refactor
+logs/transformers_stat.txt:    * add working refactored sam3
+logs/transformers_stat.txt:    * remove dedicated config mask fuser
+logs/transformers_stat.txt:    * Add support for batch inference and inference in any dtype
+logs/transformers_stat.txt:    * Use consistent masks throughout modeling file (True=valid, False=Padding)
+logs/transformers_stat.txt:    * Cleanup modeling, add fully working tests, add examples in md doc, add post processing
+logs/transformers_stat.txt:    * Remove sam3 support of points and masks input, simplify configs, modeling, processing and tests.
+logs/transformers_stat.txt:    * add working sam3_video
+logs/transformers_stat.txt:    * add sam3 tracker and sam3 tracker video
+logs/transformers_stat.txt:    * add recondition_on_trk_masks option, clean up
+logs/transformers_stat.txt:    * add support for loading the 4 sam3 models from one checkpoint
+logs/transformers_stat.txt:    * Improve sam3_video API, add supports for inference streaming, add docs and tests for sam3_video
+logs/transformers_stat.txt:    * remove unused attribute in tracker models
+logs/transformers_stat.txt:    * add sorting
+logs/transformers_stat.txt:    Remove random flag (#42282)
+logs/transformers_stat.txt:    * remove random flag
+logs/transformers_stat.txt:    Remove doc files of other langs for deleted models (#42276)
+logs/transformers_stat.txt:commit 95d75eb7b16edda3437aec315fadd32b40684f8a
+logs/transformers_stat.txt:    Add support for torch device objects in device validator (#42267)
+logs/transformers_stat.txt:    add support for device objects in device validator
+logs/transformers_stat.txt:    * use `input_features_mask` for paddinf
+logs/transformers_stat.txt:    * add helper for encoder
+logs/transformers_stat.txt:    * add encider tests simialr to decoder
+logs/transformers_stat.txt:    * add
+logs/transformers_stat.txt:    Fix bnb for the weights refactor (#42043)
+logs/transformers_stat.txt:    * remove semaphores
+logs/transformers_stat.txt:    * try to remove custom tiing logic when its stupid
+logs/transformers_stat.txt:    * remove all buffering -> much faster without it
+logs/transformers_stat.txt:    * remove some tie_weights custome funcs when not needed
+logs/transformers_stat.txt:    * remove ALL custom tie weights
+logs/transformers_stat.txt:    * remove explict sharing of some tied keys.
+logs/transformers_stat.txt:    * remove now non existant tie_weights
+logs/transformers_stat.txt:    * nit about general init and cls.padding_idx
+logs/transformers_stat.txt:    * remove old loading func
+logs/transformers_stat.txt:    * add annotations
+logs/transformers_stat.txt:    delete already deprecated models (#42235)
+logs/transformers_stat.txt: src/transformers/models/deprecated/__init__.py     |   27 +-
+logs/transformers_stat.txt: .../models/deprecated/bort/__init__.py             |    0
+logs/transformers_stat.txt: .../models/deprecated/deta/__init__.py             |   28 -
+logs/transformers_stat.txt: .../models/deprecated/deta/configuration_deta.py   |  278 --
+logs/transformers_stat.txt: .../deprecated/deta/image_processing_deta.py       | 1153 --------
+logs/transformers_stat.txt: .../models/deprecated/deta/modeling_deta.py        | 2765 --------------------
+logs/transformers_stat.txt: .../models/deprecated/efficientformer/__init__.py  |   28 -
+logs/transformers_stat.txt: .../models/deprecated/ernie_m/__init__.py          |   28 -
+logs/transformers_stat.txt: .../deprecated/ernie_m/configuration_ernie_m.py    |  112 -
+logs/transformers_stat.txt: .../models/deprecated/ernie_m/modeling_ernie_m.py  |  987 -------
+logs/transformers_stat.txt: .../deprecated/ernie_m/tokenization_ernie_m.py     |  409 ---
+logs/transformers_stat.txt: .../models/deprecated/gptsan_japanese/__init__.py  |   28 -
+logs/transformers_stat.txt: .../models/deprecated/graphormer/__init__.py       |   27 -
+logs/transformers_stat.txt: .../deprecated/graphormer/algos_graphormer.pyx     |  107 -
+logs/transformers_stat.txt: .../deprecated/graphormer/collating_graphormer.py  |  135 -
+logs/transformers_stat.txt: .../deprecated/graphormer/modeling_graphormer.py   |  895 -------
+logs/transformers_stat.txt: .../models/deprecated/jukebox/__init__.py          |   28 -
+logs/transformers_stat.txt: .../deprecated/jukebox/configuration_jukebox.py    |  599 -----
+logs/transformers_stat.txt: .../models/deprecated/jukebox/convert_jukebox.py   |  279 --
+logs/transformers_stat.txt: .../models/deprecated/jukebox/modeling_jukebox.py  | 2674 -------------------
+logs/transformers_stat.txt: .../deprecated/jukebox/tokenization_jukebox.py     |  390 ---
+logs/transformers_stat.txt: .../models/deprecated/mctct/__init__.py            |   29 -
+logs/transformers_stat.txt: .../models/deprecated/mctct/configuration_mctct.py |  184 --
+logs/transformers_stat.txt: .../deprecated/mctct/feature_extraction_mctct.py   |  290 --
+logs/transformers_stat.txt: .../models/deprecated/mctct/modeling_mctct.py      |  714 -----
+logs/transformers_stat.txt: .../models/deprecated/mctct/processing_mctct.py    |  139 -
+logs/transformers_stat.txt: .../models/deprecated/mega/__init__.py             |   27 -
+logs/transformers_stat.txt: .../models/deprecated/mega/configuration_mega.py   |  224 --
+logs/transformers_stat.txt: .../models/deprecated/mega/modeling_mega.py        | 2271 ----------------
+logs/transformers_stat.txt: .../models/deprecated/mmbt/__init__.py             |   27 -
+logs/transformers_stat.txt: .../models/deprecated/mmbt/configuration_mmbt.py   |   45 -
+logs/transformers_stat.txt: .../models/deprecated/mmbt/modeling_mmbt.py        |  399 ---
+logs/transformers_stat.txt: src/transformers/models/deprecated/nat/__init__.py |   27 -
+logs/transformers_stat.txt: .../models/deprecated/nat/configuration_nat.py     |  148 --
+logs/transformers_stat.txt: .../models/deprecated/nat/modeling_nat.py          |  895 -------
+logs/transformers_stat.txt: .../models/deprecated/nezha/__init__.py            |   27 -
+logs/transformers_stat.txt: .../models/deprecated/nezha/configuration_nezha.py |  105 -
+logs/transformers_stat.txt: .../models/deprecated/nezha/modeling_nezha.py      | 1530 -----------
+logs/transformers_stat.txt: .../models/deprecated/open_llama/__init__.py       |   27 -
+logs/transformers_stat.txt: .../deprecated/open_llama/modeling_open_llama.py   |  929 -------
+logs/transformers_stat.txt: .../models/deprecated/qdqbert/__init__.py          |   27 -
+logs/transformers_stat.txt: .../deprecated/qdqbert/configuration_qdqbert.py    |  123 -
+logs/transformers_stat.txt: .../models/deprecated/qdqbert/modeling_qdqbert.py  | 1563 -----------
+logs/transformers_stat.txt: .../models/deprecated/realm/__init__.py            |   30 -
+logs/transformers_stat.txt: .../models/deprecated/realm/configuration_realm.py |  169 --
+logs/transformers_stat.txt: .../models/deprecated/realm/modeling_realm.py      | 1665 ------------
+logs/transformers_stat.txt: .../models/deprecated/realm/retrieval_realm.py     |  166 --
+logs/transformers_stat.txt: .../models/deprecated/realm/tokenization_realm.py  |  534 ----
+logs/transformers_stat.txt: .../deprecated/realm/tokenization_realm_fast.py    |  223 --
+logs/transformers_stat.txt: .../models/deprecated/retribert/__init__.py        |   29 -
+logs/transformers_stat.txt: .../deprecated/retribert/modeling_retribert.py     |  200 --
+logs/transformers_stat.txt: .../deprecated/retribert/tokenization_retribert.py |  475 ----
+logs/transformers_stat.txt: .../models/deprecated/speech_to_text_2/__init__.py |   29 -
+logs/transformers_stat.txt: .../models/deprecated/tapex/__init__.py            |   26 -
+logs/transformers_stat.txt: .../models/deprecated/tapex/tokenization_tapex.py  | 1469 -----------
+logs/transformers_stat.txt: .../deprecated/trajectory_transformer/__init__.py  |   27 -
+logs/transformers_stat.txt: .../models/deprecated/transfo_xl/__init__.py       |   28 -
+logs/transformers_stat.txt: .../deprecated/transfo_xl/modeling_transfo_xl.py   | 1131 --------
+logs/transformers_stat.txt: .../models/deprecated/tvlt/__init__.py             |   20 -
+logs/transformers_stat.txt: .../models/deprecated/tvlt/configuration_tvlt.py   |  187 --
+logs/transformers_stat.txt: .../deprecated/tvlt/feature_extraction_tvlt.py     |  233 --
+logs/transformers_stat.txt: .../deprecated/tvlt/image_processing_tvlt.py       |  435 ---
+logs/transformers_stat.txt: .../models/deprecated/tvlt/modeling_tvlt.py        | 1234 ---------
+logs/transformers_stat.txt: .../models/deprecated/tvlt/processing_tvlt.py      |   86 -
+logs/transformers_stat.txt: src/transformers/models/deprecated/van/__init__.py |   27 -
+logs/transformers_stat.txt: .../models/deprecated/van/configuration_van.py     |  110 -
+logs/transformers_stat.txt: .../deprecated/van/convert_van_to_pytorch.py       |  288 --
+logs/transformers_stat.txt: .../models/deprecated/van/modeling_van.py          |  517 ----
+logs/transformers_stat.txt: .../models/deprecated/vit_hybrid/__init__.py       |   28 -
+logs/transformers_stat.txt: .../deprecated/vit_hybrid/modeling_vit_hybrid.py   |  681 -----
+logs/transformers_stat.txt: .../models/deprecated/xlm_prophetnet/__init__.py   |   28 -
+logs/transformers_stat.txt:    * Remove the GPT2 TF tokenizer too
+logs/transformers_stat.txt:    * add a test

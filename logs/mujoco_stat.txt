@@ -1,0 +1,4778 @@
+commit caec236b2f05567b7803d4674edae2ded749749b
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Dec 11 01:23:03 2025 -0800
+
+    Make mj_loadModelBuffer a public API.
+    
+    PiperOrigin-RevId: 843105390
+    Change-Id: I4058471b4cf64995dd5ab43e9c8c24e322004b62
+
+ doc/APIreference/functions.rst        |  9 +++++++++
+ doc/includes/references.h             |  1 +
+ include/mujoco/mujoco.h               |  3 +++
+ python/mujoco/introspect/functions.py | 20 ++++++++++++++++++++
+ src/engine/engine_io.h                |  4 ++--
+ unity/Runtime/Bindings/MjBindings.cs  |  3 +++
+ wasm/codegen/generators/constants.py  |  1 +
+ 7 files changed, 39 insertions(+), 2 deletions(-)
+
+commit d0cf2a3ca536ce15767231a0edfc5891db6158ad
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Wed Dec 10 06:00:24 2025 -0800
+
+    MuJoCo Warp documentation: named access / bind.
+    
+    PiperOrigin-RevId: 842689646
+    Change-Id: I5b7920dd5df5838497943da20da4aa61a68f0ec2
+
+ doc/mjwarp/index.rst | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit f150e72b34bcbcaff32e52710cd98fe5db717f76
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Wed Dec 10 05:43:00 2025 -0800
+
+    MuJoCo Warp documentation: Tutorial notebook.
+    
+    PiperOrigin-RevId: 842685107
+    Change-Id: I354ab983b1f0061eb168d1ce86c12d974e5bb35e
+
+ doc/mjwarp/index.rst | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit 6bcb22730d64982ddaa34f27d4ece537fd965634
+Author: Yuval Tassa <tassa@google.com>
+Date:   Wed Dec 10 05:09:09 2025 -0800
+
+    Minor clean-up of some visualization code.
+    
+    Move mjvGeom acquire/release into helper functions, where possible.
+    
+    PiperOrigin-RevId: 842675435
+    Change-Id: Ie5aaf206927251e79b20cc4101a7017645d5dd4b
+
+ src/engine/engine_vis_visualize.c | 132 +++++++++++++-------------------------
+ 1 file changed, 44 insertions(+), 88 deletions(-)
+
+commit 11f0997edfb177699b8ea23cdc302954f448df8e
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Wed Dec 10 02:57:37 2025 -0800
+
+    Internal change.
+    
+    PiperOrigin-RevId: 842636101
+    Change-Id: I5fc8e1f5e4caee9d909963ebe396572b13b455b7
+
+ mjx/mujoco/mjx/_src/forward.py |   2 +
+ mjx/mujoco/mjx/_src/inverse.py |   2 +
+ mjx/mujoco/mjx/_src/io.py      | 105 +++++++++++++++++++++++++++++++++++++++--
+ mjx/mujoco/mjx/_src/io_test.py |  79 ++++++++++++++++++++++++++++++-
+ mjx/mujoco/mjx/_src/passive.py |   3 ++
+ mjx/mujoco/mjx/_src/smooth.py  |   3 +-
+ mjx/mujoco/mjx/_src/types.py   |  28 ++++++++++-
+ 7 files changed, 215 insertions(+), 7 deletions(-)
+
+commit 9c1b8d8cfb77d93ced9ca6dc2a3ca5d6d6650a3d
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Dec 10 02:30:35 2025 -0800
+
+    Enable font loading for wasm builds.
+    
+    PiperOrigin-RevId: 842627994
+    Change-Id: I347f79ec668f31a8bbc4d26638a045e29084d715
+
+ src/experimental/platform/window.cc | 42 ++++++++++++++++++-------------------
+ src/experimental/platform/window.h  |  1 +
+ 2 files changed, 22 insertions(+), 21 deletions(-)
+
+commit f06aa45ea6ab937efd5a6ebb0413eb3441528517
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Dec 9 10:35:10 2025 -0800
+
+    Consolidate ray normal functions.
+    
+    PiperOrigin-RevId: 842300829
+    Change-Id: Ic5e921084710cb044a4f49ea9b566d277838aaa1
+
+ src/engine/engine_ray.c        | 67 +++++++++++++++++++++++++++---------------
+ src/engine/engine_ray.h        | 20 +++----------
+ test/engine/engine_ray_test.cc | 35 ++--------------------
+ 3 files changed, 50 insertions(+), 72 deletions(-)
+
+commit 85e6f6de3c659f83dc1979052ba2e3953c3313be
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Dec 9 09:21:20 2025 -0800
+
+    Ignore unsupported light types in GL3 renderer.
+    
+    PiperOrigin-RevId: 842271116
+    Change-Id: I632f7ed8e2a6488d5a8eb228928e26c8fcbdff66
+
+ src/render/render_gl3.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 32d7b87ba70c6347d342a0e6769ec79cf91cd719
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Dec 9 08:55:57 2025 -0800
+
+    Improve studio 2D plots
+    
+    PiperOrigin-RevId: 842260702
+    Change-Id: I4644b69da92b9d015eb2d140b98f68c05d31a222
+
+ src/experimental/platform/gui.cc          | 17 +++++++----------
+ src/experimental/platform/sim_profiler.cc | 13 +++++++++----
+ 2 files changed, 16 insertions(+), 14 deletions(-)
+
+commit 5b1fa666fb85faf42c52b1614a8d2240e2d80042
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Dec 9 08:52:39 2025 -0800
+
+    Add `mj_rayHfieldNormal` (not exposed in public header)
+    
+    PiperOrigin-RevId: 842259581
+    Change-Id: I27d6c46024d55addbc22eed276331e2ef5acfa7d
+
+ src/engine/engine_ray.c        | 71 ++++++++++++++++++++++++++++++++----------
+ src/engine/engine_ray.h        |  4 +++
+ test/engine/engine_ray_test.cc |  9 +++++-
+ 3 files changed, 67 insertions(+), 17 deletions(-)
+
+commit 7553541b4b51f6783b90231599c98288de68bd85
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Dec 9 08:13:26 2025 -0800
+
+    Use public mj_parseXml function.
+    
+    PiperOrigin-RevId: 842245812
+    Change-Id: I26e1f992f82050a36373ee3a3f2c97c399b4e788
+
+ src/experimental/studio/app.cc | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+commit 97eb307ce95d67b3a35c8d08bdc7ec0e559a90bf
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Dec 9 07:27:19 2025 -0800
+
+    First pass at mjSpec Explorer and Properties windows.
+    
+    Displays the list of bodies and joints from the mjSpec and displays
+    values for the selected element.
+    
+    Functionality is very limited and a bit non-intuitive. However, we want
+    to get this into our users hands to start getting feedback.
+    
+    PiperOrigin-RevId: 842228895
+    Change-Id: I2491cd5e0acaf622110e0f6b8406919024d3607a
+
+ src/experimental/platform/gui.cc | 128 ++++++++++++++++++++++++++++++++--
+ src/experimental/platform/gui.h  |  19 ++++-
+ src/experimental/studio/app.cc   | 145 ++++++++++++++++++++++++++++++++++++---
+ src/experimental/studio/app.h    |   8 ++-
+ 4 files changed, 281 insertions(+), 19 deletions(-)
+
+commit c064abc3da5fc796610a30ddc7273ad143436066
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Dec 9 07:01:16 2025 -0800
+
+    Change row-flipping logic for heightfields.
+    
+    Move row-flipping logic from `mjCModel::CopyBack` to `mjXWriter`.
+    
+    PiperOrigin-RevId: 842220322
+    Change-Id: I6fb09db6c9e8689f6e435f82f58dd3e7c4314478
+
+ doc/XMLreference.rst                |  3 ++-
+ src/user/user_model.cc              |  6 +-----
+ src/xml/xml_native_writer.cc        | 18 +++++++++++++++---
+ test/engine/testdata/ray/hfield.xml | 19 +++++++++++++++++++
+ test/xml/xml_native_writer_test.cc  |  7 ++++++-
+ 5 files changed, 43 insertions(+), 10 deletions(-)
+
+commit 925c533580fcf044c2f3393d903bae29dcb30b5a
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Dec 9 06:46:30 2025 -0800
+
+    Move playback speed control to the toolbar.
+    
+    Initialize playback speed based on the model's global.realtime setting.
+    
+    Adjust layout and tweak colours of the status and tool bars.
+    
+    PiperOrigin-RevId: 842214796
+    Change-Id: Iff9cda74178df28a0787693242fee81e011014fc
+
+ src/experimental/studio/app.cc | 81 ++++++++++++++++++++++++++----------------
+ 1 file changed, 50 insertions(+), 31 deletions(-)
+
+commit cc914c9ec731f393ceffbe621f88820897bceaaa
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Dec 9 05:52:24 2025 -0800
+
+    Modify studio keyboard bindings to conform to MuJoCo API.
+    
+    PiperOrigin-RevId: 842197387
+    Change-Id: I6ee9b1f5050cb4a8c2f67253f37481c61c91fdbd
+
+ src/experimental/studio/app.cc | 74 ++++++++++++++++++++++--------------------
+ 1 file changed, 39 insertions(+), 35 deletions(-)
+
+commit 1483aefe5f1db15f7e1c3f06fafd7ae711306268
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Tue Dec 9 04:56:57 2025 -0800
+
+    Make actuator_length, cdof and cdof_dot public.
+    
+    PiperOrigin-RevId: 842182467
+    Change-Id: Id14a1c8266e13a6f95e1c87ea07da993b614b62e
+
+ doc/changelog.rst                       | 13 +++++++++++
+ mjx/mujoco/mjx/_src/forward.py          |  2 +-
+ mjx/mujoco/mjx/_src/io.py               |  9 +++-----
+ mjx/mujoco/mjx/_src/io_test.py          |  8 +++----
+ mjx/mujoco/mjx/_src/sensor.py           |  2 +-
+ mjx/mujoco/mjx/_src/smooth.py           | 20 ++++++++---------
+ mjx/mujoco/mjx/_src/smooth_test.py      |  8 +++----
+ mjx/mujoco/mjx/_src/support.py          |  8 +++----
+ mjx/mujoco/mjx/_src/types.py            | 11 +++++-----
+ mjx/mujoco/mjx/warp/collision_driver.py |  1 -
+ mjx/mujoco/mjx/warp/forward.py          | 38 ++++++++++++++++-----------------
+ mjx/mujoco/mjx/warp/forward_test.py     |  6 +++---
+ mjx/mujoco/mjx/warp/smooth.py           |  8 +++----
+ mjx/mujoco/mjx/warp/types.py            |  3 ---
+ 14 files changed, 69 insertions(+), 68 deletions(-)
+
+commit f65c1cdfd16a97d9d38d0d92a875d31607653976
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Dec 9 04:42:44 2025 -0800
+
+    Add `mj_raySdfNormal` (not exposed in public header)
+    
+    PiperOrigin-RevId: 842178540
+    Change-Id: I5d2db555e9b6c0fa0daaa8bc14c7781663e4c94e
+
+ src/engine/engine_ray.c          | 22 ++++++++++++++++++----
+ src/engine/engine_ray.h          |  4 ++++
+ test/engine/CMakeLists.txt       |  6 +++++-
+ test/engine/engine_ray_test.cc   | 14 +++++++++++---
+ test/engine/testdata/ray/sdf.xml | 28 ++++++++++++++++++++++++++++
+ 5 files changed, 66 insertions(+), 8 deletions(-)
+
+commit bf49fe3daa43a3805b2cd478dafa1106bdc4d250
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Dec 9 03:06:42 2025 -0800
+
+    Enable reading textures from spec in Python
+    
+    PiperOrigin-RevId: 842151742
+    Change-Id: I477d118cc7e2385d29b395b192fa89e9facb9c3e
+
+ doc/python.rst              | 13 +++++++++++++
+ python/mujoco/specs.cc      | 35 +++++++++++++++++++++++++++++++++++
+ python/mujoco/specs_test.py | 23 +++++++++++++++++++++++
+ 3 files changed, 71 insertions(+)
+
+commit e1e224892531c01ad2cb3ac3924d4e7362908e88
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Dec 9 00:16:46 2025 -0800
+
+    Internal changes only.
+    
+    PiperOrigin-RevId: 842099953
+    Change-Id: Ia11feec323504976cdc3e6d7170435b74ed33fcd
+
+ src/experimental/platform/renderer.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 99a90cb649c5d26e3a55c5ffd8d9b7982974b373
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Dec 8 23:43:57 2025 -0800
+
+    Don't do GUI rendering when rendering to texture.
+    
+    PiperOrigin-RevId: 842089364
+    Change-Id: Iaecebdc677e946c7fc618395205097462a56f2d1
+
+ src/experimental/filament/filament/filament_context.cc | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 735b31fc890de220c4c07d9b69a57186a0a214ef
+Author: Yuval Tassa <tassa@google.com>
+Date:   Mon Dec 8 09:26:02 2025 -0800
+
+    Fix triangle lighting in native renderer.
+    
+    PiperOrigin-RevId: 841796563
+    Change-Id: I778e0e02aa8b4033531d4fadc091610418ab909e
+
+ src/render/render_gl3.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 15145c0098d2d38ba2d9336263464533425c4b2c
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Mon Dec 8 07:49:19 2025 -0800
+
+    MuJoCo Warp documentation: Compilation.
+    
+    PiperOrigin-RevId: 841761913
+    Change-Id: Ic1b1942a47299db48c424ad1f9e3709b05acc55e
+
+ doc/mjwarp/index.rst | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+
+commit e238b6584364a9c14d1e1108a60f00c4f85f0b44
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Dec 8 05:53:50 2025 -0800
+
+    Support both 3 and 4 channel images and use a safer way to assign IDs to images.
+    
+    PiperOrigin-RevId: 841727607
+    Change-Id: I319db4291ecee27f4ceb7b7e952c6f68e7f8b96d
+
+ src/experimental/filament/filament/gui_view.cc | 22 ++++++++++++++--------
+ 1 file changed, 14 insertions(+), 8 deletions(-)
+
+commit 96e376451ccafc91e55a69c1b1aa864fda97b632
+Author: Gabe Oppenheimer <goppenheimer@google.com>
+Date:   Fri Dec 5 16:14:24 2025 -0800
+
+    Update MuJoCo version from 3.4.0 to 3.4.1 following the 3.4.0 release
+    
+    PiperOrigin-RevId: 840914696
+    Change-Id: Iffabc70dd174384ba1c535cafcd34982ff8e5712
+
+ CMakeLists.txt                                 | 2 +-
+ dist/mujoco.rc                                 | 8 ++++----
+ dist/simulate.rc                               | 8 ++++----
+ doc/APIreference/APIglobals.rst                | 2 +-
+ doc/unity.rst                                  | 4 ++--
+ include/mujoco/mujoco.h                        | 2 +-
+ mjx/pyproject.toml                             | 8 ++++----
+ python/mujoco/CMakeLists.txt                   | 4 ++--
+ python/mujoco/mjpython/Info.plist              | 8 ++++----
+ python/pyproject.toml                          | 6 +++---
+ sample/CMakeLists.txt                          | 2 +-
+ simulate/CMakeLists.txt                        | 2 +-
+ src/engine/engine_support.c                    | 4 ++--
+ unity/Editor/Bindings/MujocoBinaryRetriever.cs | 4 ++--
+ unity/Runtime/Bindings/MjBindings.cs           | 2 +-
+ unity/package.json                             | 2 +-
+ 16 files changed, 34 insertions(+), 34 deletions(-)
+
+commit e55fff5dea6f1d5dd7963ca52eecc41d05ad0922
+Author: Gabe Oppenheimer <goppenheimer@google.com>
+Date:   Fri Dec 5 09:36:42 2025 -0800
+
+    CI issues resolved, we're going ahead with the 3.4.0 release.
+    
+    PiperOrigin-RevId: 840763554
+    Change-Id: Ib50b00ec43d8713821f98a131fb19640810ea777
+
+ doc/changelog.rst | 43 +++++++++++++++++++++----------------------
+ 1 file changed, 21 insertions(+), 22 deletions(-)
+
+commit fcdacd0690654970c9a011664595648456e564ab
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Fri Dec 5 06:07:13 2025 -0800
+
+    Fix crash when using image-based textures.
+    
+    Image lights are not normal lights, so use nullptr as a placeholder.
+    Add checks for nullness when iterating over the lights.
+    
+    PiperOrigin-RevId: 840695579
+    Change-Id: I092515ae814523e85f4f5ce87b2bac2241f4ea35
+
+ src/experimental/filament/filament/scene_view.cc | 14 +++++++++-----
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+
+commit 6e7b2ba4c38a66813ac03f81ca014074d29367a8
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Fri Dec 5 05:09:15 2025 -0800
+
+    Reuse renderable entity instead of recreating every frame.
+    
+    PiperOrigin-RevId: 840680350
+    Change-Id: Ie26862f8993c4b1cf071ee867d89bcc8182d3dd2
+
+ src/experimental/filament/filament/gui_view.cc | 77 +++++++++++++++++---------
+ src/experimental/filament/filament/gui_view.h  |  1 +
+ 2 files changed, 51 insertions(+), 27 deletions(-)
+
+commit f18c9996e6eb8b2e3daad69f4200220322da8f85
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Fri Dec 5 04:30:40 2025 -0800
+
+    Allow uploading textures for use with ImGui.
+    
+    PiperOrigin-RevId: 840669528
+    Change-Id: I7c5854d966dd024cd492953f86bca961cfaf88b8
+
+ .../filament/filament/filament_context.cc          |  9 ++++
+ .../filament/filament/filament_context.h           |  3 ++
+ src/experimental/filament/filament/gui_view.cc     | 57 +++++++++++++++++++---
+ src/experimental/filament/filament/gui_view.h      |  4 ++
+ .../filament/render_context_filament.cc            |  7 +++
+ .../filament/render_context_filament.h             |  4 ++
+ 6 files changed, 76 insertions(+), 8 deletions(-)
+
+commit e93786c1617de1210b733bde999b8fa51dc2b384
+Author: Matija Kecman <matijak@google.com>
+Date:   Fri Dec 5 02:38:52 2025 -0800
+
+    Fix WebGL rendering for the webdemo
+    
+    PiperOrigin-RevId: 840640628
+    Change-Id: I4bac3bf634e66da01174927bf6096bc1df642e10
+
+ src/experimental/filament/filament/filament_context.cc | 2 ++
+ src/experimental/filament/filament/scene_view.cc       | 3 +++
+ 2 files changed, 5 insertions(+)
+
+commit 4e84671a15bb0f8ca70b5a0b5906a41f8aec0fb5
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Fri Dec 5 02:07:07 2025 -0800
+
+    MuJoCo Warp documentation: Determinism.
+    
+    PiperOrigin-RevId: 840630917
+    Change-Id: Ie5f3ac34cee8812f20d6ae4fa6004385c5b048e0
+
+ doc/mjwarp/index.rst | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit fc109f0ab593d7a5bdb876479a1f122b9c823c30
+Author: Baruch Tabanpour <btaba@google.com>
+Date:   Fri Dec 5 01:27:36 2025 -0800
+
+    Small fix to testspeed
+    
+    PiperOrigin-RevId: 840607453
+    Change-Id: If913866cc0a3d4d3e6c39c7b5948fa167678ccad
+
+ mjx/mujoco/mjx/warp/testspeed.py | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 237a5e5c553f9788c6e8172c0f13880eb82b0657
+Author: Gabe Oppenheimer <goppenheimer@google.com>
+Date:   Thu Dec 4 12:52:02 2025 -0800
+
+    Revert the changelog to unreleased state, the 3.4.0 release will be delayed due to internal issues with CI.
+    
+    PiperOrigin-RevId: 840362346
+    Change-Id: Ic0fb5d6d521c5abc1b98d5242416eac6c7d056c8
+
+ doc/changelog.rst | 43 ++++++++++++++++++++++---------------------
+ 1 file changed, 22 insertions(+), 21 deletions(-)
+
+commit 6ed9f2be7ad87b9c5c2fb841feb1793fd7f14bae
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Dec 4 08:38:01 2025 -0800
+
+    Removed unused font uploading functionality.
+    
+    Font textures are handled directly through ImGui.
+    
+    PiperOrigin-RevId: 840259537
+    Change-Id: I5b6b0dc5d2c1c7066b4a23f0106de34285f40e6c
+
+ src/experimental/filament/filament/filament_context.cc |  5 -----
+ src/experimental/filament/filament/filament_context.h  |  2 --
+ src/experimental/filament/filament/object_manager.cc   | 16 ----------------
+ src/experimental/filament/filament/object_manager.h    |  4 ----
+ src/experimental/filament/render_context_filament.cc   |  9 ---------
+ src/experimental/filament/render_context_filament.h    |  3 ---
+ 6 files changed, 39 deletions(-)
+
+commit da36e822a8abf6ff6b88fb2768857a76f8fad0db
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Dec 4 08:22:05 2025 -0800
+
+    Allow material default classes to define texture layers.
+    
+    PiperOrigin-RevId: 840254100
+    Change-Id: I59f67fc4d1485cf80bbc005d1b35cda6224248ed
+
+ doc/XMLschema.rst            | 7 +++++++
+ src/xml/xml_native_reader.cc | 3 +++
+ src/xml/xml_native_reader.h  | 2 +-
+ 3 files changed, 11 insertions(+), 1 deletion(-)
+
+commit 5ee8b646f7a0d11291930fa373e49ec7543801cb
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Dec 4 08:01:24 2025 -0800
+
+    Move Style and Layout configuration to shared GUI library.
+    
+    PiperOrigin-RevId: 840246253
+    Change-Id: Ic4664b62e86e70fd6780cd9eb885978064c5f585
+
+ src/experimental/platform/gui.cc | 112 +++++++++++++++++++++++++++++++++
+ src/experimental/platform/gui.h  |  27 ++++++++
+ src/experimental/studio/app.cc   | 132 ++++-----------------------------------
+ src/experimental/studio/app.h    |  12 +---
+ 4 files changed, 154 insertions(+), 129 deletions(-)
+
+commit 5f5910487754514020efc8a193bff32be12f4c14
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Dec 4 07:56:20 2025 -0800
+
+    Properly handle PBR materials where no color texture is provided.
+    
+    In this case, we'll use the mujoco material color which is then multiplied with a white fallback texture.
+    
+    PiperOrigin-RevId: 840244521
+    Change-Id: I2134f45dcbaed7db268e5278ca8ac5429488943d
+
+ src/experimental/filament/filament/drawable.cc     | 70 ++++++++++++----------
+ .../filament/filament/object_manager.cc            |  4 +-
+ 2 files changed, 40 insertions(+), 34 deletions(-)
+
+commit 680e9a6b79e64fd8a63ca4ce21c4a0db431c9726
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Dec 4 07:26:41 2025 -0800
+
+    Update studio build script and instructions.
+    
+    Mujoco studio now works on Windows and MacOS.
+    
+    PiperOrigin-RevId: 840235447
+    Change-Id: I66d3430d5d994de2eb13ee08ad3051c6c7187e12
+
+ cmake/third_party_deps/dear_imgui.cmake |  2 +-
+ src/experimental/studio/README.md       | 15 ---------------
+ src/experimental/studio/build.sh        |  8 +++++++-
+ 3 files changed, 8 insertions(+), 17 deletions(-)
+
+commit c5cd276e1f461a711f4ccbfc3dab189e41d969cc
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Dec 4 07:17:45 2025 -0800
+
+    Cleanup model loading flow.
+    
+    Inlines the platform::LoadMujocoModel into the App class which simplifies
+    the logic and allows us to correctly display loading errors.
+    
+    Also updates shortcuts:
+    
+    Load Model (Ctrl+L) -> Open File (Ctrl+O)
+    Reload Model (Ctrl+R) -> Reload Model (Ctrl+L)
+    
+    PiperOrigin-RevId: 840232553
+    Change-Id: I957d29046ae681d2aeb69310c3a2eec64d042d49
+
+ src/experimental/platform/helpers.cc | 32 ------------
+ src/experimental/platform/helpers.h  |  3 --
+ src/experimental/studio/app.cc       | 98 +++++++++++++++++++++++-------------
+ src/experimental/studio/app.h        |  4 +-
+ 4 files changed, 65 insertions(+), 72 deletions(-)
+
+commit 8823e9fedf6f13a6b55e72f2bbad65d7fda20bc6
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Dec 4 07:04:08 2025 -0800
+
+    Improve imgui texture management.
+    
+    Keep track of all textures and recreate them as needed. This makes imgui
+    textures robust to render context reinitialization.
+    
+    PiperOrigin-RevId: 840228061
+    Change-Id: Ia4ac35ff93a41ac74020f334adc438df4b030f7c
+
+ src/experimental/filament/filament/gui_view.cc | 113 +++++++++++++++----------
+ src/experimental/filament/filament/gui_view.h  |   8 +-
+ 2 files changed, 75 insertions(+), 46 deletions(-)
+
+commit 54070fc71b49e2363d34dcfa7f6725edabaf6595
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Dec 4 06:27:55 2025 -0800
+
+    Disable bent normals by default.
+    
+    PiperOrigin-RevId: 840216781
+    Change-Id: Icf24d73939fa138da46e2da7aa69a6574e6f98ec
+
+ src/experimental/filament/filament/scene_view.cc | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a942fd48759705eb81765442c05b2f9cdbc8f048
+Author: Sam Haves <shaves@google.com>
+Date:   Wed Dec 3 19:25:29 2025 -0800
+
+    Make filament segmentation shader distinct colors optional.
+    
+    Previously we were computing at material update time a color for the geom based of it's
+    segid. This made segids unrecoverable from the resulting buffer. With this change
+    we allow SceneView creators to specify if they want the segmentation buffer to be purely
+    for visualization with distinct colors.
+    
+    PiperOrigin-RevId: 840016870
+    Change-Id: I5920f248ace0901023e6545c7d8dd2b23f9aa397
+
+ src/experimental/filament/filament/drawable.cc     | 42 ++++++++++++++--------
+ src/experimental/filament/filament/drawable.h      |  5 +++
+ .../filament/filament/filament_context.cc          |  5 ++-
+ src/experimental/filament/filament/material.h      |  1 +
+ src/experimental/filament/filament/scene_view.cc   |  7 ++++
+ src/experimental/filament/filament/scene_view.h    |  5 +++
+ .../filament/render_context_filament.h             |  4 +++
+ src/experimental/studio/app.cc                     |  1 +
+ 8 files changed, 54 insertions(+), 16 deletions(-)
+
+commit 4a6b9456aa863fbb06bb523cf49a1a9776bcf74a
+Author: Tom Power <tjpower@google.com>
+Date:   Wed Dec 3 16:30:16 2025 -0800
+
+    Set default headlight intensity to zero if there are no physical lights in the scene.
+    
+    PiperOrigin-RevId: 839962392
+    Change-Id: I086d8135604982c42381a9b49cec53773c7fa362
+
+ src/experimental/filament/filament/scene_view.cc | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 8507b62556aa2e53400907465823c7774388e6c7
+Author: Sam Haves <shaves@google.com>
+Date:   Wed Dec 3 16:05:34 2025 -0800
+
+    Cache the rendering mode used to allow headless segmentation rendering.
+    
+    This also moves the read call into the frame, per the recommendation in the filament documentation. We also don't need to flush and wait for the engine twice, just defer to the end of readPixels.
+    
+    PiperOrigin-RevId: 839953612
+    Change-Id: I52205147794440322ca976c52fb4905207c21473
+
+ .../filament/filament/filament_context.cc          | 30 +++++++++++-----------
+ .../filament/filament/filament_context.h           |  1 +
+ 2 files changed, 16 insertions(+), 15 deletions(-)
+
+commit 14513a04c2c69a3095258b8653edd894fd7a5289
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Dec 3 05:00:32 2025 -0800
+
+    Wait until previous render is finished before submitting another request.
+    
+    PiperOrigin-RevId: 839707507
+    Change-Id: Ib39538540ff6080d197c2ea853b7273cc56084e7
+
+ src/experimental/filament/filament/filament_context.cc | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit e409538831692981e1b8956a1ec141f497066a64
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Dec 3 04:28:37 2025 -0800
+
+    Ensure window scale is initialized on creation.
+    
+    PiperOrigin-RevId: 839699437
+    Change-Id: I99e477ac49b56726b77389306aec49c895e160fa
+
+ src/experimental/platform/window.cc | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 55664b63e1abf716ef15570a9f99a17a71b4121c
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Dec 2 03:54:47 2025 -0800
+
+    Fix broken cross-references in mjwarp/index.rst
+    
+    PiperOrigin-RevId: 839194214
+    Change-Id: Ia1aca7331bc5d77fb4ef6ce7efefc3d55a1d99b3
+
+ doc/mjwarp/index.rst | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 951257ad5401fabb5fb8412c7ff0d53f32606495
+Author: Gabe Oppenheimer <goppenheimer@google.com>
+Date:   Tue Dec 2 00:25:49 2025 -0800
+
+    Fix: Update changelog formatting
+    
+    PiperOrigin-RevId: 839126146
+    Change-Id: Ifa349b6fd013e4c23fd96b988eacaa7c9d44532c
+
+ doc/changelog.rst | 26 +++++++++++++-------------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+
+commit e095bb6d414f2868c2915efbba0c999d12c47fcd
+Author: Yuval Tassa <tassa@google.com>
+Date:   Mon Dec 1 11:35:11 2025 -0800
+
+    Improve rendering of dynamics pipeline schematic
+    
+    PiperOrigin-RevId: 838865159
+    Change-Id: I225e94508be7edb8f8217ec5abb2f609cbb39ae5
+
+ doc/computation/index.rst   | 34 ++++++++++++++++++----------------
+ doc/css/theme_overrides.css |  1 +
+ 2 files changed, 19 insertions(+), 16 deletions(-)
+
+commit b663b7602b65918ef6322dc22b256f76392a48ae
+Author: Gabe Oppenheimer <goppenheimer@google.com>
+Date:   Mon Dec 1 10:05:23 2025 -0800
+
+    Final preparations for the v3.4.0 release
+    
+    PiperOrigin-RevId: 838824676
+    Change-Id: Icb5a825cb41be4d0730f4a6729b63531d649066f
+
+ cmake/MujocoDependencies.cmake |  5 +---
+ doc/changelog.rst              | 66 +++++++++++++++++++++---------------------
+ python/mujoco/CMakeLists.txt   |  2 +-
+ 3 files changed, 35 insertions(+), 38 deletions(-)
+
+commit 448fc0e4d5e429e6b5b3caf99c8bb496ad9f2c93
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Dec 1 08:01:33 2025 -0800
+
+    Report the actual GPU framerate rather than the main thread submit rate when using the filament renderer.
+    
+    PiperOrigin-RevId: 838775463
+    Change-Id: If66644d284a4a9e0263cf31bfbd1785b18e0209b
+
+ .../filament/filament/filament_context.cc           | 12 ++++++++++++
+ .../filament/filament/filament_context.h            |  2 ++
+ .../filament/render_context_filament.cc             |  5 +++++
+ src/experimental/filament/render_context_filament.h |  2 ++
+ src/experimental/platform/renderer.cc               | 11 -----------
+ src/experimental/platform/renderer.h                |  9 ---------
+ src/experimental/studio/app.cc                      | 21 +++++++++++++++++++--
+ src/experimental/studio/app.h                       |  4 ++++
+ 8 files changed, 44 insertions(+), 22 deletions(-)
+
+commit 4896e698f6ceae8ba66552da0d18bc3a1e55a7e6
+Author: Yuval Tassa <tassa@google.com>
+Date:   Mon Dec 1 07:38:46 2025 -0800
+
+    Update "mjModel changes" section in `simulation.rst`
+    
+    PiperOrigin-RevId: 838768328
+    Change-Id: I5c09186e52115df37e9412495ecc7dceddb2ed8a
+
+ doc/programming/simulation.rst | 160 +++++++++++++++++++++++++++++++----------
+ 1 file changed, 122 insertions(+), 38 deletions(-)
+
+commit 19e2d0ae2f5e6c094e6e0105045457075d2de2d0
+Author: Yuval Tassa <tassa@google.com>
+Date:   Mon Dec 1 07:38:12 2025 -0800
+
+    Add `mj_fwdKinematics` and a table improving documentation of the MuJoCo computation pipeline structure.
+    
+    PiperOrigin-RevId: 838768130
+    Change-Id: I1a22d5cdca7db704ba4cea1667fcbecb16b87005
+
+ doc/APIreference/functions.rst        |  9 ++++++++
+ doc/changelog.rst                     |  2 ++
+ doc/computation/index.rst             | 40 ++++++++++++++++++++++++++++-------
+ doc/includes/references.h             |  1 +
+ include/mujoco/mujoco.h               |  3 +++
+ python/mujoco/functions.cc            |  1 +
+ python/mujoco/introspect/functions.py | 20 ++++++++++++++++++
+ src/engine/engine_forward.c           | 16 ++++++++------
+ src/engine/engine_forward.h           |  3 +++
+ unity/Runtime/Bindings/MjBindings.cs  |  3 +++
+ wasm/codegen/generated/bindings.cc    |  5 +++++
+ 11 files changed, 89 insertions(+), 14 deletions(-)
+
+commit 4c40d5938e447535b94158eff8122163d8ad144a
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Mon Dec 1 06:35:58 2025 -0800
+
+    Add type hints to tuple constants in codegen/generators/constants.py.
+    
+    `tuple` is better than `list`  for constants if we don't expect they get modified by other parts of the code
+    
+    PiperOrigin-RevId: 838748519
+    Change-Id: Ic950a78be7ad7518361c046d7e4542607070d3a2
+
+ wasm/codegen/generators/constants.py | 34 +++++++++++++++++-----------------
+ 1 file changed, 17 insertions(+), 17 deletions(-)
+
+commit d3c858ed320cd94c61ad6221e68752e5e567004f
+Author: Yuval Tassa <tassa@google.com>
+Date:   Mon Dec 1 06:12:40 2025 -0800
+
+    Make table shadows visible in dark theme, add a table type with smaller text.
+    
+    Add a light box-shadow to docutils tables (excluding mjcf-attributes) when in dark mode or auto mode with dark preference, so that the table boundaries are visible against the dark background.
+    
+    PiperOrigin-RevId: 838741947
+    Change-Id: Ic788f9669ea65d290f927927b389fcb51227a55a
+
+ doc/css/theme_overrides.css | 26 +++++++++++++++++++++++++-
+ 1 file changed, 25 insertions(+), 1 deletion(-)
+
+commit 94fb10bf3d7fce1cd153d18cca361b18af0f8b36
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Dec 1 06:10:06 2025 -0800
+
+    Internal changes
+    
+    PiperOrigin-RevId: 838741176
+    Change-Id: I9def07b3f7e963d2787d71019d303ba1eb75622c
+
+ src/xml/xml_api.cc | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 9b7134b15bf6733a5dba9cb5a37866de08670564
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Dec 1 04:56:28 2025 -0800
+
+    Add OSX and WIN32 support for getting the native window pointer.
+    
+    PiperOrigin-RevId: 838720433
+    Change-Id: Id7123bcf456d0c2d32e67b204564fe8c495004cd
+
+ src/experimental/platform/CMakeLists.txt |  9 +++++++++
+ src/experimental/platform/window.cc      | 18 ++++++++++++++----
+ src/experimental/platform/window_osx.mm  | 22 ++++++++++++++++++++++
+ 3 files changed, 45 insertions(+), 4 deletions(-)
+
+commit ad24889bb9d6e4983ee51dacb8154ee4e5f9356e
+Author: Yuval Tassa <tassa@google.com>
+Date:   Mon Dec 1 04:13:07 2025 -0800
+
+    Add `mj_rayMeshNormal` (not exposed in public header)
+    
+    PiperOrigin-RevId: 838707353
+    Change-Id: If31d2454e0668f750bcba21ee42f81ef962e9097
+
+ src/engine/engine_ray.c           | 65 ++++++++++++++++++++++++++++-----------
+ src/engine/engine_ray.h           | 10 ++++--
+ test/engine/engine_ray_test.cc    | 28 ++++++++++++-----
+ test/engine/testdata/ray/mesh.xml | 13 ++++++++
+ 4 files changed, 88 insertions(+), 28 deletions(-)
+
+commit 139a5b649430239d8e95679faf84eddcef384666
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Dec 1 03:57:37 2025 -0800
+
+    Rename `toolbox` to `platform`.
+    
+    PiperOrigin-RevId: 838701951
+    Change-Id: I339eafd35d919710cb47bb04e9a8e29f92739513
+
+ CMakeLists.txt                                     |   2 +-
+ .../{toolbox => platform}/CMakeLists.txt           |  12 +-
+ src/experimental/{toolbox => platform}/gui.cc      |  10 +-
+ src/experimental/{toolbox => platform}/gui.h       |  10 +-
+ src/experimental/{toolbox => platform}/helpers.cc  |   6 +-
+ src/experimental/{toolbox => platform}/helpers.h   |  10 +-
+ .../{toolbox => platform}/imgui_widgets.cc         |   6 +-
+ .../{toolbox => platform}/imgui_widgets.h          |  10 +-
+ .../{toolbox => platform}/interaction.cc           |   6 +-
+ .../{toolbox => platform}/interaction.h            |  10 +-
+ src/experimental/{toolbox => platform}/renderer.cc |   8 +-
+ src/experimental/{toolbox => platform}/renderer.h  |  10 +-
+ .../{toolbox => platform}/sim_history.cc           |   6 +-
+ .../{toolbox => platform}/sim_history.h            |  10 +-
+ .../{toolbox => platform}/sim_profiler.cc          |   6 +-
+ .../{toolbox => platform}/sim_profiler.h           |  10 +-
+ .../{toolbox => platform}/step_control.cc          |   6 +-
+ .../{toolbox => platform}/step_control.h           |  10 +-
+ src/experimental/{toolbox => platform}/window.cc   |   8 +-
+ src/experimental/{toolbox => platform}/window.h    |  12 +-
+ src/experimental/studio/CMakeLists.txt             |   2 +-
+ src/experimental/studio/app.cc                     | 182 ++++++++++-----------
+ src/experimental/studio/app.h                      |  32 ++--
+ wasm/README.md                                     |   5 +-
+ 24 files changed, 194 insertions(+), 195 deletions(-)
+
+commit c6b587b515e30bc3f475628e6ec4c89aa8f1e501
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Dec 1 03:36:36 2025 -0800
+
+    Use cmake FILE(COPY) for deploying custom CMakeLists.txt.
+    
+    PiperOrigin-RevId: 838696575
+    Change-Id: I3c61bda9d1d89185f257797c2e0c0f4ef2c7cb95
+
+ cmake/FindOrFetch.cmake                   | 16 +++++++++++++++-
+ cmake/third_party_deps/dear_imgui.cmake   |  5 +----
+ cmake/third_party_deps/font_awesome.cmake |  5 +----
+ cmake/third_party_deps/implot.cmake       |  5 +----
+ cmake/third_party_deps/opensans.cmake     |  5 +----
+ sample/cmake/FindOrFetch.cmake            | 16 +++++++++++++++-
+ simulate/cmake/FindOrFetch.cmake          | 16 +++++++++++++++-
+ 7 files changed, 49 insertions(+), 19 deletions(-)
+
+commit fe74ea2e7bba9e2386d32840a7b48ecc0e675abb
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Dec 1 02:48:14 2025 -0800
+
+    Match definition with declaration.
+    
+    PiperOrigin-RevId: 838682770
+    Change-Id: I537ae9652dc64a02d2e3de8ddda351102d3cec35
+
+ src/experimental/filament/filament/renderables.cc | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a7e62a6755c128bc04f2b824e9f5fadbca1916c8
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Dec 1 02:44:53 2025 -0800
+
+    Set visual studio working directory to the `bin` directory.
+    
+    PiperOrigin-RevId: 838681802
+    Change-Id: I764809d2145688c8a353907dc599a604ae944d0b
+
+ src/experimental/studio/CMakeLists.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit ea78d83363373ebb8c78dc6c1d62959df0a60fae
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Dec 1 02:41:01 2025 -0800
+
+    Use working directory if no HOME path specified.
+    
+    PiperOrigin-RevId: 838680600
+    Change-Id: I8869da40042bb0b4edcbfe1e626c3188d0631c5e
+
+ src/experimental/studio/main.cc | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 69179ead4844c850129e41a8be5d23cc0ea87cfd
+Author: Matija Kecman <matijak@google.com>
+Date:   Fri Nov 28 06:35:11 2025 -0800
+
+    Internal change.
+    
+    PiperOrigin-RevId: 837829087
+    Change-Id: I110f2f9d1dff2aff8bcad7ac22ea8ed82323185f
+
+ wasm/unpack.h | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+
+commit 7caa3d6703fca161fa5435c7263f1d5e9e68156b
+Author: Yuval Tassa <tassa@google.com>
+Date:   Thu Nov 27 14:08:14 2025 -0800
+
+    Add names to some sensors in sleep test XML.
+    
+    PiperOrigin-RevId: 837611931
+    Change-Id: Ib077765d795037bdd0d32d19e1c7d5bf9b256d51
+
+ test/engine/testdata/sleep/sensor.xml | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit 8f9250472e682eb104508dc963887c628e449fe7
+Author: Yuval Tassa <tassa@google.com>
+Date:   Thu Nov 27 13:32:56 2025 -0800
+
+    Improve names of Free camera control modes.
+    
+    PiperOrigin-RevId: 837605181
+    Change-Id: I01b65706fc4f9857df4d025cd3f4587d24ee5af5
+
+ src/experimental/studio/app.cc | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 2ea403575e340bd765bd1dee0632741e706ec3c3
+Author: Yuval Tassa <tassa@google.com>
+Date:   Thu Nov 27 13:27:23 2025 -0800
+
+    studio: invert mouse scroll direction for camera zoom.
+    
+    PiperOrigin-RevId: 837603911
+    Change-Id: I193a1abc0a3317aa998e7f82b9ce4b282ae7a913
+
+ src/experimental/studio/app.cc | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit dc5c2faf91256e609817afaec9e7a95b0ee67be1
+Author: Yuval Tassa <tassa@google.com>
+Date:   Thu Nov 27 09:24:11 2025 -0800
+
+    Cosmetic cleanup in engine_collision_sdf.c
+    
+    PiperOrigin-RevId: 837554740
+    Change-Id: Ic962af6a2c5f9f4c7edd48cbdf110ed11bc5e378
+
+ src/engine/engine_collision_sdf.c | 36 +++++++++++++++++++++++++++++++++++-
+ 1 file changed, 35 insertions(+), 1 deletion(-)
+
+commit 8a5c52d395c468ceed6f1a67996ececd2ecb6700
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Thu Nov 27 08:41:25 2025 -0800
+
+    Use a dedicated function for wrapper struct names
+    
+    This change introduces a `wrapper_struct_name` function in `structs.py` to consistently generate the name of the C++ wrapper struct from a C struct name. All call sites in `functions.py` and `structs.py` that previously used `common.capitalize` for this purpose now call `wrapper_struct_name`.
+    
+    PiperOrigin-RevId: 837544242
+    Change-Id: Ibe5fea8294283dae63bb8d064fd8beb8cfd3f2fe
+
+ wasm/codegen/generated/bindings.cc         |  4 +-
+ wasm/codegen/generators/binding_builder.py |  1 -
+ wasm/codegen/generators/common.py          | 50 +++++++++++++++++++
+ wasm/codegen/generators/constants.py       |  8 ++--
+ wasm/codegen/generators/enums.py           |  4 +-
+ wasm/codegen/generators/functions.py       | 55 +++++----------------
+ wasm/codegen/generators/structs.py         | 25 +++++-----
+ wasm/codegen/templates/bindings.cc         |  2 +-
+ wasm/codegen/tests/generators_test.py      | 77 ++++++++++++++++++++----------
+ wasm/tests/bindings_test.ts                | 16 +++----
+ wasm/tests/sandbox/main.ts                 |  2 +-
+ 11 files changed, 146 insertions(+), 98 deletions(-)
+
+commit 9ca1598b231e43df779bb74c012358bd59d6b313
+Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Date:   Thu Nov 27 07:41:42 2025 -0800
+
+    Refactor MuJoCo WASM struct codegen.
+    
+    PiperOrigin-RevId: 837530063
+    Change-Id: I57518b2fbb536f356a5e15839d8e17f455bccde9
+
+ wasm/codegen/generators/constants.py  |  78 ++++---
+ wasm/codegen/generators/structs.py    | 427 ++++++++++++++++------------------
+ wasm/codegen/templates/bindings.cc    |   2 +-
+ wasm/codegen/tests/generators_test.py | 219 ++---------------
+ 4 files changed, 258 insertions(+), 468 deletions(-)
+
+commit 5163dfa8235b2be92b5bb5ed3569635d3262bbc1
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Nov 27 07:33:57 2025 -0800
+
+    Move UX drawing functions into a shared library.
+    
+    PiperOrigin-RevId: 837528296
+    Change-Id: I153a000cde424254384cf168606f32f7925ca076
+
+ src/experimental/studio/app.cc          | 883 ++------------------------------
+ src/experimental/studio/app.h           |  22 +-
+ src/experimental/toolbox/CMakeLists.txt |   2 +
+ src/experimental/toolbox/gui.cc         | 807 +++++++++++++++++++++++++++++
+ src/experimental/toolbox/gui.h          |  88 ++++
+ src/experimental/toolbox/renderer.h     |   3 +-
+ 6 files changed, 949 insertions(+), 856 deletions(-)
+
+commit 23825a5bcfb28519a1737bcdc8213480332bc7e3
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Nov 27 05:36:57 2025 -0800
+
+    Implement sensor chart.
+    
+    PiperOrigin-RevId: 837498928
+    Change-Id: I84b5911a44fe60a96b3ef34d514eb39702be7402
+
+ src/experimental/studio/app.cc | 59 ++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 59 insertions(+)
+
+commit 406062efafd3713598ab44b3d613ad9ce1fd0715
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 26 09:12:53 2025 -0800
+
+    Remove TODO (charts have been implemented).
+    
+    PiperOrigin-RevId: 837151123
+    Change-Id: Iae37fdf4ed143e0523a1e4244e3a897211a5751b
+
+ src/experimental/toolbox/sim_profiler.cc | 4 ----
+ 1 file changed, 4 deletions(-)
+
+commit 9274a0014ae381f9add4eb5104059a114aeaca9b
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 26 09:00:57 2025 -0800
+
+    Fix UV scaling.
+    
+    PiperOrigin-RevId: 837147525
+    Change-Id: If54d069ddb3fec0852f1941788cb03d5604a252f
+
+ src/experimental/filament/filament/drawable.cc | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 05f194c412dd410a2208e855dece5fd9d36f0eab
+Author: Matija Kecman <matijak@google.com>
+Date:   Wed Nov 26 08:42:44 2025 -0800
+
+    Reorganization of the WASM bindings.cc template
+    
+    * Move all bindings into a single EMSCRIPTEN_BINDINGS block
+    * Move all auto generated bindings line to the start of the block
+    * Alphabetically sort the constants binding lines
+    
+    PiperOrigin-RevId: 837142009
+    Change-Id: I218a37dbc0ca6c6f16a455718889c08fe1b41d56
+
+ wasm/codegen/generated/bindings.cc    | 16552 ++++++++++++++++----------------
+ wasm/codegen/generators/enums.py      |    16 +-
+ wasm/codegen/templates/bindings.cc    |   144 +-
+ wasm/codegen/tests/generators_test.py |    19 +-
+ 4 files changed, 8328 insertions(+), 8403 deletions(-)
+
+commit c7e0c01e80b67f88f4332c5bba0f23bb47755fc4
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 26 07:26:51 2025 -0800
+
+    Prevent decorative elements from casting shadows.
+    
+    PiperOrigin-RevId: 837112208
+    Change-Id: I4ecc110eec1a2166df7a07d8bb9ec37df36b7c89
+
+ src/experimental/filament/filament/drawable.cc    |  4 ++++
+ src/experimental/filament/filament/renderables.cc | 10 +++++++++-
+ src/experimental/filament/filament/renderables.h  |  4 ++++
+ 3 files changed, 17 insertions(+), 1 deletion(-)
+
+commit 0425355efc2f44255abdd81c86007931cfda4baf
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 26 06:39:33 2025 -0800
+
+    Use a switch statement for handling geometry types.
+    
+    PiperOrigin-RevId: 837097811
+    Change-Id: Ic473f9da3d4189430e98670afdae7bb3cca5ccbc
+
+ src/experimental/filament/filament/drawable.cc | 113 +++++++++++++++----------
+ 1 file changed, 68 insertions(+), 45 deletions(-)
+
+commit aa25075ea4fcf64d7fbfa5af66c61226229df998
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 26 05:32:09 2025 -0800
+
+    Implement triangle geoms.
+    
+    PiperOrigin-RevId: 837079122
+    Change-Id: If7aa0904c6f3e7c62477b75b17d67259fe2bdabb
+
+ src/experimental/filament/filament/builtins.cc     | 40 ++++++++++++++++++++++
+ src/experimental/filament/filament/builtins.h      |  1 +
+ src/experimental/filament/filament/drawable.cc     |  2 ++
+ .../filament/filament/object_manager.cc            |  1 +
+ .../filament/filament/object_manager.h             |  1 +
+ 5 files changed, 45 insertions(+)
+
+commit ed69fe85f14f548c91c065cd3ec994c07d5414df
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 26 03:59:41 2025 -0800
+
+    Only build fonts when using filament backend.
+    
+    PiperOrigin-RevId: 837054382
+    Change-Id: I7ef3b6b954738776f266533f4c48ac4e3c43b4bf
+
+ src/experimental/toolbox/window.cc | 23 ++++++++++++-----------
+ 1 file changed, 12 insertions(+), 11 deletions(-)
+
+commit ae24034f2474927d2c380cfe5cbc0677ff75512e
+Author: Kyle Bayes <kylebayes@google.com>
+Date:   Wed Nov 26 03:25:12 2025 -0800
+
+    Refactor hfield-convex collision code. This should be a no-op.
+    
+    PiperOrigin-RevId: 837045492
+    Change-Id: I82851615c7f69774da83cab361316e5a6e9982c6
+
+ src/engine/engine_collision_convex.c | 250 +++++++++++++++++++----------------
+ src/engine/engine_collision_convex.h |  16 +--
+ src/engine/engine_core_smooth.c      |   2 +-
+ src/engine/engine_core_util.c        |   6 +-
+ src/engine/engine_derivative.c       |   4 +-
+ src/engine/engine_sensor.c           |   2 +-
+ src/engine/engine_setconst.c         |   2 +-
+ src/engine/engine_util_blas.c        |  15 ++-
+ src/engine/engine_util_blas.h        |   5 +-
+ 9 files changed, 163 insertions(+), 139 deletions(-)
+
+commit fcad41a5b165d96f9341498df269867f2c1f573d
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 26 03:24:34 2025 -0800
+
+    Implement solver stats charts.
+    
+    PiperOrigin-RevId: 837045292
+    Change-Id: I1dfe1e10bb6d62f4d994a82c9b645b471fca5500
+
+ src/experimental/studio/app.cc | 173 ++++++++++++++++++++++++++++++++++-------
+ src/experimental/studio/app.h  |   5 +-
+ 2 files changed, 149 insertions(+), 29 deletions(-)
+
+commit 011166a13a95ca177aa7e1922bfc9a1ade430398
+Author: Matija Kecman <matijak@google.com>
+Date:   Wed Nov 26 02:56:57 2025 -0800
+
+    Update the studio/README.md to summarize platform support.
+    
+    PiperOrigin-RevId: 837038187
+    Change-Id: I00882e0a9882947af7c684e2d5521356ad1468ce
+
+ src/experimental/studio/README.md | 25 +++++++++++++++++--------
+ 1 file changed, 17 insertions(+), 8 deletions(-)
+
+commit 4ce0ee2011c23dc670f8842c76e7c7eacfab7daf
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 26 02:35:09 2025 -0800
+
+    Update texture handling due to recent ImGui upgrade.
+    
+    PiperOrigin-RevId: 837030453
+    Change-Id: I042c4a7df7dc6c7e07c40eb5f32e5031e5b1d60a
+
+ src/experimental/filament/filament/gui_view.cc | 64 ++++++++++++++++++++++----
+ src/experimental/filament/filament/gui_view.h  |  4 +-
+ 2 files changed, 57 insertions(+), 11 deletions(-)
+
+commit f2823836a66eec25a64cf394fdce5d8bb225f3f7
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Wed Nov 26 02:25:24 2025 -0800
+
+    Updates for MuJoCo Warp documentation.
+    
+    PiperOrigin-RevId: 837027234
+    Change-Id: Idf7a69b14ce23d5ac5ed36367a14c77a00276846
+
+ doc/mjwarp/index.rst | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+commit a9fe8340bf6edd2a54843eb58d249cc1851ca3d6
+Author: Yuval Tassa <tassa@google.com>
+Date:   Wed Nov 26 01:55:19 2025 -0800
+
+    Remove extraneous colons in XMLreference
+    
+    PiperOrigin-RevId: 837017632
+    Change-Id: Ie89adf4fd3725cfa4b8eb0bcddedd4fa886ed8fb
+
+ doc/XMLreference.rst | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit a1579ac3e1e063c7b61e9de13648b8fadaa1f93f
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 26 00:24:36 2025 -0800
+
+    Use static_cast instead of reinterpret_cast.
+    
+    PiperOrigin-RevId: 836990495
+    Change-Id: I276b5d83e18cc87364f8f2cae0c585b6673c738e
+
+ src/experimental/filament/filament/gui_view.cc | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d940b2b7f96c9a3b6f8ca8e410262ad8efa2a86d
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 25 16:07:10 2025 -0800
+
+    Update versions of imgui and implot.
+    
+    PiperOrigin-RevId: 836844278
+    Change-Id: If0a522fcb7637df9cd422df6cb5bef641e675b0b
+
+ cmake/third_party_deps/dear_imgui.cmake | 2 +-
+ cmake/third_party_deps/implot.cmake     | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit c07e3cb8a8276c564bb0df4107cd00ff7c7f29ef
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Tue Nov 25 14:35:35 2025 -0800
+
+    Internal changes only.
+    
+    PiperOrigin-RevId: 836814927
+    Change-Id: I18bde7ae47b5c106ab9c85e434a8b491c8d79d04
+
+ src/experimental/toolbox/window.cc | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit 181dcab6be1c66a23544a7cdcdd440e63e36abed
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 25 10:39:37 2025 -0800
+
+    Combine markers and content and reorganize parts of the WASM template file
+    
+    PiperOrigin-RevId: 836729951
+    Change-Id: Ib3bb25a23325cfbd84fd0439243db37ca8236bf3
+
+ wasm/codegen/generated/bindings.cc | 131 ++++++++++++++++++-------------------
+ wasm/codegen/generators/structs.py |  69 ++++++++-----------
+ wasm/codegen/templates/bindings.cc |  78 ++++++++++------------
+ 3 files changed, 125 insertions(+), 153 deletions(-)
+
+commit b6e162d6fa11123de59d17ab61a37623dbb88af3
+Author: Gabe Oppenheimer <goppenheimer@google.com>
+Date:   Tue Nov 25 10:14:29 2025 -0800
+
+    Update MuJoCo version from 3.3.8 to 3.4.0
+    
+    PiperOrigin-RevId: 836719207
+    Change-Id: I28cbc90cee42aebfb5a4201561289ef6747cdc83
+
+ CMakeLists.txt                                 | 2 +-
+ dist/mujoco.rc                                 | 8 ++++----
+ dist/simulate.rc                               | 8 ++++----
+ doc/APIreference/APIglobals.rst                | 2 +-
+ doc/unity.rst                                  | 4 ++--
+ include/mujoco/mujoco.h                        | 2 +-
+ mjx/pyproject.toml                             | 8 ++++----
+ python/mujoco/CMakeLists.txt                   | 4 ++--
+ python/mujoco/mjpython/Info.plist              | 8 ++++----
+ python/pyproject.toml                          | 6 +++---
+ sample/CMakeLists.txt                          | 2 +-
+ simulate/CMakeLists.txt                        | 2 +-
+ src/engine/engine_support.c                    | 4 ++--
+ unity/Editor/Bindings/MujocoBinaryRetriever.cs | 4 ++--
+ unity/Runtime/Bindings/MjBindings.cs           | 2 +-
+ unity/package.json                             | 2 +-
+ 16 files changed, 34 insertions(+), 34 deletions(-)
+
+commit 6e59f61c70d26a9dc089cdf1b8a3ff6980e5b198
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Tue Nov 25 08:28:32 2025 -0800
+
+    Make WASM codegen output to be alphabetically ordered.
+    
+    PiperOrigin-RevId: 836680575
+    Change-Id: I7ddb7267c0db4911b2e84528f948dee6fccdf81d
+
+ wasm/codegen/generated/bindings.cc         | 7770 ++++++++++++++--------------
+ wasm/codegen/generators/binding_builder.py |    8 +-
+ wasm/codegen/generators/enums.py           |    6 +-
+ wasm/codegen/generators/functions.py       |    8 +-
+ wasm/codegen/generators/structs.py         |   27 +-
+ wasm/codegen/tests/generators_test.py      |   18 +-
+ 6 files changed, 3923 insertions(+), 3914 deletions(-)
+
+commit 6208730744554988c44318e2e085acda0ee62260
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Tue Nov 25 07:57:06 2025 -0800
+
+    MuJoCo Warp documentation: Option.contact_sensor_maxmatch information.
+    
+    PiperOrigin-RevId: 836670031
+    Change-Id: I29b11784998d3461ad1d460a6c23cad66df22202
+
+ doc/mjwarp/index.rst | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit 5d7b2bd7caaa642a92b1152043a5b773364d03aa
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Tue Nov 25 07:43:59 2025 -0800
+
+    MuJoCo Warp documentation: update information about setting both `nconmax` and `naconmax`.
+    
+    PiperOrigin-RevId: 836666389
+    Change-Id: I766c717d4c6b98f4383fa396fd9cceaac4b5b561
+
+ doc/mjwarp/index.rst | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 893882171eb0b50ec9c23d704cf1c5bca87cfc94
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Tue Nov 25 06:25:49 2025 -0800
+
+    MuJoCo Warp documentation: Does MJWarp work with multiple GPUs?.
+    
+    PiperOrigin-RevId: 836642204
+    Change-Id: I559642b2cb902a704257e7e0344f768b690678a1
+
+ doc/mjwarp/index.rst | 26 ++++++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+
+commit d8712808b97ce9c32d064d94c9e39461516cbbf8
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 25 06:24:22 2025 -0800
+
+    Allow users to access mjrContext.
+    
+    PiperOrigin-RevId: 836641787
+    Change-Id: I2f2aee30a047336d1adbe33b7996fee3ec845213
+
+ src/experimental/toolbox/renderer.h | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit f28bcc43468ec124634219ee971e41922502b86d
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 25 05:25:14 2025 -0800
+
+    Allow binding to arbitrary textures.
+    
+    PiperOrigin-RevId: 836625847
+    Change-Id: If02ea708f49bdfd9be5be7d9a273340ba2f082f0
+
+ src/experimental/filament/filament/gui_view.cc | 10 +++++++---
+ src/experimental/filament/filament/gui_view.h  |  3 ++-
+ 2 files changed, 9 insertions(+), 4 deletions(-)
+
+commit 589e013d9b82ea2c9fecdf314191702ec1d38d87
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 25 05:21:45 2025 -0800
+
+    Fonts should have const data.
+    
+    PiperOrigin-RevId: 836624808
+    Change-Id: I984c94cc34ef22b875ddda87c59893aa7f38a8a3
+
+ src/experimental/filament/render_context_filament.cc | 4 ++--
+ src/experimental/filament/render_context_filament.h  | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit bdaec5758b7e46eb0b1700795fec6bf07e1b73ed
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Tue Nov 25 04:53:04 2025 -0800
+
+    Generate MuJoCo Warp documentation with modified types.py.
+    
+    PiperOrigin-RevId: 836617034
+    Change-Id: Ia925b88679744267b34504b146fa712d4195eda4
+
+ .readthedocs.yml           |  1 +
+ doc/mjwarp/update_types.py | 82 ++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 83 insertions(+)
+
+commit b98379372e59e3466fa7d0371e6ab323625becd4
+Author: Kyle Bayes <kylebayes@google.com>
+Date:   Tue Nov 25 03:43:06 2025 -0800
+
+    Refactor epaWitness.
+    
+    PiperOrigin-RevId: 836597852
+    Change-Id: Ib75dae07bda47764f937f32a9476ef3266f02056
+
+ src/engine/engine_collision_gjk.c | 35 +++++++++++++----------------------
+ 1 file changed, 13 insertions(+), 22 deletions(-)
+
+commit 9b0f8dd963b31be8e7831a9cc7fc8da554d8348d
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 25 03:17:38 2025 -0800
+
+    Update CMakeLists.txt to add/remove files.
+    
+    PiperOrigin-RevId: 836591285
+    Change-Id: I17745ad5055b861721c10daec33adc1f6f11ea32
+
+ src/experimental/toolbox/CMakeLists.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 888d3a7b07434f6eeedb3d724b23bf8fffb4e1d8
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Nov 25 03:08:01 2025 -0800
+
+    Add `mj_copyState`
+    
+    PiperOrigin-RevId: 836588419
+    Change-Id: I7609e121dc0ac697d4d015d4244bdd5962650def
+
+ doc/APIreference/functions.rst        |  9 +++++++
+ doc/changelog.rst                     |  1 +
+ doc/includes/references.h             |  1 +
+ include/mujoco/mujoco.h               |  3 +++
+ python/mujoco/bindings_test.py        |  7 ++++++
+ python/mujoco/functions.cc            |  1 +
+ python/mujoco/introspect/functions.py | 30 +++++++++++++++++++++++
+ src/engine/engine_support.c           | 30 +++++++++++++++++++++++
+ src/engine/engine_support.h           |  3 +++
+ test/engine/engine_support_test.cc    | 46 +++++++++++++++++++++++++++++++++++
+ unity/Runtime/Bindings/MjBindings.cs  |  3 +++
+ wasm/codegen/generated/bindings.cc    |  5 ++++
+ 12 files changed, 139 insertions(+)
+
+commit eac8e6003743a53c8707bbb28250017a3935ee4f
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 25 03:06:55 2025 -0800
+
+    Merge Physics functionality into App.
+    
+    The Physics class is no longer needed. This makes Studio similar to
+    other toolbox-based apps (like web demo and python viewer) which
+    manage their own mjModel and mjData instances.
+    
+    PiperOrigin-RevId: 836588076
+    Change-Id: I3f695b49bf6a7bba1a2b639d3d75d0c996582f06
+
+ src/experimental/studio/app.cc           | 362 +++++++++++++++++++------------
+ src/experimental/studio/app.h            |  22 +-
+ src/experimental/toolbox/physics.cc      | 161 --------------
+ src/experimental/toolbox/physics.h       |  90 --------
+ src/experimental/toolbox/step_control.cc |  12 +
+ src/experimental/toolbox/step_control.h  |   2 +
+ 6 files changed, 252 insertions(+), 397 deletions(-)
+
+commit 67b09f9afb459e732a099c076a5c602fb89472e2
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 25 02:37:06 2025 -0800
+
+    Refactor simulation state history tracking into a SimHistory class.
+    
+    PiperOrigin-RevId: 836578736
+    Change-Id: I94a852b2d2a36cdd081371f25385dbb466dd8d4b
+
+ src/experimental/studio/app.cc          | 25 ++++-----
+ src/experimental/studio/app.h           |  1 -
+ src/experimental/toolbox/physics.cc     | 82 ++++++++--------------------
+ src/experimental/toolbox/physics.h      | 29 +++-------
+ src/experimental/toolbox/sim_history.cc | 77 +++++++++++++++++++++++++++
+ src/experimental/toolbox/sim_history.h  | 94 +++++++++++++++++++++++++++++++++
+ 6 files changed, 211 insertions(+), 97 deletions(-)
+
+commit 6d9d59cb987d3432178279d4374ca2cbe812b0c7
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 25 02:07:23 2025 -0800
+
+    Move pause handling into StepControl.
+    
+    Also moves perturbation handling up to the App.
+    
+    Combined, this makes Physics::Update only about advancing the StepControl and resonding to its Status.
+    
+    PiperOrigin-RevId: 836569506
+    Change-Id: I148c787f0e1c18baac3e3038ee6ad0e337eb92a8
+
+ src/experimental/studio/app.cc           | 35 +++++++++++-------
+ src/experimental/toolbox/physics.cc      | 62 +++++++++-----------------------
+ src/experimental/toolbox/physics.h       | 26 +-------------
+ src/experimental/toolbox/step_control.cc | 21 ++++++++++-
+ src/experimental/toolbox/step_control.h  | 27 ++++++++++++++
+ 5 files changed, 87 insertions(+), 84 deletions(-)
+
+commit 711a388b3d30f82bc1cd5de2ad3c8ae10e9b0690
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Mon Nov 24 10:17:14 2025 -0800
+
+    Sort and generate optional struct bindings in WASM.
+    
+    PiperOrigin-RevId: 836273537
+    Change-Id: I2af2401969a4780f593df86dc9336adcc285fd1b
+
+ wasm/codegen/generated/bindings.cc | 44 ++++++++++++++++++++------------------
+ wasm/codegen/generators/structs.py | 13 +++++++++++
+ wasm/codegen/templates/bindings.cc | 29 +------------------------
+ 3 files changed, 37 insertions(+), 49 deletions(-)
+
+commit 217317ccbaed497c3a19ba5f6706b02c0e179e0a
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Mon Nov 24 09:35:06 2025 -0800
+
+    Change WASM generators from classes to functions.
+    
+    PiperOrigin-RevId: 836257289
+    Change-Id: I7a3c1d7bb545353a3d278330582e33c0551792cb
+
+ wasm/codegen/generators/binding_builder.py |  10 ++-
+ wasm/codegen/generators/enums.py           |  42 +++++------
+ wasm/codegen/generators/functions.py       |  48 ++++++-------
+ wasm/codegen/generators/structs.py         | 111 ++++++++++++++---------------
+ wasm/codegen/tests/generators_test.py      |  31 ++++----
+ 5 files changed, 111 insertions(+), 131 deletions(-)
+
+commit 1c910875d2311473c2dfd84257ab61b5639ae8ea
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Mon Nov 24 09:12:38 2025 -0800
+
+    MuJoCo Warp documentation: Differentiability.
+    
+    PiperOrigin-RevId: 836250165
+    Change-Id: I40c21674c896ed4108f17192f16aaaf2664f03be
+
+ doc/mjwarp/index.rst | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+commit 2ca56179a7b0082462ce737b876517ed53d8bbd8
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Mon Nov 24 08:13:48 2025 -0800
+
+    Add Frequently Asked Questions: Learning frameworks to MuJoCo Warp documentation.
+    
+    PiperOrigin-RevId: 836231961
+    Change-Id: If3d00e7dfb9ebe49a034ea8936d2ac1dd33d0979
+
+ doc/mjwarp/index.rst | 26 ++++++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+
+commit cb391962ca6503bbb46d75b449e3b781bf1b6fa8
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Mon Nov 24 02:02:38 2025 -0800
+
+    MuJoCo Warp documentation: Orientation representation.
+    
+    PiperOrigin-RevId: 836127570
+    Change-Id: I0f381e57cfb53e1cb623f9c4178d258dfc1f75b6
+
+ doc/mjwarp/index.rst | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+
+commit a10504273411502475a31eff3bcb9a2a1a14e55c
+Author: Kyle Bayes <kylebayes@google.com>
+Date:   Fri Nov 21 12:59:34 2025 -0800
+
+    Tidy up primitive support functions.
+    
+    PiperOrigin-RevId: 835329730
+    Change-Id: I5ad5e85b5e8284bf5e3769ab504686b7859a6ea4
+
+ src/engine/engine_collision_convex.c | 95 +++++++++++++++++-------------------
+ 1 file changed, 45 insertions(+), 50 deletions(-)
+
+commit a359780ca16e5c8109fa877054709aff9b845c86
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Fri Nov 21 08:15:42 2025 -0800
+
+    Import google-deepmind/mujoco_warp from GitHub.
+    
+    PiperOrigin-RevId: 835230315
+    Change-Id: Ifa4f8f66c4e3de1a3074f0897daf93f88e469f06
+
+ .../mujoco_warp/_src/collision_convex.py           |  346 +++-
+ .../mujoco_warp/_src/collision_driver.py           |   42 +-
+ .../third_party/mujoco_warp/_src/collision_gjk.py  |   54 +-
+ .../mujoco_warp/_src/collision_primitive.py        |   15 +-
+ .../third_party/mujoco_warp/_src/collision_sdf.py  |   16 +-
+ .../mjx/third_party/mujoco_warp/_src/constraint.py |    4 +-
+ .../mjx/third_party/mujoco_warp/_src/derivative.py |   17 +-
+ .../mjx/third_party/mujoco_warp/_src/forward.py    |   51 +-
+ mjx/mujoco/mjx/third_party/mujoco_warp/_src/io.py  | 1760 ++++++--------------
+ .../mjx/third_party/mujoco_warp/_src/passive.py    |   14 +-
+ .../mjx/third_party/mujoco_warp/_src/sensor.py     |   10 +-
+ .../mjx/third_party/mujoco_warp/_src/smooth.py     |    2 +-
+ .../mjx/third_party/mujoco_warp/_src/solver.py     |   13 +-
+ .../mjx/third_party/mujoco_warp/_src/support.py    |    2 +-
+ .../mjx/third_party/mujoco_warp/_src/types.py      | 1151 +++++++------
+ .../mjx/third_party/mujoco_warp/_src/warp_util.py  |   12 +-
+ mjx/mujoco/mjx/warp/collision_driver.py            |    2 +-
+ mjx/mujoco/mjx/warp/forward.py                     |   30 +-
+ mjx/mujoco/mjx/warp/forward_test.py                |    3 +-
+ mjx/mujoco/mjx/warp/types.py                       |   44 +-
+ 20 files changed, 1581 insertions(+), 2007 deletions(-)
+
+commit bb488fec29e2d4424021e01d51efa2781d9a189e
+Author: Kyle Bayes <kylebayes@google.com>
+Date:   Fri Nov 21 07:57:20 2025 -0800
+
+    Remove MPR from comment.
+    
+    PiperOrigin-RevId: 835224192
+    Change-Id: I659231b30d4c00d9bf586f0efdac138331862df7
+
+ src/engine/engine_collision_convex.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f8b92410d42a75feaba75a006b66ec114dd1186b
+Author: Yuval Tassa <tassa@google.com>
+Date:   Fri Nov 21 06:24:24 2025 -0800
+
+    Add test explaining body_rootid and body_weldid semantics
+    
+    PiperOrigin-RevId: 835197910
+    Change-Id: If85ca80d3b576e2469cf0d9900441ddb9fd64462
+
+ test/user/user_model_test.cc | 77 ++++++++++++++++++++++++++++++++++++++------
+ 1 file changed, 68 insertions(+), 9 deletions(-)
+
+commit 7e6cb642a36a940aa5d532434328ca14aab0649a
+Author: Matija Kecman <matijak@google.com>
+Date:   Fri Nov 21 06:04:34 2025 -0800
+
+    Improve formatting of percent real time selection
+    
+    PiperOrigin-RevId: 835192366
+    Change-Id: I17057f61b96d6380dea6156dcef867b1845e6abf
+
+ src/experimental/studio/app.cc | 34 +++++++++-------------------------
+ src/experimental/studio/app.h  |  1 -
+ 2 files changed, 9 insertions(+), 26 deletions(-)
+
+commit a2002eb3d76c21b3d86529bf428458b40f7e5e4b
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Fri Nov 21 04:57:20 2025 -0800
+
+    Various UX improvements including:
+    
+    - Add Toolbar and StatusBar.
+    - Reconfigure sections into Settings and Inspector groupings.
+    - Use docking for Settings/Inspector panels.
+    - Rename "Free" camera to "Tumble"; add WASD-based free camera.
+    - More dynamic layout of table-based elements.
+    - Remove "non-classic" UX mode.
+    - Switch to light mode by default.
+    
+    PiperOrigin-RevId: 835174573
+    Change-Id: I1855caa79f00002e44ed2516631675727bdcb9f6
+
+ src/experimental/studio/app.cc           | 2004 ++++++++++++++++--------------
+ src/experimental/studio/app.h            |   99 +-
+ src/experimental/studio/main.cc          |    2 +-
+ src/experimental/toolbox/imgui_widgets.h |  171 ++-
+ src/experimental/toolbox/interaction.cc  |   97 +-
+ src/experimental/toolbox/interaction.h   |   45 +-
+ src/experimental/toolbox/sim_profiler.cc |   13 +-
+ src/experimental/toolbox/sim_profiler.h  |    3 +-
+ 8 files changed, 1313 insertions(+), 1121 deletions(-)
+
+commit ae8272787f2f7227f7cfec812d8d1b0bacb4996a
+Author: Yuval Tassa <tassa@google.com>
+Date:   Thu Nov 20 12:29:35 2025 -0800
+
+    Rollback of 7cb2e31f4b5d4bdd4b5174efb2793e10b6bb3d00
+    
+    PiperOrigin-RevId: 834865905
+    Change-Id: Iade490754ca30a97f696bcb09525f9b4c37dbeff
+
+ src/xml/xml_api.cc | 43 -------------------------------------------
+ 1 file changed, 43 deletions(-)
+
+commit c2e9bfa3e87d6b173cf2337bacb70d7a97b4a5a3
+Author: Yuval Tassa <tassa@google.com>
+Date:   Thu Nov 20 10:53:59 2025 -0800
+
+    Clarify semantic of `body_rootid` and `body_weldid`
+    
+    PiperOrigin-RevId: 834827589
+    Change-Id: I562e0aa374ce59d8b769e8d003e4c63ee434a1fc
+
+ doc/includes/references.h           | 4 ++--
+ include/mujoco/mjmodel.h            | 4 ++--
+ python/mujoco/introspect/structs.py | 4 ++--
+ 3 files changed, 6 insertions(+), 6 deletions(-)
+
+commit 7cb2e31f4b5d4bdd4b5174efb2793e10b6bb3d00
+Author: Yuval Tassa <tassa@google.com>
+Date:   Thu Nov 20 09:02:58 2025 -0800
+
+    Annotate GlobalModel for LSAN
+    
+    PiperOrigin-RevId: 834784936
+    Change-Id: I9381a062956df6cd7724402b72c2d2a2d8c49998
+
+ src/xml/xml_api.cc | 46 ++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 44 insertions(+), 2 deletions(-)
+
+commit ee8dbd43470498ede4633afeaea80ae1ed9562ef
+Author: Matija Kecman <matijak@google.com>
+Date:   Thu Nov 20 05:50:55 2025 -0800
+
+    Simplify enum WASM bindings generator
+    
+    PiperOrigin-RevId: 834725472
+    Change-Id: I278447145cd8dcdd145f0d50bc3bae649ea2b440
+
+ wasm/codegen/generated/bindings.cc    |  1 +
+ wasm/codegen/generators/enums.py      | 30 +++++++++++++-----------------
+ wasm/codegen/templates/bindings.cc    |  2 --
+ wasm/codegen/tests/generators_test.py |  6 ++++--
+ 4 files changed, 18 insertions(+), 21 deletions(-)
+
+commit a0d49ade1bf1e9f979d461cde7fe21693a456714
+Author: Matija Kecman <matijak@google.com>
+Date:   Thu Nov 20 01:05:26 2025 -0800
+
+    More simplification to functions.py in WASM bindings
+    
+    PiperOrigin-RevId: 834643175
+    Change-Id: Iff873f6f0916e0039ff6a44468afd9b4d8f98f37
+
+ wasm/codegen/generated/bindings.cc    |  24 +++----
+ wasm/codegen/generators/functions.py  | 124 ++++++++++++----------------------
+ wasm/codegen/tests/generators_test.py |  56 ++-------------
+ 3 files changed, 62 insertions(+), 142 deletions(-)
+
+commit 102f382c9d46f9fe4b433f4b1753cdc62905569f
+Author: Matija Kecman <matijak@google.com>
+Date:   Wed Nov 19 23:53:00 2025 -0800
+
+    Rename `uppercase_first_letter` to `capitalize`
+    
+    Also rename `lowercase_first_letter` to `decapitalize`
+    
+    PiperOrigin-RevId: 834622292
+    Change-Id: I1cfbda1be782ff40dd3fc0726601cc6b1f427345
+
+ wasm/codegen/generators/common.py     |  4 ++--
+ wasm/codegen/generators/functions.py  | 19 +++++++------------
+ wasm/codegen/generators/structs.py    | 25 +++++++++++--------------
+ wasm/codegen/tests/coverage_test.py   |  4 ++--
+ wasm/codegen/tests/generators_test.py | 25 ++++++++++---------------
+ 5 files changed, 32 insertions(+), 45 deletions(-)
+
+commit 48ecddbe3b1c6b9d7a0df96373e3f733603c8194
+Author: Matija Kecman <matijak@google.com>
+Date:   Wed Nov 19 15:34:34 2025 -0800
+
+    Simplify functions.py in WASM bindings generation
+    
+    PiperOrigin-RevId: 834470193
+    Change-Id: I3c26d65ea8812fd6a4c78264fbce8353bac6fb2f
+
+ wasm/codegen/generators/functions.py  | 220 +++++++++++++---------------------
+ wasm/codegen/tests/generators_test.py |  74 ------------
+ 2 files changed, 81 insertions(+), 213 deletions(-)
+
+commit a0cb97eb4dc15fe4af5bf83a293a61148b8539e2
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Wed Nov 19 11:07:23 2025 -0800
+
+    Improve attach docs.
+    
+    PiperOrigin-RevId: 834366494
+    Change-Id: I9086097990f09e848d0b76d9c22f4fd2bbd70718
+
+ doc/XMLreference.rst          | 34 +++++++++++++---------------------
+ doc/programming/modeledit.rst | 18 +++++++++++++++---
+ 2 files changed, 28 insertions(+), 24 deletions(-)
+
+commit d1317fd1a5b9185fa450b1129dc69d06c203c557
+Author: Yuval Tassa <tassa@google.com>
+Date:   Wed Nov 19 08:00:13 2025 -0800
+
+    Add ray normal computation for primitives (currently private)
+    
+    PiperOrigin-RevId: 834294539
+    Change-Id: I176f13a8f91dede589338fc44e099a16bac0b580
+
+ src/engine/engine_ray.c                | 173 +++++++++++++++++++++++++++------
+ src/engine/engine_ray.h                |   7 +-
+ test/engine/engine_ray_test.cc         | 117 +++++++++++++++++++++-
+ test/engine/testdata/ray/box.xml       |   9 ++
+ test/engine/testdata/ray/capsule.xml   |   9 ++
+ test/engine/testdata/ray/cylinder.xml  |   9 ++
+ test/engine/testdata/ray/ellipsoid.xml |   9 ++
+ test/engine/testdata/ray/plane.xml     |   7 ++
+ test/engine/testdata/ray/ray_swing.xml |  22 +++++
+ test/engine/testdata/ray/sphere.xml    |   7 ++
+ 10 files changed, 335 insertions(+), 34 deletions(-)
+
+commit 86a77ff8eb6c4e942a4ab9ec9172073517ad61d6
+Author: Yuval Tassa <tassa@google.com>
+Date:   Wed Nov 19 07:55:00 2025 -0800
+
+    Change `mjtSize` from `uint64_t` to `int64_t`.
+    
+    This change makes `mjtSize` a signed, rather than unsigned 64-bit integer. While sizes are non-negative, the type promotion rules for unsigned integers can lead to unituitive downstream bugs, and 8 billion terabytes are enough bytes.
+    
+    PiperOrigin-RevId: 834292964
+    Change-Id: Iea9c47c2a5d80fde63851a543d59ed0549db0f01
+
+ doc/APIreference/APItypes.rst        |   2 +-
+ doc/changelog.rst                    |   6 +-
+ include/mujoco/mjtnum.h              |   7 +-
+ src/engine/engine_print.c            |   7 +-
+ unity/Runtime/Bindings/MjBindings.cs | 270 +++++++++++++++++------------------
+ 5 files changed, 149 insertions(+), 143 deletions(-)
+
+commit 49394d57d9827ccfeebdf585542e559691c0cb50
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Wed Nov 19 06:24:57 2025 -0800
+
+    Rename WASM binding wrapper functions and reorder generated code.
+    
+    PiperOrigin-RevId: 834265965
+    Change-Id: I58e7d572dcae4f1ca262ae5d876fcd8353af183c
+
+ wasm/codegen/generated/bindings.cc | 11570 +++++++++++++++++------------------
+ wasm/codegen/generators/structs.py |     3 +-
+ wasm/codegen/templates/bindings.cc |   148 +-
+ 3 files changed, 5861 insertions(+), 5860 deletions(-)
+
+commit 10fe5ff07f04f97a5e8ce9cdee1852bfc7e4971f
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Wed Nov 19 06:21:24 2025 -0800
+
+    Generate `MjVisual`, `MjModel`, `MjData` and `MjSpec` structs declaration
+    
+    PiperOrigin-RevId: 834264723
+    Change-Id: Id33d7568a1f9f0cfb1271cf9dd2d8713c00eee34
+
+ wasm/codegen/generated/bindings.cc   | 5418 +++++++++++++++++-----------------
+ wasm/codegen/generators/constants.py |    8 +-
+ wasm/codegen/generators/structs.py   |   73 +-
+ wasm/codegen/templates/bindings.cc   |  112 +-
+ 4 files changed, 2772 insertions(+), 2839 deletions(-)
+
+commit 07d8bd5b801a35a24f5fcef04a6178a5ce4f9b85
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Wed Nov 19 05:21:54 2025 -0800
+
+    MuJoCo Warp documentation: Add note about `nconmax` and `njmax` not being parsed from XML.
+    
+    PiperOrigin-RevId: 834247810
+    Change-Id: Iadee0f1713c9322cab781aabfe86954c145932ba
+
+ doc/mjwarp/index.rst | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit 3aa973894ce646e2795c634aace1f81d1f7ea08f
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Wed Nov 19 03:39:15 2025 -0800
+
+    Fast flex: Interpolate contact points directly.
+    
+    For each contact point, we used to first compute the vertex weights on a triangle and then add a contact point per vertex using the flex interpolation (trilinear or quadratic), obtaining the total weight by multiplying the vertex weight and the basis function value at that vertex. After this change, each contact point is added directly by evaluating the basis function directly a the point.
+    
+    PiperOrigin-RevId: 834218909
+    Change-Id: Ic0fdb03fc0ef5478798c293df99204fd33116fd1
+
+ src/engine/engine_core_constraint.c | 161 +++++++++++++++++++++---------------
+ 1 file changed, 94 insertions(+), 67 deletions(-)
+
+commit a2fd5fdd4acb5dbd79bd0913a35e989cf0f89bcf
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 19 02:34:24 2025 -0800
+
+    Move profiler logic into a separate class.
+    
+    PiperOrigin-RevId: 834200782
+    Change-Id: Ida050a5c055237c4e0a0c725a1277c9239a89538
+
+ src/experimental/studio/app.cc           | 152 ++--------------------------
+ src/experimental/studio/app.h            |  19 +---
+ src/experimental/toolbox/CMakeLists.txt  |   2 +
+ src/experimental/toolbox/sim_profiler.cc | 166 +++++++++++++++++++++++++++++++
+ src/experimental/toolbox/sim_profiler.h  |  54 ++++++++++
+ src/experimental/toolbox/window.cc       |   2 +-
+ 6 files changed, 232 insertions(+), 163 deletions(-)
+
+commit e18e35f967921dfe935db979d0914e7df13a768a
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Nov 18 12:55:04 2025 -0800
+
+    Fix normal only for libccd during hfield collisions.
+    
+    PiperOrigin-RevId: 833933161
+    Change-Id: I3a4ff044276d9c7305154da09b440168f0f22305
+
+ src/engine/engine_collision_convex.c | 8 +++++---
+ test/engine/engine_solver_test.cc    | 5 +++--
+ 2 files changed, 8 insertions(+), 5 deletions(-)
+
+commit 7569ac960db1cd778a957d8e8e0cd26700a6fe0e
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 18 08:16:02 2025 -0800
+
+    Create material instances for each draw call rather than for each clip rect.
+    
+    This fixes a bug where the wrong instance was being used in some cases.
+    
+    PiperOrigin-RevId: 833818151
+    Change-Id: If8b0cb90017ee0b89cde98a5ae64c36704c7338c
+
+ src/experimental/filament/filament/gui_view.cc | 30 ++++++++++----------------
+ src/experimental/filament/filament/gui_view.h  |  4 ++--
+ 2 files changed, 13 insertions(+), 21 deletions(-)
+
+commit 62872fecd1a9c54b890480d9330f2cbaebb33630
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Tue Nov 18 04:47:55 2025 -0800
+
+    Reduce size of `mjsTexture.gridlayout` (was 13, should be 12)
+    
+    PiperOrigin-RevId: 833764817
+    Change-Id: I2655a729d38a8871be2024492ce2a971fc8a0372
+
+ doc/includes/references.h           | 2 +-
+ include/mujoco/mjspec.h             | 2 +-
+ python/mujoco/introspect/structs.py | 2 +-
+ wasm/codegen/generated/bindings.cc  | 2 +-
+ 4 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 971e73ab0437ff56dde7b278fc7621558bcb9924
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Tue Nov 18 03:27:24 2025 -0800
+
+    Remove unused argument from mj_vertBodyWeight.
+    
+    PiperOrigin-RevId: 833744032
+    Change-Id: I26049003b1f45f8cac60c7ebc0b5abca5526177f
+
+ src/engine/engine_core_constraint.c | 11 ++++-------
+ 1 file changed, 4 insertions(+), 7 deletions(-)
+
+commit 8077a6819c545e197599630f2a728e8d94fff953
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Nov 17 23:13:59 2025 -0800
+
+    Add support for OpenSans and font-awesome fonts.
+    
+    PiperOrigin-RevId: 833666932
+    Change-Id: I5f0207c3331705b9078a1297b3e7b2a8d363ad60
+
+ cmake/third_party_deps/font_awesome.cmake          | 31 ++++++++++++++++++
+ cmake/third_party_deps/font_awesome/CMakeLists.txt | 15 +++++++++
+ cmake/third_party_deps/opensans.cmake              | 31 ++++++++++++++++++
+ cmake/third_party_deps/opensans/CMakeLists.txt     | 15 +++++++++
+ src/experimental/studio/CMakeLists.txt             | 37 ++++++++++++++++------
+ src/experimental/toolbox/window.cc                 | 21 ++++++++++++
+ 6 files changed, 141 insertions(+), 9 deletions(-)
+
+commit 695e4c4038d550d408cf8f783615ddb217152abd
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Mon Nov 17 10:45:37 2025 -0800
+
+    MuJoCo Warp documentation: Command line scripts.
+    
+    PiperOrigin-RevId: 833405216
+    Change-Id: I8c1850ea59e2640f14c5be7e09c90aea29622831
+
+ doc/mjwarp/index.rst | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit bc169d82c18612b012ca3412bcdf09d686440804
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Mon Nov 17 10:20:10 2025 -0800
+
+    Fix MJX `plane_cylinder` docstring.
+    
+    PiperOrigin-RevId: 833394724
+    Change-Id: I80df8bf35bceb97a18a0c4c2f37fab71e31011c2
+
+ mjx/mujoco/mjx/_src/collision_primitive.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e882399eb0afa3720283b8006f17f6b819002651
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Nov 17 07:48:22 2025 -0800
+
+    Use mjTHREADLOCAL macro instead of intrinsic.
+    
+    Fixes #2927.
+    
+    PiperOrigin-RevId: 833336768
+    Change-Id: I62bfdc7018853fc8459e03ba079fc6a15e97c7d0
+
+ src/engine/engine_collision_gjk.c | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+
+commit 85b6194f91d0fa69f2f844695d64193f6d8bb068
+Author: Matija Kecman <matijak@google.com>
+Date:   Mon Nov 17 07:47:50 2025 -0800
+
+    Add a README with instructions for how to build and run MuJoCo Studio externally
+    
+    PiperOrigin-RevId: 833336577
+    Change-Id: Ib5f5ef33abe820796559a9da352360f57ea64bc8
+
+ src/experimental/studio/README.md | 66 ++++++++++++++++++++++++++
+ src/experimental/studio/build.sh  | 99 +++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 165 insertions(+)
+
+commit 12e24d66f6da62dcf36fc5b55b330b947f3dc436
+Author: Matija Kecman <matijak@google.com>
+Date:   Mon Nov 17 07:09:42 2025 -0800
+
+    Add steps to build MuJoCo Studio to Github actions
+    
+    PiperOrigin-RevId: 833325371
+    Change-Id: I8c7253f3dfabe3e7b6538b602af220310d5aea89
+
+ .github/workflows/build.yml      | 120 ++++++++++++++++++++++++++++++++++-----
+ .github/workflows/build_steps.sh |  47 ++++++++++++++-
+ 2 files changed, 153 insertions(+), 14 deletions(-)
+
+commit 8eca9926dc16200dbcae50587f11f235f7d10d94
+Author: Matija Kecman <matijak@google.com>
+Date:   Mon Nov 17 06:34:43 2025 -0800
+
+    Fix various MuJoCo Studio build issues on Windows, MacOS and Linux
+    
+    PiperOrigin-RevId: 833313973
+    Change-Id: I7ec181374e0bb49c32420d025044c31f6fc3c657
+
+ cmake/MujocoDependencies.cmake                     |  5 +-
+ cmake/third_party_deps/filament.cmake              |  6 +-
+ src/experimental/filament/CMakeLists.txt           |  1 +
+ src/experimental/filament/filament/builtins.cc     | 67 ++++++++++++----------
+ src/experimental/filament/filament/drawable.cc     | 15 ++---
+ src/experimental/filament/filament/gui_view.cc     |  9 +--
+ src/experimental/filament/filament/imgui_editor.cc |  7 ++-
+ src/experimental/filament/filament/light.cc        |  7 ++-
+ .../filament/render_context_filament.cc            |  4 +-
+ .../filament/render_context_filament.h             | 18 +++---
+ src/experimental/filament/stubs.cc                 |  4 +-
+ src/experimental/studio/CMakeLists.txt             | 20 +++++--
+ src/experimental/studio/app.cc                     |  4 +-
+ src/experimental/toolbox/imgui_widgets.h           |  6 +-
+ src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc |  3 +-
+ src/experimental/usd/usd_to_mjspec.cc              |  7 ++-
+ 16 files changed, 112 insertions(+), 71 deletions(-)
+
+commit a66cf303f8dd346e15718ce6cf61e4b38d8e839a
+Author: Yuval Tassa <tassa@google.com>
+Date:   Mon Nov 17 05:46:52 2025 -0800
+
+    Clean up ray functions
+    
+    PiperOrigin-RevId: 833299985
+    Change-Id: I30aabe889ccc5900ff0e50a578e98e176d3effa4
+
+ doc/APIreference/functions.rst          |  4 +-
+ doc/APIreference/functions_override.rst |  2 +-
+ doc/includes/references.h               |  4 +-
+ include/mujoco/mujoco.h                 |  7 +--
+ python/mujoco/introspect/functions.py   | 11 +++--
+ src/engine/engine_ray.c                 | 84 ++++++++++++++++-----------------
+ src/engine/engine_ray.h                 | 22 ++++-----
+ wasm/codegen/generated/bindings.cc      |  4 +-
+ 8 files changed, 73 insertions(+), 65 deletions(-)
+
+commit 53e254b7151df0521b834c34e2f94c49831186bc
+Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Date:   Fri Nov 14 10:02:20 2025 -0800
+
+    Generate `using` declarations for anonymous structs in WASM bindings.
+    
+    PiperOrigin-RevId: 832359379
+    Change-Id: Ie5913c584c5605f512dbe423524a829043179b6f
+
+ wasm/codegen/generated/bindings.cc |  5 ++---
+ wasm/codegen/generators/structs.py | 11 +++++++++++
+ wasm/codegen/templates/bindings.cc |  8 +-------
+ 3 files changed, 14 insertions(+), 10 deletions(-)
+
+commit 999344c998dbdee628fdb1248665e898a83455a5
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Fri Nov 14 09:59:57 2025 -0800
+
+    Use the path of the loaded model as the base path for all further load/save operations.
+    
+    PiperOrigin-RevId: 832358035
+    Change-Id: I44fdf8cd31d755087ebd5ec9f84f5faabe5d0702
+
+ src/experimental/studio/app.cc            | 50 ++++++++++++++++++++++++-------
+ src/experimental/studio/app.h             |  8 +++--
+ src/experimental/toolbox/imgui_widgets.cc | 10 +++++--
+ 3 files changed, 53 insertions(+), 15 deletions(-)
+
+commit a36f452250ab2027a0d5a70b29e3cecb36679dfb
+Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Date:   Fri Nov 14 08:50:04 2025 -0800
+
+    Refactor MuJoCo WASM bindings functions code generation and auto-generate functions requiring argument boundchecks.
+    
+    PiperOrigin-RevId: 832333773
+    Change-Id: Id2e1a59e8d366baa2ee044d693f76aadcd1dfd32
+
+ wasm/codegen/generated/bindings.cc    | 1739 ++++++++++++++++-----------------
+ wasm/codegen/generators/constants.py  |  413 ++++++--
+ wasm/codegen/generators/functions.py  |  204 ++--
+ wasm/codegen/templates/bindings.cc    |  857 ++--------------
+ wasm/codegen/tests/generators_test.py |    4 +-
+ 5 files changed, 1341 insertions(+), 1876 deletions(-)
+
+commit 3f69deb328eb29eee8d3daff789df630f1d37622
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Fri Nov 14 02:40:17 2025 -0800
+
+    Correctly initialize mjrContext before creation.
+    
+    PiperOrigin-RevId: 832233427
+    Change-Id: I5e7301637e73a739f141d4a3207b27ae1676f6b6
+
+ src/experimental/toolbox/renderer.cc | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 83363f41ee373eefbb4c2fa144fe38817c3b2a14
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Fri Nov 14 02:39:19 2025 -0800
+
+    Fix arrow positioning.
+    
+    PiperOrigin-RevId: 832233204
+    Change-Id: I10b780c261bf5c0b4891309559fa7aab4d47d32c
+
+ src/experimental/filament/filament/drawable.cc | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 6c15c711ee585c8ffb7be89f8675ecbd7ecc79c9
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Fri Nov 14 00:02:05 2025 -0800
+
+    Make `mjv_cameraFrame` and `mjv_cameraFrustum` public.
+    
+    PiperOrigin-RevId: 832187804
+    Change-Id: I74d05d7fe03bc81bd05a823c7c9791bca12e3079
+
+ doc/APIreference/functions.rst        | 22 ++++++++
+ doc/includes/references.h             |  4 ++
+ include/mujoco/mujoco.h               | 10 ++++
+ python/mujoco/functions.cc            |  2 +
+ python/mujoco/introspect/functions.py | 96 +++++++++++++++++++++++++++++++++++
+ src/engine/engine_vis_visualize.h     | 10 ++--
+ unity/Runtime/Bindings/MjBindings.cs  |  6 +++
+ wasm/codegen/generated/bindings.cc    | 17 +++++++
+ 8 files changed, 161 insertions(+), 6 deletions(-)
+
+commit 86ac3a5e28080d82a05a30917f4661ee2230a370
+Author: Matija Kecman <matijak@google.com>
+Date:   Thu Nov 13 09:46:45 2025 -0800
+
+    Update the WASM bindings README
+    
+    * Removed the caution callout since some internal CI has been implemented.
+    * Added to clarify the state of bindings build process on Windows.
+    * Fixed the formatting of a note callout in the Testing section.
+    
+    PiperOrigin-RevId: 831899135
+    Change-Id: I9f105b91e924368c8e84da7114e1b1d3e48c185a
+
+ wasm/README.md | 19 +++----------------
+ 1 file changed, 3 insertions(+), 16 deletions(-)
+
+commit b0e75b71035fbc4a2224e01ca8d83e02d8aa28b8
+Author: Matija Kecman <matijak@google.com>
+Date:   Thu Nov 13 05:56:11 2025 -0800
+
+    Refactor Github actions so that all build steps are implemented as functions in a separate build_steps.sh file.
+    
+    This reduces the amount to yaml we need to know/write and makes the steps reusable in a clearer way than yaml anchors. Also Made sure that bash commands are executed with -xe set to log the command before executing and to fail the script on the first failing command.
+    
+    PiperOrigin-RevId: 831823786
+    Change-Id: I7410c13decb914ef079ac4dd19a49481c452f3ec
+
+ .github/workflows/build.yml      | 211 ++++++++++----------------------
+ .github/workflows/build_steps.sh | 256 +++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 318 insertions(+), 149 deletions(-)
+
+commit 8b9fa2674c1e6aee327e461037550494958468e9
+Author: Kyle Bayes <kylebayes@google.com>
+Date:   Thu Nov 13 03:40:36 2025 -0800
+
+    Use std::vector instead of array in MJCF schema.
+    
+    PiperOrigin-RevId: 831787681
+    Change-Id: I8093b8b10260daecb830e49319eda798e2dd2da5
+
+ src/xml/xml_native_reader.cc | 340 +++++++++++++++++++++----------------------
+ src/xml/xml_native_reader.h  |   3 +-
+ src/xml/xml_util.cc          |   6 +-
+ src/xml/xml_util.h           |   6 +-
+ test/xml/xml_schema_test.cc  |  23 +--
+ 5 files changed, 182 insertions(+), 196 deletions(-)
+
+commit 26c1622ac8fd0dcddae504005856b8c45642fa38
+Author: Matija Kecman <matijak@google.com>
+Date:   Thu Nov 13 03:21:43 2025 -0800
+
+    Internal change
+    
+    PiperOrigin-RevId: 831782555
+    Change-Id: I1dda7700e1c1def21c0b0879a5452ddf96d45aa8
+
+ src/experimental/filament/filament/model_util.cc | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 042c5223a6dcfa1d197dba7ad9491169e3fa6627
+Author: Yuval Tassa <tassa@google.com>
+Date:   Thu Nov 13 02:31:15 2025 -0800
+
+    Change `mj_sizeModel` return type to `mjtSize`.
+    
+    PiperOrigin-RevId: 831768095
+    Change-Id: I079fbadc403b32a3ce8a73fe21b2cd66391401c3
+
+ doc/changelog.rst                     | 1 +
+ doc/includes/references.h             | 2 +-
+ include/mujoco/mujoco.h               | 2 +-
+ python/mujoco/introspect/functions.py | 2 +-
+ src/engine/engine_io.c                | 4 ++--
+ src/engine/engine_io.h                | 2 +-
+ unity/Runtime/Bindings/MjBindings.cs  | 2 +-
+ wasm/codegen/generated/bindings.cc    | 2 +-
+ 8 files changed, 9 insertions(+), 8 deletions(-)
+
+commit a168b3ef7f4f1e4f49752f6046128ebb9e48495c
+Author: Kyle Bayes <kylebayes@google.com>
+Date:   Thu Nov 13 01:46:08 2025 -0800
+
+    Refactor hill climbing support function.
+    
+    PiperOrigin-RevId: 831754211
+    Change-Id: I77c89c52fde86183b8e2e61a1fc71764119f208e
+
+ src/engine/engine_collision_convex.c | 29 +++++++++++++++--------------
+ 1 file changed, 15 insertions(+), 14 deletions(-)
+
+commit 727347813f08111a113587b3a2d92ee2ddeba043
+Author: Silvia Cruciani <silviacruciani@google.com>
+Date:   Wed Nov 12 09:17:25 2025 -0800
+
+    Import google-deepmind/mujoco_warp from GitHub.
+    
+    PiperOrigin-RevId: 831416862
+    Change-Id: I9ffe9698a3cd4a173189a804998ce8afc16b91f2
+
+ mjx/mujoco/mjx/third_party/mujoco_warp/_src/io.py | 229 +++++++++++-----------
+ 1 file changed, 118 insertions(+), 111 deletions(-)
+
+commit 4722925ff44ef8eb7cd8c71e63ef8421c3305568
+Author: Matija Kecman <matijak@google.com>
+Date:   Wed Nov 12 08:16:14 2025 -0800
+
+    Add a github actions job which quickly determines if the WASM build is broken by only testing on one platform
+    
+    PiperOrigin-RevId: 831395855
+    Change-Id: I1128ae39b50e0d9d4338b8ea768b2850699aef22
+
+ .github/workflows/build.yml | 81 ++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 73 insertions(+), 8 deletions(-)
+
+commit b8512b9d1fa3033f732f43036e9e7f00654f97de
+Author: Yuval Tassa <tassa@google.com>
+Date:   Wed Nov 12 07:19:08 2025 -0800
+
+    Fix bug related to sleeping static children of mocap bodies.
+    
+    PiperOrigin-RevId: 831376685
+    Change-Id: I8891a1d7dc6efc037e9ade5c7e8dd5c35c7e455e
+
+ src/engine/engine_sleep.c            |  3 ++-
+ test/engine/engine_sleep_test.cc     | 10 ++++++----
+ test/engine/testdata/sleep/mocap.xml | 28 ++++++++++++++++++++++++++++
+ 3 files changed, 36 insertions(+), 5 deletions(-)
+
+commit 7b52d3034e9e4441e40a1e521a16f479b4230c69
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 12 07:14:37 2025 -0800
+
+    Fix crash if Renderer is destroyed without having been Init'ed.
+    
+    PiperOrigin-RevId: 831375559
+    Change-Id: Ia1d0334e32dbbd0582d4f75723867d6ea47bf9da
+
+ src/experimental/toolbox/renderer.cc | 25 +++++++++++--------------
+ 1 file changed, 11 insertions(+), 14 deletions(-)
+
+commit 28c536bd93461a335a3e1cef0f938cb4b66c6c54
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 12 02:29:24 2025 -0800
+
+    Remove support for custom fonts for OSS project for now.
+    
+    PiperOrigin-RevId: 831294808
+    Change-Id: I3f366ceafc1181e0624d1b26ef09fd64ed6275b4
+
+ src/experimental/toolbox/window.cc | 21 ---------------------
+ 1 file changed, 21 deletions(-)
+
+commit 52478e15c34ba764c70d2037e584e8ef0f835ece
+Author: Tom Power <tjpower@google.com>
+Date:   Wed Nov 12 02:08:18 2025 -0800
+
+    Fix issue where contact pairs supported by C back-end are unsupported by MJX:C
+    
+    PiperOrigin-RevId: 831288268
+    Change-Id: Ied69be2d69a4cf0c8190bfaf8b6428e1dd8c8a70
+
+ mjx/mujoco/mjx/_src/collision_driver.py | 23 ++++++++++++++++++++---
+ mjx/mujoco/mjx/_src/io.py               |  8 ++++----
+ mjx/mujoco/mjx/_src/io_test.py          | 27 +++++++++++++++++++++++++++
+ 3 files changed, 51 insertions(+), 7 deletions(-)
+
+commit 414d6d80ac2ac6115c71a571b9871f9d8fb688ee
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Nov 11 12:07:27 2025 -0800
+
+    Update model memory footprint reporting in `mj_printModel`.
+    
+    PiperOrigin-RevId: 831015711
+    Change-Id: I7cb5aba019ed99e239b6fadbaf162cbd6fd9d9fb
+
+ src/engine/engine_print.c | 72 ++++++++++++++++++++++++++++++-----------------
+ 1 file changed, 46 insertions(+), 26 deletions(-)
+
+commit bc83bfb076e67e9b964fd9b6cb3e25eadf45232a
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Nov 11 11:45:06 2025 -0800
+
+    Restructure AAMM storage for improved cache locality in broadphase, ~35% speedup (of broadphase).
+    
+    PiperOrigin-RevId: 831007564
+    Change-Id: I1a72ca02f5a50194bb7770d5765c6140adde1852
+
+ src/engine/engine_collision_driver.c | 85 +++++++++++++++++++++++++-----------
+ 1 file changed, 60 insertions(+), 25 deletions(-)
+
+commit fa7927629024392fbf892a201452d29d6cda1aa0
+Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Date:   Tue Nov 11 11:30:16 2025 -0800
+
+    Remove destructors from `Mjs` wrapper structs.
+    
+    PiperOrigin-RevId: 831001833
+    Change-Id: I54550737a4c1cb504bf62b9bfed12d7a70434233
+
+ wasm/codegen/generated/bindings.cc    | 58 -----------------------------------
+ wasm/codegen/generators/structs.py    |  6 ++--
+ wasm/codegen/tests/generators_test.py |  2 --
+ 3 files changed, 3 insertions(+), 63 deletions(-)
+
+commit 6d261528e037524607eb2905d2ddab018f6d1d27
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Tue Nov 11 10:37:45 2025 -0800
+
+    Enhance error reporting in WASM codegen generators.
+    
+    In `structs.py`, a `RuntimeError` is now raised when an anonymous struct is encountered but is not present in `STRUCTS_TO_BIND`.
+    
+    PiperOrigin-RevId: 830978376
+    Change-Id: Id64720a12c3cce313bd513a40a74ddf57718a7d1
+
+ wasm/codegen/generators/structs.py | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit 8e4a5901c3594389962b29a25d0bb98d3e46f4ab
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Tue Nov 11 10:34:14 2025 -0800
+
+    Rename internal lists of skipped functions in constants.py.
+    
+    PiperOrigin-RevId: 830976939
+    Change-Id: I833ef4c98107e19822f5e96c7541d294e129ac6c
+
+ wasm/codegen/generators/constants.py | 40 ++++++++++++++++++------------------
+ 1 file changed, 20 insertions(+), 20 deletions(-)
+
+commit 54661ab14044d66628f5b42873164f06a758f082
+Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Date:   Tue Nov 11 10:31:00 2025 -0800
+
+    Fully generate Emscripten bindings for MuJoCo functions.
+    
+    PiperOrigin-RevId: 830975595
+    Change-Id: Ie4d0d16c80f490abaa5ae8218628ac1b3d32c0ef
+
+ wasm/codegen/generated/bindings.cc         | 161 ++++++++++++++---------------
+ wasm/codegen/generators/binding_builder.py |   4 +-
+ wasm/codegen/generators/functions.py       |  23 ++---
+ wasm/codegen/templates/bindings.cc         |  80 +-------------
+ wasm/codegen/tests/generators_test.py      |   6 +-
+ 5 files changed, 96 insertions(+), 178 deletions(-)
+
+commit ff037f2e7856412d459886728a9a59e4acd865e2
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Tue Nov 11 07:19:47 2025 -0800
+
+    Make Emscripten binding module names consistent
+    
+    PiperOrigin-RevId: 830902834
+    Change-Id: I64e004559cbfdb14fb84bc548f05b1ab49e94d4d
+
+ wasm/codegen/generated/bindings.cc | 6 +++---
+ wasm/codegen/templates/bindings.cc | 6 +++---
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+commit 5b859327cc2de5ac8806e282d3ab3d9a6b2d0080
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Tue Nov 11 07:16:48 2025 -0800
+
+    Remove unused manually added structs from WASM bindings.
+    
+    PiperOrigin-RevId: 830901766
+    Change-Id: If0104a59f7e06a96733feb31f1ce9a93ba3fde42
+
+ wasm/codegen/generated/bindings.cc | 15 ---------------
+ wasm/codegen/templates/bindings.cc | 15 ---------------
+ 2 files changed, 30 deletions(-)
+
+commit aa7cf15cc4beae812fd42a52f4b693f7527529cd
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 11 07:09:18 2025 -0800
+
+    Set textures before assigning a material.
+    
+    PiperOrigin-RevId: 830899288
+    Change-Id: I42029157e7be006d4dc18d0c84e27bf908af6f47
+
+ src/experimental/filament/filament/drawable.cc | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+commit 22c0b689033682bb0d085d8d8493b88f41680058
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Nov 11 06:44:53 2025 -0800
+
+    Improve logic and documentation for sleeping sensors
+    
+    PiperOrigin-RevId: 830891115
+    Change-Id: Ife8309b165c085b54c9f668d825d69ed12a9a8f0
+
+ doc/programming/simulation.rst        | 25 +++++++++++-----
+ src/engine/engine_sleep.c             | 54 ++++++++++++++++-------------------
+ src/engine/engine_sleep.h             |  2 +-
+ test/engine/engine_sleep_test.cc      | 23 +++++++++++++--
+ test/engine/testdata/sleep/sensor.xml | 41 ++++++++++++++++++++------
+ 5 files changed, 98 insertions(+), 47 deletions(-)
+
+commit 3e167e0f0b979e56d5829539bb7b9abcf0d6e47f
+Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Date:   Tue Nov 11 06:37:16 2025 -0800
+
+    Correctly format constructor initializer lists in struct wrappers.
+    
+    PiperOrigin-RevId: 830887996
+    Change-Id: Ibe663fcc17571ad1fd62d70249687c917653618e
+
+ wasm/codegen/generators/structs.py    | 10 +++++-----
+ wasm/codegen/tests/generators_test.py |  2 +-
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+commit 75774b2a35c756240b77a403521c196d0feb8cd7
+Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Date:   Tue Nov 11 06:02:20 2025 -0800
+
+    Simplify struct header generation by merging the internal `_build_struct_header_internal` function into `build_struct_header`
+    
+    PiperOrigin-RevId: 830878041
+    Change-Id: I6867984ac6ec091daaf2172fbde0e6ac6f38d1f3
+
+ wasm/codegen/generators/structs.py    | 167 ++++++++++++++--------------------
+ wasm/codegen/tests/generators_test.py |   2 +-
+ 2 files changed, 68 insertions(+), 101 deletions(-)
+
+commit 1b2206fc509cb33f2dd8277839cb3729383b51f4
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 11 05:50:44 2025 -0800
+
+    Do not generate mipmaps for textures loaded from KTX files.
+    
+    PiperOrigin-RevId: 830874812
+    Change-Id: Ie9dccc52acd5ffd26e5d4f3597f3834f81ebebcb
+
+ src/experimental/filament/filament/object_manager.cc | 5 -----
+ 1 file changed, 5 deletions(-)
+
+commit 2261733aa40644f8602d439bc8257ba6642fb622
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 11 05:33:15 2025 -0800
+
+    Toggle profiler window using F3.
+    
+    PiperOrigin-RevId: 830869956
+    Change-Id: I396f89f95672096f59b909b9415be2168aac6473
+
+ src/experimental/studio/app.cc | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 1fbea85ef0a3fc71f6244ee2b0bab4b66be094b2
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 11 05:27:06 2025 -0800
+
+    Remove redundant call to GenerateMipMaps.
+    
+    The Create?Textures will generate the mipmaps themselves if needed.
+    
+    PiperOrigin-RevId: 830868294
+    Change-Id: I295e0dac12bc7c31a98242256721f46467f883d6
+
+ src/experimental/filament/filament/model_util.cc | 4 ----
+ 1 file changed, 4 deletions(-)
+
+commit 4a5a36f3fc74cd1473ad1e27e1c1f3bc8f33170c
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 11 05:03:40 2025 -0800
+
+    Display error when loading model.
+    
+    PiperOrigin-RevId: 830862449
+    Change-Id: Iab1e8786d79d55db9a15a788ecb37e0b0418111c
+
+ src/experimental/toolbox/helpers.cc | 10 +++-------
+ src/experimental/toolbox/physics.cc | 11 +++++++++--
+ 2 files changed, 12 insertions(+), 9 deletions(-)
+
+commit b3deb9dd1209950a6c6cb8b4ba33e93e0ae03598
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Nov 11 04:02:12 2025 -0800
+
+    Do not reset camera_id if no tracking object is set.
+    
+    Otherwise, we can never incrementally move beyond a free camera.
+    
+    PiperOrigin-RevId: 830845627
+    Change-Id: I07e8639f79efcdae451999ca07b91a41360752ca
+
+ src/experimental/toolbox/interaction.cc | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 88e75cd7e66289347c90418d6467ab77464d0856
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 11 03:50:31 2025 -0800
+
+    Remove implot from toolbox/window.cc
+    
+    PiperOrigin-RevId: 830842619
+    Change-Id: I39d13508423ad0ba1e12349ceaccab2425d28243
+
+ src/experimental/studio/app.cc     | 1 +
+ src/experimental/toolbox/window.cc | 2 --
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+
+commit 23023edc52dd7dfe47c1e4b7f7399c7da9cef358
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Nov 11 02:27:41 2025 -0800
+
+    Fix bug in schema
+    
+    PiperOrigin-RevId: 830819693
+    Change-Id: I9fd047975895f4a376d28b7eee2c0d38344ce864
+
+ src/xml/xml_native_reader.cc | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 39f0321a68200cfe10ee1a420f5fc73f0e10ab50
+Author: Kyle Bayes <kylebayes@google.com>
+Date:   Mon Nov 10 21:29:42 2025 -0800
+
+    Clean up NativeCCD testing models.
+    
+    PiperOrigin-RevId: 830733959
+    Change-Id: Ie7f71c36d2efafd37aecef54ca4897cebd6d091f
+
+ test/engine/engine_collision_gjk_test.cc | 141 ++++++++++---------------------
+ 1 file changed, 44 insertions(+), 97 deletions(-)
+
+commit bfcceb583e247a5f1b89b7fe2cfd80420f2b3daa
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Mon Nov 10 10:34:01 2025 -0800
+
+    Import google-deepmind/mujoco_warp from GitHub.
+    
+    PiperOrigin-RevId: 830506734
+    Change-Id: I857bf59a34a46bd61fc24953fd6f10b2157febb7
+
+ .../mujoco_warp/_src/collision_convex.py           | 350 +++++-----
+ .../mujoco_warp/_src/collision_gjk_legacy.py       | 715 ---------------------
+ .../mujoco_warp/_src/collision_hfield.py           | 129 ----
+ .../mujoco_warp/_src/collision_primitive.py        | 172 +++--
+ .../mujoco_warp/_src/collision_primitive_core.py   |   2 +-
+ .../third_party/mujoco_warp/_src/collision_sdf.py  |  58 +-
+ .../mjx/third_party/mujoco_warp/_src/forward.py    | 180 ++----
+ mjx/mujoco/mjx/third_party/mujoco_warp/_src/io.py  |  13 +-
+ .../mjx/third_party/mujoco_warp/_src/sensor.py     |  22 +-
+ .../mjx/third_party/mujoco_warp/_src/smooth.py     |  82 +--
+ .../mjx/third_party/mujoco_warp/_src/solver.py     |  10 +-
+ .../mjx/third_party/mujoco_warp/_src/types.py      |   2 -
+ mjx/mujoco/mjx/warp/collision_driver.py            |   3 -
+ mjx/mujoco/mjx/warp/forward.py                     |   6 -
+ mjx/mujoco/mjx/warp/types.py                       |   5 -
+ 15 files changed, 365 insertions(+), 1384 deletions(-)
+
+commit f8cef229920c18194a0daf0e95c7e15ba9979e93
+Author: Yuval Tassa <tassa@google.com>
+Date:   Mon Nov 10 08:22:05 2025 -0800
+
+    Change mjWarp admonition class from `attention` to `warning`
+    
+    PiperOrigin-RevId: 830452799
+    Change-Id: I26d7163b4c738a6accd70784863cc2dbdc410927
+
+ doc/mjwarp/index.rst | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e464e173da333315d8291ab2c6d3217ddbae13ef
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Mon Nov 10 08:20:59 2025 -0800
+
+    Update conf.py: "warp only fields" custom section.
+    
+    PiperOrigin-RevId: 830452471
+    Change-Id: Ib90afedacf760b3d0584e7d0dd81cdd9e3e35dc9
+
+ doc/conf.py | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 1c6a05de98d9a19b9031bbd46d47c47f3b8d07af
+Author: Yuval Tassa <tassa@google.com>
+Date:   Mon Nov 10 03:00:38 2025 -0800
+
+    Snap Y-axis range to nice decimal bounds in gl2 figures.
+    
+    PiperOrigin-RevId: 830355030
+    Change-Id: I2e9f145fb8c626dd671d286560c8334202586c6b
+
+ src/render/render_gl2.c | 25 ++++++++++++++++++++-----
+ 1 file changed, 20 insertions(+), 5 deletions(-)
+
+commit 4e46db89037de9a2e388dfbb830b97ec37c4326c
+Author: Matija Kecman <matijak@google.com>
+Date:   Fri Nov 7 09:36:27 2025 -0800
+
+    Refactor WASM binding directory structure
+    
+    * All tests moved into wasm/codegen/tests folder
+    * Merged wasm/codegen/helpers/ into wasm/codegen/generators/
+    
+    PiperOrigin-RevId: 829471173
+    Change-Id: I2dbc5d9351771817ec260c7ddf87c31e66a9eabe
+
+ wasm/README.md                                     |   2 +-
+ wasm/codegen/generators/binding_builder.py         |  71 ++
+ .../{helpers => generators}/code_builder.py        |   0
+ wasm/codegen/{helpers => generators}/common.py     |   0
+ wasm/codegen/{helpers => generators}/constants.py  |   0
+ wasm/codegen/generators/enums.py                   |   4 +-
+ wasm/codegen/generators/functions.py               | 338 +++++++++-
+ wasm/codegen/generators/generators_test.py         | 106 ---
+ wasm/codegen/generators/structs.py                 | 711 +++++++++++++++++++-
+ wasm/codegen/helpers/functions.py                  | 348 ----------
+ wasm/codegen/helpers/structs.py                    | 714 ---------------------
+ wasm/codegen/{ => tests}/bindings_diff_test.py     |   4 +-
+ wasm/codegen/{ => tests}/coverage_test.py          |   6 +-
+ wasm/codegen/{ => tests}/enums_test_generator.py   |   2 +-
+ .../helpers_test.py => tests/generators_test.py}   |  94 ++-
+ wasm/codegen/update.py                             |  63 +-
+ wasm/tests/benchmark_test.ts                       |   2 +-
+ 17 files changed, 1203 insertions(+), 1262 deletions(-)
+
+commit 44220fcc510d5a28421526ee6caede0ccc2e2c0e
+Author: Matija Kecman <matijak@google.com>
+Date:   Fri Nov 7 09:01:25 2025 -0800
+
+    Refactor WASM bindings in preparation for codegen directory structure update
+    
+    PiperOrigin-RevId: 829459535
+    Change-Id: I4045e163a6e7fcee9d9585131d1e5e30f0b50b89
+
+ wasm/codegen/binding_builder.py      | 76 -----------------------------
+ wasm/codegen/bindings_diff_test.py   |  9 ++--
+ wasm/codegen/generators/constants.py | 34 -------------
+ wasm/codegen/generators/functions.py |  2 +-
+ wasm/codegen/helpers/common.py       | 93 +++++++-----------------------------
+ wasm/codegen/helpers/helpers_test.py |  5 --
+ wasm/codegen/helpers/structs.py      | 19 ++++----
+ wasm/codegen/update.py               | 80 +++++++++++++++++++++++++------
+ 8 files changed, 96 insertions(+), 222 deletions(-)
+
+commit 59debb50b15aa9e8e0593e90afcd3d4aa84e9d5e
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Fri Nov 7 08:21:34 2025 -0800
+
+    Add `SLEEP` to `EnableBit` enum.
+    
+    This change exposes the `mjENBL_SLEEP` flag from MuJoCo's `mjtEnableBit` in MJX's `EnableBit` type.
+    
+    PiperOrigin-RevId: 829446801
+    Change-Id: Ia95b31a3488ecba0431646c889e10a5ae5fb60e8
+
+ mjx/mujoco/mjx/_src/types.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 2cd99e2ec6af11dacd36d691eb74097fe22b303f
+Author: Matija Kecman <matijak@google.com>
+Date:   Fri Nov 7 08:17:15 2025 -0800
+
+    Update the enums_test.ts using the generation script
+    
+    PiperOrigin-RevId: 829445412
+    Change-Id: I8da1f019a4f4ad2278399a2c82d3096ef234240c
+
+ wasm/tests/enums_test.ts | 80 ++++++++++++++++++++++++++----------------------
+ 1 file changed, 44 insertions(+), 36 deletions(-)
+
+commit 883836848a67e06752cde3a4f097c71c79bf4beb
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Fri Nov 7 07:36:05 2025 -0800
+
+    Fix box-box distance computation.
+    
+    PiperOrigin-RevId: 829431553
+    Change-Id: I9e28bc8eb7687c3c83e5ff68c65e93d8a07378a9
+
+ doc/changelog.rst                        |  5 +++++
+ src/engine/engine_collision_box.c        |  2 +-
+ test/engine/CMakeLists.txt               |  2 +-
+ test/engine/engine_collision_box_test.cc | 32 ++++++++++++++++++++++++++++++--
+ test/engine/testdata/sleep/sensor.xml    |  1 -
+ 5 files changed, 37 insertions(+), 5 deletions(-)
+
+commit 45b079cfe8a77142dbb5e96869a1d7fbf3839519
+Author: Matija Kecman <matijak@google.com>
+Date:   Fri Nov 7 07:33:44 2025 -0800
+
+    Various minor cleanups in WASM bindings generation code
+    
+    PiperOrigin-RevId: 829430835
+    Change-Id: Iadb0e4f8a197da69e093eccfd75d07cf6db5faaf
+
+ wasm/codegen/helpers/structs.py | 87 ++++++++++++++++-------------------------
+ 1 file changed, 33 insertions(+), 54 deletions(-)
+
+commit 80a91cfbea0cfc1f94040e73562266b277fa479d
+Author: Matija Kecman <matijak@google.com>
+Date:   Fri Nov 7 06:48:01 2025 -0800
+
+    Internal change
+    
+    PiperOrigin-RevId: 829417225
+    Change-Id: Ib2304c6a40fb7a2a9fed900a587b9f7ed4b3103a
+
+ src/experimental/filament/filament/scene_view.cc | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 6fb43947019712eeb41f40dc5e496ab4846dadd6
+Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Date:   Fri Nov 7 06:11:14 2025 -0800
+
+    Refactor array initialization for `mjData` and `mjvScene` in MuJoCo WASM bindings.
+    
+    PiperOrigin-RevId: 829406147
+    Change-Id: Ib93c49e938086fb277e4959ade1f25e6ced5c70d
+
+ wasm/codegen/generated/bindings.cc | 91 +++++++++-----------------------------
+ wasm/codegen/templates/bindings.cc | 91 +++++++++-----------------------------
+ 2 files changed, 42 insertions(+), 140 deletions(-)
+
+commit 8734cab3661b80b076f8dc5664e1892811bd2b4f
+Author: Yuval Tassa <tassa@google.com>
+Date:   Fri Nov 7 05:11:31 2025 -0800
+
+    Add sleeping documentation
+    
+    https://youtu.be/vct493lGQ8Q
+    
+    PiperOrigin-RevId: 829390353
+    Change-Id: I92f85a03be0bb585d2d8e29de1ed1a2e848f247f
+
+ doc/XMLreference.rst           |  39 +++++-
+ doc/changelog.rst              |   9 +-
+ doc/computation/index.rst      |  79 +++++++++---
+ doc/overview.rst               |  69 +++++++++--
+ doc/programming/simulation.rst | 172 +++++++++++++++++++++++++-
+ model/sleep/100_humanoids.xml  |  50 ++++++++
+ model/sleep/dominos.xml        |  92 ++++++++++++++
+ model/sleep/humanoid.xml       | 273 +++++++++++++++++++++++++++++++++++++++++
+ 8 files changed, 754 insertions(+), 29 deletions(-)
+
+commit 769f37b653c2d7088d0e93b3363654ef9c36f3a6
+Author: Yuval Tassa <tassa@google.com>
+Date:   Fri Nov 7 03:32:03 2025 -0800
+
+    Implement sleeping in engine
+    
+    PiperOrigin-RevId: 829361787
+    Change-Id: I6f64d8e25c4248cf32c18cd94d37ff5def78946e
+
+ STYLEGUIDE.md                                    | 108 ++--
+ simulate/simulate.cc                             |   9 +-
+ src/engine/engine_collision_driver.c             |  39 +-
+ src/engine/engine_core_constraint.c              | 439 +++++++++------
+ src/engine/engine_core_smooth.c                  | 458 ++++++++++-----
+ src/engine/engine_core_smooth.h                  |  14 +-
+ src/engine/engine_core_util.c                    |  24 +
+ src/engine/engine_core_util.h                    |   9 +-
+ src/engine/engine_derivative.c                   |  93 +++-
+ src/engine/engine_forward.c                      | 178 ++++--
+ src/engine/engine_io.c                           |  69 +++
+ src/engine/engine_passive.c                      | 243 ++++----
+ src/engine/engine_print.c                        |   2 +-
+ src/engine/engine_sensor.c                       |  96 +++-
+ src/engine/engine_sleep.c                        | 679 +++++++++++++++++++++++
+ src/engine/engine_sleep.h                        |  29 +-
+ src/engine/engine_solver.c                       |   2 +-
+ src/engine/engine_support.c                      |  63 ++-
+ src/engine/engine_support.h                      |   4 +
+ src/engine/engine_util_blas.c                    |  77 +++
+ src/engine/engine_util_blas.h                    |  29 +-
+ src/engine/engine_util_solve.c                   |  47 +-
+ src/engine/engine_util_solve.h                   |   9 +-
+ src/engine/engine_util_sparse.c                  |  19 +
+ src/engine/engine_util_sparse.h                  |   7 +
+ src/engine/engine_vis_visualize.c                |  72 ++-
+ src/engine/engine_vis_visualize.h                |   3 +
+ src/experimental/studio/app.cc                   |   9 +-
+ src/user/user_model.cc                           |  29 +-
+ test/benchmark/factorI_benchmark_test.cc         |   2 +-
+ test/benchmark/inertia_benchmark_test.cc         |   4 +-
+ test/benchmark/solveLD_benchmark_test.cc         |   2 +-
+ test/engine/engine_core_smooth_test.cc           |   8 +-
+ test/engine/engine_derivative_test.cc            |   4 +-
+ test/engine/engine_sleep_test.cc                 | 349 ++++++++++++
+ test/engine/testdata/sleep/contact.xml           |  36 ++
+ test/engine/testdata/sleep/contactpair.xml       |  39 ++
+ test/engine/testdata/sleep/equality.xml          |  60 ++
+ test/engine/testdata/sleep/init.xml              |  26 +
+ test/engine/testdata/sleep/init_island.xml       |  26 +
+ test/engine/testdata/sleep/init_island_fail.xml  |  28 +
+ test/engine/testdata/sleep/perf/2humanoid100.xml | 123 ++++
+ test/engine/testdata/sleep/perf/dominos.xml      |  77 +++
+ test/engine/testdata/sleep/perf/humanoid.xml     | 254 +++++++++
+ test/engine/testdata/sleep/perf/smooth.xml       |  40 ++
+ test/engine/testdata/sleep/perf/static.xml       |  40 ++
+ test/engine/testdata/sleep/perf/world.xml        |  40 ++
+ test/engine/testdata/sleep/sensor.xml            |  40 ++
+ test/engine/testdata/sleep/smooth.xml            |  54 ++
+ test/engine/testdata/sleep/static.xml            |  35 ++
+ test/engine/testdata/sleep/tendon.xml            |  33 ++
+ test/engine/testdata/sleep/tendon2.xml           |  40 ++
+ test/sample/testspeed_test.sh                    |   4 +-
+ test/user/user_api_test.cc                       |   4 +-
+ test/xml/xml_native_writer_test.cc               |  40 +-
+ 55 files changed, 3596 insertions(+), 671 deletions(-)
+
+commit 1e0226d360df520ec9073ae136ffa3ab39ed2c39
+Author: Sergei Lebedev <slebedev@google.com>
+Date:   Fri Nov 7 02:06:51 2025 -0800
+
+    Ignore pytype errors produced with --use-functools-partial-overlay
+    
+    PiperOrigin-RevId: 829338416
+    Change-Id: I1867bd18a7c57e2faf0f121d89dfc4129c5f31b8
+
+ mjx/mujoco/mjx/_src/collision_convex.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 252a0d73dfddeecba028e1ba32b031d417e95e79
+Author: Yuval Tassa <tassa@google.com>
+Date:   Thu Nov 6 12:09:59 2025 -0800
+
+    Add sleep related data structures
+    
+    PiperOrigin-RevId: 829055431
+    Change-Id: I1ccbd77a57044a754ae7db611b4c2c0010fbda53
+
+ doc/APIreference/APIglobals.rst        |   6 +
+ doc/APIreference/APItypes.rst          |  20 ++
+ doc/XMLreference.rst                   |  15 ++
+ doc/XMLschema.rst                      |  16 +-
+ doc/changelog.rst                      |   1 +
+ doc/includes/references.h              | 172 +++++++-----
+ include/mujoco/mjdata.h                | 139 ++++++----
+ include/mujoco/mjmodel.h               |  35 ++-
+ include/mujoco/mjspec.h                |   4 +
+ include/mujoco/mjxmacro.h              |  28 +-
+ mjx/mujoco/mjx/_src/io.py              |   8 +
+ mjx/mujoco/mjx/_src/types.py           |  55 ++--
+ python/mujoco/bindings_test.py         |   2 +-
+ python/mujoco/introspect/enums.py      |  26 +-
+ python/mujoco/introspect/enums_test.py |   3 +-
+ python/mujoco/introspect/structs.py    | 174 ++++++++++++
+ src/engine/CMakeLists.txt              |   2 +
+ src/engine/engine_init.c               |   3 +
+ src/engine/engine_io.c                 |  14 +
+ src/engine/engine_island.c             |  52 +++-
+ src/engine/engine_print.c              |  23 +-
+ src/engine/engine_setconst.c           | 261 +++++++++++++++++-
+ src/engine/engine_sleep.c              |  99 +++++++
+ src/engine/engine_sleep.h              |  36 +++
+ src/engine/engine_support.c            |   3 +-
+ src/user/user_model.cc                 |  23 +-
+ src/user/user_objects.cc               |   4 +-
+ src/xml/xml_base.h                     |   2 +
+ src/xml/xml_native_reader.cc           |  32 ++-
+ src/xml/xml_native_writer.cc           |  10 +
+ test/engine/CMakeLists.txt             |   4 +
+ test/engine/engine_core_smooth_test.cc |   2 +-
+ test/engine/engine_setconst_test.cc    | 479 +++++++++++++++++++++++++++++++++
+ test/engine/engine_sleep_test.cc       | 181 +++++++++++++
+ unity/Runtime/Bindings/MjBindings.cs   |  35 ++-
+ wasm/codegen/generated/bindings.cc     | 128 +++++++++
+ wasm/codegen/helpers/constants.py      |   2 +
+ 37 files changed, 1910 insertions(+), 189 deletions(-)
+
+commit 3080e3424fb2d4f969e599008e4ef0b129191a3c
+Author: Baruch Tabanpour <btaba@google.com>
+Date:   Thu Nov 6 11:03:47 2025 -0800
+
+    Update mjx-warp ffi, prepare for render.
+    
+    PiperOrigin-RevId: 829027266
+    Change-Id: Ifca30885fb6302e8ce61f949fdc0f56674bbe9e4
+
+ mjx/mujoco/mjx/warp/ffi.py | 17 +++++++++++++----
+ 1 file changed, 13 insertions(+), 4 deletions(-)
+
+commit fa062768f40b43b569b15c370f903f90963254c6
+Author: Baruch Tabanpour <btaba@google.com>
+Date:   Thu Nov 6 10:41:32 2025 -0800
+
+    Import google-deepmind/mujoco_warp from GitHub.
+    
+    PiperOrigin-RevId: 829017789
+    Change-Id: I2756e349297cd0ae53a63a38fb203e2fd2d5cb99
+
+ mjx/mujoco/mjx/_src/io_test.py                     |    4 +-
+ mjx/mujoco/mjx/_src/types.py                       |    2 +-
+ mjx/mujoco/mjx/third_party/mujoco_warp/__init__.py |    3 +
+ .../mjx/third_party/mujoco_warp/_src/benchmark.py  |   76 +-
+ .../third_party/mujoco_warp/_src/block_cholesky.py |   13 +-
+ .../mujoco_warp/_src/collision_convex.py           |  224 ++-
+ .../mujoco_warp/_src/collision_driver.py           |  258 +--
+ .../third_party/mujoco_warp/_src/collision_gjk.py  |   93 +-
+ .../mujoco_warp/_src/collision_hfield.py           |   18 +-
+ .../mujoco_warp/_src/collision_primitive.py        |  959 ++++++-----
+ .../mujoco_warp/_src/collision_primitive_core.py   |  231 ++-
+ .../third_party/mujoco_warp/_src/collision_sdf.py  |  103 +-
+ .../mjx/third_party/mujoco_warp/_src/constraint.py |  298 ++--
+ .../mjx/third_party/mujoco_warp/_src/derivative.py |   59 +-
+ .../mjx/third_party/mujoco_warp/_src/forward.py    |  246 +--
+ .../mjx/third_party/mujoco_warp/_src/inverse.py    |   34 +-
+ mjx/mujoco/mjx/third_party/mujoco_warp/_src/io.py  | 1770 +++++++++-----------
+ .../mjx/third_party/mujoco_warp/_src/math.py       |    3 -
+ .../mjx/third_party/mujoco_warp/_src/passive.py    |   83 +-
+ mjx/mujoco/mjx/third_party/mujoco_warp/_src/ray.py |  122 +-
+ .../mjx/third_party/mujoco_warp/_src/sensor.py     |  568 +++----
+ .../mjx/third_party/mujoco_warp/_src/smooth.py     |  404 ++---
+ .../mjx/third_party/mujoco_warp/_src/solver.py     |  322 ++--
+ .../mjx/third_party/mujoco_warp/_src/support.py    |  467 +++++-
+ .../mjx/third_party/mujoco_warp/_src/types.py      |  934 +++++------
+ .../mjx/third_party/mujoco_warp/_src/util_misc.py  |   58 +-
+ .../mjx/third_party/mujoco_warp/_src/warp_util.py  |   17 +-
+ .../mjx/third_party/mujoco_warp/pyproject.toml     |   19 +-
+ mjx/mujoco/mjx/third_party/mujoco_warp/viewer.py   |    9 +-
+ mjx/mujoco/mjx/warp/collision_driver.py            |  230 +--
+ mjx/mujoco/mjx/warp/forward.py                     | 1217 ++++----------
+ mjx/mujoco/mjx/warp/smooth.py                      |   64 +-
+ mjx/mujoco/mjx/warp/test_util.py                   |   17 +-
+ mjx/mujoco/mjx/warp/types.py                       |  267 +--
+ 34 files changed, 4293 insertions(+), 4899 deletions(-)
+
+commit 7dfd92098fc3248e144f71347a2a05bccc2c0e9d
+Author: Matija Kecman <matijak@google.com>
+Date:   Thu Nov 6 10:09:06 2025 -0800
+
+    Simplified struct field handling in the WASM bindings
+    
+    PiperOrigin-RevId: 829003969
+    Change-Id: I139f9c0dad96e1664b1bd054f09fcdf58aff260e
+
+ wasm/codegen/generated/bindings.cc   |  63 ++---
+ wasm/codegen/helpers/common.py       |   9 +-
+ wasm/codegen/helpers/constants.py    |  63 ++---
+ wasm/codegen/helpers/helpers_test.py |  44 ++--
+ wasm/codegen/helpers/structs.py      | 482 ++++++++++++-----------------------
+ 5 files changed, 259 insertions(+), 402 deletions(-)
+
+commit 06ecdd6ba1a07dd123baed7f07f201063ff9d0c2
+Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Date:   Thu Nov 6 08:48:52 2025 -0800
+
+    Refactor: Generate all struct bindings within the codegen.
+    
+    PiperOrigin-RevId: 828973537
+    Change-Id: I3f371d2f88e1cd9b1bb5c0a9c6a5ace7a21673fb
+
+ wasm/codegen/generated/bindings.cc   | 3015 +++++++++++++++++-----------------
+ wasm/codegen/generators/structs.py   |    9 +-
+ wasm/codegen/helpers/code_builder.py |   14 +-
+ wasm/codegen/helpers/structs.py      |   49 +-
+ wasm/codegen/templates/bindings.cc   |   20 -
+ 5 files changed, 1517 insertions(+), 1590 deletions(-)
+
+commit 2c2773e36dabeef7f075076eef18d367f28c7431
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Nov 6 08:00:51 2025 -0800
+
+    Include third_party_deps cmake files.
+    
+    PiperOrigin-RevId: 828957097
+    Change-Id: I2aeea2ae9e2621c8c62a34095af6ea8fd0797f08
+
+ cmake/third_party_deps/dear_imgui.cmake | 31 +++++++++++++++++++++++++++
+ cmake/third_party_deps/filament.cmake   | 37 +++++++++++++++++++++++++++++++++
+ cmake/third_party_deps/implot.cmake     | 31 +++++++++++++++++++++++++++
+ cmake/third_party_deps/libwebp.cmake    | 28 +++++++++++++++++++++++++
+ cmake/third_party_deps/sdl2.cmake       | 28 +++++++++++++++++++++++++
+ 5 files changed, 155 insertions(+)
+
+commit b807d5f8528cedce1900d0e077598793f4cc5c38
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Thu Nov 6 07:19:04 2025 -0800
+
+    Remove `MjVFS` from generated Emscripten bindings.
+    
+    PiperOrigin-RevId: 828943991
+    Change-Id: I681079854c71059392518c328a4488bb47127433
+
+ wasm/codegen/generated/bindings.cc | 34 ----------------------------------
+ wasm/codegen/helpers/constants.py  |  3 ++-
+ 2 files changed, 2 insertions(+), 35 deletions(-)
+
+commit 8051f408176163652cc48430ddd6bbf821e1e33a
+Author: Sam Haves <shaves@google.com>
+Date:   Thu Nov 6 07:05:11 2025 -0800
+
+    During mj_parse, if mju_openResource fails pass a resource with only the filename to decoders.
+    
+    This enables decoders to leverage their own file resolution systems. For example: USD can compose a stage (scene) from memory, via a file on disk, or via custom asset resolver.
+    
+    Passing it through to the decoder reduces the need for custom resource providers that wrap these other resolution systems.
+    
+    This will also enable a fun, but likely niche usecase where the decoder does procedural generation and does not have to be backed by a resource. See the tests for an example of this.
+    
+    PiperOrigin-RevId: 828939899
+    Change-Id: Ic319a685332d91198a4ae926867c834bf7f7f724
+
+ src/user/user_api.cc                | 31 ++++++++++++++++++++++++++++++-
+ test/plugin/decoder/decoder_test.cc | 31 +++++++++++++------------------
+ 2 files changed, 43 insertions(+), 19 deletions(-)
+
+commit 89fec8f7b2c0c230b1963b22ce1c00f6d960f899
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Thu Nov 6 05:19:29 2025 -0800
+
+    MuJoCo Warp documentation: Performance Tuning.
+    
+    PiperOrigin-RevId: 828908430
+    Change-Id: Iece454fce7dea71df2a5b6f60d81b611c5a3730d
+
+ doc/mjwarp/index.rst | 198 +++++++++++++++++++++++++++++++++++----------------
+ 1 file changed, 135 insertions(+), 63 deletions(-)
+
+commit d0f32a7fe6dab428b25de69ed04f79fcf326cf69
+Author: Baruch Tabanpour <btaba@google.com>
+Date:   Wed Nov 5 13:31:57 2025 -0800
+
+    Modify mjx.Model tex_data type.
+    
+    PiperOrigin-RevId: 828606695
+    Change-Id: I708dcf8e75766bf16d339999a9e8c70c8f65fd0c
+
+ doc/changelog.rst            | 8 ++++++++
+ mjx/mujoco/mjx/_src/types.py | 2 +-
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+
+commit c34ac712a0dff19e180a725254b6350c01e62df9
+Author: Baruch Tabanpour <btaba@google.com>
+Date:   Wed Nov 5 12:34:26 2025 -0800
+
+    Import warp-lang 1.10.0.
+    
+    PiperOrigin-RevId: 828583884
+    Change-Id: Ia1c6d8c41fa0785360b85287cab562228fcc80cf
+
+ doc/changelog.rst                                  |   5 +
+ mjx/cuda_requirements.txt                          |  10 +-
+ .../warp/{ => _src}/jax_experimental/__init__.py   |   2 -
+ .../{ => _src}/jax_experimental/custom_call.py     |  17 +-
+ .../warp/{ => _src}/jax_experimental/ffi.py        | 740 +++++++++++++++------
+ .../warp/{ => _src}/jax_experimental/xla_ffi.py    |  34 +
+ mjx/mujoco/mjx/warp/collision_driver.py            |   1 -
+ mjx/mujoco/mjx/warp/ffi.py                         |   2 +-
+ mjx/mujoco/mjx/warp/forward.py                     |   2 -
+ mjx/mujoco/mjx/warp/testspeed.py                   |   2 +-
+ mjx/pyproject.toml                                 |   2 +-
+ 11 files changed, 590 insertions(+), 227 deletions(-)
+
+commit 3577c98f821e79ef8a8b440b6628a9d89d24c959
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Wed Nov 5 11:13:30 2025 -0800
+
+    Refactor Emscripten bindings generation for MuJoCo structs.
+    
+    PiperOrigin-RevId: 828550215
+    Change-Id: Iab0bf3a9fbaca4d7774f89a4d8977e762aa57629
+
+ wasm/codegen/generated/bindings.cc | 984 ++++++++++++++++++-------------------
+ wasm/codegen/generators/structs.py |  20 +-
+ wasm/codegen/helpers/structs.py    |  42 +-
+ wasm/codegen/templates/bindings.cc | 229 +--------
+ 4 files changed, 531 insertions(+), 744 deletions(-)
+
+commit 8104235f8ed6af1623b4c4d6ad9f872c5a28beef
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Wed Nov 5 11:09:51 2025 -0800
+
+    Generate wrappers for anonymous structs within `mjVisual`.
+    
+    PiperOrigin-RevId: 828548681
+    Change-Id: I07f8b407157b91ac24b38604b20826541e20e23e
+
+ wasm/codegen/generated/bindings.cc | 4488 ++++++++++++++++++------------------
+ wasm/codegen/generators/structs.py |    2 +-
+ wasm/codegen/helpers/structs.py    |   12 +-
+ wasm/codegen/templates/bindings.cc |   98 +-
+ 4 files changed, 2254 insertions(+), 2346 deletions(-)
+
+commit c3858f267a278f50ce796faa843b3af0d71aab81
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Wed Nov 5 11:06:15 2025 -0800
+
+    Change default values of `WrappedFieldData` string fields to empty strings.
+    
+    PiperOrigin-RevId: 828547058
+    Change-Id: I0dc0f993cd93a8feab3f1a53b7ee6c47266093e0
+
+ wasm/codegen/helpers/structs.py | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+commit ff0ae09bc45c3563d511841f3504b2edb42ab0a8
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Wed Nov 5 11:02:43 2025 -0800
+
+    Remove debug printing functionality from WASM codegen.
+    
+    PiperOrigin-RevId: 828545426
+    Change-Id: I136e6290c7ffdd4c2029aaf72cb90e0fc3cc7a9f
+
+ wasm/codegen/helpers/common.py    |  6 ------
+ wasm/codegen/helpers/constants.py |  5 -----
+ wasm/codegen/helpers/structs.py   | 13 -------------
+ 3 files changed, 24 deletions(-)
+
+commit 01b0ea5b7ddc712d7c0649d4c06f5ba12a8585f7
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 5 09:16:44 2025 -0800
+
+    Use webgl backend in emscripten builds.
+    
+    (Also only display the model name if its a file.)
+    
+    PiperOrigin-RevId: 828498906
+    Change-Id: I7def85992f413b321c115ea63db2af057f5fd372
+
+ src/experimental/studio/app.cc | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+
+commit 8b7eb097dbcaedb768c640e68095d51fd6053f18
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 5 08:32:27 2025 -0800
+
+    Remove Sync and Scene functions from Renderer.
+    
+    PiperOrigin-RevId: 828481721
+    Change-Id: Id0399139653b0ec27f0d365437e62cadefadfe6c
+
+ src/experimental/studio/app.cc       |  4 ----
+ src/experimental/studio/app.h        |  3 ---
+ src/experimental/studio/main.cc      |  1 -
+ src/experimental/toolbox/renderer.cc | 12 +++++-------
+ src/experimental/toolbox/renderer.h  |  7 -------
+ 5 files changed, 5 insertions(+), 22 deletions(-)
+
+commit 17d36d8e75d5b7270bb6541924f1bd84d65d7280
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Wed Nov 5 08:23:19 2025 -0800
+
+    MuJoCo Warp documentation: ``naconmax``.
+    
+    PiperOrigin-RevId: 828478607
+    Change-Id: I90e8b95cf5b869ba60a731b3d2ee962c411da943
+
+ doc/mjwarp/index.rst | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+commit 30a99de3b9b326585b0073844f155ac7011f1f2b
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Nov 5 07:32:31 2025 -0800
+
+    Remove dependencies on mjvScene for interactions.
+    
+    Interactions (like moving the camera or mouse picking) no longer depend
+    on needing an mjvScene. Instead, everything is done relative to the
+    camera directly.
+    
+    This duplicates some code in engine_vis_visualize which we will try to
+    resolve and recombine at a future time.
+    
+    PiperOrigin-RevId: 828461259
+    Change-Id: If26329c1a7c37516f0213b18056c3e31760f60ae
+
+ src/experimental/studio/app.cc          |  69 ++--
+ src/experimental/toolbox/interaction.cc | 570 +++++++++++++++++++++++++++++++-
+ src/experimental/toolbox/interaction.h  |  18 +-
+ 3 files changed, 612 insertions(+), 45 deletions(-)
+
+commit 2245210e879cd5b4d6550c36398d06b189ea161d
+Author: Yuval Tassa <tassa@google.com>
+Date:   Wed Nov 5 07:16:20 2025 -0800
+
+    Fix formatting error in the 3.3.6 changelog
+    
+    PiperOrigin-RevId: 828455246
+    Change-Id: I6cd08f7819bde27c32ddd1ff56cbd9b23b92134d
+
+ doc/changelog.rst | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d5e953e707b1f7c7b2bcd86716fbf8595798b689
+Author: Yuval Tassa <tassa@google.com>
+Date:   Wed Nov 5 04:10:58 2025 -0800
+
+    Use `sphinx.ext.extlinks` for GitHub issue and PR links.
+    
+    Added `sphinx.ext.extlinks` to the Sphinx configuration and defined `extlinks` for `:issue:` and `:pr:` roles, pointing to the MuJoCo GitHub repository. Updated `changelog.rst` to use these new roles, replacing `:github:issue:` and `:github:pull:` which are currently failing.
+    
+    Also fix a formatting bug in the 3.3.7 changelog
+    
+    PiperOrigin-RevId: 828403002
+    Change-Id: I7f0134e4dd555fc59a3fee090338de56aababe1c
+
+ doc/changelog.rst | 108 +++++++++++++++++++++++++++---------------------------
+ doc/conf.py       |  10 +++++
+ 2 files changed, 64 insertions(+), 54 deletions(-)
+
+commit fe1b6b7c80ab9f990724383b45ea343d03d377c6
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Wed Nov 5 03:25:18 2025 -0800
+
+    Refactor: Group autogenerated structs source in bindings.cc
+    
+    This change modifies the code generation for structs in `bindings.cc`. Instead of placing each struct's constructor and member functions under individual markers, all autogenerated struct source code is now grouped together under a single `// {{ AUTOGENNED_STRUCTS_SOURCE }}` marker. This improves the organization of the generated file and simplifies the template.
+    
+    Future work would move the rest of the structs into this pattern
+    
+    PiperOrigin-RevId: 828390272
+    Change-Id: Iee9d0e8766db86b2c1d4296a37ac7a8e6e05428b
+
+ wasm/codegen/generated/bindings.cc | 1077 +++++++++++++++++-------------------
+ wasm/codegen/generators/structs.py |   20 +-
+ wasm/codegen/helpers/structs.py    |   10 +
+ wasm/codegen/templates/bindings.cc |  148 +----
+ 4 files changed, 540 insertions(+), 715 deletions(-)
+
+commit 5b00b033af04ceb158647362d8ec14853d15f642
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Wed Nov 5 03:22:41 2025 -0800
+
+    Refactor struct dependency sorting to use wrapped field data.
+    
+    The `sort_structs_by_dependency` function now takes a dictionary of `WrappedStructData` and uses the pre-computed `typename` within `WrappedFieldData` for dependency analysis, instead of re-introspecting the AST. This change also includes populating the `typename` in various `WrappedFieldData` generation methods.
+    
+    PiperOrigin-RevId: 828389481
+    Change-Id: Ie97c1a66e5e69bd148a928fda26afdaa09f56687
+
+ wasm/codegen/generators/structs.py |  4 +---
+ wasm/codegen/helpers/structs.py    | 40 +++++++++++++++++++++++++-------------
+ 2 files changed, 27 insertions(+), 17 deletions(-)
+
+commit 29c1a3a0a551c8533ed215114631f64ea93f9f53
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 4 07:31:36 2025 -0800
+
+    Cleanup WASM bindings generators so they all have a similar interface
+    
+    PiperOrigin-RevId: 827965451
+    Change-Id: I657fc4d3a480fbc62124c84fe9ddc0900a91183f
+
+ wasm/codegen/binding_builder.py            | 76 ++++++++++--------------------
+ wasm/codegen/bindings_diff_test.py         | 13 ++---
+ wasm/codegen/generated/bindings.cc         |  2 +
+ wasm/codegen/generators/enums.py           |  9 ++--
+ wasm/codegen/generators/functions.py       |  9 ++--
+ wasm/codegen/generators/generators_test.py |  8 ++--
+ wasm/codegen/generators/structs.py         | 40 +++++++---------
+ wasm/codegen/helpers/constants.py          | 22 ++++-----
+ wasm/codegen/helpers/structs.py            |  2 +-
+ wasm/codegen/update.py                     |  4 +-
+ 10 files changed, 77 insertions(+), 108 deletions(-)
+
+commit 776fc32eb4d24d72c86b1f6ed62b548d2343284c
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 4 06:43:08 2025 -0800
+
+    Cleanup WASM bindings struct generation
+    
+    PiperOrigin-RevId: 827949686
+    Change-Id: I4115e397f64963244e3c30a7eaff5be7534aadf2
+
+ wasm/codegen/generated/bindings.cc   | 997 ++++++++++++++++++++---------------
+ wasm/codegen/helpers/helpers_test.py |  48 +-
+ wasm/codegen/helpers/structs.py      |  45 +-
+ wasm/codegen/templates/bindings.cc   |  57 +-
+ 4 files changed, 657 insertions(+), 490 deletions(-)
+
+commit 4b79a58fa05478c7d6dfcd1782d3c049cfcf8308
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 4 05:02:03 2025 -0800
+
+    Add convenience methods to CodeBuilder and cleanup some WASM bindings code generation
+    
+    PiperOrigin-RevId: 827916844
+    Change-Id: Ie382f2a5af3d7e3ec2c81cde5d6b768835da2365
+
+ wasm/codegen/generated/bindings.cc   | 1195 ++++++++++++++++------------------
+ wasm/codegen/helpers/code_builder.py |   24 +-
+ wasm/codegen/helpers/functions.py    |   10 +-
+ wasm/codegen/helpers/helpers_test.py |    6 +-
+ wasm/codegen/helpers/structs.py      |  115 ++--
+ 5 files changed, 624 insertions(+), 726 deletions(-)
+
+commit 740afe22b374d48ed3ab3462f3866f031a20fff2
+Author: Adrian Collister <acollister@google.com>
+Date:   Tue Nov 4 04:14:13 2025 -0800
+
+    Append warnings to model compile errors.
+    
+    PiperOrigin-RevId: 827903480
+    Change-Id: I2ad17bf4cea0dae0ab803fbb7baa9bd70eef303d
+
+ src/user/user_model.cc | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 34e5eecba57c52e9142d83d0d1c3b3f790ff9508
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 4 03:59:28 2025 -0800
+
+    Autogenerate more of mjVFS and mjvGeom WASM bindings
+    
+    PiperOrigin-RevId: 827898643
+    Change-Id: I95f9eaa129f663cbeb3606d286c2080c47cfbcc4
+
+ wasm/codegen/generated/bindings.cc   | 91 ++++++++++++++++++++++++++----------
+ wasm/codegen/helpers/helpers_test.py |  8 +++-
+ wasm/codegen/helpers/structs.py      | 39 ++++++++++++----
+ wasm/codegen/templates/bindings.cc   | 34 +-------------
+ 4 files changed, 104 insertions(+), 68 deletions(-)
+
+commit f808632cf85e497eacce1f65c6e7932dc7244bce
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 4 03:56:08 2025 -0800
+
+    Rename WASM bindings function helper file
+    
+    PiperOrigin-RevId: 827897836
+    Change-Id: Ifb13ebaf54dacabc2a3ed8a8ea4244ecea2a8f41
+
+ wasm/codegen/binding_builder.py                    |  2 +-
+ wasm/codegen/coverage_test.py                      |  4 +-
+ wasm/codegen/generators/functions.py               |  3 +-
+ .../helpers/{function_utils.py => functions.py}    |  0
+ wasm/codegen/helpers/helpers_test.py               | 60 +++++++++++-----------
+ 5 files changed, 34 insertions(+), 35 deletions(-)
+
+commit 12a31674a31c4fa7d02d6264fe209937c44b0bf5
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 4 03:22:18 2025 -0800
+
+    Consolidate WASM bindings struct generator helper files into helpers/structs.py
+    
+    PiperOrigin-RevId: 827889180
+    Change-Id: I5f8bf0e25d1af7b21b554672bd438bbcd04e62be
+
+ wasm/codegen/generators/structs.py                 |   6 +-
+ wasm/codegen/helpers/helpers_test.py               | 113 +--
+ .../helpers/struct_constructor_code_builder.py     | 232 ------
+ wasm/codegen/helpers/struct_field_code_builder.py  |  97 ---
+ wasm/codegen/helpers/struct_field_handler.py       | 351 ---------
+ wasm/codegen/helpers/structs.py                    | 817 +++++++++++++++++++++
+ wasm/codegen/helpers/structs_parser.py             | 179 -----
+ wasm/codegen/helpers/structs_wrappers_data.py      |  61 --
+ 8 files changed, 858 insertions(+), 998 deletions(-)
+
+commit 9b71fc728d6c2d7546df2d75f1fe45969fd80c2d
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 4 03:18:43 2025 -0800
+
+    Consolidate WASM bindings test files
+    
+    PiperOrigin-RevId: 827888382
+    Change-Id: I4ded54cd49182de0b4243770e2507038ad6fac7a
+
+ wasm/codegen/generators/enums_test.py              |  62 --
+ .../{functions_test.py => generators_test.py}      |  39 +
+ wasm/codegen/helpers/code_builder_test.py          |  51 --
+ wasm/codegen/helpers/common_test.py                |  37 -
+ wasm/codegen/helpers/function_utils_test.py        | 241 ------
+ wasm/codegen/helpers/helpers_test.py               | 907 +++++++++++++++++++++
+ .../struct_constructor_code_builder_test.py        | 143 ----
+ .../helpers/struct_field_code_builder_test.py      | 166 ----
+ wasm/codegen/helpers/struct_field_handler_test.py  | 235 ------
+ wasm/codegen/helpers/structs_parser_test.py        |  90 --
+ 10 files changed, 946 insertions(+), 1025 deletions(-)
+
+commit 2018b8c494478945128ccddbfa2b3635cece68bb
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 4 02:59:31 2025 -0800
+
+    Disable WASM bindings benchmarks on Github CI
+    
+    Updated the wasm/README.md to describe how to manually run the benchmark tests.
+    
+    PiperOrigin-RevId: 827881670
+    Change-Id: I1d524851d9f3f8182ecbfcc649bb9a5a61d716ae
+
+ wasm/README.md                                   | 34 ++++++++++++--------
+ wasm/package.json                                |  3 +-
+ wasm/tests/{run-tests.mjs => run_benchmarks.mjs} |  2 +-
+ wasm/tests/run_tests.mjs                         | 40 ++++++++++++++++++++++++
+ 4 files changed, 64 insertions(+), 15 deletions(-)
+
+commit 3d59b20b653f4681721057dd153c6b18320eb0f4
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 4 02:50:09 2025 -0800
+
+    Simplified struct code generation for WASM bindings
+    
+    PiperOrigin-RevId: 827878780
+    Change-Id: I97ab732eb11c63a6aaf7fa95add0b51bc0a56525
+
+ wasm/codegen/generators/structs.py                 |  9 +--
+ .../helpers/struct_constructor_code_builder.py     | 85 +++++++++++++++-------
+ .../struct_constructor_code_builder_test.py        | 41 +++++++----
+ wasm/codegen/helpers/structs_parser.py             | 74 +++++++------------
+ wasm/codegen/helpers/structs_parser_test.py        | 38 +++-------
+ wasm/codegen/helpers/structs_wrappers_data.py      | 14 ----
+ 6 files changed, 123 insertions(+), 138 deletions(-)
+
+commit c22d94e470f84eae7d421f7c1796a6f37ac96f44
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 4 02:06:05 2025 -0800
+
+    Various minor cleanups to WASM code generation
+    
+    * Add newline function to code_builder
+    * Remove type aliases which made jump to definition less ergonomic
+    * Add types to constants
+    
+    PiperOrigin-RevId: 827863199
+    Change-Id: Ib4390d398926466ecce491a3d0ebe308ed5e0cbe
+
+ wasm/codegen/generators/functions.py               |  16 +--
+ wasm/codegen/helpers/code_builder.py               |   4 +
+ wasm/codegen/helpers/common.py                     |   4 +-
+ wasm/codegen/helpers/constants.py                  |  45 ++++----
+ wasm/codegen/helpers/function_utils_test.py        | 117 +++++++++++----------
+ .../helpers/struct_constructor_code_builder.py     |   5 +-
+ .../struct_constructor_code_builder_test.py        |  12 +--
+ wasm/codegen/helpers/struct_field_code_builder.py  |  15 ++-
+ .../helpers/struct_field_code_builder_test.py      |  45 ++++----
+ wasm/codegen/helpers/struct_field_handler.py       |  83 +++++++--------
+ wasm/codegen/helpers/struct_field_handler_test.py  |  40 +++----
+ wasm/codegen/helpers/structs_parser.py             |  22 ++--
+ 12 files changed, 190 insertions(+), 218 deletions(-)
+
+commit 10130297c0c3621700c0d5eb8b1e54b5c5f20cab
+Author: Matija Kecman <matijak@google.com>
+Date:   Tue Nov 4 01:36:22 2025 -0800
+
+    Consolidate WASM bindings into a single C++ file.
+    
+    PiperOrigin-RevId: 827850819
+    Change-Id: I23e099d4e72557d79354339953246ac4eeee7ca3
+
+ wasm/codegen/binding_builder.py                    |   27 +-
+ wasm/codegen/bindings_diff_test.py                 |   12 -
+ wasm/codegen/generated/bindings.cc                 | 6650 ++++++++++++++++++-
+ wasm/codegen/generated/bindings.h                  | 6712 --------------------
+ wasm/codegen/helpers/constants.py                  |    2 +-
+ .../helpers/struct_constructor_code_builder.py     |    3 +-
+ wasm/codegen/templates/bindings.cc                 |  315 +-
+ wasm/codegen/templates/bindings.h                  |  348 -
+ wasm/codegen/update.py                             |    9 +-
+ 9 files changed, 6968 insertions(+), 7110 deletions(-)
+
+commit 7d7648f7ed4b10a7a11e30f39b14d55cb0c47631
+Author: Sam Haves <shaves@google.com>
+Date:   Mon Nov 3 13:28:36 2025 -0800
+
+    Update UsdWriter to write any parts of MjSpec that are not from USD to the EditTarget.
+    
+    This enables two workflows:
+    1) Users that parsed some other format into MjSpec, or built it programmatically can export animated USD easily with as minimal as possible interaction with USD.
+    
+    2) Creating a spec from USD, then modifying the spec, should not cause a duplication of data when writing to USD.
+    
+    PiperOrigin-RevId: 827627520
+    Change-Id: I02c8c14a18569547710e54f3704d52ac0bf70ce6
+
+ include/mujoco/experimental/usd/writer.h           |  1 +
+ src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc | 89 +++++++++++++++-------
+ src/experimental/usd/plugins/mjcf/mujoco_to_usd.h  |  4 +-
+ src/experimental/usd/usd_to_mjspec.cc              | 20 +++++
+ src/experimental/usd/writer.cc                     | 11 +++
+ 5 files changed, 96 insertions(+), 29 deletions(-)
+
+commit abc02b736e78cf14d05accb7b332d73e8eb0dcaf
+Author: Yuval Tassa <tassa@google.com>
+Date:   Mon Nov 3 13:21:59 2025 -0800
+
+    Minor fixes to viewer diagnostics
+    
+    - When `mjData.nefc` was 0 (solver not run at all), we were plotting the stale diagnostics from the last run; now fixed.
+    - In the case where islands were used, the semantic of the plotted diagnostic `sqrt_nnz` (square root of Hessian nonzeros) is changed. It used to be the sum of square roots of solver nonzeros per island, it is now the square root of the sum of all nonzeros in all islands. The semantic `sqrt(sum(nnz_i))` was found to be more consistent than `sum(sqrt(nnz_i))`, in the sense that switching islanding on/off leads to smaller changes and is more in line with the interpretation of islanding as [block-diagonalization](https://mujoco.readthedocs.io/en/3.3.7/computation/#constraint-islands).
+    
+    PiperOrigin-RevId: 827624908
+    Change-Id: I5fc86364ead585a4752a6d44823fb75cf6c7c318
+
+ simulate/simulate.cc           | 5 +++--
+ src/experimental/studio/app.cc | 9 +++++----
+ 2 files changed, 8 insertions(+), 6 deletions(-)
+
+commit 501e561563a0bf667ba8504e55623d27e07c843c
+Author: Baruch Tabanpour <btaba@google.com>
+Date:   Mon Nov 3 12:23:29 2025 -0800
+
+    Import NVIDIA/warp from GitHub.
+    
+    PiperOrigin-RevId: 827602811
+    Change-Id: I42f96098df4665de60065409b454688f92e976d1
+
+ .../third_party/warp/jax_experimental/__init__.py  |  15 +-
+ .../warp/jax_experimental/custom_call.py           | 373 +++++++-
+ .../mjx/third_party/warp/jax_experimental/ffi.py   | 955 ++++++++++++++++++++-
+ .../third_party/warp/jax_experimental/xla_ffi.py   | 610 ++++++++++++-
+ 4 files changed, 1909 insertions(+), 44 deletions(-)
+
+commit 9319956a16da0d9940f82b24d9784f9cb91a1757
+Author: Sam Haves <shaves@google.com>
+Date:   Mon Nov 3 04:15:31 2025 -0800
+
+    Modify mujoco_to_usd to operate on SdfLayer intead of SdfAbstractData.
+    
+    Since we don't do any on demand data loading for USD and always convert everything it should be safe to use the SdfLayer API instead of the SdfAbstractData API. This enables other codepaths such as the USD writer class to reuse the same logic to generate USD specification from an mjSpec.
+    
+    PiperOrigin-RevId: 827431722
+    Change-Id: I60a581e0c9577164a4a66229ea9dcb8912afcf74
+
+ .../usd/plugins/mjcf/mjcf_file_format.cc           |    7 +-
+ src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc | 1026 ++++++++++----------
+ src/experimental/usd/plugins/mjcf/mujoco_to_usd.h  |    8 +-
+ src/experimental/usd/plugins/mjcf/utils.cc         |  179 ++--
+ src/experimental/usd/plugins/mjcf/utils.h          |  100 +-
+ 5 files changed, 618 insertions(+), 702 deletions(-)
+
+commit 3a7aa84e53828f329cdb961ccbd920f4a7b41706
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Mon Nov 3 03:00:18 2025 -0800
+
+    Add quadratic stiffness to flex.
+    
+    PiperOrigin-RevId: 827409919
+    Change-Id: I3dff8ea49fb1726fec4acf5b91138d6d52c4bfba
+
+ doc/XMLreference.rst                |  16 ++++--
+ doc/changelog.rst                   |   2 +
+ model/flex/bunny_quadratic.xml      |  42 +++++++++++++++
+ model/flex/quadratic.xml            |   7 ++-
+ src/engine/engine_core_constraint.c |  10 ++--
+ src/engine/engine_passive.c         |   6 +--
+ src/engine/engine_vis_visualize.c   |  24 +++++----
+ src/user/user_flexcomp.cc           |   7 ++-
+ src/user/user_mesh.cc               | 105 ++++++++++++++++++++++++------------
+ src/xml/xml_native_reader.cc        |   3 --
+ 10 files changed, 159 insertions(+), 63 deletions(-)
+
+commit d4f13b4abca5b3304a86e6e88351704cb44fc40f
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Mon Nov 3 02:17:48 2025 -0800
+
+    Update mjwarp/index.rst.
+    
+    PiperOrigin-RevId: 827397313
+    Change-Id: I427a0476eb1530b53539d787c0b79aaf45f889d5
+
+ doc/mjwarp/index.rst | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+
+commit ad49733db2772dac88eb8be81936c08c639f2735
+Author: Yuval Tassa <tassa@google.com>
+Date:   Sat Nov 1 05:53:56 2025 -0700
+
+    Improve error message for insufficient arena memory in `_realloc_con_efc`.
+    
+    PiperOrigin-RevId: 826845370
+    Change-Id: I09467dd44a6f9f01b89ff6c1d74cde493e84eb1c
+
+ python/mujoco/bindings_test.py |  7 +++++--
+ python/mujoco/functions.cc     | 35 +++++++++++++++++++++--------------
+ 2 files changed, 26 insertions(+), 16 deletions(-)
+
+commit f604588a36c5530ee52e23a9f73a71a9845b1bdc
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Sat Nov 1 03:58:35 2025 -0700
+
+    Update theme_overrides_mjwarp.css to not render return type information.
+    
+    PiperOrigin-RevId: 826821680
+    Change-Id: I2d8a08755631b85f910051ea395ae9081d4e3759
+
+ doc/css/theme_overrides_mjwarp.css | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+commit fbb95d5e8c8785e1f8d212675d7abed66293c853
+Author: Erik Frey <erikfrey@google.com>
+Date:   Fri Oct 31 11:46:10 2025 -0700
+
+    Import NVIDIA/warp from GitHub.
+    
+    PiperOrigin-RevId: 826571491
+    Change-Id: I294abc5aa3714345ab295636d12428293ea69285
+
+ .../third_party/warp/jax_experimental/__init__.py  |  15 +-
+ .../warp/jax_experimental/custom_call.py           | 373 +-------
+ .../mjx/third_party/warp/jax_experimental/ffi.py   | 955 +--------------------
+ .../third_party/warp/jax_experimental/xla_ffi.py   | 610 +------------
+ 4 files changed, 44 insertions(+), 1909 deletions(-)
+
+commit 4086261714d7cfbc1745d4c6cb0aa2116df45312
+Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Date:   Fri Oct 31 07:20:18 2025 -0700
+
+    Add JavaScript bindings and WASM support
+    
+    Co-authored-by: Matija Kecman <matijak@google.com>
+    Co-authored-by: Sebastian Noreña Rendón <sebas.norena@creativa77.com.ar>
+    Co-authored-by: Kyle Bayes <kylebayes@google.com>
+    PiperOrigin-RevId: 826479070
+    Change-Id: I25acf36e6c20b091d8492e10798d028ae66f6733
+
+ .github/workflows/build.yml                        |   55 +
+ .gitignore                                         |    5 +
+ CMakeLists.txt                                     |   58 +-
+ README.md                                          |    6 +-
+ cmake/MujocoDependencies.cmake                     |   18 +-
+ cmake/ccd-support-emscripten.patch                 |   22 +
+ cmake/qhull-support-emscripten.patch               |   30 +
+ wasm/CMakeLists.txt                                |   62 +
+ wasm/README.md                                     |  219 +
+ wasm/codegen/binding_builder.py                    |  115 +
+ wasm/codegen/bindings_diff_test.py                 |   67 +
+ wasm/codegen/coverage_test.py                      |  152 +
+ wasm/codegen/enums_test_generator.py               |   54 +
+ wasm/codegen/generated/bindings.cc                 | 6312 ++++++++++++++++++
+ wasm/codegen/generated/bindings.h                  | 6712 ++++++++++++++++++++
+ wasm/codegen/generators/constants.py               |   34 +
+ wasm/codegen/generators/enums.py                   |   47 +
+ wasm/codegen/generators/enums_test.py              |   62 +
+ wasm/codegen/generators/functions.py               |   93 +
+ wasm/codegen/generators/functions_test.py          |   67 +
+ wasm/codegen/generators/structs.py                 |   88 +
+ wasm/codegen/helpers/code_builder.py               |   73 +
+ wasm/codegen/helpers/code_builder_test.py          |   51 +
+ wasm/codegen/helpers/common.py                     |  128 +
+ wasm/codegen/helpers/common_test.py                |   37 +
+ wasm/codegen/helpers/constants.py                  |  478 ++
+ wasm/codegen/helpers/function_utils.py             |  350 +
+ wasm/codegen/helpers/function_utils_test.py        |  236 +
+ .../helpers/struct_constructor_code_builder.py     |  195 +
+ .../struct_constructor_code_builder_test.py        |  140 +
+ wasm/codegen/helpers/struct_field_code_builder.py  |  100 +
+ .../helpers/struct_field_code_builder_test.py      |  171 +
+ wasm/codegen/helpers/struct_field_handler.py       |  358 ++
+ wasm/codegen/helpers/struct_field_handler_test.py  |  241 +
+ wasm/codegen/helpers/structs_parser.py             |  201 +
+ wasm/codegen/helpers/structs_parser_test.py        |  110 +
+ wasm/codegen/helpers/structs_wrappers_data.py      |   75 +
+ wasm/codegen/templates/bindings.cc                 | 1711 +++++
+ wasm/codegen/templates/bindings.h                  |  348 +
+ wasm/codegen/update.py                             |   41 +
+ wasm/demo_app/app.ts                               |  498 ++
+ wasm/demo_app/index.html                           |   41 +
+ wasm/demo_app/vite.demo.config.ts                  |   27 +
+ wasm/package-lock.json                             | 1707 +++++
+ wasm/package.json                                  |   29 +
+ wasm/tests/CMakeLists.txt                          |   60 +
+ wasm/tests/benchmark_test.cc                       |   54 +
+ wasm/tests/benchmark_test.ts                       |  113 +
+ wasm/tests/bindings_test.ts                        | 1805 ++++++
+ wasm/tests/enums_test.ts                           |  274 +
+ wasm/tests/karma.conf.json                         |   10 +
+ wasm/tests/run-tests.mjs                           |   40 +
+ wasm/tests/sandbox/index.html                      |   26 +
+ wasm/tests/sandbox/main.ts                         |   64 +
+ wasm/tests/sandbox/vite.sandbox.config.ts          |   27 +
+ wasm/tsconfig.json                                 |   11 +
+ wasm/unpack.cc                                     |   35 +
+ wasm/unpack.h                                      |  297 +
+ 58 files changed, 24418 insertions(+), 22 deletions(-)
+
+commit 57f71458065ac1e62dce5dc512081daa1b2b5e7d
+Author: Sam Haves <shaves@google.com>
+Date:   Thu Oct 30 12:53:40 2025 -0700
+
+    Create mjpDecoder, mj_parse, and mju_decodeResource
+      - plugin system similar to mjpResourceProvider, but instead of loading a resource it converts an existing mjResource into an mjSpec.
+      - The returned spec is then composed into the referencing spec.
+      - This enables different file types to generate arbitrary specs, and allows us to separate format parsing from compilation code.
+    
+    Follow up CLs will move some of the logic in src/engine for PNG, USD, KTX, OBJ loading into decoders.
+    
+    The mj_parse function MjSpec from a given file, it's a more generic version of mj_parseXML.
+    
+    In it's implementation, mj_parse as opposed to mj_parseXML will look for any registered decoder and
+    not assume we are striclty dealing with MJCF.
+    
+    PiperOrigin-RevId: 826149497
+    Change-Id: I0ece26904280cb94bd5ded6dd5a565c539d60254
+
+ doc/APIreference/functions.rst                     |   44 +
+ doc/includes/references.h                          |   15 +
+ include/mujoco/mjplugin.h                          |   20 +
+ include/mujoco/mujoco.h                            |   16 +
+ .../mujoco/introspect/codegen/generate_structs.py  |    2 +
+ python/mujoco/introspect/enums.py                  |  198 +-
+ python/mujoco/introspect/functions.py              |   90 +
+ python/mujoco/introspect/structs.py                | 5216 ++++++++++----------
+ python/mujoco/specs.cc                             |    4 +-
+ src/engine/engine_plugin.cc                        |  147 +
+ src/engine/engine_plugin.h                         |    9 +
+ src/user/user_api.cc                               |   18 +
+ src/user/user_resource.cc                          |   17 +
+ src/user/user_resource.h                           |    4 +
+ src/xml/xml_native_reader.cc                       |   17 +-
+ test/plugin/decoder/decoder_test.cc                |  127 +
+ 16 files changed, 3226 insertions(+), 2718 deletions(-)
+
+commit f2badc05acb8966071530caf45a9df3aab41f9b5
+Author: Matija Kecman <matijak@google.com>
+Date:   Thu Oct 30 11:10:55 2025 -0700
+
+    Add JavaScript bindings and WASM support
+    
+    Co-authored-by: Matija Kecman <matijak@google.com>
+    Co-authored-by: Sebastian Noreña Rendón <sebas.norena@creativa77.com.ar>
+    Co-authored-by: Kyle Bayes <kylebayes@google.com>
+    PiperOrigin-RevId: 826109484
+    Change-Id: I327fd54122762bd2e239cc31c602a3eb73051c26
+
+ .github/workflows/build.yml                        |   55 -
+ .gitignore                                         |    5 -
+ CMakeLists.txt                                     |   58 +-
+ README.md                                          |    6 +-
+ cmake/MujocoDependencies.cmake                     |   18 +-
+ wasm/CMakeLists.txt                                |   62 -
+ wasm/README.md                                     |  219 -
+ wasm/codegen/binding_builder.py                    |  115 -
+ wasm/codegen/bindings_diff_test.py                 |   67 -
+ wasm/codegen/coverage_test.py                      |  152 -
+ wasm/codegen/enums_test_generator.py               |   54 -
+ wasm/codegen/generated/bindings.cc                 | 6312 ------------------
+ wasm/codegen/generated/bindings.h                  | 6712 --------------------
+ wasm/codegen/generators/constants.py               |   34 -
+ wasm/codegen/generators/enums.py                   |   47 -
+ wasm/codegen/generators/enums_test.py              |   62 -
+ wasm/codegen/generators/functions.py               |   93 -
+ wasm/codegen/generators/functions_test.py          |   67 -
+ wasm/codegen/generators/structs.py                 |   88 -
+ wasm/codegen/helpers/code_builder.py               |   73 -
+ wasm/codegen/helpers/code_builder_test.py          |   51 -
+ wasm/codegen/helpers/common.py                     |  128 -
+ wasm/codegen/helpers/common_test.py                |   37 -
+ wasm/codegen/helpers/constants.py                  |  474 --
+ wasm/codegen/helpers/function_utils.py             |  350 -
+ wasm/codegen/helpers/function_utils_test.py        |  236 -
+ .../helpers/struct_constructor_code_builder.py     |  195 -
+ .../struct_constructor_code_builder_test.py        |  140 -
+ wasm/codegen/helpers/struct_field_code_builder.py  |  100 -
+ .../helpers/struct_field_code_builder_test.py      |  171 -
+ wasm/codegen/helpers/struct_field_handler.py       |  358 --
+ wasm/codegen/helpers/struct_field_handler_test.py  |  241 -
+ wasm/codegen/helpers/structs_parser.py             |  201 -
+ wasm/codegen/helpers/structs_parser_test.py        |  110 -
+ wasm/codegen/helpers/structs_wrappers_data.py      |   75 -
+ wasm/codegen/templates/bindings.cc                 | 1711 -----
+ wasm/codegen/templates/bindings.h                  |  348 -
+ wasm/codegen/update.py                             |   41 -
+ wasm/demo_app/app.ts                               |  498 --
+ wasm/demo_app/index.html                           |   41 -
+ wasm/demo_app/vite.demo.config.ts                  |   27 -
+ wasm/package-lock.json                             | 1707 -----
+ wasm/package.json                                  |   29 -
+ wasm/tests/CMakeLists.txt                          |   60 -
+ wasm/tests/benchmark_test.cc                       |   54 -
+ wasm/tests/benchmark_test.ts                       |  113 -
+ wasm/tests/bindings_test.ts                        | 1805 ------
+ wasm/tests/enums_test.ts                           |  274 -
+ wasm/tests/karma.conf.json                         |   10 -
+ wasm/tests/run-tests.mjs                           |   40 -
+ wasm/tests/sandbox/index.html                      |   26 -
+ wasm/tests/sandbox/main.ts                         |   64 -
+ wasm/tests/sandbox/vite.sandbox.config.ts          |   27 -
+ wasm/tsconfig.json                                 |   11 -
+ wasm/unpack.cc                                     |   35 -
+ wasm/unpack.h                                      |  297 -
+ 56 files changed, 22 insertions(+), 24362 deletions(-)
+
+commit 76e64d96bb05baf37982e2aab9e04a53c268c9f0
+Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Date:   Thu Oct 30 10:37:06 2025 -0700
+
+    Add JavaScript bindings and WASM support
+    
+    Co-authored-by: Matija Kecman <matijak@google.com>
+    Co-authored-by: Sebastian Noreña Rendón <sebas.norena@creativa77.com.ar>
+    Co-authored-by: Kyle Bayes <kylebayes@google.com>
+    PiperOrigin-RevId: 826094938
+    Change-Id: Id2658a187bc078056f4410c71202696753319e64
+
+ .github/workflows/build.yml                        |   55 +
+ .gitignore                                         |    5 +
+ CMakeLists.txt                                     |   58 +-
+ README.md                                          |    6 +-
+ cmake/MujocoDependencies.cmake                     |   18 +-
+ wasm/CMakeLists.txt                                |   62 +
+ wasm/README.md                                     |  219 +
+ wasm/codegen/binding_builder.py                    |  115 +
+ wasm/codegen/bindings_diff_test.py                 |   67 +
+ wasm/codegen/coverage_test.py                      |  152 +
+ wasm/codegen/enums_test_generator.py               |   54 +
+ wasm/codegen/generated/bindings.cc                 | 6312 ++++++++++++++++++
+ wasm/codegen/generated/bindings.h                  | 6712 ++++++++++++++++++++
+ wasm/codegen/generators/constants.py               |   34 +
+ wasm/codegen/generators/enums.py                   |   47 +
+ wasm/codegen/generators/enums_test.py              |   62 +
+ wasm/codegen/generators/functions.py               |   93 +
+ wasm/codegen/generators/functions_test.py          |   67 +
+ wasm/codegen/generators/structs.py                 |   88 +
+ wasm/codegen/helpers/code_builder.py               |   73 +
+ wasm/codegen/helpers/code_builder_test.py          |   51 +
+ wasm/codegen/helpers/common.py                     |  128 +
+ wasm/codegen/helpers/common_test.py                |   37 +
+ wasm/codegen/helpers/constants.py                  |  474 ++
+ wasm/codegen/helpers/function_utils.py             |  350 +
+ wasm/codegen/helpers/function_utils_test.py        |  236 +
+ .../helpers/struct_constructor_code_builder.py     |  195 +
+ .../struct_constructor_code_builder_test.py        |  140 +
+ wasm/codegen/helpers/struct_field_code_builder.py  |  100 +
+ .../helpers/struct_field_code_builder_test.py      |  171 +
+ wasm/codegen/helpers/struct_field_handler.py       |  358 ++
+ wasm/codegen/helpers/struct_field_handler_test.py  |  241 +
+ wasm/codegen/helpers/structs_parser.py             |  201 +
+ wasm/codegen/helpers/structs_parser_test.py        |  110 +
+ wasm/codegen/helpers/structs_wrappers_data.py      |   75 +
+ wasm/codegen/templates/bindings.cc                 | 1711 +++++
+ wasm/codegen/templates/bindings.h                  |  348 +
+ wasm/codegen/update.py                             |   41 +
+ wasm/demo_app/app.ts                               |  498 ++
+ wasm/demo_app/index.html                           |   41 +
+ wasm/demo_app/vite.demo.config.ts                  |   27 +
+ wasm/package-lock.json                             | 1707 +++++
+ wasm/package.json                                  |   29 +
+ wasm/tests/CMakeLists.txt                          |   60 +
+ wasm/tests/benchmark_test.cc                       |   54 +
+ wasm/tests/benchmark_test.ts                       |  113 +
+ wasm/tests/bindings_test.ts                        | 1805 ++++++
+ wasm/tests/enums_test.ts                           |  274 +
+ wasm/tests/karma.conf.json                         |   10 +
+ wasm/tests/run-tests.mjs                           |   40 +
+ wasm/tests/sandbox/index.html                      |   26 +
+ wasm/tests/sandbox/main.ts                         |   64 +
+ wasm/tests/sandbox/vite.sandbox.config.ts          |   27 +
+ wasm/tsconfig.json                                 |   11 +
+ wasm/unpack.cc                                     |   35 +
+ wasm/unpack.h                                      |  297 +
+ 56 files changed, 24362 insertions(+), 22 deletions(-)
+
+commit 10f4b36fb7bb165b4e24f64cba8ffcf97f855c66
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Thu Oct 30 03:36:23 2025 -0700
+
+    MuJoCo Warp documentation: Beta software.
+    
+    PiperOrigin-RevId: 825958166
+    Change-Id: I1e90d78d7413956cfa84711336be26a23a18e5aa
+
+ doc/mjwarp/index.rst | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+commit 37563a050e50c8329f9bff1212cbea8a471d0567
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Wed Oct 29 13:16:36 2025 -0700
+
+    Remove obsolete docs references to convexhull.
+    
+    Fixes #2912.
+    
+    PiperOrigin-RevId: 825679563
+    Change-Id: I8ee14415fb1eb64ece5cf4f3c07d016126025364
+
+ doc/XMLreference.rst | 14 ++++++--------
+ 1 file changed, 6 insertions(+), 8 deletions(-)
+
+commit 3df784fc8477fe7780e62a66a58d7162b94ecff6
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Wed Oct 29 04:41:45 2025 -0700
+
+    Updates for MuJoCo Warp documentation.
+    
+    PiperOrigin-RevId: 825489001
+    Change-Id: I6ec4a0433f96da05befeb2b76793763e50a893d8
+
+ doc/mjwarp/index.rst | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit d769440924c946d34ecb478c85141be75bf727e9
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Wed Oct 29 04:23:18 2025 -0700
+
+    Store asset keys relative to the MJCF. This CL fixes cases when loading a spec with "from_zip" that fails on zipped folders that contain a root directory.
+    
+    PiperOrigin-RevId: 825484553
+    Change-Id: I79c6f542edbd3ffd167d0b5cecc704c32c8d6824
+
+ python/mujoco/__init__.py              |  10 ++++++++++
+ python/mujoco/specs_test.py            |  20 ++++++++++++++++++++
+ python/mujoco/testdata/MJCF_NoRoot.zip | Bin 0 -> 5161 bytes
+ python/mujoco/testdata/MJCF_Root.zip   | Bin 0 -> 5626 bytes
+ python/pyproject.toml                  |   1 +
+ 5 files changed, 31 insertions(+)
+
+commit 010d919244dcd06427dfa9c436153ff2aae468f3
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Wed Oct 29 02:54:08 2025 -0700
+
+    Add `__setattr__` to `_MjBindModel` and `_MjBindData`.
+    
+    This allows setting attributes with bind using a list of mjSpec objects as arguments.
+    
+    PiperOrigin-RevId: 825456920
+    Change-Id: Ie6af956feab0a805175d7aaecf26e071401fbf05
+
+ python/mujoco/__init__.py   | 16 ++++++++++++++--
+ python/mujoco/specs_test.py |  2 ++
+ 2 files changed, 16 insertions(+), 2 deletions(-)
+
+commit 80eb5116200cce89b60a47befc317585120e9a7d
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Oct 28 11:41:28 2025 -0700
+
+    Remove dependency on Window, Physics, and Renderer classes.
+    
+    PiperOrigin-RevId: 825137441
+    Change-Id: I099a518ca9618698401d0330a6ef08278168f88e
+
+ src/experimental/studio/app.cc          | 20 +++++++++---------
+ src/experimental/toolbox/interaction.cc | 36 ++++++++++++++-------------------
+ src/experimental/toolbox/interaction.h  | 10 ++++-----
+ src/experimental/toolbox/window.h       |  7 ++++++-
+ 4 files changed, 35 insertions(+), 38 deletions(-)
+
+commit 4620b9f23a0dbb2cd3e2e2be3ad93d5e38ee2769
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Oct 28 09:43:50 2025 -0700
+
+    Merge HandleMouseEvents and HandleKeyboardEvents back into app.cc.
+    
+    PiperOrigin-RevId: 825081195
+    Change-Id: I36445b8c452b15ca26056a52fd1844cf77083c0a
+
+ src/experimental/studio/app.cc          | 210 +++++++++++++++++++++++++++++-
+ src/experimental/toolbox/interaction.cc | 222 --------------------------------
+ src/experimental/toolbox/interaction.h  |  10 --
+ 3 files changed, 204 insertions(+), 238 deletions(-)
+
+commit d001bd65253cd9fed83c35d0b1d08e9b19ccf93d
+Author: Baruch Tabanpour <btaba@google.com>
+Date:   Tue Oct 28 06:58:14 2025 -0700
+
+    Add naconmax, deprecation warning for nconmax.
+    
+    PiperOrigin-RevId: 825018530
+    Change-Id: I344b296ac4353592d65a85b826850eaa7df5d39a
+
+ doc/changelog.rst                |  3 +++
+ mjx/mujoco/mjx/_src/io.py        | 41 +++++++++++++++++++++++++++++++++-------
+ mjx/mujoco/mjx/viewer.py         |  8 ++++----
+ mjx/mujoco/mjx/warp/testspeed.py |  4 ++--
+ 4 files changed, 43 insertions(+), 13 deletions(-)
+
+commit 2bdea1a0aae1e16e8a40a7a4df119cbc3fada4c3
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Tue Oct 28 06:39:44 2025 -0700
+
+    Use "/" as default prefix during attach if not specified.
+    
+    The user can recover the old behavior by passing prefix="".
+    
+    This enables to attach children with default and save a valid result to XML.
+    
+    PiperOrigin-RevId: 825011185
+    Change-Id: Id20c2589da928bf92b77bdb01cfba73dfc1d2f52
+
+ python/mujoco/specs.cc      | 2 +-
+ python/mujoco/specs_test.py | 6 +++---
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 1bfa8b6fa6f74edd32f58edfe41d4b3f78a65ecd
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Tue Oct 28 06:12:41 2025 -0700
+
+    Do not add bodies at mesh points for quadratic flex interpolation.
+    
+    PiperOrigin-RevId: 825001743
+    Change-Id: Ica085b947fb1c3f56251bceaa6a228f364535d3e
+
+ src/user/user_flexcomp.cc | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 3b79d3f14bd175f417b381625c0f58257966ea88
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Oct 28 05:23:00 2025 -0700
+
+    Set flags directly on Renderer class.
+    
+    This removes a dependency on mjvScene from the App class.
+    
+    PiperOrigin-RevId: 824983816
+    Change-Id: I20dd411e6359ee411f9b0b86d4442c090ba4bd5c
+
+ src/experimental/studio/app.cc      | 7 ++++---
+ src/experimental/toolbox/renderer.h | 4 ++++
+ 2 files changed, 8 insertions(+), 3 deletions(-)
+
+commit 7ba0d96d770c7bf7e9c96ddeb25f7ed1b030ed8d
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Tue Oct 28 05:18:00 2025 -0700
+
+    Use mjvCamera directly for generating camera string.
+    
+    PiperOrigin-RevId: 824982264
+    Change-Id: I0d8760bb27153849c8f4dacb10aa3162f29c2f6e
+
+ src/experimental/studio/app.cc      |  2 +-
+ src/experimental/toolbox/helpers.cc | 21 ++++++---------------
+ src/experimental/toolbox/helpers.h  |  4 ++--
+ 3 files changed, 9 insertions(+), 18 deletions(-)
+
+commit e1a73f9c4c3a99151e274b5fa48c13cdd74d5fc1
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Oct 28 04:58:15 2025 -0700
+
+    Add early exit in `mj_xfrcAccumulate` using `mju_isZeroByte`
+    
+    `xfrc_applied` mostly contains user perturbations which are rare. It is very often identically zero and for large arrays `mju_isZeroByte` is significantly faster than `mju_isZero`.
+    
+    PiperOrigin-RevId: 824975356
+    Change-Id: Iadb1d300d68cf12de00c14a0665bd89924a2d7e0
+
+ src/engine/engine_support.c | 15 ++++++++++++---
+ 1 file changed, 12 insertions(+), 3 deletions(-)
+
+commit 017788b9d657169efe48a0eab83cbb7ea568f8f5
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Tue Oct 28 03:00:06 2025 -0700
+
+    MuJoCo Warp documentation: Parallel Linesearch.
+    
+    PiperOrigin-RevId: 824937806
+    Change-Id: I95b416f7b0380099aa6ea4200a27acfc2b2c6bb7
+
+ doc/mjwarp/index.rst | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+
+commit a16805f8ee99955f19427c8410fa75d2d0061698
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Oct 27 11:25:25 2025 -0700
+
+    Add CMakeLists.txt files for new (experimental) code.
+    
+    This includes the filament, toolbox, and studio projects.
+    
+    Adds a MUJOCO_BUILD_STUDIO option to enable building of the `studio` app (disabled by default).
+    
+    Adds a MUJOCO_USE_FILAMENT to allow the studio app to use the filament rendering backend. A separate MUJOCO_USE_FILAMENT_VULKAN flag can be used to enable vulkan rendering.
+    
+    PiperOrigin-RevId: 824602367
+    Change-Id: I26d46c16211ae2118f96c163c4194fea5b5a15a9
+
+ CMakeLists.txt                           |  23 +++++-
+ src/experimental/filament/CMakeLists.txt | 136 +++++++++++++++++++++++++++++++
+ src/experimental/studio/CMakeLists.txt   |  75 +++++++++++++++++
+ src/experimental/toolbox/CMakeLists.txt  |  56 +++++++++++++
+ 4 files changed, 288 insertions(+), 2 deletions(-)
+
+commit be055840b427fcc3f6a30ab69d7347ba1e6459d7
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Mon Oct 27 11:11:45 2025 -0700
+
+    Add Batched Model Fields section to MuJoCo Warp documentation.
+    
+    PiperOrigin-RevId: 824596731
+    Change-Id: Ic2fc96df6f8d9639286f08ec86c5cdca64fc03d8
+
+ doc/mjwarp/index.rst | 38 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 38 insertions(+)
+
+commit 3b11e31572536a3407806bd4f00e7712edc90942
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Mon Oct 27 10:32:45 2025 -0700
+
+    MuJoCo Warp documentation: Add `nworld`, `nconmax`, and `njmax` section and update introduction.
+    
+    PiperOrigin-RevId: 824579564
+    Change-Id: I2f2b81d95e061168646fce12f7c6f7a1268385e9
+
+ doc/mjwarp/index.rst | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+
+commit dbaf35d42c62a33f923a399eab213e01dcf0eea5
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Oct 27 09:36:00 2025 -0700
+
+    Add CMake configurations for new third_party dependencies.
+    
+    Adds targets for dear_imgui, implot, filament, sdl2, and webp. These
+    targets are not currently used.
+    
+    PiperOrigin-RevId: 824554405
+    Change-Id: Ibebdd50752d251852a945b6abc230e2c6e65fae9
+
+ cmake/third_party_deps/dear_imgui/CMakeLists.txt | 61 ++++++++++++++++++++++++
+ cmake/third_party_deps/implot/CMakeLists.txt     | 33 +++++++++++++
+ 2 files changed, 94 insertions(+)
+
+commit d971e5c2dfbae32b9c9391377e7edba3b838c243
+Merge: 23c3001a b19644be
+Author: Copybara-Service <copybara-worker@google.com>
+Date:   Mon Oct 27 09:16:01 2025 -0700
+
+    Merge pull request #2908 from davidhozic:doc/fix-comments
+    
+    PiperOrigin-RevId: 824546229
+    Change-Id: I9961e7f39d0549ff8b15a1007fb20832a0014bbd
+
+commit 23c3001a4c0df36285552ba47f836d00cfd39f5b
+Merge: 85e9cff0 cb7ebe68
+Author: Copybara-Service <copybara-worker@google.com>
+Date:   Mon Oct 27 07:42:09 2025 -0700
+
+    Merge pull request #2875 from google-deepmind:dependabot/pip/mjx/pip-25.2
+    
+    PiperOrigin-RevId: 824514263
+    Change-Id: Ifeb956547e23722ea486e1e6da9a953826038626
+
+commit 85e9cff0c11cda8d962e13bffe127e088a9b3010
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Mon Oct 27 04:47:45 2025 -0700
+
+    Update `mj_geomDistance`: don't flip geoms for nativeccd.
+    
+    PiperOrigin-RevId: 824463375
+    Change-Id: Ic9c4cac916129b88575e0366e1b95353ce716ca2
+
+ src/engine/engine_support.c        |  4 ++--
+ test/engine/engine_support_test.cc | 43 ++++++++++++++++++++++++++++++++++----
+ 2 files changed, 41 insertions(+), 6 deletions(-)
+
+commit 8c5154c9a32686ad44140dc653d27456de5ef0c3
+Author: Baruch Tabanpour <btaba@google.com>
+Date:   Fri Oct 24 15:46:24 2025 -0700
+
+    Fix testspeed for mjx-warp.
+    
+    PiperOrigin-RevId: 823691704
+    Change-Id: If90f6137915de134fdda3c7616bc810555c25d87
+
+ mjx/mujoco/mjx/warp/testspeed.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 49a3caf84c1ee3dedf2af654285fa788860fe4f2
+Author: Saran Tunyasuvunakool <stunya@google.com>
+Date:   Fri Oct 24 05:50:06 2025 -0700
+
+    Modify SimulationState proto to correspond to mj_getState.
+    
+    PiperOrigin-RevId: 823494487
+    Change-Id: Ib284e3165ca691f5b690a376f7b28e51122e1bc4
+
+ src/experimental/toolbox/physics.cc | 6 ++++--
+ src/experimental/toolbox/physics.h  | 3 ++-
+ 2 files changed, 6 insertions(+), 3 deletions(-)
+
+commit ec8ad21cb58efd49262b55a7bb7f6ddb80109513
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Fri Oct 24 03:42:03 2025 -0700
+
+    Normalize triangle coordinates such that their sum rather their norm is one.
+    
+    This ensures that at e.g. the barycenter of the triangle each vertex has weight 1/3, as one would expect with barycentric coordinates, rather than 1/sqrt(3). This makes it consistent to the finite element interpolation used in the passive elastic forces.
+    
+    PiperOrigin-RevId: 823458736
+    Change-Id: Ia5c02cba186a80612de38402f791695c33e991ab
+
+ src/engine/engine_core_constraint.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+commit 7bf065c75b58252929bf807dba1c28daa4fcccbb
+Author: Google DeepMind <noreply@deepmind.com>
+Date:   Thu Oct 23 13:08:37 2025 -0700
+
+    Implement equivalents to mj_getState, mj_setState  and mj_stateSize in mjx
+    
+    PiperOrigin-RevId: 823158825
+    Change-Id: I06bbf603f61ef2de8f83f32a211e8d468e0b7c5c
+
+ mjx/mujoco/mjx/__init__.py     |   3 +
+ mjx/mujoco/mjx/_src/io.py      | 168 +++++++++++++++++++++++++++++++++++++++++
+ mjx/mujoco/mjx/_src/io_test.py | 102 +++++++++++++++++++++++++
+ 3 files changed, 273 insertions(+)
+
+commit 99c18f07d3a2270271efd79e6b5c728f5d160b02
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Oct 23 08:15:57 2025 -0700
+
+    Increase buffer size.
+    
+    The smaller size is a warning/error on some targets:
+    
+    ```
+    error: ‘ bytes’ directive output may be truncated writing 6 bytes into a region of size between 0 and 15
+    ```
+    PiperOrigin-RevId: 823047552
+    Change-Id: Id66b5828cf84a512dffc452753f1881deb685584
+
+ src/engine/engine_print.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1fd9b47fea8b5513958cba921196f5d9d9301f1d
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Oct 23 08:06:22 2025 -0700
+
+    Prefix assets path with "assets/".
+    
+    PiperOrigin-RevId: 823044312
+    Change-Id: I0bde4428bd1992d6d4356e107dac471fa7cdecc6
+
+ src/experimental/studio/main.cc | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 18e60369f3eae336ca7a2c45a57a81b4ee9ce313
+Author: Sam Haves <shaves@google.com>
+Date:   Wed Oct 22 17:55:35 2025 -0700
+
+    If building simulate with USD support remove the no-deprecated warning due to deprecated header usage in USD.
+    
+    PiperOrigin-RevId: 822807399
+    Change-Id: I2765f4a7260b5ac8b3ef5894c1c5ce7a3a745baf
+
+ simulate/CMakeLists.txt | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit febe75d54b48efe16265750f7ee22ec45491b55c
+Author: Sam Haves <shaves@google.com>
+Date:   Wed Oct 22 12:28:21 2025 -0700
+
+    Add tendon.cpp to mjcPhysics CMake
+    
+    PiperOrigin-RevId: 822694422
+    Change-Id: Ic2f7c7a3b85526d49eb98c19118e6936ccb4e0f7
+
+ src/experimental/usd/CMakeLists.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit ae33724de175c75169de46f4f3c03a7581caed81
+Author: Sam Haves <shaves@google.com>
+Date:   Wed Oct 22 12:12:42 2025 -0700
+
+    Set info string on wrap instead of tendon when wrapping a prim in the path.
+    
+    PiperOrigin-RevId: 822688877
+    Change-Id: I04f5f5576cc0ed43e0ec77d5fccb19d2d23d7349
+
+ src/experimental/usd/usd_to_mjspec.cc | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit c060385505f875d66171a20a957a9dd753fb2fd1
+Author: Sam Haves <shaves@google.com>
+Date:   Wed Oct 22 08:34:59 2025 -0700
+
+    Add section in mjcPhysics documentation for MjcTendon.
+    
+    PiperOrigin-RevId: 822602481
+    Change-Id: Icf2b3accd323ee9506ca1838c9a2bfc0f0d159c7
+
+ doc/OpenUSD/mjcPhysics.rst | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+commit f217a8f9874027eae1ae86ad6f6fa6d38bb7b0e4
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Wed Oct 22 06:42:46 2025 -0700
+
+    Implement FetchPackage; a simple wrapper around FindOrFetch.
+    
+    FetchPackage calls FindOrFetch, but sets USE_SYSTEM_PACKAGE to OFF
+    (i.e. do not find, just fetch). It also sets EXCLUDE_FROM_ALL.
+    
+    PiperOrigin-RevId: 822565180
+    Change-Id: I70476f57b8d3371cefd02e840add279423913f3f
+
+ cmake/FindOrFetch.cmake          | 204 ++++++++++++++++++++++++---------------
+ sample/cmake/FindOrFetch.cmake   | 204 ++++++++++++++++++++++++---------------
+ simulate/cmake/FindOrFetch.cmake | 204 ++++++++++++++++++++++++---------------
+ 3 files changed, 384 insertions(+), 228 deletions(-)
+
+commit 160b9480f9be7f571a7314b88f4fcc7f245dc0b0
+Author: Sam Haves <shaves@google.com>
+Date:   Tue Oct 21 12:29:06 2025 -0700
+
+    Add support for tendons to mjcPhysics.
+    
+    PiperOrigin-RevId: 822230926
+    Change-Id: I232a9fbfb473186ac742d210458ff0221a561126
+
+ .../mujoco/experimental/usd/mjcPhysics/tendon.h    | 816 +++++++++++++++++++++
+ .../mujoco/experimental/usd/mjcPhysics/tokens.h    | 103 ++-
+ src/experimental/usd/kinematic_tree.cc             |   7 +
+ src/experimental/usd/kinematic_tree.h              |   1 +
+ .../usd/mjcPhysics/generatedSchema.usda            | 107 +++
+ src/experimental/usd/mjcPhysics/plugInfo.json      |  10 +
+ src/experimental/usd/mjcPhysics/schema.usda        | 198 +++++
+ src/experimental/usd/mjcPhysics/tendon.cpp         | 422 +++++++++++
+ src/experimental/usd/mjcPhysics/tokens.cpp         |  32 +-
+ src/experimental/usd/usd_to_mjspec.cc              | 303 ++++++++
+ 10 files changed, 1980 insertions(+), 19 deletions(-)
+
+commit ac2cd5dfd615d4f9d6578297bceda468eddceba0
+Author: Sam Haves <shaves@google.com>
+Date:   Tue Oct 21 11:50:24 2025 -0700
+
+    Add support for querying of MjsTendon path from Python.
+    
+    Fixes #2670
+    
+    PiperOrigin-RevId: 822215254
+    Change-Id: Ice5a264e54f963776093511c6e4ac830aae6d4f8
+
+ doc/APIreference/functions.rst        | 54 ++++++++++++++++++++
+ doc/changelog.rst                     |  9 ++++
+ doc/includes/references.h             |  6 +++
+ include/mujoco/mujoco.h               | 17 +++++++
+ python/mujoco/introspect/functions.py | 94 +++++++++++++++++++++++++++++++++++
+ python/mujoco/specs.cc                | 80 ++++++++++++++++++++++++++++-
+ python/mujoco/specs_test.py           | 64 ++++++++++++++++++++----
+ src/user/user_api.cc                  | 81 ++++++++++++++++++++++++++++++
+ src/user/user_api.h                   | 17 +++++++
+ 9 files changed, 411 insertions(+), 11 deletions(-)
+
+commit 2f65e2377915649ba84a26770cc15938360895cb
+Author: Saran Tunyasuvunakool <stunya@google.com>
+Date:   Tue Oct 21 10:00:24 2025 -0700
+
+    Add `mj_extractState` as a public API function.
+    
+    This function allows the caller to extract a subset of components of a state previously obtained via `mj_getState` without having to first write it back into `mjData`.
+    
+    PiperOrigin-RevId: 822165077
+    Change-Id: I6433261f4f5ec2e8d024bb7dee8f7dbf1e62666c
+
+ doc/APIreference/functions.rst          | 11 ++++++
+ doc/APIreference/functions_override.rst |  6 +++
+ doc/changelog.rst                       |  2 +
+ doc/includes/references.h               |  2 +
+ include/mujoco/mujoco.h                 |  4 ++
+ python/mujoco/functions.cc              | 16 +++++++-
+ python/mujoco/introspect/functions.py   | 34 +++++++++++++++++
+ src/engine/engine_support.c             | 22 +++++++++++
+ src/engine/engine_support.h             |  4 ++
+ test/engine/engine_support_test.cc      | 68 +++++++++++++++++++++++++++++++++
+ unity/Runtime/Bindings/MjBindings.cs    |  3 ++
+ 11 files changed, 171 insertions(+), 1 deletion(-)
+
+commit 25f5be82ff6a2691a315d4de6fa43df699af73e1
+Author: Kyle Bayes <kylebayes@google.com>
+Date:   Tue Oct 21 09:35:20 2025 -0700
+
+    Provide option to disable keyboard events for SDL.
+    
+    PiperOrigin-RevId: 822154396
+    Change-Id: Ie4c8537de2c4b01437aae00ed6d6af1a8f419a73
+
+ src/experimental/studio/app.cc     | 10 ++++++----
+ src/experimental/toolbox/window.cc | 20 ++++++++++++++------
+ src/experimental/toolbox/window.h  |  7 ++++++-
+ 3 files changed, 26 insertions(+), 11 deletions(-)
+
+commit 9e1ed0720b0ba45eb2798c501f653870c2abd561
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Tue Oct 21 07:09:01 2025 -0700
+
+    Revert PDF documentation update to .readthedocs.yml.
+    
+    PiperOrigin-RevId: 822102488
+    Change-Id: I223757e80c00421c2ea37c3b30718c93b0a3cee8
+
+ .readthedocs.yml | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit 056945df2091dcb8c2edbba6170c7d21dfcfdd87
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Tue Oct 21 06:56:15 2025 -0700
+
+    Enable frames to create the same children as bodies.
+    
+    PiperOrigin-RevId: 822097998
+    Change-Id: I8477d8abe2d6f711421126825fd94d39af1a4e07
+
+ python/mujoco/codegen/generate_spec_bindings.py | 27 ++++++++++++++++++++++++-
+ python/mujoco/specs_test.py                     | 14 +++++++++++++
+ 2 files changed, 40 insertions(+), 1 deletion(-)
+
+commit 09682ade4b5307fa895abf16041a76d2526b3fe6
+Author: Sam Haves <shaves@google.com>
+Date:   Tue Oct 21 06:26:23 2025 -0700
+
+    Fix mjcPhysics island flag default.
+    
+    PiperOrigin-RevId: 822088739
+    Change-Id: If3a87976dd319502160fd886a1823c12d72bebf1
+
+ include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h       | 2 +-
+ src/experimental/usd/mjcPhysics/generatedSchema.usda        | 2 +-
+ src/experimental/usd/mjcPhysics/schema.usda                 | 2 +-
+ test/experimental/usd/plugins/mjcf/mjcf_file_format_test.cc | 4 ++--
+ 4 files changed, 5 insertions(+), 5 deletions(-)
+
+commit 64add36adb696fec14cd6182c0d8f2cea5cdf737
+Author: Yuval Tassa <tassa@google.com>
+Date:   Tue Oct 21 06:01:43 2025 -0700
+
+    Update documentation to be compatible with PDF generation
+    
+    PiperOrigin-RevId: 822081040
+    Change-Id: I935b08751109e973398bc61c21f7217408983494
+
+ doc/XMLreference.rst | 30 +++++++++++++++++++-----------
+ doc/changelog.rst    | 10 +++++-----
+ doc/mjx.rst          |  2 +-
+ doc/python.rst       |  6 +++---
+ 4 files changed, 28 insertions(+), 20 deletions(-)
+
+commit 01d1ac34e083f1dc536af81ae764f3b9c6fa7fa3
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Tue Oct 21 04:35:44 2025 -0700
+
+    Add quadratic interpolation to flex.
+    
+    PiperOrigin-RevId: 822055781
+    Change-Id: Ibc252ac560de666b0b28f868e46b88d3ed92f67d
+
+ model/flex/quadratic.xml        | 39 +++++++++++++++++++++++++++++++++++++++
+ src/engine/engine_core_smooth.c |  2 +-
+ src/user/user_flexcomp.cc       | 33 ++++++++++++++++++++-------------
+ src/user/user_flexcomp.h        |  1 +
+ src/user/user_mesh.cc           |  9 ++++++---
+ src/user/user_model.cc          |  2 +-
+ src/user/user_objects.h         |  4 ++++
+ src/xml/xml_native_reader.cc    |  6 +++++-
+ 8 files changed, 77 insertions(+), 19 deletions(-)
+
+commit 59f14485e0f22ecd93a4f3fd96993708634b32b7
+Author: Sam Haves <shaves@google.com>
+Date:   Mon Oct 20 16:27:59 2025 -0700
+
+    Move mjCWrap type to mjsWrap.
+    
+    PiperOrigin-RevId: 821851540
+    Change-Id: I53382a8a21312a96aea46eec130f43e7cad70f92
+
+ doc/includes/references.h           |  1 +
+ include/mujoco/mjspec.h             |  1 +
+ python/mujoco/introspect/structs.py |  5 +++
+ python/mujoco/specs_test.py         | 64 +++++++++++++++++++++++++++++++++++++
+ src/user/user_model.cc              |  6 ++--
+ src/user/user_objects.cc            | 50 +++++++++++++++++------------
+ src/user/user_objects.h             |  5 ++-
+ src/xml/xml_native_writer.cc        |  6 ++--
+ 8 files changed, 111 insertions(+), 27 deletions(-)
+
+commit b19644bec93e7838b5a774eac13566d473d5dbe1
+Author: David Hozic <davidhozic@gmail.com>
+Date:   Tue Oct 21 01:21:47 2025 +0200
+
+    Fix spelling errors
+
+ doc/includes/references.h           | 6 +++---
+ include/mujoco/mjmodel.h            | 4 ++--
+ include/mujoco/mjrender.h           | 2 +-
+ python/mujoco/introspect/structs.py | 6 +++---
+ 4 files changed, 9 insertions(+), 9 deletions(-)
+
+commit 88ac02dad3e7f0c68bec0a73166e7f65e137be91
+Author: Matija Kecman <matijak@google.com>
+Date:   Mon Oct 20 07:31:41 2025 -0700
+
+    Add UI to visualize the State
+    
+    PiperOrigin-RevId: 821641514
+    Change-Id: I41fd5602d0d52162b374149fb0080f6c387d7847
+
+ src/experimental/studio/app.cc | 158 ++++++++++++++++++++++++++++++++++++++++-
+ src/experimental/studio/app.h  |   5 ++
+ 2 files changed, 160 insertions(+), 3 deletions(-)
+
+commit e75c5aa83c5c2a7d500e61c7710cebb98bee9178
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Mon Oct 20 02:54:22 2025 -0700
+
+    Fix various include paths.
+    
+    PiperOrigin-RevId: 821564663
+    Change-Id: Ic84489b7f3e1ba97810f60049dcf2f4a4d31edcf
+
+ src/experimental/filament/filament/buffer_util.cc    |  2 +-
+ src/experimental/filament/filament/buffer_util.h     |  2 +-
+ .../filament/filament/filament_context.cc            |  2 +-
+ src/experimental/filament/filament/gui_view.cc       |  2 +-
+ src/experimental/filament/filament/imgui_editor.cc   |  2 +-
+ src/experimental/studio/app.cc                       |  6 +++---
+ src/experimental/studio/main.cc                      |  2 +-
+ src/experimental/toolbox/helpers.cc                  |  4 ++--
+ src/experimental/toolbox/imgui_widgets.cc            |  2 +-
+ src/experimental/toolbox/imgui_widgets.h             |  4 ++--
+ src/experimental/toolbox/interaction.cc              |  2 +-
+ src/experimental/toolbox/window.cc                   | 20 ++++++++++----------
+ src/experimental/toolbox/window.h                    |  2 +-
+ 13 files changed, 26 insertions(+), 26 deletions(-)
+
+commit 36bed9a9da8cbd42a8dddd8ab3d586a51abedd7d
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Fri Oct 17 07:28:33 2025 -0700
+
+    MuJoCo documentation in PDF format. Fixes #2736, #470.
+    
+    PiperOrigin-RevId: 820682295
+    Change-Id: Ib9d6d53594c99a7e80af0fd3f1273ce44f831afd
+
+ .readthedocs.yml | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 85b5230dc0289bc4d8a5b1f13ce7797cdafeecca
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Fri Oct 17 06:58:19 2025 -0700
+
+    MuJoCo Warp API documentation.
+    
+    PiperOrigin-RevId: 820672892
+    Change-Id: I1339bdc4772560e69aa2c4b615825e7faffbe2ba
+
+ .readthedocs.yml | 3 +++
+ doc/conf.py      | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit bd8c9214753e992ac3c9cb31c03c77bc26b6cf72
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Fri Oct 17 04:37:19 2025 -0700
+
+    Update doc/conf.py.
+    
+    PiperOrigin-RevId: 820636602
+    Change-Id: I20d8b44f9b933f14a72cb6e394be149bb459c552
+
+ doc/conf.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit fdc0e64e5c01ad3f7f94508a98e23050565912fe
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Fri Oct 17 03:12:41 2025 -0700
+
+    Update .readthedocs.yml.
+    
+    PiperOrigin-RevId: 820614563
+    Change-Id: I76d10cbb3cbcd55ab5a84ce74ab2cc3c3cc4ecaf
+
+ .readthedocs.yml | 18 +++++++++++-------
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+
+commit ff7c94de8a4c29884b988be4283ada43e8c18b6d
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Thu Oct 16 08:47:14 2025 -0700
+
+    Add quadratic interpolation to mju_interpolate3D.
+    
+    PiperOrigin-RevId: 820252349
+    Change-Id: I983175eb51d7e1a81da06c0911326fcb8f5fe764
+
+ src/engine/engine_util_misc.c        | 59 +++++++++++++++++++++++++++---------
+ test/engine/engine_util_misc_test.cc | 42 +++++++++++++++++++++++++
+ 2 files changed, 86 insertions(+), 15 deletions(-)
+
+commit 87adb7e5d6aa92acfb05807833a7c7fa3b6afa3b
+Author: Haroon Qureshi <haroonq@google.com>
+Date:   Thu Oct 16 08:38:38 2025 -0700
+
+    Use the ImGui OpenGL3 backend.
+    
+    PiperOrigin-RevId: 820249390
+    Change-Id: I43fc85bf75a2c01b76218a2ff67a1526ee9e2bdb
+
+ src/experimental/studio/app.cc | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit 2893c3344ce2d184b9234a7f6e0de853b51d9e42
+Author: Andrea Gesmundo <agesmundo@google.com>
+Date:   Thu Oct 16 08:02:38 2025 -0700
+
+    Allow `mjx.ray` to exclude multiple bodies.
+    
+    PiperOrigin-RevId: 820236386
+    Change-Id: I41229fa52043d844d116b540d60053628d1a842b
+
+ mjx/mujoco/mjx/_src/ray.py      | 12 ++++++++----
+ mjx/mujoco/mjx/_src/ray_test.py | 13 +++++++++----
+ 2 files changed, 17 insertions(+), 8 deletions(-)
+
+commit 2fc8306e3d2c8670e74c47122d708bbb225b2e45
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Thu Oct 16 07:25:05 2025 -0700
+
+    Update .readthedocs.yml.
+    
+    PiperOrigin-RevId: 820223836
+    Change-Id: If0567dc022cea8133773c89d738841de2945b049
+
+ .readthedocs.yml | 16 +++++++---------
+ 1 file changed, 7 insertions(+), 9 deletions(-)
+
+commit ffdfe542cfd5296f7cfdd05a026299169b1b6c3a
+Author: Alessio Quaglino <quaglino@google.com>
+Date:   Thu Oct 16 04:38:15 2025 -0700
+
+    Add mju_interpolate3D.
+    
+    This is a more general API in preparation of a higher interpolation order
+    
+    PiperOrigin-RevId: 820174741
+    Change-Id: I81bd52ab44e0485d72579e21d1c8a48a1b35ec3f
+
+ src/engine/engine_core_constraint.c |  4 +---
+ src/engine/engine_core_smooth.c     | 13 ++++++-------
+ src/engine/engine_util_misc.c       | 17 +++++++++++++++++
+ src/engine/engine_util_misc.h       |  6 ++++++
+ src/engine/engine_vis_interact.c    | 19 ++++++++++++++-----
+ 5 files changed, 44 insertions(+), 15 deletions(-)
+
+commit 48f10bfcb6254cca8cc2b86559e7ffda32493d68
+Author: Gabe Oppenheimer <goppenheimer@google.com>
+Date:   Wed Oct 15 14:38:15 2025 -0700
+
+    Update MuJoCo to v3.3.8 following the 3.3.7 release.
+    
+    PiperOrigin-RevId: 819919328
+    Change-Id: Ib34f959f6f8efd83362d49e784aa8e0594036899
+
+ CMakeLists.txt                                 | 2 +-
+ dist/mujoco.rc                                 | 8 ++++----
+ dist/simulate.rc                               | 8 ++++----
+ doc/APIreference/APIglobals.rst                | 2 +-
+ doc/unity.rst                                  | 4 ++--
+ include/mujoco/mujoco.h                        | 2 +-
+ mjx/pyproject.toml                             | 8 ++++----
+ python/mujoco/CMakeLists.txt                   | 4 ++--
+ python/mujoco/mjpython/Info.plist              | 8 ++++----
+ python/pyproject.toml                          | 6 +++---
+ sample/CMakeLists.txt                          | 2 +-
+ simulate/CMakeLists.txt                        | 2 +-
+ src/engine/engine_support.c                    | 4 ++--
+ unity/Editor/Bindings/MujocoBinaryRetriever.cs | 4 ++--
+ unity/Runtime/Bindings/MjBindings.cs           | 2 +-
+ unity/package.json                             | 2 +-
+ 16 files changed, 34 insertions(+), 34 deletions(-)
+
+commit 8cbfc4276747a33fa3e284aa4fb969723a6a8e33
+Author: Kyle Bayes <kylebayes@google.com>
+Date:   Wed Oct 15 08:44:48 2025 -0700
+
+    Fix issue with zero size cache.
+    
+    PiperOrigin-RevId: 819773517
+    Change-Id: Iff1523e17ffbd1dff02bee71db896c64bd8b565c
+
+ src/user/user_api.cc       |  8 +++-----
+ src/user/user_cache.cc     |  2 +-
+ test/user/user_api_test.cc | 36 ++++++++++++++++++++++++++++++++++++
+ 3 files changed, 40 insertions(+), 6 deletions(-)
+
+commit 5715cebbb9431fdf6cbf7be2256137003cef73f4
+Author: Yuval Tassa <tassa@google.com>
+Date:   Wed Oct 15 08:29:50 2025 -0700
+
+    MSAN: Don't clear `mjData.sensordata` in `mj_resetData`
+    
+    This is strictly an out array and should not be read before it is written to. This change improves MSAN coverage of engine code.
+    
+    PiperOrigin-RevId: 819767673
+    Change-Id: I57500c8147f4774d326cf87ea3bac5420e4dd54d
+
+ src/engine/engine_io.c            | 9 ++++-----
+ src/engine/engine_sensor.c        | 6 ++++++
+ test/engine/engine_sensor_test.cc | 4 ++--
+ 3 files changed, 12 insertions(+), 7 deletions(-)
+
+commit 99d93124f0da5f9363bf9f47649338f8bf2ce833
+Author: Taylor Howell <taylorhowell@google.com>
+Date:   Wed Oct 15 07:46:20 2025 -0700
+
+    Update .readthedocs.yml.
+    
+    PiperOrigin-RevId: 819751628
+    Change-Id: Idf88c9169c63b80e6ae608b6e89911adbc7cb0b4
+
+ .readthedocs.yml | 15 +++++----------
+ 1 file changed, 5 insertions(+), 10 deletions(-)

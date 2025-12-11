@@ -1,0 +1,148 @@
+689c7f2 | 2025-01-26 | amitsangani | Update README.md
+8fac8be | 2024-07-23 | Joseph Spisak | Update README.md
+227d378 | 2024-07-22 | Samuel Selvan | Merge pull request #1125 from hyungupark/patch-1
+66bc730 | 2024-07-22 | Samuel Selvan | Update download.sh
+12b676b | 2024-07-22 | Samuel Selvan | Update download.sh
+c0098be | 2024-05-15 | hyungupark | Update download.sh
+be327c4 | 2024-05-14 | Joseph Spisak | Merge pull request #1124 from dandv/patch-1
+893ff97 | 2024-05-15 | Dan Dascalescu | README: LLama 2 is no longer the latest version
+b8348da | 2024-04-09 | Samuel Selvan | Merge pull request #1079 from MattGurney/fix-model-card
+04b200c | 2024-04-09 | Samuel Selvan | Merge pull request #1091 from osanseviero/patch-1
+fd73089 | 2024-04-08 | Omar Sanseviero | Update README.md
+1f9a8d7 | 2024-03-23 | MattGurney | Update MODEL_CARD.md
+54c22c0 | 2024-03-21 | Suraj Subramanian | Merge pull request #1077 from mst272/main
+1e83758 | 2024-03-21 | wangzhihong | update the code to use the module's __call__
+52afd48 | 2024-03-20 | Joseph Spisak | Merge pull request #1076 from meta-llama/jspisak-patch-7
+826ad11 | 2024-03-20 | Joseph Spisak | Update README.md
+2f58b8d | 2024-03-13 | Joseph Spisak | Merge pull request #1063 from jeffxtang/LLaMA_lowercase
+0b46616 | 2024-03-13 | Jeff Tang | change LLaMA to Llama in README
+9a001c7 | 2024-03-05 | Joseph Spisak | Merge pull request #1058 from shorthills-ai/main
+11ebe80 | 2024-03-06 | Shorthills AI | Update README.md
+a0a4da8 | 2024-03-01 | Joseph Spisak | Merge pull request #1053 from shorthills-ai/main
+acdb925 | 2024-03-01 | Shorthills AI | Update README.md
+6796a91 | 2024-02-28 | Joseph Spisak | Merge pull request #1046 from facebookresearch/update-contributing_guide
+c28bdb5 | 2024-02-28 | Navyata Bawa | Updating contributor guide
+3f61918 | 2024-02-22 | Joseph Spisak | Merge pull request #1033 from ryanhankins/patch-1
+53b227b | 2024-02-21 | ryanhankins | Update README.md
+ef351e9 | 2023-11-13 | ruanslv | Merge pull request #900 from flu0r1ne/main
+cd0719d | 2023-11-13 | flu0r1ne | Correct KV comment seqlen -> seqlen + cache_len
+6b3154b | 2023-11-13 | Alex | Update transformer mask comment
+4835a30 | 2023-11-10 | Joseph Spisak | Merge pull request #916 from facebookresearch/jspisak-patch-6
+94b055f | 2023-11-10 | Joseph Spisak | Update README.md
+dccf644 | 2023-11-08 | Suraj Subramanian | fix faq link
+9cd8d50 | 2023-11-08 | Suraj Subramanian | Update issue templates
+e9077bd | 2023-11-02 | flu0r1ne | Fix key-value caching for seqlen != 1
+54d4463 | 2023-11-02 | Joseph Spisak | Merge pull request #897 from JacobHelwig/main
+7909dee | 2023-11-02 | JacobHelwig | Correct "bug," typo to "bug", in README.md
+b5cd38a | 2023-11-01 | Joseph Spisak | Merge pull request #891 from facebookresearch/jspisak-patch-5
+664ddc8 | 2023-11-01 | Joseph Spisak | Delete FAQ.md
+3f750f4 | 2023-11-01 | Joseph Spisak | Merge pull request #890 from facebookresearch/jspisak-patch-4
+786af96 | 2023-11-01 | Joseph Spisak | Update README.md
+06faf3a | 2023-10-18 | Suraj Subramanian | Add FAQs
+1c95a19 | 2023-10-16 | Joseph Spisak | Merge pull request #860 from facebookresearch/add-issue-template
+0cc2987 | 2023-10-16 | Suraj Subramanian | Update issue templates
+6b8cff0 | 2023-10-14 | Joseph Spisak | Merge pull request #859 from yonashub/patch-1
+f9ddb1d | 2023-10-14 | yonashub | change "Content Length" to "Context Length  MODEL_CARD.md
+556949f | 2023-10-11 | Joseph Spisak | Merge pull request #851 from sekyondaMeta/FAQ-updates
+0da077c | 2023-10-11 | Joseph Spisak | Update FAQ.md
+5d9bb58 | 2023-10-11 | sekyondaMeta | Update FAQ.md
+98851c3 | 2023-10-11 | sekyondaMeta | Update FAQ.md
+7e1b864 | 2023-09-29 | samuelselvan | Merge pull request #822 from kierenAW/main
+5e13e29 | 2023-09-26 | Joseph Spisak | Merge pull request #829 from facebookresearch/jspisak-patch-3
+f29c9a8 | 2023-09-26 | Joseph Spisak | Update README.md
+4660bd3 | 2023-09-23 | Kieren | Add "--continue" flag to wget for model binary in order to resume downloads.
+b00a461 | 2023-09-20 | Joseph Spisak | Merge pull request #813 from facebookresearch/jspisak-patch-1
+843e41f | 2023-09-20 | Joseph Spisak | Merge pull request #814 from facebookresearch/jspisak-patch-2
+5c10818 | 2023-09-20 | Joseph Spisak | Update FAQ.md
+a5e37ce | 2023-09-20 | Joseph Spisak | Update MODEL_CARD.md
+9f0e393 | 2023-09-17 | Joseph Spisak | Update README.md
+d58f9ae | 2023-09-16 | Joseph Spisak | Update FAQ.md
+4869110 | 2023-09-16 | Joseph Spisak | Update FAQ.md
+7173899 | 2023-09-15 | Joseph Spisak | Merge pull request #779 from javier-m/add-seed
+d7e2e37 | 2023-09-14 | Joseph Spisak | Update FAQ.md
+46646b8 | 2023-09-11 | sekyondaMeta | Merge pull request #775 from sekyondaMeta/readmeUpdate
+c9c493f | 2023-09-11 | xavierm | add seed
+1bc5221 | 2023-09-10 | Joseph Spisak | Merge pull request #755 from jheidbrink/main
+ac19393 | 2023-09-09 | sekyondaMeta | Update README.md
+f2e6eac | 2023-09-09 | sekyondaMeta | Update README.md
+001b672 | 2023-09-09 | sekyondaMeta | Update README.md
+d06e1e1 | 2023-09-09 | sekyondaMeta | Update README.md
+6c2f236 | 2023-09-09 | sekyondaMeta | Update README.md
+2db73a5 | 2023-09-09 | Joseph Spisak | Merge pull request #769 from sekyondaMeta/FAQ-updates
+7350119 | 2023-09-09 | Joseph Spisak | Update FAQ.md
+bb2f693 | 2023-09-08 | Joseph Spisak | Update FAQ.md
+fb624f4 | 2023-09-08 | sekyondaMeta | Update FAQ.md
+797f929 | 2023-09-08 | sekyondaMeta | Update FAQ.md
+646e6d6 | 2023-09-08 | sekyondaMeta | Update FAQ.md
+bfbbf1d | 2023-09-08 | sekyondaMeta | Update FAQ.md
+c769dfd | 2023-09-07 | Nikolay Bashlykov | Merge pull request #647 from huy-ha/main
+5827703 | 2023-09-06 | Joseph Spisak | Update README.md
+dd6dbbf | 2023-09-06 | Joseph Spisak | Create FAQ.md
+7706271 | 2023-09-05 | Lorenzo Marcon | Merge pull request #451 from vinnymeller/download-sh-more-flexible
+4e24858 | 2023-09-03 | Joseph Spisak | Merge pull request #754 from JaredLevi18/fix
+8580eb9 | 2023-09-03 | Jared Levi De La Fuente Rodriguez | Update model.py
+8432e48 | 2023-09-03 | Jared Levi De La Fuente Rodriguez | Update model.py
+eb07062 | 2023-09-03 | Jan Heidbrink | Fix download.sh shebang for NixOS
+346627f | 2023-09-02 | Jared Levi De La Fuente Rodriguez | Merge branch 'facebookresearch:main' into fix
+1446089 | 2023-09-02 | Jared | making a small change to avoid a confusion
+7565eb6 | 2023-09-01 | Daniel Engbert | make download.sh executable (#695)
+a255a05 | 2023-09-01 | Gozali Kumara | Merge pull request #727 from godpeny/feat/dl_script
+6aba873 | 2023-09-01 | leonwan23 | Merge pull request #490 from Daniel15/patch-1
+4649acd | 2023-08-28 | godpeny | use 'md5' instead of 'md5sum' if Applie Silicon
+8992dea | 2023-08-31 | Akshay Patel | Merge pull request #390 from tomorrmato/add_example_type_hint
+4c370db | 2023-08-31 | Akshay Patel | Merge pull request #492 from eltociear/patch-1
+ec6a3fd | 2023-08-31 | Akshay Patel | Merge pull request #650 from MarcoSteinke/main
+0137f15 | 2023-08-31 | Akshay Patel | Merge pull request #729 from rajveer43/rajveer-patch-1
+b5ecd3a | 2023-08-31 | Vu Bui | Merge pull request #358 from kit1980/patch-1
+1df1f88 | 2023-08-31 | Vu Bui | Merge pull request #738 from facebookresearch/download-sh-continue
+49f0749 | 2023-08-31 | luccabb | Merge pull request #510 from SulimanSagindykov/patch-3
+6a9bec0 | 2023-08-31 | Vu Bui | Merge pull request #742 from NinoRisteski/patch-1
+ce27a98 | 2023-08-31 | Nino Risteski | Update README.md
+a102a59 | 2023-08-29 | samuelselvan | Update download.sh to resume download of partially downloaded files
+8cd608c | 2023-08-28 | rajveer43 | added remanjg docs
+7bcee80 | 2023-08-28 | rajveer43 | update comments in model.py
+cb8f042 | 2023-08-28 | rajveer43 | add docstrings
+1a24068 | 2023-08-25 | Joseph Spisak | Merge pull request #511 from SulimanSagindykov/patch-2
+e36eaa3 | 2023-08-25 | Joseph Spisak | Merge pull request #512 from SulimanSagindykov/patch-1
+a668741 | 2023-08-25 | Joseph Spisak | Merge pull request #703 from yanxiyue/main
+c25b02d | 2023-08-22 | yanxiyue | fix max_batch_size for chat example
+ea9f33d | 2023-08-11 | ruanslv | Merge pull request #664 from jspisak/main-2
+008385a | 2023-08-11 | Joseph Spisak | Update UPDATES.md
+14441f1 | 2023-08-09 | huy-ha | still return log probs when no completion required
+9eb31e5 | 2023-08-09 | MarcoSteinke | fix line separators in download.sh for wsl2
+14dcd8e | 2023-08-08 | huy-ha | compute token logprobs after completed token is sampled
+82ce861 | 2023-08-07 | Ubuntu | updates
+a511b0d | 2023-08-04 | ruanslv | Merge pull request #626 from facebookresearch/system
+d09f581 | 2023-08-04 | Ubuntu | add PR number
+a971c41 | 2023-08-04 | Ubuntu | system prompt update
+99e19d4 | 2023-07-22 | Ikko Eltociear Ashimine | Update README.md
+3cd7ef6 | 2023-07-21 | Daniel Lo Nigro | Remove linkshim workaround from README
+f5af1e5 | 2023-07-21 | Suliman Sagindykov | Update README.md
+d3b26d0 | 2023-07-21 | Suliman Sagindykov | Update MODEL_CARD.md
+7c0a08e | 2023-07-21 | Suliman Sagindykov | Update LICENSE
+3805003 | 2023-07-20 | Vinny Meller | Update download.sh to not use hardcoded bash path
+6c7fe27 | 2023-07-19 | Ubuntu | remove double-spacing
+03a0287 | 2023-07-19 | ruanslv | Merge pull request #377 from chrismarra/patch-1
+cc8a000 | 2023-07-19 | ruanslv | Merge pull request #403 from tianweidut/bug/fix-probs-reference
+37362e0 | 2023-07-19 | tianwei | fix local variable 'probs' referenced before assignment issue
+89092cd | 2023-07-18 | tomorrmato | added type hint in example code
+d2bc5e1 | 2023-07-18 | Chris Marra | Update README.md
+4d92db8 | 2023-07-18 | ruanslv | Merge pull request #365 from Daryl149/clarify-llama2-download-instructions
+f2f7cec | 2023-07-18 | ruanslv | Merge pull request #367 from janvdp/main
+1a2ce45 | 2023-07-18 | Jan Van de Poel | Force bash on download.sh
+bf99afb | 2023-07-18 | Daryl | Update README.md
+c7c0a30 | 2023-07-18 | Sergii Dymchenko | Remove unused Any import
+cfc3fc8 | 2023-07-18 | Ubuntu | fix generation URL
+a3afc5b | 2023-07-18 | Ubuntu | llama_v1 move
+6d4c0c2 | 2023-07-18 | Ubuntu | llama 2
+57b0eb6 | 2023-03-07 | Guillaume Lample | Merge pull request #142 from Loryhoof/patch-1
+bc981d5 | 2023-03-07 | Loryhoof | Added collon
+e22bdb2 | 2023-03-05 | timlacroix | Merge pull request #127 from MarkSchmidty/patch-1
+a81fb4e | 2023-03-05 | Mark Schmidt | changed max_seq_len 1024 to 2048
+2845af9 | 2023-03-04 | Guillaume Lample | added reference
+e6145a0 | 2023-03-03 | Timothee Lacroix | Add FAQ.md // add command line options
+76066b1 | 2023-03-02 | Guillaume Lample | Update README.md
+f4cd18f | 2023-03-02 | timlacroix | Merge pull request #46 from guangyusong/main
+1a9025e | 2023-03-02 | timlacroix | Update README.md
+53011c3 | 2023-03-02 | guangyusong | Fix typos in MODEL_CARD.md
+1076b9c | 2023-02-24 | Timothee Lacroix | Initial commit

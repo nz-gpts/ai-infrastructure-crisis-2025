@@ -1,0 +1,200 @@
+43badf217d | 2018-10-29 | Thomas Wolf | Initial commit3adf61e | 2025-11-12 | Andrej | Update README to mention nanochat and deprecation
+fe80428 | 2022-12-28 | Andrej Karpathy | first very bad commitcaec236b | 2025-12-11 | Haroon Qureshi | Make mj_loadModelBuffer a public API.
+1076b9c | 2023-02-24 | Timothee Lacroix | Initial commita8f32a0e9c | 2025-12-11 | Lysandre | Revert "🚨🚨🚨🚨🚨🚨🚨🚨🚨 default to `"auto"` dtype (#34919)"
+8ce2c920 | 2024-01-02 | Baruch Tabanpour | Add refsite transmission.
+aa4a0f8ef3 | 2024-01-02 | Daniel Bustamante Ospina | Remove fast tokenization warning in Data Collators (#28213)
+cad9f5c6cc | 2024-01-02 | Dean Wyatte | Update docs around mixing hf scheduler with deepspeed optimizer (#28223)
+87ae2a4632 | 2024-01-02 | frankenliu | fix bug:divide by zero in _maybe_log_save_evaluate() (#28251)
+502a10a6f8 | 2024-01-02 | hoshi-hiyouga | Fix trainer saving safetensors: metadata is None (#28219)
+1c7809e5 | 2024-01-02 | Kevin Zakka | Free `MjrContext` in Renderer destructor. Fixes #1186.
+5be46dfc09 | 2024-01-02 | Marco Carosi | [Whisper] Fix errors with MPS backend introduced by new code on word-level timestamps computation (#28288)
+e07ea625 | 2024-01-02 | Yuval Tassa | Add keyframes to humanoid model.
+6b8ec2588e | 2024-01-03 | Aaron Jimenez | [docs] Sort es/toctree.yml | Translate performance.md (#28262)
+63ec34f9 | 2024-01-03 | Alessio Quaglino | Add plugins to flex parent body if there are pinned vertices.
+45b1dfa342 | 2024-01-03 | Apsod | Remove token_type_ids from model_input_names (like #24788) (#28325)
+d83ff5eeff | 2024-01-03 | Connor Henderson | Add FastSpeech2Conformer (#23439)
+c2d283a64a | 2024-01-03 | dependabot[bot] | Bump tj-actions/changed-files from 22.2 to 41 in /.github/workflows (#28311)
+cd972bbe | 2024-01-03 | Kevin Zakka | Document humanoid model changes in changelog section of its README + minor cosmetic improvements.
+8d1b05bb | 2024-01-03 | Kevin Zakka | Fix markdown hyperlink.
+2940b934 | 2024-01-03 | Kevin Zakka | Fix typo in sdf plugin readme.
+6eba901d88 | 2024-01-03 | lain | fix documentation for zero_shot_object_detection (#28267)
+6860e953 | 2024-01-03 | Yuval Tassa | Improve docstring of `mju_eig3`.
+721e2d55 | 2024-01-04 | Baruch Tabanpour | Update tutorial notebook.
+5d36025ca1 | 2024-01-04 | Kevin Herro | README: install transformers from conda-forge channel (#28313)
+3ea8833676 | 2024-01-04 | Mayfsz | Translate contributing.md into Chinese (#28243)
+4a66c0d952 | 2024-01-04 | Sangbum Daniel Choi | enable training mask2former and maskformer for transformers trainer (#28277)
+35e9d2b223 | 2024-01-04 | Yoach Lacombe | Fix error in M4T feature extractor (#28340)
+7ce05f49 | 2024-01-04 | Yuval Tassa | Improve documentation of solver parameters.
+7226f3d2b0 | 2024-01-05 | Ella Charlaix | Update VITS modeling to enable ONNX export (#28141)
+feb92bf5 | 2024-01-05 | Erik Frey | MJX ray for planes, spheres, capsules, and boxes.
+57e9c83213 | 2024-01-05 | Fernando Rodriguez Sanchez | Fix pos_mask application and update tests accordingly (#27892)
+4ab5fb8941 | 2024-01-05 | hugo-syn | chore: Fix typo s/exclusivelly/exclusively/ (#28361)
+ca023a6f | 2024-01-05 | Nimrod Gileadi | Update EGL init code for Python 3.12.
+c59a33dd | 2024-01-05 | Nimrod Gileadi | Use std::string_view instead of absl::string_view in fixture.cc.
+899d8351f9 | 2024-01-05 | Sangbum Daniel Choi | [DETA] Improvement and Sync from DETA especially for training (#27990)
+cadf93a6fc | 2024-01-05 | Susnato Dhar |  fix FA2 when using quantization for remaining models (#28341)
+03b980990a | 2024-01-05 | yuanwu2017 | Don't check the device when device_map=auto (#28351)
+c79e1e5d | 2024-01-06 | Yuval Tassa | Add documentation image variants compatible with dark mode. Fixes #587
+3eddda1111 | 2024-01-07 | Susnato Dhar | [Phi2] Add support for phi2 models (#28211)
+5308b485 | 2024-01-07 | Yuval Tassa | Improve dark mode behavior of arrowhead matrix image.
+2272ab57a9 | 2024-01-08 | Avimanyu Bandyopadhyay | Remove shell=True from subprocess.Popen to Mitigate Security Risk (#28299)
+53cffeb33c | 2024-01-08 | Chi | Enhancing Code Readability and Maintainability with Simplified Activation Function Selection. (#28349)
+7d9d5cea55 | 2024-01-08 | Hz, Ji | remove two deprecated function (#28220)
+0c2121f99b | 2024-01-08 | Mohamed Abu El-Nasr | Fix building alibi tensor when num_heads is not a power of 2 (#28380)
+3b742ea84c | 2024-01-08 | NielsRogge | Add SigLIP (#26522)
+98dba52ccd | 2024-01-08 | Ondrej Major | Bugfix / ffmpeg input device (mic) not working on Windows (#27051)
+73c88012b7 | 2024-01-08 | Rosie Wood | Add segmentation map processing to SAM Image Processor (#27463)
+87a6cf41d0 | 2024-01-08 | zspo | [AttentionMaskConverter] fix sdpa unmask unattended (#28369)
+baaaa106 | 2024-01-09 | Alessio Quaglino | Fix typo in plugin docs.
+8604dd308d | 2024-01-09 | Patrick von Platen | [SDPA] Make sure attn mask creation is always done on CPU (#28400)
+357971ec36 | 2024-01-09 | Sangbum Daniel Choi | fix auxiliary loss training in DetrSegmentation (#28354)
+976189a6df | 2024-01-09 | Xuehai Pan | Fix initialization for missing parameters in `from_pretrained` under ZeRO-3 (#28245)
+5c7e11e010 | 2024-01-09 | Yih-Dar | update warning for image processor loading (#28209)
+b643c08c | 2024-01-09 | Yuval Tassa | Recommend CoACD for convex mesh decomposition in the docs.
+8247ddea | 2024-01-09 | Yuval Tassa | Recommend fTetWild for tetrahedral meshing in the docs.
+889353df | 2024-01-10 | Alessio Quaglino | Replace `meshid` and `hfieldid` with `mjCMesh` and `mjCHField` pointers in `mjCGeom`.
+8a9b0413 | 2024-01-10 | Alessio Quaglino | Replace `objid` with `obj` pointers.
+d4e8070a | 2024-01-10 | Baruch Tabanpour | Update doc about MJX meshes, fixes #1325.
+932ad8af7a | 2024-01-10 | dependabot[bot] | Bump fonttools from 4.31.1 to 4.43.0 in /examples/research_projects/decision_transformer (#28417)
+85ab6183 | 2024-01-10 | Erik Frey | Add ray filtering based on geom transparency and filter params.
+3724156b4d | 2024-01-10 | Francisco Kurucz | Fix load correct tokenizer in Mixtral model documentation (#28437)
+4df1d69634 | 2024-01-10 | HanHui | [BUG] BarkEosPrioritizerLogitsProcessor eos_token_id use list, tensor size mismatch (#28201)
+ee2482b6f8 | 2024-01-10 | Joao Gante | CI: limit natten version (#28432)
+371da98d | 2024-01-10 | Nimrod Gileadi | Avoid dynamically generated strings from being used as format strings in mjCError and mjXError.
+cbbe30749b | 2024-01-10 | Patrick von Platen | [Whisper] Fix slow test (#28407)
+ffd3710391 | 2024-01-10 | prasatee | Fix number of models in README.md (#28430)
+6c78bbcb83 | 2024-01-10 | Sparty | [docstring] Fix docstring for ErnieConfig, ErnieMConfig (#27029)
+fff8ca8e59 | 2024-01-10 | Susnato Dhar | update docs to add the `phi-2` example (#28392)
+cef2e40e0f | 2024-01-10 | Timothy Blattner | Fix for checkpoint rename race condition (#28364)
+0f2f0c634f | 2024-01-10 | Victor SANH | Fix `_merge_input_ids_with_image_features` for llava model (#28333)
+701298d2d3 | 2024-01-10 | Weiming Zhao | Use mmap option to load_state_dict (#28331)
+42515033 | 2024-01-10 | Yuval Tassa | Fix linter issues in user_objects_test.
+a777f52599 | 2024-01-10 | Zach Mueller | Skip now failing test in the Trainer tests (#28421)
+6015d0ad6c | 2024-01-10 | Zach Mueller | Support `DeepSpeed` when using auto find batch size (#28088)
+95091e1582 | 2024-01-11 | Alex Hedges | Set `cache_dir` for `evaluate.load()` in example scripts (#28422)
+66964c00f6 | 2024-01-11 | amyeroberts | Enable multi-label image classification in pipeline (#28433)
+56b30d9d | 2024-01-11 | Bálint Hodossy | Check the autolimits attribute before assigning default values for joint limitedness
+66a0cd3b | 2024-01-11 | Bálint Hodossy | Perform autolimit check on actuators
+3a00450d | 2024-01-11 | Bálint Hodossy | Rephrase condition for default limited definition so it's more intuitive
+5509058561 | 2024-01-11 | Gustavo de Rosa | [Phi] Extend implementation to use GQA/MQA. (#28163)
+d560637885 | 2024-01-11 | Harisankar Babu | Optionally preprocess segmentation maps for MobileViT (#28420)
+2a85345a23 | 2024-01-11 | ikkvix | Optimize the speed of the truncate_sequences function. (#28263)
+8205b2647c | 2024-01-11 | jiqing-feng | Assitant model may on a different device (#27995)
+e768616afa | 2024-01-11 | liangxuZhang | Fix load balancing loss func for mixtral (#28256)
+5d4d62d0a2 | 2024-01-11 | Matt | Correctly resolve trust_remote_code=None for AutoTokenizer (#28419)
+143451355c | 2024-01-11 | Matt | Fix docstring checker issues with PIL enums (#28450)
+59cd9de39d | 2024-01-11 | Yih-Dar | Byebye torch 1.10 (#28207)
+5fd5ef7624 | 2024-01-11 | Yih-Dar | Fix docker file (#28452)
+d019acb858 | 2024-01-11 | Yih-Dar | Use python 3.10 for docbuild (#28399)
+60cd7248 | 2024-01-11 | Yuval Tassa | Add zero vector shortcut to `mju_rotVecQuat`.
+79bcfecb | 2024-01-11 | Yuval Tassa | Tidy up `mj_kinematics` implementation.
+5d46c395 | 2024-01-12 | Alessio Quaglino | Increased SdfLib bounding box by 10% to prevent querying outside it during collision detection.
+4e36a6cd00 | 2024-01-12 | amyeroberts | Mark two logger tests as flaky (#28458)
+666a6f078c | 2024-01-12 | amyeroberts | Update metadata loading for oneformer (#28398)
+c45ef1c0d1 | 2024-01-12 | dependabot[bot] | Bump jinja2 from 2.11.3 to 3.1.3 in /examples/research_projects/decision_transformer (#28457)
+995a7ce9a8 | 2024-01-12 | Hankyeol Kyung | Fix broken link on page (#28451)
+19e83d174c | 2024-01-12 | jiqing-feng | Doc (#28431)
+dc01cf9c5e | 2024-01-12 | Joao Gante | Docs: add model paths (#28475)
+d026498830 | 2024-01-12 | Joao Gante | Generate: deprecate old public functions (#28478)
+afc45b13ca | 2024-01-12 | Joao Gante | Generate: refuse to save bad generation config files (#28477)
+4fb3d3a0f6 | 2024-01-12 | Joao Gante | TF: purge `TFTrainer` (#28483)
+2382706a1c | 2024-01-12 | Matt | Fix docstrings and update docstring checker error message (#28460)
+29a2b14206 | 2024-01-12 | Siddartha Naidu | Change progress logging to once across all nodes (#28373)
+edb314ae2b | 2024-01-12 | sungho-ham | Fix torch.ones usage in xlnet (#28471)
+dccf362 | 2024-01-12 | vinjn | Move enc to gloabal namespace
+07bdbebb48 | 2024-01-12 | Younes Belkada | [`Awq`] Add llava fused modules support (#28239)
+266c67b06a | 2024-01-12 | Younes Belkada | [`Mixtral` / `Awq`] Add mixtral fused modules for Awq  (#28240)
+e304f9769c | 2024-01-13 | Apoorv Saxena | Adding Prompt lookup decoding (#27775)
+bc72b4e2cd | 2024-01-13 | Joao Gante | Generate: fix candidate device placement (#28493)
+8f247d5e | 2024-01-15 | Abhishek Joshi | Merge branch 'google-deepmind:main' into usd-integration
+cab1c6bb | 2024-01-15 | Alessio Quaglino | Preallocate mjCBoundingVolumeHierarchy and avoid copies during MakeBVH.
+1e2e0b30 | 2024-01-15 | Alessio Quaglino | Remove all visual-only assets if `discardvisual` is selected, not only the geoms.
+acf698e2 | 2024-01-15 | Alessio Quaglino | Store pointer to index in mjCBoundingVolume if possible.
+edb170238f | 2024-01-15 | amyeroberts | SiLU activation wrapper for safe importing (#28509)
+735968b61c | 2024-01-15 | Boris Dayma | fix: sampling in flax keeps EOS (#28378)
+3b440921 | 2024-01-15 | Copybara-Service | Merge pull request #1268 from Balint-H:feature/unity-hmap-dyn
+c77f984d | 2024-01-15 | Copybara-Service | Merge pull request #1330 from Balint-H:fix/unity-joint-limits
+121641cab1 | 2024-01-15 | Francisco Kurucz | Fix paths to AI Sweden Models reference and model loading (#28423)
+7e0ddf89f4 | 2024-01-15 | Joao Gante | Generate: consolidate output classes (#28494)
+7c8dd88d13 | 2024-01-15 | Marc Sun | [GPTQ] Fix test (#28018)
+72db39c065 | 2024-01-15 | Matt | Add a use_safetensors arg to TFPreTrainedModel.from_pretrained() (#28511)
+78d767e3c8 | 2024-01-15 | Rishit Ratna | Fixed minor typos (#28489)
+366c03271e | 2024-01-15 | thedamnedrhino | Tokenizer kwargs in textgeneration pipe (#28362)
+ff86bc364d | 2024-01-15 | Timothy Cronin | improve dev setup comments and hints (#28495)
+881e966ace | 2024-01-15 | Tom Aarsen | [`chore`] Update warning text, a word was missing (#28017)
+2388b651 | 2024-01-15 | Tom Erez | Unity plug-in: Fix for when xml file has no <compiler> section.
+64bdbd888c | 2024-01-15 | Yih-Dar | Don't set `finetuned_from` if it is a local path  (#28482)
+1b9a2e4c80 | 2024-01-15 | Younes Belkada | [`core`/ FEAT] Add the possibility to push custom tags using `PreTrainedModel` itself (#28405)
+a573ac74fd | 2024-01-15 | yuanwu2017 | Add the XPU device check for pipeline mode (#28326)
+80674149 | 2024-01-16 | Alessio Quaglino | Allow pinning flexes to non-simple bodies. Fixes #1270.
+fe23256b73 | 2024-01-16 | Arthur | [`SpeechT5Tokenization`]  Add copied from and fix the `convert_tokens_to_string` to match the fast decoding scheme (#28522)
+96d0883103 | 2024-01-16 | Arthur | [`TokenizationRoformerFast`]  Fix the save and loading (#28527)
+716df5fb7e | 2024-01-16 | Arthur | [ `TokenizationUtils`] Fix `add_special_tokens` when the token is already there (#28520)
+a02fc405 | 2024-01-16 | Baruch Tabanpour | Add naive ray mesh implementation.
+ee922be3 | 2024-01-16 | Erik Frey | Benchmark improvements.
+02f8738ef8 | 2024-01-16 | fxmarty | Clearer error for SDPA when explicitely requested (#28006)
+66db33ddc8 | 2024-01-16 | fxmarty | Fix mismatching loading in from_pretrained with/without accelerate (#28414)
+002566f398 | 2024-01-16 | Hamza FILALI | Improving Training Performance and Scalability Documentation (#28497)
+f4f57f9dfa | 2024-01-16 | Joao Gante | Config: warning when saving generation kwargs in the model config (#28514)
+07ae53e6e7 | 2024-01-16 | Nima Yaqmuri | Fix/speecht5 bug (#28481)
+0cdcd7a2b3 | 2024-01-16 | regisss | Remove `task` arg in `load_dataset` in image-classification example (#28408)
+3c1907e6 | 2024-01-16 | Yuval Tassa | Fix rendering of links in documentation.
+45208a5f | 2024-01-16 | Yuval Tassa | Update Sphinx from 4.5.0 to 5.3.0 fixing broken docs build.
+98dda8ed03 | 2024-01-17 | Ahmed Elnaggar | Fix Switch Transformers When sparse_step = 1 (#28564)
+edc254b2 | 2024-01-17 | Baruch Tabanpour | Update MJX doc for #1344.
+2c1eebc121 | 2024-01-17 | fxmarty | Fix SDPA tests (#28552)
+a6adc05e6b | 2024-01-17 | fxmarty | symbolic_trace: add past_key_values, llama, sdpa support (#28447)
+d93ef7d751 | 2024-01-17 | Gustavo de Rosa | Fixes default value of `softmax_scale` in `PhiFlashAttention2`. (#28537)
+7142bdfa90 | 2024-01-17 | inisis | Add is_model_supported for fx (#28521)
+d6ffe74dfa | 2024-01-17 | Junyang Lin | Add qwen2 (#28436)
+71b05617 | 2024-01-17 | Kyle Bayes | Clean up formatting issues in user_objects.h
+09eb11a1bd | 2024-01-17 | Patrick von Platen | [Makefile] Exclude research projects from format (#28551)
+a14a584f | 2024-01-17 | Yuval Tassa | Fix bug in muscle length-gain curve. Fixes #1342
+2feefbc5 | 2024-01-17 | Yuval Tassa | Remove fine-grained timing from narrow-phase collision functions, delete `mjTIMER_COL_MID`.
+67a00a3a | 2024-01-17 | Yuval Tassa | Rename `mjMAXTHREADS` -> `mjMAXTHREAD` (consistency).
+8189977885 | 2024-01-18 | Arthur | [`Core Tokenization`] Support a fix for spm fast models (#26678)
+5d8eb93eee | 2024-01-18 | hugo-syn | chore: Fix multiple typos (#28574)
+c662c78c71 | 2024-01-18 | Jeremy Fowers | Fix the documentation checkpoint for xlm-roberta-xl (#28567)
+fa6d12f74f | 2024-01-18 | Lucas Thompson | Allow to train dinov2 with different dtypes like bf16 (#28504)
+0eaa5ea38e | 2024-01-18 | Sanchit Gandhi | [ASR Pipe] Update init to set model type and subsequently call parent init method (#28486)
+186aa6befe | 2024-01-18 | Sanchit Gandhi | [Whisper] Fix audio classification with weighted layer sum (#28563)
+619ecfe26f | 2024-01-18 | Sanchit Gandhi | [Whisper Tok] Move token ids to CPU when computing offsets (#28485)
+3005f96552 | 2024-01-18 | Yih-Dar | Save `Processor` (#27761)
+0754217c82 | 2024-01-18 | Yih-Dar | Use `LoggingLevel` context manager in 3 tests (#28575)
+a1668cc72e | 2024-01-18 | Yih-Dar | Use `weights_only` only if torch >= 1.13 (#28506)
+d2cdefb9ec | 2024-01-18 | Yoach Lacombe | Add new meta w2v2-conformer BERT-like model (#28165)
+772307be76 | 2024-01-18 | Yoach Lacombe | Making CTC training example more general (#28582)
+b2748a6efd | 2024-01-19 | Amy Roberts | v4.38.dev.0
+5cbaa233 | 2024-01-19 | Erik Frey | Remove TEST_FILES from MJX test_util.py.
+8db64367b2 | 2024-01-19 | Fanli Lin | Fix wrong xpu device in DistributedType.MULTI_XPU mode (#28386)
+5b7f4bc6c1 | 2024-01-19 | isaac-vidas | [`Llava`] Fix convert_llava_weights_to_hf.py script (#28570)
+948ffff407 | 2024-01-19 | Joao Gante | RWKV: raise informative exception when attempting to manipulate `past_key_values` (#28600)
+a1ddbdf7 | 2024-01-19 | Kyle Bayes | Add an implementation of a cache for assets for compilation speedups.
+d15781597a | 2024-01-19 | Matt | Allow add_tokens for ESM (#28535)
+faf03541e2 | 2024-01-19 | NielsRogge | [SigLIP] Don't pad by default (#28578)
+9efec11400 | 2024-01-19 | Ofir Zafrir | Fix `_speculative_sampling` implementation (#28508)
+690fe73f20 | 2024-01-19 | Patrick von Platen | [Whisper] Finalize batched SOTA long-form generation (#27658)
+d4fc1eb498 | 2024-01-19 | Saibo-creator | feat: Sequential beam search (#26304)
+3f69f415ad | 2024-01-19 | Sangbum Daniel Choi | Fix auxiliary loss related code in transformers (#28406)
+db9a7e9d3d | 2024-01-19 | Yih-Dar | Don't save `processor_config.json` if a processor has no extra attribute  (#28584)
+268fc1fdfa | 2024-01-19 | Yoach Lacombe | Add w2v2bert to pipeline (#28585)
+fea7c10b | 2024-01-19 | Yuval Tassa | Add `bvhactive` flag to `visual/global`. Fixes #1279.
+a23a3687 | 2024-01-19 | Yuval Tassa | clean up rollout.cc
+e0864ab7 | 2024-01-19 | Yuval Tassa | Fix formatting bugs in changelog.
+042e3c9c | 2024-01-20 | Bálint Hodossy | Reuse indices in mesh parsing, remove trailing nulls in mesh writing
+83f9196cc4 | 2024-01-21 | Arthur | [`GPTNeoX`] Fix BC issue with 4.36 (#28602)
+e547458c43 | 2024-01-22 | amyeroberts | Fix phi model doc checkpoint (#28581)
+590be773e6 | 2024-01-22 | amyeroberts | [`SigLIP`] Only import tokenizer if sentencepiece available (#28636)
+deb2b59073 | 2024-01-22 | bofeng huang | Fix lr_scheduler in no_trainer training scripts (#27872)
+dafd59512c | 2024-01-22 | isaac-vidas | [`Llava`] Update convert_llava_weights_to_hf.py script (#28617)
+f0acf7b6d8 | 2024-01-22 | jheitmann | Fix id2label assignment in run_classification.py (#28590)
+692c3c6b73 | 2024-01-22 | Matt | Add config tip to custom model docs (#28601)
+bf674153d3 | 2024-01-22 | Matt | Add missing key to TFLayoutLM signature (#28640)
+a35ea570a8 | 2024-01-22 | Sounak Dey | Update image_processing_deformable_detr.py (#28561)
+d336c56d94 | 2024-01-22 | Yih-Dar | Avoid root logger's level being changed (#28638)
+e201864bcb | 2024-01-22 | Younes Belkada | [`GPTNeoX`] Fix GPTNeoX + Flash Attention 2 issue (#28645)
+aceb52bd | 2024-01-22 | Yuval Tassa | Improvements to `mujoco.rollout`:
+27c79a0fb4 | 2024-01-23 | amyeroberts | Enable instantiating model with pretrained backbone weights (#28214)
+9a4521dd9b | 2024-01-23 | cmathw | Support single token decode for `CodeGenTokenizer` (#28628)
+039866094c | 2024-01-23 | Dave Berenbaum | integrations: fix DVCLiveCallback model logging (#28653)
+0a7be173 | 2024-01-23 | Erik Frey | Adds support for explicit dense/sparse mass matrices to MJX.

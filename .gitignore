@@ -1,0 +1,31 @@
+# Python
+*.pyc
+__pycache__/
+.venv/
+venv/
+*.egg-info/
+
+# System
+.DS_Store
+*.swp
+*.tmp
+
+# Full repo clones - DO NOT COMMIT THESE
+transformers/
+llama/
+mujoco/
+nanoGPT/
+
+# Keep only our analysis from the deep_pattern_engines subdirectory
+# This prevents accidentally committing the full clones
+
+# Logs
+logs/*.log
+
+# Sensitive
+*.key
+*.secret
+credentials/
+
+# Large files
+*.zip

@@ -1,0 +1,1164 @@
+=== Dissonance Index ===
+diffs/nanogpt_train.py:from contextlib import nullcontext
+diffs/nanogpt_train.py:ctx = nullcontext() if device_type == 'cpu' else torch.amp.autocast(device_type=device_type, dtype=ptdtype)
+diffs/nanogpt_train.py:            # the official way to do this is with model.no_sync() context manager, but
+diffs/nanogpt_train.py:            # looking at the source of that context manager, it just toggles this variable
+diffs/llama_vs_nano_training.diff:+from contextlib import nullcontext
+diffs/nanogpt_model.py:            # if the sequence context is growing too long we must crop it at block_size
+diffs/nanogpt_example_config.py:block_size = 256 # context of up to 256 previous characters
+diffs/transformers_tokenization_utils_base.py:        self._in_target_context_manager = False
+diffs/transformers_tokenization_utils_base.py:            # The context manager will send the inputs as normal texts and not text_target, but we shouldn't change the
+diffs/transformers_tokenization_utils_base.py:            if not self._in_target_context_manager and hasattr(self, "_switch_to_input_mode"):
+diffs/mujoco_include/mujoco/mjrender.h:typedef enum mjtFontScale_ {      // font scale, used at context creation
+diffs/mujoco_include/mujoco/mjrender.h://---------------------------------- mjrContext ----------------------------------------------------
+diffs/mujoco_include/mujoco/mjrender.h:struct mjrContext_ {                // custom OpenGL context
+diffs/mujoco_include/mujoco/mjrender.h:typedef struct mjrContext_ mjrContext;
+diffs/mujoco_include/mujoco/mujoco.h:// Set default mjrContext.
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_defaultContext(mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:// Allocate resources in custom OpenGL context; fontscale is mjtFontScale.
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_makeContext(const mjModel* m, mjrContext* con, int fontscale);
+diffs/mujoco_include/mujoco/mujoco.h:// Change font of existing context.
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_changeFont(int fontscale, mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:// Add Aux buffer with given index to context; free previous Aux buffer.
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_addAux(int index, int width, int height, int samples, mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:// Free resources in custom OpenGL context, set to default.
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_freeContext(mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_resizeOffscreen(int width, int height, mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_uploadTexture(const mjModel* m, const mjrContext* con, int texid);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_uploadMesh(const mjModel* m, const mjrContext* con, int meshid);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_uploadHField(const mjModel* m, const mjrContext* con, int hfieldid);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_restoreBuffer(const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_setBuffer(int framebuffer, mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:                          mjrRect viewport, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:                          mjrRect viewport, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:                          int flg_color, int flg_depth, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_setAux(int index, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_blitAux(int index, mjrRect src, int left, int bottom, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_text(int font, const char* txt, const mjrContext* con,
+diffs/mujoco_include/mujoco/mujoco.h:                       const char* overlay, const char* overlay2, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI mjrRect mjr_maxViewport(const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:                     const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_figure(mjrRect viewport, mjvFigure* fig, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjr_render(mjrRect viewport, mjvScene* scn, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjui_resize(mjUI* ui, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:                       const mjuiState* state, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI mjuiItem* mjui_event(mjUI* ui, mjuiState* state, const mjrContext* con);
+diffs/mujoco_include/mujoco/mujoco.h:MJAPI void mjui_render(mjUI* ui, const mjuiState* state, const mjrContext* con);
+diffs/mujoco_src/render/render_context.h:#ifndef MUJOCO_SRC_RENDER_RENDER_CONTEXT_H_
+diffs/mujoco_src/render/render_context.h:#define MUJOCO_SRC_RENDER_RENDER_CONTEXT_H_
+diffs/mujoco_src/render/render_context.h:// set default mjrContext
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_defaultContext(mjrContext* con);
+diffs/mujoco_src/render/render_context.h:// allocate resources in custom OpenGL context; fontscale is mjtFontScale
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_makeContext(const mjModel* m, mjrContext* con, int fontscale);
+diffs/mujoco_src/render/render_context.h:// Change font of existing context.
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_changeFont(int fontscale, mjrContext* con);
+diffs/mujoco_src/render/render_context.h:// Add Aux buffer with given index to context; free previous Aux buffer.
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_addAux(int index, int width, int height, int samples, mjrContext* con);
+diffs/mujoco_src/render/render_context.h:// free resources in custom OpenGL context, set to default
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_freeContext(mjrContext* con);
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_resizeOffscreen(int offwidth, int offheight, mjrContext* con);
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_uploadTexture(const mjModel* m, const mjrContext* con, int texid);
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_uploadMesh(const mjModel* m, const mjrContext* con, int meshid);
+diffs/mujoco_src/render/render_context.h:MJAPI void mjr_uploadHField(const mjModel* m, const mjrContext* con, int hfieldid);
+diffs/mujoco_src/render/render_context.h:#endif  // MUJOCO_SRC_RENDER_RENDER_CONTEXT_H_
+diffs/mujoco_src/render/render_gl2.h:MJAPI void mjr_restoreBuffer(const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:void mjr_textActual(int font, const char* txt, const mjrContext* con,
+diffs/mujoco_src/render/render_gl2.h:MJAPI void mjr_setBuffer(int framebuffer, mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:                          mjrRect viewport, const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:                          mjrRect viewport, const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:                          int flg_color, int flg_depth, const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:MJAPI void mjr_setAux(int index, const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:                       const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:MJAPI void mjr_text(int font, const char* txt, const mjrContext* con,
+diffs/mujoco_src/render/render_gl2.h:                       const char* overlay, const char* overlay2, const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:MJAPI mjrRect mjr_maxViewport(const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:                     const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.h:MJAPI void mjr_figure(mjrRect viewport, mjvFigure* fig, const mjrContext* con);
+diffs/mujoco_src/render/render_gl2.c:void mjr_setBuffer(int framebuffer, mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:void mjr_restoreBuffer(const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:static inline void flipDepthIfRequired(float* depth, mjrRect viewport, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:                    mjrRect viewport, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:                    mjrRect viewport, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:                    int flg_color, int flg_depth, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:void mjr_setAux(int index, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:void mjr_blitAux(int index, mjrRect src, int left, int bottom, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:void mjr_textActual(int font, const char* txt, const mjrContext* con,
+diffs/mujoco_src/render/render_gl2.c:void mjr_text(int font, const char* txt, const mjrContext* con,
+diffs/mujoco_src/render/render_gl2.c:                        const char* overlay, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:                 const char* overlay, const char* overlay2, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:mjrRect mjr_maxViewport(const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:               const mjrContext* con) {
+diffs/mujoco_src/render/render_gl2.c:static int textwidth(const mjrContext* con, const char* text) {
+diffs/mujoco_src/render/render_gl2.c:void mjr_figure(mjrRect viewport, mjvFigure* fig, const mjrContext* con) {
+diffs/mujoco_src/render/CMakeLists.txt:    render_context.c
+diffs/mujoco_src/render/CMakeLists.txt:    render_context.h
+diffs/mujoco_src/render/glad/glad.h:struct _cl_context;
+diffs/mujoco_src/render/glad/glad.h:#define GL_CONTEXT_FLAG_DEBUG_BIT 0x00000002
+diffs/mujoco_src/render/glad/glad.h:#define GL_CONTEXT_FLAG_DEBUG_BIT_KHR 0x00000002
+diffs/mujoco_src/render/glad/glad.c:  // library. Since mjr_makeContext cannot succeed without a valid OpenGL having already been
+diffs/mujoco_src/render/glad/glad.c:              "this most likely means that a valid OpenGL context has not been created before "
+diffs/mujoco_src/render/glad/glad.c:              "mjr_makeContext was called");
+diffs/mujoco_src/render/glad/glad.c:   * https://github.com/glfw/glfw/blob/master/src/context.c#L36
+diffs/mujoco_src/render/render_gl3.h:MJAPI void mjr_render(mjrRect viewport, mjvScene* scn, const mjrContext* con);
+diffs/mujoco_src/render/render_context.c:#include "render/render_context.h"
+diffs/mujoco_src/render/render_context.c://----------------------------- custom OpenGL context ----------------------------------------------
+diffs/mujoco_src/render/render_context.c:// set default mjrContext
+diffs/mujoco_src/render/render_context.c:void mjr_defaultContext(mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:  memset(con, 0, sizeof(mjrContext));
+diffs/mujoco_src/render/render_context.c:static void makePlane(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:static void makeMesh(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:void mjr_uploadMesh(const mjModel* m, const mjrContext* con, int meshid) {
+diffs/mujoco_src/render/render_context.c:static void makeHField(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:void mjr_uploadHField(const mjModel* m, const mjrContext* con, int hfieldid) {
+diffs/mujoco_src/render/render_context.c:static void makeBuiltin(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:static void makeShadow(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:static void makeOff(mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:static void makeFont(mjrContext* con, int fontscale) {
+diffs/mujoco_src/render/render_context.c:static void makeMaterial(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:static void makeTexture(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:void mjr_uploadTexture(const mjModel* m, const mjrContext* con, int texid) {
+diffs/mujoco_src/render/render_context.c:static void makeSkin(const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:  // save number of skins (so we can delete context without model)
+diffs/mujoco_src/render/render_context.c:void mjr_makeContext_offSize(const mjModel* m, mjrContext* con, int fontscale,
+diffs/mujoco_src/render/render_context.c:  mjr_freeContext(con);
+diffs/mujoco_src/render/render_context.c:    mju_warning("OpenGL error 0x%x in or before mjr_makeContext", err);
+diffs/mujoco_src/render/render_context.c:// allocate resources in custom OpenGL context
+diffs/mujoco_src/render/render_context.c:void mjr_makeContext(const mjModel* m, mjrContext* con, int fontscale) {
+diffs/mujoco_src/render/render_context.c:  mjr_makeContext_offSize(m, con, fontscale, 800, 600);
+diffs/mujoco_src/render/render_context.c:// Change font of existing context.
+diffs/mujoco_src/render/render_context.c:void mjr_changeFont(int fontscale, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:// Add Aux buffer to context; free previous Aux buffer.
+diffs/mujoco_src/render/render_context.c:void mjr_addAux(int index, int width, int height, int samples, mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:// free resources in custom OpenGL context
+diffs/mujoco_src/render/render_context.c:void mjr_freeContext(mjrContext* con) {
+diffs/mujoco_src/render/render_context.c:  mjr_defaultContext(con);
+diffs/mujoco_src/render/render_context.c:void mjr_resizeOffscreen(int width, int height, mjrContext* con) {
+diffs/mujoco_src/render/render_gl3.c:#include "render/render_context.h"
+diffs/mujoco_src/render/render_gl3.c:static void settexture(int type, int state, const mjrContext* con, const mjvGeom* geom) {
+diffs/mujoco_src/render/render_gl3.c:                       const mjvScene* scn, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl3.c:                          mjvScene* scn, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl3.c:static void initGL3(const mjvScene* scn, const mjrContext* con) {
+diffs/mujoco_src/render/render_gl3.c:static void setView(int view, mjrRect viewport, const mjvScene* scn, const mjrContext* con,
+diffs/mujoco_src/render/render_gl3.c:static inline int geomcmp(int* i, int* j, void* context) {
+diffs/mujoco_src/render/render_gl3.c:  mjvGeom* geom = (mjvGeom*) context;
+diffs/mujoco_src/render/render_gl3.c:void mjr_render(mjrRect viewport, mjvScene* scn, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static int SCL(int sz, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static void initOpenGL(const mjrRect* r, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static int textwidth(const char* text, const mjrContext* con, int limit) {
+diffs/mujoco_src/ui/ui_main.c:                     const float* rgb, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                         const float* rgb, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                          const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                        const mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                     const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                       const mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                            const mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                     const mjuiState* ins, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static void makeradioline(const mjuiItem* it, const mjrContext* con, int* sep) {
+diffs/mujoco_src/ui/ui_main.c:                         const mjuiState* ins, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                      const mjuiState* ins, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:void scrollrect(mjrRect rect, const mjUI* ui, const mjrContext* con,
+diffs/mujoco_src/ui/ui_main.c:static void findmouse(const mjUI* ui, const mjuiState* ins, const mjrContext* con,
+diffs/mujoco_src/ui/ui_main.c:                      const mjuiState* ins, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static void revealcursor(mjrRect r, mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static void setcursor(mjrRect r, mjUI* ui, const mjuiState* ins, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:static void tryresize(mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:void mjui_resize(mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                         const mjUI* ui, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:                 const mjuiState* state, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:mjuiItem* mjui_event(mjUI* ui, mjuiState* state, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.c:void mjui_render(mjUI* ui, const mjuiState* state, const mjrContext* con) {
+diffs/mujoco_src/ui/ui_main.h:MJAPI void mjui_resize(mjUI* ui, const mjrContext* con);
+diffs/mujoco_src/ui/ui_main.h:                       const mjuiState* state, const mjrContext* con);
+diffs/mujoco_src/ui/ui_main.h:MJAPI mjuiItem* mjui_event(mjUI* ui, mjuiState* state, const mjrContext* con);
+diffs/mujoco_src/ui/ui_main.h:MJAPI void mjui_render(mjUI* ui, const mjuiState* state, const mjrContext* con);
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:#include <pxr/base/tf/callContext.h>
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:using pxr::TfCallContext;
+diffs/mujoco_src/experimental/platform/window.cc:  ImGui::CreateContext();
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_ES);
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GLContext gl_context = SDL_GL_CreateContext(sdl_window_);
+diffs/mujoco_src/experimental/platform/window.cc:    SDL_GL_MakeCurrent(sdl_window_, gl_context);
+diffs/mujoco_src/experimental/platform/renderer.cc:Renderer::Renderer(MakeContextFn make_context_fn)
+diffs/mujoco_src/experimental/platform/renderer.cc:    : make_context_fn_(make_context_fn) {
+diffs/mujoco_src/experimental/platform/renderer.cc:    mjr_defaultContext(&render_context_);
+diffs/mujoco_src/experimental/platform/renderer.cc:    make_context_fn_(model, &render_context_);
+diffs/mujoco_src/experimental/platform/renderer.cc:    mjr_freeContext(&render_context_);
+diffs/mujoco_src/experimental/platform/renderer.cc:  mjr_render(main_viewport, data ? &scene_ : nullptr, &render_context_);
+diffs/mujoco_src/experimental/platform/renderer.cc:  SaveScreenshotToWebp(width, height, &render_context_, filename);
+diffs/mujoco_src/experimental/platform/helpers.cc:void SaveScreenshotToWebp(int width, int height, mjrContext* con,
+diffs/mujoco_src/experimental/platform/renderer.h:  // Function that creates a mjrContext for the given model. We use a function
+diffs/mujoco_src/experimental/platform/renderer.h:  // to allow different mjrContext implementations to be created without
+diffs/mujoco_src/experimental/platform/renderer.h:  using MakeContextFn = std::function<void(const mjModel* m, mjrContext* con)>;
+diffs/mujoco_src/experimental/platform/renderer.h:  explicit Renderer(MakeContextFn make_context_fn);
+diffs/mujoco_src/experimental/platform/renderer.h:  // Returns the render context.
+diffs/mujoco_src/experimental/platform/renderer.h:  mjrContext& GetContext() { return render_context_; }
+diffs/mujoco_src/experimental/platform/renderer.h:  const mjrContext& GetContext() const { return render_context_; }
+diffs/mujoco_src/experimental/platform/renderer.h:  MakeContextFn make_context_fn_;
+diffs/mujoco_src/experimental/platform/renderer.h:  mjrContext render_context_;
+diffs/mujoco_src/experimental/platform/helpers.h:// Exports the current state of the mjrContext to a webp file.
+diffs/mujoco_src/experimental/platform/helpers.h:void SaveScreenshotToWebp(int width, int height, mjrContext* con,
+diffs/mujoco_src/experimental/studio/app.cc:#include "experimental/filament/render_context_filament.h"
+diffs/mujoco_src/experimental/studio/app.cc:  ImPlot::CreateContext();
+diffs/mujoco_src/experimental/studio/app.cc:  auto make_context_fn = [&](const mjModel* m, mjrContext* con) {
+diffs/mujoco_src/experimental/studio/app.cc:    mjr_makeContext(m, con, mjFONTSCALE_150);
+diffs/mujoco_src/experimental/studio/app.cc:    mjr_makeFilamentContext(m, con, &render_config);
+diffs/mujoco_src/experimental/studio/app.cc:  renderer_ = std::make_unique<platform::Renderer>(make_context_fn);
+diffs/mujoco_src/experimental/studio/app.cc:  fps_ = mjr_getFrameRate(&renderer_->GetContext());
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:#include "experimental/filament/render_context_filament.h"
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:#include "experimental/filament/filament/filament_context.h"
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:#if defined(TLS_FILAMENT_CONTEXT)
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:static thread_local mujoco::FilamentContext* g_filament_context = nullptr;
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:static mujoco::FilamentContext* g_filament_context = nullptr;
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:// Default asset loader to use when calling mjr_makeContext. This is only
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:// intended for basic backwards compatibility with the existing mjr_makeContext
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:// mjr_makeFilamentContext instead and provide your own asset loading callbacks.
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:static void CheckFilamentContext() {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  if (g_filament_context == nullptr) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:    mju_error("Missing context; did you call mjr_makeFilamentContext?");
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:void mjr_makeFilamentContext(const mjModel* m, mjrContext* con,
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  // TODO: Support multiple contexts and multiple threads. For now, we'll just
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  // assume a single, global context.
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  if (g_filament_context != nullptr) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:    mju_error("Context already exists!");
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  g_filament_context = new mujoco::FilamentContext(config, m, con);
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:void mjr_defaultContext(mjrContext* con) { memset(con, 0, sizeof(mjrContext)); }
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:void mjr_makeContext(const mjModel* m, mjrContext* con, int fontscale) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  mjr_freeContext(con);
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  mjr_makeFilamentContext(m, con, &cfg);
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:void mjr_freeContext(mjrContext* con) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  // mjr_freeContext may be called multiple times.
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  if (g_filament_context) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:    delete g_filament_context;
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:    g_filament_context = nullptr;
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  mjr_defaultContext(con);
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:void mjr_render(mjrRect viewport, mjvScene* scn, const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  CheckFilamentContext();
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  g_filament_context->Render(viewport, scn, con);
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:void mjr_uploadMesh(const mjModel* m, const mjrContext* con, int meshid) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  CheckFilamentContext();
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  g_filament_context->UploadMesh(m, meshid);
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:void mjr_uploadTexture(const mjModel* m, const mjrContext* con, int texid) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  CheckFilamentContext();
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  g_filament_context->UploadTexture(m, texid);
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:void mjr_uploadHField(const mjModel* m, const mjrContext* con, int hfieldid) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  CheckFilamentContext();
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  g_filament_context->UploadHeightField(m, hfieldid);
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:void mjr_setBuffer(int framebuffer, mjrContext* con) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  CheckFilamentContext();
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  g_filament_context->SetFrameBuffer(framebuffer);
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:                          const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  CheckFilamentContext();
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  g_filament_context->ReadPixels(viewport, rgb, depth);
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:                             const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  CheckFilamentContext();
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  return g_filament_context->UploadGuiImage(tex_id, pixels, width, height, bpp);
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:double mjr_getFrameRate(const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  CheckFilamentContext();
+diffs/mujoco_src/experimental/filament/render_context_filament.cc:  return g_filament_context->GetFrameRate();
+diffs/mujoco_src/experimental/filament/stubs.cc:void mjr_setAux(int index, const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/stubs.cc:void mjr_restoreBuffer(const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/stubs.cc:                 const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/stubs.cc:void mjr_changeFont(int fontscale, mjrContext* con) {
+diffs/mujoco_src/experimental/filament/stubs.cc:                mjrContext* con) {
+diffs/mujoco_src/experimental/filament/stubs.cc:void mjr_resizeOffscreen(int width, int height, mjrContext* con) {
+diffs/mujoco_src/experimental/filament/stubs.cc:                    mjrRect viewport, const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/stubs.cc:                    const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/stubs.cc:void mjr_text(int font, const char* txt, const mjrContext* con, float x,
+diffs/mujoco_src/experimental/filament/stubs.cc:                 const char* overlay2, const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/stubs.cc:               const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/stubs.cc:void mjr_figure(mjrRect viewport, mjvFigure* fig, const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/stubs.cc:mjrRect mjr_maxViewport(const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/render_context_filament.h:#ifndef MUJOCO_SRC_EXPERIMENTAL_FILAMENT_RENDER_CONTEXT_FILAMENT_H_
+diffs/mujoco_src/experimental/filament/render_context_filament.h:#define MUJOCO_SRC_EXPERIMENTAL_FILAMENT_RENDER_CONTEXT_FILAMENT_H_
+diffs/mujoco_src/experimental/filament/render_context_filament.h:void mjr_makeFilamentContext(const mjModel* m, mjrContext* con,
+diffs/mujoco_src/experimental/filament/render_context_filament.h:MJAPI void mjr_defaultContext(mjrContext* con);
+diffs/mujoco_src/experimental/filament/render_context_filament.h:MJAPI void mjr_makeContext(const mjModel* m, mjrContext* con, int fontscale);
+diffs/mujoco_src/experimental/filament/render_context_filament.h:MJAPI void mjr_freeContext(mjrContext* con);
+diffs/mujoco_src/experimental/filament/render_context_filament.h:MJAPI void mjr_render(mjrRect viewport, mjvScene* scn, const mjrContext* con);
+diffs/mujoco_src/experimental/filament/render_context_filament.h:MJAPI void mjr_uploadMesh(const mjModel* m, const mjrContext* con, int meshid);
+diffs/mujoco_src/experimental/filament/render_context_filament.h:MJAPI void mjr_uploadTexture(const mjModel* m, const mjrContext* con, int texid);
+diffs/mujoco_src/experimental/filament/render_context_filament.h:MJAPI void mjr_setBuffer(int framebuffer, mjrContext* con);
+diffs/mujoco_src/experimental/filament/render_context_filament.h:                          const mjrContext* con);
+diffs/mujoco_src/experimental/filament/render_context_filament.h:double mjr_getFrameRate(const mjrContext* con);
+diffs/mujoco_src/experimental/filament/render_context_filament.h:                             const mjrContext* con);
+diffs/mujoco_src/experimental/filament/render_context_filament.h:#endif  // MUJOCO_SRC_EXPERIMENTAL_FILAMENT_RENDER_CONTEXT_FILAMENT_H_
+diffs/mujoco_src/experimental/filament/CMakeLists.txt:        render_context_filament.h
+diffs/mujoco_src/experimental/filament/CMakeLists.txt:        render_context_filament.cc
+diffs/mujoco_src/experimental/filament/CMakeLists.txt:        filament/filament_context.cc
+diffs/mujoco_src/experimental/filament/CMakeLists.txt:        filament/filament_context.h
+diffs/mujoco_src/experimental/filament/filament/scene_view.h:  void UpdateScene(const mjrContext* context, const mjvScene* scene);
+diffs/mujoco_src/experimental/filament/filament/object_manager.h:#include "experimental/filament/render_context_filament.h"
+diffs/mujoco_src/experimental/filament/filament/object_manager.h:// Creates and owns various filament objects based on the data in a mjrContext.
+diffs/mujoco_src/experimental/filament/filament/filament_context.h:#ifndef MUJOCO_SRC_EXPERIMENTAL_FILAMENT_FILAMENT_FILAMENT_CONTEXT_H_
+diffs/mujoco_src/experimental/filament/filament/filament_context.h:#define MUJOCO_SRC_EXPERIMENTAL_FILAMENT_FILAMENT_FILAMENT_CONTEXT_H_
+diffs/mujoco_src/experimental/filament/filament/filament_context.h:#include "experimental/filament/render_context_filament.h"
+diffs/mujoco_src/experimental/filament/filament/filament_context.h:class FilamentContext {
+diffs/mujoco_src/experimental/filament/filament/filament_context.h:  FilamentContext(const mjrFilamentConfig* config, const mjModel* model,
+diffs/mujoco_src/experimental/filament/filament/filament_context.h:                  mjrContext* con);
+diffs/mujoco_src/experimental/filament/filament/filament_context.h:  ~FilamentContext();
+diffs/mujoco_src/experimental/filament/filament/filament_context.h:              const mjrContext* con);
+diffs/mujoco_src/experimental/filament/filament/filament_context.h:  FilamentContext(const FilamentContext&) = delete;
+diffs/mujoco_src/experimental/filament/filament/filament_context.h:  FilamentContext& operator=(const FilamentContext&) = delete;
+diffs/mujoco_src/experimental/filament/filament/filament_context.h:  mjrContext* context_ = nullptr;
+diffs/mujoco_src/experimental/filament/filament/filament_context.h:#endif  // MUJOCO_SRC_EXPERIMENTAL_FILAMENT_FILAMENT_FILAMENT_CONTEXT_H_
+diffs/mujoco_src/experimental/filament/filament/gui_view.cc:        // ImGui's lifecycle is independent of the filament context lifecycle.
+diffs/mujoco_src/experimental/filament/filament/gui_view.cc:        // As such, it is possible to destroy and create a new filament context
+diffs/mujoco_src/experimental/filament/filament/scene_view.cc:void SceneView::UpdateScene(const mjrContext* context, const mjvScene* scene) {
+diffs/mujoco_src/experimental/filament/filament/object_manager.cc:#include "experimental/filament/render_context_filament.h"
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:#include "experimental/filament/filament/filament_context.h"
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:#include "experimental/filament/render_context_filament.h"
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:FilamentContext::FilamentContext(const mjrFilamentConfig* config,
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:                                 const mjModel* model, mjrContext* con)
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    : config_(*config), context_(con), model_(model) {
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:  // Copy parameters from model to context.
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->shadowClip = model_->stat.extent * model_->vis.map.shadowclip;
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->shadowScale = model_->vis.map.shadowscale;
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->offWidth = model_->vis.global.offwidth;
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->offHeight = model_->vis.global.offheight;
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->offSamples = model_->vis.quality.offsamples;
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->fogStart =
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->fogEnd = (float)(model_->stat.extent * model_->vis.map.fogend);
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->fogRGBA[0] = model_->vis.rgba.fog[0];
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->fogRGBA[1] = model_->vis.rgba.fog[1];
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->fogRGBA[2] = model_->vis.rgba.fog[2];
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->fogRGBA[3] = model_->vis.rgba.fog[3];
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->lineWidth = model_->vis.global.linewidth;
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->shadowSize = model_->vis.quality.shadowsize;
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->readPixelFormat = 0x1907;  // 0x1907 = GL_RGB;
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    context_->ntexture = model_->ntex;
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:      context_->textureType[i] = model_->tex_type[i];
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:FilamentContext::~FilamentContext() {
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:void FilamentContext::Render(const mjrRect& viewport, const mjvScene* scene,
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:                             const mjrContext* con) {
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:  if (con != context_) {
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:    mju_error("Unexpected context.");
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:void FilamentContext::SetFrameBuffer(int framebuffer) {
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:void FilamentContext::PrepareRenderTargets(int width, int height) {
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:void FilamentContext::DestroyRenderTargets() {
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:void FilamentContext::ReadPixels(mjrRect viewport, unsigned char* rgb,
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:void FilamentContext::UploadMesh(const mjModel* model, int id) {
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:void FilamentContext::UploadTexture(const mjModel* model, int id) {
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:void FilamentContext::UploadHeightField(const mjModel* model, int id) {
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:uintptr_t FilamentContext::UploadGuiImage(uintptr_t tex_id,
+diffs/mujoco_src/experimental/filament/filament/filament_context.cc:double FilamentContext::GetFrameRate() const {
+diffs/mujoco_src/engine/engine_collision_convex.c:  config.context = (void*)obj1->data;
+diffs/mujoco_src/engine/engine_collision_convex.c:    config.context = (void*)d;
+diffs/mujoco_src/engine/engine_solver.c:// CG context
+diffs/mujoco_src/engine/engine_solver.c:struct _mjCGContext {
+diffs/mujoco_src/engine/engine_solver.c:typedef struct _mjCGContext mjCGContext;
+diffs/mujoco_src/engine/engine_solver.c:// set sizes and pointers to mjData arrays in mjCGContext
+diffs/mujoco_src/engine/engine_solver.c:static void CGpointers(const mjModel* m, const mjData* d, mjCGContext* ctx, int island) {
+diffs/mujoco_src/engine/engine_solver.c:  memset(ctx, 0, sizeof(mjCGContext));
+diffs/mujoco_src/engine/engine_solver.c:// allocate fixed-size arrays in mjCGContext
+diffs/mujoco_src/engine/engine_solver.c:static void CGallocate(mjData* d, mjCGContext* ctx, int flg_Newton) {
+diffs/mujoco_src/engine/engine_solver.c:static void CGupdateConstraint(mjCGContext* ctx, int flg_HessianCone) {
+diffs/mujoco_src/engine/engine_solver.c:static void CGupdateGradient(mjCGContext* ctx, int flg_Newton) {
+diffs/mujoco_src/engine/engine_solver.c:static void CGprepare(mjCGContext* ctx) {
+diffs/mujoco_src/engine/engine_solver.c:static void CGeval(mjCGContext* ctx, mjCGPnt* p) {
+diffs/mujoco_src/engine/engine_solver.c:static int updateBracket(mjCGContext* ctx,
+diffs/mujoco_src/engine/engine_solver.c:static mjtNum CGsearch(mjCGContext* ctx, mjtNum tolerance, mjtNum ls_iterations) {
+diffs/mujoco_src/engine/engine_solver.c:static void MakeHessian(mjData* d, mjCGContext* ctx) {
+diffs/mujoco_src/engine/engine_solver.c:static void HessianCone(mjData* d, mjCGContext* ctx);
+diffs/mujoco_src/engine/engine_solver.c:static void FactorizeHessian(mjData* d, mjCGContext* ctx, int flg_recompute) {
+diffs/mujoco_src/engine/engine_solver.c:static void HessianCone(mjData* d, mjCGContext* ctx) {
+diffs/mujoco_src/engine/engine_solver.c:static void HessianIncremental(mjData* d, mjCGContext* ctx, const int* oldstate) {
+diffs/mujoco_src/engine/engine_solver.c:  mjCGContext ctx;
+diffs/mujoco_src/engine/engine_solver.c:  // make context
+diffs/mujoco_src/engine/engine_sort.h:#define _mjINSERTION_SORT(type, arr, start, end, cmp, context)                                     \
+diffs/mujoco_src/engine/engine_sort.h:    for (; k >= start && cmp(arr + k, &tmp, context) > 0; k--) {                                   \
+diffs/mujoco_src/engine/engine_sort.h:#define _mjMERGE(type, src, dest, start, mid, end, cmp, context)                                   \
+diffs/mujoco_src/engine/engine_sort.h:    if (cmp(src + i, src + j, context) <= 0) {                                                     \
+diffs/mujoco_src/engine/engine_sort.h:// void name(type* arr, type* buf, int n, void* context)
+diffs/mujoco_src/engine/engine_sort.h:  static inline void name(type* arr, type* buf, int n, void* context) {                            \
+diffs/mujoco_src/engine/engine_sort.h:      _mjINSERTION_SORT(type, arr, start, end, cmp, context);                                      \
+diffs/mujoco_src/engine/engine_sort.h:          _mjMERGE(type, src, dest, start, mid, end, cmp, context);                                \
+diffs/mujoco_src/engine/engine_sort.h:  } static inline void name(type* arr, type* buf, int n, void* context)
+diffs/mujoco_src/engine/engine_sort.h:#define _mjSIFT_DOWN(type, buf, start, end, cmp, context)                                          \
+diffs/mujoco_src/engine/engine_sort.h:    if (cmp(buf + swap, buf + child, context) < 0) swap = child;                                   \
+diffs/mujoco_src/engine/engine_sort.h:    if (child + 1 < end && cmp(buf + swap, buf + child + 1, context) < 0) swap = child + 1;        \
+diffs/mujoco_src/engine/engine_sort.h:  static inline void name(type* arr, type* buf, int n, int k, void* context) {                     \
+diffs/mujoco_src/engine/engine_sort.h:    for (int j = (k - 2) / 2; j >= 0; j--) _mjSIFT_DOWN(type, buf, j, k, cmp, context);            \
+diffs/mujoco_src/engine/engine_sort.h:      if (cmp(arr + i, buf, context) < 0) {                                                        \
+diffs/mujoco_src/engine/engine_sort.h:        _mjSIFT_DOWN(type, buf, 0, k, cmp, context);                                               \
+diffs/mujoco_src/engine/engine_sort.h:    _mjINSERTION_SORT(type, arr, 0, k, cmp, context);                                              \
+diffs/mujoco_src/engine/engine_sort.h:  } static inline void name(type* arr, type* buf, int n, int k, void* context)
+diffs/mujoco_src/engine/engine_sensor.c:static int ContactInfoCompare(const ContactInfo* a, const ContactInfo* b, void* context) {
+diffs/mujoco_src/engine/engine_collision_driver.c:static inline int contactcompare(const mjContact* c1, const mjContact* c2, void* context) {
+diffs/mujoco_src/engine/engine_collision_driver.c:  const mjModel* m = (const mjModel*) context;
+diffs/mujoco_src/engine/engine_collision_driver.c:static inline int SAPcmp(mjtSAP* obj1, mjtSAP* obj2, void* context) {
+diffs/mujoco_src/engine/engine_collision_driver.c:static inline int uintcmp(int* i, int* j, void* context) {
+diffs/mujoco_src/engine/engine_collision_gjk.h:  void* context;       // opaque data pointer passed to callbacks
+diffs/mujoco_src/engine/engine_collision_gjk.h:  void*(*alloc)(void* context, size_t nbytes);
+diffs/mujoco_src/engine/engine_collision_gjk.h:  void(*free)(void* context, void* buffer);
+diffs/mujoco_src/engine/engine_collision_gjk.c:      buffer = config->alloc(config->context, nbytes);
+diffs/mujoco_src/engine/engine_collision_gjk.c:    config->free(config->context, buffer);
+diffs/nanogpt_model.py:    def generate(self, idx, max_new_tokens, temperature=1.0, top_k=None):
+diffs/nanogpt_model.py:            # pluck the logits at the final step and scale by desired temperature
+diffs/nanogpt_model.py:            logits = logits[:, -1, :] / temperature
+diffs/mujoco_src/experimental/filament/filament/scene_view.cc:      .whiteBalance(opts.temperature, opts.tint)
+diffs/mujoco_src/experimental/filament/filament/scene_view.cc:  cg.temperature = ReadElement(m, "filament.out.temperature", cg.temperature);
+diffs/mujoco_src/experimental/filament/filament/imgui_editor.cc:  changed |= Ui("Temperature", &opts.temperature,
+diffs/mujoco_src/experimental/filament/filament/imgui_editor.cc:  opts.temperature = std::clamp(opts.temperature, -1.0f, 1.0f);
+diffs/mujoco_src/experimental/filament/filament/color_grading_options.h:  float temperature = 0.0f;
+diffs/transformers_configuration_utils.py:            "temperature": 1.0,
+diffs/mujoco_include/mujoco/mjxmacro.h:    X( gravity,         3       )   \
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// If this flag is enabled, gravity compensation applied to this joint is
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// (mjData.qfrc_passive). Notionally, this means that gravity compensation is
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// including gravity compensation, is guaranteed to not exceed the specified
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  /// \brief "mjc:flag:gravity"
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  const TfToken mjcFlagGravity;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  // GRAVITYFLAG
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  /// | Declaration | `uniform bool mjc:flag:gravity = 1` |
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  UsdAttribute GetGravityFlagAttr() const;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  /// See GetGravityFlagAttr(), and also
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  UsdAttribute CreateGravityFlagAttr(VtValue const& defaultValue = VtValue(),
+diffs/mujoco_include/mujoco/mjspec.h:  double gravcomp;                 // gravity compensation
+diffs/mujoco_include/mujoco/mjdata.h:  mjtNum* qfrc_gravcomp;     // passive gravity compensation force               (nv x 1)
+diffs/mujoco_include/mujoco/mujoco.h:// Compute qfrc_passive from spring-dampers, gravity compensation and fluid forces.
+diffs/mujoco_include/mujoco/mjmodel.h:  mjDSBL_GRAVITY      = 1<<7,     // gravitational forces
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum gravity[3];              // gravitational acceleration
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum*   body_gravcomp;        // antigravity force, units of body weight  (nbody x 1)
+diffs/mujoco_src/user/user_model.cc:                        mjDSBL_GRAVITY | mjDSBL_ACTUATION;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:void SetGravityAttributes(
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    std::optional<pxr::GfVec3f> gravity_direction = std::nullopt,
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    std::optional<float> gravity_magnitude = std::nullopt) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  // Parse gravity and gravity direction.
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (!gravity_direction.has_value()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:      gravity_direction = pxr::GfVec3f(0, -1, 0);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:      gravity_direction = pxr::GfVec3f(0, 0, -1);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (!gravity_magnitude.has_value()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    gravity_magnitude = 9.81f / pxr::UsdGeomGetStageMetersPerUnit(stage);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  pxr::GfVec3f gravity = gravity_direction.value() * gravity_magnitude.value();
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  spec->option.gravity[0] = gravity[0];
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  spec->option.gravity[1] = gravity[1];
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  spec->option.gravity[2] = gravity[2];
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  std::optional<pxr::GfVec3f> gravity_direction = std::nullopt;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  std::optional<float> gravity_magnitude = std::nullopt;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  // Parse gravity and gravity direction.
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  auto gravity_direction_attr = physics_scene.GetGravityDirectionAttr();
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (gravity_direction_attr.HasAuthoredValue()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    pxr::GfVec3f authored_gravity_dir;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    gravity_direction_attr.Get(&authored_gravity_dir);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    gravity_direction = authored_gravity_dir;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  auto gravity_magnitude_attr = physics_scene.GetGravityMagnitudeAttr();
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (gravity_magnitude_attr.HasAuthoredValue()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    float authored_gravity_magnitude;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    gravity_magnitude_attr.Get(&authored_gravity_magnitude);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    gravity_magnitude = authored_gravity_magnitude;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  SetGravityAttributes(spec, stage, gravity_direction, gravity_magnitude);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  bool gravity_flag;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  mjc_physics_scene.GetGravityFlagAttr().Get(&gravity_flag);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  spec->option.disableflags |= (!gravity_flag ? mjDSBL_GRAVITY : 0);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    // If there is no physics scene we still need to infer the gravity vector
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    mujoco::usd::SetGravityAttributes(spec, stage);
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:    pxr::GfVec3f gravity(spec_->option.gravity[0], spec_->option.gravity[1],
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                         spec_->option.gravity[2]);
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:    // Normalize will normalize gravity in place and return the magnitude before
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:    float gravity_magnitude = gravity.Normalize();
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                          pxr::UsdPhysicsTokens->physicsGravityMagnitude,
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                          gravity_magnitude);
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                          pxr::UsdPhysicsTokens->physicsGravityDirection,
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                          gravity);
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:        {MjcPhysicsTokens->mjcFlagGravity, mjDSBL_GRAVITY},
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:UsdAttribute MjcPhysicsSceneAPI::GetGravityFlagAttr() const {
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:  return GetPrim().GetAttribute(MjcPhysicsTokens->mjcFlagGravity);
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:UsdAttribute MjcPhysicsSceneAPI::CreateGravityFlagAttr(
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:      MjcPhysicsTokens->mjcFlagGravity, SdfValueTypeNames->Bool,
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:      MjcPhysicsTokens->mjcFlagGravity,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:      mjcFlagGravity("mjc:flag:gravity", TfToken::Immortal),
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:                 mjcFlagGravity,
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:    uniform bool mjc:flag:gravity = 1 (
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        displayName = "Gravity Toggle"
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = "If this flag is enabled, gravity compensation applied to this joint is added to actuator forces (mjData.qfrc_actuator) rather than passive forces (mjData.qfrc_passive). Notionally, this means that gravity compensation is the result of a control system rather than natural buoyancy. In practice, enabling this flag is useful when joint-level actuator force clamping is used. In this case, the total actuation force applied on a joint, including gravity compensation, is guaranteed to not exceed the specified limits. See Force limits and actuatorfrcrange for more details on this type of force limit."
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:    uniform bool mjc:flag:gravity = True (
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:            string apiName = "GravityFlag"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        displayName = "Gravity Toggle"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = "If this flag is enabled, gravity compensation applied to this joint is added to actuator forces (mjData.qfrc_actuator) rather than passive forces (mjData.qfrc_passive). Notionally, this means that gravity compensation is the result of a control system rather than natural buoyancy. In practice, enabling this flag is useful when joint-level actuator force clamping is used. In this case, the total actuation force applied on a joint, including gravity compensation, is guaranteed to not exceed the specified limits. See Force limits and actuatorfrcrange for more details on this type of force limit."
+diffs/mujoco_src/experimental/platform/gui.cc:    ImGui_InputN("Gravity", opt.gravity, 3, {.width = w});
+diffs/mujoco_src/engine/engine_passive.c:// body-level gravity compensation, return 1 if any, 0 otherwise
+diffs/mujoco_src/engine/engine_passive.c:  if (!m->ngravcomp || mjDISABLED(mjDSBL_GRAVITY) || mju_norm3(m->opt.gravity) == 0) {
+diffs/mujoco_src/engine/engine_passive.c:  // apply per-body gravity compensation
+diffs/mujoco_src/engine/engine_passive.c:      mju_scl3(force, m->opt.gravity, -(m->body_mass[i]*m->body_gravcomp[i]));
+diffs/mujoco_src/engine/engine_passive.c:  // gravity compensation
+diffs/mujoco_src/engine/engine_passive.c:      // skip if no gravity compensation
+diffs/mujoco_src/engine/engine_passive.c:        // skip if gravity compensation added via actuators
+diffs/mujoco_src/engine/engine_passive.c:        // add gravity compensation force
+diffs/mujoco_src/engine/engine_forward.c:  // actuator-level gravity compensation
+diffs/mujoco_src/engine/engine_forward.c:  if (m->ngravcomp && !mjDISABLED(mjDSBL_GRAVITY) && mju_norm3(m->opt.gravity)) {
+diffs/mujoco_src/engine/engine_sensor.c:  // init potential energy:  -sum_i body(i).mass * mju_dot(body(i).pos, gravity)
+diffs/mujoco_src/engine/engine_sensor.c:  if (!mjDISABLED(mjDSBL_GRAVITY)) {
+diffs/mujoco_src/engine/engine_sensor.c:      d->energy[0] -= m->body_mass[i] * mju_dot3(m->opt.gravity, d->xipos+3*i);
+diffs/mujoco_src/engine/engine_vis_visualize.c:      !mjDISABLED(mjDSBL_GRAVITY)           &&    // gravity enabled
+diffs/mujoco_src/engine/engine_vis_visualize.c:      mju_norm3(m->opt.gravity) > mjMINVAL  &&    // gravity strictly nonzero
+diffs/mujoco_src/engine/engine_vis_visualize.c:    // special case handling of string-like tendons under gravity
+diffs/mujoco_src/engine/engine_vis_visualize.c:      int npoints = mjv_catenary(x0, x1, m->opt.gravity, length, catenary, ncatenary);
+diffs/mujoco_src/engine/engine_vis_visualize.c:int mjv_catenary(const mjtNum x0[3], const mjtNum x1[3], const mjtNum gravity[3], mjtNum length,
+diffs/mujoco_src/engine/engine_vis_visualize.c:    mju_scl3(up, gravity, -1);
+diffs/mujoco_src/engine/engine_core_smooth.c:  // set world acceleration to -gravity
+diffs/mujoco_src/engine/engine_core_smooth.c:  if (!mjDISABLED(mjDSBL_GRAVITY)) {
+diffs/mujoco_src/engine/engine_core_smooth.c:    mju_scl3(loc_cacc+3, m->opt.gravity, -1);
+diffs/mujoco_src/engine/engine_core_smooth.c:  // clear cacc, set world acceleration to -gravity
+diffs/mujoco_src/engine/engine_core_smooth.c:  if (!mjDISABLED(mjDSBL_GRAVITY)) {
+diffs/mujoco_src/engine/engine_core_smooth.c:    mju_scl3(d->cacc+3, m->opt.gravity, -1);
+diffs/mujoco_src/engine/engine_vis_visualize.h:int mjv_catenary(const mjtNum x0[3], const mjtNum x1[3], const mjtNum gravity[3], mjtNum length,
+diffs/mujoco_src/engine/engine_setconst.c:  // compute ngravcomp: number of bodies with gravity compensation
+diffs/mujoco_src/engine/engine_support.c:  "Gravity",
+diffs/mujoco_src/engine/engine_init.c:  opt->gravity[0]         = 0;
+diffs/mujoco_src/engine/engine_init.c:  opt->gravity[1]         = 0;
+diffs/mujoco_src/engine/engine_init.c:  opt->gravity[2]         = -9.81;
+diffs/mujoco_src/xml/xml_native_reader.cc:        "ccd_tolerance", "sleep_tolerance", "gravity", "wind", "magnetic", "density", "viscosity",
+diffs/mujoco_src/xml/xml_native_reader.cc:            "spring", "damper", "gravity", "clampctrl", "warmstart", "filterparent", "actuation",
+diffs/mujoco_src/xml/xml_native_reader.cc:  ReadAttr(section, "gravity", 3, opt->gravity, text);
+diffs/mujoco_src/xml/xml_native_reader.cc:    READDSBL("gravity",      mjDSBL_GRAVITY)
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(section, "gravity", 3, model->option.gravity, opt.gravity);
+diffs/mujoco_src/xml/xml_native_writer.cc:    WRITEDSBL("gravity",        mjDSBL_GRAVITY)
+diffs/mujoco_src/xml/xml_native_writer.cc:    // gravity compensation
+diffs/mujoco_include/mujoco/mjxmacro.h:    X( o_friction,      5       )
+diffs/mujoco_include/mujoco/mjxmacro.h:    X   ( mjtNum,  dof_frictionloss,      nv,            1                    ) \
+diffs/mujoco_include/mujoco/mjxmacro.h:    X   ( mjtNum,  geom_friction,         ngeom,         3                    ) \
+diffs/mujoco_include/mujoco/mjxmacro.h:    X   ( mjtNum,  flex_friction,         nflex,         3                    ) \
+diffs/mujoco_include/mujoco/mjxmacro.h:    X   ( mjtNum,  pair_solreffriction,   npair,         mjNREF               ) \
+diffs/mujoco_include/mujoco/mjxmacro.h:    X   ( mjtNum,  pair_friction,         npair,         5                    )
+diffs/mujoco_include/mujoco/mjxmacro.h:    X   ( mjtNum,  tendon_frictionloss,   ntendon,       1                    ) \
+diffs/mujoco_include/mujoco/mjxmacro.h:    X  ( mjtNum,   efc_frictionloss,  MJ_D(nefc),    1 ) \
+diffs/mujoco_include/mujoco/mjxmacro.h:    X  ( mjtNum,  iefc_frictionloss, MJ_D(nefc),     1 ) \
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/materialAPI.h:  // TORSIONALFRICTION
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/materialAPI.h:  /// Friction value acting around contact normal.
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/materialAPI.h:  /// | Declaration | `uniform double mjc:torsionalfriction = 0.005` |
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/materialAPI.h:  UsdAttribute GetTorsionalFrictionAttr() const;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/materialAPI.h:  /// See GetTorsionalFrictionAttr(), and also
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/materialAPI.h:  UsdAttribute CreateTorsionalFrictionAttr(
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/materialAPI.h:  // ROLLINGFRICTION
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/materialAPI.h:  /// Friction value acting around both axes on the contact tangent plane.
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/materialAPI.h:  /// | Declaration | `uniform double mjc:rollingfriction = 0.0001` |
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/materialAPI.h:  UsdAttribute GetRollingFrictionAttr() const;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/materialAPI.h:  /// See GetRollingFrictionAttr(), and also
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/materialAPI.h:  UsdAttribute CreateRollingFrictionAttr(
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  // SOLREFFRICTION
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  /// Constraint solver parameters for simulating dry friction in the tendon.
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  /// | Declaration | `uniform double[] mjc:solreffriction = [0.02, 1]` |
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  UsdAttribute GetSolRefFrictionAttr() const;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  /// See GetSolRefFrictionAttr(), and also
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  UsdAttribute CreateSolRefFrictionAttr(VtValue const& defaultValue = VtValue(),
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  // SOLIMPFRICTION
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  /// Constraint solver parameters for simulating dry friction in the tendon.
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  /// | Declaration | `uniform double[] mjc:solimpfriction = [0.9, 0.95, 0.001,
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  UsdAttribute GetSolImpFrictionAttr() const;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  /// See GetSolImpFrictionAttr(), and also
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  UsdAttribute CreateSolImpFrictionAttr(VtValue const& defaultValue = VtValue(),
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  // FRICTIONLOSS
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  /// Friction loss caused by dry friction. To enable friction loss, set this
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  /// | Declaration | `uniform double mjc:frictionloss = 0` |
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  UsdAttribute GetFrictionLossAttr() const;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  /// See GetFrictionLossAttr(), and also
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tendon.h:  UsdAttribute CreateFrictionLossAttr(VtValue const& defaultValue = VtValue(),
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  // MJCSOLREFFRICTION
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// Constraint solver parameters for simulating dry friction.
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// | Declaration | `uniform double[] mjc:solreffriction = [0.02, 1]` |
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  UsdAttribute GetMjcSolreffrictionAttr() const;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// See GetMjcSolreffrictionAttr(), and also
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  UsdAttribute CreateMjcSolreffrictionAttr(
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  // MJCSOLIMPFRICTION
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// Constraint solver parameters for simulating dry friction.
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// | Declaration | `uniform double[] mjc:solimpfriction = [0.9, 0.95, 0.001,
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  UsdAttribute GetMjcSolimpfrictionAttr() const;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// See GetMjcSolimpfrictionAttr(), and also
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  UsdAttribute CreateMjcSolimpfrictionAttr(
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// friction loss which is computed by the constraint solver, damping is
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  // MJCFRICTIONLOSS
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// Friction loss due to dry friction. This value is the same for all degrees
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// of freedom created by this joint. Semantically friction loss does not make
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// sense for free joints, but the compiler allows it. To enable friction
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// | Declaration | `uniform double mjc:frictionloss = 0` |
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  UsdAttribute GetMjcFrictionlossAttr() const;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  /// See GetMjcFrictionlossAttr(), and also
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/jointAPI.h:  UsdAttribute CreateMjcFrictionlossAttr(
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  /// represents the elliptic contact friction cone type.
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  /// \brief "mjc:flag:frictionloss"
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  const TfToken mjcFlagFrictionloss;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  /// \brief "mjc:frictionloss"
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  const TfToken mjcFrictionloss;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  /// \brief "mjc:option:o_friction"
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  const TfToken mjcOptionO_friction;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  /// \brief "mjc:rollingfriction"
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  const TfToken mjcRollingfriction;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  /// \brief "mjc:solimpfriction"
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  const TfToken mjcSolimpfriction;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  /// \brief "mjc:solreffriction"
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  const TfToken mjcSolreffriction;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  /// \brief "mjc:torsionalfriction"
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  const TfToken mjcTorsionalfriction;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/tokens.h:  /// represents the pyramidal contact friction cone type.
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  /// Ratio of frictional-to-normal constraint impedance for elliptic
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  /// friction cones.
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  // OFRICTION
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  /// Replaces the friction parameter of all active contact pairs when
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  /// | Declaration | `uniform double[] mjc:option:o_friction = [1, 1, 0.005,
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  UsdAttribute GetOFrictionAttr() const;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  /// See GetOFrictionAttr(), and also
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  UsdAttribute CreateOFrictionAttr(VtValue const& defaultValue = VtValue(),
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  /// The type of contact friction cone.
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  // FRICTIONLOSSFLAG
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  /// Enables all standard computations related to friction loss constraints.
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  /// | Declaration | `uniform bool mjc:flag:frictionloss = 1` |
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  UsdAttribute GetFrictionLossFlagAttr() const;
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  /// See GetFrictionLossFlagAttr(), and also
+diffs/mujoco_include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h:  UsdAttribute CreateFrictionLossFlagAttr(
+diffs/mujoco_include/mujoco/mjspec.h:  double frictionloss;             // friction loss
+diffs/mujoco_include/mujoco/mjspec.h:  mjtNum solref_friction[mjNREF];  // solver reference: dof friction
+diffs/mujoco_include/mujoco/mjspec.h:  mjtNum solimp_friction[mjNIMP];  // solver impedance: dof friction
+diffs/mujoco_include/mujoco/mjspec.h:  double friction[3];              // one-sided friction coefficients: slide, roll, spin
+diffs/mujoco_include/mujoco/mjspec.h:  double friction[3];              // one-sided friction coefficients: slide, roll, spin
+diffs/mujoco_include/mujoco/mjspec.h:  mjtNum solreffriction[mjNREF];   // solver reference, frictional directions
+diffs/mujoco_include/mujoco/mjspec.h:  double friction[5];              // full contact friction
+diffs/mujoco_include/mujoco/mjspec.h:  // stiffness, damping, friction, armature
+diffs/mujoco_include/mujoco/mjspec.h:  double frictionloss;             // friction loss
+diffs/mujoco_include/mujoco/mjspec.h:  mjtNum solref_friction[mjNREF];  // solver reference: tendon friction
+diffs/mujoco_include/mujoco/mjspec.h:  mjtNum solimp_friction[mjNIMP];  // solver impedance: tendon friction
+diffs/mujoco_include/mujoco/mjdata.h:  mjCNSTR_FRICTION_DOF,             // dof friction
+diffs/mujoco_include/mujoco/mjdata.h:  mjCNSTR_FRICTION_TENDON,          // tendon friction
+diffs/mujoco_include/mujoco/mjdata.h:  mjCNSTR_CONTACT_FRICTIONLESS,     // frictionless contact
+diffs/mujoco_include/mujoco/mjdata.h:  mjCNSTR_CONTACT_PYRAMIDAL,        // frictional contact, pyramidal friction cone
+diffs/mujoco_include/mujoco/mjdata.h:  mjCNSTR_CONTACT_ELLIPTIC          // frictional contact, elliptic friction cone
+diffs/mujoco_include/mujoco/mjdata.h:  mjCNSTRSTATE_QUADRATIC,           // quadratic cost (equality, friction, limit, contact)
+diffs/mujoco_include/mujoco/mjdata.h:  mjCNSTRSTATE_LINEARNEG,           // linear cost, negative side (friction)
+diffs/mujoco_include/mujoco/mjdata.h:  mjCNSTRSTATE_LINEARPOS,           // linear cost, positive side (friction)
+diffs/mujoco_include/mujoco/mjdata.h:  mjtNum  friction[5];             // tangent1, 2, spin, roll1, 2
+diffs/mujoco_include/mujoco/mjdata.h:  mjtNum  solreffriction[mjNREF];  // constraint solver reference, friction directions
+diffs/mujoco_include/mujoco/mjdata.h:  mjtNum  mu;                      // friction of regularized cone, set by mj_makeConstraint
+diffs/mujoco_include/mujoco/mjdata.h:  int     nf;                // number of friction constraints
+diffs/mujoco_include/mujoco/mjdata.h:  mjtNum* efc_frictionloss;  // frictionloss (friction)                          (nefc x 1)
+diffs/mujoco_include/mujoco/mjdata.h:  int*    island_nf;         // number of friction constraints in island         (nisland x 1)
+diffs/mujoco_include/mujoco/mjdata.h:  mjtNum* iefc_frictionloss; // frictionloss (friction)                          (nefc x 1)
+diffs/mujoco_include/mujoco/mujoco.h:// Determine type of friction cone.
+diffs/mujoco_include/mujoco/mjmodel.h:#define mjMINMU         1E-5      // minimum friction coefficient
+diffs/mujoco_include/mujoco/mjmodel.h:  mjDSBL_FRICTIONLOSS = 1<<2,     // joint and tendon frictionloss constraints
+diffs/mujoco_include/mujoco/mjmodel.h:typedef enum mjtCone_ {           // type of friction cone
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum impratio;                // ratio of friction-to-normal contact impedance
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum o_friction[5];           // friction
+diffs/mujoco_include/mujoco/mjmodel.h:  int cone;                       // type of friction cone (mjtCone)
+diffs/mujoco_include/mujoco/mjmodel.h:    float contactfriction[4];     // contact friction force
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum*   dof_solref;           // constraint solver reference:frictionloss (nv x mjNREF)
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum*   dof_solimp;           // constraint solver impedance:frictionloss (nv x mjNIMP)
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum*   dof_frictionloss;     // dof friction loss                        (nv x 1)
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum*   geom_friction;        // friction for (slide, spin, roll)         (ngeom x 3)
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum*   flex_friction;        // friction for (slide, spin, roll)         (nflex x 3)
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum*   pair_solreffriction;  // solver reference: contact friction       (npair x mjNREF)
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum*   pair_friction;        // tangent1, 2, spin, roll1, 2              (npair x 5)
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum*   tendon_solref_fri;    // constraint solver reference: friction    (ntendon x mjNREF)
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum*   tendon_solimp_fri;    // constraint solver impedance: friction    (ntendon x mjNIMP)
+diffs/mujoco_include/mujoco/mjmodel.h:  mjtNum*   tendon_frictionloss;  // loss due to friction                     (ntendon x 1)
+diffs/mujoco_src/user/user_init.c:  mj_defaultSolRefImp(joint->solref_friction, joint->solimp_friction);
+diffs/mujoco_src/user/user_init.c:  geom->friction[0] = 1;
+diffs/mujoco_src/user/user_init.c:  geom->friction[1] = 0.005;
+diffs/mujoco_src/user/user_init.c:  geom->friction[2] = 0.0001;
+diffs/mujoco_src/user/user_init.c:  flex->friction[0] = 1;
+diffs/mujoco_src/user/user_init.c:  flex->friction[1] = 0.005;
+diffs/mujoco_src/user/user_init.c:  flex->friction[2] = 0.0001;
+diffs/mujoco_src/user/user_init.c:  pair->friction[0] = 1;
+diffs/mujoco_src/user/user_init.c:  pair->friction[1] = 1;
+diffs/mujoco_src/user/user_init.c:  pair->friction[2] = 0.005;
+diffs/mujoco_src/user/user_init.c:  pair->friction[3] = 0.0001;
+diffs/mujoco_src/user/user_init.c:  pair->friction[4] = 0.0001;
+diffs/mujoco_src/user/user_init.c:  mj_defaultSolRefImp(tendon->solref_friction, tendon->solimp_friction);
+diffs/mujoco_src/user/user_composite.cc:    jnt->frictionloss = jnt->type == mjJNT_FREE ? 0 : jnt->frictionloss;
+diffs/mujoco_src/user/user_model.cc:  m->opt.disableflags = mjDSBL_FRICTIONLOSS | mjDSBL_CONTACT | mjDSBL_SPRING | mjDSBL_DAMPER |
+diffs/mujoco_src/user/user_model.cc:        mjuu_copyvec(m->dof_solref+mjNREF*dofadr, pj->solref_friction, mjNREF);
+diffs/mujoco_src/user/user_model.cc:        mjuu_copyvec(m->dof_solimp+mjNIMP*dofadr, pj->solimp_friction, mjNIMP);
+diffs/mujoco_src/user/user_model.cc:        m->dof_frictionloss[dofadr] = (mjtNum)pj->frictionloss;
+diffs/mujoco_src/user/user_model.cc:      mjuu_copyvec(m->geom_friction+3*gid, pg->friction, 3);
+diffs/mujoco_src/user/user_model.cc:    mjuu_copyvec(m->flex_friction + 3 * i, pfl->friction, 3);
+diffs/mujoco_src/user/user_model.cc:    mjuu_copyvec(m->pair_solreffriction+mjNREF*i, pairs_[i]->solreffriction, mjNREF);
+diffs/mujoco_src/user/user_model.cc:    mjuu_copyvec(m->pair_friction+5*i, pairs_[i]->friction, 5);
+diffs/mujoco_src/user/user_model.cc:    mjuu_copyvec(m->tendon_solref_fri+mjNREF*i, pte->solref_friction, mjNREF);
+diffs/mujoco_src/user/user_model.cc:    mjuu_copyvec(m->tendon_solimp_fri+mjNIMP*i, pte->solimp_friction, mjNIMP);
+diffs/mujoco_src/user/user_model.cc:    m->tendon_frictionloss[i] = (mjtNum)pte->frictionloss;
+diffs/mujoco_src/user/user_model.cc:    mjuu_copyvec(pj->solref_friction, m->dof_solref+mjNREF*j, mjNREF);
+diffs/mujoco_src/user/user_model.cc:    mjuu_copyvec(pj->solimp_friction, m->dof_solimp+mjNIMP*j, mjNIMP);
+diffs/mujoco_src/user/user_model.cc:    pj->frictionloss = (double)m->dof_frictionloss[j];
+diffs/mujoco_src/user/user_model.cc:    mjuu_copyvec(pg->friction, m->geom_friction+3*i, 3);
+diffs/mujoco_src/user/user_model.cc:    mjuu_copyvec(pairs_[i]->solreffriction, m->pair_solreffriction+mjNREF*i, mjNREF);
+diffs/mujoco_src/user/user_model.cc:    mjuu_copyvec(pairs_[i]->friction, m->pair_friction+5*i, 5);
+diffs/mujoco_src/user/user_model.cc:    mjuu_copyvec(tendons_[i]->solref_friction, m->tendon_solref_fri+mjNREF*i, mjNREF);
+diffs/mujoco_src/user/user_model.cc:    mjuu_copyvec(tendons_[i]->solimp_friction, m->tendon_solimp_fri+mjNIMP*i, mjNIMP);
+diffs/mujoco_src/user/user_model.cc:    tendons_[i]->frictionloss = (double)m->tendon_frictionloss[i];
+diffs/mujoco_src/user/user_objects.cc:  // set undefined condim, friction, solref, solimp: different priority
+diffs/mujoco_src/user/user_objects.cc:    // friction
+diffs/mujoco_src/user/user_objects.cc:    if (!mjuu_defined(friction[0])) {
+diffs/mujoco_src/user/user_objects.cc:      friction[0] = friction[1] = pgh->friction[0];
+diffs/mujoco_src/user/user_objects.cc:      friction[2] =               pgh->friction[1];
+diffs/mujoco_src/user/user_objects.cc:      friction[3] = friction[4] = pgh->friction[2];
+diffs/mujoco_src/user/user_objects.cc:  // set undefined condim, friction, solref, solimp: same priority
+diffs/mujoco_src/user/user_objects.cc:    // friction: max
+diffs/mujoco_src/user/user_objects.cc:    if (!mjuu_defined(friction[0])) {
+diffs/mujoco_src/user/user_objects.cc:      friction[0] = friction[1] = std::max(geom1->friction[0], geom2->friction[0]);
+diffs/mujoco_src/user/user_objects.cc:      friction[2] =               std::max(geom1->friction[1], geom2->friction[1]);
+diffs/mujoco_src/user/user_objects.cc:      friction[3] = friction[4] = std::max(geom1->friction[2], geom2->friction[2]);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  pxr::VtDoubleArray o_friction;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  mjc_physics_scene.GetOFrictionAttr().Get(&o_friction);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (o_friction.size() != 5) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    mju_error("Invalid size for o_friction attribute: %zu expected %d",
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:              o_friction.size(), 5);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    spec->option.o_friction[i] = o_friction[i];
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  bool frictionloss_flag;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  mjc_physics_scene.GetFrictionLossFlagAttr().Get(&frictionloss_flag);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  spec->option.disableflags |= (!frictionloss_flag ? mjDSBL_FRICTIONLOSS : 0);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  auto solreffriction_attr = tendon.GetSolRefFrictionAttr();
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (solreffriction_attr.HasAuthoredValue()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    pxr::VtDoubleArray solreffriction;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    solreffriction_attr.Get(&solreffriction);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    if (solreffriction.size() == mjNREF) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:        mj_tendon->solref_friction[i] = solreffriction[i];
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:          "solreffriction attribute for tendon %s has incorrect size %zu, "
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:          prim.GetPath().GetAsString().c_str(), solreffriction.size(), mjNREF);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  auto solimpfriction_attr = tendon.GetSolImpFrictionAttr();
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (solimpfriction_attr.HasAuthoredValue()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    pxr::VtDoubleArray solimpfriction;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    solimpfriction_attr.Get(&solimpfriction);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    if (solimpfriction.size() == mjNIMP) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:        mj_tendon->solimp_friction[i] = solimpfriction[i];
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:          "solimpfriction attribute for tendon %s has incorrect size %zu, "
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:          prim.GetPath().GetAsString().c_str(), solimpfriction.size(), mjNIMP);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  auto frictionloss_attr = tendon.GetFrictionLossAttr();
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (frictionloss_attr.HasAuthoredValue()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    frictionloss_attr.Get(&mj_tendon->frictionloss);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  auto solreffriction_attr = joint_api.GetMjcSolreffrictionAttr();
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (solreffriction_attr.HasAuthoredValue()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    pxr::VtDoubleArray solreffriction;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    solreffriction_attr.Get(&solreffriction);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    if (solreffriction.size() == mjNREF) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:        mj_joint->solref_friction[i] = solreffriction[i];
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:          "solreffriction attribute for joint %s has incorrect size %zu, "
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:          mjs_getName(mj_joint->element)->c_str(), solreffriction.size(),
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  auto solimpfriction_attr = joint_api.GetMjcSolimpfrictionAttr();
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (solimpfriction_attr.HasAuthoredValue()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    pxr::VtDoubleArray solimpfriction;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    solimpfriction_attr.Get(&solimpfriction);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    if (solimpfriction.size() == mjNIMP) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:        mj_joint->solimp_friction[i] = solimpfriction[i];
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:          "solimpfriction attribute for joint %s has incorrect size %zu, "
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:          mjs_getName(mj_joint->element)->c_str(), solimpfriction.size(),
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  auto frictionloss_attr = joint_api.GetMjcFrictionlossAttr();
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (frictionloss_attr.HasAuthoredValue()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    double frictionloss;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    frictionloss_attr.Get(&frictionloss);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    mj_joint->frictionloss = frictionloss;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  auto dynamic_friction_attr = material_api.GetDynamicFrictionAttr();
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (dynamic_friction_attr.HasAuthoredValue()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    float dynamic_friction;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    dynamic_friction_attr.Get(&dynamic_friction);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    geom->friction[0] = dynamic_friction;
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  auto torsional_friction_attr = material_api.GetTorsionalFrictionAttr();
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (torsional_friction_attr.HasAuthoredValue()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    torsional_friction_attr.Get(&geom->friction[1]);
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  auto rolling_friction_attr = material_api.GetRollingFrictionAttr();
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:  if (rolling_friction_attr.HasAuthoredValue()) {
+diffs/mujoco_src/experimental/usd/usd_to_mjspec.cc:    rolling_friction_attr.Get(&geom->friction[2]);
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:    pxr::VtArray<double> o_friction(spec_->option.o_friction,
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                                    spec_->option.o_friction + 5);
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                          MjcPhysicsTokens->mjcOptionO_friction, o_friction);
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:        {MjcPhysicsTokens->mjcFlagFrictionloss, mjDSBL_FRICTIONLOSS},
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:    if (geom->friction[0] != geom_default->friction[0]) {
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:      // Since MuJoCo has no concept of static friction, only write dynamic
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:      // friction to remain truthful to how MuJoCo perceives the data.
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                            pxr::UsdPhysicsTokens->physicsDynamicFriction,
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                            (float)geom->friction[0]);
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:    if (geom->friction[1] != geom_default->friction[1]) {
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                            MjcPhysicsTokens->mjcTorsionalfriction,
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                            geom->friction[1]);
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:    if (geom->friction[2] != geom_default->friction[2]) {
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                            MjcPhysicsTokens->mjcRollingfriction,
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                            geom->friction[2]);
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:      if (geom->friction[0] != geom_default->geom->friction[0] ||
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:          geom->friction[1] != geom_default->geom->friction[1] ||
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:          geom->friction[2] != geom_default->geom->friction[2]) {
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:          MjcPhysicsTokens->mjcSolreffriction,
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:          pxr::VtArray<double>(joint->solref_friction,
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                               joint->solref_friction + mjNREF));
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:          MjcPhysicsTokens->mjcSolimpfriction,
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:          pxr::VtArray<double>(joint->solimp_friction,
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                               joint->solimp_friction + mjNIMP));
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                            MjcPhysicsTokens->mjcFrictionloss,
+diffs/mujoco_src/experimental/usd/plugins/mjcf/mujoco_to_usd.cc:                            joint->frictionloss);
+diffs/mujoco_src/experimental/usd/mjcPhysics/materialAPI.cpp:UsdAttribute MjcPhysicsMaterialAPI::GetTorsionalFrictionAttr() const {
+diffs/mujoco_src/experimental/usd/mjcPhysics/materialAPI.cpp:  return GetPrim().GetAttribute(MjcPhysicsTokens->mjcTorsionalfriction);
+diffs/mujoco_src/experimental/usd/mjcPhysics/materialAPI.cpp:UsdAttribute MjcPhysicsMaterialAPI::CreateTorsionalFrictionAttr(
+diffs/mujoco_src/experimental/usd/mjcPhysics/materialAPI.cpp:      MjcPhysicsTokens->mjcTorsionalfriction, SdfValueTypeNames->Double,
+diffs/mujoco_src/experimental/usd/mjcPhysics/materialAPI.cpp:UsdAttribute MjcPhysicsMaterialAPI::GetRollingFrictionAttr() const {
+diffs/mujoco_src/experimental/usd/mjcPhysics/materialAPI.cpp:  return GetPrim().GetAttribute(MjcPhysicsTokens->mjcRollingfriction);
+diffs/mujoco_src/experimental/usd/mjcPhysics/materialAPI.cpp:UsdAttribute MjcPhysicsMaterialAPI::CreateRollingFrictionAttr(
+diffs/mujoco_src/experimental/usd/mjcPhysics/materialAPI.cpp:      MjcPhysicsTokens->mjcRollingfriction, SdfValueTypeNames->Double,
+diffs/mujoco_src/experimental/usd/mjcPhysics/materialAPI.cpp:      MjcPhysicsTokens->mjcTorsionalfriction,
+diffs/mujoco_src/experimental/usd/mjcPhysics/materialAPI.cpp:      MjcPhysicsTokens->mjcRollingfriction,
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:UsdAttribute MjcPhysicsSceneAPI::GetOFrictionAttr() const {
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:  return GetPrim().GetAttribute(MjcPhysicsTokens->mjcOptionO_friction);
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:UsdAttribute MjcPhysicsSceneAPI::CreateOFrictionAttr(
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:      MjcPhysicsTokens->mjcOptionO_friction, SdfValueTypeNames->DoubleArray,
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:UsdAttribute MjcPhysicsSceneAPI::GetFrictionLossFlagAttr() const {
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:  return GetPrim().GetAttribute(MjcPhysicsTokens->mjcFlagFrictionloss);
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:UsdAttribute MjcPhysicsSceneAPI::CreateFrictionLossFlagAttr(
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:      MjcPhysicsTokens->mjcFlagFrictionloss, SdfValueTypeNames->Bool,
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:      MjcPhysicsTokens->mjcOptionO_friction,
+diffs/mujoco_src/experimental/usd/mjcPhysics/sceneAPI.cpp:      MjcPhysicsTokens->mjcFlagFrictionloss,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:UsdAttribute MjcPhysicsTendon::GetSolRefFrictionAttr() const {
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:  return GetPrim().GetAttribute(MjcPhysicsTokens->mjcSolreffriction);
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:UsdAttribute MjcPhysicsTendon::CreateSolRefFrictionAttr(
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:      MjcPhysicsTokens->mjcSolreffriction, SdfValueTypeNames->DoubleArray,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:UsdAttribute MjcPhysicsTendon::GetSolImpFrictionAttr() const {
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:  return GetPrim().GetAttribute(MjcPhysicsTokens->mjcSolimpfriction);
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:UsdAttribute MjcPhysicsTendon::CreateSolImpFrictionAttr(
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:      MjcPhysicsTokens->mjcSolimpfriction, SdfValueTypeNames->DoubleArray,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:UsdAttribute MjcPhysicsTendon::GetFrictionLossAttr() const {
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:  return GetPrim().GetAttribute(MjcPhysicsTokens->mjcFrictionloss);
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:UsdAttribute MjcPhysicsTendon::CreateFrictionLossAttr(
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:      MjcPhysicsTokens->mjcFrictionloss, SdfValueTypeNames->Double,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:      MjcPhysicsTokens->mjcSolreffriction,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:      MjcPhysicsTokens->mjcSolimpfriction,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tendon.cpp:      MjcPhysicsTokens->mjcFrictionloss,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:      mjcFlagFrictionloss("mjc:flag:frictionloss", TfToken::Immortal),
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:      mjcFrictionloss("mjc:frictionloss", TfToken::Immortal),
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:      mjcOptionO_friction("mjc:option:o_friction", TfToken::Immortal),
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:      mjcRollingfriction("mjc:rollingfriction", TfToken::Immortal),
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:      mjcSolimpfriction("mjc:solimpfriction", TfToken::Immortal),
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:      mjcSolreffriction("mjc:solreffriction", TfToken::Immortal),
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:      mjcTorsionalfriction("mjc:torsionalfriction", TfToken::Immortal),
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:                 mjcFlagFrictionloss,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:                 mjcFrictionloss,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:                 mjcOptionO_friction,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:                 mjcRollingfriction,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:                 mjcSolimpfriction,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:                 mjcSolreffriction,
+diffs/mujoco_src/experimental/usd/mjcPhysics/tokens.cpp:                 mjcTorsionalfriction,
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:    uniform bool mjc:flag:frictionloss = 1 (
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        displayName = "Friction Loss Constraints Toggle"
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = "Enables all standard computations related to friction loss constraints."
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        displayName = "Friction Cone Type"
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = "The type of contact friction cone."
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = """Ratio of frictional-to-normal constraint impedance for elliptic
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        friction cones."""
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:    uniform double[] mjc:option:o_friction = [1, 1, 0.005, 0.0001, 0.0001] (
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        displayName = "Contact Override Friction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = """Replaces the friction parameter of all active contact pairs when
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = "Damping applied to all degrees of freedom created by this joint. Unlike friction loss which is computed by the constraint solver, damping is simply a force linear in velocity. It is included in the passive forces. Despite this simplicity, larger damping values can make numerical integrators unstable, which is why our Euler integrator handles damping implicitly. See Integration in the Computation chapter."
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:    uniform double mjc:frictionloss = 0 (
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = "Friction loss due to dry friction. This value is the same for all degrees of freedom created by this joint. Semantically friction loss does not make sense for free joints, but the compiler allows it. To enable friction loss, set this attribute to a positive value."
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:    uniform double[] mjc:solimpfriction = [0.9, 0.95, 0.001, 0.5, 2] (
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = "Constraint solver parameters for simulating dry friction."
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:    uniform double[] mjc:solreffriction = [0.02, 1] (
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = "Constraint solver parameters for simulating dry friction."
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:    uniform double mjc:rollingfriction = 0.0001 (
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        displayName = "Rolling Friction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = "Friction value acting around both axes on the contact tangent plane."
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:    uniform double mjc:torsionalfriction = 0.005 (
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        displayName = "Torsional Friction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = "Friction value acting around contact normal."
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:    uniform double mjc:frictionloss = 0 (
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        displayName = "Friction Loss"
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = "Friction loss caused by dry friction. To enable friction loss, set this attribute to a positive value."
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:    uniform double[] mjc:solimpfriction = [0.9, 0.95, 0.001, 0.5, 2] (
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        displayName = "Solver Impedance Friction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = "Constraint solver parameters for simulating dry friction in the tendon."
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:    uniform double[] mjc:solreffriction = [0.02, 1] (
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        displayName = "Solver Reference Friction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/generatedSchema.usda:        doc = "Constraint solver parameters for simulating dry friction in the tendon."
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:UsdAttribute MjcPhysicsJointAPI::GetMjcSolreffrictionAttr() const {
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:  return GetPrim().GetAttribute(MjcPhysicsTokens->mjcSolreffriction);
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:UsdAttribute MjcPhysicsJointAPI::CreateMjcSolreffrictionAttr(
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:      MjcPhysicsTokens->mjcSolreffriction, SdfValueTypeNames->DoubleArray,
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:UsdAttribute MjcPhysicsJointAPI::GetMjcSolimpfrictionAttr() const {
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:  return GetPrim().GetAttribute(MjcPhysicsTokens->mjcSolimpfriction);
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:UsdAttribute MjcPhysicsJointAPI::CreateMjcSolimpfrictionAttr(
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:      MjcPhysicsTokens->mjcSolimpfriction, SdfValueTypeNames->DoubleArray,
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:UsdAttribute MjcPhysicsJointAPI::GetMjcFrictionlossAttr() const {
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:  return GetPrim().GetAttribute(MjcPhysicsTokens->mjcFrictionloss);
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:UsdAttribute MjcPhysicsJointAPI::CreateMjcFrictionlossAttr(
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:      MjcPhysicsTokens->mjcFrictionloss, SdfValueTypeNames->Double,
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:      MjcPhysicsTokens->mjcSolreffriction,
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:      MjcPhysicsTokens->mjcSolimpfriction,
+diffs/mujoco_src/experimental/usd/mjcPhysics/jointAPI.cpp:      MjcPhysicsTokens->mjcFrictionloss,
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:            This token represents the pyramidal contact friction cone type.
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:            This token represents the elliptic contact friction cone type.
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = """Ratio of frictional-to-normal constraint impedance for elliptic
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        friction cones."""
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:    uniform double[] mjc:option:o_friction = [1.0, 1.0, 0.005, 0.0001, 0.0001] (
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:            string apiName = "OFriction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        displayName = "Contact Override Friction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = """Replaces the friction parameter of all active contact pairs when
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        displayName = "Friction Cone Type"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = """The type of contact friction cone."""
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:    uniform bool mjc:flag:frictionloss = True (
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:            string apiName = "FrictionLossFlag"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        displayName = "Friction Loss Constraints Toggle"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = """Enables all standard computations related to friction loss constraints."""
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:    uniform double[] mjc:solreffriction = [0.02, 1.0] (
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = "Constraint solver parameters for simulating dry friction."
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:    uniform double[] mjc:solimpfriction = [0.9, 0.95, 0.001, 0.5, 2.0] (
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = "Constraint solver parameters for simulating dry friction."
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = "Damping applied to all degrees of freedom created by this joint. Unlike friction loss which is computed by the constraint solver, damping is simply a force linear in velocity. It is included in the passive forces. Despite this simplicity, larger damping values can make numerical integrators unstable, which is why our Euler integrator handles damping implicitly. See Integration in the Computation chapter."
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:    uniform double mjc:frictionloss = 0 (
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = "Friction loss due to dry friction. This value is the same for all degrees of freedom created by this joint. Semantically friction loss does not make sense for free joints, but the compiler allows it. To enable friction loss, set this attribute to a positive value."
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:    uniform double mjc:torsionalfriction = 0.005 (
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:            string apiName = "TorsionalFriction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        displayName = "Torsional Friction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = """Friction value acting around contact normal."""
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:    uniform double mjc:rollingfriction = 0.0001 (
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:            string apiName = "RollingFriction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        displayName = "Rolling Friction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = """Friction value acting around both axes on the contact tangent plane."""
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:    uniform double[] mjc:solreffriction = [0.02, 1.0] (
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:            string apiName = "SolRefFriction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        displayName = "Solver Reference Friction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = """Constraint solver parameters for simulating dry friction in the tendon."""
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:    uniform double[] mjc:solimpfriction = [0.9, 0.95, 0.001, 0.5, 2.0] (
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:            string apiName = "SolImpFriction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        displayName = "Solver Impedance Friction"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = """Constraint solver parameters for simulating dry friction in the tendon."""
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:    uniform double mjc:frictionloss = 0.0 (
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:            string apiName = "FrictionLoss"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        displayName = "Friction Loss"
+diffs/mujoco_src/experimental/usd/mjcPhysics/schema.usda:        doc = """Friction loss caused by dry friction. To enable friction loss, set this attribute to a positive value."""
+diffs/mujoco_src/experimental/platform/gui.cc:    ImGui_InputN("Friction", opt.o_friction, 5, {.width = w, .format = "%.1f"});
+diffs/mujoco_src/experimental/platform/gui.cc:    ImGui::ColorEdit4("Contact Friction", vis.rgba.contactfriction);
+diffs/mujoco_src/engine/engine_core_constraint.h:// assign/clamp contact friction parameters
+diffs/mujoco_src/engine/engine_core_constraint.h:void mj_assignFriction(const mjModel* m, mjtNum* target, const mjtNum* source);
+diffs/mujoco_src/engine/engine_core_constraint.h:// frictional dofs and tendons
+diffs/mujoco_src/engine/engine_core_constraint.h:void mj_instantiateFriction(const mjModel* m, mjData* d);
+diffs/mujoco_src/engine/engine_core_constraint.h:// frictionless and frictional contacts
+diffs/mujoco_src/engine/engine_util_misc.c:  // special handling of frictionless contacts
+diffs/mujoco_src/engine/engine_core_constraint.c:// assign/clamp contact friction parameters
+diffs/mujoco_src/engine/engine_core_constraint.c:void mj_assignFriction(const mjModel* m, mjtNum* target, const mjtNum* source) {
+diffs/mujoco_src/engine/engine_core_constraint.c:      target[i] = mju_max(mjMINMU, m->opt.o_friction[i]);
+diffs/mujoco_src/engine/engine_core_constraint.c:// add #size rows to constraint Jacobian; set pos, margin, frictionloss, type, id
+diffs/mujoco_src/engine/engine_core_constraint.c:                             const mjtNum* margin, mjtNum frictionloss,
+diffs/mujoco_src/engine/engine_core_constraint.c:  if (type == mjCNSTR_CONTACT_FRICTIONLESS ||
+diffs/mujoco_src/engine/engine_core_constraint.c:  // set constraint pos, margin, frictionloss, type, id
+diffs/mujoco_src/engine/engine_core_constraint.c:    d->efc_frictionloss[nefc+i] = frictionloss;
+diffs/mujoco_src/engine/engine_core_constraint.c:  } else if (type == mjCNSTR_FRICTION_DOF || type == mjCNSTR_FRICTION_TENDON) {
+diffs/mujoco_src/engine/engine_core_constraint.c:// frictional dofs and tendons
+diffs/mujoco_src/engine/engine_core_constraint.c:void mj_instantiateFriction(const mjModel* m, mjData* d) {
+diffs/mujoco_src/engine/engine_core_constraint.c:  if (mjDISABLED(mjDSBL_FRICTIONLOSS)) {
+diffs/mujoco_src/engine/engine_core_constraint.c:  // find frictional dofs
+diffs/mujoco_src/engine/engine_core_constraint.c:    // no friction loss: skip
+diffs/mujoco_src/engine/engine_core_constraint.c:    if (!m->dof_frictionloss[i]) {
+diffs/mujoco_src/engine/engine_core_constraint.c:    mj_addConstraint(m, d, jac, 0, 0, m->dof_frictionloss[i],
+diffs/mujoco_src/engine/engine_core_constraint.c:                      1, mjCNSTR_FRICTION_DOF, i,
+diffs/mujoco_src/engine/engine_core_constraint.c:  // find frictional tendons
+diffs/mujoco_src/engine/engine_core_constraint.c:    if (m->tendon_frictionloss[i] > 0) {
+diffs/mujoco_src/engine/engine_core_constraint.c:                       0, 0, m->tendon_frictionloss[i],
+diffs/mujoco_src/engine/engine_core_constraint.c:                       1, mjCNSTR_FRICTION_TENDON, i,
+diffs/mujoco_src/engine/engine_core_constraint.c:// frictionless and frictional contacts
+diffs/mujoco_src/engine/engine_core_constraint.c:    // make frictionless contact
+diffs/mujoco_src/engine/engine_core_constraint.c:                       1, mjCNSTR_CONTACT_FRICTIONLESS, i,
+diffs/mujoco_src/engine/engine_core_constraint.c:    // make pyramidal friction cone
+diffs/mujoco_src/engine/engine_core_constraint.c:      // one pair per friction dimension
+diffs/mujoco_src/engine/engine_core_constraint.c:        mju_addScl(jacdifp, jac, jac + k*NV, con->friction[k-1], NV);
+diffs/mujoco_src/engine/engine_core_constraint.c:        mju_addScl(jacdifp + NV, jac, jac + k*NV, -con->friction[k-1], NV);
+diffs/mujoco_src/engine/engine_core_constraint.c:    // make elliptic friction cone
+diffs/mujoco_src/engine/engine_core_constraint.c:    case mjCNSTR_FRICTION_DOF:
+diffs/mujoco_src/engine/engine_core_constraint.c:    case mjCNSTR_FRICTION_TENDON:
+diffs/mujoco_src/engine/engine_core_constraint.c:    case mjCNSTR_CONTACT_FRICTIONLESS:
+diffs/mujoco_src/engine/engine_core_constraint.c:      // set frictionless
+diffs/mujoco_src/engine/engine_core_constraint.c:      if (d->efc_type[i] == mjCNSTR_CONTACT_FRICTIONLESS) {
+diffs/mujoco_src/engine/engine_core_constraint.c:          fri = con->friction[j];
+diffs/mujoco_src/engine/engine_core_constraint.c:                        mjtNum* solref, mjtNum* solreffriction, mjtNum* solimp) {
+diffs/mujoco_src/engine/engine_core_constraint.c:  // clear solreffriction (applies only to contacts)
+diffs/mujoco_src/engine/engine_core_constraint.c:  mju_zero(solreffriction, mjNREF);
+diffs/mujoco_src/engine/engine_core_constraint.c:  case mjCNSTR_FRICTION_DOF:
+diffs/mujoco_src/engine/engine_core_constraint.c:  case mjCNSTR_FRICTION_TENDON:
+diffs/mujoco_src/engine/engine_core_constraint.c:  case mjCNSTR_CONTACT_FRICTIONLESS:
+diffs/mujoco_src/engine/engine_core_constraint.c:    mju_copy(solreffriction, d->contact[id].solreffriction, mjNREF);
+diffs/mujoco_src/engine/engine_core_constraint.c:  if ((solreffriction[0] > 0) ^ (solreffriction[1] > 0)) {
+diffs/mujoco_src/engine/engine_core_constraint.c:    mju_warning("solreffriction values should have the same sign, replacing with default");
+diffs/mujoco_src/engine/engine_core_constraint.c:    mju_zero(solreffriction, mjNREF);  // default solreffriction is (0, 0)
+diffs/mujoco_src/engine/engine_core_constraint.c:  if (!mjDISABLED(mjDSBL_REFSAFE) && solreffriction[0] > 0) {
+diffs/mujoco_src/engine/engine_core_constraint.c:    solreffriction[0] = mju_max(solreffriction[0], 2*m->opt.timestep);
+diffs/mujoco_src/engine/engine_core_constraint.c:  mjtNum pos, imp, impP, Rpy, solref[mjNREF], solreffriction[mjNREF], solimp[mjNIMP];
+diffs/mujoco_src/engine/engine_core_constraint.c:    getsolparam(m, d, i, solref, solreffriction, solimp);
+diffs/mujoco_src/engine/engine_core_constraint.c:      // elliptic contacts use solreffriction in non-normal directions, if non-zero
+diffs/mujoco_src/engine/engine_core_constraint.c:      int elliptic_friction = (tp == mjCNSTR_CONTACT_ELLIPTIC) && (j > 0);
+diffs/mujoco_src/engine/engine_core_constraint.c:      mjtNum* ref = elliptic_friction && (solreffriction[0] || solreffriction[1]) ?
+diffs/mujoco_src/engine/engine_core_constraint.c:                    solreffriction : solref;
+diffs/mujoco_src/engine/engine_core_constraint.c:      // friction: K = 0
+diffs/mujoco_src/engine/engine_core_constraint.c:      if (tp == mjCNSTR_FRICTION_DOF || tp == mjCNSTR_FRICTION_TENDON || elliptic_friction) {
+diffs/mujoco_src/engine/engine_core_constraint.c:  // frictional contacts: adjust R in friction dimensions, set contact master mu
+diffs/mujoco_src/engine/engine_core_constraint.c:      mjtNum* friction = d->contact[id].friction;
+diffs/mujoco_src/engine/engine_core_constraint.c:      d->contact[id].mu = friction[0] * mju_sqrt(R[i+1]/R[i]);
+diffs/mujoco_src/engine/engine_core_constraint.c:          R[i+j+1] = R[i+1]*friction[0]*friction[0]/(friction[j]*friction[j]);
+diffs/mujoco_src/engine/engine_core_constraint.c:      // pyramidal: common R matching friction impedance of elliptic model
+diffs/mujoco_src/engine/engine_core_constraint.c:        // D0_el = 2*mu^2*D_py    : friction match
+diffs/mujoco_src/engine/engine_core_constraint.c:// count frictional constraints, count Jacobian nonzeros if nnz is not NULL
+diffs/mujoco_src/engine/engine_core_constraint.c:  if (mjDISABLED(mjDSBL_FRICTIONLOSS)) {
+diffs/mujoco_src/engine/engine_core_constraint.c:    // no friction loss: skip
+diffs/mujoco_src/engine/engine_core_constraint.c:    if (!m->dof_frictionloss[i]) {
+diffs/mujoco_src/engine/engine_core_constraint.c:    if (m->tendon_frictionloss[i] > 0) {
+diffs/mujoco_src/engine/engine_core_constraint.c:    // count according to friction type
+diffs/mujoco_src/engine/engine_core_constraint.c:  mj_instantiateFriction(m, d);
+diffs/mujoco_src/engine/engine_core_constraint.c:    // ==== friction
+diffs/mujoco_src/engine/engine_core_constraint.c:      mjtNum mu = con->mu, *friction = con->friction;
+diffs/mujoco_src/engine/engine_core_constraint.c:        U[j] = jar[i+j]*friction[j-1];
+diffs/mujoco_src/engine/engine_core_constraint.c:        // force: - ds/djar = dU/djar * ds/dU  (dU/djar = diag(mu, friction))
+diffs/mujoco_src/engine/engine_core_constraint.c:          force[i+j] = -force[i]/T*U[j]*friction[j-1];
+diffs/mujoco_src/engine/engine_core_constraint.c:          // pre and post multiply by diag(mu, friction), scale by Dm
+diffs/mujoco_src/engine/engine_core_constraint.c:            scl = Dm * (k == 0 ? mu : friction[k-1]);
+diffs/mujoco_src/engine/engine_core_constraint.c:              H[k*dim+j] *= scl * (j == 0 ? mu : friction[j-1]);
+diffs/mujoco_src/engine/engine_core_constraint.c:  mj_constraintUpdate_impl(d->ne, d->nf, d->nefc, d->efc_D, d->efc_R, d->efc_frictionloss,
+diffs/mujoco_src/engine/engine_solver.c:  const mjtNum* floss = d->efc_frictionloss;
+diffs/mujoco_src/engine/engine_solver.c:  // equality and friction always active
+diffs/mujoco_src/engine/engine_solver.c:  // friction
+diffs/mujoco_src/engine/engine_solver.c:      // get contact dimensionality, friction, mu
+diffs/mujoco_src/engine/engine_solver.c:        f[j] = force[i+j]/con->friction[j-1];
+diffs/mujoco_src/engine/engine_solver.c:  const mjtNum *floss = d->efc_frictionloss;
+diffs/mujoco_src/engine/engine_solver.c:        // get friction
+diffs/mujoco_src/engine/engine_solver.c:        mjtNum *mu =  d->contact[d->efc_id[i]].friction;
+diffs/mujoco_src/engine/engine_solver.c:          // clear friction (just in case)
+diffs/mujoco_src/engine/engine_solver.c:        //-------------------- perform friction update, keep normal fixed
+diffs/mujoco_src/engine/engine_solver.c:  const mjtNum *floss = d->efc_frictionloss;
+diffs/mujoco_src/engine/engine_solver.c:    // perform one sweep: dry friction
+diffs/mujoco_src/engine/engine_solver.c:    // perform one sweep: contact friction
+diffs/mujoco_src/engine/engine_solver.c:        mu = con->friction;
+diffs/mujoco_src/engine/engine_solver.c:        mu = con->friction;
+diffs/mujoco_src/engine/engine_solver.c:  int nf;                 // number of friction constraints
+diffs/mujoco_src/engine/engine_solver.c:  const mjtNum* efc_frictionloss;
+diffs/mujoco_src/engine/engine_solver.c:    ctx->efc_frictionloss = d->efc_frictionloss;
+diffs/mujoco_src/engine/engine_solver.c:    ctx->efc_frictionloss = d->iefc_frictionloss + iefcadr;
+diffs/mujoco_src/engine/engine_solver.c:                           ctx->efc_frictionloss, ctx->Jaref, ctx->efc_type, ctx->efc_id,
+diffs/mujoco_src/engine/engine_solver.c:      const mjtNum* friction = con->friction;
+diffs/mujoco_src/engine/engine_solver.c:        U[j] = Jaref[j]*friction[j-1];
+diffs/mujoco_src/engine/engine_solver.c:        V[j] = Jv[j]*friction[j-1];
+diffs/mujoco_src/engine/engine_solver.c:    // friction
+diffs/mujoco_src/engine/engine_solver.c:      // search point, friction loss, bound (Rf)
+diffs/mujoco_src/engine/engine_solver.c:      mjtNum f = ctx->efc_frictionloss[i];
+diffs/mujoco_src/engine/engine_vis_visualize.c:        // set vec to combined, normal or friction force, in world frame
+diffs/mujoco_src/engine/engine_vis_visualize.c:        case 2:             // friction
+diffs/mujoco_src/engine/engine_vis_visualize.c:        // one-directional arrow for friction and world, symmetric otherwise
+diffs/mujoco_src/engine/engine_vis_visualize.c:        f2f(thisgeom->rgba, j == 2 ? m->vis.rgba.contactfriction : m->vis.rgba.contactforce, 4);
+diffs/mujoco_src/engine/engine_vis_visualize.c:      m->tendon_frictionloss[i] == 0;             // no frictionloss
+diffs/mujoco_src/engine/engine_print.c:    printVector("     friction     ", d->contact[i].friction, 5, fp, float_format);
+diffs/mujoco_src/engine/engine_print.c:  printArray2d("EFC_FRICTIONLOSS", d->nefc, 1, d->efc_frictionloss, fp, float_format);
+diffs/mujoco_src/engine/engine_core_util.c:// determine type of friction cone
+diffs/mujoco_src/engine/engine_core_util.c:      mju_decodePyramid(result, d->efc_force + con->efc_address, con->friction, con->dim);
+diffs/mujoco_src/engine/engine_collision_driver.c:// compute contact condim, gap, solref, solimp, friction
+diffs/mujoco_src/engine/engine_collision_driver.c:                            mjtNum* solref, mjtNum* solimp, mjtNum* friction,
+diffs/mujoco_src/engine/engine_collision_driver.c:  const mjtNum* friction1 = (f1 < 0) ? m->geom_friction+g1*3    : m->flex_friction+f1*3;
+diffs/mujoco_src/engine/engine_collision_driver.c:  const mjtNum* friction2 = (f2 < 0) ? m->geom_friction+g2*3    : m->flex_friction+f2*3;
+diffs/mujoco_src/engine/engine_collision_driver.c:    mju_copy(fri, friction1, 3);
+diffs/mujoco_src/engine/engine_collision_driver.c:    mju_copy(fri, friction2, 3);
+diffs/mujoco_src/engine/engine_collision_driver.c:    // friction: max
+diffs/mujoco_src/engine/engine_collision_driver.c:      fri[i] = mju_max(friction1[i], friction2[i]);
+diffs/mujoco_src/engine/engine_collision_driver.c:  // unpack 5D friction
+diffs/mujoco_src/engine/engine_collision_driver.c:  friction[0] = fri[0];
+diffs/mujoco_src/engine/engine_collision_driver.c:  friction[1] = fri[0];
+diffs/mujoco_src/engine/engine_collision_driver.c:  friction[2] = fri[1];
+diffs/mujoco_src/engine/engine_collision_driver.c:  friction[3] = fri[2];
+diffs/mujoco_src/engine/engine_collision_driver.c:  friction[4] = fri[2];
+diffs/mujoco_src/engine/engine_collision_driver.c:                          const mjtNum* solref, const mjtNum* solreffriction,
+diffs/mujoco_src/engine/engine_collision_driver.c:                          const mjtNum* solimp, const mjtNum* friction) {
+diffs/mujoco_src/engine/engine_collision_driver.c:  mj_assignRef(m, con->solreffriction, solreffriction);
+diffs/mujoco_src/engine/engine_collision_driver.c:  mj_assignFriction(m, con->friction, friction);
+diffs/mujoco_src/engine/engine_collision_driver.c:  mjtNum margin, gap, friction[5], solref[mjNREF], solimp[mjNIMP];
+diffs/mujoco_src/engine/engine_collision_driver.c:  mjtNum solreffriction[mjNREF] = {0};
+diffs/mujoco_src/engine/engine_collision_driver.c:  // set condim, gap, solref, solimp, friction: dynamic
+diffs/mujoco_src/engine/engine_collision_driver.c:    mj_contactParam(m, &condim, &gap, solref, solimp, friction, g1, g2, -1, -1);
+diffs/mujoco_src/engine/engine_collision_driver.c:  // set condim, gap, solref, solimp, friction: pair
+diffs/mujoco_src/engine/engine_collision_driver.c:    mju_copy(friction, m->pair_friction+5*ipair, 5);
+diffs/mujoco_src/engine/engine_collision_driver.c:    // reference, friction directions
+diffs/mujoco_src/engine/engine_collision_driver.c:    if (m->pair_solreffriction[mjNREF*ipair] || m->pair_solreffriction[mjNREF*ipair + 1]) {
+diffs/mujoco_src/engine/engine_collision_driver.c:      mju_copy(solreffriction, m->pair_solreffriction+mjNREF*ipair, mjNREF);
+diffs/mujoco_src/engine/engine_collision_driver.c:    mj_setContact(m, con + i, condim, margin-gap, solref, solreffriction, solimp, friction);
+diffs/mujoco_src/engine/engine_collision_driver.c:  mjtNum gap, solref[mjNREF], solimp[mjNIMP], friction[5];
+diffs/mujoco_src/engine/engine_collision_driver.c:  mjtNum solreffriction[mjNREF] = {0};
+diffs/mujoco_src/engine/engine_collision_driver.c:  mj_contactParam(m, &condim, &gap, solref, solimp, friction, g, -1, -1, f);
+diffs/mujoco_src/engine/engine_collision_driver.c:    mj_setContact(m, &con, condim, margin-gap, solref, solreffriction, solimp, friction);
+diffs/mujoco_src/engine/engine_collision_driver.c:  mjtNum gap, solref[mjNREF], solimp[mjNIMP], friction[5];
+diffs/mujoco_src/engine/engine_collision_driver.c:  mjtNum solreffriction[mjNREF] = {0};
+diffs/mujoco_src/engine/engine_collision_driver.c:  mj_contactParam(m, &condim, &gap, solref, solimp, friction, -1, -1, f, f);
+diffs/mujoco_src/engine/engine_collision_driver.c:      mj_setContact(m, &con, condim, 0, solref, solreffriction, solimp, friction);
+diffs/mujoco_src/engine/engine_collision_driver.c:      mj_setContact(m, &con, condim, 0, solref, solreffriction, solimp, friction);
+diffs/mujoco_src/engine/engine_collision_driver.c:      mj_setContact(m, &con, condim, 0, solref, solreffriction, solimp, friction);
+diffs/mujoco_src/engine/engine_collision_driver.c:      mj_setContact(m, &con, condim, 0, solref, solreffriction, solimp, friction);
+diffs/mujoco_src/engine/engine_collision_driver.c:  mjtNum gap, friction[5], solref[mjNREF], solimp[mjNIMP];
+diffs/mujoco_src/engine/engine_collision_driver.c:  mjtNum solreffriction[mjNREF] = {0};
+diffs/mujoco_src/engine/engine_collision_driver.c:  mj_contactParam(m, &condim, &gap, solref, solimp, friction, g, -1, -1, f);
+diffs/mujoco_src/engine/engine_collision_driver.c:    mj_setContact(m, con + i, condim, margin-gap, solref, solreffriction, solimp, friction);
+diffs/mujoco_src/engine/engine_collision_driver.c:  mjtNum gap, friction[5], solref[mjNREF], solimp[mjNIMP];
+diffs/mujoco_src/engine/engine_collision_driver.c:  mjtNum solreffriction[mjNREF] = {0};
+diffs/mujoco_src/engine/engine_collision_driver.c:  mj_contactParam(m, &condim, &gap, solref, solimp, friction, -1, -1, f1, f2);
+diffs/mujoco_src/engine/engine_collision_driver.c:    mj_setContact(m, con + i, condim, margin-gap, solref, solreffriction, solimp, friction);
+diffs/mujoco_src/engine/engine_collision_driver.c:  mjtNum gap, friction[5], solref[mjNREF], solimp[mjNIMP];
+diffs/mujoco_src/engine/engine_collision_driver.c:  mjtNum solreffriction[mjNREF] = {0};
+diffs/mujoco_src/engine/engine_collision_driver.c:  mj_contactParam(m, &condim, &gap, solref, solimp, friction, -1, -1, f, f);
+diffs/mujoco_src/engine/engine_collision_driver.c:    mj_setContact(m, con + i, condim, 0, solref, solreffriction, solimp, friction);
+diffs/mujoco_src/engine/engine_island.c:  // joint friction
+diffs/mujoco_src/engine/engine_island.c:  if (efc_type == mjCNSTR_FRICTION_DOF) {
+diffs/mujoco_src/engine/engine_island.c:  if (efc_type == mjCNSTR_CONTACT_FRICTIONLESS ||
+diffs/mujoco_src/engine/engine_island.c:      case mjCNSTR_FRICTION_DOF:
+diffs/mujoco_src/engine/engine_island.c:      case mjCNSTR_FRICTION_TENDON:
+diffs/mujoco_src/engine/engine_island.c:  mju_gather(d->iefc_frictionloss, d->efc_frictionloss, d->map_iefc2efc, nefc);
+diffs/mujoco_src/engine/engine_core_smooth.c:              int npyramid = con->dim-1;  // number of frictional directions
+diffs/mujoco_src/engine/engine_support.c:  "Frictionloss",
+diffs/mujoco_src/engine/engine_core_util.h:// determine type of friction cone
+diffs/mujoco_src/engine/engine_init.c:  opt->o_friction[0] = 1;
+diffs/mujoco_src/engine/engine_init.c:  opt->o_friction[1] = 1;
+diffs/mujoco_src/engine/engine_init.c:  opt->o_friction[2] = 0.005;
+diffs/mujoco_src/engine/engine_init.c:  opt->o_friction[3] = 0.0001;
+diffs/mujoco_src/engine/engine_init.c:  opt->o_friction[4] = 0.0001;
+diffs/mujoco_src/engine/engine_init.c:  setf4(vis->rgba.contactfriction,  .9, .8, .4, 1.);
+diffs/mujoco_src/xml/xml_native_reader.cc:        "o_margin", "o_solref", "o_solimp", "o_friction",
+diffs/mujoco_src/xml/xml_native_reader.cc:        {"flag", "?", "constraint", "equality", "frictionloss", "limit", "contact",
+diffs/mujoco_src/xml/xml_native_reader.cc:            "contactfriction", "contacttorque", "contactgap", "rangefinder",
+diffs/mujoco_src/xml/xml_native_reader.cc:            "solreffriction", "solimpfriction", "stiffness", "range", "actuatorfrcrange",
+diffs/mujoco_src/xml/xml_native_reader.cc:            "frictionloss", "user"},
+diffs/mujoco_src/xml/xml_native_reader.cc:            "group", "priority", "size", "material", "friction", "mass", "density",
+diffs/mujoco_src/xml/xml_native_reader.cc:        {"pair", "?", "condim", "friction", "solref", "solreffriction", "solimp",
+diffs/mujoco_src/xml/xml_native_reader.cc:            "solreflimit", "solimplimit", "solreffriction", "solimpfriction",
+diffs/mujoco_src/xml/xml_native_reader.cc:            "frictionloss", "springlength", "width", "material",
+diffs/mujoco_src/xml/xml_native_reader.cc:            "solreflimit", "solimplimit", "solreffriction", "solimpfriction",
+diffs/mujoco_src/xml/xml_native_reader.cc:            "springref", "armature", "damping", "frictionloss", "user"},
+diffs/mujoco_src/xml/xml_native_reader.cc:            "group", "priority", "size", "material", "friction", "mass", "density",
+diffs/mujoco_src/xml/xml_native_reader.cc:                "frictionloss", "solreffriction", "solimpfriction"},
+diffs/mujoco_src/xml/xml_native_reader.cc:                "group", "priority", "size", "material", "rgba", "friction", "mass",
+diffs/mujoco_src/xml/xml_native_reader.cc:                "friction", "solmix", "solref", "solimp", "margin", "gap",
+diffs/mujoco_src/xml/xml_native_reader.cc:                "friction", "solmix", "solref", "solimp", "margin", "gap",
+diffs/mujoco_src/xml/xml_native_reader.cc:        {"pair", "*", "name", "class", "geom1", "geom2", "condim", "friction",
+diffs/mujoco_src/xml/xml_native_reader.cc:            "solref", "solreffriction", "solimp", "gap", "margin"},
+diffs/mujoco_src/xml/xml_native_reader.cc:            "actuatorfrcrange", "solreflimit", "solimplimit", "solreffriction", "solimpfriction",
+diffs/mujoco_src/xml/xml_native_reader.cc:            "frictionloss", "springlength", "width", "material",
+diffs/mujoco_src/xml/xml_native_reader.cc:            "actuatorfrcrange","solreflimit", "solimplimit", "solreffriction", "solimpfriction",
+diffs/mujoco_src/xml/xml_native_reader.cc:            "frictionloss", "springlength", "margin", "stiffness", "damping", "armature", "user"},
+diffs/mujoco_src/xml/xml_native_reader.cc:  ReadAttr(section, "o_friction", 5, opt->o_friction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:    READDSBL("frictionloss", mjDSBL_FRICTIONLOSS)
+diffs/mujoco_src/xml/xml_native_reader.cc:    ReadAttr(cont, "friction", 3, flex->friction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:  ReadAttr(elem, "solreffriction", mjNREF, joint->solref_friction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:  ReadAttr(elem, "solimpfriction", mjNIMP, joint->solimp_friction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:  ReadAttr(elem, "frictionloss", 1, &joint->frictionloss, text);
+diffs/mujoco_src/xml/xml_native_reader.cc:  ReadAttr(elem, "friction", 3, geom->friction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:  ReadAttr(elem, "solreffriction", mjNREF, pair->solreffriction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:  ReadAttr(elem, "friction", 5, pair->friction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:  ReadAttr(elem, "solreffriction", mjNREF, tendon->solref_friction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:  ReadAttr(elem, "solimpfriction", mjNIMP, tendon->solimp_friction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:  ReadAttr(elem, "frictionloss", 1, &tendon->frictionloss, text);
+diffs/mujoco_src/xml/xml_native_reader.cc:    ReadAttr(egeom, "friction", 3, dgeom.friction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:             "solreffriction", mjNREF, djoint.solref_friction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:             "solimpfriction", mjNIMP, djoint.solimp_friction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:    ReadAttr(ejnt, "frictionloss", 1, &djoint.frictionloss, text);
+diffs/mujoco_src/xml/xml_native_reader.cc:    ReadAttr(cont, "friction", 3, dflex.friction, text, false, false);
+diffs/mujoco_src/xml/xml_native_reader.cc:      ReadAttr(elem, "contactfriction",  4, vis->rgba.contactfriction, text);
+diffs/mujoco_src/xml/xml_urdf.cc:    ReadAttr(elem, "friction", 1, &pjoint->frictionloss, text);
+diffs/mujoco_src/xml/xml_urdf.cc:      pjoint1->frictionloss = pjoint2->frictionloss = pjoint->frictionloss;
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(cont, "friction", 3, flex->friction, defflex.friction);
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(elem, "solreffriction", mjNREF, joint->solref_friction, def->Joint().solref_friction,
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(elem, "solimpfriction", mjNIMP, joint->solimp_friction, def->Joint().solimp_friction,
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(elem, "frictionloss", 1, &joint->frictionloss, &def->Joint().frictionloss);
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(elem, "friction", 3, geom->friction, def->Geom().friction, true);
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(elem, "solreffriction", mjNREF, pair->solreffriction, def->Pair().spec.solreffriction,
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(elem, "friction", 5, pair->friction, def->Pair().spec.friction);  // all 5 values
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(elem, "solreffriction", mjNREF, tendon->solref_friction, def->Tendon().solref_friction,
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(elem, "solimpfriction", mjNIMP, tendon->solimp_friction, def->Tendon().solimp_friction,
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(elem, "frictionloss", 1, &tendon->frictionloss, &def->Tendon().frictionloss);
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(section, "o_friction", 5, model->option.o_friction, opt.o_friction);
+diffs/mujoco_src/xml/xml_native_writer.cc:    WRITEDSBL("frictionloss",   mjDSBL_FRICTIONLOSS)
+diffs/mujoco_src/xml/xml_native_writer.cc:  WriteAttr(elem, "contactfriction",  4, vis->rgba.contactfriction,  visdef.rgba.contactfriction);
+

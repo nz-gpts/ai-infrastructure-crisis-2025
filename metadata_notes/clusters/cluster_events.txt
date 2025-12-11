@@ -1,0 +1,12 @@
+=== [CLUSTER: 2025-12-10 ±2 days] ===
+- LLAMA: README + dtype default reversal
+- Transformers: Packed FA attention patch, deprecated quant libs
+- MuJoCo: mj_loadModelBuffer API made public
+- nanoGPT: [none] — inactivity signals drift
+
+Inference:
+- dtype + quantization pressure surfacing simultaneously
+- Transformers + LLAMA touching inference stack
+- MuJoCo opening up APIs → possible sim-inference interface evolution?
+
+=============================

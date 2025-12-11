@@ -1,0 +1,17 @@
+Track anomalies, deprecated features, unexplained API hooks here
+=== Fri 12 Dec 2025 00:06:30 NZDT ===
+Initial visual diff impressions across repos
+- Transformers vs nanoGPT: config surface area, # of parameters exposed, etc.
+- Llama vs nanoGPT: generation/training assumptions, context windows, etc.
+- MuJoCo: any hard-coded physical constants or assumptions noticed.
+
+=== synchronized window: YYYY-MM-DD ===
+<list commits you noticed in that cluster>
+
+=== Fri 12 Dec 2025 00:10:50 NZDT === Drift Index Summary ===
+359
+159
+42
+1
+85
+

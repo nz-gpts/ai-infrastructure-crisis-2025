@@ -1,0 +1,9 @@
+Note high-level modeling assumptions per project here
+=== Fri 12 Dec 2025 00:07:14 NZDT ===
+Notes from grep passes (context, temperature, gravity, friction, etc.)
+
+=== Fri 12 Dec 2025 00:08:49 NZDT === Assumption Surfaces ===
+- Transformers has X config knobs, nanoGPT has Y → signal: complexity compression.
+- Llama generation temperature defaults vs Transformer CLI defaults.
+- MuJoCo hard-coded gravity/friction vs attention models assuming symbolic causality.
+
