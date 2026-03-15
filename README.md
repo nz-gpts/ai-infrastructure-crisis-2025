@@ -1,135 +1,176 @@
-# AI Infrastructure Crisis 2025: Forensic Analysis
+# AI Ecosystem Transition 2025: Cross-Repository Forensic Analysis
 
-**Detecting ecosystem-level failures through pattern recognition across code repositories**
+**Detecting ecosystem-level infrastructure transitions through pattern recognition across code repositories**
 
 ## Overview
 
-In late 2025, four major AI code repositories (Transformers, LLaMA, MuJoCo, nanoGPT) exhibited synchronized failures across dtype handling, attention kernels, and quantization pathways. This investigation uses forensic code analysis to reveal how shared infrastructure changes forced coordinated ecosystem contraction.
+During 2025, several major AI repositories (Transformers, LLaMA, MuJoCo, nanoGPT) exhibited correlated infrastructure adjustments involving dtype handling, attention kernels, and quantization pathways.  
 
-**Key Finding:** What appeared to be independent "cleanup" efforts were actually convergent adaptations to upstream infrastructure tightening, occurring months before users noticed the December 2025 changes.
+This repository documents those changes through commit timeline analysis and cross-repository comparison.
+
+The evidence suggests a **shared dependency transition in the AI software stack**, most likely originating from upstream framework evolution (for example PyTorch and related kernel infrastructure).
+
+The investigation focuses on **observable repository behavior**, not speculation about internal decisions.
+
+**Key observation:**  
+Multiple repositories adapted infrastructure subsystems during the same time window, indicating a shared upstream influence rather than isolated maintenance activity.
+
+---
 
 ## Repository Contents
 
 ### Documentation
 
-- **[Full Investigation](docs/findings/finding_enhanced.md)** - Complete analysis with non-technical explanations
-- **[Clean Room Synthesis](docs/findings/clean_room_synthesis_enhanced.md)** - Forensic evidence using only observable code commits
-- **[Systems Analysis](docs/findings/systems_analysis_enhanced.md)** - Emergence patterns and structural dynamics
-- **[Blog Post](docs/blog-post.md)** - Condensed version optimized for web reading
+- **Full Investigation** – Complete analysis with technical explanations  
+- **Clean Room Synthesis** – Evidence derived only from observable commit history  
+- **Systems Analysis** – Structural patterns across the ecosystem  
+- **Condensed Report** – Shorter summary for web readers
 
 ### Analysis Tools
 
-The `deep_pattern_engines` directory contains forensic analysis tools:
+The repository includes several utilities for repository forensics:
 
-- **Bisector Engine** - Finds exact commit where breakage started
-- **Burst Detector** - Identifies crisis periods through commit density
-- **Correlation Matrix** - Detects synchronized changes across repos
-- **Schema Analyzer** - Tracks configuration surface contraction
+- **Bisector Engine** – identifies commits associated with behavioral changes  
+- **Burst Detector** – measures commit-density spikes across repositories  
+- **Correlation Matrix** – compares temporal commit clusters  
+- **Schema Analyzer** – tracks configuration surface changes
 
-## Key Findings
+---
 
-### Timeline
+## Observed Timeline
 
-- **August 2025:** Initial infrastructure fractures detected
-- **September 2025:** Crisis recognition, emergency patching begins
-- **October 2025:** Forced adaptation, automatic systems become manual
-- **November 2025:** Strategic retreat, configuration purge
-- **December 2025:** Visible convergence (what users noticed)
+Commit timelines across multiple repositories show clustered infrastructure updates during late 2025.
 
-### The Pattern
+Observed patterns include:
 
-Four independent repositories broke in the same ways at the same time:
+- dtype handling adjustments  
+- quantization pathway updates  
+- attention kernel modifications  
+- configuration contract tightening  
 
-1. **dtype propagation** - Number format handling became strict
-2. **Attention kernels** - Focus mechanisms required explicit contracts
-3. **Quantization pathways** - Model compression became unreliable
-4. **Configuration inheritance** - Settings systems failed to propagate correctly
+These changes appear across multiple repositories during overlapping time windows.
 
-**Probability of coincidence:** Astronomically low. This proves shared infrastructure cause.
+---
 
-### Ecosystem Response
+## Pattern Observed
 
-The analysis revealed five structural drives shaping the ecosystem's response:
+Several repositories relying on similar infrastructure stacks modified related subsystems during the same time period.
 
-1. **Coherence over Compatibility** - Internal consistency prioritized over backwards compatibility
-2. **Smaller Surfaces, Stronger Invariants** - Configuration options reduced, guarantees strengthened
-3. **Centralization of Control** - Architectural monoculture emerges
-4. **Explicit Failure** - Systems fail visibly rather than degrade silently
-5. **Efficiency Optimization** - Push toward lower precision, faster inference
+Examples of correlated changes include:
+
+1. **dtype propagation updates** – numeric precision handling adjustments  
+2. **attention kernel updates** – interface and compatibility fixes  
+3. **quantization pathway updates** – model compression pipeline changes  
+4. **configuration adjustments** – explicit parameter handling
+
+Temporal clustering suggests a **shared upstream dependency transition**, not isolated project failures.
+
+---
+
+## Ecosystem Interpretation
+
+Large AI repositories depend on a shared software stack:
+
+GPU hardware  
+↓  
+CUDA  
+↓  
+PyTorch / core frameworks  
+↓  
+libraries (Transformers, etc.)  
+↓  
+model implementations
+
+When upstream layers evolve, downstream projects adapt their infrastructure code.
+
+The patterns observed here are consistent with **ecosystem adaptation to upstream framework evolution**.
+
+---
 
 ## Methodology
 
 ### Data Sources
 
-- Git commit histories (public repositories)
-- Commit message analysis
-- Timestamp correlation
-- Configuration schema tracking
-- Diff pattern analysis
+- public Git commit histories
+- commit message analysis
+- timestamp correlation
+- diff inspection
+- repository timeline reconstruction
 
-### Analysis Approach
+### Analysis Method
 
-**Pattern recognition at scale:** Individual commits appear routine. Aggregated across millions of changes, ecosystem-level dynamics become visible.
+Individual commits often appear routine.
 
-**Bisector technique:** Binary search through git history to find exact breakage points, revealing temporal correlations across unrelated projects.
+However, aggregating commit histories across repositories allows detection of:
 
-**Forensic standard:** Only claims supported by observable code commits. No speculation beyond what patterns logically imply.
+- temporal clustering
+- dependency propagation
+- ecosystem-wide infrastructure adaptation
+
+Only patterns directly observable in commit histories are included.
+
+---
 
 ## Predictions
 
-This pattern will repeat every 12-18 months:
+Large framework transitions can propagate across the AI ecosystem.
 
-1. Infrastructure layers evolve
-2. Dependent systems destabilize
-3. Coordinated retreats happen
-4. Public surfaces contract
-5. New equilibrium reached
-6. **Cycle repeats**
+Possible observable signals include:
 
-### Early Warning Signals
+- clustered infrastructure commits across multiple repositories
+- dtype or precision standardization
+- quantization pipeline updates
+- configuration schema tightening
 
-Watch for:
-- Commit density bursts across repos
-- Temporal correlation in unrelated projects
-- Schema contractions (defensive signals)
-- Cross-repo fix patterns
-- Accelerating deprecation velocity
+These signals often correspond to upstream framework evolution.
 
-## Analyzed Repositories
+---
 
-- **[Transformers](https://github.com/huggingface/transformers)** - Hugging Face's model library
-- **[LLaMA](https://github.com/meta-llama/llama)** - Meta's language models
-- **[MuJoCo](https://github.com/google-deepmind/mujoco)** - Physics simulation for robotics
-- **[nanoGPT](https://github.com/karpathy/nanoGPT)** - Educational GPT implementation
+## Repositories Analyzed
+
+- Transformers — Hugging Face model framework  
+- LLaMA — Meta language model implementation  
+- MuJoCo — DeepMind physics engine  
+- nanoGPT — educational GPT implementation
+
+---
 
 ## Author
 
-**Amy Ferguson** - Founder of [NZGPTS](https://nzgpts.com), an AI consultancy platform in New Zealand
+Amy Ferguson — NZGPTS  
+AI decision-intelligence project based in New Zealand
 
-Built forensic analysis tools as infrastructure monitoring for business operations. Detected this pattern through automated cross-repository analysis in late 2025.
+---
 
 ## License
 
 Documentation: CC-BY-4.0  
-Analysis tools: MIT (where applicable)
+Analysis tools: MIT
+
+---
 
 ## Citation
 
-If you reference this analysis:
-```
-Ferguson, A. (2025). AI Infrastructure Crisis 2025: Forensic Analysis. 
-GitHub repository: https://github.com/[your-username]/ai-infrastructure-crisis-2025
-```
+Ferguson, A. (2025).  
+AI Ecosystem Transition 2025: Cross-Repository Forensic Analysis.  
+GitHub repository.
+
+---
 
 ## Contributing
 
-This is an observational analysis project. If you:
-- Find errors in the forensic analysis
-- Have additional data from other repos
-- Want to discuss methodology
+If you find:
 
-Open an issue or pull request.
+- errors in commit interpretation
+- additional relevant repository data
+- alternative explanations for the patterns
 
-## Acknowledgments
+open an issue.
 
-Analysis conducted using open source tools and publicly available git repositories. Thanks to all maintainers who responded to this crisis with transparency through their commit histories.
+---
+
+## Notes
+
+This repository documents **observed patterns in public commit histories**.  
+It does not claim internal knowledge of development decisions inside the analyzed projects.
+
