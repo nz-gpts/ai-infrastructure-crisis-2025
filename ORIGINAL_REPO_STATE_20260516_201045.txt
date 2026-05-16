@@ -1,0 +1,24 @@
+Repo path: /home/amy/ai-infrastructure-crisis-2025
+Recorded at: 2026-05-16T20:10:45+12:00
+
+Current branch:
+main
+
+Current HEAD SHA:
+22b4a532e323ddc3a241eb87158de7128a25be19
+
+origin/main SHA:
+22b4a532e323ddc3a241eb87158de7128a25be19
+
+Latest commit:
+22b4a53 (HEAD -> main, origin/main, origin/HEAD) Reframe analysis: ecosystem transition rather than infrastructure crisis
+
+Remotes:
+origin	https://github.com/nz-gpts/ai-infrastructure-crisis-2025.git (fetch)
+origin	https://github.com/nz-gpts/ai-infrastructure-crisis-2025.git (push)
+
+Git status:
+?? ORIGINAL_REPO_STATE_20260516_201045.txt
+?? full_investigation_export.txt
+?? investigation_dump.txt
+?? sync_matrix_new.txt
