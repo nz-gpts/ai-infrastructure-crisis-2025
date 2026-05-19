@@ -6,9 +6,11 @@
 
 ## What I Built
 
-Over the past two years, I've been building NZGPTS, an AI consultancy platform for New Zealand SMEs. As part of that work, I created a suite of forensic analysis tools called "deep_pattern_engines" to monitor AI infrastructure stability—because my business depends on these systems remaining reliable.
+Over the past two years, I've been building NZGPTS, an AI consultancy platform for New Zealand SMEs. Because my business depends on upstream systems remaining reliable, I built EcosystemRadar—a telemetry microservice integrated directly into my Node.js backend.
 
-In late 2025, my tools detected something unusual: four major AI code repositories (Transformers, LLaMA, MuJoCo, nanoGPT) were all making similar emergency fixes at exactly the same time. This pattern suggested a shared infrastructure crisis that most engineers hadn't noticed yet.
+The radar is powered by deep_pattern_engines: a suite of modular Bash scripts executed via child processes that parse shallow git clones of major upstream repositories.
+
+In late 2025, my automated scans detected something unusual: four major AI code repositories (Transformers, LLaMA, MuJoCo, nanoGPT) were all making similar emergency fixes at exactly the same time. This pattern suggested a shared infrastructure crisis that most engineers hadn't noticed yet.
 
 This is what I found, and how I found it.
 
@@ -32,17 +34,15 @@ When four different projects maintained by different companies all hit identical
 
 ## The Forensic Tools
 
-I built several specialized analysis engines to detect these patterns:
+The core of the radar relies on custom shell pipelines running against local Git mirrors. The Node.js scheduler orchestrates four primary engines:
 
-**Bisector Engine:** Searches backwards through git history to find the exact commit where problems started. Like rewinding security camera footage to find when a break-in occurred.
+**Bisector Engine:** Uses git log and awk to search backwards through git history, identifying the exact commit where problems started across multiple repos simultaneously.
 
-**Burst Detector:** Identifies sudden spikes in commit density—the "emergency coding sessions" that indicate crisis response.
+**Burst Detector:** Calculates daily commit frequency arrays to identify sudden spikes in commit density—the "emergency coding sessions" that indicate crisis response.
 
-**Correlation Matrix:** Tracks timing across repositories to detect synchronized changes that prove common cause.
+**Schema Analyzer:** Uses grep pipelines across historical code diffs (git log -p) to track the exact velocity at which configuration files and APIs shrink over time—a defensive signal when systems are under pressure.
 
-**Schema Analyzer:** Monitors configuration files shrinking over time—a defensive signal when systems are under pressure.
-
-**The key insight:** Humans see individual commits and think "routine maintenance." These tools aggregate millions of changes to reveal ecosystem-level dynamics.
+**The Intelligence Overlay:** The Node.js layer validates the raw bash outputs using strict JSON schemas and updates a local advisory policy (llm_ecosystem_policy.json), acting as an early-warning radar for my platform without risking auto-remediation failures.
 
 ---
 
@@ -91,7 +91,7 @@ Here's what the forensic analysis revealed:
 Each message individually looks routine. But analyzed together, they reveal a pattern: **internal assumptions no longer held true**.
 
 **Timing correlation:**
-All four repos entered intensive remediation within the same 2-week window. The bisector windows aligned to within days—impossible to be coincidence.
+All four repos entered intensive remediation within the same 2-week window. The bisector windows aligned to within days—statistically highly improbable as an isolated coincidence.
 
 **Schema contraction metrics:**
 - Configuration files: 200+ settings → 60 settings
@@ -100,7 +100,7 @@ All four repos entered intensive remediation within the same 2-week window. The 
 - Deprecated features: Aggressive removal when conflicting with new requirements
 
 **The silent fourth repo:**
-nanoGPT, an educational implementation, had almost zero updates during this period. This silence is itself evidence—the maintainers chose to freeze rather than adapt, because adaptation would destroy the project's educational simplicity. The new infrastructure is inherently more complex.
+nanoGPT, an educational implementation, had almost zero updates during this period. This silence is itself evidence—adapting to the new, stricter upstream constraints would require adding architectural complexity. This makes the repository's inactivity a consistent pattern datum for this transition, as it maintained its educational simplicity. The new infrastructure is inherently more complex.
 
 ---
 

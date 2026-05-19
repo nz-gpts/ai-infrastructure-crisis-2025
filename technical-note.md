@@ -36,15 +36,14 @@ No access to internal issue trackers, private communications, or unpublished roa
 
 ## Internal Analysis Tools
 
-Four purpose-built internal utilities (part of the proprietary NZGPTS platform) were used to conduct this research. While the tools themselves are not published in this repository, their functions are defined below:
+This investigation was conducted using **deep_pattern_engines**, an active telemetry microservice integrated into the NZGPTS Node.js backend. The radar is powered by custom Bash shell pipelines executed via child processes that parse Git clones of major upstream repositories.
 
-**Bisector Engine** — performs backward search through commit history to identify the earliest commit associated with a class of changes. Analogous to `git bisect` but applied across repositories simultaneously.
+While the proprietary execution pipeline is not hosted in this public repository to protect internal infrastructure, the analysis outputs, methodologies, and raw data are provided here. The internal suite includes:
 
-**Burst Detector** — measures commit density over rolling time windows to identify periods of abnormal activity. Abnormality is defined relative to each repository's own baseline rate, not a fixed threshold.
-
-**Correlation Matrix** — compares timestamps of infrastructure-related commit clusters across repositories to calculate temporal overlap. Used to assess whether clustering is consistent with shared causation.
-
-**Schema Analyzer** — tracks configuration surface changes over time by counting exposed parameters in configuration files at defined snapshots. Used to quantify surface contraction as a defensive signal.
+- **Bisector Engine** – uses `git log` and `awk` to search backwards through git history to identify exact breakage points.
+- **Burst Detector** – calculates daily commit frequency arrays to identify sudden spikes in commit density.
+- **Correlation Matrix** – compares timestamps of infrastructure-related commit clusters across repositories to calculate temporal overlap.
+- **Schema Analyzer** – uses `grep` pipelines across historical code diffs to track the velocity at which configuration files and APIs shrink.
 
 ---
 
