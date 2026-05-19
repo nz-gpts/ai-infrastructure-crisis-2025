@@ -26,9 +26,10 @@ Multiple repositories adapted infrastructure subsystems during the same time win
 - **Systems Analysis** – Structural patterns across the ecosystem  
 - **Condensed Report** – Shorter summary for web readers
 
-### Analysis Tools
 
-The repository includes several utilities for repository forensics:
+### Internal Tooling Used
+
+This investigation was conducted using **deep_pattern_engines**, a suite of custom internal forensic tools developed for NZGPTS platform building. While the proprietary engines themselves are not hosted in this public repository to protect internal infrastructure, the analysis outputs, methodologies, and raw data are provided here. The internal suite includes:
 
 - **Bisector Engine** – identifies commits associated with behavioral changes  
 - **Burst Detector** – measures commit-density spikes across repositories  
@@ -144,9 +145,7 @@ AI decision-intelligence project based in New Zealand
 
 ## License
 
-Documentation: CC-BY-4.0  
-Analysis tools: MIT
-
+Documentation and Analysis: CC-BY-4.0
 ---
 
 ## Citation
