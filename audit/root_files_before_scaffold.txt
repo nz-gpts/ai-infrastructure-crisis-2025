@@ -1,0 +1,7 @@
+full_investigation_export.txt
+.gitignore
+investigation_dump.txt
+LICENSE
+ORIGINAL_REPO_STATE_20260516_201045.txt
+README.md
+sync_matrix_new.txt

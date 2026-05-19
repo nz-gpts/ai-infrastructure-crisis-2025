@@ -4,16 +4,11 @@
 
 ## Overview
 
-During 2025, several major AI repositories (Transformers, LLaMA, MuJoCo, nanoGPT) exhibited correlated infrastructure adjustments involving dtype handling, attention kernels, and quantization pathways.  
+Public Git histories from Transformers, LLaMA, MuJoCo, and nanoGPT show temporally clustered infrastructure-related changes during late 2025.
 
-This repository documents those changes through commit timeline analysis and cross-repository comparison.
+The observed pattern is consistent with ecosystem adaptation to upstream framework/kernel evolution, most plausibly around the PyTorch/CUDA/attention/quantization stack.
 
-The evidence suggests a **shared dependency transition in the AI software stack**, most likely originating from upstream framework evolution (for example PyTorch and related kernel infrastructure).
-
-The investigation focuses on **observable repository behavior**, not speculation about internal decisions.
-
-**Key observation:**  
-Multiple repositories adapted infrastructure subsystems during the same time window, indicating a shared upstream influence rather than isolated maintenance activity.
+The analysis documents correlation and structural convergence. It focuses on observable repository behavior, not speculation about internal decisions, and documents correlation, not independently confirmed causation.
 
 ---
 
@@ -26,14 +21,17 @@ Multiple repositories adapted infrastructure subsystems during the same time win
 - **Systems Analysis** – Structural patterns across the ecosystem  
 - **Condensed Report** – Shorter summary for web readers
 
-### Analysis Tools
 
-The repository includes several utilities for repository forensics:
+### Internal Tooling Used
 
-- **Bisector Engine** – identifies commits associated with behavioral changes  
-- **Burst Detector** – measures commit-density spikes across repositories  
-- **Correlation Matrix** – compares temporal commit clusters  
-- **Schema Analyzer** – tracks configuration surface changes
+This investigation was conducted using **deep_pattern_engines**, an active telemetry microservice integrated into the NZGPTS Node.js backend. The radar is powered by custom Bash shell pipelines executed via child processes that parse shallow Git clones of major upstream repositories.
+
+While the proprietary execution pipeline is not hosted in this public repository to protect internal infrastructure, the analysis outputs, methodologies, and raw data are provided here. The internal suite includes:
+
+- **Bisector Engine** – uses `git log` and `awk` to search backwards through git history to identify exact breakage points.
+- **Burst Detector** – calculates daily commit frequency arrays to identify sudden spikes in commit density.
+- **Schema Analyzer** – uses `grep` pipelines across historical code diffs to track the velocity at which configuration files and APIs shrink.
+- **Intelligence Overlay** – a Node.js layer that validates raw outputs using JSON schemas and updates local advisory policies.
 
 ---
 
@@ -144,9 +142,7 @@ AI decision-intelligence project based in New Zealand
 
 ## License
 
-Documentation: CC-BY-4.0  
-Analysis tools: MIT
-
+Documentation and Analysis: CC-BY-4.0
 ---
 
 ## Citation
