@@ -242,7 +242,7 @@ This diagram shows the four repositories (Transformers, LLaMA, MuJoCo, nanoGPT) 
 
 **Position in diagram:** Receives from other repos but doesn't send back—it's a one-way reference, not an active participant.
 
-**Why it's separate:** It chose to remain a snapshot rather than evolve with the others.
+**Why it's separate:** It functions as an archival snapshot of a pre-constraint ecosystem, maintaining stability over adaptation.
 
 ---
 
@@ -496,7 +496,7 @@ If the problems were unrelated:
 But the bisector found:
 - Fixes clustered in tight time windows
 - All repos hit problems simultaneously  
-- Temporal correlation was statistically impossible to be coincidence
+- Temporal correlation was statistically highly improbable as an isolated coincidence
 
 **Visual representation:**
 
@@ -506,7 +506,7 @@ LLaMA:        ████████░░░░ (Aug: intense activity)
 MuJoCo:       ████████░░░░ (Aug: intense activity)
 nanoGPT:      ░░░░░░░░░░░░ (Aug: silence)
 
-The pattern proves common cause.
+The pattern strongly indicates a shared upstream constraint.
 ```
 
 **From the outside:** Looks like coordination

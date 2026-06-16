@@ -26,7 +26,7 @@ Even if you just use ChatGPT casually, this investigation reveals important thin
 
 ### What Amy's Detective System Found
 
-Amy built a suite of specialized analysis tools (collectively called "deep_pattern_engines") that examine code repositories like a forensic detective examines crime scenes. Think of it as AI-powered detective work for investigating AI systems.
+Amy built a telemetry microservice powered by custom shell pipelines (collectively called "deep_pattern_engines") that examine code repositories like a forensic detective examines crime scenes. Think of it as AI-powered detective work for investigating AI systems.
 
 **What's a repository?** It's where all the code for a software project lives—like a filing cabinet containing every instruction for how a program works, including the complete history of every change ever made.
 
@@ -34,7 +34,7 @@ Amy's system includes several specialized "detective tools":
 
 - **The Bisector:** Finds the exact moment something broke (like rewinding security footage to find when a problem started)
 - **The Burst Detector:** Identifies sudden spikes of frantic coding activity (like detecting when everyone starts working overtime because there's an emergency)
-- **The Correlation Matrix:** Spots when different teams make identical changes at the same time (the smoking gun that proves coordination)
+- **The Correlation Matrix:** Spots when different teams make identical changes at the same time (a strong temporal signal indicating shared constraints)
 - **Pattern Recognition Engines:** Look for specific types of problems across millions of lines of changed code
 
 The system analyzed four major repositories that power most of the AI tools people use:
@@ -163,13 +163,13 @@ Amy's detective tools searched for nine specific types of problems. Here's each 
 
 **How it works technically:** The bisector automatically tests older and older versions of code until it finds the last version that worked correctly, then identifies the exact change that broke things.
 
-**Why this is powerful:** Instead of guessing when problems started, Amy's bisector gives precise timestamps. This lets her prove that different repositories broke at the same time—which proves they share a common cause.
+**Why this is powerful:** Instead of guessing when problems started, Amy's bisector gives precise timestamps. This lets her prove that different repositories broke at the same time—which strongly suggests a shared upstream constraint.
 
 ### The Main Discovery
 
 **The headline finding:** Between August and September 2025, all four repositories started fixing the same types of problems at the same time. 
 
-**Why this matters:** This wasn't coincidence. The probability of four independent projects hitting identical problems simultaneously is astronomically low—like four different people in different cities all getting food poisoning from the same meal.
+**Why this matters:** This wasn't coincidence. The probability of four independent projects hitting identical problems simultaneously is statistically highly improbable as an isolated coincidence—like four different people in different cities all getting food poisoning from the same meal.
 
 **The smoking gun:** It's like watching four different plumbers all rushing to fix leaks from the same water main break. They're not coordinating with each other; they're all responding to the same upstream disaster.
 
@@ -526,7 +526,7 @@ Amy's system reveals seven critical conclusions about what happened to AI in 202
 
 **What "upstream dependency" means:** Higher up in the dependency chain. Like how a dam upstream affects everyone downstream on the river. Or how if your city's water treatment plant changes its purification process, everyone in the city notices—even though nobody directly interacts with the plant.
 
-**The evidence:** You are seeing widespread dtype, attention, and quantization breakage that cannot be caused by isolated repo decisions. The probability of four independent projects hitting the same problems at the same time is astronomically low.
+**The evidence:** You are seeing widespread dtype, attention, and quantization breakage that cannot be caused by isolated repo decisions. The probability of four independent projects hitting the same problems at the same time is statistically highly improbable as an isolated coincidence.
 
 **Why this matters:** This isn't like four separate bugs that need four separate fixes. This is one systemic problem that forced everyone to adapt simultaneously.
 
@@ -891,7 +891,7 @@ In late 2025, several major AI codebases began breaking in the same places—dat
 
 ## Analysis Attribution
 
-**This entire investigation was conducted using Amy Ferguson's deep_pattern_engines forensic analysis system, running from ~/deep_pattern_engines/ on her local infrastructure.**
+This investigation was executed on the author's local development environment using a proprietary telemetry system (deep_pattern_engines). The production telemetry code is proprietary and is not included in this public repository; related outputs and sanitized evidence are available for review (see README and the examples/ folder).
 
 **What the system includes:**
 - Bisector engine (temporal analysis)
