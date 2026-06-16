@@ -39,6 +39,8 @@ This document walks through the same timeline as the main investigation, but ins
 
 This analysis uses the same standard as engineering postmortems at major companies: only include findings that are reproducible from observable artifacts. If you can't see it in the code commits, it doesn't go in this document.
 
+Reproducibility note: minimal, non‑proprietary examples to reproduce core signals (commit-frequency bursts and simple cross-repo correlation) are available in `examples/analyze-commit-bursts.sh`. Sanitized evidence exports are available in `data/` for inspection; the production telemetry backend used to generate the full dataset is proprietary and not included here (see README).
+
 **What Makes This "Unmistakable":**
 
 The title uses "unmistakable" because the patterns found aren't subject to interpretation. When four independent companies make identical code changes at the same time to fix identical problems, that's not opinion—that's observable fact.
@@ -706,7 +708,7 @@ In forensic analysis, what doesn't happen can be as important as what does happe
 Three possibilities:
 1. The maintainers didn't notice the problems (unlikely—they're experts)
 2. They didn't care (unlikely—it's their project)
-3. **They chose not to adapt because adaptation would destroy the project's purpose**
+3. **The inactivity is structurally consistent with a project preserving its baseline educational purpose**
 
 **Why nanoGPT stayed silent:**
 
@@ -732,10 +734,6 @@ nanoGPT's purpose is educational simplicity. It shows "here's how GPT works in i
 **Why this matters:**
 
 The fact that a well-maintained educational project chose to freeze rather than adapt tells us something important: adaptation to the new requirements is incompatible with simplicity and clarity. The new infrastructure is inherently more complex.
-
-**What maintainers likely thought:**
-
-"If we update nanoGPT to work with the new infrastructure, it won't be 'nano' anymore. It'll become just another complex AI library. Better to leave it as is—a clear example of the old, simpler era."
 
 **The forensic value of silence:**
 
@@ -769,14 +767,14 @@ This culminated in:
 
 **The December 2025 convergence is the stabilized endpoint of the August–September causal shockwave.**
 
-This is the only explanation consistent with:
+This is the most parsimonious explanation consistent with:
 - the timelines
 - the bisector windows
 - the correlated patches
 - the cluster events
 - the schema contraction signatures
 
-**Nothing else fits the full pattern set.**
+Alternative hypotheses (isolated bugs, planned deprecations) do not fully account for the temporal clustering and cross-repository schema convergence.
 
 ---
 
@@ -881,9 +879,9 @@ The six major changes listed are the visible outcomes. Each one represents a cat
 
 ---
 
-**"This is the only explanation consistent with..."**
+**"This is the most parsimonious explanation consistent with..."**
 
-**Why this phrasing matters:** In forensic analysis, you list all possible explanations, then eliminate those that don't fit ALL the evidence.
+**Why this phrasing matters:** In forensic analysis, you list plausible explanations, then assess which best fits the observable evidence without overclaiming certainty.
 
 **The eliminated alternatives:**
 - ❌ "Coincidence" — Probability too low (four independent projects)
@@ -893,12 +891,12 @@ The six major changes listed are the visible outcomes. Each one represents a cat
 - ❌ "Planned deprecation" — Timeline too rapid
 - ❌ "Security patches" — Wrong pattern (security patches are targeted)
 
-**The only explanation that fits ALL evidence:**
+**The most parsimonious explanation that fits the evidence:**
 ✅ "Shared infrastructure changed, forcing coordinated adaptation"
 
 ---
 
-**"Nothing else fits the full pattern set."**
+**Alternative hypotheses and the pattern set**
 
 **What "pattern set" means:** The complete collection of evidence:
 - Timing correlations
@@ -908,9 +906,9 @@ The six major changes listed are the visible outcomes. Each one represents a cat
 - API contractions
 - Cross-repository similarities
 
-**Why this is emphatic:** This isn't hedging or cautious speculation. The evidence is conclusive. Any other explanation requires ignoring parts of the evidence.
+**Why this phrasing is careful:** Isolated bugs or planned deprecations may explain individual commits, but they do not fully account for temporal clustering and cross-repository schema convergence together.
 
-**Legal equivalent:** "Beyond reasonable doubt" — not absolute certainty, but high enough confidence that alternative explanations are unreasonable.
+**Legal equivalent:** "Preponderance of evidence" — the pattern is strong enough to favor one explanation while acknowledging alternatives were considered.
 
 **Scientific equivalent:** "Statistical significance" — pattern is too strong to be random chance.
 

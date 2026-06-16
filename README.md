@@ -2,6 +2,8 @@
 
 **Detecting ecosystem-level infrastructure transitions through pattern recognition across code repositories**
 
+**Repository:** [https://github.com/nz-gpts/ai-infrastructure-crisis-2025](https://github.com/nz-gpts/ai-infrastructure-crisis-2025)
+
 ## Overview
 
 Public Git histories from Transformers, LLaMA, MuJoCo, and nanoGPT show temporally clustered infrastructure-related changes during late 2025.
@@ -10,16 +12,36 @@ The observed pattern is consistent with ecosystem adaptation to upstream framewo
 
 The analysis documents correlation and structural convergence. It focuses on observable repository behavior, not speculation about internal decisions, and documents correlation, not independently confirmed causation.
 
+## About this repository
+
+This repository publishes the results, artifacts, and raw exports used in a cross‑repository forensic analysis of infrastructure‑related changes observed in late 2025.
+
+Included here:
+- Curated analysis and narrative: `docs/` (blog post, full findings, clean‑room synthesis, systems analysis).
+- Derived data exports and timelines: `data/`, `timelines/`, and `logs/` (shallow commits, commit-message extracts, timeline slices).
+- Extracted diffs and code fragments (forensic evidence): `diffs/` (sourced from public repositories for analysis).
+
+What is not included:
+- The proprietary telemetry backend (the Node.js microservice and internal Bash orchestration labelled `EcosystemRadar` / `deep_pattern_engines`) is NOT published here. The raw outputs that powered the analysis are included so reviewers can inspect evidence; the production telemetry pipeline remains internal.
+
+Provenance & licensing:
+- Most code fragments and commit history rows were harvested from public upstream repositories (Transformers, LLaMA, MuJoCo, nanoGPT). Where third‑party code is included, consult the original project licenses. This repository provides analytic artifacts and documentation — not replacement maintainable code for those projects.
+
+Reproducibility note:
+- To reproduce the high‑level methodology you can run shallow clones of target repos and apply simple shell pipelines (git log, git log -p, awk, grep) to reconstruct timelines and burst metrics. A minimal reproducibility example is provided in `examples/`.
+
+Data & Sanitization:
+- The `data/` directory contains derived exports and timeline slices used in the analysis. Where author metadata (email addresses) appeared in harvested commit data, those values have been anonymized in the public exports. A redaction mapping (token → original_email → occurrences) is available at `data/redaction_mapping.csv` for internal audit purposes. If you need the original, unmapped exports for verified internal review, contact the repository owner — originals are not published in this public repository.
 ---
 
 ## Repository Contents
 
 ### Documentation
 
-- **Full Investigation** – Complete analysis with technical explanations  
-- **Clean Room Synthesis** – Evidence derived only from observable commit history  
-- **Systems Analysis** – Structural patterns across the ecosystem  
-- **Condensed Report** – Shorter summary for web readers
+- **[Full Investigation](https://github.com/nz-gpts/ai-infrastructure-crisis-2025/blob/main/docs/findings/finding_enhanced.md)** – Complete analysis with technical explanations  
+- **[Clean Room Synthesis](https://github.com/nz-gpts/ai-infrastructure-crisis-2025/blob/main/docs/findings/clean_room_synthesis_enhanced.md)** – Evidence derived only from observable commit history  
+- **[Systems Analysis](https://github.com/nz-gpts/ai-infrastructure-crisis-2025/blob/main/docs/findings/systems_analysis_enhanced.md)** – Structural patterns across the ecosystem  
+- **[Blog post](https://github.com/nz-gpts/ai-infrastructure-crisis-2025/blob/main/docs/blog-post.md)** – Shorter narrative summary for web readers
 
 
 ### Internal Tooling Used
@@ -149,7 +171,7 @@ Documentation and Analysis: CC-BY-4.0
 
 Ferguson, A. (2025).  
 AI Ecosystem Transition 2025: Cross-Repository Forensic Analysis.  
-GitHub repository.
+[https://github.com/nz-gpts/ai-infrastructure-crisis-2025](https://github.com/nz-gpts/ai-infrastructure-crisis-2025)
 
 ---
 
