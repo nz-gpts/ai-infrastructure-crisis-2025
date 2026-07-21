@@ -1,5 +1,7 @@
 # What Happened to AI Models in December 2025: Complete Investigation Report
 
+> **Scope note (2026-07-21):** This is a working research narrative. Strong causal claims have been moderated. Read [`LIMITATIONS.md`](../../LIMITATIONS.md). Primary infrastructure evidence: **Transformers + nanoGPT**. Deprecated LLaMA and MuJoCo are not equal participants in synchronized failure claims.
+
 ## Introduction: What This Document Is About
 
 If you use ChatGPT, Claude, or any other AI chatbot, you might have noticed something odd happened in late 2025. Some things that used to work suddenly didn't. Responses got weird. Features disappeared. Maybe you didn't notice at all—but behind the scenes, something major broke, and this document explains what happened.
@@ -50,7 +52,7 @@ This investigation will walk you through:
 
 1. **The Timeline:** When things started breaking (spoiler: months before anyone noticed)
 2. **The Technical Problems:** What actually broke, explained in plain language
-3. **The Evidence:** Specific code changes that prove this was a coordinated crisis response
+3. **The Evidence:** Specific code changes consistent with coordinated adaptation (correlation, not proven causation)
 4. **The Big Picture:** What it means for the future of AI systems
 5. **Why It Matters:** How this affects you, even as a casual user
 
@@ -149,9 +151,9 @@ Amy's detective tools searched for nine specific types of problems. Here's each 
 
 **9. Cross-repo bisector windows**
 - **What it is:** Synchronized timing across different projects
-- **Plain language:** Proof that different companies hit problems at the exact same time
-- **Analogy:** Like synchronized traffic jams on different highways—proves there's a shared cause
-- **Why it matters:** This is the smoking gun that proves a shared infrastructure problem
+- **Plain language:** Evidence that different projects hit problems in overlapping windows
+- **Analogy:** Like synchronized traffic jams on different highways—**suggests** a shared cause, but requires dependency proof
+- **Why it matters:** A strong temporal signal—not, by itself, proof of shared infrastructure failure
 
 **What this investigation technique reveals:** Most people looking at code changes see individual fixes and think "just normal maintenance." Amy's system aggregates patterns across millions of changes and reveals the crisis that individual developers miss.
 
@@ -163,15 +165,13 @@ Amy's detective tools searched for nine specific types of problems. Here's each 
 
 **How it works technically:** The bisector automatically tests older and older versions of code until it finds the last version that worked correctly, then identifies the exact change that broke things.
 
-**Why this is powerful:** Instead of guessing when problems started, Amy's bisector gives precise timestamps. This lets her prove that different repositories broke at the same time—which strongly suggests a shared upstream constraint.
+**Why this is useful:** Instead of guessing when problems started, the bisector gives precise timestamps. Overlapping windows across repos **suggest** shared upstream pressure—they do not prove it without dependency mapping.
 
 ### The Main Discovery
 
-**The headline finding:** Between August and September 2025, all four repositories started fixing the same types of problems at the same time. 
+**The headline finding:** Between August and September 2025, **Transformers** shows sustained infrastructure-related commit activity; **nanoGPT** shows related pressure on the same PyTorch stack. MuJoCo shows parallel calendar activity with a different change profile (release/renderer work). **LLaMA (`meta-llama/llama`) is excluded** from this window—the harvested timeline has no matching Aug–Sep 2025 infrastructure commits.
 
-**Why this matters:** This wasn't coincidence. The probability of four independent projects hitting identical problems simultaneously is statistically highly improbable as an isolated coincidence—like four different people in different cities all getting food poisoning from the same meal.
-
-**The smoking gun:** It's like watching four different plumbers all rushing to fix leaks from the same water main break. They're not coordinating with each other; they're all responding to the same upstream disaster.
+**Why this matters:** Temporal overlap is worth investigating. It is **not** sufficient to conclude four independent projects experienced the same failure without commit-level verification and statistical testing.
 
 ### The Six Types of Problems They Were All Fixing
 
@@ -526,7 +526,7 @@ Amy's system reveals seven critical conclusions about what happened to AI in 202
 
 **What "upstream dependency" means:** Higher up in the dependency chain. Like how a dam upstream affects everyone downstream on the river. Or how if your city's water treatment plant changes its purification process, everyone in the city notices—even though nobody directly interacts with the plant.
 
-**The evidence:** You are seeing widespread dtype, attention, and quantization breakage that cannot be caused by isolated repo decisions. The probability of four independent projects hitting the same problems at the same time is statistically highly improbable as an isolated coincidence.
+**The evidence:** Transformers shows widespread dtype, attention, and quantization-related changes in the harvested window. **Interpretation:** These patterns are **consistent with** shared upstream pressure; they are not proof that isolated repo decisions could not explain individual commits. Statistical testing and dependency mapping are still required.
 
 **Why this matters:** This isn't like four separate bugs that need four separate fixes. This is one systemic problem that forced everyone to adapt simultaneously.
 

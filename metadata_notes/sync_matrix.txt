@@ -1,11 +1,9 @@
 === Synchronization Matrix ===
 Date | Repo | Change Type | Description
-<<< CLUSTER START: YYYY-MM-DD → YYYY-MM-DD >>>
-LLAMA:      <summary>
-TRANSFORMERS: <summary>
-nanoGPT:    <summary>
-MuJoCo:     <summary>
-<<< CLUSTER END >>>
+
+NOTE: Unfilled template rows (YYYY-MM-DD placeholders) were removed 2026-07-21.
+See LIMITATIONS.md and reproducibility/MANIFEST.md for scope and inclusion rules.
+
 <<< CLUSTER 2025-12-01 >>>
 cac0a28c83 | 2025-11-29 | Raghav Ravishankar | Add afmoe model (#42168)
 01823d7e46 | 2025-12-01 | Anton Vlasjuk | [`CI`] Fix copies (#42487)

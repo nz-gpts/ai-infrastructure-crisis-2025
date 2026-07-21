@@ -1,6 +1,8 @@
-# 🧬 SYSTEMS ANALYSIS: The AI Ecosystem as an Organism
+# Systems Analysis: The AI Ecosystem as an Organism
 
 ## Cross-Repository Structural Dynamics and Emergent Behavior Patterns
+
+> **Scope note (2026-07-21):** Biological metaphors are illustrative only. **MuJoCo is not a Transformers downstream.** Deprecated LLaMA is excluded from Aug–Sep 2025 convergence claims. Read [`LIMITATIONS.md`](../../LIMITATIONS.md).
 
 ---
 
@@ -8,12 +10,12 @@
 
 **What This Document Is:**
 
-This is the third perspective on Amy's investigation into the 2025 AI infrastructure crisis. While the other documents focus on narrative explanation and forensic evidence, this document examines the ecosystem as a complex adaptive system—something more like a living organism than a machine.
+This is the third perspective on the 2025 AI ecosystem transition analysis. While the other documents focus on narrative explanation and cited commit evidence, this document examines the ecosystem as a complex adaptive system—something more like a living organism than a machine.
 
 **The Three Documents, Explained:**
 
 1. **Main Investigation** → The story told for human understanding (what happened, why it matters, who's affected)
-2. **Clean Room Synthesis** → The forensic evidence file (proof based on observable code commits)
+2. **Clean Room Synthesis** → Cited commit patterns with interpretive framing
 3. **This Document** → The systems analysis (understanding emergent patterns and structural dynamics)
 
 **Why Biological Metaphors Work Here:**
@@ -158,7 +160,7 @@ Using words like "organism," "immune response," or "drives" does NOT mean:
 
 **Understanding the Metaphor:**
 
-This diagram shows the four repositories (Transformers, LLaMA, MuJoCo, nanoGPT) as different organs in a body, connected by shared systems (like blood vessels and nerves). Each has a different role, but they all depend on the same foundational infrastructure.
+This diagram shows four monitored repositories (Transformers, LLaMA, MuJoCo, nanoGPT) as different organs in a body, connected where **documented dependencies exist**. Transformers and nanoGPT share PyTorch/transformer-stack constraints. MuJoCo operates in a different technical domain; do not read an arrow as "depends on Transformers" unless a dependency path is cited.
 
 ---
 
@@ -179,7 +181,7 @@ This diagram shows the four repositories (Transformers, LLaMA, MuJoCo, nanoGPT) 
 
 **Plain language:** Transformers is the "brain" that coordinates everything. When it changes, everything else feels the impact.
 
-**Why it's central in the diagram:** Because LLaMA and MuJoCo both depend on it, shown by arrows pointing to/from Transformers.
+**Why it's central in the diagram:** Transformers anchors the transformer/model stack; nanoGPT sits on the same stack. LLaMA (when analysed against a current upstream) would also sit on similar stack constraints—not on MuJoCo.
 
 ---
 
@@ -219,7 +221,7 @@ This diagram shows the four repositories (Transformers, LLaMA, MuJoCo, nanoGPT) 
 
 **Plain language:** MuJoCo is like your motor system—taking abstract intentions and turning them into physical actions in space.
 
-**Connection to Transformers:** Also depends on shared infrastructure, different domain than LLaMA but same foundational constraints.
+**Connection note:** Legacy LLaMA recipes share PyTorch/transformer-stack constraints with Transformers in model-serving contexts. **MuJoCo does not share that dependency chain**—parallel calendar activity in the harvest is not evidence of the same failure mode.
 
 ---
 
@@ -272,9 +274,9 @@ This diagram shows the four repositories (Transformers, LLaMA, MuJoCo, nanoGPT) 
 
 **Understanding the Arrows:**
 
-**Arrows pointing to Transformers:** LLaMA and MuJoCo depend on Transformers' infrastructure
+**Arrows to shared constraints:** Transformers and nanoGPT (and LLaMA when rebuilt on current upstream) depend on PyTorch/CUDA/framework rules
 
-**Arrows from shared constraints:** All repos depend on the regulation layer
+**MuJoCo:** May show temporal clustering during release windows; treat as comparative case study unless a specific dependency path is documented
 
 **Arrow from LLaMA to nanoGPT:** Educational relationship—nanoGPT learns from LLaMA's approach
 

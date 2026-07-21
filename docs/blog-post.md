@@ -1,6 +1,8 @@
-# How I Detected the 2025 AI Infrastructure Crisis Using Forensic Code Analysis
+# How I Detected a 2025 AI Ecosystem Transition Using Cross-Repository Commit Analysis
 
-*An investigation using pattern detection tools to uncover synchronized failures across major AI repositories*
+*An investigation using pattern detection tools to explore temporally clustered infrastructure-related changes across selected public repositories*
+
+> **Scope note:** This post describes **correlation and exploratory signal detection**, not proven causation or a validated infrastructure crisis. See [`LIMITATIONS.md`](../LIMITATIONS.md).
 
 ---
 
@@ -8,15 +10,15 @@
 
 Over the past two years, I've been building NZGPTS, an AI consultancy platform for New Zealand SMEs. As part of that work, I created a suite of forensic analysis tools called "deep_pattern_engines" to monitor AI infrastructure stability—because my business depends on these systems remaining reliable.
 
-In late 2025, my tools detected something unusual: four major AI code repositories (Transformers, LLaMA, MuJoCo, nanoGPT) were all making similar emergency fixes at exactly the same time. This pattern suggested a shared infrastructure crisis that most engineers hadn't noticed yet.
+In late 2025, monitoring tools flagged unusual **temporal clustering** in public commit histories—primarily in Transformers, with related signals in nanoGPT and parallel activity in MuJoCo. This pattern is **consistent with** upstream framework pressure; it is not independently confirmed as a shared infrastructure crisis.
 
 This is what I found, and how I found it.
 
 ---
 
-## The Smoking Gun: Synchronized Breakage
+## Temporal Overlap in Commit Histories
 
-Between August and September 2025, my bisector tools pinpointed the exact moment when multiple independent repositories started exhibiting the same failures:
+Between August and September 2025, bisector windows show overlapping infrastructure-related activity in **Transformers** and related pressure in **nanoGPT**. MuJoCo shows concurrent commits with a different change profile. LLaMA (deprecated upstream) does not support the same window in the published timeline.
 
 **What broke simultaneously:**
 - dtype propagation (how numbers are stored and converted)
@@ -24,9 +26,7 @@ Between August and September 2025, my bisector tools pinpointed the exact moment
 - Quantization pathways (how models are compressed for efficiency)
 - Configuration inheritance (how models follow their settings)
 
-**The probability of this happening by chance?** Astronomically low.
-
-When four different projects maintained by different companies all hit identical problems at the same time, there's only one explanation: something they all depend on changed behavior.
+**Interpreting overlap:** When projects in the same stack show related commit themes in the same calendar window, a shared upstream dependency change is **plausible**. Alternative explanations (release cadence, CI churn, new model landings) must be ruled out before strong causal claims.
 
 ---
 
@@ -38,7 +38,7 @@ I built several specialized analysis engines to detect these patterns:
 
 **Burst Detector:** Identifies sudden spikes in commit density—the "emergency coding sessions" that indicate crisis response.
 
-**Correlation Matrix:** Tracks timing across repositories to detect synchronized changes that prove common cause.
+**Correlation Matrix:** Tracks timing across repositories to detect overlapping change windows—not to establish proof of common cause by itself.
 
 **Schema Analyzer:** Monitors configuration files shrinking over time—a defensive signal when systems are under pressure.
 
@@ -55,7 +55,7 @@ My bisector detected the initial breakage. Commit messages shifted from "add fea
 - Quantization became unreliable
 
 **September 2025: Crisis Recognition**
-Commit density spiked across all repos. The pattern was unmistakable—emergency response mode. Backup systems that used to silently activate stopped working. Engineers realized patches wouldn't fix it; they needed to rebuild core systems.
+Commit density spiked in several repos during this window. The pattern is **consistent with** elevated maintenance activity; it is not, alone, proof of emergency crisis mode.
 
 **October 2025: Forced Adaptation**
 Automatic systems became manual. Functions that "just worked" now required explicit specification. Anything ambiguous was removed rather than risk unpredictable behavior.
@@ -63,12 +63,8 @@ Automatic systems became manual. Functions that "just worked" now required expli
 **November 2025: Strategic Retreat**  
 Configuration files got gutted. The watershed moment: Transformers' "Delete generation params" commit—one of the largest single-commit removals in the repository's history. This marked acceptance that the old flexibility was gone forever.
 
-**December 2025: Convergence**
-All four repos stabilized around similar solutions:
-- New dtype norms (strict handling everywhere)
-- New attention semantics (explicit contracts, no flexibility)
-- New quantization requirements (consistency mandates)
-- Simplified configs (fewer options, stronger guarantees)
+**December 2025: Observed stabilisation cluster**
+Transformers and MuJoCo show heavy commit activity on overlapping dates (see `metadata_notes/sync_matrix.txt`). nanoGPT remained comparatively quiet—consistent with a minimal reference repo choosing not to chase every upstream churn.
 
 **Critical insight:** December is when users noticed changes. But the root cause was August-September. What people saw was the end of the process, not the beginning.
 
@@ -91,7 +87,7 @@ Here's what the forensic analysis revealed:
 Each message individually looks routine. But analyzed together, they reveal a pattern: **internal assumptions no longer held true**.
 
 **Timing correlation:**
-All four repos entered intensive remediation within the same 2-week window. The bisector windows aligned to within days—impossible to be coincidence.
+Transformers and nanoGPT show overlapping remediation windows in the harvested data. MuJoCo overlaps in calendar time with different change types. **Do not treat this as proof of synchronized failure across four repos** without reading `LIMITATIONS.md`.
 
 **Schema contraction metrics:**
 - Configuration files: 200+ settings → 60 settings
@@ -220,9 +216,9 @@ Reproducibility note: minimal, non‑proprietary examples to reproduce core sign
 
 1. **The December 2025 changes users noticed weren't improvements—they were emergency adaptations** to infrastructure failures that started months earlier.
 
-2. **Four independent repositories exhibited convergent evolution** in response to shared constraint changes, producing what looks like coordination but is actually emergence.
+2. **Transformers and nanoGPT show convergent adaptation patterns** in response to shared stack constraints; MuJoCo shows parallel calendar activity with a different change profile.
 
-3. **The AI ecosystem has structural tendencies** toward coherence, centralization, efficiency, and explicit failure—these drives will shape future developments.
+3. **The AI ecosystem has structural tendencies** toward coherence, centralization, efficiency, and explicit failure—these are interpretive models, not validated laws.
 
 4. **This pattern will repeat.** Infrastructure instability is cyclical, not a one-time event.
 

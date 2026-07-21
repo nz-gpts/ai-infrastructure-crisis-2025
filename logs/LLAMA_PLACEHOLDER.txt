@@ -1,1 +1,3 @@
-Place LLAMA snapshot here
+# Snapshot slot — not published evidence.
+# Legacy repo: https://github.com/meta-llama/llama (deprecated)
+# See logs/README.md, LIMITATIONS.md, reproducibility/MANIFEST.md
