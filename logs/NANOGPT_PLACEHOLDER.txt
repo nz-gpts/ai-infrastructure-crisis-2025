@@ -1,1 +1,3 @@
-Place nanoGPT snapshot here
+# Snapshot slot — not published evidence.
+# Upstream: https://github.com/karpathy/nanoGPT
+# See logs/README.md and reproducibility/MANIFEST.md

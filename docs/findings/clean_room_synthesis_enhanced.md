@@ -1,6 +1,8 @@
-# 🧾 CLEAN ROOM SYNTHESIS
+# Clean Room Synthesis
 
-## Cross-Repo Structural Autopsy of the 2025 Inference-Stack Convergence
+## Cross-Repo Structural Review of the 2025 Inference-Stack Transition
+
+> **Scope note (2026-07-21):** This document is a working evidence file. Strong causal language in earlier drafts has been moderated. Read [`LIMITATIONS.md`](../../LIMITATIONS.md) before citing. Primary infrastructure convergence evidence: **Transformers + nanoGPT**. MuJoCo and deprecated LLaMA are comparative only.
 
 ---
 
@@ -10,11 +12,11 @@
 
 In engineering and legal contexts, a "clean room" is an analysis conducted using only observable, documented evidence—no assumptions, no speculation, no insider knowledge. It's called "clean room" because it's isolated from contamination by theories or biases.
 
-**Plain language:** This document proves the same findings as the main investigation report, but using only what can be seen in the actual code changes. No guessing, no interpretation beyond what the evidence directly shows. Like a court case built entirely on surveillance footage and physical evidence.
+**Plain language:** This document restates the main investigation using observable code changes only. It documents correlation and structural patterns; it does not establish independent proof of causation.
 
 **Why This Document Exists:**
 
-The main investigation document explains what happened and why it matters to different audiences. This document serves a different purpose: it's the formal evidence file that proves the conclusions are correct, not speculation.
+The main investigation document explains what happened and why it matters to different audiences. This document serves a different purpose: it is the structured evidence file that supports the conclusions with commit-level citations—not speculation.
 
 **Think of it this way:**
 - **Main document:** The documentary film explaining a historical event
@@ -24,12 +26,12 @@ The main investigation document explains what happened and why it matters to dif
 
 1. **Technical skeptics** who want to verify the investigation's claims themselves
 2. **Engineers** who need to see the actual code evidence
-3. **Decision-makers** who need forensic-quality proof before acting on findings
+3. **Decision-makers** who need reproducible, checkable evidence before acting on findings
 4. **Future researchers** who want to understand the methodology
 
 **How This Works:**
 
-This document walks through the same timeline as the main investigation, but instead of explanations and analogies, it presents the raw code patterns that prove what happened. Each section includes:
+This document walks through the same timeline as the main investigation, but instead of explanations and analogies, it presents code patterns cited in the harvest. Each section includes:
 
 - **The technical evidence** (for engineers)
 - **Plain-language translation** (for everyone else)
@@ -41,9 +43,9 @@ This analysis uses the same standard as engineering postmortems at major compani
 
 Reproducibility note: minimal, non‑proprietary examples to reproduce core signals (commit-frequency bursts and simple cross-repo correlation) are available in `examples/analyze-commit-bursts.sh`. Sanitized evidence exports are available in `data/` for inspection; the production telemetry backend used to generate the full dataset is proprietary and not included here (see README).
 
-**What Makes This "Unmistakable":**
+**What Makes This Pattern Notable**
 
-The title uses "unmistakable" because the patterns found aren't subject to interpretation. When four independent companies make identical code changes at the same time to fix identical problems, that's not opinion—that's observable fact.
+The patterns below are directly observable in commit history. When independent projects modify related structural areas during overlapping windows, that is a signal worth investigating—it is not, by itself, proof of a single shared cause without dependency mapping and statistical testing.
 
 ---
 
@@ -77,34 +79,32 @@ This analysis is built only on things you can see and verify in the actual code 
 - **Anomaly clusters** = Groups of unusual activity
 - **Bisected causal windows** = Pinpointing exactly when problems started
 
-**The iron rule:** If we can't point to specific code commits that prove something happened, we don't claim it happened. This is evidence-based analysis, not theory.
+**The iron rule:** If we can't point to specific code commits that show a change occurred, we don't claim it occurred. This is evidence-based analysis with explicit limits (`LIMITATIONS.md`).
 
-**Why this matters:** Anyone with access to these code repositories can verify every claim in this document themselves. This makes the findings undeniable—you can check the work yourself.
+**Why this matters:** Anyone with access to these code repositories can verify cited commits. That makes the dataset independently checkable—it does not make every interpretive conclusion undeniable.
 
 ---
 
-## 1. Unmistakable Signal: Simultaneous Fragility Across Repos
+## 1. Observed Signal: Overlapping Infrastructure Activity
 
 ### The Core Finding
 
-Between Aug–Sep 2025, four independent repositories — Transformers, LLaMA, MuJoCo, nanoGPT — begin modifying the same structural domains:
+Between Aug–Sep 2025, **Transformers** and **nanoGPT** show infrastructure-related activity in overlapping structural domains:
 
 - dtype propagation rules
 - FlashAttention and SDPA fallback paths
 - quantized load logic (gguf / bitsandbytes / AWQ)
 - generation caching and config inheritance
-- low-level API surfaces (MuJoCo)
 
-**These touchpoints normally evolve independently.**
-**But in your logs, they pivot together.**
+**MuJoCo** shows parallel commit clustering in the same calendar window, but the harvested changes are predominantly renderer, documentation, and v3.4.0 release preparation—not the same dtype/attention/quantization failure mode.
 
-**This is the earliest reproducible footprint of the collapse.**
+**LLaMA (`meta-llama/llama`, deprecated):** the published timeline does **not** contain Aug–Sep 2025 infrastructure commits. The newest harvested entry is a January 2025 README rename. LLaMA is therefore **excluded** from this section's convergence claim unless analysis is rebuilt against Meta's current active repository.
 
 ---
 
 **Plain Language Translation:**
 
-**What happened:** Four completely separate projects (run by different companies: Hugging Face, Meta/Facebook, robotics researchers, educational developers) all started fixing the same types of problems at the same time.
+**What happened:** Transformers and nanoGPT (and, in parallel calendar windows, MuJoCo) show elevated infrastructure- or release-related commit activity. This is **not** equivalent to four independent projects making identical emergency fixes unless each claim is verified commit-by-commit.
 
 **Why this is significant:**
 
@@ -166,7 +166,7 @@ From your bisected windows:
 **The diversity of these patches hides a single pattern:**
 
 **Internal assumptions the repos relied on no longer held true.**
-**Tightening of backend semantics forced all four to rewrite brittle layers.**
+**Tightening of backend semantics may have forced multiple transformer-stack projects to rewrite brittle layers.** (Hypothesis—not confirmed across all four monitored repos; see `LIMITATIONS.md`.)
 
 ---
 
@@ -203,7 +203,7 @@ Look at the pattern in the messages above. They're all saying variations of:
 - **New system:** The power must be exactly 120V or the device won't turn on
 - **Result:** Every device manufacturer must add precise voltage regulation
 
-**"Forced all four to rewrite brittle layers":**
+**"Forced multiple transformer-stack projects to rewrite brittle layers" (hypothesis):**
 
 **What "brittle" means:** Code that works fine under expected conditions but breaks easily when conditions change. Like glass—strong until it isn't.
 
@@ -523,7 +523,7 @@ This timeline shows when each phase of the crisis happened. Each phase is named 
 - "Failing in parallel" means they failed simultaneously, not one after another
 - Repos began emergency fixes ("correctness patches")
 
-**Why "parallel" matters:** When independent systems fail simultaneously, it proves a shared cause. Like when all the lights in a neighborhood go out at once—must be the power grid, not individual light bulbs.
+**Why "parallel" matters:** When independent systems show overlapping change windows, a shared cause is **plausible**—but release cadence and unrelated churn must be ruled out first.
 
 **Plain language summary:** In August, the foundation cracked. Three different systems that depend on that foundation all broke at the same time. Engineers started emergency repairs.
 
@@ -626,9 +626,9 @@ This timeline shows when each phase of the crisis happened. Each phase is named 
 4. **Simplified config/generation surfaces** → All repos reduced configuration complexity
 5. **Reduced API exposure** → All repos locked down their interfaces
 
-**Why "convergence" proves common cause:**
+**Why "convergence" may indicate common cause (hypothesis):**
 
-If four independent projects all arrive at similar solutions at the same time, it means they're all solving the same problem—and that problem came from something they all depend on.
+If independent projects on the **same stack** arrive at similar solutions in overlapping windows, a shared upstream constraint is one explanation—among others (release alignment, maintainer coordination, CI policy).
 
 **Plain language:** By December, everyone stabilized using similar fixes. They didn't coordinate these fixes—they each independently arrived at similar solutions because they were all adapting to the same changed infrastructure.
 
@@ -912,7 +912,7 @@ The six major changes listed are the visible outcomes. Each one represents a cat
 
 **Scientific equivalent:** "Statistical significance" — pattern is too strong to be random chance.
 
-**The confidence level:** Based on observable code patterns across millions of commits, over five months, across four repositories, with temporal correlation and structural convergence—this conclusion is forensically sound.
+**The confidence level:** Based on observable commit patterns in Transformers and related timelines over several months, with temporal overlap in places—conclusions remain **provisional**. See `LIMITATIONS.md`.
 
 ---
 
@@ -1017,7 +1017,7 @@ This is how the finding would be documented in a company's internal records if t
 - **Localized errors:** Each team fixes their own bugs independently
 - **Systemic problem:** Everyone must adapt to new reality simultaneously
 
-**The evidence proves:** Systemic problem, not localized errors.
+**The evidence suggests:** Possible systemic pressure in the transformer stack—not proven across all monitored repos.
 
 ---
 
@@ -1064,21 +1064,21 @@ This statement is written in the passive, formal voice used in official engineer
 
 ---
 
-## Conclusion: What This Document Proves
+## Conclusion: What This Document Documents
 
-**This clean room synthesis demonstrates:**
+**This clean room synthesis summarizes:**
 
-1. **The pattern is real** — Observable in code commits
-2. **The timing is coordinated** — Synchronized across independent repos
-3. **The cause is external** — Not localized bugs but shared infrastructure shift
-4. **The response was forced** — Not strategic planning but crisis adaptation
-5. **The conclusion is sound** — Only explanation consistent with all evidence
+1. **Patterns are observable** — Cited in commit histories (verify hashes upstream)
+2. **Timing overlaps in places** — Requires statistical baselines to rule out release cadence
+3. **External upstream pressure is plausible** — Not independently confirmed by maintainers
+4. **Responses look like adaptation** — Interpretation, not proof of crisis
+5. **Conclusions are provisional** — Competing explanations have not been fully eliminated
 
-**For technical skeptics:** Every claim in this document can be verified by examining the referenced repositories yourself.
+**For technical skeptics:** Verify cited commits at upstream URLs (`reproducibility/MANIFEST.md`).
 
-**For decision-makers:** This analysis meets the standard for engineering postmortem confidence—the findings are forensically sound.
+**For decision-makers:** Treat this as exploratory technical intelligence, not forensic proof.
 
-**For future researchers:** This investigation methodology reveals how to detect ecosystem-level crises through commit pattern analysis.
+**For future researchers:** The monitoring concept may be useful; the four-way synchronized failure narrative is not supported as published.
 
 ---
 
@@ -1090,22 +1090,23 @@ This statement is written in the passive, formal voice used in official engineer
 ✅ **Parsimonious** — Simplest explanation that fits all evidence
 ✅ **Testable** — Predictions can be verified against future events
 
-**This is not speculation. This is forensic code analysis.**
+**This is structured commit-history analysis with explicit scope limits—not a validated forensic or scientific proof.**
 
 ---
 
 **Document Hierarchy:**
 
-**This document provides:** The technical evidence file
-**Main investigation provides:** The accessible explanation
-**Together they form:** Complete understanding—evidence + interpretation
+**This document provides:** Cited commit patterns and interpretive framing  
+**Main investigation provides:** Accessible narrative  
+**LIMITATIONS.md provides:** Known defects and exclusions  
+**Together they form:** A working research repository—not a closed case file
 
 **Use this document when:** You need to verify claims, convince skeptics, or document findings for formal purposes.
 
 ---
 
-*Clean Room Synthesis completed: December 2025*  
-*Analysis Standard: Engineering postmortem grade*  
+*Clean Room Synthesis — revised scope pass: July 2026*  
+*Analysis Standard: Exploratory cross-repo commit analysis*  
 *Evidence Type: Observable code commits only*  
-*Speculation Level: Zero*  
-*Confidence Level: Forensically sound*
+*Speculation Level: Interpretive sections labelled as such*  
+*Confidence Level: Provisional — see LIMITATIONS.md*

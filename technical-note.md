@@ -8,14 +8,18 @@
 
 ## What This Investigation Does
 
-This repository documents a forensic analysis of public Git commit histories across four major AI repositories during 2025. The goal is to determine whether correlated infrastructure changes across independent projects during the same time window are consistent with a shared upstream dependency transition, or attributable to coincidence or independent causes.
+This repository documents an exploratory analysis of public Git commit histories across selected AI-related repositories during 2025. The goal is to determine whether correlated infrastructure changes during overlapping time windows are **consistent with** a shared upstream dependency transition, or attributable to coincidence, release cadence, or independent causes.
 
-The four repositories analysed are:
+**Scope (corrected):**
 
-- **Transformers** (Hugging Face) — model framework
-- **LLaMA** (Meta) — language model implementation
-- **MuJoCo** (Google DeepMind) — physics simulation engine
-- **nanoGPT** (independent) — educational GPT implementation
+| Repository | Role |
+| ---------- | ---- |
+| **Transformers** (Hugging Face) | Primary evidence for transformer-stack infrastructure changes |
+| **nanoGPT** (independent) | Primary reference implementation on the same PyTorch stack |
+| **MuJoCo** (Google DeepMind) | Comparative temporal clustering only — different domain; not a Transformers downstream |
+| **LLaMA** (`meta-llama/llama`, deprecated) | Excluded from Aug–Sep 2025 convergence claims; harvested timeline shows README activity only in Jan 2025 |
+
+See `LIMITATIONS.md` for full corrections.
 
 ---
 
@@ -75,8 +79,11 @@ All analysis is reproducible from public repository data. While the custom foren
 
 ## Relevance to Infrastructure Operators
 
-Organisations operating AI-dependent workloads on managed or sovereign infrastructure should note that upstream dependency transitions of this type are not announced in advance and do not follow coordinated release schedules. The 2025 event involved a four-month gap between the onset of instability (August) and public-facing stabilisation (December).
+Organisations operating AI-dependent workloads should note that upstream dependency transitions may not be announced in advance. In the Transformers timeline, elevated infrastructure-related commit activity appears across several months in late 2025; user-visible stabilisation narratives in published findings often centre on December clusters.
 
-Monitoring commit activity across upstream dependencies — rather than relying solely on release notes or vendor announcements — provides earlier signal of ecosystem-level transitions.
+Monitoring commit activity across upstream dependencies — rather than relying solely on release notes or vendor announcements — may provide earlier **signals** of ecosystem-level transitions. Such signals require independent verification and statistical baselines before operational decisions.
+
+**Reproducibility:** `reproducibility/MANIFEST.md`  
+**Known limits:** `LIMITATIONS.md`
 
 This has direct implications for infrastructure resilience planning, dependency management policy, and AI workload continuity strategies.

@@ -1,1 +1,3 @@
-Place Transformers snapshot here
+# Snapshot slot — not published evidence.
+# See logs/README.md and reproducibility/MANIFEST.md
+# To populate: git log export from https://github.com/huggingface/transformers
