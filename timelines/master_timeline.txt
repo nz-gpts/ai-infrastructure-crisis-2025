@@ -2051,7 +2051,7 @@ bc3e57d551 | 2019-10-22 | Lysandre | Multi version doc deployment
 7d709e55ed | 2019-10-22 | Lysandre | Remove
 44286b94d3 | 2019-10-22 | Lysandre | RoBERTa doesn't print a warning when no special tokens are passed.
 b8c9ea0010 | 2019-10-22 | Thomas Wolf | Merge pull request #1580 from pminervini/master
-bd847ce7d7 | 2019-10-23 | focox@qq.com | fixed the bug raised by "tmp_eval_loss += tmp_eval_loss.item()" when parallelly using multi-gpu.
+bd847ce7d7 | 2019-10-23 | REDACTED_EMAIL_72459a108103d7a7fd1882f9 | fixed the bug raised by "tmp_eval_loss += tmp_eval_loss.item()" when parallelly using multi-gpu.
 4e5f88b74f | 2019-10-23 | Matt Maybeno | Add Roberta to run_ner.py
 66085a1321 | 2019-10-23 | Matt Maybeno | RoBERTa token classification
 b92d68421d | 2019-10-23 | Matt Maybeno | Use roberta model and update doc strings

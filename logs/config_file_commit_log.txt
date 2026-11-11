@@ -1,5 +1,5 @@
 commit 078ff685d37a8efb4966bd3da322eef92bf875c0
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Fri Nov 28 13:45:40 2025 +0100
 
     🚨 Move `rotary_partial_emb` to RopeParams and delete unnecessary code 🔪  (#42255)
@@ -26,11 +26,11 @@ Date:   Fri Nov 28 13:45:40 2025 +0100
     
     * Update src/transformers/modeling_rope_utils.py
     
-    Co-authored-by: Anton Vlasjuk <73884904+vasqu@users.noreply.github.com>
+    Co-authored-by: Anton Vlasjuk <REDACTED_EMAIL_7e0489c9358d7c66392aa0fe>
     
     * Update src/transformers/models/efficientloftr/configuration_efficientloftr.py
     
-    Co-authored-by: Anton Vlasjuk <73884904+vasqu@users.noreply.github.com>
+    Co-authored-by: Anton Vlasjuk <REDACTED_EMAIL_7e0489c9358d7c66392aa0fe>
     
     * attempt one
     
@@ -56,10 +56,10 @@ Date:   Fri Nov 28 13:45:40 2025 +0100
     
     ---------
     
-    Co-authored-by: Anton Vlasjuk <73884904+vasqu@users.noreply.github.com>
+    Co-authored-by: Anton Vlasjuk <REDACTED_EMAIL_7e0489c9358d7c66392aa0fe>
 
 commit f624084ef479c9d449577314e9bde320f708bdeb
-Author: Lucain <lucainp@gmail.com>
+Author: Lucain <REDACTED_EMAIL_106802518be61bed6eedce54>
 Date:   Thu Nov 27 15:54:50 2025 +0100
 
     [cleanup] Offline mode and cache dir from `huggingface_hub` constants + cleanup in `PushToHubMixin` (#42391)
@@ -75,7 +75,7 @@ Date:   Thu Nov 27 15:54:50 2025 +0100
     * code quality
 
 commit e1ab70974d87f0aac43a92cf8cdf489ac2e6d485
-Author: Lucain <lucainp@gmail.com>
+Author: Lucain <REDACTED_EMAIL_106802518be61bed6eedce54>
 Date:   Thu Nov 27 14:57:29 2025 +0100
 
     [cleanup] Remove deprecated load config from file (#42383)
@@ -89,7 +89,7 @@ Date:   Thu Nov 27 14:57:29 2025 +0100
     * format
 
 commit b1bdf9cb390f4d11f3e2eb89bd7c75c0cae8b9a1
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Tue Nov 18 11:20:24 2025 +0100
 
     🚨 Delete generation params from model config (#41695)
@@ -114,18 +114,18 @@ Date:   Tue Nov 18 11:20:24 2025 +0100
     
     * Update src/transformers/generation/configuration_utils.py
     
-    Co-authored-by: Anton Vlasjuk <73884904+vasqu@users.noreply.github.com>
+    Co-authored-by: Anton Vlasjuk <REDACTED_EMAIL_7e0489c9358d7c66392aa0fe>
     
     * Update tests/utils/test_modeling_utils.py
     
-    Co-authored-by: Anton Vlasjuk <73884904+vasqu@users.noreply.github.com>
+    Co-authored-by: Anton Vlasjuk <REDACTED_EMAIL_7e0489c9358d7c66392aa0fe>
     
     ---------
     
-    Co-authored-by: Anton Vlasjuk <73884904+vasqu@users.noreply.github.com>
+    Co-authored-by: Anton Vlasjuk <REDACTED_EMAIL_7e0489c9358d7c66392aa0fe>
 
 commit 6f6095e0cf509f7384d3ce0c1804013ef6cafd5f
-Author: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+Author: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
 Date:   Thu Nov 13 17:12:52 2025 +0100
 
     Refactor weight loading (#41580)
@@ -356,7 +356,7 @@ Date:   Thu Nov 13 17:12:52 2025 +0100
     
     * ty @SunMarc this fixes the buffers
     
-    Co-authored-by: SunMarc <SunMarc@users.noreply.github.com>
+    Co-authored-by: SunMarc <REDACTED_EMAIL_d1c1ef897add17305eb1e646>
     
     * mt5 fuck
     
@@ -514,7 +514,7 @@ Date:   Thu Nov 13 17:12:52 2025 +0100
     
     * Update tie weight keys as they were just wroong
     
-    Co-authored-by: Benjamin Bossan <benjaminbossan@users.noreply.github.com>"
+    Co-authored-by: Benjamin Bossan <REDACTED_EMAIL_6b3c8fb970caa56b07c3e4b1>"
     
     * up
     
@@ -600,12 +600,12 @@ Date:   Thu Nov 13 17:12:52 2025 +0100
     
     ---------
     
-    Co-authored-by: Cyril Vallez <cyril.vallez@gmail.com>
-    Co-authored-by: SunMarc <SunMarc@users.noreply.github.com>
-    Co-authored-by: Marc Sun <marc@huggingface.co>
+    Co-authored-by: Cyril Vallez <REDACTED_EMAIL_c6e28c70ffcf75436b4eead7>
+    Co-authored-by: SunMarc <REDACTED_EMAIL_d1c1ef897add17305eb1e646>
+    Co-authored-by: Marc Sun <REDACTED_EMAIL_b451668ec3dc5075eb99d993>
 
 commit 517197f795e3b44229bdf226d4cddf5240cc644a
-Author: Faizan Habib <91795555+faizan842@users.noreply.github.com>
+Author: Faizan Habib <REDACTED_EMAIL_6e31b12be5c6f930cd18b7c9>
 Date:   Mon Oct 20 18:54:16 2025 +0530
 
     Update type hints in tokenization_utils.py to use | syntax (#41713)
@@ -638,7 +638,7 @@ Date:   Mon Oct 20 18:54:16 2025 +0530
     - Maintains type hint modernization while fixing error messages
 
 commit 10de06dacef06605be3296f776d4122697637d6c
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Fri Oct 17 14:57:27 2025 +0200
 
     🚨 [v5] Refactor RoPE for layer types (#39847)
@@ -827,10 +827,10 @@ Date:   Fri Oct 17 14:57:27 2025 +0200
     
     ---------
     
-    Co-authored-by: ydshieh <ydshieh@users.noreply.github.com>
+    Co-authored-by: ydshieh <REDACTED_EMAIL_cc331d69274da03748a88e43>
 
 commit 0b3aef1da94c853b1070f12f4caea5d9d05e2f56
-Author: Cyril Vallez <cyril.vallez@huggingface.co>
+Author: Cyril Vallez <REDACTED_EMAIL_e315714fc3ceb83808f6a138>
 Date:   Fri Oct 17 13:38:27 2025 +0200
 
     🚨 Remove torchscript support (#41688)
@@ -842,7 +842,7 @@ Date:   Fri Oct 17 13:38:27 2025 +0200
     * doc
 
 commit 252d7cd9524e561171bea3b7474f96cef9fd3465
-Author: Lucain <lucainp@gmail.com>
+Author: Lucain <REDACTED_EMAIL_106802518be61bed6eedce54>
 Date:   Fri Oct 17 11:57:46 2025 +0200
 
     Remove deprecated `use_auth_token` parameter (#41666)
@@ -856,7 +856,7 @@ Date:   Fri Oct 17 11:57:46 2025 +0200
     * Update examples/pytorch/speech-recognition/README.md
 
 commit d1c6310d6a02481d48d81607cba7840be04580d1
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Thu Oct 9 13:47:44 2025 +0200
 
     🚨 [v5] Rendundant code in nested configs (#41314)
@@ -876,7 +876,7 @@ Date:   Thu Oct 9 13:47:44 2025 +0200
     * fix copies
 
 commit be3fa93b298eec4182a0bb6c5e64270a5f1e8020
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Thu Oct 9 10:46:44 2025 +0200
 
     Subconfig is a class attribute (#41308)
@@ -894,7 +894,7 @@ Date:   Thu Oct 9 10:46:44 2025 +0200
     * deleted accidentally
 
 commit 7e475552be13be0d6c98adf02c199709a0d7b927
-Author: Joao Gante <joaofranciscocardosogante@gmail.com>
+Author: Joao Gante <REDACTED_EMAIL_f9ecf062f401a7b396e83200>
 Date:   Wed Oct 8 10:25:13 2025 +0100
 
     🚨 [v5] Prune `prune_heads` (#41417)
@@ -908,7 +908,7 @@ Date:   Wed Oct 8 10:25:13 2025 +0100
     * remove another patterns
 
 commit 163601c6197e2addccd30d9bf450f664766f2e71
-Author: Cyril Vallez <cyril.vallez@huggingface.co>
+Author: Cyril Vallez <REDACTED_EMAIL_e315714fc3ceb83808f6a138>
 Date:   Mon Oct 6 11:34:02 2025 +0200
 
     Standardize `PretrainedConfig` to `PreTrainedConfig` (#41300)
@@ -926,18 +926,18 @@ Date:   Mon Oct 6 11:34:02 2025 +0200
     * revert
 
 commit e4930d6bde027ed21fd3dd91dbbfdc95e0221dd4
-Author: Yuanyuan Chen <cyyever@outlook.com>
+Author: Yuanyuan Chen <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
 Date:   Thu Oct 2 22:44:34 2025 +0800
 
     🚨 [V5] Remove deprecated `resume_download` (#41122)
     
     Remove deprecated `resume_download`
     
-    Signed-off-by: Yuanyuan Chen <cyyever@outlook.com>
-    Co-authored-by: Marc Sun <57196510+SunMarc@users.noreply.github.com>
+    Signed-off-by: Yuanyuan Chen <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
+    Co-authored-by: Marc Sun <REDACTED_EMAIL_1dfa872cbe3a44775b9c86bf>
 
 commit 4df2529d79d75f44e70396df5888a32ffa02d61e
-Author: Cyril Vallez <cyril.vallez@huggingface.co>
+Author: Cyril Vallez <REDACTED_EMAIL_e315714fc3ceb83808f6a138>
 Date:   Thu Sep 18 18:27:39 2025 +0200
 
     🚨🚨🚨 Fully remove Tensorflow and Jax support library-wide (#40760)
@@ -1013,7 +1013,7 @@ Date:   Thu Sep 18 18:27:39 2025 +0200
     * re-add
 
 commit 3b3f6cd0c19bc1202502eb66f7e760ef7c39ea04
-Author: Joao Gante <joaofranciscocardosogante@gmail.com>
+Author: Joao Gante <REDACTED_EMAIL_f9ecf062f401a7b396e83200>
 Date:   Tue Sep 16 15:08:48 2025 +0100
 
     [gemma3] `Gemma3ForConditionalGeneration` compatible with assisted generation (#40791)
@@ -1039,29 +1039,29 @@ Date:   Tue Sep 16 15:08:48 2025 +0100
     * fix poor rebase
 
 commit 02f1d7c09141203acb7e8ff7628cd9e5e07c327d
-Author: Isotr0py <mozf@mail2.sysu.edu.cn>
+Author: Isotr0py <REDACTED_EMAIL_a38376707b94e9b52c7cd34d>
 Date:   Thu Sep 11 16:26:45 2025 +0800
 
     Fix config dtype parsing for Emu3 edge case (#40766)
     
     * fix emu3 config
     
-    Signed-off-by: Isotr0py <mozf@mail2.sysu.edu.cn>
+    Signed-off-by: Isotr0py <REDACTED_EMAIL_a38376707b94e9b52c7cd34d>
     
     * address comment
     
-    Signed-off-by: Isotr0py <mozf@mail2.sysu.edu.cn>
+    Signed-off-by: Isotr0py <REDACTED_EMAIL_a38376707b94e9b52c7cd34d>
     
     * add comments
     
-    Signed-off-by: Isotr0py <mozf@mail2.sysu.edu.cn>
+    Signed-off-by: Isotr0py <REDACTED_EMAIL_a38376707b94e9b52c7cd34d>
     
     ---------
     
-    Signed-off-by: Isotr0py <mozf@mail2.sysu.edu.cn>
+    Signed-off-by: Isotr0py <REDACTED_EMAIL_a38376707b94e9b52c7cd34d>
 
 commit 71ac7ea0485d57f4c82d3c339e0009c1db4aa701
-Author: Joao Gante <joaofranciscocardosogante@gmail.com>
+Author: Joao Gante <REDACTED_EMAIL_f9ecf062f401a7b396e83200>
 Date:   Tue Sep 9 16:40:04 2025 +0100
 
     [tests] update `test_past_key_values_format` and delete overwrites (#40701)
@@ -1071,7 +1071,7 @@ Date:   Tue Sep 9 16:40:04 2025 +0100
     * rm some overwrites
 
 commit 3bccb02616a232cf97e4ebfd879c82a7ac0ec0df
-Author: Manuel de Prada Corral <6536835+manueldeprada@users.noreply.github.com>
+Author: Manuel de Prada Corral <REDACTED_EMAIL_0abe1ae792c34b35debead74>
 Date:   Mon Sep 1 13:42:48 2025 +0200
 
     🚨 Remove Group Beam Search decoding strategy (#40495)
@@ -1085,7 +1085,7 @@ Date:   Mon Sep 1 13:42:48 2025 +0200
     * aaand remove tests after all green!!
 
 commit 7db228a92ad5fcb9d5089cac91d7c7c70e5578d6
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Fri Aug 22 13:31:25 2025 +0200
 
     [configuration] allow to overwrite kwargs from subconfigs (#40241)
@@ -1093,7 +1093,7 @@ Date:   Fri Aug 22 13:31:25 2025 +0200
     allow to overwrite kwargs from subconfigs
 
 commit d8f6d3790acdd7033e199875b5b57691adf10735
-Author: Cyril Vallez <cyril.vallez@huggingface.co>
+Author: Cyril Vallez <REDACTED_EMAIL_e315714fc3ceb83808f6a138>
 Date:   Fri Aug 22 12:34:16 2025 +0200
 
     ⚠️⚠️ Use `dtype` instead of `torch_dtype` everywhere! (#39782)
@@ -1145,7 +1145,7 @@ Date:   Fri Aug 22 12:34:16 2025 +0200
     * post rebase adds
 
 commit 9568b506ed511c76ab4d0c6ed591c7fce8e048a5
-Author: Joao Gante <joaofranciscocardosogante@gmail.com>
+Author: Joao Gante <REDACTED_EMAIL_f9ecf062f401a7b396e83200>
 Date:   Thu Aug 21 17:35:18 2025 +0100
 
     [generate] handle support for cache classes when num enc layers != num dec layers (#40277)
@@ -1165,7 +1165,7 @@ Date:   Thu Aug 21 17:35:18 2025 +0100
     * handle corner case :o
 
 commit c50f140be277642b2c1777455e71c633c253bfae
-Author: Rishub Tamirisa <87284850+rishub-tamirisa@users.noreply.github.com>
+Author: Rishub Tamirisa <REDACTED_EMAIL_c7f98fdaa299304608a68c0c>
 Date:   Wed Aug 20 06:29:55 2025 -0700
 
     Add back `_tp_plan` attribute (#39944)
@@ -1196,11 +1196,11 @@ Date:   Wed Aug 20 06:29:55 2025 -0700
     
     ---------
     
-    Co-authored-by: Arthur Zucker <arthur.zucker@gmail.com>
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur Zucker <REDACTED_EMAIL_b8385f8dae05b1c200519510>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
 
 commit 2f1a8ad4ba39a684078e157d2685fe0131e25346
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Tue Aug 19 11:35:11 2025 +0200
 
     Fix setting attention for multimodal models (#39984)
@@ -1212,45 +1212,45 @@ Date:   Tue Aug 19 11:35:11 2025 +0200
     * keep previously set attn if exists
 
 commit c167faa0813ef261623d6cfcaee21ddaff607ec5
-Author: Yuanyuan Chen <cyyever@outlook.com>
+Author: Yuanyuan Chen <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
 Date:   Fri Aug 15 20:10:26 2025 +0800
 
     Fix typos (#40175)
     
-    Signed-off-by: cyy <cyyever@outlook.com>
+    Signed-off-by: cyy <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
 
 commit 95faabf0a6cd845f4c5548697e288a79e424b096
-Author: Yuanyuan Chen <cyyever@outlook.com>
+Author: Yuanyuan Chen <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
 Date:   Tue Jul 29 19:40:34 2025 +0800
 
     Apply several ruff SIM rules   (#37283)
     
     * Apply ruff SIM118 fix
     
-    Signed-off-by: cyy <cyyever@outlook.com>
+    Signed-off-by: cyy <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
     
     * Apply ruff SIM910 fix
     
-    Signed-off-by: cyy <cyyever@outlook.com>
+    Signed-off-by: cyy <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
     
     * Apply ruff SIM101 fix
     
-    Signed-off-by: cyy <cyyever@outlook.com>
+    Signed-off-by: cyy <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
     
     * Format code
     
-    Signed-off-by: cyy <cyyever@outlook.com>
+    Signed-off-by: cyy <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
     
     * More fixes
     
-    Signed-off-by: cyy <cyyever@outlook.com>
+    Signed-off-by: cyy <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
     
     ---------
     
-    Signed-off-by: cyy <cyyever@outlook.com>
+    Signed-off-by: cyy <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
 
 commit b56d721397028a562b1e6444a8e493171e659202
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Mon Jul 28 12:38:48 2025 +0200
 
     [configuration] remove redundant `classmethod` (#38812)
@@ -1264,7 +1264,7 @@ Date:   Mon Jul 28 12:38:48 2025 +0200
     * fix copies
 
 commit f90de364c2484c7c325bbe05befdcf487bd75b63
-Author: Lysandre Debut <hi@lysand.re>
+Author: Lysandre Debut <REDACTED_EMAIL_459ce081eec6eea407b4e6d4>
 Date:   Fri Jul 25 14:10:04 2025 +0200
 
     Rename huggingface_cli to hf (#39630)
@@ -1274,7 +1274,7 @@ Date:   Fri Jul 25 14:10:04 2025 +0200
     * hfh
 
 commit 4ded9a41138773af49c70eac3fca7ad6ba9ede03
-Author: Cyril Vallez <cyril.vallez@huggingface.co>
+Author: Cyril Vallez <REDACTED_EMAIL_e315714fc3ceb83808f6a138>
 Date:   Fri Jul 18 13:41:54 2025 +0200
 
     🚨🚨 Fix and simplify attention implementation dispatch and subconfigs handling (#39423)
@@ -1372,33 +1372,33 @@ Date:   Fri Jul 18 13:41:54 2025 +0200
     * skip
 
 commit 60b5471da3c3d59b8695b9969817267179120add
-Author: Yuanyuan Chen <cyyever@outlook.com>
+Author: Yuanyuan Chen <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
 Date:   Thu Jul 17 21:21:59 2025 +0800
 
     Enable some ruff checks for performance and readability (#39383)
     
     * Fix inefficient sequence tests
     
-    Signed-off-by: cyy <cyyever@outlook.com>
+    Signed-off-by: cyy <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
     
     * Enable PERF102
     
-    Signed-off-by: cyy <cyyever@outlook.com>
+    Signed-off-by: cyy <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
     
     * Enable PLC1802
     
-    Signed-off-by: cyy <cyyever@outlook.com>
+    Signed-off-by: cyy <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
     
     * Enable PLC0208
     
-    Signed-off-by: cyy <cyyever@outlook.com>
+    Signed-off-by: cyy <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
     
     ---------
     
-    Signed-off-by: cyy <cyyever@outlook.com>
+    Signed-off-by: cyy <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
 
 commit 29d0030e237485a97ea568120d79a7988535ea63
-Author: Pavel Iakubovskii <qubvel@gmail.com>
+Author: Pavel Iakubovskii <REDACTED_EMAIL_6ddbe4a6440ee186992233b6>
 Date:   Tue Jul 8 14:24:39 2025 +0100
 
     Refactor `PretrainedConfig.__init__` method to make it more explicit (#39158)
@@ -1410,7 +1410,7 @@ Date:   Tue Jul 8 14:24:39 2025 +0100
     * fix missing inits
 
 commit e15b06d8dc6fa132550311d63c9758b580f39bcc
-Author: Pavel Iakubovskii <qubvel@gmail.com>
+Author: Pavel Iakubovskii <REDACTED_EMAIL_6ddbe4a6440ee186992233b6>
 Date:   Thu Jul 3 15:22:47 2025 +0100
 
     [typing] better return typehints for `from_pretrained` (#39184)
@@ -1430,7 +1430,7 @@ Date:   Thu Jul 3 15:22:47 2025 +0100
     * remove "PretrainedConfig" annotations
 
 commit 583db52bc6d5415a205724776136d094ff70c9a4
-Author: Jaeyong Sung <jaeyong0201@gmail.com>
+Author: Jaeyong Sung <REDACTED_EMAIL_e488258a8c96b8245c09ebb4>
 Date:   Thu Jun 26 20:04:23 2025 +0900
 
     Add Dia model (#38405)
@@ -1846,12 +1846,12 @@ Date:   Thu Jun 26 20:04:23 2025 +0900
     
     ---------
     
-    Co-authored-by: Arthur Zucker <arthur.zucker@gmail.com>
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
-    Co-authored-by: Vasqu <antonprogamer@gmail.com>
+    Co-authored-by: Arthur Zucker <REDACTED_EMAIL_b8385f8dae05b1c200519510>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
+    Co-authored-by: Vasqu <REDACTED_EMAIL_670525deb255c7c6f16c54c7>
 
 commit 23c89a67321ddd85a6e291ed30c421b0bb351b9e
-Author: Anton Vlasjuk <73884904+vasqu@users.noreply.github.com>
+Author: Anton Vlasjuk <REDACTED_EMAIL_7e0489c9358d7c66392aa0fe>
 Date:   Tue Jun 24 14:42:10 2025 +0200
 
     [`Attention`] Small fix on output attentions (#38948)
@@ -1859,7 +1859,7 @@ Date:   Tue Jun 24 14:42:10 2025 +0200
     small fix
 
 commit 508a7040556dc6b45f09174c662a9632284b2445
-Author: Matt <Rocketknight1@users.noreply.github.com>
+Author: Matt <REDACTED_EMAIL_e60825a20b56d22c39c6e805>
 Date:   Tue Jun 17 19:37:18 2025 +0100
 
     No more Tuple, List, Dict (#38797)
@@ -1906,10 +1906,10 @@ Date:   Tue Jun 17 19:37:18 2025 +0100
     
     ---------
     
-    Co-authored-by: ydshieh <ydshieh@users.noreply.github.com>
+    Co-authored-by: ydshieh <REDACTED_EMAIL_cc331d69274da03748a88e43>
 
 commit 55736eea9939620b62e0f6660d1dd4f3e9e12ebd
-Author: Armaghan Shakir <raoarmaghanshakir040@gmail.com>
+Author: Armaghan Shakir <REDACTED_EMAIL_c80f7b3c10dd280198a6295e>
 Date:   Wed Jun 4 12:38:40 2025 +0500
 
     Add support for MiniMax's MiniMax-Text-01 (#35831)
@@ -2040,7 +2040,7 @@ Date:   Wed Jun 4 12:38:40 2025 +0500
     
     * update qkv torch.split
     
-    Co-authored-by: Cyril Vallez <cyril.vallez@gmail.com>
+    Co-authored-by: Cyril Vallez <REDACTED_EMAIL_c6e28c70ffcf75436b4eead7>
     
     * fix qkv torch.split
     
@@ -2088,11 +2088,11 @@ Date:   Wed Jun 4 12:38:40 2025 +0500
     
     ---------
     
-    Co-authored-by: Shakib-IO <shakib.khan17@northsouth.edu>
-    Co-authored-by: Cyril Vallez <cyril.vallez@gmail.com>
+    Co-authored-by: Shakib-IO <REDACTED_EMAIL_de62bbf2aa823d00790783e0>
+    Co-authored-by: Cyril Vallez <REDACTED_EMAIL_c6e28c70ffcf75436b4eead7>
 
 commit ba6d72226d30527cd9f27d594b58fb9c5ee35aed
-Author: Matt <Rocketknight1@users.noreply.github.com>
+Author: Matt <REDACTED_EMAIL_e60825a20b56d22c39c6e805>
 Date:   Mon May 26 17:37:30 2025 +0100
 
     :rotating_light: :rotating_light: Fix custom code saving (#37716)
@@ -2198,7 +2198,7 @@ Date:   Mon May 26 17:37:30 2025 +0100
     * make fixup
 
 commit f5d45d89c4f1d3282fc216a96dc6830b88d41249
-Author: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+Author: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
 Date:   Fri May 23 17:17:38 2025 +0200
 
     🚨Early-error🚨 config will error out if `output_attentions=True` and the attn implementation is wrong (#38288)
@@ -2249,10 +2249,10 @@ Date:   Fri May 23 17:17:38 2025 +0200
     
     ---------
     
-    Co-authored-by: Lysandre <hi@lysand.re>
+    Co-authored-by: Lysandre <REDACTED_EMAIL_459ce081eec6eea407b4e6d4>
 
 commit 163138a911c1fb4451ec4b32edaee20918a59def
-Author: Cyril Vallez <cyril.vallez@huggingface.co>
+Author: Cyril Vallez <REDACTED_EMAIL_e315714fc3ceb83808f6a138>
 Date:   Thu May 22 11:38:26 2025 +0200
 
     🚨🚨[core] Completely rewrite the masking logic for all attentions (#37866)
@@ -2645,10 +2645,10 @@ Date:   Thu May 22 11:38:26 2025 +0200
     
     ---------
     
-    Co-authored-by: Arthur Zucker <arthur.zucker@gmail.com>
+    Co-authored-by: Arthur Zucker <REDACTED_EMAIL_b8385f8dae05b1c200519510>
 
 commit 003deb16f1a3168aa31e205e6a93c389747c9dbf
-Author: Lysandre Debut <hi@lysand.re>
+Author: Lysandre Debut <REDACTED_EMAIL_459ce081eec6eea407b4e6d4>
 Date:   Mon May 19 14:33:47 2025 +0200
 
     Support for transformers explicit filename (#38152)
@@ -2660,7 +2660,7 @@ Date:   Mon May 19 14:33:47 2025 +0200
     * Rerun tests
 
 commit d23aae2b8c8738a12ab1b6710e60ae5866beaf9d
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Thu May 8 18:18:54 2025 +0200
 
     [VLMs]  support attention backends (#37576)
@@ -2708,7 +2708,7 @@ Date:   Thu May 8 18:18:54 2025 +0200
     * fix pixtral after rebase
 
 commit 9c5b1319d01d8a7455a0de0ff8f7b49064d26624
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Mon Apr 28 16:28:30 2025 +0200
 
     [config] revert #37603 (#37821)
@@ -2716,7 +2716,7 @@ Date:   Mon Apr 28 16:28:30 2025 +0200
     revert
 
 commit 1cfcbfcab8da6681a73b18e3e198d56417815223
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Thu Apr 24 11:48:11 2025 +0200
 
     [VLMs] fix flash-attention tests (#37603)
@@ -2732,7 +2732,7 @@ Date:   Thu Apr 24 11:48:11 2025 +0200
     * fixup
 
 commit 6f4058aee3dd2b3b4cba290a008692e399efbd72
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Wed Apr 9 11:48:49 2025 +0200
 
     Update composition flag usage (#36263)
@@ -2752,7 +2752,7 @@ Date:   Wed Apr 9 11:48:49 2025 +0200
     * fix copies
 
 commit 25b7f272347a93d6fb73cad126f6f6dc88e8ce89
-Author: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+Author: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
 Date:   Sat Apr 5 22:02:22 2025 +0200
 
     Add llama4 (#37307)
@@ -2833,14 +2833,14 @@ Date:   Sat Apr 5 22:02:22 2025 +0200
     
     ---------
     
-    Co-authored-by: Lu Fang <fanglu@fb.com>
+    Co-authored-by: Lu Fang <REDACTED_EMAIL_1cba5a64d885897ddc306c08>
     
     * use a new config parameter to determine which model definition to use for MoE
     
     ---------
     
-    Co-authored-by: Pedro Cuenca <pedro@huggingface.co>
-    Co-authored-by: Lu Fang <fanglu@fb.com>
+    Co-authored-by: Pedro Cuenca <REDACTED_EMAIL_a780ff14f38353f214a3761a>
+    Co-authored-by: Lu Fang <REDACTED_EMAIL_1cba5a64d885897ddc306c08>
     
     * un-comment write_tokenizer from converting script
     
@@ -2848,7 +2848,7 @@ Date:   Sat Apr 5 22:02:22 2025 +0200
     
     * [llama4] Pop aspect_ratios from image processor output in Llama4Processor
     
-    Signed-off-by: Jon Swenson <jmswen@gmail.com>
+    Signed-off-by: Jon Swenson <REDACTED_EMAIL_4b9a24e3b3e30fc6161dc3a8>
     
     * Fix parameter_count name
     
@@ -2884,7 +2884,7 @@ Date:   Sat Apr 5 22:02:22 2025 +0200
     
     * add explicit dtype
     
-    Signed-off-by: Jon Swenson <jmswen@gmail.com>
+    Signed-off-by: Jon Swenson <REDACTED_EMAIL_4b9a24e3b3e30fc6161dc3a8>
     
     * sdpa works
     
@@ -2892,7 +2892,7 @@ Date:   Sat Apr 5 22:02:22 2025 +0200
     
     * fix model loading
     
-    Signed-off-by: Zijing Liu <liuzijing2014@gmail.com>
+    Signed-off-by: Zijing Liu <REDACTED_EMAIL_dc137c5a119059f0ad3273f3>
     
     * revert
     
@@ -2944,11 +2944,11 @@ Date:   Sat Apr 5 22:02:22 2025 +0200
     
     * fix nope
     
-    Signed-off-by: Zijing Liu <liuzijing2014@gmail.com>
+    Signed-off-by: Zijing Liu <REDACTED_EMAIL_dc137c5a119059f0ad3273f3>
     
     * minor fix
     
-    Signed-off-by: Zijing Liu <liuzijing2014@gmail.com>
+    Signed-off-by: Zijing Liu <REDACTED_EMAIL_dc137c5a119059f0ad3273f3>
     
     * Clean up Llama4 vision model
     
@@ -3069,11 +3069,11 @@ Date:   Sat Apr 5 22:02:22 2025 +0200
     
     * fix fp8 loading
     
-    Signed-off-by: Zijing Liu <liuzijing2014@gmail.com>
+    Signed-off-by: Zijing Liu <REDACTED_EMAIL_dc137c5a119059f0ad3273f3>
     
     * fix text geneartion pipeline
     
-    Signed-off-by: Zijing Liu <liuzijing2014@gmail.com>
+    Signed-off-by: Zijing Liu <REDACTED_EMAIL_dc137c5a119059f0ad3273f3>
     
     * eager needs 4D mask
     
@@ -3111,7 +3111,7 @@ Date:   Sat Apr 5 22:02:22 2025 +0200
     
     * Update docs/source/en/model_doc/llama4.md
     
-    Co-authored-by: Pedro Cuenca <pedro@huggingface.co>
+    Co-authored-by: Pedro Cuenca <REDACTED_EMAIL_a780ff14f38353f214a3761a>
     
     * Fixes
     
@@ -3125,7 +3125,7 @@ Date:   Sat Apr 5 22:02:22 2025 +0200
     
     * Update src/transformers/models/llama4/modeling_llama4.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * fixup
     
@@ -3201,32 +3201,32 @@ Date:   Sat Apr 5 22:02:22 2025 +0200
     
     ---------
     
-    Signed-off-by: Jon Swenson <jmswen@gmail.com>
-    Signed-off-by: Zijing Liu <liuzijing2014@gmail.com>
-    Co-authored-by: yonigozlan <yoni.gozlan10@gmail.com>
-    Co-authored-by: Pedro Cuenca <pedro@huggingface.co>
-    Co-authored-by: Pablo Montalvo <pablo.montalvo.leroux@gmail.com>
-    Co-authored-by: Pablo Montalvo <39954772+molbap@users.noreply.github.com>
-    Co-authored-by: Keyun Tong <tongkeyun@gmail.com>
-    Co-authored-by: Zijing Liu <liuzijing2014@users.noreply.github.com>
-    Co-authored-by: Lu Fang <fanglu@fb.com>
-    Co-authored-by: Zijing Liu <liuzijing2014@gmail.com>
-    Co-authored-by: Jon Swenson <jmswen@gmail.com>
-    Co-authored-by: jmswen <jmswen@users.noreply.github.com>
-    Co-authored-by: MekkCyber <mekk.cyber@gmail.com>
-    Co-authored-by: Mohamed Mekkouri <93391238+MekkCyber@users.noreply.github.com>
-    Co-authored-by: Mohit Sharma <mohit21sharma.ms@gmail.com>
-    Co-authored-by: Yong Hoon Shin <yhshin@meta.com>
-    Co-authored-by: Marc Sun <marc@huggingface.co>
-    Co-authored-by: drisspg <drisspguessous@gmail.com>
-    Co-authored-by: Cyril Vallez <cyril.vallez@gmail.com>
-    Co-authored-by: Daniël de Kok <me@danieldk.eu>
-    Co-authored-by: Lysandre <hi@lysand.re>
-    Co-authored-by: Ye (Charlotte) Qi <ye.charlotte.qi@gmail.com>
-    Co-authored-by: ydshieh <ydshieh@users.noreply.github.com>
+    Signed-off-by: Jon Swenson <REDACTED_EMAIL_4b9a24e3b3e30fc6161dc3a8>
+    Signed-off-by: Zijing Liu <REDACTED_EMAIL_dc137c5a119059f0ad3273f3>
+    Co-authored-by: yonigozlan <REDACTED_EMAIL_e59702b84c72a924e73e5d01>
+    Co-authored-by: Pedro Cuenca <REDACTED_EMAIL_a780ff14f38353f214a3761a>
+    Co-authored-by: Pablo Montalvo <REDACTED_EMAIL_3ccda70544b28f1a898592ab>
+    Co-authored-by: Pablo Montalvo <REDACTED_EMAIL_8c3d72d5a88a3ee5e5d34779>
+    Co-authored-by: Keyun Tong <REDACTED_EMAIL_7572aa7612844b4cc37d6f17>
+    Co-authored-by: Zijing Liu <REDACTED_EMAIL_a7e38f2c4957b40f1b5e666f>
+    Co-authored-by: Lu Fang <REDACTED_EMAIL_1cba5a64d885897ddc306c08>
+    Co-authored-by: Zijing Liu <REDACTED_EMAIL_dc137c5a119059f0ad3273f3>
+    Co-authored-by: Jon Swenson <REDACTED_EMAIL_4b9a24e3b3e30fc6161dc3a8>
+    Co-authored-by: jmswen <REDACTED_EMAIL_3bce33c449bc8378cb79d7bf>
+    Co-authored-by: MekkCyber <REDACTED_EMAIL_9452d4330869957d3c0fefaa>
+    Co-authored-by: Mohamed Mekkouri <REDACTED_EMAIL_4637851f20682ee7f7def7c7>
+    Co-authored-by: Mohit Sharma <REDACTED_EMAIL_ef2567c609d5b2d00b75763a>
+    Co-authored-by: Yong Hoon Shin <REDACTED_EMAIL_68007d4117fda7d68c566c68>
+    Co-authored-by: Marc Sun <REDACTED_EMAIL_b451668ec3dc5075eb99d993>
+    Co-authored-by: drisspg <REDACTED_EMAIL_9490ed8fdd94d737fc039b22>
+    Co-authored-by: Cyril Vallez <REDACTED_EMAIL_c6e28c70ffcf75436b4eead7>
+    Co-authored-by: Daniël de Kok <REDACTED_EMAIL_6d22880f0c8ead8d7b7d2595>
+    Co-authored-by: Lysandre <REDACTED_EMAIL_459ce081eec6eea407b4e6d4>
+    Co-authored-by: Ye (Charlotte) Qi <REDACTED_EMAIL_a2c1aba9c2f4bc3548e4d17d>
+    Co-authored-by: ydshieh <REDACTED_EMAIL_cc331d69274da03748a88e43>
 
 commit 126abe3461762e5fc180e7e614391d1b4ab051ca
-Author: Matt <Rocketknight1@users.noreply.github.com>
+Author: Matt <REDACTED_EMAIL_e60825a20b56d22c39c6e805>
 Date:   Wed Apr 2 18:46:14 2025 +0100
 
     More ReDOS fixes! (#36964)
@@ -3252,15 +3252,15 @@ Date:   Wed Apr 2 18:46:14 2025 +0100
     * Trigger tests
 
 commit c94c6ed3972d3c9ed62c77a7964ae89f5df85ccf
-Author: 湛露先生 <zhanluxianshen@163.com>
+Author: 湛露先生 <REDACTED_EMAIL_761d9cbfa0962f9d87bc7b2a>
 Date:   Wed Apr 2 21:00:41 2025 +0800
 
     Fix some code annotation typos. (#37102)
     
-    Signed-off-by: zhanluxianshen <zhanluxianshen@163.com>
+    Signed-off-by: zhanluxianshen <REDACTED_EMAIL_761d9cbfa0962f9d87bc7b2a>
 
 commit 47e5432805611145f41908946838eb474903db76
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Tue Mar 25 09:13:56 2025 +0100
 
     Deprecate #36741 and map Causal to Conditional (#36917)
@@ -3276,7 +3276,7 @@ Date:   Tue Mar 25 09:13:56 2025 +0100
     * dont bloat `get_text_config()`
 
 commit 00d077267a7add6a068b1ed9393b31b9e46e4ed3
-Author: cyyever <cyyever@outlook.com>
+Author: cyyever <REDACTED_EMAIL_65a5038b44fb468b3f14d826>
 Date:   Mon Mar 24 23:42:25 2025 +0800
 
     [2/N] Use pyupgrade --py39-plus to improve code (#36857)
@@ -3284,7 +3284,7 @@ Date:   Mon Mar 24 23:42:25 2025 +0800
     Use pyupgrade --py39-plus to improve code
 
 commit cbfb8d7b27b4724f60c4085842f5150dbd3b41f3
-Author: Daniel Kleine <53251018+d-kleine@users.noreply.github.com>
+Author: Daniel Kleine <REDACTED_EMAIL_3df0dffcb915bba10ccef8f0>
 Date:   Mon Mar 17 17:40:25 2025 +0100
 
     doc: Clarify `is_decoder` usage in PretrainedConfig documentation (#36724)
@@ -3295,14 +3295,14 @@ Date:   Mon Mar 17 17:40:25 2025 +0100
     
     updated doc
     
-    Co-authored-by: Steven Liu <59462357+stevhliu@users.noreply.github.com>
+    Co-authored-by: Steven Liu <REDACTED_EMAIL_8035943a50a2aa6c2aa2baa4>
     
     ---------
     
-    Co-authored-by: Steven Liu <59462357+stevhliu@users.noreply.github.com>
+    Co-authored-by: Steven Liu <REDACTED_EMAIL_8035943a50a2aa6c2aa2baa4>
 
 commit 1c4b62b219323a31011bac3bd3cece7675d9e4c3
-Author: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+Author: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
 Date:   Tue Mar 11 09:26:28 2025 +0100
 
     Refactor some core stuff (#36539)
@@ -3333,11 +3333,11 @@ Date:   Tue Mar 11 09:26:28 2025 +0100
     
     * Update src/transformers/integrations/tensor_parallel.py
     
-    Co-authored-by: Lysandre Debut <hi@lysand.re>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_459ce081eec6eea407b4e6d4>
     
     * Update src/transformers/integrations/tensor_parallel.py
     
-    Co-authored-by: Lysandre Debut <hi@lysand.re>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_459ce081eec6eea407b4e6d4>
     
     * cleanup
     
@@ -3409,10 +3409,10 @@ Date:   Tue Mar 11 09:26:28 2025 +0100
     
     ---------
     
-    Co-authored-by: Lysandre Debut <hi@lysand.re>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_459ce081eec6eea407b4e6d4>
 
 commit 9e84b381356f5a4ade084ec718a5ce8dfcf04454
-Author: Afanti <phpjavaphp@gmail.com>
+Author: Afanti <REDACTED_EMAIL_e56950b823b35d3d7e290d02>
 Date:   Thu Mar 6 19:02:35 2025 +0800
 
     chore: enhance message descriptions in parameters,comments,logs and docstrings (#36554)
@@ -3427,10 +3427,10 @@ Date:   Thu Mar 6 19:02:35 2025 +0800
     
     ---------
     
-    Co-authored-by: Matt <Rocketknight1@users.noreply.github.com>
+    Co-authored-by: Matt <REDACTED_EMAIL_e60825a20b56d22c39c6e805>
 
 commit 8f137b242762eb9295a431ec6eb8cd9ee673daf9
-Author: Thomas Bauwens <145220868+bauwenst@users.noreply.github.com>
+Author: Thomas Bauwens <REDACTED_EMAIL_4200a24d42248c2d8f2c5c4a>
 Date:   Thu Feb 13 12:01:28 2025 +0100
 
     Move `DataCollatorForMultipleChoice` from the docs to the package (#34763)
@@ -3463,117 +3463,117 @@ Date:   Thu Feb 13 12:01:28 2025 +0100
     
     ---------
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
-    Co-authored-by: Arthur Zucker <arthur.zucker@gmail.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
+    Co-authored-by: Arthur Zucker <REDACTED_EMAIL_b8385f8dae05b1c200519510>
 
 commit f5fff672db338f8143181b2d8b7612060e14a7f3
-Author: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+Author: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
 Date:   Wed Feb 12 09:51:48 2025 +0000
 
     Add pipeline parallel plan to `PretrainedConfig` and `PreTrainedModel` (#36091)
     
     * Add `base_model_pp_plan` to `PretrainedConfig`
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add `_pp_plan` to `PreTrainedModel`
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add both to Llama for testing
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Fix type error
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Update to suggested schema
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * `_pp_plan` keys are not patterns
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Simplify schema
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Fix typing error
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Update input name for Llama
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add pp plan to Aria
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add pp plan to Bamba
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add pp plan to Cohere 1 & 2
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add pp plan to diffllama and emu3
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add pp plan to Gemma 1 & 2
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add pp plan to GLM and GPT NeoX
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add pp plan to Granite and Helium
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add pp plan to Mistral and Mixtral
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add pp plan to OLMo 1 & 2
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add pp plan to Phi and Phi 3
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add pp plan for Qwen 2, 2 MoE, 2 VL and 2.5 VL
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add pp plan for Starcoder 2
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Add enum for accessing inputs and outputs
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Update type hints to use tuples
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     * Change outer list to tuple
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
     
     ---------
     
-    Signed-off-by: Harry Mellor <19981378+hmellor@users.noreply.github.com>
+    Signed-off-by: Harry Mellor <REDACTED_EMAIL_8555f60d3f76c894a5cfeae0>
 
 commit 84a6789145c3d728f2e405d31e9a35df5d74f05c
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Mon Jan 13 13:42:08 2025 +0100
 
     Enable different torch dtype in sub models (#34873)
@@ -3593,7 +3593,7 @@ Date:   Mon Jan 13 13:42:08 2025 +0100
     * handle BC and make fp32 default
 
 commit 2c47618c1a282f925446506d53108dc6e82d9ef0
-Author: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+Author: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
 Date:   Wed Dec 18 16:53:39 2024 +0100
 
     🚨All attention refactor🚨 (#35235)
@@ -3794,10 +3794,10 @@ Date:   Wed Dec 18 16:53:39 2024 +0100
     
     ---------
     
-    Co-authored-by: Cyril Vallez <cyril.vallez@gmail.com>
+    Co-authored-by: Cyril Vallez <REDACTED_EMAIL_c6e28c70ffcf75436b4eead7>
 
 commit 5fcf6286bff90a2ba3b7a4b45fdf8542ea404dbe
-Author: Pavel Iakubovskii <qubvel@gmail.com>
+Author: Pavel Iakubovskii <REDACTED_EMAIL_6ddbe4a6440ee186992233b6>
 Date:   Wed Dec 11 13:40:30 2024 +0100
 
     Add TimmWrapper (#34564)
@@ -3982,10 +3982,10 @@ Date:   Wed Dec 11 13:40:30 2024 +0100
     
     ---------
     
-    Co-authored-by: Amy Roberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: Amy Roberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
 
 commit 20142ab5422fbafcd10e221e37e95f8aaf1bde3c
-Author: Ke Wen <kw2501@meta.com>
+Author: Ke Wen <REDACTED_EMAIL_458312b8f7887afb088c2f12>
 Date:   Mon Nov 18 10:51:49 2024 -0800
 
     Simplify Tensor Parallel implementation with PyTorch TP (#34184)
@@ -4031,7 +4031,7 @@ Date:   Mon Nov 18 10:51:49 2024 -0800
     * Fix copy
 
 commit 893ad04fad145904ccb71e4e858e4134c32226b6
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Tue Nov 5 11:34:01 2024 +0100
 
     Load sub-configs from composite configs (#34410)
@@ -4057,7 +4057,7 @@ Date:   Tue Nov 5 11:34:01 2024 +0100
     * this model was missed
 
 commit 21d5025826857e11a75ef7b23ac15a607be4fc54
-Author: Raushan Turganbay <raushan@huggingface.co>
+Author: Raushan Turganbay <REDACTED_EMAIL_1e80bca1bbf08dcf7927ac8a>
 Date:   Tue Oct 22 06:54:44 2024 +0200
 
     Attn implementation for composite models (#32238)
@@ -4134,23 +4134,23 @@ Date:   Tue Oct 22 06:54:44 2024 +0200
     
     * Update src/transformers/models/idefics2/configuration_idefics2.py
     
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
     
     * Update tests/models/clip/test_modeling_clip.py
     
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
     
     * Update tests/models/idefics2/test_modeling_idefics2.py
     
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
     
     * Update tests/models/idefics2/test_modeling_idefics2.py
     
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
     
     * major update, no need for automap
     
@@ -4210,10 +4210,10 @@ Date:   Tue Oct 22 06:54:44 2024 +0200
     
     ---------
     
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
 
 commit c1c7e89620b43f0924148e267a6da5d38450ce1f
-Author: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+Author: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
 Date:   Thu Oct 17 22:34:40 2024 +0200
 
     Fix Gradient Accumulation issue (#34191)
@@ -4278,7 +4278,7 @@ Date:   Thu Oct 17 22:34:40 2024 +0200
     
     * Update src/transformers/loss/loss_utils.py
     
-    Co-authored-by: Kashif Rasul <kashif.rasul@gmail.com>
+    Co-authored-by: Kashif Rasul <REDACTED_EMAIL_3eb234c2820283f535620812>
     
     * update
     
@@ -4336,10 +4336,10 @@ Date:   Thu Oct 17 22:34:40 2024 +0200
     
     ---------
     
-    Co-authored-by: Kashif Rasul <kashif.rasul@gmail.com>
+    Co-authored-by: Kashif Rasul <REDACTED_EMAIL_3eb234c2820283f535620812>
 
 commit 04b4e441dcd0ed966e158c66dac870e67cab8ea8
-Author: Marc Sun <57196510+SunMarc@users.noreply.github.com>
+Author: Marc Sun <REDACTED_EMAIL_1dfa872cbe3a44775b9c86bf>
 Date:   Tue Oct 8 15:57:12 2024 +0200
 
     Remove `decoder_config=None` (#34014)
@@ -4349,13 +4349,13 @@ Date:   Tue Oct 8 15:57:12 2024 +0200
     * changed to the right one
 
 commit c91fe85b7826fbb169a59800b355ad6ca9c975ac
-Author: Michael Goin <michael@neuralmagic.com>
+Author: Michael Goin <REDACTED_EMAIL_98fe2439aba057e22788812f>
 Date:   Mon Oct 7 12:32:20 2024 -0400
 
     Fix undefined default_config in configuration_utils.py (#33934)
 
 commit b0c5660e881a562ba526f70639ff480a392fce71
-Author: Joao Gante <joaofranciscocardosogante@gmail.com>
+Author: Joao Gante <REDACTED_EMAIL_f9ecf062f401a7b396e83200>
 Date:   Thu Oct 3 16:45:14 2024 +0100
 
     Config: lower `save_pretrained` exception to warning (#33906)
@@ -4369,7 +4369,7 @@ Date:   Thu Oct 3 16:45:14 2024 +0100
     * rm extra comma
 
 commit 4d5b45870411053c9c72d24a8e1052e00fe62ad6
-Author: Quentin Gallouédec <45557362+qgallouedec@users.noreply.github.com>
+Author: Quentin Gallouédec <REDACTED_EMAIL_99b5e30e0cae398af59bcf3e>
 Date:   Mon Sep 30 12:02:23 2024 +0200
 
     Fix typo in documentation  (#33805)
@@ -4377,7 +4377,7 @@ Date:   Mon Sep 30 12:02:23 2024 +0200
     fix typo
 
 commit 363301f2219fff6ad05bd98a51faa1cc510b040e
-Author: Ita Zaporozhets <31893021+itazap@users.noreply.github.com>
+Author: Ita Zaporozhets <REDACTED_EMAIL_118b893cdc2471bf53263ed8>
 Date:   Fri Sep 6 07:49:47 2024 -0400
 
     support loading model without config.json file (#32356)
@@ -4397,21 +4397,21 @@ Date:   Fri Sep 6 07:49:47 2024 -0400
     * ruff
 
 commit d750b509fc20d56498b48e7daf363cfe760bdc1f
-Author: Joao Gante <joaofranciscocardosogante@gmail.com>
+Author: Joao Gante <REDACTED_EMAIL_f9ecf062f401a7b396e83200>
 Date:   Wed Sep 4 12:03:30 2024 +0100
 
     Config: unified logic to retrieve text config (#33219)
 
 commit 970a16ec7f693104085fd826523e5c6ce64f2040
-Author: Joao Gante <joaofranciscocardosogante@gmail.com>
+Author: Joao Gante <REDACTED_EMAIL_f9ecf062f401a7b396e83200>
 Date:   Fri Aug 23 11:12:53 2024 +0100
 
     Forbid `PretrainedConfig` from saving `generate` parameters; Update deprecations in `generate`-related code 🧹  (#32659)
     
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
 
 commit 12b6880c81db7742a29ea425dcb9e63b7dbdc449
-Author: Sai-Suraj-27 <sai.suraj.27.729@gmail.com>
+Author: Sai-Suraj-27 <REDACTED_EMAIL_673a8cfcc9761803baf1661b>
 Date:   Mon Jul 22 22:16:17 2024 +0530
 
     fix: Fixed raising `TypeError` instead of `ValueError` for invalid type (#32111)
@@ -4427,13 +4427,13 @@ Date:   Mon Jul 22 22:16:17 2024 +0530
     * Updated tests accordingly.
 
 commit aada568f73953d0678bbb0d605bfeed46fb209fd
-Author: Albert Villanova del Moral <8515462+albertvillanova@users.noreply.github.com>
+Author: Albert Villanova del Moral <REDACTED_EMAIL_63bc4ae19df7bf39ea2ecd3a>
 Date:   Tue May 28 17:47:35 2024 +0200
 
     Fix PretrainedConfig docstring with deprecated resume_download (#31014)
 
 commit fd3c128040561a9f67abaf6af30f8b50029ff083
-Author: Lucain <lucainp@gmail.com>
+Author: Lucain <REDACTED_EMAIL_106802518be61bed6eedce54>
 Date:   Fri May 24 14:35:40 2024 +0200
 
     Fix resume_download future warning (#31007)
@@ -4445,7 +4445,7 @@ Date:   Fri May 24 14:35:40 2024 +0200
     * Add regression test
 
 commit 673440d073d5f534a6d6bedeeca94869afd8d0a7
-Author: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+Author: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
 Date:   Wed May 22 06:40:15 2024 +0200
 
     update ruff version (#30932)
@@ -4460,10 +4460,10 @@ Date:   Wed May 22 06:40:15 2024 +0200
     
     ---------
     
-    Co-authored-by: Lysandre <lysandre@huggingface.co>
+    Co-authored-by: Lysandre <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
 
 commit c11ac7857bf93914f69a209d50a918ad7fe1d9a3
-Author: Hafedh <70411813+not-lain@users.noreply.github.com>
+Author: Hafedh <REDACTED_EMAIL_093112175d1283252dfced84>
 Date:   Mon May 20 10:38:32 2024 +0100
 
     fix for custom pipeline configuration  (#29004)
@@ -4485,15 +4485,15 @@ Date:   Mon May 20 10:38:32 2024 +0100
     * improve tests for custom pipelines
 
 commit a42844955f3134a2b2fd8075353c710dcfb7b362
-Author: Lysandre Debut <hi@lysand.re>
+Author: Lysandre Debut <REDACTED_EMAIL_459ce081eec6eea407b4e6d4>
 Date:   Wed May 15 14:28:20 2024 +0200
 
     Loading GGUF files support (#30391)
     
     * Adds support for loading GGUF files
     
-    Co-authored-by: Younes Belkada <younesbelkada@gmail.com>
-    Co-authored-by: 99991 <99991@users.noreply.github.com>
+    Co-authored-by: Younes Belkada <REDACTED_EMAIL_aef6aa72eaa303c6da24f5d0>
+    Co-authored-by: 99991 <REDACTED_EMAIL_06079e6464cd6f802fee9783>
     
     * add q2_k q3_k q5_k support from @99991
     
@@ -4521,23 +4521,23 @@ Date:   Wed May 15 14:28:20 2024 +0200
     
     * Update src/transformers/models/auto/tokenization_auto.py
     
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
     
     * change logic
     
     * Update src/transformers/modeling_utils.py
     
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
     
     * change
     
     * Apply suggestions from code review
     
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
     
     * Update src/transformers/modeling_gguf_pytorch_utils.py
     
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
     
     * put back comment
     
@@ -4553,7 +4553,7 @@ Date:   Wed May 15 14:28:20 2024 +0200
     
     * Update src/transformers/modeling_utils.py
     
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
     
     * address comments about tests and tokenizer + add added_tokens
     
@@ -4563,13 +4563,13 @@ Date:   Wed May 15 14:28:20 2024 +0200
     
     ---------
     
-    Co-authored-by: Younes Belkada <younesbelkada@gmail.com>
-    Co-authored-by: 99991 <99991@users.noreply.github.com>
-    Co-authored-by: Younes Belkada <49240599+younesbelkada@users.noreply.github.com>
-    Co-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>
+    Co-authored-by: Younes Belkada <REDACTED_EMAIL_aef6aa72eaa303c6da24f5d0>
+    Co-authored-by: 99991 <REDACTED_EMAIL_06079e6464cd6f802fee9783>
+    Co-authored-by: Younes Belkada <REDACTED_EMAIL_5100b3165d6afe23f90fc7f7>
+    Co-authored-by: amyeroberts <REDACTED_EMAIL_73561375f9892f1d511a9266>
 
 commit 6d3b643e2ae2763c484c6232691810f647095e03
-Author: fxmarty <9808326+fxmarty@users.noreply.github.com>
+Author: fxmarty <REDACTED_EMAIL_8346f91bbd5dcc90222fab2f>
 Date:   Tue Feb 27 10:43:01 2024 +0100
 
     Fix `attn_implementation` documentation (#29295)
@@ -4577,7 +4577,7 @@ Date:   Tue Feb 27 10:43:01 2024 +0100
     fix
 
 commit f497f564bb76697edab09184a252fc1b1a326d1e
-Author: Lysandre Debut <hi@lysand.re>
+Author: Lysandre Debut <REDACTED_EMAIL_459ce081eec6eea407b4e6d4>
 Date:   Fri Feb 16 08:16:58 2024 +0100
 
     Update all references to canonical models (#29001)
@@ -4587,13 +4587,13 @@ Date:   Fri Feb 16 08:16:58 2024 +0100
     * Update
 
 commit f4f57f9dfa68948a383c352a900d588f63f6290a
-Author: Joao Gante <joaofranciscocardosogante@gmail.com>
+Author: Joao Gante <REDACTED_EMAIL_f9ecf062f401a7b396e83200>
 Date:   Tue Jan 16 18:31:01 2024 +0000
 
     Config: warning when saving generation kwargs in the model config (#28514)
 
 commit 80377eb018c077dba434bc8e7912bcaed3a64d09
-Author: fxmarty <9808326+fxmarty@users.noreply.github.com>
+Author: fxmarty <REDACTED_EMAIL_8346f91bbd5dcc90222fab2f>
 Date:   Fri Dec 8 21:38:14 2023 +0100
 
     F.scaled_dot_product_attention support (#26572)
@@ -4664,27 +4664,27 @@ Date:   Fri Dec 8 21:38:14 2023 +0100
     
     * Update src/transformers/modeling_attn_mask_utils.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update src/transformers/modeling_attn_mask_utils.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update src/transformers/modeling_attn_mask_utils.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update src/transformers/modeling_attn_mask_utils.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update src/transformers/modeling_attn_mask_utils.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update src/transformers/models/bart/modeling_bart.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * remove duplicate pretraining_tp code
     
@@ -4742,23 +4742,23 @@ Date:   Fri Dec 8 21:38:14 2023 +0100
     
     * Update src/transformers/modeling_utils.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update src/transformers/modeling_utils.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update src/transformers/modeling_utils.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update src/transformers/modeling_attn_mask_utils.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update docs/source/en/perf_infer_gpu_one.md
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * remove use_attn_implementation
     
@@ -4796,7 +4796,7 @@ Date:   Fri Dec 8 21:38:14 2023 +0100
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update src/transformers/models/bark/modeling_bark.py
     
@@ -4824,10 +4824,10 @@ Date:   Fri Dec 8 21:38:14 2023 +0100
     
     ---------
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
 
 commit 651408a077f842e76e75bfc7d02b8ac38eeb6480
-Author: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+Author: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
 Date:   Thu Nov 16 17:43:19 2023 +0100
 
     [`Styling`] stylify using ruff (#27144)
@@ -4897,7 +4897,7 @@ Date:   Thu Nov 16 17:43:19 2023 +0100
     * Remove file I/O
     
     Co-authored-by: charliermarsh
-     <charlie.r.marsh@gmail.com>
+     <REDACTED_EMAIL_c9b428bfd50be82f237c2f07>
     
     * style
     
@@ -4934,16 +4934,16 @@ Date:   Thu Nov 16 17:43:19 2023 +0100
     
     ---------
     
-    Co-authored-by: charliermarsh <charlie.r.marsh@gmail.com>
+    Co-authored-by: charliermarsh <REDACTED_EMAIL_c9b428bfd50be82f237c2f07>
 
 commit 66b088faf01a795a7e0ddafafa1838f065f42f86
-Author: Lucain <lucainp@gmail.com>
+Author: Lucain <REDACTED_EMAIL_106802518be61bed6eedce54>
 Date:   Fri Oct 27 14:32:54 2023 +0200
 
     Provide alternative when warning on use_auth_token (#27105)
 
 commit fd6a0ade9b89c415ea213ef1aa07c9b2c32a4d75
-Author: Younes Belkada <49240599+younesbelkada@users.noreply.github.com>
+Author: Younes Belkada <REDACTED_EMAIL_5100b3165d6afe23f90fc7f7>
 Date:   Mon Oct 16 19:56:53 2023 +0200
 
     🚨🚨🚨 [`Quantization`] Store the original dtype in the config as a private attribute 🚨🚨🚨 (#26761)
@@ -4958,22 +4958,22 @@ Date:   Mon Oct 16 19:56:53 2023 +0200
     
     * Update src/transformers/modeling_utils.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * fix serialization
     
     * Apply suggestions from code review
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * fixup
     
     ---------
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
 
 commit 03af4c42a624ea44b3325ff78151f499392dd617
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Oct 4 09:13:37 2023 -0400
 
     Docstring check (#26052)
@@ -5036,15 +5036,15 @@ Date:   Wed Oct 4 09:13:37 2023 -0400
     
     * Update src/transformers/models/pvt/configuration_pvt.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update utils/check_docstrings.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update src/transformers/utils/quantization_config.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Deal with float defaults
     
@@ -5060,17 +5060,17 @@ Date:   Wed Oct 4 09:13:37 2023 -0400
     
     * Update src/transformers/models/deprecated/mctct/configuration_mctct.py
     
-    Co-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_b732173a1371e41a15f0bc0d>
     
     * Address review comment
     
     ---------
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
-    Co-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_b732173a1371e41a15f0bc0d>
 
 commit 368a58e61cda8418af7f80dce6249cbf19db5e23
-Author: Younes Belkada <49240599+younesbelkada@users.noreply.github.com>
+Author: Younes Belkada <REDACTED_EMAIL_5100b3165d6afe23f90fc7f7>
 Date:   Fri Sep 22 17:42:10 2023 +0200
 
     [`core` ] Integrate Flash attention 2 in most used models (#25598)
@@ -5137,7 +5137,7 @@ Date:   Fri Sep 22 17:42:10 2023 +0200
     
     * Update src/transformers/modeling_utils.py
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
     
     * fixup
     
@@ -5177,7 +5177,7 @@ Date:   Fri Sep 22 17:42:10 2023 +0200
     
     * Update src/transformers/models/falcon/modeling_falcon.py
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * add init_rope
     
@@ -5211,7 +5211,7 @@ Date:   Fri Sep 22 17:42:10 2023 +0200
     
     * Update docs/source/en/perf_infer_gpu_one.md
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * split in two lines
     
@@ -5235,7 +5235,7 @@ Date:   Fri Sep 22 17:42:10 2023 +0200
     
     * Apply suggestions from code review
     
-    Co-authored-by: Lysandre Debut <hi@lysand.re>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_459ce081eec6eea407b4e6d4>
     
     * address some comments
     
@@ -5245,13 +5245,13 @@ Date:   Fri Sep 22 17:42:10 2023 +0200
     
     * Update src/transformers/testing_utils.py
     
-    Co-authored-by: Lysandre Debut <hi@lysand.re>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_459ce081eec6eea407b4e6d4>
     
     * fixup
     
     * Apply suggestions from code review
     
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
     
     * Update src/transformers/modeling_utils.py
     
@@ -5267,13 +5267,13 @@ Date:   Fri Sep 22 17:42:10 2023 +0200
     
     ---------
     
-    Co-authored-by: Felix Marty <9808326+fxmarty@users.noreply.github.com>
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
-    Co-authored-by: Arthur <48595927+ArthurZucker@users.noreply.github.com>
-    Co-authored-by: Lysandre Debut <hi@lysand.re>
+    Co-authored-by: Felix Marty <REDACTED_EMAIL_8346f91bbd5dcc90222fab2f>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
+    Co-authored-by: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_459ce081eec6eea407b4e6d4>
 
 commit 29f04002e604398bd369533c392e23e8af746014
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Fri Aug 4 14:56:09 2023 +0200
 
     Deal with nested configs better in base class (#25237)
@@ -5292,7 +5292,7 @@ Date:   Fri Aug 4 14:56:09 2023 +0200
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Younes Belkada <49240599+younesbelkada@users.noreply.github.com>
+    Co-authored-by: Younes Belkada <REDACTED_EMAIL_5100b3165d6afe23f90fc7f7>
     
     * Fix setting a nested config via dict in the kwargs
     
@@ -5302,10 +5302,10 @@ Date:   Fri Aug 4 14:56:09 2023 +0200
     
     ---------
     
-    Co-authored-by: Younes Belkada <49240599+younesbelkada@users.noreply.github.com>
+    Co-authored-by: Younes Belkada <REDACTED_EMAIL_5100b3165d6afe23f90fc7f7>
 
 commit 224da5df6956340a5c680e5b57b4914d4d7298b6
-Author: Yih-Dar <2521628+ydshieh@users.noreply.github.com>
+Author: Yih-Dar <REDACTED_EMAIL_bc5cff5368c7a2ec4033cb26>
 Date:   Wed Jul 26 15:09:59 2023 +0200
 
     update `use_auth_token` -> `token` (#25083)
@@ -5314,16 +5314,16 @@ Date:   Wed Jul 26 15:09:59 2023 +0200
     
     ---------
     
-    Co-authored-by: ydshieh <ydshieh@users.noreply.github.com>
+    Co-authored-by: ydshieh <REDACTED_EMAIL_cc331d69274da03748a88e43>
 
 commit 2642d8d04b14c18199ebe7b35f976da02df61752
-Author: Joao Gante <joaofranciscocardosogante@gmail.com>
+Author: Joao Gante <REDACTED_EMAIL_f9ecf062f401a7b396e83200>
 Date:   Tue Jul 11 16:21:29 2023 +0100
 
     Docs: add `kwargs` type to fix formatting (#24733)
 
 commit 6ce6d62b6f20040129ec9831e7c4f6576402ea42
-Author: Yih-Dar <2521628+ydshieh@users.noreply.github.com>
+Author: Yih-Dar <REDACTED_EMAIL_bc5cff5368c7a2ec4033cb26>
 Date:   Wed Jun 21 19:24:11 2023 +0200
 
     Explicit arguments in `from_pretrained` (#24306)
@@ -5368,10 +5368,10 @@ Date:   Wed Jun 21 19:24:11 2023 +0200
     
     ---------
     
-    Co-authored-by: ydshieh <ydshieh@users.noreply.github.com>
+    Co-authored-by: ydshieh <REDACTED_EMAIL_cc331d69274da03748a88e43>
 
 commit a6d05d55f65727e0be3e71cad4c648c33b0be177
-Author: Younes Belkada <49240599+younesbelkada@users.noreply.github.com>
+Author: Younes Belkada <REDACTED_EMAIL_5100b3165d6afe23f90fc7f7>
 Date:   Fri Jun 9 13:41:14 2023 +0200
 
     [`bnb`] Fix bnb config json serialization (#24137)
@@ -5382,22 +5382,22 @@ Date:   Fri Jun 9 13:41:14 2023 +0200
     
     ---------
     
-    Co-authored-by: Andrechang <Andrechang@users.noreply.github.com>
+    Co-authored-by: Andrechang <REDACTED_EMAIL_d5c78c05b82aea0bf29f3119>
 
 commit af2c36793fd6cde4b595a4b6f800a96dff86556e
-Author: Sheon Han <sheon.han@gmail.com>
+Author: Sheon Han <REDACTED_EMAIL_5738066db665f6e18d47f20b>
 Date:   Thu Jun 1 07:10:15 2023 -0700
 
     Fix doc string nits (#23929)
 
 commit 389bdba618c92dc50bab42bed3e2dcb5dcb5581f
-Author: joaoareis <34096208+joaoareis@users.noreply.github.com>
+Author: joaoareis <REDACTED_EMAIL_fd1bad942ab5c26dc8efa063>
 Date:   Fri May 19 17:48:35 2023 +0100
 
     Fix PretrainedConfig `min_length` docstring (#23471)
 
 commit 5f9b825c89fb83f5be32144a5562ddf5dae91505
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Tue Apr 18 13:46:11 2023 -0400
 
     Use code on the Hub from another repo (#22814)
@@ -5423,7 +5423,7 @@ Date:   Tue Apr 18 13:46:11 2023 -0400
     * Address review comments
 
 commit 50caa2062849ed1061970be869ed54c78fc962ad
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Mon Apr 17 14:22:13 2023 -0400
 
     Revert "Use code on the Hub from another repo" (#22813)
@@ -5433,7 +5433,7 @@ Date:   Mon Apr 17 14:22:13 2023 -0400
     This reverts commit ea7b0a539a92a79b829cfc7d41d28f33f993e820.
 
 commit ea7b0a539a92a79b829cfc7d41d28f33f993e820
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Mon Apr 17 11:36:29 2023 -0400
 
     Use code on the Hub from another repo (#22698)
@@ -5451,7 +5451,7 @@ Date:   Mon Apr 17 11:36:29 2023 -0400
     * Add test
 
 commit 370f0ca18c8e4577357df59936e790acdecef4ac
-Author: Younes Belkada <49240599+younesbelkada@users.noreply.github.com>
+Author: Younes Belkada <REDACTED_EMAIL_5100b3165d6afe23f90fc7f7>
 Date:   Wed Apr 12 14:01:18 2023 +0200
 
     [`bnb`] Let's make serialization of int8 models possible (#22177)
@@ -5484,7 +5484,7 @@ Date:   Wed Apr 12 14:01:18 2023 +0200
     
     * Update src/transformers/utils/quantization_config.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * address last comments
     
@@ -5498,20 +5498,20 @@ Date:   Wed Apr 12 14:01:18 2023 +0200
     
     * Apply suggestions from code review
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     ---------
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit 5e8c8eb5bad1d43212b2e8bf724114fe5cdfd807
-Author: Aaron Gokaslan <skylion.aaron@gmail.com>
+Author: Aaron Gokaslan <REDACTED_EMAIL_6f155000e233c42ce5022dce>
 Date:   Wed Feb 22 03:14:54 2023 -0500
 
     Apply ruff flake8-comprehensions (#21694)
 
 commit 8a303f527f90e620bab95f20abfdba3360b7ead6
-Author: raghavanone <115454562+raghavanone@users.noreply.github.com>
+Author: raghavanone <REDACTED_EMAIL_5b9922a10bda69b480878a80>
 Date:   Tue Feb 7 21:14:43 2023 +0530
 
     Sanity check the type of id2label and label2id arguments of from_pretrained for TokenClassification models (#21490)
@@ -5523,7 +5523,7 @@ Date:   Tue Feb 7 21:14:43 2023 +0530
     * Incorporate PR feedbacks
 
 commit 8f3b4a1d5bd97045541c43179efe8cd9c58adb76
-Author: Lucain <lucainp@gmail.com>
+Author: Lucain <REDACTED_EMAIL_106802518be61bed6eedce54>
 Date:   Fri Jan 27 18:09:49 2023 +0100
 
     Little cleanup: let huggingface_hub manage token retrieval (#21333)
@@ -5539,7 +5539,7 @@ Date:   Fri Jan 27 18:09:49 2023 +0100
     * add explicit return type
 
 commit 8896ebb9a90361e72c4739c8402b908170869966
-Author: Sherman Siu <sherman.siu@uwaterloo.ca>
+Author: Sherman Siu <REDACTED_EMAIL_0daa3a686ee24cdbc55eb1e1>
 Date:   Tue Jan 17 09:23:47 2023 -0500
 
     Clarify and add missing typical_p argument docstring. (#21095)
@@ -5552,7 +5552,7 @@ Date:   Tue Jan 17 09:23:47 2023 -0500
     
     Accept the suggestion by @stevhliu for paraphrasing the docstring.
     
-    Co-authored-by: Steven Liu <59462357+stevhliu@users.noreply.github.com>
+    Co-authored-by: Steven Liu <REDACTED_EMAIL_8035943a50a2aa6c2aa2baa4>
     
     * Use the same docstring as in GenerationConfig
     
@@ -5560,16 +5560,16 @@ Date:   Tue Jan 17 09:23:47 2023 -0500
     
     * Fix docstring spacing.
     
-    Co-authored-by: Steven Liu <59462357+stevhliu@users.noreply.github.com>
+    Co-authored-by: Steven Liu <REDACTED_EMAIL_8035943a50a2aa6c2aa2baa4>
 
 commit 491a33d138491492d9481f08c1e4ce710289072e
-Author: Matthew McDermott <mattmcdermott8@gmail.com>
+Author: Matthew McDermott <REDACTED_EMAIL_170c553039990612a230d654>
 Date:   Fri Dec 30 02:35:01 2022 -0500
 
     Adds type checking to PreTrainedConfig. (#20926)
 
 commit b9a0ede6ab2558197d919e7a77a96dfd1c466b3f
-Author: xxyzz <gitpull@protonmail.com>
+Author: xxyzz <REDACTED_EMAIL_5fc5fde813493f93487e2c6c>
 Date:   Tue Dec 6 20:44:17 2022 +0800
 
     Check if docstring is None before formating it (#20592)
@@ -5577,7 +5577,7 @@ Date:   Tue Dec 6 20:44:17 2022 +0800
     docstrings could be `None` if Python optimize level is set to 2.
 
 commit 24476722696de88e78fe00bd192da8b416b8b2bd
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Tue Oct 25 12:32:15 2022 -0400
 
     Update doc for revision and token (#19793)
@@ -5586,14 +5586,14 @@ Date:   Tue Oct 25 12:32:15 2022 -0400
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_b732173a1371e41a15f0bc0d>
     
     * Push changes on other from_pretrained methods
     
-    Co-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_b732173a1371e41a15f0bc0d>
 
 commit 45e14038f20d7f04574af4ce8356bab11e3d6741
-Author: Arthur <48595927+ArthurZucker@users.noreply.github.com>
+Author: Arthur <REDACTED_EMAIL_6836524180f8b53d57a86e1e>
 Date:   Wed Oct 5 22:28:31 2022 +0200
 
     Add WhisperModel to transformers (#19166)
@@ -5767,7 +5767,7 @@ Date:   Wed Oct 5 22:28:31 2022 +0200
     
     * Update src/transformers/models/whisper/feature_extraction_whisper.py
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
     
     * clean modeling whisper and test
     Removed the attention mask arguments that are deprecated
@@ -5784,7 +5784,7 @@ Date:   Wed Oct 5 22:28:31 2022 +0200
     
     * Update docs/source/en/model_doc/whisper.mdx
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
     
     * add copied from for attention layer
     
@@ -5806,15 +5806,15 @@ Date:   Wed Oct 5 22:28:31 2022 +0200
     
     * Update src/transformers/models/whisper/convert_openai_whisper_to_tfms.py
     
-    Co-authored-by: NielsRogge <48327001+NielsRogge@users.noreply.github.com>
+    Co-authored-by: NielsRogge <REDACTED_EMAIL_3f87cd557fad1c5865c43a8c>
     
     * Update src/transformers/models/whisper/configuration_whisper.py
     
-    Co-authored-by: NielsRogge <48327001+NielsRogge@users.noreply.github.com>
+    Co-authored-by: NielsRogge <REDACTED_EMAIL_3f87cd557fad1c5865c43a8c>
     
     * Update docs/source/en/model_doc/whisper.mdx
     
-    Co-authored-by: NielsRogge <48327001+NielsRogge@users.noreply.github.com>
+    Co-authored-by: NielsRogge <REDACTED_EMAIL_3f87cd557fad1c5865c43a8c>
     
     * remove torch depencies for feature extraction and style
     
@@ -5854,21 +5854,21 @@ Date:   Wed Oct 5 22:28:31 2022 +0200
     
     * Update src/transformers/generation_utils.py
     
-    Co-authored-by: NielsRogge <48327001+NielsRogge@users.noreply.github.com>
+    Co-authored-by: NielsRogge <REDACTED_EMAIL_3f87cd557fad1c5865c43a8c>
     
     * Update src/transformers/generation_logits_process.py
     
-    Co-authored-by: NielsRogge <48327001+NielsRogge@users.noreply.github.com>
+    Co-authored-by: NielsRogge <REDACTED_EMAIL_3f87cd557fad1c5865c43a8c>
     
     * Update src/transformers/models/whisper/configuration_whisper.py
     
-    Co-authored-by: NielsRogge <48327001+NielsRogge@users.noreply.github.com>
+    Co-authored-by: NielsRogge <REDACTED_EMAIL_3f87cd557fad1c5865c43a8c>
     
     * Apply suggestions from code review
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
-    Co-authored-by: NielsRogge <48327001+NielsRogge@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
+    Co-authored-by: NielsRogge <REDACTED_EMAIL_3f87cd557fad1c5865c43a8c>
     
     * revert changes based on reviews
     
@@ -5884,7 +5884,7 @@ Date:   Wed Oct 5 22:28:31 2022 +0200
     
     * Update src/transformers/models/whisper/modeling_whisper.py
     
-    Co-authored-by: NielsRogge <48327001+NielsRogge@users.noreply.github.com>
+    Co-authored-by: NielsRogge <REDACTED_EMAIL_3f87cd557fad1c5865c43a8c>
     
     * style
     
@@ -5928,35 +5928,35 @@ Date:   Wed Oct 5 22:28:31 2022 +0200
     
     * Update src/transformers/models/whisper/configuration_whisper.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * update based on review
     
     * Update src/transformers/models/whisper/configuration_whisper.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * add batched tests
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
-    Co-authored-by: NielsRogge <niels.rogge1@gmail.com>
-    Co-authored-by: NielsRogge <48327001+NielsRogge@users.noreply.github.com>
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
+    Co-authored-by: NielsRogge <REDACTED_EMAIL_e126993a16c570bb62f426e9>
+    Co-authored-by: NielsRogge <REDACTED_EMAIL_3f87cd557fad1c5865c43a8c>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit 4157e3cd7e2bb5a7be6dc065a3e20c49cc1300ab
-Author: Joao Gante <joaofranciscocardosogante@gmail.com>
+Author: Joao Gante <REDACTED_EMAIL_f9ecf062f401a7b396e83200>
 Date:   Tue Sep 13 18:16:36 2022 +0100
 
     new length penalty docstring (#19006)
 
 commit f89f16a51ebd08c4b9728b87d63e1054df79d641
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Tue Sep 13 13:11:24 2022 -0400
 
     Re-add support for single url files in objects download (#19014)
 
 commit 0d0aada56444ad554021947addaa035feb55948f
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Aug 10 11:55:18 2022 -0400
 
     Use commit hash to look in cache instead of calling head (#18534)
@@ -5973,14 +5973,14 @@ Date:   Wed Aug 10 11:55:18 2022 -0400
     
     * Update src/transformers/utils/hub.py
     
-    Co-authored-by: Julien Chaumond <julien@huggingface.co>
+    Co-authored-by: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
     
     * Address Julien's comments
     
-    Co-authored-by: Julien Chaumond <julien@huggingface.co>
+    Co-authored-by: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
 
 commit 9129fd0377e4d46cb2d0ea28dc1eb91a15f65b77
-Author: Julien Chaumond <julien@huggingface.co>
+Author: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
 Date:   Sat Aug 6 09:42:55 2022 +0200
 
     `transformers-cli login` => `huggingface-cli login` (#18490)
@@ -5994,7 +5994,7 @@ Date:   Sat Aug 6 09:42:55 2022 +0200
     * `make style`
 
 commit 5cd40323684c183c30b34758aea1e877996a7ac9
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Fri Aug 5 10:12:40 2022 -0400
 
     Use new huggingface_hub tools for download models (#18438)
@@ -6032,15 +6032,15 @@ Date:   Fri Aug 5 10:12:40 2022 -0400
     * Address review comments
 
 commit c382ed8a2fb435eba0df90544ccab963dfc11a79
-Author: Yih-Dar <2521628+ydshieh@users.noreply.github.com>
+Author: Yih-Dar <REDACTED_EMAIL_bc5cff5368c7a2ec4033cb26>
 Date:   Tue Aug 2 21:03:59 2022 +0200
 
     Accept `trust_remote_code` and ignore it in `PreTrainedModel.from_pretrained` (#18428)
     
-    Co-authored-by: ydshieh <ydshieh@users.noreply.github.com>
+    Co-authored-by: ydshieh <REDACTED_EMAIL_cc331d69274da03748a88e43>
 
 commit 01db72abd4859aa64d34fea3ae8cf27d71baee9b
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Mon Aug 1 12:07:30 2022 -0400
 
     Rewrite push_to_hub to use upload_files (#18366)
@@ -6052,7 +6052,7 @@ Date:   Mon Aug 1 12:07:30 2022 -0400
     * Address review comments and clean doc
 
 commit 3bb6356d4d37481c112b6c9a3e28ba301f924033
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Tue Jul 19 11:53:53 2022 +0200
 
     [From pretrained] Allow download from subfolder inside model repo (#18184)
@@ -6071,16 +6071,16 @@ Date:   Tue Jul 19 11:53:53 2022 +0200
     
     * Apply suggestions from code review
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * apply comments
     
     * correct doc string
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit d6cec45801ceb57f25d14f180f196f2a13b1ff26
-Author: Matt <Rocketknight1@users.noreply.github.com>
+Author: Matt <REDACTED_EMAIL_e60825a20b56d22c39c6e805>
 Date:   Fri Jul 1 19:11:14 2022 +0100
 
     XLA train step fixes (#17973)
@@ -6128,7 +6128,7 @@ Date:   Fri Jul 1 19:11:14 2022 +0100
     * Fix dtype bugs
 
 commit afe5d42d8d1d80af911ed980c2936bfe887078f6
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Thu May 12 16:25:55 2022 -0400
 
     Black preview (#17217)
@@ -6144,7 +6144,7 @@ Date:   Thu May 12 16:25:55 2022 -0400
     * Bump black
 
 commit d76d2a2af7babf73d6c5bc53facaccab05e912f8
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed May 4 07:47:57 2022 -0400
 
     Make sure telemetry arguments are not returned as unused kwargs (#17063)
@@ -6154,19 +6154,19 @@ Date:   Wed May 4 07:47:57 2022 -0400
     * Fix test
 
 commit 6568752039dfba86ba6eb994fd7e29888d5ed4a8
-Author: code-review-doctor <72647856+code-review-doctor@users.noreply.github.com>
+Author: code-review-doctor <REDACTED_EMAIL_82532502e59757b6824052c3>
 Date:   Mon Apr 25 20:15:00 2022 +0100
 
      Fix issue probably-meant-fstring found at https://codereview.doctor (#16913)
 
 commit fea94d6790dcb19294ebcc629cf8191340e8ab4c
-Author: Sanchit Gandhi <93869735+sanchit-gandhi@users.noreply.github.com>
+Author: Sanchit Gandhi <REDACTED_EMAIL_9ff3cd267ec5a3580bafe474>
 Date:   Mon Apr 25 21:12:51 2022 +0200
 
     Replace deprecated logger.warn with warning (#16876)
 
 commit 8e0d3b427f4936cd0318996d4c3dbdd779d16641
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Apr 13 11:28:19 2022 -0400
 
     Add defensive check for config num_labels and id2label (#16709)
@@ -6178,13 +6178,13 @@ Date:   Wed Apr 13 11:28:19 2022 -0400
     * Only warning inside init plus better error message
 
 commit 013a7dbe3d8af8f16f2b6cb60b6e21258a9e1399
-Author: Nicolas Patry <patry.nicolas@protonmail.com>
+Author: Nicolas Patry <REDACTED_EMAIL_ebb7471d9d88467be1cf9279>
 Date:   Mon Apr 4 14:26:23 2022 +0200
 
     Making the impossible to connect error actually report the right URL. (#16446)
 
 commit 088c1880b7bfd47777778d0d0fcc20e921bcf21e
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Fri Mar 25 07:25:20 2022 -0400
 
     Big file_utils cleanup (#16396)
@@ -6194,7 +6194,7 @@ Date:   Fri Mar 25 07:25:20 2022 -0400
     * This one still needs to be treated separately
 
 commit c595b6e6a90c29242c9dbfeecc5b132fe2e3d1f4
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Mar 23 15:56:49 2022 -0400
 
     Make Transformers use cache files when hf.co is down (#16362)
@@ -6214,7 +6214,7 @@ Date:   Wed Mar 23 15:56:49 2022 -0400
     * Better comment
 
 commit 4975002df50c472cbb6f8ac3580e475f570606ab
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Mar 23 10:26:33 2022 -0400
 
     Reorganize file utils (#16264)
@@ -6242,19 +6242,19 @@ Date:   Wed Mar 23 10:26:33 2022 -0400
     * Revert this import, will fix in a separate commit
 
 commit 8d7420768ca6da1e345299b0d69d4ac8b59aac4d
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Fri Mar 18 17:48:27 2022 -0400
 
     Small fixes to the documentation (#16180)
 
 commit cd1ffb40bfb48f4f8cb63d35c7c9d4b3b046dfc2
-Author: marxav <xavier.marjou@gmail.com>
+Author: marxav <REDACTED_EMAIL_5706101782f74e1de7d3482a>
 Date:   Tue Mar 15 12:08:53 2022 +0100
 
     typo "conaining" -> "containing" (#16132)
 
 commit 9442b3ce316878cf24d59905184f47c315d3f083
-Author: Kevin Bondzio <k.bondzio@web.de>
+Author: Kevin Bondzio <REDACTED_EMAIL_7a4f8b19b63374cf06e84fa0>
 Date:   Fri Mar 11 19:36:44 2022 +0100
 
     Add soft length regulation for sequence generation (#15245)
@@ -6347,7 +6347,7 @@ Date:   Fri Mar 11 19:36:44 2022 +0100
     
     * Update src/transformers/generation_utils.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Update src/transformers/generation_utils.py
     
@@ -6369,19 +6369,19 @@ Date:   Fri Mar 11 19:36:44 2022 +0100
     
     * retrigger checks
     
-    Co-authored-by: Kevin Bondzio <kev@AIM-LAP-02.local>
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
-    Co-authored-by: Kevin Bondzio <kev@AIM-LAP-02.fritz.box>
+    Co-authored-by: Kevin Bondzio <REDACTED_EMAIL_9693317d2f8533edb4f4a41b>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
+    Co-authored-by: Kevin Bondzio <REDACTED_EMAIL_c4781c80ae1730bdfca8fbb2>
 
 commit 7e00247fad09134a94f50695af7e475be9edbeb9
-Author: feifang24 <44477200+feifang24@users.noreply.github.com>
+Author: feifang24 <REDACTED_EMAIL_f05c45bef8d01579e691ff3f>
 Date:   Fri Mar 11 09:00:11 2022 -0800
 
     check for key 'torch.dtype' in nested dicts in config (#16065)
 
 commit 0f71c290535672d7b0eff5858a3dc3d7bd07a983
-Author: lewtun <lewis.c.tunstall@gmail.com>
+Author: lewtun <REDACTED_EMAIL_5e579120530a21adfe38bee3>
 Date:   Mon Feb 14 18:03:07 2022 +0100
 
     Remove redundant error logging in from_pretrained() method (#15631)
@@ -6389,19 +6389,19 @@ Date:   Mon Feb 14 18:03:07 2022 +0100
     * Remove error logging in from_pretrained() method
 
 commit 2dce350b3374ac76432fd6659e81b28083b705fa
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Fri Feb 11 13:46:08 2022 -0500
 
     Fix _configuration_file argument getting passed to model (#15629)
 
 commit 6cf06d198c72ab2796614bade00a50c777627512
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Fri Feb 11 09:55:31 2022 -0500
 
     Mark "code in the Hub" API as experimental (#15624)
 
 commit 0113aae5b7a3e9de7f6300c71ca593a5fdc3b0c2
-Author: Clara Meister <cmeister7.47@gmail.com>
+Author: Clara Meister <REDACTED_EMAIL_5c56d577c2ad637ccd424336>
 Date:   Wed Feb 9 16:48:41 2022 +0100
 
     Add implementation of typical sampling (#15504)
@@ -6421,7 +6421,7 @@ Date:   Wed Feb 9 16:48:41 2022 +0100
     * code quality fixes
 
 commit 1f60bc46f323708f2726c6a4ff5c05178bc8b5c3
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Feb 9 10:04:44 2022 -0500
 
     Make sure custom configs work with Transformers (#15569)
@@ -6431,7 +6431,7 @@ Date:   Wed Feb 9 10:04:44 2022 -0500
     * Apply code review suggestions
 
 commit ba3f9a71a1d0ac30b2f469f426f350fe6f374de7
-Author: Yih-Dar <2521628+ydshieh@users.noreply.github.com>
+Author: Yih-Dar <REDACTED_EMAIL_bc5cff5368c7a2ec4033cb26>
 Date:   Wed Feb 9 14:20:05 2022 +0100
 
     logger.warn --> logger.warning (#15572)
@@ -6440,10 +6440,10 @@ Date:   Wed Feb 9 14:20:05 2022 +0100
     
     * make style
     
-    Co-authored-by: ydshieh <ydshieh@users.noreply.github.com>
+    Co-authored-by: ydshieh <REDACTED_EMAIL_cc331d69274da03748a88e43>
 
 commit 44b21f117bcf71e3d88a11c3523c94b27949fdbf
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Feb 2 10:44:37 2022 -0500
 
     Save code of registered custom models (#15379)
@@ -6484,7 +6484,7 @@ Date:   Wed Feb 2 10:44:37 2022 -0500
     
     * Update docs/source/custom_models.mdx
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
     
     * Add file structure and file content
     
@@ -6494,15 +6494,15 @@ Date:   Wed Feb 2 10:44:37 2022 -0500
     
     * Update docs/source/custom_models.mdx
     
-    Co-authored-by: Suraj Patil <surajp815@gmail.com>
+    Co-authored-by: Suraj Patil <REDACTED_EMAIL_90d66d06c610b72785dd68b0>
     
     * Address review comments
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
-    Co-authored-by: Suraj Patil <surajp815@gmail.com>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
+    Co-authored-by: Suraj Patil <REDACTED_EMAIL_90d66d06c610b72785dd68b0>
 
 commit e695470794f236392f249aeb815b62490126f595
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Tue Jan 25 09:41:21 2022 -0500
 
     Avoid using get_list_of_files (#15287)
@@ -6522,7 +6522,7 @@ Date:   Tue Jan 25 09:41:21 2022 -0500
     * Document bad API
 
 commit 6ac77534bfe97c00e0127bb4fc846ae0faf1c9c5
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Fri Jan 21 15:00:09 2022 -0500
 
     Refine errors for pretrained objects (#15261)
@@ -6566,7 +6566,7 @@ Date:   Fri Jan 21 15:00:09 2022 -0500
     * Fix test
 
 commit b5e2b183af5e40e33a4dc7659e697d137259d56e
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Mon Dec 27 19:07:46 2021 -0500
 
     Doc styler examples (#14953)
@@ -6596,7 +6596,7 @@ Date:   Mon Dec 27 19:07:46 2021 -0500
     * Break copy from
 
 commit 87e6e4fe5c7e65cb69e70306f22de6daf16b6e14
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Mon Dec 27 16:31:21 2021 -0500
 
     Doc styler v2 (#14950)
@@ -6632,7 +6632,7 @@ Date:   Mon Dec 27 16:31:21 2021 -0500
     * Fix docstring
 
 commit 27b3031de2fb8195dec9bc2093e3e70bdb1c4bff
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Tue Dec 21 15:06:33 2021 -0500
 
     Mass conversion of documentation from rst to Markdown (#14866)
@@ -6662,7 +6662,7 @@ Date:   Tue Dec 21 15:06:33 2021 -0500
     * Say bye bye to rst docstrings forever
 
 commit 4df7d05a870d15872946e6a5c8247d4004fe954f
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Dec 1 14:13:02 2021 -0500
 
     Doc new front (#14590)
@@ -6729,9 +6729,9 @@ Date:   Wed Dec 1 14:13:02 2021 -0500
     
     * Update README_ko.md
     
-    Co-authored-by: Julien Chaumond <julien@huggingface.co>
+    Co-authored-by: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
     
-    Co-authored-by: Julien Chaumond <julien@huggingface.co>
+    Co-authored-by: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
     
     * Adapt build command to new CLI tools (#14578)
     
@@ -6763,8 +6763,8 @@ Date:   Wed Dec 1 14:13:02 2021 -0500
     
     * Update pr_checks
     
-    Co-authored-by: Sylvain Gugger <sylvain.gugger@gmail.com>
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_b910a42a75228ac94d3f9aaf>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Convert PretrainedConfig doc to Markdown
     
@@ -6828,9 +6828,9 @@ Date:   Wed Dec 1 14:13:02 2021 -0500
     
     * Update README_ko.md
     
-    Co-authored-by: Julien Chaumond <julien@huggingface.co>
+    Co-authored-by: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
     
-    Co-authored-by: Julien Chaumond <julien@huggingface.co>
+    Co-authored-by: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
     
     * Adapt build command to new CLI tools (#14578)
     
@@ -6862,17 +6862,17 @@ Date:   Wed Dec 1 14:13:02 2021 -0500
     
     * Update pr_checks
     
-    Co-authored-by: Sylvain Gugger <sylvain.gugger@gmail.com>
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_b910a42a75228ac94d3f9aaf>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Styling
     
-    Co-authored-by: Mishig Davaadorj <mishig.davaadorj@coloradocollege.edu>
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
-    Co-authored-by: Julien Chaumond <julien@huggingface.co>
+    Co-authored-by: Mishig Davaadorj <REDACTED_EMAIL_f52e9367a80816fe21572343>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
+    Co-authored-by: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
 
 commit 1cc453d33c5d0be01eaf3050082c125ce87491aa
-Author: Lysandre Debut <lysandre@huggingface.co>
+Author: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
 Date:   Mon Nov 15 16:38:02 2021 -0500
 
     Allow per-version configurations (#14344)
@@ -6881,16 +6881,16 @@ Date:   Mon Nov 15 16:38:02 2021 -0500
     
     * Update tests/test_configuration_common.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Update tests/test_configuration_common.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit 408b2d2bd08f667cf4154730cc323c4e49657eed
-Author: NielsRogge <48327001+NielsRogge@users.noreply.github.com>
+Author: NielsRogge <REDACTED_EMAIL_3f87cd557fad1c5865c43a8c>
 Date:   Wed Oct 13 10:28:56 2021 +0200
 
     Add TrOCR + VisionEncoderDecoderModel (#13874)
@@ -6972,13 +6972,13 @@ Date:   Wed Oct 13 10:28:56 2021 +0200
     * Improve docs
 
 commit 57420b103e2a99aea0f5f80e98216029f7349af2
-Author: Alex Hedges <aphedges@users.noreply.github.com>
+Author: Alex Hedges <REDACTED_EMAIL_9bcdf4d9ecdf48a53346d3fe>
 Date:   Thu Oct 7 09:22:11 2021 -0400
 
     Add missing whitespace to multiline strings (#13916)
 
 commit 46efc5802458e91a702528332d76d464061d201f
-Author: Alex Hedges <aphedges@users.noreply.github.com>
+Author: Alex Hedges <REDACTED_EMAIL_9bcdf4d9ecdf48a53346d3fe>
 Date:   Tue Oct 5 08:09:10 2021 -0400
 
     Improve error message when loading models from Hub (#13836)
@@ -6988,25 +6988,25 @@ Date:   Tue Oct 5 08:09:10 2021 -0400
     * Adjust error message wording
 
 commit 83d3dc0f6f8ae03e01aa5acacf88e79b2c1ecd06
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Tue Sep 28 14:21:17 2021 -0400
 
     Fix warning for gradient_checkpointing (#13767)
 
 commit e00bc7cd2fe9d0b682a3bfd5604a85f680bf2871
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Mon Sep 27 07:43:38 2021 -0400
 
     Silence warning in gradient checkpointing when it's False (#13734)
 
 commit 1988849bbf413aa78528c2582a43cddb0d35d074
-Author: Li-Huai (Allan) Lin <qqaatw@gmail.com>
+Author: Li-Huai (Allan) Lin <REDACTED_EMAIL_9554ff6962246daa1e4a3a04>
 Date:   Fri Sep 24 04:56:34 2021 +0800
 
     Handle `UnicodeDecodeError` (#13717)
 
 commit 27d4639779d2d316a7c5f18d22f22d2565b84e5e
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Sep 22 07:51:38 2021 -0400
 
     Make gradient_checkpointing a training argument (#13657)
@@ -7015,11 +7015,11 @@ Date:   Wed Sep 22 07:51:38 2021 -0400
     
     * Update src/transformers/modeling_utils.py
     
-    Co-authored-by: Stas Bekman <stas00@users.noreply.github.com>
+    Co-authored-by: Stas Bekman <REDACTED_EMAIL_2df99a97bb9250a4a4307436>
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Stas Bekman <stas00@users.noreply.github.com>
+    Co-authored-by: Stas Bekman <REDACTED_EMAIL_2df99a97bb9250a4a4307436>
     
     * Fix tests
     
@@ -7039,11 +7039,11 @@ Date:   Wed Sep 22 07:51:38 2021 -0400
     
     * Fix typo
     
-    Co-authored-by: Stas Bekman <stas00@users.noreply.github.com>
-    Co-authored-by: Stas Bekman <stas@stason.org>
+    Co-authored-by: Stas Bekman <REDACTED_EMAIL_2df99a97bb9250a4a4307436>
+    Co-authored-by: Stas Bekman <REDACTED_EMAIL_bcebad09a36ba8276fea4a55>
 
 commit c8be8a9adb218ecc593c687020e952554a5a55b5
-Author: Nils Reimers <info@nils-reimers.de>
+Author: Nils Reimers <REDACTED_EMAIL_62dafcfa324ec626f6a3f656>
 Date:   Mon Sep 6 16:30:13 2021 +0200
 
     Update model configs - Allow setters for common properties  (#13026)
@@ -7089,13 +7089,13 @@ Date:   Mon Sep 6 16:30:13 2021 +0200
     * update config template
 
 commit 7a26307e3186926373cf9129248c209ab869148b
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Sep 1 07:54:28 2021 -0400
 
     Fixes for the documentation (#13361)
 
 commit 401377e6796a5939bbd4cd6c3b8d8d00ca33495d
-Author: Bram Vanroy <Bram.Vanroy@UGent.be>
+Author: Bram Vanroy <REDACTED_EMAIL_b5d3edf5ea6d59dfef0574c4>
 Date:   Thu Aug 26 10:32:57 2021 +0200
 
     Add error message concerning revision (#13266)
@@ -7104,16 +7104,16 @@ Date:   Thu Aug 26 10:32:57 2021 +0200
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
     
     * re-add double line endings
     
     * is not None instead of implicit bool casting
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
 
 commit 5c6eca71a983bae2589eed01e5c04fcf88ba5690
-Author: Stas Bekman <stas00@users.noreply.github.com>
+Author: Stas Bekman <REDACTED_EMAIL_2df99a97bb9250a4a4307436>
 Date:   Tue Aug 24 02:43:41 2021 -0700
 
     fix `AutoModel.from_pretrained(..., torch_dtype=...)` (#13209)
@@ -7127,7 +7127,7 @@ Date:   Tue Aug 24 02:43:41 2021 -0700
     * torch is not always available when a model has self.torch_dtype
 
 commit 3f44a66cb617c72efeef0c0b4201cbe2945d8edf
-Author: Lysandre Debut <lysandre@huggingface.co>
+Author: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
 Date:   Wed Aug 4 14:42:47 2021 +0200
 
     Return raw outputs in TextClassificationPipeline (#8328)
@@ -7140,20 +7140,20 @@ Date:   Wed Aug 4 14:42:47 2021 +0200
     
     * Update src/transformers/pipelines/text_classification.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Apply Nicolas' comments
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit da72ac6e260487c9e480d15592318c19a5227499
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Sat Jul 17 15:52:33 2021 +0200
 
     Fix push_to_hub docstring and make it appear in doc (#12770)
 
 commit 7682e97702e4317231b3afe92359de384dba1e20
-Author: Stas Bekman <stas00@users.noreply.github.com>
+Author: Stas Bekman <REDACTED_EMAIL_2df99a97bb9250a4a4307436>
 Date:   Mon Jun 28 20:11:21 2021 -0700
 
     [models] respect dtype of the model when instantiating it (#12316)
@@ -7176,7 +7176,7 @@ Date:   Mon Jun 28 20:11:21 2021 -0700
     
     * Apply suggestions from code review
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * fix the doc
     
@@ -7198,10 +7198,10 @@ Date:   Mon Jun 28 20:11:21 2021 -0700
     
     * better doc
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit 53c60babe4cb87040e7f59bd8b20aaf457795fbb
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Jun 23 10:11:19 2021 -0400
 
     Clean push to hub API (#12187)
@@ -7218,7 +7218,7 @@ Date:   Wed Jun 23 10:11:19 2021 -0400
     
     * Update src/transformers/file_utils.py
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
     
     * Address review comments
     
@@ -7228,7 +7228,7 @@ Date:   Wed Jun 23 10:11:19 2021 -0400
     
     * Update src/transformers/trainer.py
     
-    Co-authored-by: Julien Chaumond <julien@huggingface.co>
+    Co-authored-by: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
     
     * Add generated_from_trainer tag
     
@@ -7236,12 +7236,12 @@ Date:   Wed Jun 23 10:11:19 2021 -0400
     
     * Fixes
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
-    Co-authored-by: Julien Chaumond <julien@huggingface.co>
-    Co-authored-by: Lysandre <lysandre.debut@reseau.eseo.fr>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
+    Co-authored-by: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
+    Co-authored-by: Lysandre <REDACTED_EMAIL_b732173a1371e41a15f0bc0d>
 
 commit 1b6530104d5b0a6c14c7db07252a74c03ac8e163
-Author: Stas Bekman <stas00@users.noreply.github.com>
+Author: Stas Bekman <REDACTED_EMAIL_2df99a97bb9250a4a4307436>
 Date:   Tue May 25 10:40:49 2021 -0700
 
     [Examples] create model with custom config on the fly (#11798)
@@ -7258,7 +7258,7 @@ Date:   Tue May 25 10:40:49 2021 -0700
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * more bool options
     
@@ -7272,10 +7272,10 @@ Date:   Tue May 25 10:40:49 2021 -0700
     
     * assert on conflict of options
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit c40c7e213bdd0479bdca69df0c500004a7294d39
-Author: abhishek thakur <1183441+abhi1thakur@users.noreply.github.com>
+Author: abhishek thakur <REDACTED_EMAIL_e61c28d38615cdfd1ff5cc8f>
 Date:   Tue May 4 08:23:40 2021 +0200
 
     Add multi-class, multi-label and regression to transformers (#11012)
@@ -7286,11 +7286,11 @@ Date:   Tue May 4 08:23:40 2021 +0200
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * self.config.problem_type
     
@@ -7312,7 +7312,7 @@ Date:   Tue May 4 08:23:40 2021 +0200
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * fix
     
@@ -7326,12 +7326,12 @@ Date:   Tue May 4 08:23:40 2021 +0200
     
     * remove test
     
-    Co-authored-by: abhishek thakur <abhishekkrthakur@users.noreply.github.com>
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
-    Co-authored-by: Lysandre <lysandre.debut@reseau.eseo.fr>
+    Co-authored-by: abhishek thakur <REDACTED_EMAIL_cb15699c9b1d23bb24875cb3>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
+    Co-authored-by: Lysandre <REDACTED_EMAIL_b732173a1371e41a15f0bc0d>
 
 commit bf2e0cf70b68e0d46cdf15a4ece1f5c0a03de084
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Fri Apr 23 09:17:37 2021 -0400
 
     Trainer push to hub (#11328)
@@ -7392,25 +7392,25 @@ Date:   Fri Apr 23 09:17:37 2021 -0400
     
     * Update src/transformers/file_utils.py
     
-    Co-authored-by: Julien Chaumond <julien@huggingface.co>
+    Co-authored-by: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
     
     * Address review comments
     
     * Apply suggestions from code review
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
     
-    Co-authored-by: Julien Chaumond <julien@huggingface.co>
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
+    Co-authored-by: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 
 commit c0328a6c263494fff527fac7288faa627e3267e0
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Mon Apr 19 20:31:29 2021 -0400
 
     Load checkpoint without re-creating the model (#11318)
 
 commit 81009b7a5c5cb183a9275c15bf347bdc988b02c4
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Tue Apr 13 10:33:52 2021 -0400
 
     Replace error by warning when loading an architecture in another (#11207)
@@ -7426,7 +7426,7 @@ Date:   Tue Apr 13 10:33:52 2021 -0400
     * Adapt old test
 
 commit c9035e453799adf897a000953d4b83ff764263cc
-Author: Stas Bekman <stas00@users.noreply.github.com>
+Author: Stas Bekman <REDACTED_EMAIL_2df99a97bb9250a4a4307436>
 Date:   Wed Apr 7 06:20:06 2021 -0700
 
     fix: The 'warn' method is deprecated (#11105)
@@ -7436,13 +7436,13 @@ Date:   Wed Apr 7 06:20:06 2021 -0700
     * fix test
 
 commit f05a8a0c5e1f2f3c3e44f2cc48352347c562cf7c
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Mon Apr 5 15:29:01 2021 -0400
 
     Document common config attributes (#11070)
 
 commit acc3bd9d2a73fcc7d3509767d65b2f40962d9330
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Mar 31 10:00:27 2021 -0400
 
     Enforce string-formatting with f-strings (#10980)
@@ -7463,12 +7463,12 @@ Date:   Wed Mar 31 10:00:27 2021 -0400
     
     * Apply suggestions from code review
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
 
 commit d0b3797a3be095f74659341ed396cc8bccff96f6
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Mar 31 09:36:07 2021 -0400
 
     Add more metadata to the user agent (#10972)
@@ -7486,7 +7486,7 @@ Date:   Wed Mar 31 09:36:07 2021 -0400
     * Add clean envs on circle CI
 
 commit 77bf3fe787b454aceac4a2ef88b147180f8828fb
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Tue Mar 23 01:00:05 2021 +0300
 
     [Generate] Add save mode logits processor to remove nans and infs if necessary (#10769)
@@ -7502,7 +7502,7 @@ Date:   Tue Mar 23 01:00:05 2021 +0300
     * change name
 
 commit 094afa515d78527530fb1960db0b4970747a2031
-Author: Vimarsh Chaturvedi <vimarsh.c@gmail.com>
+Author: Vimarsh Chaturvedi <REDACTED_EMAIL_11ad9760f49d60b2a87e87e3>
 Date:   Thu Mar 18 22:21:42 2021 +0530
 
      from_pretrained: check that the pretrained model is for the right model architecture (#10586)
@@ -7518,11 +7518,11 @@ Date:   Thu Mar 18 22:21:42 2021 +0530
     * Fix FlauBERT heads
     
     Co-authored-by: vimarsh chaturvedi <vimarsh chaturvedi>
-    Co-authored-by: Stas Bekman <stas@stason.org>
-    Co-authored-by: Lysandre <lysandre.debut@reseau.eseo.fr>
+    Co-authored-by: Stas Bekman <REDACTED_EMAIL_bcebad09a36ba8276fea4a55>
+    Co-authored-by: Lysandre <REDACTED_EMAIL_b732173a1371e41a15f0bc0d>
 
 commit 88a951e3cc00f56b94d9b93dbc35a3812cd88747
-Author: Stas Bekman <stas00@users.noreply.github.com>
+Author: Stas Bekman <REDACTED_EMAIL_2df99a97bb9250a4a4307436>
 Date:   Fri Mar 5 17:27:48 2021 -0800
 
     offline mode for firewalled envs (#10407)
@@ -7543,7 +7543,7 @@ Date:   Fri Mar 5 17:27:48 2021 -0800
     
     * Apply suggestions from code review
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * more strict check
     
@@ -7553,10 +7553,10 @@ Date:   Fri Mar 5 17:27:48 2021 -0800
     
     * style
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit 6290169eb3391d72d9a08cab5c54a54b73a87463
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Thu Mar 4 11:46:11 2021 -0500
 
     Rework TPU checkpointing in Trainer (#10504)
@@ -7570,13 +7570,13 @@ Date:   Thu Mar 4 11:46:11 2021 -0500
     * Remove line
 
 commit 17b6e0d474b797cdddf5225b0f51bf0e928091b9
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Thu Feb 25 15:30:38 2021 -0500
 
     Fix run_glue evaluation when model has a label correspondence (#10401)
 
 commit 8fae93ca1972c39d19c8cf3d3c6a3dd2530cc59a
-Author: Stas Bekman <stas00@users.noreply.github.com>
+Author: Stas Bekman <REDACTED_EMAIL_2df99a97bb9250a4a4307436>
 Date:   Sat Feb 13 06:10:22 2021 -0800
 
     [t5 tokenizer] add info logs (#9897)
@@ -7588,7 +7588,7 @@ Date:   Sat Feb 13 06:10:22 2021 -0800
     * remove the saving of fast tokenizer
 
 commit c130e67dce56a092604949a8df6384a17f762189
-Author: Suraj Patil <surajp815@gmail.com>
+Author: Suraj Patil <REDACTED_EMAIL_90d66d06c610b72785dd68b0>
 Date:   Wed Feb 10 22:39:09 2021 +0530
 
     remove adjust_logits_during_generation method (#10087)
@@ -7638,7 +7638,7 @@ Date:   Wed Feb 10 22:39:09 2021 +0530
     * apply suggestions from code review
 
 commit aeb18b9224e5ea20128e45f2c1d886422bc5a59e
-Author: Nicolas Patry <patry.nicolas@protonmail.com>
+Author: Nicolas Patry <REDACTED_EMAIL_ebb7471d9d88467be1cf9279>
 Date:   Thu Feb 4 15:00:18 2021 +0100
 
     Adding new `encoder_no_repeat_ngram_size` to `generate`. (#9984)
@@ -7681,19 +7681,19 @@ Date:   Thu Feb 4 15:00:18 2021 +0100
     
     * Update src/transformers/generation_logits_process.py
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
     
     * Update src/transformers/generation_utils.py
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
     
     * Update src/transformers/generation_utils.py
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
     
     * Doc quality.
     
@@ -7705,17 +7705,17 @@ Date:   Thu Feb 4 15:00:18 2021 +0100
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Update src/transformers/generation_utils.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit c89f1bc92e340600bde526b7ff54ad692b4e48c9
-Author: Simon Brandeis <33657802+SBrandeis@users.noreply.github.com>
+Author: Simon Brandeis <REDACTED_EMAIL_a525507e86a345fc28d0c285>
 Date:   Wed Jan 6 17:11:42 2021 +0100
 
     Add flags to return scores, hidden states and / or attention weights in GenerationMixin (#9150)
@@ -7824,10 +7824,10 @@ Date:   Wed Jan 6 17:11:42 2021 +0100
     
     * fix all test
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 
 commit 7a9f1b5c99e9a5d1772649d029acdf5160419239
-Author: Kevin Canwen Xu <canwenxu@126.com>
+Author: Kevin Canwen Xu <REDACTED_EMAIL_ea571a65cdf32af9c57af845>
 Date:   Wed Jan 6 23:34:48 2021 +0800
 
     Store transformers version info when saving the model (#9421)
@@ -7844,14 +7844,14 @@ Date:   Wed Jan 6 23:34:48 2021 +0800
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
     
     * Update configuration_utils.py
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
 
 commit fb650df8590f796663226132482d09da5b0fb613
-Author: Julien Chaumond <julien@huggingface.co>
+Author: Julien Chaumond <REDACTED_EMAIL_5862850d9e999e85f73efa9a>
 Date:   Wed Dec 16 16:09:57 2020 +0100
 
     Support for private models from huggingface.co (#9141)
@@ -7864,17 +7864,17 @@ Date:   Wed Dec 16 16:09:57 2020 +0100
     
     * Update src/transformers/file_utils.py
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
     
     * Propagate doc from @sgugger
     
-    Co-Authored-By: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-Authored-By: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit 02d0e0355c663921360dcd8160791d40081c61d2
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Wed Dec 9 15:00:37 2020 +0100
 
     Diverse beam search 2 (#9006)
@@ -7943,11 +7943,11 @@ Date:   Wed Dec 9 15:00:37 2020 +0100
     
     * implement sylvains feedback
     
-    Co-authored-by: Ayush Jain <a.jain@sprinklr.com>
-    Co-authored-by: ayushtiku5 <40797286+ayushtiku5@users.noreply.github.com>
+    Co-authored-by: Ayush Jain <REDACTED_EMAIL_bc974589ce170bf82a8f8d69>
+    Co-authored-by: ayushtiku5 <REDACTED_EMAIL_8438ed22bd66cf41c249fd70>
 
 commit f9a2a9e32bf4f6dc128decd0c124fa1f5507532e
-Author: Giovanni Compagnoni <60468746+gcompagnoni@users.noreply.github.com>
+Author: Giovanni Compagnoni <REDACTED_EMAIL_09ab1a2df9388ee639597405>
 Date:   Fri Nov 27 16:52:58 2020 +0100
 
     Extend typing to path-like objects in `PretrainedConfig` and `PreTrainedModel` (#8770)
@@ -7971,7 +7971,7 @@ Date:   Fri Nov 27 16:52:58 2020 +0100
     * black
 
 commit 2a6fbe6a409de1a28a4b8f4510d2d70b66f6be9b
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Wed Nov 25 22:54:59 2020 +0100
 
     [XLNet] Fix mems behavior (#8567)
@@ -8015,7 +8015,7 @@ Date:   Wed Nov 25 22:54:59 2020 +0100
     * make pytorch model fully backward compatible
 
 commit 4208f496ee6554a998c3e7dd416cad3b1c1a0111
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Thu Nov 19 10:43:15 2020 -0500
 
     Better filtering of the model outputs in Trainer (#8633)
@@ -8027,7 +8027,7 @@ Date:   Thu Nov 19 10:43:15 2020 -0500
     * Add test for Lysandre
 
 commit 042a6aa77772a4483020dcd45928302cef22af76
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Tue Nov 17 14:58:45 2020 +0100
 
     Tokenizers: ability to load from model subfolder (#8586)
@@ -8042,10 +8042,10 @@ Date:   Tue Nov 17 14:58:45 2020 +0100
     
     * from s3 => from huggingface.co
     
-    Co-authored-by: Quentin Lhoest <lhoest.q@gmail.com>
+    Co-authored-by: Quentin Lhoest <REDACTED_EMAIL_c1f80de6ab849d646bfaefb3>
 
 commit 1073a2bde5d608f9891d6da6df7b63921dca1b71
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Mon Nov 16 11:43:00 2020 -0500
 
     Switch `return_dict` to `True` by default. (#8530)
@@ -8083,7 +8083,7 @@ Date:   Mon Nov 16 11:43:00 2020 -0500
     * Fix slow tests
 
 commit 70f622fab4dabeb4eab66dd1290ab1bc695a9301
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Tue Nov 10 13:11:02 2020 +0100
 
     Model versioning (#8324)
@@ -8102,7 +8102,7 @@ Date:   Tue Nov 10 13:11:02 2020 +0100
     
     * Apply suggestions from code review
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Tiny doc tweak
     
@@ -8112,7 +8112,7 @@ Date:   Tue Nov 10 13:11:02 2020 +0100
     
     cc @sshleifer let me know if better
     
-    Co-Authored-By: Sam Shleifer <sshleifer@gmail.com>
+    Co-Authored-By: Sam Shleifer <REDACTED_EMAIL_ac19badfba5e23c4545494ea>
     
     * Also implement revision in pipelines
     
@@ -8136,17 +8136,17 @@ Date:   Tue Nov 10 13:11:02 2020 +0100
     
     Thank you @stas00
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
-    Co-authored-by: Sam Shleifer <sshleifer@gmail.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
+    Co-authored-by: Sam Shleifer <REDACTED_EMAIL_ac19badfba5e23c4545494ea>
 
 commit b0f1c0ee30e590327ef546f75178c24460b156b4
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Thu Oct 29 10:43:45 2020 -0400
 
     Document tokenizer_class in configurations (#8152)
 
 commit 08f534d2da47875a4b7eb1c125cfa7f0f3b79642
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Mon Oct 26 18:26:02 2020 -0400
 
     Doc styling (#8067)
@@ -8200,7 +8200,7 @@ Date:   Mon Oct 26 18:26:02 2020 -0400
     * Make sphinx happy
 
 commit f34372a9ff99f6bc8619ac83dc07f7afe6b92141
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Thu Oct 22 15:39:01 2020 +0200
 
     [PretrainedConfig] Fix save pretrained config for edge case  (#7943)
@@ -8219,12 +8219,12 @@ Date:   Thu Oct 22 15:39:01 2020 +0200
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit ba8c4d0ac04acfcdbdeaed954f698d6d5ec3e532
-Author: Thomas Wolf <thomwolf@users.noreply.github.com>
+Author: Thomas Wolf <REDACTED_EMAIL_4c7a9408a1f95ee41d099f50>
 Date:   Sun Oct 18 20:51:24 2020 +0200
 
     [Dependencies|tokenizers] Make both SentencePiece and Tokenizers optional dependencies (#7659)
@@ -8329,36 +8329,36 @@ Date:   Sun Oct 18 20:51:24 2020 +0200
     
     * Update src/transformers/testing_utils.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Update src/transformers/testing_utils.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Update src/transformers/tokenization_utils_base.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Update src/transformers/tokenization_utils_base.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit 7e73c128055a61c4232f145ff9ffb99a56928510
-Author: Tiger <nhl0819@gmail.com>
+Author: Tiger <REDACTED_EMAIL_08bbf491e2be13240913dc64>
 Date:   Tue Oct 13 09:00:20 2020 -0500
 
     fixed lots of typos. (#7758)
 
 commit 03835af70038730808a59027d23b06629635ac5e
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Mon Oct 5 11:01:03 2020 -0400
 
     Documentation fixes (#7585)
 
 commit e50a931c118b9f55f77a743bf703f436bf7a7c29
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Fri Sep 25 20:33:21 2020 +0200
 
     [Longformer, Bert, Roberta, ...] Fix multi gpu training (#7272)
@@ -8386,7 +8386,7 @@ Date:   Fri Sep 25 20:33:21 2020 +0200
     * merge and clean authorized keys
 
 commit 90cde2e938638e64a8696a12b79ee5f52364b162
-Author: Kevin Canwen Xu <canwenxu@126.com>
+Author: Kevin Canwen Xu <REDACTED_EMAIL_ea571a65cdf32af9c57af845>
 Date:   Mon Sep 14 23:50:22 2020 +0800
 
     Add Mirror Option for Downloads (#6679)
@@ -8406,13 +8406,13 @@ Date:   Mon Sep 14 23:50:22 2020 +0800
     * update the mirror
 
 commit ed71c21d6afcbfa2d8e5bb03acbb88ae0e0ea56a
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Wed Sep 9 10:22:59 2020 +0200
 
     [from_pretrained] Allow tokenizer_type ≠ model_type (#6995)
 
 commit 8f2723caf0f1bf7e1f639d28d004f81c96d19bbc
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Sep 2 08:11:45 2020 -0400
 
     Output attention takes an s (#6903)
@@ -8424,19 +8424,19 @@ Date:   Wed Sep 2 08:11:45 2020 -0400
     * One unsaved file
 
 commit a32d85f0d405be53117b96075eef2875d2185892
-Author: Sam Shleifer <sshleifer@gmail.com>
+Author: Sam Shleifer <REDACTED_EMAIL_ac19badfba5e23c4545494ea>
 Date:   Tue Sep 1 03:43:27 2020 -0400
 
     delete reinit (#6862)
 
 commit a75c64d80c76c3dc71f735d9197a4a601847e0cd
-Author: Lysandre <lysandre.debut@reseau.eseo.fr>
+Author: Lysandre <REDACTED_EMAIL_b732173a1371e41a15f0bc0d>
 Date:   Wed Aug 26 17:20:22 2020 +0200
 
     Black 20 release
 
 commit 77abd1e79fc37efb45bde0041f9dad0eabc55517
-Author: Lysandre Debut <lysandre@huggingface.co>
+Author: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
 Date:   Wed Aug 26 11:10:36 2020 -0400
 
     Centralize logging (#6434)
@@ -8453,14 +8453,14 @@ Date:   Wed Aug 26 11:10:36 2020 -0400
     
     * Update src/transformers/benchmark/benchmark_utils.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Revert bad change
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit 925f34bbbd351025ab4d2d2752623e08c55ccf5c
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Wed Aug 26 10:58:21 2020 +0200
 
     Add "tie_word_embeddings" config param (#6692)
@@ -8480,7 +8480,7 @@ Date:   Wed Aug 26 10:58:21 2020 +0200
     * delete deprecated arg in transo-xl
 
 commit 2a7402cbd3deac68f086ddf9d718aeff06f0bb4e
-Author: Pradhy729 <49659913+Pradhy729@users.noreply.github.com>
+Author: Pradhy729 <REDACTED_EMAIL_c9851bbf524ecac877b343bc>
 Date:   Wed Aug 19 05:31:10 2020 -0700
 
     Feed forward chunking others (#6365)
@@ -8497,10 +8497,10 @@ Date:   Wed Aug 19 05:31:10 2020 -0700
     
     * remove test_chunking flag
     
-    Co-authored-by: patrickvonplaten <patrick.v.platen@gmail.com>
+    Co-authored-by: patrickvonplaten <REDACTED_EMAIL_8a6536054f14a562690043d4>
 
 commit fe0b85e77a6af041471657069bbb9c21a880cd5c
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Wed Aug 19 14:23:45 2020 +0200
 
     [EncoderDecoder] Add functionality to tie encoder decoder weights (#6538)
@@ -8519,14 +8519,14 @@ Date:   Wed Aug 19 14:23:45 2020 +0200
     
     * Update src/transformers/modeling_encoder_decoder.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * add max depth break point
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 
 commit 895ed8f4511ce9f2d1475e7f11c776dab87461d1
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Fri Aug 14 09:46:39 2020 -0400
 
     Generation doc (#6470)
@@ -8581,13 +8581,13 @@ Date:   Fri Aug 14 09:46:39 2020 -0400
     
     * Update src/transformers/modeling_gpt2.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Update src/transformers/modeling_encoder_decoder.py
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
-    Co-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+    Co-authored-by: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
     
     * Sort unique_no_split_tokens to make it deterministic (#6461)
     
@@ -8601,7 +8601,7 @@ Date:   Fri Aug 14 09:46:39 2020 -0400
     
     * Apply suggestions from code review
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
     
     * Address comments
     
@@ -8611,21 +8611,21 @@ Date:   Fri Aug 14 09:46:39 2020 -0400
     
     * Apply suggestions from code review
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
     
     * Address comments
     
     * Styling
     
-    Co-authored-by: Suraj Patil <surajp815@gmail.com>
-    Co-authored-by: Kevin Canwen Xu <canwenxu@126.com>
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
-    Co-authored-by: Quentin Lhoest <42851186+lhoestq@users.noreply.github.com>
-    Co-authored-by: gijswijnholds <gijswijnholds@gmail.com>
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Suraj Patil <REDACTED_EMAIL_90d66d06c610b72785dd68b0>
+    Co-authored-by: Kevin Canwen Xu <REDACTED_EMAIL_ea571a65cdf32af9c57af845>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
+    Co-authored-by: Quentin Lhoest <REDACTED_EMAIL_393806c788a4de25ad545cb1>
+    Co-authored-by: gijswijnholds <REDACTED_EMAIL_a5c5b4822cb9e41c9316d660>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
 
 commit b25cec13c57656941aac3b920eeb488c1915df18
-Author: Pradhy729 <49659913+Pradhy729@users.noreply.github.com>
+Author: Pradhy729 <REDACTED_EMAIL_c9851bbf524ecac877b343bc>
 Date:   Tue Aug 11 00:12:45 2020 -0700
 
     Feed forward chunking (#6024)
@@ -8647,10 +8647,10 @@ Date:   Tue Aug 11 00:12:45 2020 -0700
     
     * Fix typo
     
-    Co-authored-by: patrickvonplaten <patrick.v.platen@gmail.com>
+    Co-authored-by: patrickvonplaten <REDACTED_EMAIL_8a6536054f14a562690043d4>
 
 commit 3425936643b157bda181af169b371dcf0a3ad3eb
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Mon Aug 10 19:46:48 2020 +0200
 
     [EncoderDecoderModel] add a `add_cross_attention` boolean to config (#6377)
@@ -8662,7 +8662,7 @@ Date:   Mon Aug 10 19:46:48 2020 +0200
     * apply sylvains suggestions
 
 commit 91cb95461e438dc57555c4f57f8ce95a56328036
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Thu Jul 30 09:17:00 2020 -0400
 
     Switch from return_tuple to return_dict (#6138)
@@ -8770,11 +8770,11 @@ Date:   Thu Jul 30 09:17:00 2020 -0400
     
     * Add recent model
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
-    Co-authored-by: Julien Plu <plu.julien@gmail.com>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
+    Co-authored-by: Julien Plu <REDACTED_EMAIL_099cde6c80d97dd422dbd891>
 
 commit 8a8ae27617e3c4dafb34bcbbaadf4ceee28583bd
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Wed Jul 29 12:28:12 2020 -0400
 
     Use google style to document properties (#6130)
@@ -8783,12 +8783,12 @@ Date:   Wed Jul 29 12:28:12 2020 -0400
     
     * Update src/transformers/configuration_utils.py
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
     
-    Co-authored-by: Lysandre Debut <lysandre@huggingface.co>
+    Co-authored-by: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
 
 commit 3b44aa935a4d8f1b0e93a23070d97be6b9c9506b
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Fri Jul 24 09:16:28 2020 -0400
 
     Model utils doc (#6005)
@@ -8798,7 +8798,7 @@ Date:   Fri Jul 24 09:16:28 2020 -0400
     * Document all model utils
 
 commit 4b506a37e3e0ff679235961ba14dd9397843ef3a
-Author: Teven <teven.lescao@gmail.com>
+Author: Teven <REDACTED_EMAIL_5eb90696b174836ba48e0b59>
 Date:   Sat Jul 18 17:33:13 2020 +0200
 
     Xlnet outputs (#5883)
@@ -8806,7 +8806,7 @@ Date:   Sat Jul 18 17:33:13 2020 +0200
     Slightly breaking change, changes functionality for `use_cache` in XLNet: if use_cache is True and mem_len is 0 or None (which is the case in the base model config), the model behaves like GPT-2 and returns mems to be used as past in generation. At training time `use_cache` is overriden and always True.
 
 commit a55809241fee13f4ef4020bc6e087cf3acb6d485
-Author: Teven <teven.lescao@gmail.com>
+Author: Teven <REDACTED_EMAIL_5eb90696b174836ba48e0b59>
 Date:   Sat Jul 18 17:15:40 2020 +0200
 
     Revert "Xlnet outputs (#5881)" (#5882)
@@ -8814,7 +8814,7 @@ Date:   Sat Jul 18 17:15:40 2020 +0200
     This reverts commit 13be4872123094c37eb5fab939b38967b0ad2cd0.
 
 commit 13be4872123094c37eb5fab939b38967b0ad2cd0
-Author: Teven <teven.lescao@gmail.com>
+Author: Teven <REDACTED_EMAIL_5eb90696b174836ba48e0b59>
 Date:   Sat Jul 18 16:53:29 2020 +0200
 
     Xlnet outputs (#5881)
@@ -8822,7 +8822,7 @@ Date:   Sat Jul 18 16:53:29 2020 +0200
     Slightly breaking change, changes functionality for `use_cache` in XLNet: if use_cache is True and mem_len is 0 or None (which is the case in the base model config), the model behaves like GPT-2 and returns mems to be used as past in generation. At training time `use_cache` is overriden and always True.
 
 commit 615be03f9d961c0c9722fe10e7830e011066772e
-Author: Teven <teven.lescao@gmail.com>
+Author: Teven <REDACTED_EMAIL_5eb90696b174836ba48e0b59>
 Date:   Fri Jul 17 20:33:44 2020 +0200
 
     Revert "XLNet `use_cache` refactor (#5770)" (#5854)
@@ -8830,7 +8830,7 @@ Date:   Fri Jul 17 20:33:44 2020 +0200
     This reverts commit 0b2da0e592fcb3a361494509031f91e1b700e4ad.
 
 commit 0b2da0e592fcb3a361494509031f91e1b700e4ad
-Author: Teven <teven.lescao@gmail.com>
+Author: Teven <REDACTED_EMAIL_5eb90696b174836ba48e0b59>
 Date:   Fri Jul 17 20:24:16 2020 +0200
 
     XLNet `use_cache` refactor (#5770)
@@ -8838,7 +8838,7 @@ Date:   Fri Jul 17 20:24:16 2020 +0200
     Slightly breaking change, changes functionality for `use_cache` in XLNet: if use_cache is True and mem_len is 0 or None (which is the case in the base model config), the model behaves like GPT-2 and returns mems to be used as past in generation. At training time `use_cache` is overriden and always True.
 
 commit edfd82f5ff179f7600d8f2eea204e21bd07d99e4
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Fri Jul 10 11:36:53 2020 -0400
 
     Change model outputs types to self-document outputs (#5438)
@@ -8920,7 +8920,7 @@ Date:   Fri Jul 10 11:36:53 2020 -0400
     * Add doc of return_tuple arg
 
 commit b2747af5434e5a5d8ab1d7e2789699d20d7a4ab8
-Author: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>
+Author: Sylvain Gugger <REDACTED_EMAIL_2a1727c2044c443083ab1e8c>
 Date:   Fri Jul 10 10:31:47 2020 -0400
 
     Improvements to PretrainedConfig documentation (#5642)
@@ -8934,7 +8934,7 @@ Date:   Fri Jul 10 10:31:47 2020 -0400
     * Forgotten args and more cleanup
 
 commit 45e26125de1b9fbae46837856b1f518a4b56eb65
-Author: Sam Shleifer <sshleifer@gmail.com>
+Author: Sam Shleifer <REDACTED_EMAIL_ac19badfba5e23c4545494ea>
 Date:   Sun Jun 28 14:53:47 2020 -0400
 
     save_pretrained: mkdir(exist_ok=True) (#5258)
@@ -8942,7 +8942,7 @@ Date:   Sun Jun 28 14:53:47 2020 -0400
     * all save_pretrained methods mkdir if not os.path.exists
 
 commit 3b3619a327df3c273050a5bc1d1fd7a710cf979a
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Wed Jun 10 18:10:59 2020 +0200
 
     [All models] fix docs after adding output attentions to all forward functions (#4909)
@@ -8960,7 +8960,7 @@ Date:   Wed Jun 10 18:10:59 2020 +0200
     * re-add doc to config
 
 commit 6e603cb7892b49a2cbbc10ba859759f92c3fb7a6
-Author: Bharat Raghunathan <bharatraghunthan9767@gmail.com>
+Author: Bharat Raghunathan <REDACTED_EMAIL_68bace2173a106119a3716e8>
 Date:   Wed Jun 10 03:09:06 2020 +0530
 
     [All models] Extend config.output_attentions with output_attentions function arguments (#4538)
@@ -9030,10 +9030,10 @@ Date:   Wed Jun 10 03:09:06 2020 +0530
     
     * improve tensorflow
     
-    Co-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>
+    Co-authored-by: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 
 commit d4c2cb402d6674211726fd5f4803d1090664e438
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Tue Jun 2 09:39:33 2020 -0400
 
     Kill model archive maps (#4636)
@@ -9053,13 +9053,13 @@ Date:   Tue Jun 2 09:39:33 2020 -0400
     * Fix CI
 
 commit ec8717d5d8f6edc2c595ff6954ffaa2078dcc97d
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Mon Jun 1 16:54:55 2020 +0200
 
     [config] Ensure that id2label always takes precedence over num_labels
 
 commit 751a1e08904fda197366e4b0033bdfb8b10d256c
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Mon Jun 1 16:25:43 2020 +0200
 
     [config] Ensure that id2label always takes precedence over num_labels
@@ -9069,13 +9069,13 @@ Date:   Mon Jun 1 16:25:43 2020 +0200
     See #3967 for context
 
 commit 27d55125e6c3cd5b2589ef9827d835f6d54efc58
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Fri May 1 11:28:55 2020 -0400
 
     Configs: saner num_labels in configs. (#3967)
 
 commit 455c6390938a5c737fa63e78396cedae41e4e87e
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Tue Apr 28 20:27:14 2020 -0400
 
     CDN urls (#4030)
@@ -9087,7 +9087,7 @@ Date:   Tue Apr 28 20:27:14 2020 -0400
     * [urls] Hotfix for bert-base-japanese
 
 commit a946b6b51b42ac9bf4c0ffe6eedf653ffbe4dc49
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Thu Apr 23 10:39:24 2020 -0400
 
     [housekeeping] Upgrade `# type` Python 2 syntax
@@ -9095,7 +9095,7 @@ Date:   Thu Apr 23 10:39:24 2020 -0400
     cc @sshleifer
 
 commit dd9d483d03962fea127f59661f3ae6156e7a91d2
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Tue Apr 21 20:11:56 2020 -0400
 
     Trainer (#3800)
@@ -9137,7 +9137,7 @@ Date:   Tue Apr 21 20:11:56 2020 -0400
     * Re-align to 827d6d6ef071029cfe82838a18dab046b5813976
 
 commit e9d0bc027a911059e6e01f78f8005036d2880b06
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Sat Apr 18 02:07:18 2020 +0200
 
     [Config, Serialization] more readable config serialization (#3797)
@@ -9147,7 +9147,7 @@ Date:   Sat Apr 18 02:07:18 2020 +0200
     * finish configuration utils
 
 commit 01c37dcdb529bff38aadd51001cb5812e5fe9b21
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Tue Apr 14 20:40:28 2020 +0200
 
     [Config, Caching] Remove `output_past` everywhere and replace by `use_cache` argument (#3734)
@@ -9177,7 +9177,7 @@ Date:   Tue Apr 14 20:40:28 2020 +0200
     * correct is true statements for gpt2
 
 commit 551b450527992c9c9fd7c612fc064b634c176a72
-Author: Jin Young Sohn <jysohn@google.com>
+Author: Jin Young Sohn <REDACTED_EMAIL_1196199071aa797db3892192>
 Date:   Fri Apr 10 09:53:54 2020 -0700
 
     Add `run_glue_tpu.py` that trains models on TPUs (#3702)
@@ -9259,10 +9259,10 @@ Date:   Fri Apr 10 09:53:54 2020 -0700
     
     * Rename `run_glue_tpu` to `run_tpu_glue`
     
-    Co-authored-by: LysandreJik <lysandre.debut@reseau.eseo.fr>
+    Co-authored-by: LysandreJik <REDACTED_EMAIL_b732173a1371e41a15f0bc0d>
 
 commit b38d552a92a0a201c005afae0e1b861ae6de9ce0
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Tue Mar 31 18:42:31 2020 +0200
 
     [Generate] Add bad words list argument to the generate function (#3367)
@@ -9282,7 +9282,7 @@ Date:   Tue Mar 31 18:42:31 2020 +0200
     * fix typo
 
 commit 9c683ef01e19c4dc1216dcd1ae3c8e7c44d7b2b9
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Thu Mar 26 11:03:13 2020 +0100
 
     Add t5 to pipeline(task='summarization') (#3413)
@@ -9310,7 +9310,7 @@ Date:   Thu Mar 26 11:03:13 2020 +0100
     * remove unused patterns
 
 commit ffa17fe322ecf57a10be80d4c328828ebd7c81f0
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Wed Mar 25 21:32:04 2020 +0100
 
     Extend config with task specific configs. (#3433)
@@ -9320,7 +9320,7 @@ Date:   Wed Mar 25 21:32:04 2020 +0100
     * change prefix default to None
 
 commit 95e00d08082d6e87e6c61d1f78b401f4ec337317
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Fri Mar 20 21:41:04 2020 +0100
 
     Clean special token init in modeling_....py (#3264)
@@ -9330,13 +9330,13 @@ Date:   Fri Mar 20 21:41:04 2020 +0100
     * fix conflicts
 
 commit ecfd3363181e706bbd4e121c6a2bef0b2bc443b2
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Thu Mar 19 18:23:03 2020 -0400
 
     Simpler Error message when loading config/model with .from_pretrained() (#3341)
 
 commit af471ce5e8ca7c19183e70bb998561170addc276
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Mon Mar 16 09:48:30 2020 +0100
 
     Improved Error message when loading config/model with .from_pretrained() (#3247)
@@ -9350,37 +9350,37 @@ Date:   Mon Mar 16 09:48:30 2020 +0100
     * update to model identifier instead of ur
 
 commit 7a11e925cf4363cb105473273b3f580e9f6173d0
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Fri Mar 6 14:39:28 2020 +0100
 
     work in progress
 
 commit ff648221bdf25d3168828d8b11a5916f67ae03cc
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Fri Mar 6 11:31:19 2020 +0100
 
     fix conflicts
 
 commit c0d9dd3ba96fa4f83a9c3c566dff01d7a0a6608b
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Thu Mar 5 14:56:56 2020 +0100
 
     refactored code a bit and made more generic
 
 commit 847d3703011fcf55b858ab7edcbff1a983715c05
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Mon Mar 9 16:18:29 2020 +0100
 
     fix typo
 
 commit 3e624c64ca421a66f2eaecb5dfa0e6cea33cd918
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Mon Mar 9 14:55:11 2020 +0100
 
     fix repetition penalty mask in tf
 
 commit b623ddc0002aebe32e2b7a1203a6acbed61bf9a8
-Author: Lysandre Debut <lysandre@huggingface.co>
+Author: Lysandre Debut <REDACTED_EMAIL_881ca73f63db4e28d4280e2e>
 Date:   Thu Mar 5 17:16:57 2020 -0500
 
     Pass kwargs to configuration (#3147)
@@ -9392,7 +9392,7 @@ Date:   Thu Mar 5 17:16:57 2020 -0500
     * test
 
 commit a143d9479e3908ebe5bb32e9689dbf7d24eb536c
-Author: Bram Vanroy <Bram.Vanroy@UGent.be>
+Author: Bram Vanroy <REDACTED_EMAIL_b5d3edf5ea6d59dfef0574c4>
 Date:   Mon Feb 24 20:58:15 2020 +0100
 
     Add local_files_only parameter to pretrained items (#2930)
@@ -9408,7 +9408,7 @@ Date:   Mon Feb 24 20:58:15 2020 +0100
     * Remove forgotten print
 
 commit fc38d4c86fe4bbde91b194880fe38b821a346123
-Author: Patrick von Platen <patrick.v.platen@gmail.com>
+Author: Patrick von Platen <REDACTED_EMAIL_8a6536054f14a562690043d4>
 Date:   Fri Feb 21 18:10:00 2020 +0100
 
     Improve special_token_id logic in run_generation.py and add tests (#2885)
@@ -9529,76 +9529,76 @@ Date:   Fri Feb 21 18:10:00 2020 +0100
     
     * better comment and error message
     
-    Co-authored-by: Thomas Wolf <thomwolf@users.noreply.github.com>
+    Co-authored-by: Thomas Wolf <REDACTED_EMAIL_4c7a9408a1f95ee41d099f50>
 
 commit b85c59f9978e090881caad844c164fe4a2b03c7a
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Thu Jan 30 16:45:52 2020 -0500
 
     config.architectures
 
 commit babd41e7fa07bdd764f8fe91c33469046ab7dbd1
-Author: Lysandre <lysandre.debut@reseau.eseo.fr>
+Author: Lysandre <REDACTED_EMAIL_b732173a1371e41a15f0bc0d>
 Date:   Fri Jan 24 17:06:55 2020 -0500
 
     Code quality
 
 commit 009fcb0ec1db20505b146e0169a079703040dc41
-Author: Lysandre <lysandre.debut@reseau.eseo.fr>
+Author: Lysandre <REDACTED_EMAIL_b732173a1371e41a15f0bc0d>
 Date:   Fri Jan 24 15:26:18 2020 -0500
 
     Configuration utils
 
 commit 23a2cea8cb95864ddb7e7e80e126e4f083640882
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Wed Jan 15 21:07:26 2020 +0000
 
     Tokenizer.from_pretrained: fetch all possible files remotely
 
 commit 0304628590b7a24942f6d3ec63923326f8a8c26e
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Mon Jan 13 23:11:44 2020 +0000
 
     Map configs to models and tokenizers
 
 commit 3c86b6f3c55d32eac6066949c238f3a82c13d376
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Mon Jan 13 20:44:33 2020 +0000
 
     Py35 doesn't like inline variable types
 
 commit b803b067bfb7740a7b9ae6ae149fbbd24e3f21af
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Mon Jan 13 20:05:20 2020 +0000
 
     Config to Model mapping
 
 commit 6bb3edc3001ab990dc40cf2822d667e125cde287
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Sat Jan 11 03:18:56 2020 +0000
 
     Serialize model_type if exists
 
 commit 4d1c98c012cfad1c3d662f4d58e84ebba9c10d4e
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Sat Jan 11 02:46:17 2020 +0000
 
     AutoConfig + other Auto classes honor model_type
 
 commit 81d6841b4be25a164235975e5ebdcf99d7a26633
-Author: alberduris <4lb3rduris@gmail.com>
+Author: alberduris <REDACTED_EMAIL_0f6e024ee42235755e5ad5b4>
 Date:   Tue Dec 31 13:24:54 2019 +0100
 
     GPU text generation: mMoved the encoded_prompt to correct device
 
 commit dd4df80f0b77c8f8e07e502298df0121cada9ce8
-Author: alberduris <4lb3rduris@gmail.com>
+Author: alberduris <REDACTED_EMAIL_0f6e024ee42235755e5ad5b4>
 Date:   Tue Dec 31 13:11:41 2019 +0100
 
     Moved the encoded_prompts to correct device
 
 commit 1c62e87b34e65cbe96446dba56604039b4241c13
-Author: Aymeric Augustin <aymeric.augustin@fractalideas.com>
+Author: Aymeric Augustin <REDACTED_EMAIL_e2f27c64a680bc179d70b0c5>
 Date:   Sun Dec 22 18:26:42 2019 +0100
 
     Use built-in open().
@@ -9606,13 +9606,13 @@ Date:   Sun Dec 22 18:26:42 2019 +0100
     On Python 3, `open is io.open`.
 
 commit c824d15aa1590ddb5d2fc977a8a1009a4b1d7262
-Author: Aymeric Augustin <aymeric.augustin@fractalideas.com>
+Author: Aymeric Augustin <REDACTED_EMAIL_e2f27c64a680bc179d70b0c5>
 Date:   Sun Dec 22 16:20:32 2019 +0100
 
     Remove __future__ imports.
 
 commit 6be7cdda66f3f4bd3ba4073274bf73be0843c5f9
-Author: Aymeric Augustin <aymeric.augustin@fractalideas.com>
+Author: Aymeric Augustin <REDACTED_EMAIL_e2f27c64a680bc179d70b0c5>
 Date:   Sun Dec 22 13:54:22 2019 +0100
 
     Move source code inside a src subdirectory.
@@ -9627,7 +9627,7 @@ Date:   Sun Dec 22 13:54:22 2019 +0100
         $ pip install -e .
 
 commit 158e82e061c02fc2f1613adb7ac1d1cb6adae71c
-Author: Aymeric Augustin <aymeric.augustin@fractalideas.com>
+Author: Aymeric Augustin <REDACTED_EMAIL_e2f27c64a680bc179d70b0c5>
 Date:   Sat Dec 21 15:57:32 2019 +0100
 
     Sort imports with isort.
@@ -9637,7 +9637,7 @@ Date:   Sat Dec 21 15:57:32 2019 +0100
         $ isort --recursive examples templates transformers utils hubconf.py setup.py
 
 commit fa84ae26d62c7ac2ad6dca18b2d8b12ab83bc900
-Author: Aymeric Augustin <aymeric.augustin@fractalideas.com>
+Author: Aymeric Augustin <REDACTED_EMAIL_e2f27c64a680bc179d70b0c5>
 Date:   Sat Dec 21 15:46:46 2019 +0100
 
     Reformat source code with black.
@@ -9653,79 +9653,79 @@ Date:   Sat Dec 21 15:46:46 2019 +0100
     names, to make the code easier to understand.
 
 commit 1c37746892a5fd680e88264346197bb313c8dd08
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Sat Dec 21 13:52:49 2019 +0100
 
     fixing run_generation
 
 commit 149dc376aa5070db04cdf6e3358e87cab6670251
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Thu Dec 19 20:34:28 2019 +0100
 
     fix tests
 
 commit 641a8decdc6c34ce1837c9602fe84a65ec5b741a
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Wed Dec 18 10:43:48 2019 +0100
 
     clean up code and add arbitrary number of return sequences
 
 commit b6938916ac7f00cd260e70d54b252909c40bced6
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Tue Dec 17 17:23:36 2019 +0100
 
     adding beam search
 
 commit a468870fd27c601e3717c5b9ca691e18a8c7227f
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Mon Dec 16 22:22:30 2019 +0100
 
     refactoring generation
 
 commit 031ad4eb3780437d5232392b16891078b1b32d2c
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Mon Dec 16 14:20:57 2019 +0100
 
     improving JSON error messages (for model card and configurations)
 
 commit 47f0e3cfb7df192ab80215cea9096791fce08694
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Fri Dec 13 14:33:24 2019 +0100
 
     cleaning up configuration classes
 
 commit 80eacb8f16208bcc7ffd8ed5b5750d6fc6854a24
-Author: Morgan Funtowicz <morgan@huggingface.co>
+Author: Morgan Funtowicz <REDACTED_EMAIL_f3b05b6a2dd4544efb1a8852>
 Date:   Fri Dec 13 14:10:22 2019 +0100
 
     Adding labels mapping for classification models in their respective config.
 
 commit 5d67aa21aefaaa62594e8dfb56093b83c5f547bb
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Thu Dec 12 12:39:41 2019 -0500
 
     [doc] Replicate doc from #2144
 
 commit f69dbecc38e04cd4d158afb273921ca7b75c7cba
-Author: Morgan Funtowicz <morgan@huggingface.co>
+Author: Morgan Funtowicz <REDACTED_EMAIL_f3b05b6a2dd4544efb1a8852>
 Date:   Thu Dec 12 10:25:36 2019 +0100
 
     Expose classification labels mapping (and reverse) in model config.
 
 commit c999a3e5050f1dc93d814abf352f3bf0c06572e7
-Author: Julien Chaumond <chaumond@gmail.com>
+Author: Julien Chaumond <REDACTED_EMAIL_64bd2d8a395b63324a33e2af>
 Date:   Wed Dec 11 12:29:58 2019 -0500
 
     Allow from_pretrained to take a remote identifier
 
 commit 0e4cc050d63058969c53cce295dea99e90483c01
-Author: Sergey Mironov <mironov.sergey@huawei.com>
+Author: Sergey Mironov <REDACTED_EMAIL_9f0921d726760f492d3695f8>
 Date:   Thu Oct 24 18:15:55 2019 +0300
 
     Add support for resumable downloads for HTTP protocol.
 
 commit 488a6641513face9c03b537b6fe3210dbdb39f36
-Author: Rémi Louf <remi.louf@kering.com>
+Author: Rémi Louf <REDACTED_EMAIL_23155d477d2058f8a0a8b708>
 Date:   Tue Oct 15 21:03:32 2019 +0200
 
     add `is_decoder` attribute to `PretrainedConfig`
@@ -9740,67 +9740,67 @@ Date:   Tue Oct 15 21:03:32 2019 +0200
     `PretrainedConfig`, with a default at `False`.
 
 commit 0f9fc4fbde4ea95f817aaf710fecb1b898c61088
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Fri Oct 11 15:47:08 2019 +0200
 
     adding option to desactivate past/memory outputs
 
 commit da26bae61b8c1e741fdc6735d46c61b43f649561
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Thu Oct 10 14:30:48 2019 +0200
 
     adding more tests on TF and pytorch serialization - updating configuration for better serialization
 
 commit a5997dd81a76d669e81a42f8efafcfd1745704b9
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Thu Oct 10 11:31:01 2019 +0200
 
     better error messages
 
 commit 31c23bd5ee26425a67f92fc170789656379252a6
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Thu Sep 26 10:15:53 2019 +0200
 
     [BIG] pytorch-transformers => transformers
 
 commit a049c8043b65ffed887e661b3b0506eb7a8c8c50
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Wed Sep 25 17:33:16 2019 +0200
 
     push fix to training
 
 commit 465870c33fe4ade66863ca0edfe13616f9d24da5
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Tue Sep 10 16:44:41 2019 +0200
 
     Xlnet working - also added simple question answering model for XLNet
 
 commit 32aabe8c33b65dd9877a7df474c9aa84ea1fe354
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Tue Sep 10 12:17:18 2019 +0200
 
     WIP XLNet
 
 commit 59fe641b8bbeca2f4aa8a9d68a2e83fb7945054e
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Thu Sep 5 02:34:09 2019 +0200
 
     also gathering file names in file_utils
 
 commit 1efb1f1660c7054037019667c6d6f72e0000c3a9
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Thu Sep 5 00:26:57 2019 +0200
 
     split configuration and modeling files
 
 commit 85df4f7cca89f5ff8db493f045bede7c3c8a7d11
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Thu Sep 5 02:34:09 2019 +0200
 
     also gathering file names in file_utils
 
 commit 2a667b1eb979a406642eb03fd234211b0bf0aa41
-Author: thomwolf <thomwolf@gmail.com>
+Author: thomwolf <REDACTED_EMAIL_4ca98585e41c2df568b23461>
 Date:   Thu Sep 5 00:26:57 2019 +0200
 
     split configuration and modeling files

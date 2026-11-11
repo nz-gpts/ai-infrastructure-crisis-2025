@@ -19402,7 +19402,7 @@ b92d68421d | 2019-10-23 | Matt Maybeno | Use roberta model and update doc string
 b82bfbd0c3 | 2019-10-24 | Lysandre | Updated README to show all available documentation
 5b6cafb11b | 2019-10-23 | VictorSanh | [release] fix table weirdness
 8ad5c591cd | 2019-10-23 | VictorSanh | [RELEASE] DistilRoBERTa
-bd847ce7d7 | 2019-10-23 | focox@qq.com | fixed the bug raised by "tmp_eval_loss += tmp_eval_loss.item()" when parallelly using multi-gpu.
+bd847ce7d7 | 2019-10-23 | REDACTED_EMAIL_72459a108103d7a7fd1882f9 | fixed the bug raised by "tmp_eval_loss += tmp_eval_loss.item()" when parallelly using multi-gpu.
 6e85bccafc | 2019-10-22 | Lysandre Debut | Fixed typo
 fbcc5ff9fb | 2019-10-22 | Lysandre | Change branch to master
 69eba0ab19 | 2019-10-22 | Lysandre | Edit script path
