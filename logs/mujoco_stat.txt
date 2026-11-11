@@ -1,5 +1,5 @@
 commit caec236b2f05567b7803d4674edae2ded749749b
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Dec 11 01:23:03 2025 -0800
 
     Make mj_loadModelBuffer a public API.
@@ -17,7 +17,7 @@ Date:   Thu Dec 11 01:23:03 2025 -0800
  7 files changed, 39 insertions(+), 2 deletions(-)
 
 commit d0cf2a3ca536ce15767231a0edfc5891db6158ad
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Wed Dec 10 06:00:24 2025 -0800
 
     MuJoCo Warp documentation: named access / bind.
@@ -29,7 +29,7 @@ Date:   Wed Dec 10 06:00:24 2025 -0800
  1 file changed, 5 insertions(+)
 
 commit f150e72b34bcbcaff32e52710cd98fe5db717f76
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Wed Dec 10 05:43:00 2025 -0800
 
     MuJoCo Warp documentation: Tutorial notebook.
@@ -41,7 +41,7 @@ Date:   Wed Dec 10 05:43:00 2025 -0800
  1 file changed, 9 insertions(+)
 
 commit 6bcb22730d64982ddaa34f27d4ece537fd965634
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Wed Dec 10 05:09:09 2025 -0800
 
     Minor clean-up of some visualization code.
@@ -55,7 +55,7 @@ Date:   Wed Dec 10 05:09:09 2025 -0800
  1 file changed, 44 insertions(+), 88 deletions(-)
 
 commit 11f0997edfb177699b8ea23cdc302954f448df8e
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Wed Dec 10 02:57:37 2025 -0800
 
     Internal change.
@@ -73,7 +73,7 @@ Date:   Wed Dec 10 02:57:37 2025 -0800
  7 files changed, 215 insertions(+), 7 deletions(-)
 
 commit 9c1b8d8cfb77d93ced9ca6dc2a3ca5d6d6650a3d
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Dec 10 02:30:35 2025 -0800
 
     Enable font loading for wasm builds.
@@ -86,7 +86,7 @@ Date:   Wed Dec 10 02:30:35 2025 -0800
  2 files changed, 22 insertions(+), 21 deletions(-)
 
 commit f06aa45ea6ab937efd5a6ebb0413eb3441528517
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Dec 9 10:35:10 2025 -0800
 
     Consolidate ray normal functions.
@@ -100,7 +100,7 @@ Date:   Tue Dec 9 10:35:10 2025 -0800
  3 files changed, 50 insertions(+), 72 deletions(-)
 
 commit 85e6f6de3c659f83dc1979052ba2e3953c3313be
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Dec 9 09:21:20 2025 -0800
 
     Ignore unsupported light types in GL3 renderer.
@@ -112,7 +112,7 @@ Date:   Tue Dec 9 09:21:20 2025 -0800
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 commit 32d7b87ba70c6347d342a0e6769ec79cf91cd719
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Dec 9 08:55:57 2025 -0800
 
     Improve studio 2D plots
@@ -125,7 +125,7 @@ Date:   Tue Dec 9 08:55:57 2025 -0800
  2 files changed, 16 insertions(+), 14 deletions(-)
 
 commit 5b1fa666fb85faf42c52b1614a8d2240e2d80042
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Dec 9 08:52:39 2025 -0800
 
     Add `mj_rayHfieldNormal` (not exposed in public header)
@@ -139,7 +139,7 @@ Date:   Tue Dec 9 08:52:39 2025 -0800
  3 files changed, 67 insertions(+), 17 deletions(-)
 
 commit 7553541b4b51f6783b90231599c98288de68bd85
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Dec 9 08:13:26 2025 -0800
 
     Use public mj_parseXml function.
@@ -151,7 +151,7 @@ Date:   Tue Dec 9 08:13:26 2025 -0800
  1 file changed, 1 insertion(+), 3 deletions(-)
 
 commit 97eb307ce95d67b3a35c8d08bdc7ec0e559a90bf
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Dec 9 07:27:19 2025 -0800
 
     First pass at mjSpec Explorer and Properties windows.
@@ -172,7 +172,7 @@ Date:   Tue Dec 9 07:27:19 2025 -0800
  4 files changed, 281 insertions(+), 19 deletions(-)
 
 commit c064abc3da5fc796610a30ddc7273ad143436066
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Dec 9 07:01:16 2025 -0800
 
     Change row-flipping logic for heightfields.
@@ -190,7 +190,7 @@ Date:   Tue Dec 9 07:01:16 2025 -0800
  5 files changed, 43 insertions(+), 10 deletions(-)
 
 commit 925c533580fcf044c2f3393d903bae29dcb30b5a
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Dec 9 06:46:30 2025 -0800
 
     Move playback speed control to the toolbar.
@@ -206,7 +206,7 @@ Date:   Tue Dec 9 06:46:30 2025 -0800
  1 file changed, 50 insertions(+), 31 deletions(-)
 
 commit cc914c9ec731f393ceffbe621f88820897bceaaa
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Dec 9 05:52:24 2025 -0800
 
     Modify studio keyboard bindings to conform to MuJoCo API.
@@ -218,7 +218,7 @@ Date:   Tue Dec 9 05:52:24 2025 -0800
  1 file changed, 39 insertions(+), 35 deletions(-)
 
 commit 1483aefe5f1db15f7e1c3f06fafd7ae711306268
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Tue Dec 9 04:56:57 2025 -0800
 
     Make actuator_length, cdof and cdof_dot public.
@@ -243,7 +243,7 @@ Date:   Tue Dec 9 04:56:57 2025 -0800
  14 files changed, 69 insertions(+), 68 deletions(-)
 
 commit f65c1cdfd16a97d9d38d0d92a875d31607653976
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Dec 9 04:42:44 2025 -0800
 
     Add `mj_raySdfNormal` (not exposed in public header)
@@ -259,7 +259,7 @@ Date:   Tue Dec 9 04:42:44 2025 -0800
  5 files changed, 66 insertions(+), 8 deletions(-)
 
 commit bf49fe3daa43a3805b2cd478dafa1106bdc4d250
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Dec 9 03:06:42 2025 -0800
 
     Enable reading textures from spec in Python
@@ -273,7 +273,7 @@ Date:   Tue Dec 9 03:06:42 2025 -0800
  3 files changed, 71 insertions(+)
 
 commit e1e224892531c01ad2cb3ac3924d4e7362908e88
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Dec 9 00:16:46 2025 -0800
 
     Internal changes only.
@@ -285,7 +285,7 @@ Date:   Tue Dec 9 00:16:46 2025 -0800
  1 file changed, 1 insertion(+)
 
 commit 99a90cb649c5d26e3a55c5ffd8d9b7982974b373
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Dec 8 23:43:57 2025 -0800
 
     Don't do GUI rendering when rendering to texture.
@@ -297,7 +297,7 @@ Date:   Mon Dec 8 23:43:57 2025 -0800
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 735b31fc890de220c4c07d9b69a57186a0a214ef
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Mon Dec 8 09:26:02 2025 -0800
 
     Fix triangle lighting in native renderer.
@@ -309,7 +309,7 @@ Date:   Mon Dec 8 09:26:02 2025 -0800
  1 file changed, 1 insertion(+)
 
 commit 15145c0098d2d38ba2d9336263464533425c4b2c
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Mon Dec 8 07:49:19 2025 -0800
 
     MuJoCo Warp documentation: Compilation.
@@ -321,7 +321,7 @@ Date:   Mon Dec 8 07:49:19 2025 -0800
  1 file changed, 27 insertions(+)
 
 commit e238b6584364a9c14d1e1108a60f00c4f85f0b44
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Dec 8 05:53:50 2025 -0800
 
     Support both 3 and 4 channel images and use a safer way to assign IDs to images.
@@ -333,7 +333,7 @@ Date:   Mon Dec 8 05:53:50 2025 -0800
  1 file changed, 14 insertions(+), 8 deletions(-)
 
 commit 96e376451ccafc91e55a69c1b1aa864fda97b632
-Author: Gabe Oppenheimer <goppenheimer@google.com>
+Author: Gabe Oppenheimer <REDACTED_EMAIL_0a656a669dfa39824d97ea8a>
 Date:   Fri Dec 5 16:14:24 2025 -0800
 
     Update MuJoCo version from 3.4.0 to 3.4.1 following the 3.4.0 release
@@ -360,7 +360,7 @@ Date:   Fri Dec 5 16:14:24 2025 -0800
  16 files changed, 34 insertions(+), 34 deletions(-)
 
 commit e55fff5dea6f1d5dd7963ca52eecc41d05ad0922
-Author: Gabe Oppenheimer <goppenheimer@google.com>
+Author: Gabe Oppenheimer <REDACTED_EMAIL_0a656a669dfa39824d97ea8a>
 Date:   Fri Dec 5 09:36:42 2025 -0800
 
     CI issues resolved, we're going ahead with the 3.4.0 release.
@@ -372,7 +372,7 @@ Date:   Fri Dec 5 09:36:42 2025 -0800
  1 file changed, 21 insertions(+), 22 deletions(-)
 
 commit fcdacd0690654970c9a011664595648456e564ab
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Fri Dec 5 06:07:13 2025 -0800
 
     Fix crash when using image-based textures.
@@ -387,7 +387,7 @@ Date:   Fri Dec 5 06:07:13 2025 -0800
  1 file changed, 9 insertions(+), 5 deletions(-)
 
 commit 6e7b2ba4c38a66813ac03f81ca014074d29367a8
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Fri Dec 5 05:09:15 2025 -0800
 
     Reuse renderable entity instead of recreating every frame.
@@ -400,7 +400,7 @@ Date:   Fri Dec 5 05:09:15 2025 -0800
  2 files changed, 51 insertions(+), 27 deletions(-)
 
 commit f18c9996e6eb8b2e3daad69f4200220322da8f85
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Fri Dec 5 04:30:40 2025 -0800
 
     Allow uploading textures for use with ImGui.
@@ -417,7 +417,7 @@ Date:   Fri Dec 5 04:30:40 2025 -0800
  6 files changed, 76 insertions(+), 8 deletions(-)
 
 commit e93786c1617de1210b733bde999b8fa51dc2b384
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Fri Dec 5 02:38:52 2025 -0800
 
     Fix WebGL rendering for the webdemo
@@ -430,7 +430,7 @@ Date:   Fri Dec 5 02:38:52 2025 -0800
  2 files changed, 5 insertions(+)
 
 commit 4e84671a15bb0f8ca70b5a0b5906a41f8aec0fb5
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Fri Dec 5 02:07:07 2025 -0800
 
     MuJoCo Warp documentation: Determinism.
@@ -442,7 +442,7 @@ Date:   Fri Dec 5 02:07:07 2025 -0800
  1 file changed, 9 insertions(+)
 
 commit fc109f0ab593d7a5bdb876479a1f122b9c823c30
-Author: Baruch Tabanpour <btaba@google.com>
+Author: Baruch Tabanpour <REDACTED_EMAIL_5efef7db8e4d1e1833b5a8ab>
 Date:   Fri Dec 5 01:27:36 2025 -0800
 
     Small fix to testspeed
@@ -454,7 +454,7 @@ Date:   Fri Dec 5 01:27:36 2025 -0800
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 commit 237a5e5c553f9788c6e8172c0f13880eb82b0657
-Author: Gabe Oppenheimer <goppenheimer@google.com>
+Author: Gabe Oppenheimer <REDACTED_EMAIL_0a656a669dfa39824d97ea8a>
 Date:   Thu Dec 4 12:52:02 2025 -0800
 
     Revert the changelog to unreleased state, the 3.4.0 release will be delayed due to internal issues with CI.
@@ -466,7 +466,7 @@ Date:   Thu Dec 4 12:52:02 2025 -0800
  1 file changed, 22 insertions(+), 21 deletions(-)
 
 commit 6ed9f2be7ad87b9c5c2fb841feb1793fd7f14bae
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Dec 4 08:38:01 2025 -0800
 
     Removed unused font uploading functionality.
@@ -485,7 +485,7 @@ Date:   Thu Dec 4 08:38:01 2025 -0800
  6 files changed, 39 deletions(-)
 
 commit da36e822a8abf6ff6b88fb2768857a76f8fad0db
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Dec 4 08:22:05 2025 -0800
 
     Allow material default classes to define texture layers.
@@ -499,7 +499,7 @@ Date:   Thu Dec 4 08:22:05 2025 -0800
  3 files changed, 11 insertions(+), 1 deletion(-)
 
 commit 5ee8b646f7a0d11291930fa373e49ec7543801cb
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Dec 4 08:01:24 2025 -0800
 
     Move Style and Layout configuration to shared GUI library.
@@ -514,7 +514,7 @@ Date:   Thu Dec 4 08:01:24 2025 -0800
  4 files changed, 154 insertions(+), 129 deletions(-)
 
 commit 5f5910487754514020efc8a193bff32be12f4c14
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Dec 4 07:56:20 2025 -0800
 
     Properly handle PBR materials where no color texture is provided.
@@ -529,7 +529,7 @@ Date:   Thu Dec 4 07:56:20 2025 -0800
  2 files changed, 40 insertions(+), 34 deletions(-)
 
 commit 680e9a6b79e64fd8a63ca4ce21c4a0db431c9726
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Dec 4 07:26:41 2025 -0800
 
     Update studio build script and instructions.
@@ -545,7 +545,7 @@ Date:   Thu Dec 4 07:26:41 2025 -0800
  3 files changed, 8 insertions(+), 17 deletions(-)
 
 commit c5cd276e1f461a711f4ccbfc3dab189e41d969cc
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Dec 4 07:17:45 2025 -0800
 
     Cleanup model loading flow.
@@ -568,7 +568,7 @@ Date:   Thu Dec 4 07:17:45 2025 -0800
  4 files changed, 65 insertions(+), 72 deletions(-)
 
 commit 8823e9fedf6f13a6b55e72f2bbad65d7fda20bc6
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Dec 4 07:04:08 2025 -0800
 
     Improve imgui texture management.
@@ -584,7 +584,7 @@ Date:   Thu Dec 4 07:04:08 2025 -0800
  2 files changed, 75 insertions(+), 46 deletions(-)
 
 commit 54070fc71b49e2363d34dcfa7f6725edabaf6595
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Dec 4 06:27:55 2025 -0800
 
     Disable bent normals by default.
@@ -596,7 +596,7 @@ Date:   Thu Dec 4 06:27:55 2025 -0800
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit a942fd48759705eb81765442c05b2f9cdbc8f048
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Wed Dec 3 19:25:29 2025 -0800
 
     Make filament segmentation shader distinct colors optional.
@@ -620,7 +620,7 @@ Date:   Wed Dec 3 19:25:29 2025 -0800
  8 files changed, 54 insertions(+), 16 deletions(-)
 
 commit 4a6b9456aa863fbb06bb523cf49a1a9776bcf74a
-Author: Tom Power <tjpower@google.com>
+Author: Tom Power <REDACTED_EMAIL_a32b3099d92579a099a8d138>
 Date:   Wed Dec 3 16:30:16 2025 -0800
 
     Set default headlight intensity to zero if there are no physical lights in the scene.
@@ -632,7 +632,7 @@ Date:   Wed Dec 3 16:30:16 2025 -0800
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 commit 8507b62556aa2e53400907465823c7774388e6c7
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Wed Dec 3 16:05:34 2025 -0800
 
     Cache the rendering mode used to allow headless segmentation rendering.
@@ -647,7 +647,7 @@ Date:   Wed Dec 3 16:05:34 2025 -0800
  2 files changed, 16 insertions(+), 15 deletions(-)
 
 commit 14513a04c2c69a3095258b8653edd894fd7a5289
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Dec 3 05:00:32 2025 -0800
 
     Wait until previous render is finished before submitting another request.
@@ -659,7 +659,7 @@ Date:   Wed Dec 3 05:00:32 2025 -0800
  1 file changed, 4 insertions(+)
 
 commit e409538831692981e1b8956a1ec141f497066a64
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Dec 3 04:28:37 2025 -0800
 
     Ensure window scale is initialized on creation.
@@ -671,7 +671,7 @@ Date:   Wed Dec 3 04:28:37 2025 -0800
  1 file changed, 5 insertions(+)
 
 commit 55664b63e1abf716ef15570a9f99a17a71b4121c
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Dec 2 03:54:47 2025 -0800
 
     Fix broken cross-references in mjwarp/index.rst
@@ -683,7 +683,7 @@ Date:   Tue Dec 2 03:54:47 2025 -0800
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 commit 951257ad5401fabb5fb8412c7ff0d53f32606495
-Author: Gabe Oppenheimer <goppenheimer@google.com>
+Author: Gabe Oppenheimer <REDACTED_EMAIL_0a656a669dfa39824d97ea8a>
 Date:   Tue Dec 2 00:25:49 2025 -0800
 
     Fix: Update changelog formatting
@@ -695,7 +695,7 @@ Date:   Tue Dec 2 00:25:49 2025 -0800
  1 file changed, 13 insertions(+), 13 deletions(-)
 
 commit e095bb6d414f2868c2915efbba0c999d12c47fcd
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Mon Dec 1 11:35:11 2025 -0800
 
     Improve rendering of dynamics pipeline schematic
@@ -708,7 +708,7 @@ Date:   Mon Dec 1 11:35:11 2025 -0800
  2 files changed, 19 insertions(+), 16 deletions(-)
 
 commit b663b7602b65918ef6322dc22b256f76392a48ae
-Author: Gabe Oppenheimer <goppenheimer@google.com>
+Author: Gabe Oppenheimer <REDACTED_EMAIL_0a656a669dfa39824d97ea8a>
 Date:   Mon Dec 1 10:05:23 2025 -0800
 
     Final preparations for the v3.4.0 release
@@ -722,7 +722,7 @@ Date:   Mon Dec 1 10:05:23 2025 -0800
  3 files changed, 35 insertions(+), 38 deletions(-)
 
 commit 448fc0e4d5e429e6b5b3caf99c8bb496ad9f2c93
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Dec 1 08:01:33 2025 -0800
 
     Report the actual GPU framerate rather than the main thread submit rate when using the filament renderer.
@@ -741,7 +741,7 @@ Date:   Mon Dec 1 08:01:33 2025 -0800
  8 files changed, 44 insertions(+), 22 deletions(-)
 
 commit 4896e698f6ceae8ba66552da0d18bc3a1e55a7e6
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Mon Dec 1 07:38:46 2025 -0800
 
     Update "mjModel changes" section in `simulation.rst`
@@ -753,7 +753,7 @@ Date:   Mon Dec 1 07:38:46 2025 -0800
  1 file changed, 122 insertions(+), 38 deletions(-)
 
 commit 19e2d0ae2f5e6c094e6e0105045457075d2de2d0
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Mon Dec 1 07:38:12 2025 -0800
 
     Add `mj_fwdKinematics` and a table improving documentation of the MuJoCo computation pipeline structure.
@@ -775,7 +775,7 @@ Date:   Mon Dec 1 07:38:12 2025 -0800
  11 files changed, 89 insertions(+), 14 deletions(-)
 
 commit 4c40d5938e447535b94158eff8122163d8ad144a
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Mon Dec 1 06:35:58 2025 -0800
 
     Add type hints to tuple constants in codegen/generators/constants.py.
@@ -789,7 +789,7 @@ Date:   Mon Dec 1 06:35:58 2025 -0800
  1 file changed, 17 insertions(+), 17 deletions(-)
 
 commit d3c858ed320cd94c61ad6221e68752e5e567004f
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Mon Dec 1 06:12:40 2025 -0800
 
     Make table shadows visible in dark theme, add a table type with smaller text.
@@ -803,7 +803,7 @@ Date:   Mon Dec 1 06:12:40 2025 -0800
  1 file changed, 25 insertions(+), 1 deletion(-)
 
 commit 94fb10bf3d7fce1cd153d18cca361b18af0f8b36
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Dec 1 06:10:06 2025 -0800
 
     Internal changes
@@ -815,7 +815,7 @@ Date:   Mon Dec 1 06:10:06 2025 -0800
  1 file changed, 1 deletion(-)
 
 commit 9b7134b15bf6733a5dba9cb5a37866de08670564
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Dec 1 04:56:28 2025 -0800
 
     Add OSX and WIN32 support for getting the native window pointer.
@@ -829,7 +829,7 @@ Date:   Mon Dec 1 04:56:28 2025 -0800
  3 files changed, 45 insertions(+), 4 deletions(-)
 
 commit ad24889bb9d6e4983ee51dacb8154ee4e5f9356e
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Mon Dec 1 04:13:07 2025 -0800
 
     Add `mj_rayMeshNormal` (not exposed in public header)
@@ -844,7 +844,7 @@ Date:   Mon Dec 1 04:13:07 2025 -0800
  4 files changed, 88 insertions(+), 28 deletions(-)
 
 commit 139a5b649430239d8e95679faf84eddcef384666
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Dec 1 03:57:37 2025 -0800
 
     Rename `toolbox` to `platform`.
@@ -879,7 +879,7 @@ Date:   Mon Dec 1 03:57:37 2025 -0800
  24 files changed, 194 insertions(+), 195 deletions(-)
 
 commit c6b587b515e30bc3f475628e6ec4c89aa8f1e501
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Dec 1 03:36:36 2025 -0800
 
     Use cmake FILE(COPY) for deploying custom CMakeLists.txt.
@@ -897,7 +897,7 @@ Date:   Mon Dec 1 03:36:36 2025 -0800
  7 files changed, 49 insertions(+), 19 deletions(-)
 
 commit fe74ea2e7bba9e2386d32840a7b48ecc0e675abb
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Dec 1 02:48:14 2025 -0800
 
     Match definition with declaration.
@@ -909,7 +909,7 @@ Date:   Mon Dec 1 02:48:14 2025 -0800
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit a7e62a6755c128bc04f2b824e9f5fadbca1916c8
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Dec 1 02:44:53 2025 -0800
 
     Set visual studio working directory to the `bin` directory.
@@ -921,7 +921,7 @@ Date:   Mon Dec 1 02:44:53 2025 -0800
  1 file changed, 4 insertions(+)
 
 commit ea78d83363373ebb8c78dc6c1d62959df0a60fae
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Dec 1 02:41:01 2025 -0800
 
     Use working directory if no HOME path specified.
@@ -933,7 +933,7 @@ Date:   Mon Dec 1 02:41:01 2025 -0800
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 commit 69179ead4844c850129e41a8be5d23cc0ea87cfd
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Fri Nov 28 06:35:11 2025 -0800
 
     Internal change.
@@ -945,7 +945,7 @@ Date:   Fri Nov 28 06:35:11 2025 -0800
  1 file changed, 14 insertions(+), 2 deletions(-)
 
 commit 7caa3d6703fca161fa5435c7263f1d5e9e68156b
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Thu Nov 27 14:08:14 2025 -0800
 
     Add names to some sensors in sleep test XML.
@@ -957,7 +957,7 @@ Date:   Thu Nov 27 14:08:14 2025 -0800
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 commit 8f9250472e682eb104508dc963887c628e449fe7
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Thu Nov 27 13:32:56 2025 -0800
 
     Improve names of Free camera control modes.
@@ -969,7 +969,7 @@ Date:   Thu Nov 27 13:32:56 2025 -0800
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 commit 2ea403575e340bd765bd1dee0632741e706ec3c3
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Thu Nov 27 13:27:23 2025 -0800
 
     studio: invert mouse scroll direction for camera zoom.
@@ -981,7 +981,7 @@ Date:   Thu Nov 27 13:27:23 2025 -0800
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 commit dc5c2faf91256e609817afaec9e7a95b0ee67be1
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Thu Nov 27 09:24:11 2025 -0800
 
     Cosmetic cleanup in engine_collision_sdf.c
@@ -993,7 +993,7 @@ Date:   Thu Nov 27 09:24:11 2025 -0800
  1 file changed, 35 insertions(+), 1 deletion(-)
 
 commit 8a5c52d395c468ceed6f1a67996ececd2ecb6700
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Thu Nov 27 08:41:25 2025 -0800
 
     Use a dedicated function for wrapper struct names
@@ -1017,7 +1017,7 @@ Date:   Thu Nov 27 08:41:25 2025 -0800
  11 files changed, 146 insertions(+), 98 deletions(-)
 
 commit 9ca1598b231e43df779bb74c012358bd59d6b313
-Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Author: Matias Manevi <REDACTED_EMAIL_138998ce766fbfc7e7204158>
 Date:   Thu Nov 27 07:41:42 2025 -0800
 
     Refactor MuJoCo WASM struct codegen.
@@ -1032,7 +1032,7 @@ Date:   Thu Nov 27 07:41:42 2025 -0800
  4 files changed, 258 insertions(+), 468 deletions(-)
 
 commit 5163dfa8235b2be92b5bb5ed3569635d3262bbc1
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Nov 27 07:33:57 2025 -0800
 
     Move UX drawing functions into a shared library.
@@ -1049,7 +1049,7 @@ Date:   Thu Nov 27 07:33:57 2025 -0800
  6 files changed, 949 insertions(+), 856 deletions(-)
 
 commit 23825a5bcfb28519a1737bcdc8213480332bc7e3
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Nov 27 05:36:57 2025 -0800
 
     Implement sensor chart.
@@ -1061,7 +1061,7 @@ Date:   Thu Nov 27 05:36:57 2025 -0800
  1 file changed, 59 insertions(+)
 
 commit 406062efafd3713598ab44b3d613ad9ce1fd0715
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 26 09:12:53 2025 -0800
 
     Remove TODO (charts have been implemented).
@@ -1073,7 +1073,7 @@ Date:   Wed Nov 26 09:12:53 2025 -0800
  1 file changed, 4 deletions(-)
 
 commit 9274a0014ae381f9add4eb5104059a114aeaca9b
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 26 09:00:57 2025 -0800
 
     Fix UV scaling.
@@ -1085,7 +1085,7 @@ Date:   Wed Nov 26 09:00:57 2025 -0800
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 commit 05f194c412dd410a2208e855dece5fd9d36f0eab
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Wed Nov 26 08:42:44 2025 -0800
 
     Reorganization of the WASM bindings.cc template
@@ -1104,7 +1104,7 @@ Date:   Wed Nov 26 08:42:44 2025 -0800
  4 files changed, 8328 insertions(+), 8403 deletions(-)
 
 commit c7e0c01e80b67f88f4332c5bba0f23bb47755fc4
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 26 07:26:51 2025 -0800
 
     Prevent decorative elements from casting shadows.
@@ -1118,7 +1118,7 @@ Date:   Wed Nov 26 07:26:51 2025 -0800
  3 files changed, 17 insertions(+), 1 deletion(-)
 
 commit 0425355efc2f44255abdd81c86007931cfda4baf
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 26 06:39:33 2025 -0800
 
     Use a switch statement for handling geometry types.
@@ -1130,7 +1130,7 @@ Date:   Wed Nov 26 06:39:33 2025 -0800
  1 file changed, 68 insertions(+), 45 deletions(-)
 
 commit aa25075ea4fcf64d7fbfa5af66c61226229df998
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 26 05:32:09 2025 -0800
 
     Implement triangle geoms.
@@ -1146,7 +1146,7 @@ Date:   Wed Nov 26 05:32:09 2025 -0800
  5 files changed, 45 insertions(+)
 
 commit ed69fe85f14f548c91c065cd3ec994c07d5414df
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 26 03:59:41 2025 -0800
 
     Only build fonts when using filament backend.
@@ -1158,7 +1158,7 @@ Date:   Wed Nov 26 03:59:41 2025 -0800
  1 file changed, 12 insertions(+), 11 deletions(-)
 
 commit ae24034f2474927d2c380cfe5cbc0677ff75512e
-Author: Kyle Bayes <kylebayes@google.com>
+Author: Kyle Bayes <REDACTED_EMAIL_24b365983d2c646f1755b590>
 Date:   Wed Nov 26 03:25:12 2025 -0800
 
     Refactor hfield-convex collision code. This should be a no-op.
@@ -1178,7 +1178,7 @@ Date:   Wed Nov 26 03:25:12 2025 -0800
  9 files changed, 163 insertions(+), 139 deletions(-)
 
 commit fcad41a5b165d96f9341498df269867f2c1f573d
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 26 03:24:34 2025 -0800
 
     Implement solver stats charts.
@@ -1191,7 +1191,7 @@ Date:   Wed Nov 26 03:24:34 2025 -0800
  2 files changed, 149 insertions(+), 29 deletions(-)
 
 commit 011166a13a95ca177aa7e1922bfc9a1ade430398
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Wed Nov 26 02:56:57 2025 -0800
 
     Update the studio/README.md to summarize platform support.
@@ -1203,7 +1203,7 @@ Date:   Wed Nov 26 02:56:57 2025 -0800
  1 file changed, 17 insertions(+), 8 deletions(-)
 
 commit 4ce0ee2011c23dc670f8842c76e7c7eacfab7daf
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 26 02:35:09 2025 -0800
 
     Update texture handling due to recent ImGui upgrade.
@@ -1216,7 +1216,7 @@ Date:   Wed Nov 26 02:35:09 2025 -0800
  2 files changed, 57 insertions(+), 11 deletions(-)
 
 commit f2823836a66eec25a64cf394fdce5d8bb225f3f7
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Wed Nov 26 02:25:24 2025 -0800
 
     Updates for MuJoCo Warp documentation.
@@ -1228,7 +1228,7 @@ Date:   Wed Nov 26 02:25:24 2025 -0800
  1 file changed, 1 insertion(+), 4 deletions(-)
 
 commit a9fe8340bf6edd2a54843eb58d249cc1851ca3d6
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Wed Nov 26 01:55:19 2025 -0800
 
     Remove extraneous colons in XMLreference
@@ -1240,7 +1240,7 @@ Date:   Wed Nov 26 01:55:19 2025 -0800
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 commit a1579ac3e1e063c7b61e9de13648b8fadaa1f93f
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 26 00:24:36 2025 -0800
 
     Use static_cast instead of reinterpret_cast.
@@ -1252,7 +1252,7 @@ Date:   Wed Nov 26 00:24:36 2025 -0800
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit d940b2b7f96c9a3b6f8ca8e410262ad8efa2a86d
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 25 16:07:10 2025 -0800
 
     Update versions of imgui and implot.
@@ -1265,7 +1265,7 @@ Date:   Tue Nov 25 16:07:10 2025 -0800
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 commit c07e3cb8a8276c564bb0df4107cd00ff7c7f29ef
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Tue Nov 25 14:35:35 2025 -0800
 
     Internal changes only.
@@ -1277,7 +1277,7 @@ Date:   Tue Nov 25 14:35:35 2025 -0800
  1 file changed, 1 insertion(+), 2 deletions(-)
 
 commit 181dcab6be1c66a23544a7cdcdd440e63e36abed
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 25 10:39:37 2025 -0800
 
     Combine markers and content and reorganize parts of the WASM template file
@@ -1291,7 +1291,7 @@ Date:   Tue Nov 25 10:39:37 2025 -0800
  3 files changed, 125 insertions(+), 153 deletions(-)
 
 commit b6e162d6fa11123de59d17ab61a37623dbb88af3
-Author: Gabe Oppenheimer <goppenheimer@google.com>
+Author: Gabe Oppenheimer <REDACTED_EMAIL_0a656a669dfa39824d97ea8a>
 Date:   Tue Nov 25 10:14:29 2025 -0800
 
     Update MuJoCo version from 3.3.8 to 3.4.0
@@ -1318,7 +1318,7 @@ Date:   Tue Nov 25 10:14:29 2025 -0800
  16 files changed, 34 insertions(+), 34 deletions(-)
 
 commit 6e59f61c70d26a9dc089cdf1b8a3ff6980e5b198
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Tue Nov 25 08:28:32 2025 -0800
 
     Make WASM codegen output to be alphabetically ordered.
@@ -1335,7 +1335,7 @@ Date:   Tue Nov 25 08:28:32 2025 -0800
  6 files changed, 3923 insertions(+), 3914 deletions(-)
 
 commit 6208730744554988c44318e2e085acda0ee62260
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Tue Nov 25 07:57:06 2025 -0800
 
     MuJoCo Warp documentation: Option.contact_sensor_maxmatch information.
@@ -1347,7 +1347,7 @@ Date:   Tue Nov 25 07:57:06 2025 -0800
  1 file changed, 9 insertions(+)
 
 commit 5d7b2bd7caaa642a92b1152043a5b773364d03aa
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Tue Nov 25 07:43:59 2025 -0800
 
     MuJoCo Warp documentation: update information about setting both `nconmax` and `naconmax`.
@@ -1359,7 +1359,7 @@ Date:   Tue Nov 25 07:43:59 2025 -0800
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 893882171eb0b50ec9c23d704cf1c5bca87cfc94
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Tue Nov 25 06:25:49 2025 -0800
 
     MuJoCo Warp documentation: Does MJWarp work with multiple GPUs?.
@@ -1371,7 +1371,7 @@ Date:   Tue Nov 25 06:25:49 2025 -0800
  1 file changed, 26 insertions(+)
 
 commit d8712808b97ce9c32d064d94c9e39461516cbbf8
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 25 06:24:22 2025 -0800
 
     Allow users to access mjrContext.
@@ -1383,7 +1383,7 @@ Date:   Tue Nov 25 06:24:22 2025 -0800
  1 file changed, 3 insertions(+)
 
 commit f28bcc43468ec124634219ee971e41922502b86d
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 25 05:25:14 2025 -0800
 
     Allow binding to arbitrary textures.
@@ -1396,7 +1396,7 @@ Date:   Tue Nov 25 05:25:14 2025 -0800
  2 files changed, 9 insertions(+), 4 deletions(-)
 
 commit 589e013d9b82ea2c9fecdf314191702ec1d38d87
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 25 05:21:45 2025 -0800
 
     Fonts should have const data.
@@ -1409,7 +1409,7 @@ Date:   Tue Nov 25 05:21:45 2025 -0800
  2 files changed, 3 insertions(+), 3 deletions(-)
 
 commit bdaec5758b7e46eb0b1700795fec6bf07e1b73ed
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Tue Nov 25 04:53:04 2025 -0800
 
     Generate MuJoCo Warp documentation with modified types.py.
@@ -1422,7 +1422,7 @@ Date:   Tue Nov 25 04:53:04 2025 -0800
  2 files changed, 83 insertions(+)
 
 commit b98379372e59e3466fa7d0371e6ab323625becd4
-Author: Kyle Bayes <kylebayes@google.com>
+Author: Kyle Bayes <REDACTED_EMAIL_24b365983d2c646f1755b590>
 Date:   Tue Nov 25 03:43:06 2025 -0800
 
     Refactor epaWitness.
@@ -1434,7 +1434,7 @@ Date:   Tue Nov 25 03:43:06 2025 -0800
  1 file changed, 13 insertions(+), 22 deletions(-)
 
 commit 9b0f8dd963b31be8e7831a9cc7fc8da554d8348d
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 25 03:17:38 2025 -0800
 
     Update CMakeLists.txt to add/remove files.
@@ -1446,7 +1446,7 @@ Date:   Tue Nov 25 03:17:38 2025 -0800
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 commit 888d3a7b07434f6eeedb3d724b23bf8fffb4e1d8
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Nov 25 03:08:01 2025 -0800
 
     Add `mj_copyState`
@@ -1469,7 +1469,7 @@ Date:   Tue Nov 25 03:08:01 2025 -0800
  12 files changed, 139 insertions(+)
 
 commit eac8e6003743a53c8707bbb28250017a3935ee4f
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 25 03:06:55 2025 -0800
 
     Merge Physics functionality into App.
@@ -1490,7 +1490,7 @@ Date:   Tue Nov 25 03:06:55 2025 -0800
  6 files changed, 252 insertions(+), 397 deletions(-)
 
 commit 67b09f9afb459e732a099c076a5c602fb89472e2
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 25 02:37:06 2025 -0800
 
     Refactor simulation state history tracking into a SimHistory class.
@@ -1507,7 +1507,7 @@ Date:   Tue Nov 25 02:37:06 2025 -0800
  6 files changed, 211 insertions(+), 97 deletions(-)
 
 commit 6d9d59cb987d3432178279d4374ca2cbe812b0c7
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 25 02:07:23 2025 -0800
 
     Move pause handling into StepControl.
@@ -1527,7 +1527,7 @@ Date:   Tue Nov 25 02:07:23 2025 -0800
  5 files changed, 87 insertions(+), 84 deletions(-)
 
 commit 711a388b3d30f82bc1cd5de2ad3c8ae10e9b0690
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Mon Nov 24 10:17:14 2025 -0800
 
     Sort and generate optional struct bindings in WASM.
@@ -1541,7 +1541,7 @@ Date:   Mon Nov 24 10:17:14 2025 -0800
  3 files changed, 37 insertions(+), 49 deletions(-)
 
 commit 217317ccbaed497c3a19ba5f6706b02c0e179e0a
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Mon Nov 24 09:35:06 2025 -0800
 
     Change WASM generators from classes to functions.
@@ -1557,7 +1557,7 @@ Date:   Mon Nov 24 09:35:06 2025 -0800
  5 files changed, 111 insertions(+), 131 deletions(-)
 
 commit 1c910875d2311473c2dfd84257ab61b5639ae8ea
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Mon Nov 24 09:12:38 2025 -0800
 
     MuJoCo Warp documentation: Differentiability.
@@ -1569,7 +1569,7 @@ Date:   Mon Nov 24 09:12:38 2025 -0800
  1 file changed, 10 insertions(+)
 
 commit 2ca56179a7b0082462ce737b876517ed53d8bbd8
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Mon Nov 24 08:13:48 2025 -0800
 
     Add Frequently Asked Questions: Learning frameworks to MuJoCo Warp documentation.
@@ -1581,7 +1581,7 @@ Date:   Mon Nov 24 08:13:48 2025 -0800
  1 file changed, 26 insertions(+)
 
 commit cb391962ca6503bbb46d75b449e3b781bf1b6fa8
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Mon Nov 24 02:02:38 2025 -0800
 
     MuJoCo Warp documentation: Orientation representation.
@@ -1593,7 +1593,7 @@ Date:   Mon Nov 24 02:02:38 2025 -0800
  1 file changed, 22 insertions(+)
 
 commit a10504273411502475a31eff3bcb9a2a1a14e55c
-Author: Kyle Bayes <kylebayes@google.com>
+Author: Kyle Bayes <REDACTED_EMAIL_24b365983d2c646f1755b590>
 Date:   Fri Nov 21 12:59:34 2025 -0800
 
     Tidy up primitive support functions.
@@ -1605,7 +1605,7 @@ Date:   Fri Nov 21 12:59:34 2025 -0800
  1 file changed, 45 insertions(+), 50 deletions(-)
 
 commit a359780ca16e5c8109fa877054709aff9b845c86
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Fri Nov 21 08:15:42 2025 -0800
 
     Import google-deepmind/mujoco_warp from GitHub.
@@ -1636,7 +1636,7 @@ Date:   Fri Nov 21 08:15:42 2025 -0800
  20 files changed, 1581 insertions(+), 2007 deletions(-)
 
 commit bb488fec29e2d4424021e01d51efa2781d9a189e
-Author: Kyle Bayes <kylebayes@google.com>
+Author: Kyle Bayes <REDACTED_EMAIL_24b365983d2c646f1755b590>
 Date:   Fri Nov 21 07:57:20 2025 -0800
 
     Remove MPR from comment.
@@ -1648,7 +1648,7 @@ Date:   Fri Nov 21 07:57:20 2025 -0800
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit f8b92410d42a75feaba75a006b66ec114dd1186b
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Fri Nov 21 06:24:24 2025 -0800
 
     Add test explaining body_rootid and body_weldid semantics
@@ -1660,7 +1660,7 @@ Date:   Fri Nov 21 06:24:24 2025 -0800
  1 file changed, 68 insertions(+), 9 deletions(-)
 
 commit 7e6cb642a36a940aa5d532434328ca14aab0649a
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Fri Nov 21 06:04:34 2025 -0800
 
     Improve formatting of percent real time selection
@@ -1673,7 +1673,7 @@ Date:   Fri Nov 21 06:04:34 2025 -0800
  2 files changed, 9 insertions(+), 26 deletions(-)
 
 commit a2002eb3d76c21b3d86529bf428458b40f7e5e4b
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Fri Nov 21 04:57:20 2025 -0800
 
     Various UX improvements including:
@@ -1700,7 +1700,7 @@ Date:   Fri Nov 21 04:57:20 2025 -0800
  8 files changed, 1313 insertions(+), 1121 deletions(-)
 
 commit ae8272787f2f7227f7cfec812d8d1b0bacb4996a
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Thu Nov 20 12:29:35 2025 -0800
 
     Rollback of 7cb2e31f4b5d4bdd4b5174efb2793e10b6bb3d00
@@ -1712,7 +1712,7 @@ Date:   Thu Nov 20 12:29:35 2025 -0800
  1 file changed, 43 deletions(-)
 
 commit c2e9bfa3e87d6b173cf2337bacb70d7a97b4a5a3
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Thu Nov 20 10:53:59 2025 -0800
 
     Clarify semantic of `body_rootid` and `body_weldid`
@@ -1726,7 +1726,7 @@ Date:   Thu Nov 20 10:53:59 2025 -0800
  3 files changed, 6 insertions(+), 6 deletions(-)
 
 commit 7cb2e31f4b5d4bdd4b5174efb2793e10b6bb3d00
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Thu Nov 20 09:02:58 2025 -0800
 
     Annotate GlobalModel for LSAN
@@ -1738,7 +1738,7 @@ Date:   Thu Nov 20 09:02:58 2025 -0800
  1 file changed, 44 insertions(+), 2 deletions(-)
 
 commit ee8dbd43470498ede4633afeaea80ae1ed9562ef
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Thu Nov 20 05:50:55 2025 -0800
 
     Simplify enum WASM bindings generator
@@ -1753,7 +1753,7 @@ Date:   Thu Nov 20 05:50:55 2025 -0800
  4 files changed, 18 insertions(+), 21 deletions(-)
 
 commit a0d49ade1bf1e9f979d461cde7fe21693a456714
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Thu Nov 20 01:05:26 2025 -0800
 
     More simplification to functions.py in WASM bindings
@@ -1767,7 +1767,7 @@ Date:   Thu Nov 20 01:05:26 2025 -0800
  3 files changed, 62 insertions(+), 142 deletions(-)
 
 commit 102f382c9d46f9fe4b433f4b1753cdc62905569f
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Wed Nov 19 23:53:00 2025 -0800
 
     Rename `uppercase_first_letter` to `capitalize`
@@ -1785,7 +1785,7 @@ Date:   Wed Nov 19 23:53:00 2025 -0800
  5 files changed, 32 insertions(+), 45 deletions(-)
 
 commit 48ecddbe3b1c6b9d7a0df96373e3f733603c8194
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Wed Nov 19 15:34:34 2025 -0800
 
     Simplify functions.py in WASM bindings generation
@@ -1798,7 +1798,7 @@ Date:   Wed Nov 19 15:34:34 2025 -0800
  2 files changed, 81 insertions(+), 213 deletions(-)
 
 commit a0cb97eb4dc15fe4af5bf83a293a61148b8539e2
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Wed Nov 19 11:07:23 2025 -0800
 
     Improve attach docs.
@@ -1811,7 +1811,7 @@ Date:   Wed Nov 19 11:07:23 2025 -0800
  2 files changed, 28 insertions(+), 24 deletions(-)
 
 commit d1317fd1a5b9185fa450b1129dc69d06c203c557
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Wed Nov 19 08:00:13 2025 -0800
 
     Add ray normal computation for primitives (currently private)
@@ -1832,7 +1832,7 @@ Date:   Wed Nov 19 08:00:13 2025 -0800
  10 files changed, 335 insertions(+), 34 deletions(-)
 
 commit 86a77ff8eb6c4e942a4ab9ec9172073517ad61d6
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Wed Nov 19 07:55:00 2025 -0800
 
     Change `mjtSize` from `uint64_t` to `int64_t`.
@@ -1850,7 +1850,7 @@ Date:   Wed Nov 19 07:55:00 2025 -0800
  5 files changed, 149 insertions(+), 143 deletions(-)
 
 commit 49394d57d9827ccfeebdf585542e559691c0cb50
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Wed Nov 19 06:24:57 2025 -0800
 
     Rename WASM binding wrapper functions and reorder generated code.
@@ -1864,7 +1864,7 @@ Date:   Wed Nov 19 06:24:57 2025 -0800
  3 files changed, 5861 insertions(+), 5860 deletions(-)
 
 commit 10fe5ff07f04f97a5e8ce9cdee1852bfc7e4971f
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Wed Nov 19 06:21:24 2025 -0800
 
     Generate `MjVisual`, `MjModel`, `MjData` and `MjSpec` structs declaration
@@ -1879,7 +1879,7 @@ Date:   Wed Nov 19 06:21:24 2025 -0800
  4 files changed, 2772 insertions(+), 2839 deletions(-)
 
 commit 07d8bd5b801a35a24f5fcef04a6178a5ce4f9b85
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Wed Nov 19 05:21:54 2025 -0800
 
     MuJoCo Warp documentation: Add note about `nconmax` and `njmax` not being parsed from XML.
@@ -1891,7 +1891,7 @@ Date:   Wed Nov 19 05:21:54 2025 -0800
  1 file changed, 7 insertions(+)
 
 commit 3aa973894ce646e2795c634aace1f81d1f7ea08f
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Wed Nov 19 03:39:15 2025 -0800
 
     Fast flex: Interpolate contact points directly.
@@ -1905,7 +1905,7 @@ Date:   Wed Nov 19 03:39:15 2025 -0800
  1 file changed, 94 insertions(+), 67 deletions(-)
 
 commit a2fd5fdd4acb5dbd79bd0913a35e989cf0f89bcf
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 19 02:34:24 2025 -0800
 
     Move profiler logic into a separate class.
@@ -1922,7 +1922,7 @@ Date:   Wed Nov 19 02:34:24 2025 -0800
  6 files changed, 232 insertions(+), 163 deletions(-)
 
 commit e18e35f967921dfe935db979d0914e7df13a768a
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Nov 18 12:55:04 2025 -0800
 
     Fix normal only for libccd during hfield collisions.
@@ -1935,7 +1935,7 @@ Date:   Tue Nov 18 12:55:04 2025 -0800
  2 files changed, 8 insertions(+), 5 deletions(-)
 
 commit 7569ac960db1cd778a957d8e8e0cd26700a6fe0e
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 18 08:16:02 2025 -0800
 
     Create material instances for each draw call rather than for each clip rect.
@@ -1950,7 +1950,7 @@ Date:   Tue Nov 18 08:16:02 2025 -0800
  2 files changed, 13 insertions(+), 21 deletions(-)
 
 commit 62872fecd1a9c54b890480d9330f2cbaebb33630
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Tue Nov 18 04:47:55 2025 -0800
 
     Reduce size of `mjsTexture.gridlayout` (was 13, should be 12)
@@ -1965,7 +1965,7 @@ Date:   Tue Nov 18 04:47:55 2025 -0800
  4 files changed, 4 insertions(+), 4 deletions(-)
 
 commit 971e73ab0437ff56dde7b278fc7621558bcb9924
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Tue Nov 18 03:27:24 2025 -0800
 
     Remove unused argument from mj_vertBodyWeight.
@@ -1977,7 +1977,7 @@ Date:   Tue Nov 18 03:27:24 2025 -0800
  1 file changed, 4 insertions(+), 7 deletions(-)
 
 commit 8077a6819c545e197599630f2a728e8d94fff953
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Nov 17 23:13:59 2025 -0800
 
     Add support for OpenSans and font-awesome fonts.
@@ -1994,7 +1994,7 @@ Date:   Mon Nov 17 23:13:59 2025 -0800
  6 files changed, 141 insertions(+), 9 deletions(-)
 
 commit 695e4c4038d550d408cf8f783615ddb217152abd
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Mon Nov 17 10:45:37 2025 -0800
 
     MuJoCo Warp documentation: Command line scripts.
@@ -2006,7 +2006,7 @@ Date:   Mon Nov 17 10:45:37 2025 -0800
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 commit bc169d82c18612b012ca3412bcdf09d686440804
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Mon Nov 17 10:20:10 2025 -0800
 
     Fix MJX `plane_cylinder` docstring.
@@ -2018,7 +2018,7 @@ Date:   Mon Nov 17 10:20:10 2025 -0800
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit e882399eb0afa3720283b8006f17f6b819002651
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Nov 17 07:48:22 2025 -0800
 
     Use mjTHREADLOCAL macro instead of intrinsic.
@@ -2032,7 +2032,7 @@ Date:   Mon Nov 17 07:48:22 2025 -0800
  1 file changed, 6 insertions(+), 5 deletions(-)
 
 commit 85b6194f91d0fa69f2f844695d64193f6d8bb068
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Mon Nov 17 07:47:50 2025 -0800
 
     Add a README with instructions for how to build and run MuJoCo Studio externally
@@ -2045,7 +2045,7 @@ Date:   Mon Nov 17 07:47:50 2025 -0800
  2 files changed, 165 insertions(+)
 
 commit 12e24d66f6da62dcf36fc5b55b330b947f3dc436
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Mon Nov 17 07:09:42 2025 -0800
 
     Add steps to build MuJoCo Studio to Github actions
@@ -2058,7 +2058,7 @@ Date:   Mon Nov 17 07:09:42 2025 -0800
  2 files changed, 153 insertions(+), 14 deletions(-)
 
 commit 8eca9926dc16200dbcae50587f11f235f7d10d94
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Mon Nov 17 06:34:43 2025 -0800
 
     Fix various MuJoCo Studio build issues on Windows, MacOS and Linux
@@ -2085,7 +2085,7 @@ Date:   Mon Nov 17 06:34:43 2025 -0800
  16 files changed, 112 insertions(+), 71 deletions(-)
 
 commit a66cf303f8dd346e15718ce6cf61e4b38d8e839a
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Mon Nov 17 05:46:52 2025 -0800
 
     Clean up ray functions
@@ -2104,7 +2104,7 @@ Date:   Mon Nov 17 05:46:52 2025 -0800
  8 files changed, 73 insertions(+), 65 deletions(-)
 
 commit 53e254b7151df0521b834c34e2f94c49831186bc
-Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Author: Matias Manevi <REDACTED_EMAIL_138998ce766fbfc7e7204158>
 Date:   Fri Nov 14 10:02:20 2025 -0800
 
     Generate `using` declarations for anonymous structs in WASM bindings.
@@ -2118,7 +2118,7 @@ Date:   Fri Nov 14 10:02:20 2025 -0800
  3 files changed, 14 insertions(+), 10 deletions(-)
 
 commit 999344c998dbdee628fdb1248665e898a83455a5
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Fri Nov 14 09:59:57 2025 -0800
 
     Use the path of the loaded model as the base path for all further load/save operations.
@@ -2132,7 +2132,7 @@ Date:   Fri Nov 14 09:59:57 2025 -0800
  3 files changed, 53 insertions(+), 15 deletions(-)
 
 commit a36f452250ab2027a0d5a70b29e3cecb36679dfb
-Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Author: Matias Manevi <REDACTED_EMAIL_138998ce766fbfc7e7204158>
 Date:   Fri Nov 14 08:50:04 2025 -0800
 
     Refactor MuJoCo WASM bindings functions code generation and auto-generate functions requiring argument boundchecks.
@@ -2148,7 +2148,7 @@ Date:   Fri Nov 14 08:50:04 2025 -0800
  5 files changed, 1341 insertions(+), 1876 deletions(-)
 
 commit 3f69deb328eb29eee8d3daff789df630f1d37622
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Fri Nov 14 02:40:17 2025 -0800
 
     Correctly initialize mjrContext before creation.
@@ -2160,7 +2160,7 @@ Date:   Fri Nov 14 02:40:17 2025 -0800
  1 file changed, 1 insertion(+)
 
 commit 83363f41ee373eefbb4c2fa144fe38817c3b2a14
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Fri Nov 14 02:39:19 2025 -0800
 
     Fix arrow positioning.
@@ -2172,7 +2172,7 @@ Date:   Fri Nov 14 02:39:19 2025 -0800
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 commit 6c15c711ee585c8ffb7be89f8675ecbd7ecc79c9
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Fri Nov 14 00:02:05 2025 -0800
 
     Make `mjv_cameraFrame` and `mjv_cameraFrustum` public.
@@ -2191,7 +2191,7 @@ Date:   Fri Nov 14 00:02:05 2025 -0800
  8 files changed, 161 insertions(+), 6 deletions(-)
 
 commit 86ac3a5e28080d82a05a30917f4661ee2230a370
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Thu Nov 13 09:46:45 2025 -0800
 
     Update the WASM bindings README
@@ -2207,7 +2207,7 @@ Date:   Thu Nov 13 09:46:45 2025 -0800
  1 file changed, 3 insertions(+), 16 deletions(-)
 
 commit b0e75b71035fbc4a2224e01ca8d83e02d8aa28b8
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Thu Nov 13 05:56:11 2025 -0800
 
     Refactor Github actions so that all build steps are implemented as functions in a separate build_steps.sh file.
@@ -2222,7 +2222,7 @@ Date:   Thu Nov 13 05:56:11 2025 -0800
  2 files changed, 318 insertions(+), 149 deletions(-)
 
 commit 8b9fa2674c1e6aee327e461037550494958468e9
-Author: Kyle Bayes <kylebayes@google.com>
+Author: Kyle Bayes <REDACTED_EMAIL_24b365983d2c646f1755b590>
 Date:   Thu Nov 13 03:40:36 2025 -0800
 
     Use std::vector instead of array in MJCF schema.
@@ -2238,7 +2238,7 @@ Date:   Thu Nov 13 03:40:36 2025 -0800
  5 files changed, 182 insertions(+), 196 deletions(-)
 
 commit 26c1622ac8fd0dcddae504005856b8c45642fa38
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Thu Nov 13 03:21:43 2025 -0800
 
     Internal change
@@ -2250,7 +2250,7 @@ Date:   Thu Nov 13 03:21:43 2025 -0800
  1 file changed, 2 insertions(+)
 
 commit 042c5223a6dcfa1d197dba7ad9491169e3fa6627
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Thu Nov 13 02:31:15 2025 -0800
 
     Change `mj_sizeModel` return type to `mjtSize`.
@@ -2269,7 +2269,7 @@ Date:   Thu Nov 13 02:31:15 2025 -0800
  8 files changed, 9 insertions(+), 8 deletions(-)
 
 commit a168b3ef7f4f1e4f49752f6046128ebb9e48495c
-Author: Kyle Bayes <kylebayes@google.com>
+Author: Kyle Bayes <REDACTED_EMAIL_24b365983d2c646f1755b590>
 Date:   Thu Nov 13 01:46:08 2025 -0800
 
     Refactor hill climbing support function.
@@ -2281,7 +2281,7 @@ Date:   Thu Nov 13 01:46:08 2025 -0800
  1 file changed, 15 insertions(+), 14 deletions(-)
 
 commit 727347813f08111a113587b3a2d92ee2ddeba043
-Author: Silvia Cruciani <silviacruciani@google.com>
+Author: Silvia Cruciani <REDACTED_EMAIL_5fa1a077d81ee2b4d6e8ddb0>
 Date:   Wed Nov 12 09:17:25 2025 -0800
 
     Import google-deepmind/mujoco_warp from GitHub.
@@ -2293,7 +2293,7 @@ Date:   Wed Nov 12 09:17:25 2025 -0800
  1 file changed, 118 insertions(+), 111 deletions(-)
 
 commit 4722925ff44ef8eb7cd8c71e63ef8421c3305568
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Wed Nov 12 08:16:14 2025 -0800
 
     Add a github actions job which quickly determines if the WASM build is broken by only testing on one platform
@@ -2305,7 +2305,7 @@ Date:   Wed Nov 12 08:16:14 2025 -0800
  1 file changed, 73 insertions(+), 8 deletions(-)
 
 commit b8512b9d1fa3033f732f43036e9e7f00654f97de
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Wed Nov 12 07:19:08 2025 -0800
 
     Fix bug related to sleeping static children of mocap bodies.
@@ -2319,7 +2319,7 @@ Date:   Wed Nov 12 07:19:08 2025 -0800
  3 files changed, 36 insertions(+), 5 deletions(-)
 
 commit 7b52d3034e9e4441e40a1e521a16f479b4230c69
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 12 07:14:37 2025 -0800
 
     Fix crash if Renderer is destroyed without having been Init'ed.
@@ -2331,7 +2331,7 @@ Date:   Wed Nov 12 07:14:37 2025 -0800
  1 file changed, 11 insertions(+), 14 deletions(-)
 
 commit 28c536bd93461a335a3e1cef0f938cb4b66c6c54
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 12 02:29:24 2025 -0800
 
     Remove support for custom fonts for OSS project for now.
@@ -2343,7 +2343,7 @@ Date:   Wed Nov 12 02:29:24 2025 -0800
  1 file changed, 21 deletions(-)
 
 commit 52478e15c34ba764c70d2037e584e8ef0f835ece
-Author: Tom Power <tjpower@google.com>
+Author: Tom Power <REDACTED_EMAIL_a32b3099d92579a099a8d138>
 Date:   Wed Nov 12 02:08:18 2025 -0800
 
     Fix issue where contact pairs supported by C back-end are unsupported by MJX:C
@@ -2357,7 +2357,7 @@ Date:   Wed Nov 12 02:08:18 2025 -0800
  3 files changed, 51 insertions(+), 7 deletions(-)
 
 commit 414d6d80ac2ac6115c71a571b9871f9d8fb688ee
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Nov 11 12:07:27 2025 -0800
 
     Update model memory footprint reporting in `mj_printModel`.
@@ -2369,7 +2369,7 @@ Date:   Tue Nov 11 12:07:27 2025 -0800
  1 file changed, 46 insertions(+), 26 deletions(-)
 
 commit bc83bfb076e67e9b964fd9b6cb3e25eadf45232a
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Nov 11 11:45:06 2025 -0800
 
     Restructure AAMM storage for improved cache locality in broadphase, ~35% speedup (of broadphase).
@@ -2381,7 +2381,7 @@ Date:   Tue Nov 11 11:45:06 2025 -0800
  1 file changed, 60 insertions(+), 25 deletions(-)
 
 commit fa7927629024392fbf892a201452d29d6cda1aa0
-Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Author: Matias Manevi <REDACTED_EMAIL_138998ce766fbfc7e7204158>
 Date:   Tue Nov 11 11:30:16 2025 -0800
 
     Remove destructors from `Mjs` wrapper structs.
@@ -2395,7 +2395,7 @@ Date:   Tue Nov 11 11:30:16 2025 -0800
  3 files changed, 3 insertions(+), 63 deletions(-)
 
 commit 6d261528e037524607eb2905d2ddab018f6d1d27
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Tue Nov 11 10:37:45 2025 -0800
 
     Enhance error reporting in WASM codegen generators.
@@ -2409,7 +2409,7 @@ Date:   Tue Nov 11 10:37:45 2025 -0800
  1 file changed, 6 insertions(+)
 
 commit 8e4a5901c3594389962b29a25d0bb98d3e46f4ab
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Tue Nov 11 10:34:14 2025 -0800
 
     Rename internal lists of skipped functions in constants.py.
@@ -2421,7 +2421,7 @@ Date:   Tue Nov 11 10:34:14 2025 -0800
  1 file changed, 20 insertions(+), 20 deletions(-)
 
 commit 54661ab14044d66628f5b42873164f06a758f082
-Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Author: Matias Manevi <REDACTED_EMAIL_138998ce766fbfc7e7204158>
 Date:   Tue Nov 11 10:31:00 2025 -0800
 
     Fully generate Emscripten bindings for MuJoCo functions.
@@ -2437,7 +2437,7 @@ Date:   Tue Nov 11 10:31:00 2025 -0800
  5 files changed, 96 insertions(+), 178 deletions(-)
 
 commit ff037f2e7856412d459886728a9a59e4acd865e2
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Tue Nov 11 07:19:47 2025 -0800
 
     Make Emscripten binding module names consistent
@@ -2450,7 +2450,7 @@ Date:   Tue Nov 11 07:19:47 2025 -0800
  2 files changed, 6 insertions(+), 6 deletions(-)
 
 commit 5b859327cc2de5ac8806e282d3ab3d9a6b2d0080
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Tue Nov 11 07:16:48 2025 -0800
 
     Remove unused manually added structs from WASM bindings.
@@ -2463,7 +2463,7 @@ Date:   Tue Nov 11 07:16:48 2025 -0800
  2 files changed, 30 deletions(-)
 
 commit aa7cf15cc4beae812fd42a52f4b693f7527529cd
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 11 07:09:18 2025 -0800
 
     Set textures before assigning a material.
@@ -2475,7 +2475,7 @@ Date:   Tue Nov 11 07:09:18 2025 -0800
  1 file changed, 1 insertion(+), 4 deletions(-)
 
 commit 22c0b689033682bb0d085d8d8493b88f41680058
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Nov 11 06:44:53 2025 -0800
 
     Improve logic and documentation for sleeping sensors
@@ -2491,7 +2491,7 @@ Date:   Tue Nov 11 06:44:53 2025 -0800
  5 files changed, 98 insertions(+), 47 deletions(-)
 
 commit 3e167e0f0b979e56d5829539bb7b9abcf0d6e47f
-Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Author: Matias Manevi <REDACTED_EMAIL_138998ce766fbfc7e7204158>
 Date:   Tue Nov 11 06:37:16 2025 -0800
 
     Correctly format constructor initializer lists in struct wrappers.
@@ -2504,7 +2504,7 @@ Date:   Tue Nov 11 06:37:16 2025 -0800
  2 files changed, 6 insertions(+), 6 deletions(-)
 
 commit 75774b2a35c756240b77a403521c196d0feb8cd7
-Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Author: Matias Manevi <REDACTED_EMAIL_138998ce766fbfc7e7204158>
 Date:   Tue Nov 11 06:02:20 2025 -0800
 
     Simplify struct header generation by merging the internal `_build_struct_header_internal` function into `build_struct_header`
@@ -2517,7 +2517,7 @@ Date:   Tue Nov 11 06:02:20 2025 -0800
  2 files changed, 68 insertions(+), 101 deletions(-)
 
 commit 1b2206fc509cb33f2dd8277839cb3729383b51f4
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 11 05:50:44 2025 -0800
 
     Do not generate mipmaps for textures loaded from KTX files.
@@ -2529,7 +2529,7 @@ Date:   Tue Nov 11 05:50:44 2025 -0800
  1 file changed, 5 deletions(-)
 
 commit 2261733aa40644f8602d439bc8257ba6642fb622
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 11 05:33:15 2025 -0800
 
     Toggle profiler window using F3.
@@ -2541,7 +2541,7 @@ Date:   Tue Nov 11 05:33:15 2025 -0800
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 commit 1fbea85ef0a3fc71f6244ee2b0bab4b66be094b2
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 11 05:27:06 2025 -0800
 
     Remove redundant call to GenerateMipMaps.
@@ -2555,7 +2555,7 @@ Date:   Tue Nov 11 05:27:06 2025 -0800
  1 file changed, 4 deletions(-)
 
 commit 4a5a36f3fc74cd1473ad1e27e1c1f3bc8f33170c
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 11 05:03:40 2025 -0800
 
     Display error when loading model.
@@ -2568,7 +2568,7 @@ Date:   Tue Nov 11 05:03:40 2025 -0800
  2 files changed, 12 insertions(+), 9 deletions(-)
 
 commit b3deb9dd1209950a6c6cb8b4ba33e93e0ae03598
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Nov 11 04:02:12 2025 -0800
 
     Do not reset camera_id if no tracking object is set.
@@ -2582,7 +2582,7 @@ Date:   Tue Nov 11 04:02:12 2025 -0800
  1 file changed, 1 deletion(-)
 
 commit 88e75cd7e66289347c90418d6467ab77464d0856
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 11 03:50:31 2025 -0800
 
     Remove implot from toolbox/window.cc
@@ -2595,7 +2595,7 @@ Date:   Tue Nov 11 03:50:31 2025 -0800
  2 files changed, 1 insertion(+), 2 deletions(-)
 
 commit 23023edc52dd7dfe47c1e4b7f7399c7da9cef358
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Nov 11 02:27:41 2025 -0800
 
     Fix bug in schema
@@ -2607,7 +2607,7 @@ Date:   Tue Nov 11 02:27:41 2025 -0800
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 39f0321a68200cfe10ee1a420f5fc73f0e10ab50
-Author: Kyle Bayes <kylebayes@google.com>
+Author: Kyle Bayes <REDACTED_EMAIL_24b365983d2c646f1755b590>
 Date:   Mon Nov 10 21:29:42 2025 -0800
 
     Clean up NativeCCD testing models.
@@ -2619,7 +2619,7 @@ Date:   Mon Nov 10 21:29:42 2025 -0800
  1 file changed, 44 insertions(+), 97 deletions(-)
 
 commit bfcceb583e247a5f1b89b7fe2cfd80420f2b3daa
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Mon Nov 10 10:34:01 2025 -0800
 
     Import google-deepmind/mujoco_warp from GitHub.
@@ -2645,7 +2645,7 @@ Date:   Mon Nov 10 10:34:01 2025 -0800
  15 files changed, 365 insertions(+), 1384 deletions(-)
 
 commit f8cef229920c18194a0daf0e95c7e15ba9979e93
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Mon Nov 10 08:22:05 2025 -0800
 
     Change mjWarp admonition class from `attention` to `warning`
@@ -2657,7 +2657,7 @@ Date:   Mon Nov 10 08:22:05 2025 -0800
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit e464e173da333315d8291ab2c6d3217ddbae13ef
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Mon Nov 10 08:20:59 2025 -0800
 
     Update conf.py: "warp only fields" custom section.
@@ -2669,7 +2669,7 @@ Date:   Mon Nov 10 08:20:59 2025 -0800
  1 file changed, 2 insertions(+)
 
 commit 1c6a05de98d9a19b9031bbd46d47c47f3b8d07af
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Mon Nov 10 03:00:38 2025 -0800
 
     Snap Y-axis range to nice decimal bounds in gl2 figures.
@@ -2681,7 +2681,7 @@ Date:   Mon Nov 10 03:00:38 2025 -0800
  1 file changed, 20 insertions(+), 5 deletions(-)
 
 commit 4e46db89037de9a2e388dfbb830b97ec37c4326c
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Fri Nov 7 09:36:27 2025 -0800
 
     Refactor WASM binding directory structure
@@ -2712,7 +2712,7 @@ Date:   Fri Nov 7 09:36:27 2025 -0800
  17 files changed, 1203 insertions(+), 1262 deletions(-)
 
 commit 44220fcc510d5a28421526ee6caede0ccc2e2c0e
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Fri Nov 7 09:01:25 2025 -0800
 
     Refactor WASM bindings in preparation for codegen directory structure update
@@ -2731,7 +2731,7 @@ Date:   Fri Nov 7 09:01:25 2025 -0800
  8 files changed, 96 insertions(+), 222 deletions(-)
 
 commit 59debb50b15aa9e8e0593e90afcd3d4aa84e9d5e
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Fri Nov 7 08:21:34 2025 -0800
 
     Add `SLEEP` to `EnableBit` enum.
@@ -2745,7 +2745,7 @@ Date:   Fri Nov 7 08:21:34 2025 -0800
  1 file changed, 1 insertion(+)
 
 commit 2cd99e2ec6af11dacd36d691eb74097fe22b303f
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Fri Nov 7 08:17:15 2025 -0800
 
     Update the enums_test.ts using the generation script
@@ -2757,7 +2757,7 @@ Date:   Fri Nov 7 08:17:15 2025 -0800
  1 file changed, 44 insertions(+), 36 deletions(-)
 
 commit 883836848a67e06752cde3a4f097c71c79bf4beb
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Fri Nov 7 07:36:05 2025 -0800
 
     Fix box-box distance computation.
@@ -2773,7 +2773,7 @@ Date:   Fri Nov 7 07:36:05 2025 -0800
  5 files changed, 37 insertions(+), 5 deletions(-)
 
 commit 45b079cfe8a77142dbb5e96869a1d7fbf3839519
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Fri Nov 7 07:33:44 2025 -0800
 
     Various minor cleanups in WASM bindings generation code
@@ -2785,7 +2785,7 @@ Date:   Fri Nov 7 07:33:44 2025 -0800
  1 file changed, 33 insertions(+), 54 deletions(-)
 
 commit 80a91cfbea0cfc1f94040e73562266b277fa479d
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Fri Nov 7 06:48:01 2025 -0800
 
     Internal change
@@ -2797,7 +2797,7 @@ Date:   Fri Nov 7 06:48:01 2025 -0800
  1 file changed, 3 insertions(+)
 
 commit 6fb43947019712eeb41f40dc5e496ab4846dadd6
-Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Author: Matias Manevi <REDACTED_EMAIL_138998ce766fbfc7e7204158>
 Date:   Fri Nov 7 06:11:14 2025 -0800
 
     Refactor array initialization for `mjData` and `mjvScene` in MuJoCo WASM bindings.
@@ -2810,7 +2810,7 @@ Date:   Fri Nov 7 06:11:14 2025 -0800
  2 files changed, 42 insertions(+), 140 deletions(-)
 
 commit 8734cab3661b80b076f8dc5664e1892811bd2b4f
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Fri Nov 7 05:11:31 2025 -0800
 
     Add sleeping documentation
@@ -2831,7 +2831,7 @@ Date:   Fri Nov 7 05:11:31 2025 -0800
  8 files changed, 754 insertions(+), 29 deletions(-)
 
 commit 769f37b653c2d7088d0e93b3363654ef9c36f3a6
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Fri Nov 7 03:32:03 2025 -0800
 
     Implement sleeping in engine
@@ -2897,7 +2897,7 @@ Date:   Fri Nov 7 03:32:03 2025 -0800
  55 files changed, 3596 insertions(+), 671 deletions(-)
 
 commit 1e0226d360df520ec9073ae136ffa3ab39ed2c39
-Author: Sergei Lebedev <slebedev@google.com>
+Author: Sergei Lebedev <REDACTED_EMAIL_6b2214abf92039e9f3bb77e7>
 Date:   Fri Nov 7 02:06:51 2025 -0800
 
     Ignore pytype errors produced with --use-functools-partial-overlay
@@ -2909,7 +2909,7 @@ Date:   Fri Nov 7 02:06:51 2025 -0800
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 252a0d73dfddeecba028e1ba32b031d417e95e79
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Thu Nov 6 12:09:59 2025 -0800
 
     Add sleep related data structures
@@ -2957,7 +2957,7 @@ Date:   Thu Nov 6 12:09:59 2025 -0800
  37 files changed, 1910 insertions(+), 189 deletions(-)
 
 commit 3080e3424fb2d4f969e599008e4ef0b129191a3c
-Author: Baruch Tabanpour <btaba@google.com>
+Author: Baruch Tabanpour <REDACTED_EMAIL_5efef7db8e4d1e1833b5a8ab>
 Date:   Thu Nov 6 11:03:47 2025 -0800
 
     Update mjx-warp ffi, prepare for render.
@@ -2969,7 +2969,7 @@ Date:   Thu Nov 6 11:03:47 2025 -0800
  1 file changed, 13 insertions(+), 4 deletions(-)
 
 commit fa062768f40b43b569b15c370f903f90963254c6
-Author: Baruch Tabanpour <btaba@google.com>
+Author: Baruch Tabanpour <REDACTED_EMAIL_5efef7db8e4d1e1833b5a8ab>
 Date:   Thu Nov 6 10:41:32 2025 -0800
 
     Import google-deepmind/mujoco_warp from GitHub.
@@ -3014,7 +3014,7 @@ Date:   Thu Nov 6 10:41:32 2025 -0800
  34 files changed, 4293 insertions(+), 4899 deletions(-)
 
 commit 7dfd92098fc3248e144f71347a2a05bccc2c0e9d
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Thu Nov 6 10:09:06 2025 -0800
 
     Simplified struct field handling in the WASM bindings
@@ -3030,7 +3030,7 @@ Date:   Thu Nov 6 10:09:06 2025 -0800
  5 files changed, 259 insertions(+), 402 deletions(-)
 
 commit 06ecdd6ba1a07dd123baed7f07f201063ff9d0c2
-Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Author: Matias Manevi <REDACTED_EMAIL_138998ce766fbfc7e7204158>
 Date:   Thu Nov 6 08:48:52 2025 -0800
 
     Refactor: Generate all struct bindings within the codegen.
@@ -3046,7 +3046,7 @@ Date:   Thu Nov 6 08:48:52 2025 -0800
  5 files changed, 1517 insertions(+), 1590 deletions(-)
 
 commit 2c2773e36dabeef7f075076eef18d367f28c7431
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Nov 6 08:00:51 2025 -0800
 
     Include third_party_deps cmake files.
@@ -3062,7 +3062,7 @@ Date:   Thu Nov 6 08:00:51 2025 -0800
  5 files changed, 155 insertions(+)
 
 commit b807d5f8528cedce1900d0e077598793f4cc5c38
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Thu Nov 6 07:19:04 2025 -0800
 
     Remove `MjVFS` from generated Emscripten bindings.
@@ -3075,7 +3075,7 @@ Date:   Thu Nov 6 07:19:04 2025 -0800
  2 files changed, 2 insertions(+), 35 deletions(-)
 
 commit 8051f408176163652cc48430ddd6bbf821e1e33a
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Thu Nov 6 07:05:11 2025 -0800
 
     During mj_parse, if mju_openResource fails pass a resource with only the filename to decoders.
@@ -3094,7 +3094,7 @@ Date:   Thu Nov 6 07:05:11 2025 -0800
  2 files changed, 43 insertions(+), 19 deletions(-)
 
 commit 89fec8f7b2c0c230b1963b22ce1c00f6d960f899
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Thu Nov 6 05:19:29 2025 -0800
 
     MuJoCo Warp documentation: Performance Tuning.
@@ -3106,7 +3106,7 @@ Date:   Thu Nov 6 05:19:29 2025 -0800
  1 file changed, 135 insertions(+), 63 deletions(-)
 
 commit d0f32a7fe6dab428b25de69ed04f79fcf326cf69
-Author: Baruch Tabanpour <btaba@google.com>
+Author: Baruch Tabanpour <REDACTED_EMAIL_5efef7db8e4d1e1833b5a8ab>
 Date:   Wed Nov 5 13:31:57 2025 -0800
 
     Modify mjx.Model tex_data type.
@@ -3119,7 +3119,7 @@ Date:   Wed Nov 5 13:31:57 2025 -0800
  2 files changed, 9 insertions(+), 1 deletion(-)
 
 commit c34ac712a0dff19e180a725254b6350c01e62df9
-Author: Baruch Tabanpour <btaba@google.com>
+Author: Baruch Tabanpour <REDACTED_EMAIL_5efef7db8e4d1e1833b5a8ab>
 Date:   Wed Nov 5 12:34:26 2025 -0800
 
     Import warp-lang 1.10.0.
@@ -3141,7 +3141,7 @@ Date:   Wed Nov 5 12:34:26 2025 -0800
  11 files changed, 590 insertions(+), 227 deletions(-)
 
 commit 3577c98f821e79ef8a8b440b6628a9d89d24c959
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Wed Nov 5 11:13:30 2025 -0800
 
     Refactor Emscripten bindings generation for MuJoCo structs.
@@ -3156,7 +3156,7 @@ Date:   Wed Nov 5 11:13:30 2025 -0800
  4 files changed, 531 insertions(+), 744 deletions(-)
 
 commit 8104235f8ed6af1623b4c4d6ad9f872c5a28beef
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Wed Nov 5 11:09:51 2025 -0800
 
     Generate wrappers for anonymous structs within `mjVisual`.
@@ -3171,7 +3171,7 @@ Date:   Wed Nov 5 11:09:51 2025 -0800
  4 files changed, 2254 insertions(+), 2346 deletions(-)
 
 commit c3858f267a278f50ce796faa843b3af0d71aab81
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Wed Nov 5 11:06:15 2025 -0800
 
     Change default values of `WrappedFieldData` string fields to empty strings.
@@ -3183,7 +3183,7 @@ Date:   Wed Nov 5 11:06:15 2025 -0800
  1 file changed, 5 insertions(+), 5 deletions(-)
 
 commit ff0ae09bc45c3563d511841f3504b2edb42ab0a8
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Wed Nov 5 11:02:43 2025 -0800
 
     Remove debug printing functionality from WASM codegen.
@@ -3197,7 +3197,7 @@ Date:   Wed Nov 5 11:02:43 2025 -0800
  3 files changed, 24 deletions(-)
 
 commit 01b0ea5b7ddc712d7c0649d4c06f5ba12a8585f7
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 5 09:16:44 2025 -0800
 
     Use webgl backend in emscripten builds.
@@ -3211,7 +3211,7 @@ Date:   Wed Nov 5 09:16:44 2025 -0800
  1 file changed, 7 insertions(+), 4 deletions(-)
 
 commit 8b7eb097dbcaedb768c640e68095d51fd6053f18
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 5 08:32:27 2025 -0800
 
     Remove Sync and Scene functions from Renderer.
@@ -3227,7 +3227,7 @@ Date:   Wed Nov 5 08:32:27 2025 -0800
  5 files changed, 5 insertions(+), 22 deletions(-)
 
 commit 17d36d8e75d5b7270bb6541924f1bd84d65d7280
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Wed Nov 5 08:23:19 2025 -0800
 
     MuJoCo Warp documentation: ``naconmax``.
@@ -3239,7 +3239,7 @@ Date:   Wed Nov 5 08:23:19 2025 -0800
  1 file changed, 5 insertions(+), 2 deletions(-)
 
 commit 30a99de3b9b326585b0073844f155ac7011f1f2b
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Nov 5 07:32:31 2025 -0800
 
     Remove dependencies on mjvScene for interactions.
@@ -3260,7 +3260,7 @@ Date:   Wed Nov 5 07:32:31 2025 -0800
  3 files changed, 612 insertions(+), 45 deletions(-)
 
 commit 2245210e879cd5b4d6550c36398d06b189ea161d
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Wed Nov 5 07:16:20 2025 -0800
 
     Fix formatting error in the 3.3.6 changelog
@@ -3272,7 +3272,7 @@ Date:   Wed Nov 5 07:16:20 2025 -0800
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit d5e953e707b1f7c7b2bcd86716fbf8595798b689
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Wed Nov 5 04:10:58 2025 -0800
 
     Use `sphinx.ext.extlinks` for GitHub issue and PR links.
@@ -3289,7 +3289,7 @@ Date:   Wed Nov 5 04:10:58 2025 -0800
  2 files changed, 64 insertions(+), 54 deletions(-)
 
 commit fe1b6b7c80ab9f990724383b45ea343d03d377c6
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Wed Nov 5 03:25:18 2025 -0800
 
     Refactor: Group autogenerated structs source in bindings.cc
@@ -3308,7 +3308,7 @@ Date:   Wed Nov 5 03:25:18 2025 -0800
  4 files changed, 540 insertions(+), 715 deletions(-)
 
 commit 5b00b033af04ceb158647362d8ec14853d15f642
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Wed Nov 5 03:22:41 2025 -0800
 
     Refactor struct dependency sorting to use wrapped field data.
@@ -3323,7 +3323,7 @@ Date:   Wed Nov 5 03:22:41 2025 -0800
  2 files changed, 27 insertions(+), 17 deletions(-)
 
 commit 29c1a3a0a551c8533ed215114631f64ea93f9f53
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 4 07:31:36 2025 -0800
 
     Cleanup WASM bindings generators so they all have a similar interface
@@ -3344,7 +3344,7 @@ Date:   Tue Nov 4 07:31:36 2025 -0800
  10 files changed, 77 insertions(+), 108 deletions(-)
 
 commit 776fc32eb4d24d72c86b1f6ed62b548d2343284c
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 4 06:43:08 2025 -0800
 
     Cleanup WASM bindings struct generation
@@ -3359,7 +3359,7 @@ Date:   Tue Nov 4 06:43:08 2025 -0800
  4 files changed, 657 insertions(+), 490 deletions(-)
 
 commit 4b79a58fa05478c7d6dfcd1782d3c049cfcf8308
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 4 05:02:03 2025 -0800
 
     Add convenience methods to CodeBuilder and cleanup some WASM bindings code generation
@@ -3375,7 +3375,7 @@ Date:   Tue Nov 4 05:02:03 2025 -0800
  5 files changed, 624 insertions(+), 726 deletions(-)
 
 commit 740afe22b374d48ed3ab3462f3866f031a20fff2
-Author: Adrian Collister <acollister@google.com>
+Author: Adrian Collister <REDACTED_EMAIL_6febb32173268e2b7e2a7b60>
 Date:   Tue Nov 4 04:14:13 2025 -0800
 
     Append warnings to model compile errors.
@@ -3387,7 +3387,7 @@ Date:   Tue Nov 4 04:14:13 2025 -0800
  1 file changed, 4 insertions(+)
 
 commit 34e5eecba57c52e9142d83d0d1c3b3f790ff9508
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 4 03:59:28 2025 -0800
 
     Autogenerate more of mjVFS and mjvGeom WASM bindings
@@ -3402,7 +3402,7 @@ Date:   Tue Nov 4 03:59:28 2025 -0800
  4 files changed, 104 insertions(+), 68 deletions(-)
 
 commit f808632cf85e497eacce1f65c6e7932dc7244bce
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 4 03:56:08 2025 -0800
 
     Rename WASM bindings function helper file
@@ -3418,7 +3418,7 @@ Date:   Tue Nov 4 03:56:08 2025 -0800
  5 files changed, 34 insertions(+), 35 deletions(-)
 
 commit 12a31674a31c4fa7d02d6264fe209937c44b0bf5
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 4 03:22:18 2025 -0800
 
     Consolidate WASM bindings struct generator helper files into helpers/structs.py
@@ -3437,7 +3437,7 @@ Date:   Tue Nov 4 03:22:18 2025 -0800
  8 files changed, 858 insertions(+), 998 deletions(-)
 
 commit 9b71fc728d6c2d7546df2d75f1fe45969fd80c2d
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 4 03:18:43 2025 -0800
 
     Consolidate WASM bindings test files
@@ -3458,7 +3458,7 @@ Date:   Tue Nov 4 03:18:43 2025 -0800
  10 files changed, 946 insertions(+), 1025 deletions(-)
 
 commit 2018b8c494478945128ccddbfa2b3635cece68bb
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 4 02:59:31 2025 -0800
 
     Disable WASM bindings benchmarks on Github CI
@@ -3475,7 +3475,7 @@ Date:   Tue Nov 4 02:59:31 2025 -0800
  4 files changed, 64 insertions(+), 15 deletions(-)
 
 commit 3d59b20b653f4681721057dd153c6b18320eb0f4
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 4 02:50:09 2025 -0800
 
     Simplified struct code generation for WASM bindings
@@ -3492,7 +3492,7 @@ Date:   Tue Nov 4 02:50:09 2025 -0800
  6 files changed, 123 insertions(+), 138 deletions(-)
 
 commit c22d94e470f84eae7d421f7c1796a6f37ac96f44
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 4 02:06:05 2025 -0800
 
     Various minor cleanups to WASM code generation
@@ -3519,7 +3519,7 @@ Date:   Tue Nov 4 02:06:05 2025 -0800
  12 files changed, 190 insertions(+), 218 deletions(-)
 
 commit 10130297c0c3621700c0d5eb8b1e54b5c5f20cab
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Tue Nov 4 01:36:22 2025 -0800
 
     Consolidate WASM bindings into a single C++ file.
@@ -3539,7 +3539,7 @@ Date:   Tue Nov 4 01:36:22 2025 -0800
  9 files changed, 6968 insertions(+), 7110 deletions(-)
 
 commit 7d7648f7ed4b10a7a11e30f39b14d55cb0c47631
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Mon Nov 3 13:28:36 2025 -0800
 
     Update UsdWriter to write any parts of MjSpec that are not from USD to the EditTarget.
@@ -3560,7 +3560,7 @@ Date:   Mon Nov 3 13:28:36 2025 -0800
  5 files changed, 96 insertions(+), 29 deletions(-)
 
 commit abc02b736e78cf14d05accb7b332d73e8eb0dcaf
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Mon Nov 3 13:21:59 2025 -0800
 
     Minor fixes to viewer diagnostics
@@ -3576,7 +3576,7 @@ Date:   Mon Nov 3 13:21:59 2025 -0800
  2 files changed, 8 insertions(+), 6 deletions(-)
 
 commit 501e561563a0bf667ba8504e55623d27e07c843c
-Author: Baruch Tabanpour <btaba@google.com>
+Author: Baruch Tabanpour <REDACTED_EMAIL_5efef7db8e4d1e1833b5a8ab>
 Date:   Mon Nov 3 12:23:29 2025 -0800
 
     Import NVIDIA/warp from GitHub.
@@ -3591,7 +3591,7 @@ Date:   Mon Nov 3 12:23:29 2025 -0800
  4 files changed, 1909 insertions(+), 44 deletions(-)
 
 commit 9319956a16da0d9940f82b24d9784f9cb91a1757
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Mon Nov 3 04:15:31 2025 -0800
 
     Modify mujoco_to_usd to operate on SdfLayer intead of SdfAbstractData.
@@ -3609,7 +3609,7 @@ Date:   Mon Nov 3 04:15:31 2025 -0800
  5 files changed, 618 insertions(+), 702 deletions(-)
 
 commit 3a7aa84e53828f329cdb961ccbd920f4a7b41706
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Mon Nov 3 03:00:18 2025 -0800
 
     Add quadratic stiffness to flex.
@@ -3630,7 +3630,7 @@ Date:   Mon Nov 3 03:00:18 2025 -0800
  10 files changed, 159 insertions(+), 63 deletions(-)
 
 commit d4f13b4abca5b3304a86e6e88351704cb44fc40f
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Mon Nov 3 02:17:48 2025 -0800
 
     Update mjwarp/index.rst.
@@ -3642,7 +3642,7 @@ Date:   Mon Nov 3 02:17:48 2025 -0800
  1 file changed, 7 insertions(+), 4 deletions(-)
 
 commit ad49733db2772dac88eb8be81936c08c639f2735
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Sat Nov 1 05:53:56 2025 -0700
 
     Improve error message for insufficient arena memory in `_realloc_con_efc`.
@@ -3655,7 +3655,7 @@ Date:   Sat Nov 1 05:53:56 2025 -0700
  2 files changed, 26 insertions(+), 16 deletions(-)
 
 commit f604588a36c5530ee52e23a9f73a71a9845b1bdc
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Sat Nov 1 03:58:35 2025 -0700
 
     Update theme_overrides_mjwarp.css to not render return type information.
@@ -3667,7 +3667,7 @@ Date:   Sat Nov 1 03:58:35 2025 -0700
  1 file changed, 5 insertions(+), 3 deletions(-)
 
 commit fbb95d5e8c8785e1f8d212675d7abed66293c853
-Author: Erik Frey <erikfrey@google.com>
+Author: Erik Frey <REDACTED_EMAIL_ab96d8a7ffeff6f119eea4dd>
 Date:   Fri Oct 31 11:46:10 2025 -0700
 
     Import NVIDIA/warp from GitHub.
@@ -3682,14 +3682,14 @@ Date:   Fri Oct 31 11:46:10 2025 -0700
  4 files changed, 44 insertions(+), 1909 deletions(-)
 
 commit 4086261714d7cfbc1745d4c6cb0aa2116df45312
-Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Author: Matias Manevi <REDACTED_EMAIL_138998ce766fbfc7e7204158>
 Date:   Fri Oct 31 07:20:18 2025 -0700
 
     Add JavaScript bindings and WASM support
     
-    Co-authored-by: Matija Kecman <matijak@google.com>
-    Co-authored-by: Sebastian Noreña Rendón <sebas.norena@creativa77.com.ar>
-    Co-authored-by: Kyle Bayes <kylebayes@google.com>
+    Co-authored-by: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
+    Co-authored-by: Sebastian Noreña Rendón <REDACTED_EMAIL_c85cd81719ed6dc1009ddab3>
+    Co-authored-by: Kyle Bayes <REDACTED_EMAIL_24b365983d2c646f1755b590>
     PiperOrigin-RevId: 826479070
     Change-Id: I25acf36e6c20b091d8492e10798d028ae66f6733
 
@@ -3754,7 +3754,7 @@ Date:   Fri Oct 31 07:20:18 2025 -0700
  58 files changed, 24418 insertions(+), 22 deletions(-)
 
 commit 57f71458065ac1e62dce5dc512081daa1b2b5e7d
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Thu Oct 30 12:53:40 2025 -0700
 
     Create mjpDecoder, mj_parse, and mju_decodeResource
@@ -3791,14 +3791,14 @@ Date:   Thu Oct 30 12:53:40 2025 -0700
  16 files changed, 3226 insertions(+), 2718 deletions(-)
 
 commit f2badc05acb8966071530caf45a9df3aab41f9b5
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Thu Oct 30 11:10:55 2025 -0700
 
     Add JavaScript bindings and WASM support
     
-    Co-authored-by: Matija Kecman <matijak@google.com>
-    Co-authored-by: Sebastian Noreña Rendón <sebas.norena@creativa77.com.ar>
-    Co-authored-by: Kyle Bayes <kylebayes@google.com>
+    Co-authored-by: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
+    Co-authored-by: Sebastian Noreña Rendón <REDACTED_EMAIL_c85cd81719ed6dc1009ddab3>
+    Co-authored-by: Kyle Bayes <REDACTED_EMAIL_24b365983d2c646f1755b590>
     PiperOrigin-RevId: 826109484
     Change-Id: I327fd54122762bd2e239cc31c602a3eb73051c26
 
@@ -3861,14 +3861,14 @@ Date:   Thu Oct 30 11:10:55 2025 -0700
  56 files changed, 22 insertions(+), 24362 deletions(-)
 
 commit 76e64d96bb05baf37982e2aab9e04a53c268c9f0
-Author: Matias Manevi <manevimatias@ekumenlabs.com>
+Author: Matias Manevi <REDACTED_EMAIL_138998ce766fbfc7e7204158>
 Date:   Thu Oct 30 10:37:06 2025 -0700
 
     Add JavaScript bindings and WASM support
     
-    Co-authored-by: Matija Kecman <matijak@google.com>
-    Co-authored-by: Sebastian Noreña Rendón <sebas.norena@creativa77.com.ar>
-    Co-authored-by: Kyle Bayes <kylebayes@google.com>
+    Co-authored-by: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
+    Co-authored-by: Sebastian Noreña Rendón <REDACTED_EMAIL_c85cd81719ed6dc1009ddab3>
+    Co-authored-by: Kyle Bayes <REDACTED_EMAIL_24b365983d2c646f1755b590>
     PiperOrigin-RevId: 826094938
     Change-Id: Id2658a187bc078056f4410c71202696753319e64
 
@@ -3931,7 +3931,7 @@ Date:   Thu Oct 30 10:37:06 2025 -0700
  56 files changed, 24362 insertions(+), 22 deletions(-)
 
 commit 10f4b36fb7bb165b4e24f64cba8ffcf97f855c66
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Thu Oct 30 03:36:23 2025 -0700
 
     MuJoCo Warp documentation: Beta software.
@@ -3943,7 +3943,7 @@ Date:   Thu Oct 30 03:36:23 2025 -0700
  1 file changed, 11 insertions(+)
 
 commit 37563a050e50c8329f9bff1212cbea8a471d0567
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Wed Oct 29 13:16:36 2025 -0700
 
     Remove obsolete docs references to convexhull.
@@ -3957,7 +3957,7 @@ Date:   Wed Oct 29 13:16:36 2025 -0700
  1 file changed, 6 insertions(+), 8 deletions(-)
 
 commit 3df784fc8477fe7780e62a66a58d7162b94ecff6
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Wed Oct 29 04:41:45 2025 -0700
 
     Updates for MuJoCo Warp documentation.
@@ -3969,7 +3969,7 @@ Date:   Wed Oct 29 04:41:45 2025 -0700
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 commit d769440924c946d34ecb478c85141be75bf727e9
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Wed Oct 29 04:23:18 2025 -0700
 
     Store asset keys relative to the MJCF. This CL fixes cases when loading a spec with "from_zip" that fails on zipped folders that contain a root directory.
@@ -3985,7 +3985,7 @@ Date:   Wed Oct 29 04:23:18 2025 -0700
  5 files changed, 31 insertions(+)
 
 commit 010d919244dcd06427dfa9c436153ff2aae468f3
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Wed Oct 29 02:54:08 2025 -0700
 
     Add `__setattr__` to `_MjBindModel` and `_MjBindData`.
@@ -4000,7 +4000,7 @@ Date:   Wed Oct 29 02:54:08 2025 -0700
  2 files changed, 16 insertions(+), 2 deletions(-)
 
 commit 80eb5116200cce89b60a47befc317585120e9a7d
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Oct 28 11:41:28 2025 -0700
 
     Remove dependency on Window, Physics, and Renderer classes.
@@ -4015,7 +4015,7 @@ Date:   Tue Oct 28 11:41:28 2025 -0700
  4 files changed, 35 insertions(+), 38 deletions(-)
 
 commit 4620b9f23a0dbb2cd3e2e2be3ad93d5e38ee2769
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Oct 28 09:43:50 2025 -0700
 
     Merge HandleMouseEvents and HandleKeyboardEvents back into app.cc.
@@ -4029,7 +4029,7 @@ Date:   Tue Oct 28 09:43:50 2025 -0700
  3 files changed, 204 insertions(+), 238 deletions(-)
 
 commit d001bd65253cd9fed83c35d0b1d08e9b19ccf93d
-Author: Baruch Tabanpour <btaba@google.com>
+Author: Baruch Tabanpour <REDACTED_EMAIL_5efef7db8e4d1e1833b5a8ab>
 Date:   Tue Oct 28 06:58:14 2025 -0700
 
     Add naconmax, deprecation warning for nconmax.
@@ -4044,7 +4044,7 @@ Date:   Tue Oct 28 06:58:14 2025 -0700
  4 files changed, 43 insertions(+), 13 deletions(-)
 
 commit 2bdea1a0aae1e16e8a40a7a4df119cbc3fada4c3
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Tue Oct 28 06:39:44 2025 -0700
 
     Use "/" as default prefix during attach if not specified.
@@ -4061,7 +4061,7 @@ Date:   Tue Oct 28 06:39:44 2025 -0700
  2 files changed, 4 insertions(+), 4 deletions(-)
 
 commit 1bfa8b6fa6f74edd32f58edfe41d4b3f78a65ecd
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Tue Oct 28 06:12:41 2025 -0700
 
     Do not add bodies at mesh points for quadratic flex interpolation.
@@ -4073,7 +4073,7 @@ Date:   Tue Oct 28 06:12:41 2025 -0700
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 commit 3b79d3f14bd175f417b381625c0f58257966ea88
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Oct 28 05:23:00 2025 -0700
 
     Set flags directly on Renderer class.
@@ -4088,7 +4088,7 @@ Date:   Tue Oct 28 05:23:00 2025 -0700
  2 files changed, 8 insertions(+), 3 deletions(-)
 
 commit 7ba0d96d770c7bf7e9c96ddeb25f7ed1b030ed8d
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Tue Oct 28 05:18:00 2025 -0700
 
     Use mjvCamera directly for generating camera string.
@@ -4102,7 +4102,7 @@ Date:   Tue Oct 28 05:18:00 2025 -0700
  3 files changed, 9 insertions(+), 18 deletions(-)
 
 commit e1a73f9c4c3a99151e274b5fa48c13cdd74d5fc1
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Oct 28 04:58:15 2025 -0700
 
     Add early exit in `mj_xfrcAccumulate` using `mju_isZeroByte`
@@ -4116,7 +4116,7 @@ Date:   Tue Oct 28 04:58:15 2025 -0700
  1 file changed, 12 insertions(+), 3 deletions(-)
 
 commit 017788b9d657169efe48a0eab83cbb7ea568f8f5
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Tue Oct 28 03:00:06 2025 -0700
 
     MuJoCo Warp documentation: Parallel Linesearch.
@@ -4128,7 +4128,7 @@ Date:   Tue Oct 28 03:00:06 2025 -0700
  1 file changed, 14 insertions(+)
 
 commit a16805f8ee99955f19427c8410fa75d2d0061698
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Oct 27 11:25:25 2025 -0700
 
     Add CMakeLists.txt files for new (experimental) code.
@@ -4149,7 +4149,7 @@ Date:   Mon Oct 27 11:25:25 2025 -0700
  4 files changed, 288 insertions(+), 2 deletions(-)
 
 commit be055840b427fcc3f6a30ab69d7347ba1e6459d7
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Mon Oct 27 11:11:45 2025 -0700
 
     Add Batched Model Fields section to MuJoCo Warp documentation.
@@ -4161,7 +4161,7 @@ Date:   Mon Oct 27 11:11:45 2025 -0700
  1 file changed, 38 insertions(+)
 
 commit 3b11e31572536a3407806bd4f00e7712edc90942
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Mon Oct 27 10:32:45 2025 -0700
 
     MuJoCo Warp documentation: Add `nworld`, `nconmax`, and `njmax` section and update introduction.
@@ -4173,7 +4173,7 @@ Date:   Mon Oct 27 10:32:45 2025 -0700
  1 file changed, 17 insertions(+), 1 deletion(-)
 
 commit dbaf35d42c62a33f923a399eab213e01dcf0eea5
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Oct 27 09:36:00 2025 -0700
 
     Add CMake configurations for new third_party dependencies.
@@ -4190,7 +4190,7 @@ Date:   Mon Oct 27 09:36:00 2025 -0700
 
 commit d971e5c2dfbae32b9c9391377e7edba3b838c243
 Merge: 23c3001a b19644be
-Author: Copybara-Service <copybara-worker@google.com>
+Author: Copybara-Service <REDACTED_EMAIL_a84c18d43e9fd8fab22e12a7>
 Date:   Mon Oct 27 09:16:01 2025 -0700
 
     Merge pull request #2908 from davidhozic:doc/fix-comments
@@ -4200,7 +4200,7 @@ Date:   Mon Oct 27 09:16:01 2025 -0700
 
 commit 23c3001a4c0df36285552ba47f836d00cfd39f5b
 Merge: 85e9cff0 cb7ebe68
-Author: Copybara-Service <copybara-worker@google.com>
+Author: Copybara-Service <REDACTED_EMAIL_a84c18d43e9fd8fab22e12a7>
 Date:   Mon Oct 27 07:42:09 2025 -0700
 
     Merge pull request #2875 from google-deepmind:dependabot/pip/mjx/pip-25.2
@@ -4209,7 +4209,7 @@ Date:   Mon Oct 27 07:42:09 2025 -0700
     Change-Id: Ifeb956547e23722ea486e1e6da9a953826038626
 
 commit 85e9cff0c11cda8d962e13bffe127e088a9b3010
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Mon Oct 27 04:47:45 2025 -0700
 
     Update `mj_geomDistance`: don't flip geoms for nativeccd.
@@ -4222,7 +4222,7 @@ Date:   Mon Oct 27 04:47:45 2025 -0700
  2 files changed, 41 insertions(+), 6 deletions(-)
 
 commit 8c5154c9a32686ad44140dc653d27456de5ef0c3
-Author: Baruch Tabanpour <btaba@google.com>
+Author: Baruch Tabanpour <REDACTED_EMAIL_5efef7db8e4d1e1833b5a8ab>
 Date:   Fri Oct 24 15:46:24 2025 -0700
 
     Fix testspeed for mjx-warp.
@@ -4234,7 +4234,7 @@ Date:   Fri Oct 24 15:46:24 2025 -0700
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 49a3caf84c1ee3dedf2af654285fa788860fe4f2
-Author: Saran Tunyasuvunakool <stunya@google.com>
+Author: Saran Tunyasuvunakool <REDACTED_EMAIL_356bf800b20a21485d15e5cd>
 Date:   Fri Oct 24 05:50:06 2025 -0700
 
     Modify SimulationState proto to correspond to mj_getState.
@@ -4247,7 +4247,7 @@ Date:   Fri Oct 24 05:50:06 2025 -0700
  2 files changed, 6 insertions(+), 3 deletions(-)
 
 commit ec8ad21cb58efd49262b55a7bb7f6ddb80109513
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Fri Oct 24 03:42:03 2025 -0700
 
     Normalize triangle coordinates such that their sum rather their norm is one.
@@ -4261,7 +4261,7 @@ Date:   Fri Oct 24 03:42:03 2025 -0700
  1 file changed, 5 insertions(+), 1 deletion(-)
 
 commit 7bf065c75b58252929bf807dba1c28daa4fcccbb
-Author: Google DeepMind <noreply@deepmind.com>
+Author: Google DeepMind <REDACTED_EMAIL_13fe1be425ea877ddb14a29b>
 Date:   Thu Oct 23 13:08:37 2025 -0700
 
     Implement equivalents to mj_getState, mj_setState  and mj_stateSize in mjx
@@ -4275,7 +4275,7 @@ Date:   Thu Oct 23 13:08:37 2025 -0700
  3 files changed, 273 insertions(+)
 
 commit 99c18f07d3a2270271efd79e6b5c728f5d160b02
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Oct 23 08:15:57 2025 -0700
 
     Increase buffer size.
@@ -4292,7 +4292,7 @@ Date:   Thu Oct 23 08:15:57 2025 -0700
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 1fd9b47fea8b5513958cba921196f5d9d9301f1d
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Oct 23 08:06:22 2025 -0700
 
     Prefix assets path with "assets/".
@@ -4304,7 +4304,7 @@ Date:   Thu Oct 23 08:06:22 2025 -0700
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 commit 18e60369f3eae336ca7a2c45a57a81b4ee9ce313
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Wed Oct 22 17:55:35 2025 -0700
 
     If building simulate with USD support remove the no-deprecated warning due to deprecated header usage in USD.
@@ -4316,7 +4316,7 @@ Date:   Wed Oct 22 17:55:35 2025 -0700
  1 file changed, 7 insertions(+)
 
 commit febe75d54b48efe16265750f7ee22ec45491b55c
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Wed Oct 22 12:28:21 2025 -0700
 
     Add tendon.cpp to mjcPhysics CMake
@@ -4328,7 +4328,7 @@ Date:   Wed Oct 22 12:28:21 2025 -0700
  1 file changed, 1 insertion(+)
 
 commit ae33724de175c75169de46f4f3c03a7581caed81
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Wed Oct 22 12:12:42 2025 -0700
 
     Set info string on wrap instead of tendon when wrapping a prim in the path.
@@ -4340,7 +4340,7 @@ Date:   Wed Oct 22 12:12:42 2025 -0700
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit c060385505f875d66171a20a957a9dd753fb2fd1
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Wed Oct 22 08:34:59 2025 -0700
 
     Add section in mjcPhysics documentation for MjcTendon.
@@ -4352,7 +4352,7 @@ Date:   Wed Oct 22 08:34:59 2025 -0700
  1 file changed, 10 insertions(+)
 
 commit f217a8f9874027eae1ae86ad6f6fa6d38bb7b0e4
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Wed Oct 22 06:42:46 2025 -0700
 
     Implement FetchPackage; a simple wrapper around FindOrFetch.
@@ -4369,7 +4369,7 @@ Date:   Wed Oct 22 06:42:46 2025 -0700
  3 files changed, 384 insertions(+), 228 deletions(-)
 
 commit 160b9480f9be7f571a7314b88f4fcc7f245dc0b0
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Tue Oct 21 12:29:06 2025 -0700
 
     Add support for tendons to mjcPhysics.
@@ -4390,7 +4390,7 @@ Date:   Tue Oct 21 12:29:06 2025 -0700
  10 files changed, 1980 insertions(+), 19 deletions(-)
 
 commit ac2cd5dfd615d4f9d6578297bceda468eddceba0
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Tue Oct 21 11:50:24 2025 -0700
 
     Add support for querying of MjsTendon path from Python.
@@ -4412,7 +4412,7 @@ Date:   Tue Oct 21 11:50:24 2025 -0700
  9 files changed, 411 insertions(+), 11 deletions(-)
 
 commit 2f65e2377915649ba84a26770cc15938360895cb
-Author: Saran Tunyasuvunakool <stunya@google.com>
+Author: Saran Tunyasuvunakool <REDACTED_EMAIL_356bf800b20a21485d15e5cd>
 Date:   Tue Oct 21 10:00:24 2025 -0700
 
     Add `mj_extractState` as a public API function.
@@ -4436,7 +4436,7 @@ Date:   Tue Oct 21 10:00:24 2025 -0700
  11 files changed, 171 insertions(+), 1 deletion(-)
 
 commit 25f5be82ff6a2691a315d4de6fa43df699af73e1
-Author: Kyle Bayes <kylebayes@google.com>
+Author: Kyle Bayes <REDACTED_EMAIL_24b365983d2c646f1755b590>
 Date:   Tue Oct 21 09:35:20 2025 -0700
 
     Provide option to disable keyboard events for SDL.
@@ -4450,7 +4450,7 @@ Date:   Tue Oct 21 09:35:20 2025 -0700
  3 files changed, 26 insertions(+), 11 deletions(-)
 
 commit 9e1ed0720b0ba45eb2798c501f653870c2abd561
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Tue Oct 21 07:09:01 2025 -0700
 
     Revert PDF documentation update to .readthedocs.yml.
@@ -4462,7 +4462,7 @@ Date:   Tue Oct 21 07:09:01 2025 -0700
  1 file changed, 3 insertions(+), 2 deletions(-)
 
 commit 056945df2091dcb8c2edbba6170c7d21dfcfdd87
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Tue Oct 21 06:56:15 2025 -0700
 
     Enable frames to create the same children as bodies.
@@ -4475,7 +4475,7 @@ Date:   Tue Oct 21 06:56:15 2025 -0700
  2 files changed, 40 insertions(+), 1 deletion(-)
 
 commit 09682ade4b5307fa895abf16041a76d2526b3fe6
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Tue Oct 21 06:26:23 2025 -0700
 
     Fix mjcPhysics island flag default.
@@ -4490,7 +4490,7 @@ Date:   Tue Oct 21 06:26:23 2025 -0700
  4 files changed, 5 insertions(+), 5 deletions(-)
 
 commit 64add36adb696fec14cd6182c0d8f2cea5cdf737
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Tue Oct 21 06:01:43 2025 -0700
 
     Update documentation to be compatible with PDF generation
@@ -4505,7 +4505,7 @@ Date:   Tue Oct 21 06:01:43 2025 -0700
  4 files changed, 28 insertions(+), 20 deletions(-)
 
 commit 01d1ac34e083f1dc536af81ae764f3b9c6fa7fa3
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Tue Oct 21 04:35:44 2025 -0700
 
     Add quadratic interpolation to flex.
@@ -4524,7 +4524,7 @@ Date:   Tue Oct 21 04:35:44 2025 -0700
  8 files changed, 77 insertions(+), 19 deletions(-)
 
 commit 59f14485e0f22ecd93a4f3fd96993708634b32b7
-Author: Sam Haves <shaves@google.com>
+Author: Sam Haves <REDACTED_EMAIL_fd91e65e16a36c569890aef8>
 Date:   Mon Oct 20 16:27:59 2025 -0700
 
     Move mjCWrap type to mjsWrap.
@@ -4543,7 +4543,7 @@ Date:   Mon Oct 20 16:27:59 2025 -0700
  8 files changed, 111 insertions(+), 27 deletions(-)
 
 commit b19644bec93e7838b5a774eac13566d473d5dbe1
-Author: David Hozic <davidhozic@gmail.com>
+Author: David Hozic <REDACTED_EMAIL_64b57e8d31f94b60dc490f7e>
 Date:   Tue Oct 21 01:21:47 2025 +0200
 
     Fix spelling errors
@@ -4555,7 +4555,7 @@ Date:   Tue Oct 21 01:21:47 2025 +0200
  4 files changed, 9 insertions(+), 9 deletions(-)
 
 commit 88ac02dad3e7f0c68bec0a73166e7f65e137be91
-Author: Matija Kecman <matijak@google.com>
+Author: Matija Kecman <REDACTED_EMAIL_0f49888e2e6f44cd1036d29c>
 Date:   Mon Oct 20 07:31:41 2025 -0700
 
     Add UI to visualize the State
@@ -4568,7 +4568,7 @@ Date:   Mon Oct 20 07:31:41 2025 -0700
  2 files changed, 160 insertions(+), 3 deletions(-)
 
 commit e75c5aa83c5c2a7d500e61c7710cebb98bee9178
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Mon Oct 20 02:54:22 2025 -0700
 
     Fix various include paths.
@@ -4592,7 +4592,7 @@ Date:   Mon Oct 20 02:54:22 2025 -0700
  13 files changed, 26 insertions(+), 26 deletions(-)
 
 commit 36bed9a9da8cbd42a8dddd8ab3d586a51abedd7d
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Fri Oct 17 07:28:33 2025 -0700
 
     MuJoCo documentation in PDF format. Fixes #2736, #470.
@@ -4604,7 +4604,7 @@ Date:   Fri Oct 17 07:28:33 2025 -0700
  1 file changed, 3 insertions(+)
 
 commit 85b5230dc0289bc4d8a5b1f13ce7797cdafeecca
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Fri Oct 17 06:58:19 2025 -0700
 
     MuJoCo Warp API documentation.
@@ -4617,7 +4617,7 @@ Date:   Fri Oct 17 06:58:19 2025 -0700
  2 files changed, 4 insertions(+), 1 deletion(-)
 
 commit bd8c9214753e992ac3c9cb31c03c77bc26b6cf72
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Fri Oct 17 04:37:19 2025 -0700
 
     Update doc/conf.py.
@@ -4629,7 +4629,7 @@ Date:   Fri Oct 17 04:37:19 2025 -0700
  1 file changed, 1 insertion(+)
 
 commit fdc0e64e5c01ad3f7f94508a98e23050565912fe
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Fri Oct 17 03:12:41 2025 -0700
 
     Update .readthedocs.yml.
@@ -4641,7 +4641,7 @@ Date:   Fri Oct 17 03:12:41 2025 -0700
  1 file changed, 11 insertions(+), 7 deletions(-)
 
 commit ff7c94de8a4c29884b988be4283ada43e8c18b6d
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Thu Oct 16 08:47:14 2025 -0700
 
     Add quadratic interpolation to mju_interpolate3D.
@@ -4654,7 +4654,7 @@ Date:   Thu Oct 16 08:47:14 2025 -0700
  2 files changed, 86 insertions(+), 15 deletions(-)
 
 commit 87adb7e5d6aa92acfb05807833a7c7fa3b6afa3b
-Author: Haroon Qureshi <haroonq@google.com>
+Author: Haroon Qureshi <REDACTED_EMAIL_39303b6273f58ecf3a77e35e>
 Date:   Thu Oct 16 08:38:38 2025 -0700
 
     Use the ImGui OpenGL3 backend.
@@ -4666,7 +4666,7 @@ Date:   Thu Oct 16 08:38:38 2025 -0700
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 commit 2893c3344ce2d184b9234a7f6e0de853b51d9e42
-Author: Andrea Gesmundo <agesmundo@google.com>
+Author: Andrea Gesmundo <REDACTED_EMAIL_6d4ef8e9d329ca667b8c262f>
 Date:   Thu Oct 16 08:02:38 2025 -0700
 
     Allow `mjx.ray` to exclude multiple bodies.
@@ -4679,7 +4679,7 @@ Date:   Thu Oct 16 08:02:38 2025 -0700
  2 files changed, 17 insertions(+), 8 deletions(-)
 
 commit 2fc8306e3d2c8670e74c47122d708bbb225b2e45
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Thu Oct 16 07:25:05 2025 -0700
 
     Update .readthedocs.yml.
@@ -4691,7 +4691,7 @@ Date:   Thu Oct 16 07:25:05 2025 -0700
  1 file changed, 7 insertions(+), 9 deletions(-)
 
 commit ffdfe542cfd5296f7cfdd05a026299169b1b6c3a
-Author: Alessio Quaglino <quaglino@google.com>
+Author: Alessio Quaglino <REDACTED_EMAIL_baf8a829f58972b8eb4e72b2>
 Date:   Thu Oct 16 04:38:15 2025 -0700
 
     Add mju_interpolate3D.
@@ -4709,7 +4709,7 @@ Date:   Thu Oct 16 04:38:15 2025 -0700
  5 files changed, 44 insertions(+), 15 deletions(-)
 
 commit 48f10bfcb6254cca8cc2b86559e7ffda32493d68
-Author: Gabe Oppenheimer <goppenheimer@google.com>
+Author: Gabe Oppenheimer <REDACTED_EMAIL_0a656a669dfa39824d97ea8a>
 Date:   Wed Oct 15 14:38:15 2025 -0700
 
     Update MuJoCo to v3.3.8 following the 3.3.7 release.
@@ -4736,7 +4736,7 @@ Date:   Wed Oct 15 14:38:15 2025 -0700
  16 files changed, 34 insertions(+), 34 deletions(-)
 
 commit 8cbfc4276747a33fa3e284aa4fb969723a6a8e33
-Author: Kyle Bayes <kylebayes@google.com>
+Author: Kyle Bayes <REDACTED_EMAIL_24b365983d2c646f1755b590>
 Date:   Wed Oct 15 08:44:48 2025 -0700
 
     Fix issue with zero size cache.
@@ -4750,7 +4750,7 @@ Date:   Wed Oct 15 08:44:48 2025 -0700
  3 files changed, 40 insertions(+), 6 deletions(-)
 
 commit 5715cebbb9431fdf6cbf7be2256137003cef73f4
-Author: Yuval Tassa <tassa@google.com>
+Author: Yuval Tassa <REDACTED_EMAIL_e01eabd5977c87f42a946c50>
 Date:   Wed Oct 15 08:29:50 2025 -0700
 
     MSAN: Don't clear `mjData.sensordata` in `mj_resetData`
@@ -4766,7 +4766,7 @@ Date:   Wed Oct 15 08:29:50 2025 -0700
  3 files changed, 12 insertions(+), 7 deletions(-)
 
 commit 99d93124f0da5f9363bf9f47649338f8bf2ce833
-Author: Taylor Howell <taylorhowell@google.com>
+Author: Taylor Howell <REDACTED_EMAIL_4aa47bdb18d7407bb9f70eb9>
 Date:   Wed Oct 15 07:46:20 2025 -0700
 
     Update .readthedocs.yml.
