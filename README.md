@@ -34,7 +34,7 @@ Reproducibility note:
 - Known methodological limits, LLaMA/MuJoCo exclusions, and overstated language in older exports are documented in `LIMITATIONS.md`.
 
 Data & Sanitization:
-- The `data/` directory contains derived exports and timeline slices used in the analysis. Where author metadata (email addresses) appeared in harvested commit data, those values have been anonymized in the public exports. A redaction mapping (token → original_email → occurrences) is available at `data/redaction_mapping.csv` for internal audit purposes. If you need the original, unmapped exports for verified internal review, contact the repository owner — originals are not published in this public repository.
+- The `data/` directory contains historical derived exports and timeline slices. The previously published reversible author-email mapping was removed from the current branch on 12 November 2026 because it exposed original addresses. It remains recoverable from earlier Git history; deleting a tracked file does **not** purge prior commits. The redaction utility now produces separate anonymized copies without a reversible mapping. Other historical exports have not yet undergone a comprehensive privacy review and should not be assumed free of identifying information.
 ---
 
 ## Repository Contents
