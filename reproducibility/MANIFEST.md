@@ -20,7 +20,7 @@ Machine-readable parameters for reproducing the **high-level** methodology (comm
 | Analysis window (primary) | 2025-08-01 → 2025-12-31 |
 | Data type | Public `git log`, `git log -p` (selected paths), commit messages |
 | Clone depth | Shallow clones (exact `--depth` per run not stored in all exports) |
-| Author metadata | Email addresses redacted in public `data/` exports; see `data/redaction_mapping.csv` |
+| Author metadata | The previously committed reversible email mapping was removed from the current branch; historical Git objects can still contain it. Existing exports require a separate privacy audit. |
 | Harvest location | Derived files under `timelines/`, `logs/`, `diffs/`, `data/` |
 
 ## Inclusion rules (infrastructure-related commits)
