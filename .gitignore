@@ -29,3 +29,4 @@ credentials/
 
 # Large files
 *.zip
+\n# Never commit source-email mappings or generated redacted exports\ndata/redaction_mapping.csv\n*.sanitized\n
